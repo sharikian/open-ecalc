@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "datasetVersion": "2026.09",
+  "generatedAt": "2026-09-06T00:00:00.000Z",
+  "sources": [
+    {
+      "name": "Open eCalc synthetic reference set",
+      "url": "https://github.com/open-ecalc/open-ecalc",
+      "licenseSpdx": "CC0-1.0",
+      "included": true,
+      "note": "Generic records for calculation and interface testing only"
+    },
+    {
+      "name": "UIUC Propeller Database",
+      "url": "https://m-selig.ae.illinois.edu/props/propDB.html",
+      "licenseSpdx": "NOASSERTION",
+      "included": false,
+      "note": "Redistribution permission not yet confirmed"
+    }
+  ]
+}
+
