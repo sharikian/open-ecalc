@@ -6,12 +6,13 @@
   import RotorCoverage from './RotorCoverage.svelte';
   export let result: MissionResult;
   export let input: MissionInput;
+  const pointLabels = { hover: 'هاور', cruise: 'کروز', climb: 'اوج‌گیری' };
   $: chartText = { color: 'oklch(48% 0.025 250)' };
   $: thrustOption = ({
     animationDuration: 520,
     grid: { left: 38, right: 14, top: 18, bottom: 30 },
     tooltip: { trigger: 'axis' },
-    xAxis: { type: 'category', data: result.points.map((point) => point.name), axisLabel: chartText },
+    xAxis: { type: 'category', data: result.points.map((point) => pointLabels[point.name]), axisLabel: chartText },
     yAxis: { type: 'value', name: 'N', axisLabel: chartText },
     series: [{ type: 'line', smooth: true, data: result.points.map((point) => point.thrustN), lineStyle: { color: 'oklch(52% 0.22 258)', width: 3 }, itemStyle: { color: 'oklch(52% 0.22 258)' } }]
   }) as ECharts.EChartsOption;
@@ -19,14 +20,14 @@
     animationDuration: 520,
     grid: { left: 42, right: 14, top: 18, bottom: 30 },
     tooltip: { trigger: 'axis' },
-    xAxis: { type: 'category', data: result.points.map((point) => point.name), axisLabel: chartText },
+    xAxis: { type: 'category', data: result.points.map((point) => pointLabels[point.name]), axisLabel: chartText },
     yAxis: { type: 'value', name: 'W', axisLabel: chartText },
     series: [{ type: 'bar', barMaxWidth: 34, data: result.points.map((point) => point.totalPowerW), itemStyle: { color: 'oklch(62% 0.17 42)' } }]
   }) as ECharts.EChartsOption;
 </script>
 
 <section class="results" aria-labelledby="results-heading">
-  <div class="result-heading"><div><span class="eyebrow">04 / OUTPUT</span><h2 id="results-heading">{$t('results')}</h2></div><span class="result-state">{result.warnings.filter((warning) => warning.severity === 'critical').length ? 'بررسی لازم است' : 'پایدار'}</span></div>
+  <div class="result-heading"><div><span class="eyebrow">04 / خروجی</span><h2 id="results-heading">{$t('results')}</h2></div><span class="result-state">{result.warnings.filter((warning) => warning.severity === 'critical').length ? 'بررسی لازم است' : 'پایدار'}</span></div>
   <div class="metrics">
     <article><span>{$t('flightTime')}</span><strong class="mono">{result.flightTimeMin.toFixed(1)}<small> min</small></strong></article>
     <article><span>{$t('range')}</span><strong class="mono">{result.rangeKm.toFixed(1)}<small> km</small></strong></article>

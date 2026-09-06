@@ -19,7 +19,7 @@
         <Field label={$t('rotorCount')} bind:value={input.airframe.rotorCount} min={1} step="1" />
         <Field label={$t('frameSize')} suffix="m" bind:value={input.airframe.frameSizeM} min={0.05} />
       </div>
-      <label class="select-field"><span>آرایش روتورها</span><select bind:value={input.airframe.layout}><option value="flat">Flat / هم‌صفحه</option><option value="coaxial">Coaxial / هم‌محور</option></select></label>
+      <label class="select-field"><span>آرایش روتورها</span><select bind:value={input.airframe.layout}><option value="flat">هم‌صفحه (Flat)</option><option value="coaxial">هم‌محور (Coaxial)</option></select></label>
     </section>
   {:else if activeSection === 'environment'}
     <section class="form-section" aria-labelledby="environment-heading">

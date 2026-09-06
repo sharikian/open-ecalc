@@ -7,7 +7,7 @@
 </script>
 
 <header class="topbar">
-  <div class="topbar__title"><BrandMark size={30} decorative /><div><span class="eyebrow">OPEN ECALC / {projectName}</span><strong>{title}</strong></div></div>
+  <div class="topbar__title"><BrandMark size={30} decorative /><div><span class="eyebrow">پروژه / {projectName.replace('Mission', 'مأموریت').replace('01', '01')}</span><strong>{title}</strong></div></div>
   <div class="topbar__actions">
     <button class="lang" type="button" aria-label="Change language" on:click={() => onLocaleChange(locale === 'fa' ? 'en' : 'fa')}>{locale === 'fa' ? 'EN' : 'فا'}</button>
     <span class="status"><i aria-hidden="true"></i>{locale === 'fa' ? 'آفلاین' : 'Offline'}</span>
@@ -23,4 +23,3 @@
   .status { display: inline-flex; align-items: center; gap: var(--space-xs); color: var(--color-muted); font-size: var(--text-sm); }
   .status i { width: 7px; height: 7px; border-radius: 50%; background: var(--color-success); }
 </style>
-
