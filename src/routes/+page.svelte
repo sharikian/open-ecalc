@@ -3,9 +3,9 @@
   import { calculateMission, DEFAULT_MISSION_INPUT, type MissionInput, type MissionResult } from '$core';
   import { initializeComponentCatalog } from '$data';
   import { locale, t } from '$lib/i18n';
-  import BrandMark from '$ui/BrandMark.svelte';
   import MissionForm from '$ui/MissionForm.svelte';
   import NavRail from '$ui/NavRail.svelte';
+  import Preloader from '$ui/Preloader.svelte';
   import ResultPanel from '$ui/ResultPanel.svelte';
   import TopBar from '$ui/TopBar.svelte';
 
@@ -16,7 +16,7 @@
   let catalogReady = false;
 
   onMount(async () => {
-    await initializeComponentCatalog();
+    await Promise.all([initializeComponentCatalog(), document.fonts?.ready]);
     catalogReady = true;
     ready = true;
   });
@@ -33,7 +33,7 @@
 <svelte:head><title>{$t('appName')} — Open eCalc</title></svelte:head>
 
 {#if !ready}
-  <div class="boot" aria-live="polite"><BrandMark size={52} decorative /><div class="boot__rotors" aria-hidden="true"><i></i><i></i><i></i><i></i></div><span>در حال آماده‌سازی مدل‌ها…</span></div>
+  <Preloader />
 {:else}
   <NavRail active="calculator" labels={{ calculator: $t('calculator'), components: $t('components'), settings: $t('settings') }} />
   <div class="app-frame">
@@ -52,12 +52,6 @@
 {/if}
 
 <style>
-  .boot { display: grid; min-height: 100dvh; place-content: center; justify-items: center; gap: var(--space-lg); background: var(--color-paper); color: var(--color-muted); }
-  .boot > img { animation: boot-mark var(--dur-long) var(--ease-out) both; }
-  .boot__rotors { display: flex; gap: var(--space-sm); }
-  .boot__rotors i { display: block; width: 18px; height: 18px; border: 2px solid var(--color-rule-2); border-top-color: var(--color-accent); border-radius: 50%; animation: spin 900ms var(--ease-in-out) infinite; }
-  .boot__rotors i:nth-child(2) { animation-delay: 80ms; }.boot__rotors i:nth-child(3) { animation-delay: 160ms; }.boot__rotors i:nth-child(4) { animation-delay: 240ms; }
-  @keyframes spin { to { transform: rotate(360deg); } } @keyframes boot-mark { from { opacity: 0; transform: translateY(12px) scale(0.92); } to { opacity: 1; transform: none; } }
   .app-frame { min-height: 100dvh; padding-inline-start: 76px; }
   .workbench { width: min(1500px, 100%); margin: 0 auto; padding: var(--space-xl) clamp(1rem, 4vw, 3.5rem) var(--space-3xl); }
   .workbench__intro { display: flex; align-items: end; justify-content: space-between; gap: var(--space-lg); padding-block-end: var(--space-lg); }
