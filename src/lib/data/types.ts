@@ -56,6 +56,14 @@ export interface PropellerComponent extends ComponentBase {
   bladeCount: number;
   thrustCoefficient?: number;
   powerCoefficient?: number;
+  testCurve?: PropellerTestPoint[];
+}
+
+export interface PropellerTestPoint {
+  rpm: number;
+  advanceRatio?: number;
+  thrustCoefficient: number;
+  powerCoefficient: number;
 }
 
 export type ComponentRecord = BatteryComponent | EscComponent | MotorComponent | PropellerComponent;
@@ -97,3 +105,14 @@ export interface ComponentSummary {
   licenseSpdx: string;
 }
 
+export type DatasetFormat = 'json' | 'csv' | 'uiuc-dat' | 'test-stand';
+
+export interface DatasetSource {
+  format: DatasetFormat;
+  content: string;
+  sourceUrl: string;
+  licenseSpdx: string;
+  retrievedAt?: string;
+  quality?: DataQuality;
+  defaults?: Partial<ComponentRecord>;
+}
