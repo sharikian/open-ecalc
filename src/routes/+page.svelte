@@ -37,9 +37,9 @@
 {:else}
   <NavRail active="calculator" labels={{ calculator: $t('calculator'), components: $t('components'), settings: $t('settings') }} />
   <div class="app-frame">
-    <TopBar title={$t('calculator')} projectName="Mission 01" locale={$locale} onLocaleChange={toggleLocale} />
+    <TopBar title={$t('calculator')} locale={$locale} onLocaleChange={toggleLocale} />
     <main class="workbench">
-      <section class="workbench__intro"><div><span class="eyebrow">مأموریت / 01</span><h1>بررسی مأموریت</h1><p>پارامترها را وارد کنید؛ نتیجه با مدل Legacy و افت ولتاژ محاسبه می‌شود.</p></div><div class="catalog-state"><span class:ready={catalogReady}></span>{catalogReady ? 'بانک محلی آماده' : 'بانک محلی'}</div></section>
+      <section class="workbench__intro"><div><span class="eyebrow">مأموریت / 01</span><h1>بررسی مأموریت</h1></div><div class="catalog-state"><span class:ready={catalogReady}></span>{catalogReady ? 'بانک محلی آماده' : 'بانک محلی'}</div></section>
       <div class="stepper" role="tablist" aria-label="Mission steps">
         {#each ['airframe', 'environment', 'battery', 'propulsion'] as section, index}<button type="button" role="tab" aria-selected={step === index} class:active={step === index} on:click={() => (step = index)}><span class="mono">0{index + 1}</span><span>{$t(section as 'airframe' | 'environment' | 'battery' | 'propulsion')}</span></button>{/each}
       </div>
