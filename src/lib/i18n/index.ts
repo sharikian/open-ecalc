@@ -8,7 +8,9 @@ function detectLocale(): Locale {
   if (!browser) return 'fa';
   const stored = localStorage.getItem(STORAGE_KEY);
   if (stored === 'fa' || stored === 'en') return stored;
-  return navigator.languages.some((language) => language.toLowerCase().startsWith('fa')) ? 'fa' : 'en';
+  // Persian is the product's first-run language; the user can switch to English
+  // explicitly and the choice is persisted for subsequent sessions.
+  return 'fa';
 }
 
 export const locale = writable<Locale>(detectLocale());
@@ -22,4 +24,3 @@ locale.subscribe((next) => {
 
 export const direction = derived(locale, ($locale) => ($locale === 'fa' ? 'rtl' : 'ltr'));
 export const t = derived(locale, ($locale) => (key: MessageKey) => messages[$locale][key]);
-
