@@ -1,6 +1,6 @@
 <script lang="ts">
   export let label: string;
-  export let value: number | string;
+  export let value: number | string | undefined;
   export let type: 'number' | 'text' = 'number';
   export let step = 'any';
   export let min: number | undefined = undefined;
@@ -23,4 +23,3 @@
   input:hover { background: var(--color-paper-2); }
   .field__control b { position: absolute; inset-inline-end: var(--space-sm); color: var(--color-muted); font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 400; pointer-events: none; }
 </style>
-

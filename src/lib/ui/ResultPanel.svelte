@@ -1,5 +1,6 @@
 <script lang="ts">
   import { t } from '$lib/i18n';
+  import type * as ECharts from 'echarts';
   import type { MissionInput, MissionResult } from '$core/types';
   import Chart from './Chart.svelte';
   import RotorCoverage from './RotorCoverage.svelte';
@@ -13,7 +14,7 @@
     xAxis: { type: 'category', data: result.points.map((point) => point.name), axisLabel: chartText },
     yAxis: { type: 'value', name: 'N', axisLabel: chartText },
     series: [{ type: 'line', smooth: true, data: result.points.map((point) => point.thrustN), lineStyle: { color: 'oklch(52% 0.22 258)', width: 3 }, itemStyle: { color: 'oklch(52% 0.22 258)' } }]
-  });
+  }) as ECharts.EChartsOption;
   $: powerOption = ({
     animationDuration: 520,
     grid: { left: 42, right: 14, top: 18, bottom: 30 },
@@ -21,7 +22,7 @@
     xAxis: { type: 'category', data: result.points.map((point) => point.name), axisLabel: chartText },
     yAxis: { type: 'value', name: 'W', axisLabel: chartText },
     series: [{ type: 'bar', barMaxWidth: 34, data: result.points.map((point) => point.totalPowerW), itemStyle: { color: 'oklch(62% 0.17 42)' } }]
-  });
+  }) as ECharts.EChartsOption;
 </script>
 
 <section class="results" aria-labelledby="results-heading">
@@ -63,4 +64,3 @@
   li.critical { color: var(--color-error); }
   @media (max-width: 60rem) { .chart-grid { grid-template-columns: 1fr; } }
 </style>
-
