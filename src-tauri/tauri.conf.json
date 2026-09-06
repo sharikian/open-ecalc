@@ -27,8 +27,8 @@
   "bundle": {
     "active": true,
     "targets": "all",
+    "icon": ["icons/icon.png", "icons/icon.ico"],
     "category": "Science",
     "shortDescription": "Drone mission calculator"
   }
 }
-
