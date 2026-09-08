@@ -21,7 +21,8 @@
       "licenseSpdx": "CC0-1.0",
       "retrievedAt": "2026-09-06T00:00:00.000Z",
       "sourceHash": "020b3e8548fd6c196a13545f47e703c639e4498dd8d64f824650110acee72d51",
-      "quality": "estimated"
+      "quality": "estimated",
+      "imageUrl": "/data/images/battery-lipo-pack.png"
     },
     {
       "id": "ref-battery-4s-5000",
@@ -40,7 +41,8 @@
       "licenseSpdx": "CC0-1.0",
       "retrievedAt": "2026-09-06T00:00:00.000Z",
       "sourceHash": "745f91da48c5034b240a97f3d00d9e67b0053907369c903b180f83ef1b38f41c",
-      "quality": "estimated"
+      "quality": "estimated",
+      "imageUrl": "/data/images/battery-lipo-pack.png"
     },
     {
       "id": "ref-esc-60",
@@ -57,7 +59,8 @@
       "licenseSpdx": "CC0-1.0",
       "retrievedAt": "2026-09-06T00:00:00.000Z",
       "sourceHash": "d18032e1c872f1a21d433b57af48611bba9a5cc35c87157d6b36834b2b634532",
-      "quality": "estimated"
+      "quality": "estimated",
+      "imageUrl": "/data/images/esc-high-current.png"
     },
     {
       "id": "ref-esc-100",
@@ -74,7 +77,8 @@
       "licenseSpdx": "CC0-1.0",
       "retrievedAt": "2026-09-06T00:00:00.000Z",
       "sourceHash": "226103a62940a7418eadfac175095fb03028287f3ea2d4e630d035aa2b164ef6",
-      "quality": "estimated"
+      "quality": "estimated",
+      "imageUrl": "/data/images/esc-high-current.png"
     },
     {
       "id": "ref-motor-380",
@@ -93,7 +97,8 @@
       "licenseSpdx": "CC0-1.0",
       "retrievedAt": "2026-09-06T00:00:00.000Z",
       "sourceHash": "d5f98211f44e414908628c0e0554b7ed99146c69a61e1a126b36f2e4bcd9b668",
-      "quality": "estimated"
+      "quality": "estimated",
+      "imageUrl": "/data/images/motor-brushless.png"
     },
     {
       "id": "ref-motor-720",
@@ -112,7 +117,8 @@
       "licenseSpdx": "CC0-1.0",
       "retrievedAt": "2026-09-06T00:00:00.000Z",
       "sourceHash": "6697473bb6fab83dce6822b8087d6d43a8dfcf46807d6b2cad7a983ee9e15656",
-      "quality": "estimated"
+      "quality": "estimated",
+      "imageUrl": "/data/images/motor-brushless.png"
     },
     {
       "id": "ref-prop-18x65",
