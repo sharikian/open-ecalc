@@ -78,6 +78,19 @@ export function calculateMission(input: MissionInput): MissionResult {
     : input.environment.temperatureC + motorLossPerMotorW * input.motor.thermalResistanceCPerW;
   const ceiling = estimateCeiling(input, input.targetThrustMargin);
   const warnings = collectWarnings(input, maximum, maximumLoadedVoltage, totalAvailableThrustN, weightN * input.targetThrustMargin);
+  const speedProfile = [0, 0.5, 1, 1.5].map((factor) => {
+    const speedMps = input.cruiseSpeedMps * factor;
+    const currentA = factor === 0 ? hover.totalCurrentA : cruise.totalCurrentA;
+    const timeMin = currentA > 0 ? usableAh / currentA * 60 : 0;
+    return { speedMps, flightTimeMin: Math.max(0, timeMin), rangeKm: Math.max(0, timeMin / 60 * speedMps * 3.6) };
+  });
+  const profileStart = Math.max(-500, input.environment.altitudeM);
+  const profileEnd = Math.max(profileStart + 1, Math.min(10_000, ceiling.hoverCeilingM ?? profileStart + 3000));
+  const altitudeProfile = Array.from({ length: 6 }, (_, index) => {
+    const altitudeM = profileStart + (profileEnd - profileStart) * index / 5;
+    const available = availableThrustAtAltitude(input, altitudeM);
+    return { altitudeM, availableThrustN: Math.max(0, available), thrustMargin: weightN > 0 ? available / weightN - 1 : 0 };
+  });
 
   return {
     takeoffMassKg,
@@ -93,8 +106,9 @@ export function calculateMission(input: MissionInput): MissionResult {
     totalPowerW: hover.totalPowerW,
     motorTemperatureC,
     points,
+    speedProfile,
+    altitudeProfile,
     power: { propulsiveW, ...losses, auxiliaryW },
     warnings
   };
 }
-

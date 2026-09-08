@@ -33,6 +33,16 @@ describe('mission properties', () => {
     }
   });
 
+  it('returns engineering profiles for speed and altitude charts', () => {
+    const result = calculateMission(mission());
+    expect(result.speedProfile).toHaveLength(4);
+    expect(result.speedProfile[0].speedMps).toBe(0);
+    expect(result.speedProfile.every((point) => point.flightTimeMin >= 0 && point.rangeKm >= 0)).toBe(true);
+    expect(result.altitudeProfile).toHaveLength(6);
+    expect(result.altitudeProfile[0].altitudeM).toBeLessThan(result.altitudeProfile.at(-1)!.altitudeM);
+    expect(result.altitudeProfile.every((point) => Number.isFinite(point.availableThrustN) && Number.isFinite(point.thrustMargin))).toBe(true);
+  });
+
   it('rejects a point beyond a measured curve', () => {
     const curve = [
       { throttle: 0.4, thrustN: 4, currentA: 2, voltageV: 12, rpm: 4000 },
@@ -62,4 +72,3 @@ describe('ceiling solver', () => {
     expect(result.suggestedCeilingM).toBeNull();
   });
 });
-
