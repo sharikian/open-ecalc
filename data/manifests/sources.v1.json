@@ -62,6 +62,16 @@
       "quality": "C_DATASHEET",
       "bundle": false,
       "reason": "taxonomy reference; no product images or specs copied"
+    },
+    {
+      "id": "opendronelist",
+      "kind": "aircraft-model-profiles",
+      "url": "https://github.com/dronetag/opendronelist",
+      "licenseSpdx": "MIT",
+      "status": "verified",
+      "quality": "C_DATASHEET",
+      "bundle": true,
+      "reason": "159 normalized model profiles from list.csv"
     }
   ]
 }

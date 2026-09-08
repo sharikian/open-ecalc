@@ -60,12 +60,27 @@
 | [LiionDB](https://github.com/ndrewwang/liiondb) | دادهٔ سلول و تخلیه | MIT؛ برای physics سلول، نه catalog پک تجاری |
 | [Multicopter Battery and Range Calculations](https://github.com/tzi4/Multicopter_Battery_and_Range_Calculations) | اعتبارسنجی دوام و برد | MIT؛ مرجع مدل و تست، نه کپی calibration خصوصی |
 | [PX4 airframes](https://github.com/PX4/PX4-Autopilot) | taxonomy آرایش‌های پروازی | BSD-3-Clause برای کد مرتبط؛ مشخصات محصولی از آن استخراج نمی‌شود |
+| [OpenDroneList](https://github.com/dronetag/opendronelist) | نام مدل، جرم، جرم برخاست، زمان پرواز و کلاس | MIT؛ snapshot در `data/raw/opendronelist` و ۱۵۹ پروفایل در runtime |
 | [Tyto Robotics](https://www.tytorobotics.com/pages/propeller-data) | benchmark تست‌استند | تا دریافت اجازه، bundle نمی‌شود |
 | APC / T-Motor / KDE / SplineCloud | دیتاشیت و تصاویر رسمی | permission-required؛ فقط importer یا لینک منبع |
 
 مجموعهٔ همراه فعلی فقط رکوردهای عمومی و پروژه‌نویس با برچسب `estimated` دارد.
 منابعی که مجوز یا حق بازتوزیع آن‌ها مبهم است در `data/quarantine/` و manifest
 ثبت می‌شوند، نه در خروجی وب/Tauri.
+
+## پروفایل‌های پرنده و زمان پرواز
+
+`static/data/aircraft.v1.json` از CSV اوپن‌دِرون‌لیست تولید می‌شود و ۱۵۹ مدل را
+برای جست‌وجوی داخل برنامه دربرمی‌گیرد؛ از جمله خانواده‌های Mavic، Air، Phantom،
+Matrice، eBee و Dragonfish. برای `Mavic 2 Pro` مقدار ۹۰۷ گرم و ۳۱ دقیقه و برای
+`Mavic 3` مقدار ۸۹۵ گرم، ۴۶ دقیقه، برد ۳۰ کیلومتر و سقف سرویس ۶۰۰۰ متر از صفحات
+رسمی DJI ثبت شده‌اند: [Mavic 2](https://www.dji.com/mavic-2/info) و
+[Mavic 3](https://www.dji.com/support/product/mavic-3). این اعداد شرایط آزمون
+بدون باد سازنده‌اند و با محاسبهٔ مأموریت جایگزین نمی‌شوند.
+
+فهرست runtime فقط به مولتی‌روتور محدود نیست؛ مدل‌های fixed-wing نیز با فیلد
+زمان پرواز قابل جست‌وجو هستند. تصویر گالری `aircraft-catalog-grid.png` یک تصویر
+نمونهٔ عمومی چهارپنله است و به هیچ مدل یا سازنده‌ای نسبت داده نمی‌شود.
 
 ## طبقه‌بندی فایل‌ها و تصاویر
 

@@ -8,7 +8,8 @@
     { "path": "data/images/props/propeller-lumenier-5x4-74v.png", "runtimePath": "static/data/images/propeller-lumenier-5x4-74v.png", "sourceId": "strawsondesign-motor-prop-testing" },
     { "path": "data/images/airframes/airframe-starter.png", "runtimePath": "static/data/images/airframe-starter.png", "sourceId": "multicopter-battery-range" },
     { "path": "data/images/batteries/battery-range-validation.png", "runtimePath": "static/data/images/battery-range-validation.png", "sourceId": "multicopter-battery-range" },
-    { "path": "data/images/batteries/flight-validation.png", "runtimePath": "static/data/images/flight-validation.png", "sourceId": "multicopter-battery-range" }
+    { "path": "data/images/batteries/flight-validation.png", "runtimePath": "static/data/images/flight-validation.png", "sourceId": "multicopter-battery-range" },
+    { "path": "data/images/airframes/aircraft-catalog-grid.png", "runtimePath": "static/data/images/aircraft-catalog-grid.png", "sourceId": "project-generated", "licenseSpdx": "MIT" }
   ],
   "runtimeImages": [
     { "path": "static/data/images/propeller-cyclone-t5045c-74v.png", "sourceId": "strawsondesign-motor-prop-testing", "licenseSpdx": "MIT" },
@@ -90,6 +91,16 @@
       "quality": "A_LAB",
       "bundle": false,
       "note": "full figure/MAT archive retained as downloaded; not unpacked into runtime"
+    },
+    {
+      "sourceId": "opendronelist",
+      "localPath": "data/raw/opendronelist",
+      "sourceUrl": "https://github.com/dronetag/opendronelist",
+      "fileCount": 7,
+      "licenseSpdx": "MIT",
+      "quality": "C_DATASHEET",
+      "bundle": true,
+      "note": "159 normalized aircraft profiles generated from list.csv"
     }
   ]
 }

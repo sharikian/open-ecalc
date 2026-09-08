@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenDroneList</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+  </head>
+  <body>
+    <main>
+      <h1>OpenDroneList</h1>
+
+      <p>Open-source list of drones and their properties</p>
+
+      <p>
+        <a href="https://github.com/dronetag/opendronelist"><span class="icon-github"></span> View or edit on GitHub</a>
+      </p>
+
+      <p>Available in various formats:</p>
+
+      <div class="formats">
+        <ul>
+          <li>
+            <a href="https://github.com/dronetag/opendronelist/blob/master/list.csv"
+              ><span class="icon-file-text-o"></span> Download in CSV</a
+            >
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="https://github.com/dronetag/opendronelist/releases/latest/download/manufacturers.json"
+              ><span class="icon-file-code-o"></span> Download Manufacturers in JSON</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/dronetag/opendronelist/releases/latest/download/manufacturersWithModels.json"
+              ><span class="icon-file-code-o"></span> Download Manufacturers with Models in JSON</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/dronetag/opendronelist/releases/latest/download/models.json"
+              ><span class="icon-file-code-o"></span> Download Drone Models in JSON</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <p>
+        Want to contribute to our drone database or spot incorrect information?
+        If you have a <a href="https://github.com" target="_blank">GitHub</a> account, please
+        use our
+        <a href="https://github.com/dronetag/opendronelist"
+          >GitHub repository
+        </a>
+        for contributions. For those without a GitHub account, please use our
+        <a href="form.html"> submission form</a>.
+      </p>
+
+      <table class="table table-bordered table-hover table-condensed">
+      
+        <thead>
+          <tr>
+            <th title="The aircraft manufacturer">Manufacturer  <span class="icon-info"></span></th>
+            <th title="The aircraft model name">Name  <span class="icon-info"></span></th>
+            <th title="The aircraft model UAS Class">Class  <span class="icon-info"></span></th>
+            <th title="The aircraft model weight in grams">Weight (grams)  <span class="icon-info"></span></th>
+            <th title="The aircraft model max takeoff weight in grams">Max Takeoff (grams)  <span class="icon-info"></span></th>
+            <th title="The aircraft model endurance in minutes">Endurance (minutes)  <span class="icon-info"></span></th>
+            <th title="Does the aircraft model have a camera">Has Camera  <span class="icon-info"></span></th>
+            <th title="Is the aircraft model a toy">Is Toy  <span class="icon-info"></span></th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for model in models %}
+            <tr>
+              <td>{{model.manufacturer}}</td>
+              <td>{{model.name}}</td>
+              <td>{{model.uas_class}}</td>
+              <td align="right">{{model.weight}}</td>
+              <td align="right">{{model.max_takeoff}}</td>
+              <td align="right">{{model.endurance}}</td>
+              <td>
+                {{ ('✔️ Yes' if model.has_camera else '❌ No') if model.has_camera is not none }}
+              </td>
+              <td>
+                {{ ('✔️ Yes' if model.is_toy else '❌ No') if model.is_toy is not none }}
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      <p>
+        Didn't find the drone you were looking for? Or have you noticed any
+        inaccuracies in our information? If you have a
+        <a href="https://github.com" target="_blank">GitHub</a> account, please consider
+        contributing through our
+        <a href="https://github.com/dronetag/opendronelist">GitHub repository</a
+        >. For those without a GitHub account, kindly use our
+        <a href="form.html"> submission form</a> to help us improve.
+      </p>
+
+      <footer>
+        Created and maintained by
+        <a href="https://dronetag.cz">Dronetag</a>
+      </footer>
+    </main>
+  </body>
+</html>

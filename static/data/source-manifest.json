@@ -66,6 +66,14 @@
       "note": "Taxonomy reference only; no product specifications copied"
     },
     {
+      "name": "OpenDroneList",
+      "url": "https://github.com/dronetag/opendronelist",
+      "licenseSpdx": "MIT",
+      "included": true,
+      "recordCount": 159,
+      "note": "Normalized model profiles; generic catalog image only"
+    },
+    {
       "name": "UIUC Propeller Database",
       "url": "https://m-selig.ae.illinois.edu/props/propDB.html",
       "licenseSpdx": "NOASSERTION",

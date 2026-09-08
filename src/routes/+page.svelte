@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { calculateLegacyExcel, calculateMission, DEFAULT_MISSION_INPUT, type LegacyInput, type LegacyResult, type MissionInput, type MissionResult } from '$core';
-  import { initializeComponentCatalog } from '$data';
+  import { initializeAircraftCatalog, initializeComponentCatalog } from '$data';
   import LegacyResults from '$ui/LegacyResults.svelte';
   import ComponentGallery from '$ui/ComponentGallery.svelte';
   import MissionForm from '$ui/MissionForm.svelte';
@@ -37,7 +37,7 @@
     const storedTheme = localStorage.getItem('open-ecalc.theme');
     theme = storedTheme === 'dark' ? 'dark' : 'light';
     document.documentElement.dataset.theme = theme;
-    await Promise.all([initializeComponentCatalog(), document.fonts?.ready]);
+    await Promise.all([initializeComponentCatalog(), initializeAircraftCatalog(), document.fonts?.ready]);
     ready = true;
   });
 
