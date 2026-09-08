@@ -152,6 +152,8 @@
   .picker-sheet { overscroll-behavior: contain; touch-action: pan-y; min-height: 0; align-self: end; transform-origin: bottom center; }
   .picker-sheet > header { flex: 0 0 auto; }
   .picker-list { min-height: 0; scrollbar-gutter: stable; }
+  .setup-card.active { animation: card-in var(--normal) var(--ease) both; }
+  @keyframes card-in { from { opacity: 0; transform: translateY(9px); } to { opacity: 1; transform: none; } }
   .picker-list { overscroll-behavior: contain; -webkit-overflow-scrolling: touch; touch-action: pan-y; }
   @media (max-width: 560px) { .picker-sheet { width: 100%; margin: 0; } }
 </style>
