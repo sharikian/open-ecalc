@@ -8,6 +8,18 @@
   export let result: MissionResult | null = null;
   export let input: MissionInput;
   const labels = { hover: 'هاور', cruise: 'کروز', climb: 'اوج‌گیری' };
+  const warningLabels: Record<string, string> = {
+    'battery-continuous-current': 'جریان دائم باتری',
+    'battery-burst-current': 'جریان لحظه‌ای باتری',
+    'esc-continuous-current': 'جریان دائم ESC',
+    'esc-burst-current': 'جریان لحظه‌ای ESC',
+    'motor-current': 'جریان مجاز موتور',
+    'motor-power': 'توان مجاز موتور',
+    'voltage-sag': 'افت ولتاژ باتری',
+    'insufficient-thrust': 'رانش ناکافی',
+    'propeller-clearance': 'فاصلهٔ آزاد ملخ',
+    'missing-thermal-data': 'دادهٔ حرارتی موتور ناقص'
+  };
   $: curveOption = result ? ({
     animationDuration: 680,
     animationEasing: 'cubicOut',
@@ -43,7 +55,7 @@
     <div class="metrics"><article><span class="metric__icon metric__icon--green"><Icon name="clock" size={23} /></span><div><small>{$t('flightTime')}</small><strong class="data">{result.flightTimeMin.toFixed(1)} <em>min</em></strong></div></article><article><span class="metric__icon metric__icon--blue"><Icon name="pin" size={23} /></span><div><small>{$t('range')}</small><strong class="data">{result.rangeKm.toFixed(1)} <em>km</em></strong></div></article><article><span class="metric__icon metric__icon--orange"><Icon name="rocket" size={23} /></span><div><small>رانش به وزن</small><strong class="data">{result.thrustToWeight.toFixed(1)} <em>: 1</em></strong></div></article><article><span class="metric__icon metric__icon--yellow"><Icon name="bolt" size={23} /></span><div><small>توان کل</small><strong class="data">{result.totalPowerW.toFixed(0)} <em>W</em></strong></div></article><article><span class="metric__icon metric__icon--purple"><Icon name="ceiling" size={23} /></span><div><small>{$t('ceiling')}</small><strong class="data">{result.ceilingM == null ? '—' : result.ceilingM} <em>{result.ceilingM == null ? '' : 'm'}</em></strong></div></article></div>
     <div class="chart-grid"><article><div class="chart-head"><h3>رانش در نقطه‌های کاری</h3><span class="data">N</span></div>{#if curveOption}<Chart option={curveOption} />{/if}</article><article><div class="chart-head"><h3>جریان و توان</h3><span class="data">A · W</span></div>{#if currentOption}<Chart option={currentOption} />{/if}</article><article class="chart-grid__power"><div class="chart-head"><h3>توزیع توان</h3><span class="data">{result.totalPowerW.toFixed(0)} W</span></div>{#if powerOption}<Chart option={powerOption} />{/if}</article></div>
     <article class="coverage"><div class="chart-head"><h3>پوشش روتورها</h3><span class="data">{(result.thrustMargin * 100).toFixed(0)}%</span></div><RotorCoverage rotorCount={input.airframe.rotorCount} frameSizeM={input.airframe.frameSizeM} propellerDiameterM={input.propeller.diameterM} layout={input.airframe.layout} /></article>
-    <article class="warnings"><div class="chart-head"><h3>{$t('warnings')}</h3><span class="data">{result.warnings.length}</span></div>{#if result.warnings.length === 0}<p>موردی برای بررسی نیست.</p>{:else}<ul>{#each result.warnings as warning}<li class:critical={warning.severity === 'critical'}><b>{warning.severity === 'critical' ? '!' : '·'}</b><span>{warning.code}</span></li>{/each}</ul>{/if}</article>
+    <article class="warnings"><div class="chart-head"><h3>{$t('warnings')}</h3><span class="data">{result.warnings.length}</span></div>{#if result.warnings.length === 0}<p>موردی برای بررسی نیست.</p>{:else}<ul>{#each result.warnings as warning}<li class:critical={warning.severity === 'critical'}><b>{warning.severity === 'critical' ? '!' : '·'}</b><span>{warningLabels[warning.code] ?? 'نیازمند بررسی'}</span></li>{/each}</ul>{/if}</article>
   {/if}
 </section>
 
