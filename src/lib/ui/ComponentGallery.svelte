@@ -14,6 +14,9 @@
     { key: 'battery', label: 'باتری‌ها', icon: '▣' }
   ] as const;
   const qualityLabel: Record<string, string> = { estimated: 'برآوردی', community: 'جامعه', manufacturer: 'سازنده', verified: 'تأییدشده' };
+  function aircraftImage(url: string | undefined): string {
+    return url && !url.includes('aircraft-catalog-grid') && !url.includes('airframe-starter') ? url : '/data/images/aircraft-product.png';
+  }
 </script>
 
 <section class="catalog" aria-labelledby="catalog-title">
@@ -28,12 +31,12 @@
     {/each}
   </div>
   <section class="aircraft-section" aria-labelledby="aircraft-title">
-    <header class="section-head"><div><span class="eyebrow">پروفایل پرنده</span><h2 id="aircraft-title">مدل‌های شناخته‌شده</h2><p>نام، جرم و زمان پرواز از فهرست عمومی پرنده‌ها</p></div><strong class="data">{aircraft.length} مدل</strong></header>
+    <header class="section-head"><div><span class="eyebrow">بدنه‌ها</span><h2 id="aircraft-title">فهرست بدنه‌ها</h2><p>جست‌وجو و انتخاب از رکوردهای محلی</p></div><strong class="data">{aircraft.length} مدل</strong></header>
     <div class="aircraft-grid">
       {#each aircraftFiltered.slice(0, 12) as item}
         <article class="aircraft-card">
-          <img src={item.imageUrl} alt="" />
-          <div class="aircraft-card__body"><div class="aircraft-card__title"><strong>{item.manufacturer} {item.model}</strong><span class="quality">{item.quality === 'manufacturer' ? 'سازنده' : 'جامعه'}</span></div><div class="aircraft-specs"><span><b>{item.massKg ? `${(item.massKg * 1000).toFixed(0)} g` : '—'}</b><small>جرم</small></span><span><b>{item.enduranceMin ? `${item.enduranceMin} min` : '—'}</b><small>زمان پرواز</small></span><span><b>{item.maxFlightDistanceKm ? `${item.maxFlightDistanceKm} km` : '—'}</b><small>برد</small></span></div></div>
+          <img src={aircraftImage(item.imageUrl)} alt="" />
+          <div class="aircraft-card__body"><div class="aircraft-card__title"><strong>{item.manufacturer} {item.model}</strong><span class="quality">{item.quality === 'manufacturer' ? 'سازنده' : 'جامعه'}</span></div><div class="aircraft-specs"><span><b>{item.massKg ? `${(item.massKg * 1000).toFixed(0)} g` : '—'}</b><small>وزن</small></span><span><b>{item.enduranceMin ? `${item.enduranceMin} min` : '—'}</b><small>زمان پرواز</small></span><span><b>{item.maxFlightDistanceKm ? `${item.maxFlightDistanceKm} km` : '—'}</b><small>برد</small></span></div></div>
         </article>
       {:else}<div class="kind-empty">مدلی با این جست‌وجو پیدا نشد</div>{/each}
     </div>
