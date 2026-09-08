@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
+    "data:aircraft": "node scripts/build-aircraft-data.mjs",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "test": "vitest run",
@@ -31,4 +32,3 @@
   },
   "packageManager": "pnpm@10.15.0"
 }
-
