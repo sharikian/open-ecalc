@@ -39,7 +39,7 @@
 
   onMount(async () => {
     const storedLanguage = localStorage.getItem('open-ecalc.language') ?? localStorage.getItem('open-ecalc.locale');
-    const language = storedLanguage === 'fa' || storedLanguage === 'en' ? storedLanguage : 'fa';
+    const language = storedLanguage === 'fa' || storedLanguage === 'en' ? storedLanguage : (navigator.languages?.some((item) => item.toLowerCase().startsWith('fa')) ? 'fa' : 'en');
     document.documentElement.lang = language;
     document.documentElement.dir = language === 'fa' ? 'rtl' : 'ltr';
     const storedTheme = localStorage.getItem('open-ecalc.theme');

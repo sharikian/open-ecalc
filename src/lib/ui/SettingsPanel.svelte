@@ -10,7 +10,7 @@
     const storedUnits = localStorage.getItem('open-ecalc.units');
     const storedLanguage = localStorage.getItem('open-ecalc.language');
     if (storedUnits === 'metric' || storedUnits === 'imperial') units = storedUnits;
-    const detected: 'fa' | 'en' = 'fa';
+    const detected: 'fa' | 'en' = navigator.languages?.some((item) => item.toLowerCase().startsWith('fa')) ? 'fa' : 'en';
     language = storedLanguage === 'fa' || storedLanguage === 'en' ? storedLanguage : detected;
     applyLanguage(language);
   });
