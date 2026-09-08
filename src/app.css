@@ -3,14 +3,14 @@
 @font-face { font-family: "Vazir"; src: url('/fonts/Vazir.woff2') format('woff2'); font-display: swap; font-style: normal; font-weight: 100 900; }
 
 :root {
-  --paper: oklch(96.5% 0.012 248); --paper-deep: oklch(93% 0.018 248);
-  --surface: oklch(99.5% 0.004 248); --surface-strong: oklch(100% 0.002 248);
-  --ink: oklch(18% 0.025 250); --ink-soft: oklch(39% 0.025 250); --muted: oklch(53% 0.025 250);
-  --line: oklch(87% 0.024 248); --line-strong: oklch(78% 0.035 248);
-  --blue: oklch(54% 0.22 258); --blue-soft: oklch(91% 0.06 258); --blue-ink: oklch(30% 0.13 258);
-  --orange: oklch(66% 0.18 48); --orange-soft: oklch(94% 0.06 48); --green: oklch(52% 0.15 150); --danger: oklch(53% 0.19 25);
+  --paper: #f5f9fd; --paper-deep: #eaf2fc;
+  --surface: #ffffff; --surface-strong: #ffffff;
+  --ink: #071744; --ink-soft: #304a79; --muted: #60769d;
+  --line: #d7e4f5; --line-strong: #a7bddc; --input-line: #c9daf2;
+  --blue: #1167fa; --blue-soft: #e8f1ff; --blue-ink: #073da8;
+  --orange: #f28b22; --orange-soft: #fff2dc; --green: #18b879; --yellow: #f4b414; --purple: #8d63e8; --danger: #e04b4b;
   --font-ui: "Vazir", ui-sans-serif, system-ui, sans-serif; --font-data: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
-  --radius: 16px; --radius-small: 10px; --shadow: 0 10px 30px oklch(20% 0.03 248 / 0.06); --shadow-soft: 0 2px 12px oklch(20% 0.03 248 / 0.04);
+  --radius: 14px; --radius-small: 9px; --shadow: 0 8px 24px rgba(27, 74, 144, .08); --shadow-soft: 0 2px 9px rgba(27, 74, 144, .06);
   --ease: cubic-bezier(0.16, 1, 0.3, 1); --fast: 160ms; --normal: 280ms; --slow: 480ms;
 }
 
@@ -20,4 +20,5 @@ html { overflow-x: clip; background: var(--paper); color-scheme: light; } html[d
 body { min-width: 320px; margin: 0; overflow-x: clip; background: var(--paper); color: var(--ink); font-family: var(--font-ui); font-size: 16px; line-height: 1.5; transition: background-color var(--normal) var(--ease), color var(--normal) var(--ease); }
 *, *::before, *::after { box-sizing: border-box; } button, input, select { font: inherit; } button { cursor: pointer; }
 :focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; } .data { font-family: var(--font-data); font-variant-numeric: tabular-nums; }
+h1, h2, h3, strong { font-weight: 800; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 120ms !important; transition-duration: 120ms !important; } }
