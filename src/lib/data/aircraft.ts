@@ -1,5 +1,13 @@
 import { applyAircraftOverride } from './overrides';
 
+const CUSTOM_KEY = 'open-ecalc.custom-airframes';
+const HIDDEN_KEY = 'open-ecalc.hidden-components';
+
+function read<T>(key: string, fallback: T): T {
+  if (typeof localStorage === 'undefined') return fallback;
+  try { return JSON.parse(localStorage.getItem(key) ?? '') as T; } catch { return fallback; }
+}
+
 export interface AircraftProfile {
   id: string;
   manufacturer: string;
@@ -41,7 +49,8 @@ export function initializeAircraftCatalog(): Promise<AircraftProfile[]> {
     })
     .then((dataset) => {
       if (dataset.schemaVersion !== 1 || !Array.isArray(dataset.records)) throw new Error('Aircraft dataset schema is invalid');
-      aircraft = dataset.records;
+      const hidden = new Set(read<string[]>(HIDDEN_KEY, []));
+      aircraft = [...dataset.records, ...read<AircraftProfile[]>(CUSTOM_KEY, [])].filter((record) => !hidden.has(record.id));
       return aircraft;
     });
   return aircraftPromise;
@@ -57,4 +66,10 @@ export function queryAircraft(text = ''): AircraftProfile[] {
 export function getAircraft(id: string): AircraftProfile | undefined {
   const record = aircraft.find((item) => item.id === id);
   return record ? applyAircraftOverride(record) : undefined;
+}
+
+export function saveCustomAircraft(record: AircraftProfile): void {
+  const all = read<AircraftProfile[]>(CUSTOM_KEY, []).filter((item) => item.id !== record.id);
+  all.push(record); localStorage.setItem(CUSTOM_KEY, JSON.stringify(all));
+  aircraft = [...aircraft.filter((item) => item.id !== record.id), record];
 }

@@ -2,10 +2,11 @@
   export let value = 0;
   export let onChange: (step: number) => void;
   export let canOpen: (step: number) => boolean = () => true;
-  const labels = ['بدنه', 'محیط', 'باتری', 'پیشران'];
+  import { locale } from '$lib/i18n';
+  $: labels = $locale === 'en' ? ['Airframe', 'Environment', 'Battery', 'Propulsion'] : ['بدنه', 'محیط', 'باتری', 'پیشران'];
 </script>
 
-<div class="steps" role="tablist" aria-label="مراحل محاسبه" style={`--step: ${value}`}>
+<div class="steps" role="tablist" aria-label={$locale === 'en' ? 'Calculation steps' : 'مراحل محاسبه'} style={`--step: ${value}`}>
   <div class="steps__track" aria-hidden="true"><i></i></div>
   {#each labels as label, index}
     <button type="button" role="tab" aria-selected={value === index} aria-disabled={!canOpen(index)} disabled={!canOpen(index)} class:done={index < value} class:locked={!canOpen(index)} on:click={() => canOpen(index) && onChange(index)}>
