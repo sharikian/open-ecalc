@@ -4,7 +4,7 @@ import type { ComponentDatasetV1 } from './types';
 let seedPromise: Promise<ComponentDatasetV1> | undefined;
 
 export function loadSeedDataset(): Promise<ComponentDatasetV1> {
-  seedPromise ??= fetch('/data/components.v1.json')
+  seedPromise ??= fetch('/data/components.v1.json?v=2026.09-catalog2')
     .then((response) => {
       if (!response.ok) throw new Error(`Component dataset unavailable (${response.status})`);
       return response.json() as Promise<unknown>;
