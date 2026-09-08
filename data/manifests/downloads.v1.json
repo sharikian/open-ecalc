@@ -2,6 +2,14 @@
   "schemaVersion": 1,
   "retrievedAt": "2026-09-08T00:00:00.000Z",
   "policy": "raw-snapshot-not-runtime-bundle",
+  "imageCatalog": [
+    { "path": "data/images/props/propeller-cyclone-t5045c-74v.png", "runtimePath": "static/data/images/propeller-cyclone-t5045c-74v.png", "sourceId": "strawsondesign-motor-prop-testing" },
+    { "path": "data/images/props/propeller-gemfan-5x45-111v.png", "runtimePath": "static/data/images/propeller-gemfan-5x45-111v.png", "sourceId": "strawsondesign-motor-prop-testing" },
+    { "path": "data/images/props/propeller-lumenier-5x4-74v.png", "runtimePath": "static/data/images/propeller-lumenier-5x4-74v.png", "sourceId": "strawsondesign-motor-prop-testing" },
+    { "path": "data/images/airframes/airframe-starter.png", "runtimePath": "static/data/images/airframe-starter.png", "sourceId": "multicopter-battery-range" },
+    { "path": "data/images/batteries/battery-range-validation.png", "runtimePath": "static/data/images/battery-range-validation.png", "sourceId": "multicopter-battery-range" },
+    { "path": "data/images/batteries/flight-validation.png", "runtimePath": "static/data/images/flight-validation.png", "sourceId": "multicopter-battery-range" }
+  ],
   "runtimeImages": [
     { "path": "static/data/images/propeller-cyclone-t5045c-74v.png", "sourceId": "strawsondesign-motor-prop-testing", "licenseSpdx": "MIT" },
     { "path": "static/data/images/propeller-gemfan-5x45-111v.png", "sourceId": "strawsondesign-motor-prop-testing", "licenseSpdx": "MIT" },
