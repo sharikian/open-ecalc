@@ -7,7 +7,7 @@
   src="/icons/open-ecalc-logo.png"
   width={size}
   height={size}
-  alt={decorative ? '' : 'Open eCalc'}
+  alt={decorative ? '' : 'محاسب پهپاد'}
   aria-hidden={decorative ? 'true' : undefined}
   style={`--brand-size: ${size}px`}
   class="brand-mark"

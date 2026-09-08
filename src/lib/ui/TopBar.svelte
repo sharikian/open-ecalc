@@ -8,7 +8,7 @@
 <header class="topbar">
   <div class="topbar__title"><BrandMark size={30} decorative /><div><strong>{title}</strong></div></div>
   <div class="topbar__actions">
-    <button class="lang" type="button" aria-label="Change language" on:click={() => onLocaleChange(locale === 'fa' ? 'en' : 'fa')}>{locale === 'fa' ? 'EN' : 'فا'}</button>
+    <button class="lang" type="button" aria-label={locale === 'fa' ? 'تغییر زبان' : 'Change language'} on:click={() => onLocaleChange(locale === 'fa' ? 'en' : 'fa')}>{locale === 'fa' ? 'EN' : 'فا'}</button>
     <span class="status"><i aria-hidden="true"></i>{locale === 'fa' ? 'آفلاین' : 'Offline'}</span>
   </div>
 </header>
