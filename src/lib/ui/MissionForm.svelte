@@ -17,7 +17,7 @@
 
 <section class="setup" aria-label="پارامترهای پرواز">
   <article class="setup-card" class:active={step === 0}>
-    <header><span class="card-icon">⌘</span><div><h2>بدنهٔ پرنده</h2><p>ابعاد و جرم سازه</p></div><b class="data">01</b></header>
+    <header><span class="card-icon">⌘</span><div><h2>بدنهٔ پرنده</h2><p>مشخصات سازه</p></div><b class="data">01</b></header>
     <div class="fields">
       <Field label="وزن خالی" suffix="kg" bind:value={input.airframe.emptyMassKg} min={0} />
       <Field label="محموله" suffix="kg" bind:value={input.airframe.payloadMassKg} min={0} />
