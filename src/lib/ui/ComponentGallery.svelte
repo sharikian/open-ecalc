@@ -17,11 +17,14 @@
     title: 'قطعات', count: 'رکورد', result: 'نتیجه', add: 'افزودن رکورد', search: 'نام، سازنده یا نوع قطعه', filters: 'فیلتر نوع قطعه', previous: 'صفحهٔ قبل', next: 'صفحهٔ بعد', empty: 'رکوردی با این جست‌وجو پیدا نشد.', close: 'بستن', save: 'ثبت تغییرات', addComponent: 'افزودن قطعه', addAirframe: 'افزودن بدنه', addEnvironment: 'افزودن محیط', editComponent: 'ویرایش قطعه', editAirframe: 'ویرایش بدنه', editEnvironment: 'ویرایش محیط', editName: 'ویرایش نام', manufacturer: 'سازنده', model: 'مدل', province: 'استان', place: 'نام مکان', description: 'توضیحات', category: 'دسته', gallery: 'انتخاب از گالری', imageCurrent: 'تصویر فعلی · برای جایگزینی انتخاب کنید', imageHint: 'فایل PNG، JPG یا WebP را انتخاب کنید', addImage: 'افزودن تصویر', imageOptional: 'اختیاری · PNG، JPG یا WebP', required: 'مقدار لازم', imageReplace: 'انتخاب تصویر دیگر', imageNone: 'بدون تصویر', delete: 'حذف', cancel: 'لغو', deleteQuestion: 'حذف'
   };
   const kindIcon: Record<FilterKind, 'battery' | 'motor' | 'propeller' | 'sliders' | 'drone' | 'filter' | 'map'> = { all: 'filter', battery: 'battery', motor: 'motor', propeller: 'propeller', esc: 'sliders', airframe: 'drone', environment: 'map' };
-  $: baseRows = [
-    ...queryComponents().map((item) => ({ id: item.id, kind: item.kind, manufacturer: item.manufacturer, model: item.model, quality: item.quality, source: item.licenseSpdx, detail: $locale === 'en' ? (item.kind === 'battery' ? 'Cell and pack' : item.kind === 'motor' ? 'Brushless motor' : item.kind === 'propeller' ? 'Propeller profile' : 'Controller') : (item.kind === 'battery' ? 'سلول و پک' : item.kind === 'motor' ? 'موتور براشلس' : item.kind === 'propeller' ? 'پروفایل ملخ' : 'کنترل‌کننده'), imageUrl: item.imageUrl })),
-    ...queryAircraft().map((item) => ({ id: item.id, kind: 'airframe' as const, manufacturer: item.manufacturer, model: item.model, quality: item.quality, source: item.licenseSpdx, detail: item.classLabel || ($locale === 'en' ? 'Aircraft frame' : 'بدنهٔ پرنده'), imageUrl: item.imageUrl })),
-    ...queryLocations().map((item) => ({ id: item.id, kind: 'environment' as const, manufacturer: ($locale === 'en' ? item.provinceEn : item.provinceFa) ?? '', model: $locale === 'en' ? item.nameEn : item.nameFa, quality: item.quality, source: item.licenseSpdx, detail: $locale === 'en' ? (item.descriptionEn || `${item.altitudeM} m altitude`) : (item.descriptionFa || `ارتفاع ${item.altitudeM} m`), imageUrl: item.imageUrl }))
-  ] as Row[];
+  $: baseRows = (() => {
+    catalogRevision;
+    return [
+      ...queryComponents().map((item) => ({ id: item.id, kind: item.kind, manufacturer: item.manufacturer, model: item.model, quality: item.quality, source: item.licenseSpdx, detail: $locale === 'en' ? (item.kind === 'battery' ? 'Cell and pack' : item.kind === 'motor' ? 'Brushless motor' : item.kind === 'propeller' ? 'Propeller profile' : 'Controller') : (item.kind === 'battery' ? 'سلول و پک' : item.kind === 'motor' ? 'موتور براشلس' : item.kind === 'propeller' ? 'پروفایل ملخ' : 'کنترل‌کننده'), imageUrl: item.imageUrl })),
+      ...queryAircraft().map((item) => ({ id: item.id, kind: 'airframe' as const, manufacturer: item.manufacturer, model: item.model, quality: item.quality, source: item.licenseSpdx, detail: item.classLabel || ($locale === 'en' ? 'Aircraft frame' : 'بدنهٔ پرنده'), imageUrl: item.imageUrl })),
+      ...queryLocations().map((item) => ({ id: item.id, kind: 'environment' as const, manufacturer: ($locale === 'en' ? item.provinceEn : item.provinceFa) ?? '', model: $locale === 'en' ? item.nameEn : item.nameFa, quality: item.quality, source: item.licenseSpdx, detail: $locale === 'en' ? (item.descriptionEn || `${item.altitudeM} m altitude`) : (item.descriptionFa || `ارتفاع ${item.altitudeM} m`), imageUrl: item.imageUrl }))
+    ] as Row[];
+  })();
   const fields: Record<ComponentKind, EditorField[]> = {
     battery: [{ key: 'capacityAh', label: 'ظرفیت', unit: 'Ah' }, { key: 'nominalVoltageV', label: 'ولتاژ', unit: 'V' }, { key: 'continuousC', label: 'C-rate', unit: 'C' }, { key: 'massKg', label: 'جرم', unit: 'kg' }],
     motor: [{ key: 'kv', label: 'KV', unit: 'rpm/V' }, { key: 'maxCurrentA', label: 'جریان بیشینه', unit: 'A' }, { key: 'maxPowerW', label: 'توان بیشینه', unit: 'W' }, { key: 'massKg', label: 'جرم', unit: 'kg' }],
@@ -63,6 +66,7 @@
   let editorLocationValues: Record<string, string> = {};
   let editorInvalidFields: string[] = [];
   let galleryOpen = false;
+  let catalogRevision = 0;
   const galleryImages = [
     { kind: 'battery', src: '/data/images/battery-lipo-pack.png', label: 'LiPo' },
     { kind: 'battery', src: '/data/images/battery-liion-pack.png', label: 'Li-ion' },
@@ -194,6 +198,7 @@
     } else if (editorMode === 'edit') saveComponentOverride(editorId, { manufacturer: editorManufacturer.trim(), model: editorModel.trim(), imageUrl: editorImage || undefined, ...Object.fromEntries(editorFields.map((field) => [field.key, Number(editorValues[field.key])] )) });
     else { const record = buildRecord(); saveCustomComponent(record); customRows = [...customRows, { id: record.id, kind: record.kind, manufacturer: record.manufacturer, model: record.model, quality: record.quality, source: record.licenseSpdx, detail: kindLabel[record.kind], imageUrl: record.imageUrl }]; }
     editorOpen = false;
+    catalogRevision += 1;
   }
   function requestDelete(row: Row) { deleteTarget = row; }
   function confirmDelete() {
@@ -201,6 +206,7 @@
     if (deleteTarget.kind === 'environment') hideLocation(deleteTarget.id); else hideComponent(deleteTarget.id);
     hiddenIds = [...hiddenIds, deleteTarget.id];
     customRows = customRows.filter((row) => row.id !== deleteTarget?.id);
+    catalogRevision += 1;
     deleteTarget = null;
   }
   function previousPage() { page = Math.max(1, page - 1); }
