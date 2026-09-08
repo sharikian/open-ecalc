@@ -39,13 +39,14 @@ export function queryComponentRecords(filter: ComponentFilter = {}): ComponentRe
 }
 
 export function queryComponents(filter: ComponentFilter = {}): ComponentSummary[] {
-  return queryComponentRecords(filter).map(({ id, kind, manufacturer, model, quality, licenseSpdx }) => ({
+  return queryComponentRecords(filter).map(({ id, kind, manufacturer, model, quality, licenseSpdx, imageUrl }) => ({
     id,
     kind,
     manufacturer,
     model,
     quality,
-    licenseSpdx
+    licenseSpdx,
+    imageUrl
   }));
 }
 
@@ -55,4 +56,3 @@ export function componentKinds(): Array<{ kind: ComponentRecord['kind']; count: 
     count: records.filter((record) => record.kind === kind).length
   }));
 }
-

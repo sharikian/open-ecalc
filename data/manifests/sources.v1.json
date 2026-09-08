@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-08T00:00:00.000Z",
+  "policy": "metadata-only-until-redistribution-confirmed",
+  "sources": [
+    {
+      "id": "strawsondesign-motor-prop-testing",
+      "kind": "motor-prop-test-curves",
+      "url": "https://github.com/StrawsonDesign/motor_propeller_testing",
+      "licenseSpdx": "MIT",
+      "status": "candidate",
+      "quality": "A_LAB",
+      "bundle": false,
+      "reason": "snapshot and attribution review pending"
+    },
+    {
+      "id": "pythrust",
+      "kind": "motors-propellers",
+      "url": "https://github.com/Setuav/PyThrust",
+      "licenseSpdx": "Apache-2.0",
+      "status": "candidate",
+      "quality": "B_INDEPENDENT_TEST",
+      "bundle": false,
+      "reason": "upstream licence must be checked per record"
+    },
+    {
+      "id": "uavdb-org",
+      "kind": "airframes-flight-data-propellers",
+      "url": "https://uavdb.org/",
+      "licenseSpdx": "NOASSERTION",
+      "status": "quarantine",
+      "quality": "A_LAB",
+      "bundle": false,
+      "reason": "free download with citation; retain site attribution and review asset terms"
+    },
+    {
+      "id": "liiondb",
+      "kind": "battery-cells-discharge-curves",
+      "url": "https://github.com/ndrewwang/liiondb",
+      "licenseSpdx": "MIT",
+      "status": "candidate",
+      "quality": "A_LAB",
+      "bundle": false,
+      "reason": "cell physics source; normalize paper-level provenance"
+    },
+    {
+      "id": "uiuc-propdb",
+      "kind": "propeller-curves",
+      "url": "https://m-selig.ae.illinois.edu/props/propDB.html",
+      "licenseSpdx": "NOASSERTION",
+      "status": "quarantine",
+      "quality": "A_LAB",
+      "bundle": false,
+      "reason": "public download is not proof of redistribution permission"
+    },
+    {
+      "id": "px4-airframes",
+      "kind": "airframe-taxonomy",
+      "url": "https://github.com/PX4/PX4-Autopilot",
+      "licenseSpdx": "BSD-3-Clause",
+      "status": "metadata-only",
+      "quality": "C_DATASHEET",
+      "bundle": false,
+      "reason": "taxonomy reference; no product images or specs copied"
+    }
+  ]
+}

@@ -15,6 +15,8 @@ export interface ComponentBase extends Provenance {
   manufacturer: string;
   model: string;
   tags: string[];
+  /** Optional local asset; only set when the source licence allows bundling. */
+  imageUrl?: string;
 }
 
 export interface BatteryComponent extends ComponentBase {
@@ -103,6 +105,7 @@ export interface ComponentSummary {
   model: string;
   quality: DataQuality;
   licenseSpdx: string;
+  imageUrl?: string;
 }
 
 export type DatasetFormat = 'json' | 'csv' | 'uiuc-dat' | 'test-stand';
