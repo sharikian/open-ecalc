@@ -1,3 +1,5 @@
+import { applyAircraftOverride } from './overrides';
+
 export interface AircraftProfile {
   id: string;
   manufacturer: string;
@@ -47,6 +49,12 @@ export function initializeAircraftCatalog(): Promise<AircraftProfile[]> {
 
 export function queryAircraft(text = ''): AircraftProfile[] {
   const needle = text.trim().toLocaleLowerCase('fa');
-  if (!needle) return aircraft;
-  return aircraft.filter((record) => `${record.manufacturer} ${record.model} ${record.classLabel}`.toLocaleLowerCase('fa').includes(needle));
+  const source = aircraft.map(applyAircraftOverride);
+  if (!needle) return source;
+  return source.filter((record) => `${record.manufacturer} ${record.model} ${record.classLabel}`.toLocaleLowerCase('fa').includes(needle));
+}
+
+export function getAircraft(id: string): AircraftProfile | undefined {
+  const record = aircraft.find((item) => item.id === id);
+  return record ? applyAircraftOverride(record) : undefined;
 }
