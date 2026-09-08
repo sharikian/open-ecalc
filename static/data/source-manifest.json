@@ -30,16 +30,18 @@
       "name": "LiionDB",
       "url": "https://github.com/ndrewwang/liiondb",
       "licenseSpdx": "MIT",
-      "included": false,
-      "note": "Candidate battery source; records require provenance normalization before bundling"
+      "included": true,
+      "recordCount": 24,
+      "note": "MIT cell-model templates normalized into pack presets; not manufacturer product claims"
     },
     {
       "name": "StrawsonDesign motor/propeller testing",
       "url": "https://github.com/StrawsonDesign/motor_propeller_testing",
       "licenseSpdx": "MIT",
-      "included": false,
+      "included": true,
+      "recordCount": 412,
       "quality": "A_LAB",
-      "note": "Candidate test-stand curves; snapshot and attribution review pending"
+      "note": "208 MIT test-stand CSV files normalized into motor and propeller records"
     },
     {
       "name": "PyThrust",
