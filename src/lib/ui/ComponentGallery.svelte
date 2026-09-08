@@ -131,7 +131,7 @@
   function openEditor(row: Row) {
     if (row.kind === 'environment') {
       const record = getLocation(row.id); if (!record) return;
-      editorMode = 'edit'; editorEntity = 'environment'; editorAirframe = false; editorLocation = true; editorId = record.id; editorManufacturer = record.provinceFa ?? ''; editorModel = record.nameFa; editorDescription = record.descriptionFa ?? ''; editorImage = record.imageUrl ?? ''; nameEditing = false;
+      editorMode = 'edit'; editorEntity = 'environment'; editorAirframe = false; editorLocation = true; editorId = record.id; editorManufacturer = ($locale === 'en' ? record.provinceEn : record.provinceFa) ?? ''; editorModel = $locale === 'en' ? record.nameEn : record.nameFa; editorDescription = ($locale === 'en' ? record.descriptionEn : record.descriptionFa) ?? ''; editorImage = record.imageUrl ?? ''; nameEditing = false;
       editorLocationValues = Object.fromEntries(locationFields.map((field) => [field.key, String(record[field.key as keyof FlightLocation] ?? '')])); editorInvalidFields = []; editorOpen = true; return;
     }
     if (row.kind === 'airframe') {
@@ -172,7 +172,11 @@
   }
   function buildLocation(): FlightLocation {
     const values = Object.fromEntries(editorFields.map((field) => [field.key, Number(editorLocationValues[field.key])])) as Record<string, number>;
-    return { id: editorId, nameFa: editorModel.trim(), nameEn: editorModel.trim(), provinceFa: editorManufacturer.trim() || undefined, provinceEn: editorManufacturer.trim() || undefined, descriptionFa: editorDescription.trim() || undefined, descriptionEn: editorDescription.trim() || undefined, altitudeM: values.altitudeM, temperatureC: values.temperatureC, pressurePa: values.pressurePa, imageUrl: editorImage || undefined, sourceUrl: 'local://user-location', licenseSpdx: 'NOASSERTION', retrievedAt: new Date().toISOString(), sourceHash: `local-${editorId}`, quality: 'community' };
+    const existing = editorMode === 'edit' ? getLocation(editorId) : undefined;
+    const name = editorModel.trim();
+    const description = editorDescription.trim();
+    const province = editorManufacturer.trim();
+    return { id: editorId, nameFa: $locale === 'en' ? existing?.nameFa ?? name : name, nameEn: $locale === 'en' ? name : existing?.nameEn ?? name, provinceFa: $locale === 'en' ? existing?.provinceFa : province || undefined, provinceEn: $locale === 'en' ? province || undefined : existing?.provinceEn, descriptionFa: $locale === 'en' ? existing?.descriptionFa : description || undefined, descriptionEn: $locale === 'en' ? description || undefined : existing?.descriptionEn, altitudeM: values.altitudeM, temperatureC: values.temperatureC, pressurePa: values.pressurePa, imageUrl: editorImage || undefined, sourceUrl: 'local://user-location', licenseSpdx: 'NOASSERTION', retrievedAt: new Date().toISOString(), sourceHash: `local-${editorId}`, quality: 'community' };
   }
   function validateEditor(): boolean {
     const invalid: string[] = [];
