@@ -9,6 +9,7 @@
     { key: 'esc', label: 'ESCها', icon: '▤' },
     { key: 'battery', label: 'باتری‌ها', icon: '▣' }
   ] as const;
+  const qualityLabel: Record<string, string> = { estimated: 'برآوردی', community: 'جامعه', manufacturer: 'سازنده', verified: 'تأییدشده' };
 </script>
 
 <section class="catalog" aria-labelledby="catalog-title">
@@ -18,7 +19,7 @@
     {#each kinds as kind}
       {@const items = filtered.filter((record) => record.kind === kind.key)}
       <article class="kind-card"><header><span class="kind-icon">{kind.icon}</span><div><h2>{kind.label}</h2><p>{items.length} رکورد پایه</p></div><span class="data">{String(items.length).padStart(2, '0')}</span></header>
-        {#if items.length === 0}<div class="kind-empty">در انتظار واردکردن منبع</div>{:else}<ul>{#each items.slice(0, 3) as item}<li>{#if item.imageUrl}<img src={item.imageUrl} alt="" />{:else}<span class="thumb">{kind.icon}</span>{/if}<div><strong>{item.model}</strong><small>{item.manufacturer}</small></div><b class="quality">{item.quality}</b></li>{/each}</ul>{/if}
+        {#if items.length === 0}<div class="kind-empty">در انتظار واردکردن منبع</div>{:else}<ul>{#each items.slice(0, 3) as item}<li>{#if item.imageUrl}<img src={item.imageUrl} alt="" />{:else}<span class="thumb">{kind.icon}</span>{/if}<div><strong>{item.model}</strong><small>{item.manufacturer === 'Open Reference' ? 'مرجع پروژه' : item.manufacturer}</small></div><b class="quality">{qualityLabel[item.quality] ?? item.quality}</b></li>{/each}</ul>{/if}
       </article>
     {/each}
   </div>
