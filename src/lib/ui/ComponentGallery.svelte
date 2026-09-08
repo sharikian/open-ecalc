@@ -117,6 +117,13 @@
     if (row.kind === 'propeller') return row.model.replace(/^(?:Propeller\s+)+/i, 'Propeller ');
     return row.model;
   }
+  function cleanEditorModel(kind: ComponentKind, model: string): string {
+    if (kind === 'battery') return model.replace(/^(?:LiPo\s+)+/i, 'LiPo ');
+    if (kind === 'esc') return model.replace(/^Open\s+/i, '');
+    if (kind === 'motor') return model.replace(/^(?:Brushless motor\s+)+/i, 'Brushless motor ');
+    if (kind === 'propeller') return model.replace(/^(?:Propeller\s+)+/i, 'Propeller ');
+    return model;
+  }
   function displayManufacturer(row: Row): string { return row.manufacturer === 'Open Reference' ? '' : row.manufacturer; }
   function rowTitle(row: Row): string { const manufacturer = displayManufacturer(row); return manufacturer ? `${manufacturer} · ${displayModel(row)}` : displayModel(row); }
   function setQuery(value: string) { query = value; page = 1; }
@@ -134,7 +141,7 @@
       editorInvalidFields = []; editorOpen = true; return;
     }
     const record = getComponent(row.id); if (!record) return;
-    editorMode = 'edit'; editorEntity = 'component'; editorAirframe = false; editorLocation = false; editorKind = record.kind; editorId = record.id; editorManufacturer = record.manufacturer; editorModel = record.model; editorDescription = ''; editorImage = record.imageUrl ?? ''; nameEditing = false;
+    editorMode = 'edit'; editorEntity = 'component'; editorAirframe = false; editorLocation = false; editorKind = record.kind; editorId = record.id; editorManufacturer = record.manufacturer === 'Open Reference' ? '' : record.manufacturer; editorModel = cleanEditorModel(record.kind, record.model); editorDescription = ''; editorImage = record.imageUrl ?? ''; nameEditing = false;
     editorValues = Object.fromEntries(fields[record.kind].map((field) => [field.key, String((record as unknown as Record<string, unknown>)[field.key] ?? '')])); editorInvalidFields = []; editorOpen = true;
   }
   function blankValues(kind: ComponentKind): Record<string, string> { return Object.fromEntries(fields[kind].map((field) => [field.key, ''])); }
