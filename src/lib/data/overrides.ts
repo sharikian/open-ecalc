@@ -1,8 +1,10 @@
 import type { ComponentRecord } from './types';
+import type { AircraftProfile } from './aircraft';
 
 const OVERRIDE_KEY = 'open-ecalc.component-overrides';
 const CUSTOM_KEY = 'open-ecalc.custom-components';
 const HIDDEN_KEY = 'open-ecalc.hidden-components';
+const AIRCRAFT_OVERRIDE_KEY = 'open-ecalc.aircraft-overrides';
 
 function read<T>(key: string, fallback: T): T {
   if (typeof localStorage === 'undefined') return fallback;
@@ -23,4 +25,18 @@ export function hideComponent(id: string): void {
   const all = hiddenComponents();
   if (!all.includes(id)) all.push(id);
   localStorage.setItem(HIDDEN_KEY, JSON.stringify(all));
+}
+
+export function aircraftOverrides(): Record<string, Partial<AircraftProfile>> {
+  return read(AIRCRAFT_OVERRIDE_KEY, {});
+}
+
+export function saveAircraftOverride(id: string, values: Partial<AircraftProfile>): void {
+  const all = aircraftOverrides();
+  all[id] = { ...(all[id] ?? {}), ...values };
+  localStorage.setItem(AIRCRAFT_OVERRIDE_KEY, JSON.stringify(all));
+}
+
+export function applyAircraftOverride<T extends AircraftProfile>(record: T): T {
+  return { ...record, ...(aircraftOverrides()[record.id] ?? {}) } as T;
 }
