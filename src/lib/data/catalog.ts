@@ -1,5 +1,6 @@
 import { loadSeedDataset } from './seed';
 import type { ComponentFilter, ComponentRecord, ComponentSummary, DataQuality } from './types';
+import { applyComponentOverride, customComponents } from './overrides';
 
 const qualityRank: Record<DataQuality, number> = {
   estimated: 0,
@@ -11,7 +12,7 @@ const qualityRank: Record<DataQuality, number> = {
 let records: ComponentRecord[] = [];
 
 export async function initializeComponentCatalog(): Promise<ComponentRecord[]> {
-  records = (await loadSeedDataset()).records;
+  records = [...(await loadSeedDataset()).records, ...customComponents()];
   return records;
 }
 
@@ -20,7 +21,8 @@ export function replaceComponentCatalog(next: ComponentRecord[]): void {
 }
 
 export function getComponent(id: string): ComponentRecord | undefined {
-  return records.find((record) => record.id === id);
+  const record = records.find((item) => item.id === id);
+  return record ? applyComponentOverride(record) : undefined;
 }
 
 export function queryComponentRecords(filter: ComponentFilter = {}): ComponentRecord[] {
