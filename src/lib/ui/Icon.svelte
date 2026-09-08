@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let name: 'calculator' | 'components' | 'projects' | 'results' | 'settings' | 'folder' | 'drone' | 'cloud' | 'battery' | 'map' | 'motor' | 'propeller' | 'help' | 'sun' | 'moon' | 'download' | 'share' | 'clock' | 'pin' | 'rocket' | 'bolt' | 'ceiling' | 'sliders' | 'plane' | 'search' | 'check' | 'spark' | 'edit' | 'plus' | 'filter' = 'calculator';
+  export let name: 'calculator' | 'components' | 'projects' | 'results' | 'settings' | 'folder' | 'drone' | 'cloud' | 'battery' | 'map' | 'motor' | 'propeller' | 'help' | 'sun' | 'moon' | 'download' | 'share' | 'clock' | 'pin' | 'rocket' | 'bolt' | 'ceiling' | 'sliders' | 'plane' | 'search' | 'check' | 'spark' | 'edit' | 'trash' | 'plus' | 'filter' = 'calculator';
   export let size = 24;
   export let stroke = 'currentColor';
 </script>
@@ -32,6 +32,7 @@
   {:else if name === 'search'}<circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/>
   {:else if name === 'check'}<path d="m5 12 4.5 4.5L19 7"/>
   {:else if name === 'edit'}<path d="m4 16.8-.8 3.9 3.9-.8L18.5 7.5a2.3 2.3 0 0 0-3.2-3.2L4 16.8Z"/><path d="m13.8 5.8 4.4 4.4"/>
+  {:else if name === 'trash'}<path d="M4.5 7h15M9 7V4.5h6V7M7 7l.8 13h8.4L17 7M10 10.5v6M14 10.5v6"/>
   {:else if name === 'plus'}<path d="M12 5v14M5 12h14"/>
   {:else if name === 'filter'}<path d="M4 6h16M7 12h10M10 18h4"/>
   {:else}<path d="M12 3v18M3 12h18"/>
