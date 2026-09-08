@@ -1,64 +1,23 @@
-/* Hallmark · macrostructure: Workbench · genre: modern-minimal · theme: Cobalt · enrichment: Tier A rotor envelope · nav: N3 · footer: Ft2 */
-/* Hallmark · pre-emit critique: P1 Workbench is an instrument panel, not a landing page; no decorative stat blocks or marketing hero. */
-@font-face { font-family: "Vazir"; src: url('/fonts/Vazir.woff2') format('woff2'); font-display: swap; font-weight: 100 900; font-style: normal; }
+/* Hallmark · macrostructure: Workbench · genre: modern-minimal · theme: Cobalt · enrichment: calculation surface */
+/* Hallmark · pre-emit critique: P5 H5 E4 S5 R5 V5 */
+@font-face { font-family: "Vazir"; src: url('/fonts/Vazir.woff2') format('woff2'); font-display: swap; font-style: normal; font-weight: 100 900; }
+
 :root {
-  --color-paper: oklch(97% 0.008 250);
-  --color-paper-2: oklch(94% 0.012 250);
-  --color-surface: oklch(100% 0.004 250);
-  --color-rule: oklch(88% 0.018 250);
-  --color-rule-2: oklch(82% 0.024 250);
-  --color-ink: oklch(19% 0.018 250);
-  --color-ink-2: oklch(34% 0.02 250);
-  --color-muted: oklch(48% 0.025 250);
-  --color-accent: oklch(52% 0.22 258);
-  --color-accent-ink: oklch(99% 0.004 250);
-  --color-warning: oklch(62% 0.17 42);
-  --color-error: oklch(52% 0.19 26);
-  --color-success: oklch(54% 0.14 150);
-  --color-focus: oklch(52% 0.22 258);
-  --font-display: "Vazir", "Estedad", "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-body: "Vazir", "Estedad", "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
-  --text-xs: 0.75rem;
-  --text-sm: 0.875rem;
-  --text-base: 1rem;
-  --text-md: 1.25rem;
-  --text-lg: 1.5625rem;
-  --text-xl: 1.953rem;
-  --text-2xl: 2.441rem;
-  --space-3xs: 0.125rem;
-  --space-2xs: 0.25rem;
-  --space-xs: 0.5rem;
-  --space-sm: 0.75rem;
-  --space-md: 1rem;
-  --space-lg: 1.5rem;
-  --space-xl: 2.5rem;
-  --space-2xl: 4rem;
-  --space-3xl: 6rem;
-  --radius-sm: 0.375rem;
-  --radius-md: 0.75rem;
-  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
-  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
-  --dur-micro: 120ms;
-  --dur-short: 220ms;
-  --dur-long: 420ms;
-  --z-base: 1;
-  --z-raised: 10;
-  --z-sticky: 200;
-  --z-modal: 400;
+  --paper: oklch(96.5% 0.012 248); --paper-deep: oklch(93% 0.018 248);
+  --surface: oklch(99.5% 0.004 248); --surface-strong: oklch(100% 0.002 248);
+  --ink: oklch(18% 0.025 250); --ink-soft: oklch(39% 0.025 250); --muted: oklch(53% 0.025 250);
+  --line: oklch(87% 0.024 248); --line-strong: oklch(78% 0.035 248);
+  --blue: oklch(54% 0.22 258); --blue-soft: oklch(91% 0.06 258); --blue-ink: oklch(30% 0.13 258);
+  --orange: oklch(66% 0.18 48); --orange-soft: oklch(94% 0.06 48); --green: oklch(52% 0.15 150); --danger: oklch(53% 0.19 25);
+  --font-ui: "Vazir", ui-sans-serif, system-ui, sans-serif; --font-data: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --radius: 16px; --radius-small: 10px; --shadow: 0 10px 30px oklch(20% 0.03 248 / 0.06); --shadow-soft: 0 2px 12px oklch(20% 0.03 248 / 0.04);
+  --ease: cubic-bezier(0.16, 1, 0.3, 1); --fast: 160ms; --normal: 280ms; --slow: 480ms;
 }
 
-html { overflow-x: clip; background: var(--color-paper); }
-body { margin: 0; overflow-x: clip; background: var(--color-paper); color: var(--color-ink); font-family: var(--font-body); font-size: var(--text-base); line-height: 1.55; }
-*, *::before, *::after { box-sizing: border-box; }
-button, input, select { font: inherit; }
-button { cursor: pointer; }
-:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
-.mono { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
-.result-column { animation: settle-in var(--dur-long) var(--ease-out) both; }
-@keyframes settle-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+[data-theme='dark'] { --paper: oklch(16% 0.018 250); --paper-deep: oklch(20% 0.022 250); --surface: oklch(21% 0.022 250); --surface-strong: oklch(24% 0.024 250); --ink: oklch(94% 0.012 250); --ink-soft: oklch(78% 0.022 250); --muted: oklch(65% 0.02 250); --line: oklch(31% 0.028 250); --line-strong: oklch(42% 0.035 250); --blue: oklch(68% 0.19 258); --blue-soft: oklch(28% 0.08 258); --blue-ink: oklch(86% 0.11 258); --orange: oklch(74% 0.16 48); --orange-soft: oklch(30% 0.08 48); --green: oklch(70% 0.13 150); --danger: oklch(72% 0.16 25); --shadow: 0 14px 40px oklch(0% 0 0 / 0.2); --shadow-soft: 0 2px 12px oklch(0% 0 0 / 0.18); }
 
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation-duration: 150ms !important; animation-iteration-count: 1 !important; transition-duration: 150ms !important; }
-}
+html { overflow-x: clip; background: var(--paper); color-scheme: light; } html[data-theme='dark'] { color-scheme: dark; }
+body { min-width: 320px; margin: 0; overflow-x: clip; background: var(--paper); color: var(--ink); font-family: var(--font-ui); font-size: 16px; line-height: 1.5; transition: background-color var(--normal) var(--ease), color var(--normal) var(--ease); }
+*, *::before, *::after { box-sizing: border-box; } button, input, select { font: inherit; } button { cursor: pointer; }
+:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; } .data { font-family: var(--font-data); font-variant-numeric: tabular-nums; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 120ms !important; transition-duration: 120ms !important; } }

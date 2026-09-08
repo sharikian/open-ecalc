@@ -1,53 +1,73 @@
 <script lang="ts">
-  import { t } from '$lib/i18n';
   import type { MissionInput } from '$core/types';
   import Field from './Field.svelte';
-
   export let input: MissionInput;
   export let step = 0;
-  const sectionNames = ['airframe', 'environment', 'battery', 'propulsion'] as const;
-  $: activeSection = sectionNames[step] ?? 'airframe';
+
+  function usablePercent(): string {
+    return Number.isFinite(input.battery.usableFraction) ? String(Math.round(input.battery.usableFraction * 100)) : '';
+  }
+
+  function setUsablePercent(event: Event) {
+    const raw = (event.currentTarget as HTMLInputElement).value;
+    input.battery.usableFraction = raw === '' ? ('' as unknown as number) : Number(raw) / 100;
+    input = { ...input };
+  }
 </script>
 
-<div class="form-stack">
-  {#if activeSection === 'airframe'}
-    <section class="form-section" aria-labelledby="airframe-heading">
-      <div class="section-heading"><span class="step-index">01</span><div><h2 id="airframe-heading">{$t('airframe')}</h2></div></div>
-      <div class="fields fields--two">
-        <Field label={$t('emptyMass')} suffix="kg" bind:value={input.airframe.emptyMassKg} min={0} />
-        <Field label={$t('payloadMass')} suffix="kg" bind:value={input.airframe.payloadMassKg} min={0} />
-        <Field label={$t('rotorCount')} bind:value={input.airframe.rotorCount} min={1} step="1" />
-        <Field label={$t('frameSize')} suffix="m" bind:value={input.airframe.frameSizeM} min={0.05} />
-      </div>
-      <label class="select-field"><span>آرایش روتورها</span><select bind:value={input.airframe.layout}><option value="flat">هم‌صفحه (Flat)</option><option value="coaxial">هم‌محور (Coaxial)</option></select></label>
-    </section>
-  {:else if activeSection === 'environment'}
-    <section class="form-section" aria-labelledby="environment-heading">
-      <div class="section-heading"><span class="step-index">02</span><div><h2 id="environment-heading">{$t('environment')}</h2></div></div>
-      <div class="fields fields--two"><Field label={$t('altitude')} suffix="m" bind:value={input.environment.altitudeM} min={-500} /><Field label={$t('temperature')} suffix="°C" bind:value={input.environment.temperatureC} /><Field label={$t('pressure')} suffix="Pa" bind:value={input.environment.pressurePa} min={1} /></div>
-    </section>
-  {:else if activeSection === 'battery'}
-    <section class="form-section" aria-labelledby="battery-heading">
-      <div class="section-heading"><span class="step-index">03</span><div><h2 id="battery-heading">{$t('battery')}</h2></div></div>
-      <div class="fields fields--two"><Field label={$t('capacity')} suffix="Ah" bind:value={input.battery.capacityAh} min={0.1} /><Field label={$t('cellCount')} suffix="S" bind:value={input.battery.series} min={1} step="1" /><Field label={$t('parallelCount')} suffix="P" bind:value={input.battery.parallel} min={1} step="1" /><Field label={$t('usableCapacity')} suffix="%" bind:value={input.battery.usableFraction} min={0.1} /></div>
-    </section>
-  {:else}
-    <section class="form-section" aria-labelledby="propulsion-heading">
-      <div class="section-heading"><span class="step-index">04</span><div><h2 id="propulsion-heading">{$t('propulsion')}</h2></div></div>
-      <div class="fields fields--two"><Field label={$t('kv')} suffix="rpm/V" bind:value={input.motor.kv} min={1} /><Field label={$t('diameter')} suffix="m" bind:value={input.propeller.diameterM} min={0.05} /><Field label={$t('pitch')} suffix="m" bind:value={input.propeller.pitchM} min={0.01} /><Field label="سرعت کروز" suffix="m/s" bind:value={input.cruiseSpeedMps} min={0} /></div>
-    </section>
-  {/if}
-</div>
+<section class="setup" aria-label="پارامترهای پرواز">
+  <article class="setup-card" class:active={step === 0}>
+    <header><span class="card-icon">⌘</span><div><h2>بدنهٔ پرنده</h2><p>ابعاد و جرم سازه</p></div><b class="data">01</b></header>
+    <div class="fields">
+      <Field label="وزن خالی" suffix="kg" bind:value={input.airframe.emptyMassKg} min={0} />
+      <Field label="محموله" suffix="kg" bind:value={input.airframe.payloadMassKg} min={0} />
+      <Field label="تعداد روتور" bind:value={input.airframe.rotorCount} min={1} step="1" />
+      <Field label="اندازهٔ فریم" suffix="m" bind:value={input.airframe.frameSizeM} min={0.05} />
+    </div>
+    <label class="select-field"><span>چیدمان روتورها</span><select bind:value={input.airframe.layout}><option value="flat">هم‌صفحه</option><option value="coaxial">هم‌محور</option></select></label>
+  </article>
+
+  <article class="setup-card" class:active={step === 1}>
+    <header><span class="card-icon">◌</span><div><h2>محیط پرواز</h2><p>شرایط هوای محل</p></div><b class="data">02</b></header>
+    <div class="fields">
+      <Field label="ارتفاع محل" suffix="m" bind:value={input.environment.altitudeM} min={-500} />
+      <Field label="دما" suffix="°C" bind:value={input.environment.temperatureC} />
+      <Field label="فشار هوا" suffix="Pa" bind:value={input.environment.pressurePa} min={1} />
+      <Field label="سرعت پرواز" suffix="m/s" bind:value={input.cruiseSpeedMps} min={0} />
+    </div>
+  </article>
+
+  <article class="setup-card" class:active={step === 2}>
+    <header><span class="card-icon">▣</span><div><h2>باتری</h2><p>ظرفیت و افت ولتاژ</p></div><b class="data">03</b></header>
+    <div class="fields">
+      <Field label="ظرفیت هر پک" suffix="Ah" bind:value={input.battery.capacityAh} min={0.1} />
+      <Field label="سلول سری" suffix="S" bind:value={input.battery.series} min={1} step="1" />
+      <Field label="پک موازی" suffix="P" bind:value={input.battery.parallel} min={1} step="1" />
+      <Field label="ولتاژ هر سلول" suffix="V" bind:value={input.battery.nominalCellVoltageV} min={1} />
+      <Field label="مقاومت داخلی" suffix="Ω" bind:value={input.battery.internalResistanceOhm} min={0} />
+      <Field label="C-rate پیوسته" suffix="C" bind:value={input.battery.continuousC} min={1} />
+    </div>
+    <label class="percent-field"><span>ظرفیت قابل استفاده</span><span class="percent-control"><input type="number" min="50" max="95" step="5" value={usablePercent()} on:input={setUsablePercent} /><b class="data">%</b></span></label>
+  </article>
+
+  <article class="setup-card" class:active={step === 3}>
+    <header><span class="card-icon">✦</span><div><h2>پیشران</h2><p>موتور، ESC و ملخ</p></div><b class="data">04</b></header>
+    <div class="fields">
+      <Field label="KV موتور" suffix="rpm/V" bind:value={input.motor.kv} min={1} />
+      <Field label="حد جریان موتور" suffix="A" bind:value={input.motor.maxCurrentA} min={1} />
+      <Field label="حد توان موتور" suffix="W" bind:value={input.motor.maxPowerW} min={1} />
+      <Field label="حد جریان ESC" suffix="A" bind:value={input.esc.continuousCurrentA} min={1} />
+      <Field label="قطر ملخ" suffix="m" bind:value={input.propeller.diameterM} min={0.05} />
+      <Field label="گام ملخ" suffix="m" bind:value={input.propeller.pitchM} min={0.01} />
+    </div>
+  </article>
+</section>
 
 <style>
-  .form-stack { min-width: 0; }
-  .form-section { display: grid; gap: var(--space-lg); border-block-end: 1px solid var(--color-rule); padding-block: var(--space-lg); }
-  .section-heading { display: flex; align-items: flex-start; gap: var(--space-sm); }
-  .section-heading h2 { margin: 0; font-size: var(--text-lg); letter-spacing: -0.02em; line-height: 1.15; }
-  .step-index { color: var(--color-accent); font-family: var(--font-mono); font-size: var(--text-xs); font-variant-numeric: tabular-nums; }
-  .fields { display: grid; gap: var(--space-md); }
-  .fields--two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .select-field { display: grid; gap: var(--space-xs); color: var(--color-ink-2); font-size: var(--text-sm); }
-  select { min-height: 44px; border: 1px solid var(--color-rule-2); border-radius: var(--radius-sm); background: var(--color-paper); color: var(--color-ink); padding: var(--space-xs) var(--space-sm); }
-  @media (max-width: 40rem) { .fields--two { grid-template-columns: minmax(0, 1fr); } }
+  .setup { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .setup-card { display: grid; gap: 18px; min-width: 0; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 20px; box-shadow: var(--shadow-soft); }
+  .setup-card header { display: flex; align-items: center; gap: 11px; }.setup-card header > div { min-width: 0; flex: 1; }.setup-card header b { color: var(--blue); font-size: 12px; }.setup-card h2 { margin: 0; font-size: 18px; letter-spacing: -0.025em; }.setup-card p { margin: 2px 0 0; color: var(--muted); font-size: 12px; }.card-icon { display: grid; width: 40px; height: 40px; place-items: center; border-radius: 12px; background: var(--blue-soft); color: var(--blue); font-size: 22px; }
+  .fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }.select-field, .percent-field { display: grid; gap: 8px; color: var(--ink-soft); font-size: 13px; }.select-field select { min-height: 48px; border: 1px solid var(--line); border-radius: var(--radius-small); background: var(--paper); color: var(--ink); padding-inline: 12px; }.percent-control { position: relative; display: flex; align-items: center; }.percent-control input { width: 100%; min-height: 50px; border: 1px solid var(--line); border-radius: var(--radius-small); background: var(--paper); color: var(--ink); padding-inline: 14px 42px; font-family: var(--font-data); }.percent-control b { position: absolute; inset-inline-end: 14px; color: var(--muted); font-size: 12px; }
+  @media (max-width: 900px) { .setup { grid-template-columns: minmax(0, 1fr); } }
+  @media (max-width: 560px) { .setup { display: block; }.setup-card { display: none; }.setup-card.active { display: grid; animation: card-in var(--normal) var(--ease) both; }.fields { grid-template-columns: minmax(0, 1fr); } @keyframes card-in { from { opacity: 0; transform: translateY(9px); } to { opacity: 1; transform: none; } } }
 </style>

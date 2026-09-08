@@ -16,10 +16,10 @@
 </label>
 
 <style>
-  .field { display: grid; gap: var(--space-xs); min-width: 0; color: var(--color-ink-2); font-size: var(--text-sm); }
+  .field { display: grid; gap: 7px; min-width: 0; color: var(--ink-soft); font-size: 14px; }
   .field__control { position: relative; display: flex; align-items: center; }
-  input { width: 100%; min-height: 44px; border: 1px solid var(--color-rule-2); border-radius: var(--radius-sm); outline: 2px solid transparent; outline-offset: 1px; background: var(--color-paper); color: var(--color-ink); padding: var(--space-xs) 2.75rem var(--space-xs) var(--space-sm); font-family: var(--font-mono); font-variant-numeric: tabular-nums; transition: background-color var(--dur-short) var(--ease-out); }
-  input:focus-visible { outline-color: var(--color-focus); }
-  input:hover { background: var(--color-paper-2); }
-  .field__control b { position: absolute; inset-inline-end: var(--space-sm); color: var(--color-muted); font-family: var(--font-mono); font-size: var(--text-xs); font-weight: 400; pointer-events: none; }
+  input { width: 100%; min-height: 50px; border: 1px solid var(--line); border-radius: var(--radius-small); outline: 2px solid transparent; outline-offset: 1px; background: var(--paper); color: var(--ink); padding: 10px 46px 10px 14px; font-family: var(--font-data); font-variant-numeric: tabular-nums; transition: background-color var(--fast) var(--ease), border-color var(--fast) var(--ease); }
+  input:focus-visible { border-color: var(--blue); outline-color: var(--blue); }
+  input:hover { background: var(--paper-deep); }
+  .field__control b { position: absolute; inset-inline-end: 14px; color: var(--muted); font-family: var(--font-data); font-size: 12px; font-weight: 500; pointer-events: none; }
 </style>

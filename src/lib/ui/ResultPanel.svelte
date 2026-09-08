@@ -1,67 +1,47 @@
 <script lang="ts">
+  import * as ECharts from 'echarts';
   import { t } from '$lib/i18n';
-  import type * as ECharts from 'echarts';
   import type { MissionInput, MissionResult } from '$core/types';
   import Chart from './Chart.svelte';
   import RotorCoverage from './RotorCoverage.svelte';
-  export let result: MissionResult;
+  export let result: MissionResult | null = null;
   export let input: MissionInput;
-  const pointLabels = { hover: 'هاور', cruise: 'کروز', climb: 'اوج‌گیری' };
-  $: chartText = { color: 'oklch(48% 0.025 250)' };
-  $: thrustOption = ({
-    animationDuration: 520,
-    grid: { left: 38, right: 14, top: 18, bottom: 30 },
+  const labels = { hover: 'هاور', cruise: 'کروز', climb: 'اوج‌گیری' };
+  $: curveOption = result ? ({
+    animationDuration: 620,
+    animationEasing: 'cubicOut',
+    grid: { left: 45, right: 18, top: 24, bottom: 34 },
     tooltip: { trigger: 'axis' },
-    xAxis: { type: 'category', data: result.points.map((point) => pointLabels[point.name]), axisLabel: chartText },
-    yAxis: { type: 'value', name: 'N', axisLabel: chartText },
-    series: [{ type: 'line', smooth: true, data: result.points.map((point) => point.thrustN), lineStyle: { color: 'oklch(52% 0.22 258)', width: 3 }, itemStyle: { color: 'oklch(52% 0.22 258)' } }]
-  }) as ECharts.EChartsOption;
-  $: powerOption = ({
-    animationDuration: 520,
-    grid: { left: 42, right: 14, top: 18, bottom: 30 },
-    tooltip: { trigger: 'axis' },
-    xAxis: { type: 'category', data: result.points.map((point) => pointLabels[point.name]), axisLabel: chartText },
-    yAxis: { type: 'value', name: 'W', axisLabel: chartText },
-    series: [{ type: 'bar', barMaxWidth: 34, data: result.points.map((point) => point.totalPowerW), itemStyle: { color: 'oklch(62% 0.17 42)' } }]
-  }) as ECharts.EChartsOption;
+    xAxis: { type: 'category', boundaryGap: false, data: result.points.map((point) => labels[point.name]) },
+    yAxis: { type: 'value', name: 'N' },
+    series: [{ name: 'رانش', type: 'line', smooth: true, symbolSize: 8, data: result.points.map((point) => point.thrustN), lineStyle: { width: 3, color: '#2f6fed' }, itemStyle: { color: '#2f6fed' }, areaStyle: { color: 'rgba(47,111,237,.10)' } }]
+  }) as ECharts.EChartsOption : null;
+  $: powerOption = result ? ({
+    animationDuration: 620,
+    animationEasing: 'cubicOut',
+    tooltip: { trigger: 'item', formatter: '{b}: {c} W' },
+    legend: { bottom: 0, left: 'center', itemWidth: 10, itemHeight: 10 },
+    series: [{ type: 'pie', radius: ['48%', '72%'], center: ['50%', '43%'], avoidLabelOverlap: true, label: { show: true, formatter: '{d}%' }, data: [{ value: result.power.propulsiveW, name: 'پروانه', itemStyle: { color: '#2f6fed' } }, { value: result.power.motorLossW, name: 'موتور', itemStyle: { color: '#f28b35' } }, { value: result.power.escLossW, name: 'ESC', itemStyle: { color: '#26b777' } }, { value: result.power.batteryLossW, name: 'باتری', itemStyle: { color: '#8d63e8' } }] }]
+  }) as ECharts.EChartsOption : null;
 </script>
 
-<section class="results" aria-labelledby="results-heading">
-  <div class="result-heading"><div><span class="eyebrow">04 / خروجی</span><h2 id="results-heading">{$t('results')}</h2></div><span class="result-state">{result.warnings.filter((warning) => warning.severity === 'critical').length ? 'بررسی لازم است' : 'پایدار'}</span></div>
-  <div class="metrics">
-    <article><span>{$t('flightTime')}</span><strong class="mono">{result.flightTimeMin.toFixed(1)}<small> min</small></strong></article>
-    <article><span>{$t('range')}</span><strong class="mono">{result.rangeKm.toFixed(1)}<small> km</small></strong></article>
-    <article><span>{$t('ceiling')}</span><strong class="mono">{result.ceilingM == null ? '—' : `${result.ceilingM}`}<small>{result.ceilingM == null ? '' : ' m'}</small></strong></article>
-    <article><span>{$t('totalPower')}</span><strong class="mono">{result.totalPowerW.toFixed(0)}<small> W</small></strong></article>
-  </div>
-  <div class="signal"><div><span>حاشیه رانش</span><strong class="mono">{(result.thrustToWeight * 100).toFixed(0)}%</strong></div><div class="meter"><i style={`--value: ${Math.min(100, result.thrustToWeight * 50)}%`}></i></div></div>
-  <div class="chart-grid"><article class="chart-card"><div class="chart-title"><span>رانش نقطه‌های کاری</span><span class="mono">N</span></div><Chart option={thrustOption} /></article><article class="chart-card"><div class="chart-title"><span>توان مورد نیاز</span><span class="mono">W</span></div><Chart option={powerOption} /></article></div>
-  <article class="coverage-card"><RotorCoverage rotorCount={input.airframe.rotorCount} frameSizeM={input.airframe.frameSizeM} propellerDiameterM={input.propeller.diameterM} layout={input.airframe.layout} /></article>
-  <article class="warning-card" aria-labelledby="warning-heading"><div class="chart-title"><h3 id="warning-heading">{$t('warnings')}</h3><span class="mono">{result.warnings.length}</span></div>{#if result.warnings.length === 0}<p class="quiet">{$t('noWarnings')}</p>{:else}<ul>{#each result.warnings as warning}<li class:critical={warning.severity === 'critical'}><span aria-hidden="true">{warning.severity === 'critical' ? '!' : '·'}</span>{warning.code}</li>{/each}</ul>{/if}</article>
+<section class="results" aria-labelledby="result-title">
+  {#if !result}
+    <div class="empty"><span class="empty__mark">×</span><h2>خروجی اینجا نمایش داده می‌شود</h2><p>پس از تکمیل ورودی‌ها، محاسبه را اجرا کنید.</p></div>
+  {:else}
+    <div class="result-heading"><div><span class="kicker">خلاصه</span><h2 id="result-title">نتیجهٔ پرواز</h2></div><span class:danger={result.warnings.some((warning) => warning.severity === 'critical')} class="state">{result.warnings.some((warning) => warning.severity === 'critical') ? 'نیازمند بررسی' : 'قابل قبول'}</span></div>
+    <div class="metrics"><article><span class="metric__icon metric__icon--green">◷</span><div><small>{$t('flightTime')}</small><strong class="data">{result.flightTimeMin.toFixed(1)} <em>min</em></strong></div></article><article><span class="metric__icon metric__icon--blue">⌖</span><div><small>{$t('range')}</small><strong class="data">{result.rangeKm.toFixed(1)} <em>km</em></strong></div></article><article><span class="metric__icon metric__icon--orange">↗</span><div><small>رانش به وزن</small><strong class="data">{result.thrustToWeight.toFixed(1)} <em>: 1</em></strong></div></article><article><span class="metric__icon metric__icon--purple">⌃</span><div><small>{$t('ceiling')}</small><strong class="data">{result.ceilingM == null ? '—' : result.ceilingM} <em>{result.ceilingM == null ? '' : 'm'}</em></strong></div></article></div>
+    <div class="chart-grid"><article><div class="chart-head"><h3>رانش در نقطه‌های کاری</h3><span class="data">N</span></div>{#if curveOption}<Chart option={curveOption} />{/if}</article><article><div class="chart-head"><h3>توزیع توان</h3><span class="data">{result.totalPowerW.toFixed(0)} W</span></div>{#if powerOption}<Chart option={powerOption} />{/if}</article></div>
+    <article class="coverage"><div class="chart-head"><h3>پوشش روتورها</h3><span class="data">{(result.thrustMargin * 100).toFixed(0)}%</span></div><RotorCoverage rotorCount={input.airframe.rotorCount} frameSizeM={input.airframe.frameSizeM} propellerDiameterM={input.propeller.diameterM} layout={input.airframe.layout} /></article>
+    <article class="warnings"><div class="chart-head"><h3>{$t('warnings')}</h3><span class="data">{result.warnings.length}</span></div>{#if result.warnings.length === 0}<p>موردی برای بررسی نیست.</p>{:else}<ul>{#each result.warnings as warning}<li class:critical={warning.severity === 'critical'}><b>{warning.severity === 'critical' ? '!' : '·'}</b><span>{warning.code}</span></li>{/each}</ul>{/if}</article>
+  {/if}
 </section>
 
 <style>
-  .results { display: grid; gap: var(--space-md); }
-  .result-heading, .chart-title { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-sm); }
-  .eyebrow { color: var(--color-muted); font-family: var(--font-mono); font-size: var(--text-xs); letter-spacing: 0.08em; }
-  h2, h3 { margin: var(--space-2xs) 0 0; font-size: var(--text-xl); letter-spacing: -0.025em; }
-  h3 { font-size: var(--text-md); }
-  .result-state { border-radius: 99px; background: var(--color-paper-2); color: var(--color-success); padding: var(--space-2xs) var(--space-sm); font-size: var(--text-xs); }
-  .metrics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; overflow: hidden; border: 1px solid var(--color-rule); border-radius: var(--radius-md); background: var(--color-rule); }
-  .metrics article { display: grid; gap: var(--space-xs); background: var(--color-surface); padding: var(--space-md); }
-  .metrics span, .signal span { color: var(--color-muted); font-size: var(--text-sm); }
-  .metrics strong { font-size: var(--text-xl); line-height: 1; }
-  .metrics small { color: var(--color-muted); font-size: var(--text-xs); font-weight: 400; }
-  .signal { display: grid; gap: var(--space-xs); }
-  .signal > div:first-child { display: flex; justify-content: space-between; }
-  .meter { height: 8px; overflow: hidden; border-radius: 99px; background: var(--color-paper-2); }
-  .meter i { display: block; width: var(--value); height: 100%; border-radius: inherit; background: var(--color-accent); }
-  .chart-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: var(--space-md); }
-  .chart-card, .coverage-card, .warning-card { border: 1px solid var(--color-rule); border-radius: var(--radius-md); background: var(--color-surface); padding: var(--space-md); }
-  .chart-title { color: var(--color-ink-2); font-size: var(--text-sm); }
-  .quiet { margin: var(--space-sm) 0 0; color: var(--color-muted); font-size: var(--text-sm); }
-  ul { display: grid; gap: var(--space-xs); margin: var(--space-sm) 0 0; padding: 0; list-style: none; color: var(--color-warning); font-size: var(--text-sm); }
-  li { display: flex; gap: var(--space-xs); align-items: center; }
-  li.critical { color: var(--color-error); }
-  @media (max-width: 60rem) { .chart-grid { grid-template-columns: 1fr; } }
+  .results { display: grid; gap: 14px; }.empty { display: grid; min-height: 540px; place-content: center; justify-items: center; gap: 10px; border: 1px dashed var(--line-strong); border-radius: var(--radius); color: var(--muted); text-align: center; }.empty__mark { display: grid; width: 60px; height: 60px; place-items: center; border: 1px dashed var(--line-strong); border-radius: 20px; font-size: 28px; }.empty h2, .empty p { margin: 0; }.empty h2 { color: var(--ink); font-size: 20px; }.empty p { font-size: 14px; }
+  .result-heading, .chart-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }.kicker { color: var(--muted); font-size: 12px; }.result-heading h2 { margin: 3px 0 0; font-size: 27px; letter-spacing: -0.04em; }.state { border-radius: 999px; background: color-mix(in oklch, var(--green) 12%, transparent); color: var(--green); padding: 5px 11px; font-size: 12px; }.state.danger { background: color-mix(in oklch, var(--danger) 12%, transparent); color: var(--danger); }
+  .metrics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }.metrics article { display: flex; align-items: center; gap: 12px; min-width: 0; border: 1px solid var(--line); border-radius: 13px; background: var(--surface); padding: 14px; box-shadow: var(--shadow-soft); }.metric__icon { display: grid; flex: 0 0 42px; width: 42px; height: 42px; place-items: center; border-radius: 13px; font-size: 22px; }.metric__icon--green { background: color-mix(in oklch, var(--green) 14%, transparent); color: var(--green); }.metric__icon--blue { background: var(--blue-soft); color: var(--blue); }.metric__icon--orange { background: var(--orange-soft); color: var(--orange); }.metric__icon--purple { background: color-mix(in oklch, #8d63e8 14%, transparent); color: #8d63e8; }.metrics small { display: block; color: var(--muted); font-size: 12px; }.metrics strong { display: block; margin-top: 2px; font-size: 23px; }.metrics em { color: var(--muted); font-size: 12px; font-style: normal; font-weight: 500; }
+  .chart-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 14px; }.chart-grid > article, .coverage, .warnings { min-width: 0; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 16px; box-shadow: var(--shadow-soft); }.chart-head h3 { margin: 0; font-size: 15px; }.chart-head > span { color: var(--muted); font-size: 12px; }.warnings p { margin: 10px 0 0; color: var(--muted); font-size: 13px; }.warnings ul { display: grid; gap: 8px; margin: 12px 0 0; padding: 0; list-style: none; color: var(--orange); font-size: 13px; }.warnings li { display: flex; gap: 8px; align-items: center; }.warnings li.critical { color: var(--danger); }.warnings li b { display: grid; width: 20px; height: 20px; place-items: center; border-radius: 50%; background: currentColor; color: var(--surface); font-size: 12px; }
+  @media (max-width: 720px) { .chart-grid { grid-template-columns: minmax(0, 1fr); } }.coverage :global(.coverage) { margin-top: 12px; }
+  @media (max-width: 420px) { .metrics { grid-template-columns: minmax(0, 1fr); }.empty { min-height: 320px; } }
 </style>
