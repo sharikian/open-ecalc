@@ -24,8 +24,12 @@
   $: pickerComponents = pickerKind === 'airframe' ? [] : queryComponents({ kind: pickerKind, text: pickerQuery }).slice(0, 30);
   $: pickerAircraft = pickerKind === 'airframe' ? queryAircraft(pickerQuery).slice(0, 30) : [];
 
-  function aircraftImage(url: string | undefined): string {
-    return url && !url.includes('aircraft-catalog-grid') && !url.includes('airframe-starter') ? url : '/data/images/aircraft-product.png';
+  function aircraftImage(url: string | undefined, model = ''): string {
+    if (url && !url.includes('aircraft-catalog-grid') && !url.includes('airframe-starter')) return url;
+    const name = model.toLocaleLowerCase('en');
+    if (/(hex|octo|heavy|agri|x8|x6)/.test(name)) return '/data/images/aircraft-hexacopter.png';
+    if (/(cine|fpv|racing|tiny|whoop)/.test(name)) return '/data/images/aircraft-cinewhoop.png';
+    return '/data/images/aircraft-product.png';
   }
 
   function openPicker(kind: PickerKind) { pickerKind = kind; pickerQuery = ''; pickerOpen = true; }
@@ -63,7 +67,7 @@
 <section class="setup" aria-label="پارامترهای پرواز">
   <article class="setup-card" class:active={step === 0}>
     <header class="card-header" role="button" tabindex="0" on:click={() => openPicker('airframe')} on:keydown={(event) => event.key === 'Enter' && openPicker('airframe')}><span class="card-icon"><Icon name="drone" size={23} /></span><div><h2>بدنهٔ پرنده</h2><p>انتخاب از فهرست</p></div><b class="data">01</b></header>
-    {#if nearAircraft.length}<div class="quick-list" aria-label="پیشنهادهای نزدیک"><small>نزدیک به این جرم</small>{#each nearAircraft as aircraft}<button type="button" on:click={() => selectAircraft(aircraft.id)}><img src={aircraftImage(aircraft.imageUrl)} alt="" /><span>{aircraft.manufacturer} {aircraft.model}</span><b class="data">{(aircraft.massKg! * 1000).toFixed(0)} g</b></button>{/each}</div>{/if}
+    {#if nearAircraft.length}<div class="quick-list" aria-label="پیشنهادهای نزدیک"><small>نزدیک به این جرم</small>{#each nearAircraft as aircraft}<button type="button" on:click={() => selectAircraft(aircraft.id)}><img src={aircraftImage(aircraft.imageUrl, aircraft.model)} alt="" /><span>{aircraft.manufacturer} {aircraft.model}</span><b class="data">{(aircraft.massKg! * 1000).toFixed(0)} g</b></button>{/each}</div>{/if}
     <div class="fields">
       <Field label="وزن خالی" suffix="kg" bind:value={input.airframe.emptyMassKg} min={0} />
       <Field label="محموله" suffix="kg" bind:value={input.airframe.payloadMassKg} min={0} />
@@ -114,7 +118,7 @@
 </section>
 
 {#if pickerOpen}
-  <div class="picker-backdrop" role="presentation" on:click={closePicker}><div class="picker-sheet" role="dialog" aria-modal="true" aria-labelledby="picker-title" tabindex="-1" on:click|stopPropagation on:keydown|stopPropagation><header><div><span class="eyebrow">انتخاب قطعه</span><h2 id="picker-title">{pickerKind === 'airframe' ? 'بدنه‌های موجود' : pickerKind === 'battery' ? 'باتری‌های موجود' : pickerKind === 'motor' ? 'موتورهای موجود' : pickerKind === 'propeller' ? 'ملخ‌های موجود' : 'ESCهای موجود'}</h2></div><button type="button" class="picker-close" aria-label="بستن" on:click={closePicker}>×</button></header><label class="picker-search"><Icon name="search" size={19} /><input bind:value={pickerQuery} placeholder="جست‌وجوی نام یا سازنده" /></label><div class="picker-list">{#if pickerKind === 'airframe'}{#each pickerAircraft as aircraft}<button type="button" on:click={() => selectAircraft(aircraft.id)}><img src={aircraftImage(aircraft.imageUrl)} alt="" /><span><strong>{aircraft.manufacturer} {aircraft.model}</strong><small>{aircraft.classLabel}</small></span>{#if aircraft.massKg != null}<b class="data">{(aircraft.massKg * 1000).toFixed(0)} g</b>{/if}</button>{/each}{:else}{#each pickerComponents as component}<button type="button" on:click={() => selectComponent(component.id)}>{#if component.imageUrl}<img src={component.imageUrl} alt="" />{:else}<span class="picker-thumb"><Icon name={component.kind === 'battery' ? 'battery' : component.kind === 'motor' ? 'motor' : component.kind === 'propeller' ? 'propeller' : 'sliders'} size={22} /></span>{/if}<span><strong>{component.manufacturer} {component.model}</strong><small>{component.quality}</small></span></button>{/each}{/if}</div></div></div>
+  <div class="picker-backdrop" role="presentation" on:click={closePicker}><div class="picker-sheet" role="dialog" aria-modal="true" aria-labelledby="picker-title" tabindex="-1" on:click|stopPropagation on:keydown|stopPropagation><header><div><span class="eyebrow">انتخاب قطعه</span><h2 id="picker-title">{pickerKind === 'airframe' ? 'بدنه‌های موجود' : pickerKind === 'battery' ? 'باتری‌های موجود' : pickerKind === 'motor' ? 'موتورهای موجود' : pickerKind === 'propeller' ? 'ملخ‌های موجود' : 'ESCهای موجود'}</h2></div><button type="button" class="picker-close" aria-label="بستن" on:click={closePicker}>×</button></header><label class="picker-search"><Icon name="search" size={19} /><input bind:value={pickerQuery} placeholder="جست‌وجوی نام یا سازنده" /></label><div class="picker-list">{#if pickerKind === 'airframe'}{#each pickerAircraft as aircraft}<button type="button" on:click={() => selectAircraft(aircraft.id)}><img src={aircraftImage(aircraft.imageUrl, aircraft.model)} alt="" /><span><strong>{aircraft.manufacturer} {aircraft.model}</strong><small>{aircraft.classLabel}</small></span>{#if aircraft.massKg != null}<b class="data">{(aircraft.massKg * 1000).toFixed(0)} g</b>{/if}</button>{/each}{:else}{#each pickerComponents as component}<button type="button" on:click={() => selectComponent(component.id)}>{#if component.imageUrl}<img src={component.imageUrl} alt="" />{:else}<span class="picker-thumb"><Icon name={component.kind === 'battery' ? 'battery' : component.kind === 'motor' ? 'motor' : component.kind === 'propeller' ? 'propeller' : 'sliders'} size={22} /></span>{/if}<span><strong>{component.manufacturer} {component.model}</strong><small>{component.quality}</small></span></button>{/each}{/if}</div></div></div>
 {/if}
 
 <style>
