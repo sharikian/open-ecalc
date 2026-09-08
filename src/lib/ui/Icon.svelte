@@ -9,7 +9,7 @@
   {:else if name === 'components'}<path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Z"/><path d="m4.5 7.8 7.5 4.3 7.5-4.3M12 12.1V21"/>
   {:else if name === 'projects'}<path d="M3.5 7.5h6l1.8 2h9.2v9.5H3.5v-11.5Z"/><path d="M3.5 7.5V5h6l1.5 2.5"/>
   {:else if name === 'results'}<path d="M4 20V10h4v10H4ZM10 20V4h4v16h-4ZM16 20v-7h4v7h-4Z"/>
-  {:else if name === 'settings'}<path d="M12 3.5v2M12 18.5v2M3.5 12h2M18.5 12h2M6 6l1.4 1.4M16.6 16.6 18 18M18 6l-1.4 1.4M7.4 16.6 6 18"/><circle cx="12" cy="12" r="4.5"/>
+  {:else if name === 'settings'}<circle cx="12" cy="12" r="3.5"/><path d="m19.4 15 .1.1a2 2 0 0 1-2.8 2.8l-.1-.1a2 2 0 0 0-3.4 1.4v.2a2 2 0 0 1-4 0v-.2a2 2 0 0 0-3.4-1.4l-.1.1a2 2 0 0 1-2.8-2.8l.1-.1A2 2 0 0 0 1.7 12a2 2 0 0 0 1.4-3.4L3 8.5a2 2 0 0 1 2.8-2.8l.1.1A2 2 0 0 0 9.3 4.4v-.2a2 2 0 0 1 4 0v.2a2 2 0 0 0 3.4 1.4l.1-.1a2 2 0 0 1 2.8 2.8l-.1.1A2 2 0 0 0 20.9 12a2 2 0 0 0-1.5 3Z"/>
   {:else if name === 'folder'}<path d="M3.5 6.5h6l1.8 2h9.2v9.5h-17V6.5Z"/>
   {:else if name === 'drone'}<path d="M12 9.2v5.6M9.2 12h5.6M7.3 7.3 4.8 4.8M16.7 7.3l2.5-2.5M7.3 16.7l-2.5 2.5M16.7 16.7l2.5 2.5"/><circle cx="12" cy="12" r="2.6"/><circle cx="4" cy="4" r="2.1"/><circle cx="20" cy="4" r="2.1"/><circle cx="4" cy="20" r="2.1"/><circle cx="20" cy="20" r="2.1"/>
   {:else if name === 'cloud'}<path d="M7.5 18.5h9.2a4.3 4.3 0 0 0 .4-8.6A5.6 5.6 0 0 0 6.4 8.7a4.9 4.9 0 0 0 1.1 9.8Z"/>
