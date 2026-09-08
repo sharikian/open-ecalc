@@ -78,7 +78,7 @@
 {#if !ready}
   <Preloader />
 {:else}
-  <div class:has-result={Boolean(missionResult || legacyResult)} class="app-shell">
+  <div class:has-result={Boolean(missionResult || legacyResult)} class:scroll-view={view !== 'calculator' || Boolean(missionResult || legacyResult)} class="app-shell">
     <header class="topbar"><div class="brand"><img src="/icons/open-ecalc-logo.png" alt="" /><strong>محاسب پهپاد</strong></div><div class="topbar__actions"><ThemeToggle {theme} onChange={setTheme} /></div></header>
     <div class="app-body">
       <nav class="side-nav" aria-label="بخش‌ها">
@@ -119,7 +119,7 @@
   .advanced-layout--empty { grid-template-columns: minmax(0, 1fr); }
   @media (max-width: 900px) { .simple-layout, .advanced-layout { grid-template-columns: minmax(0, 1fr); }.result-area { position: static; }.simple-layout > :global(.legacy-results) { order: 2; } }
   @media (max-width: 560px) { .app-body { display: block; }.side-nav { display: none; }.bottom-nav { position: fixed; inset-inline: 10px; bottom: 10px; z-index: 30; width: calc(100% - 20px); margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; padding: 5px; border: 1px solid var(--line); border-radius: 17px; background: color-mix(in srgb, var(--surface) 96%, transparent); box-shadow: var(--shadow); direction: rtl; }.bottom-nav .nav-item { display: flex; min-height: 54px; flex-direction: column; align-items: center; justify-content: center; grid-template-columns: none; min-width: 0; border: 0; border-radius: 12px; padding: 5px 2px; }.bottom-nav .nav-item :global(svg) { grid-row: auto; }.workspace { border-radius: 14px; padding: 14px 12px 28px; }.workspace__head { display: grid; gap: 18px; margin-bottom: 22px; }.workspace__head h1 { font-size: 29px; }.workspace__head p { font-size: 13px; }.workspace__head :global(.modes) { width: 100%; max-width: none; }.simple-layout, .advanced-layout { gap: 22px; }.advanced-layout { margin-top: 22px; }.result-area { order: 2; }.actions { position: static; z-index: auto; margin-inline: 0; padding: 8px 0 96px; background: transparent; backdrop-filter: none; }.actions button { flex: 1; padding-inline: 10px; } }
-  @media (max-width: 560px) { .app-shell.has-result .bottom-nav { position: static; width: calc(100% - 20px); margin: 12px 10px 10px; } }
+  @media (max-width: 560px) { .app-shell.scroll-view .bottom-nav { position: static; width: calc(100% - 20px); margin: 12px 10px 10px; } }
 
   .topbar { display: flex; min-height: 62px; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); background: var(--surface); padding: 8px 18px; direction: ltr; }.topbar .brand { min-width: 0; gap: 10px; }.topbar .brand img { width: 36px; height: 36px; object-fit: contain; }.topbar .brand strong { color: var(--ink); font-size: 18px; }.topbar__actions { display: flex; align-items: center; }
   @media (max-width: 900px) { .app-body { padding: 10px; }.side-nav { display: none; }.workspace { padding: 14px; } }
