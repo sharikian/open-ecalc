@@ -1,14 +1,69 @@
 {
   "schemaVersion": 1,
   "datasetVersion": "2026.09",
-  "generatedAt": "2026-09-06T00:00:00.000Z",
+  "generatedAt": "2026-09-08T00:00:00.000Z",
   "sources": [
     {
-      "name": "Open eCalc synthetic reference set",
-      "url": "https://github.com/open-ecalc/open-ecalc",
+      "name": "Open eCalc reference set",
+      "url": "https://github.com/open-ecalc/open-ecalc/blob/master/static/data/components.v1.json",
       "licenseSpdx": "CC0-1.0",
       "included": true,
-      "note": "Generic records for calculation and interface testing only"
+      "note": "Project-authored generic calibration records; not manufacturer data"
+    },
+    {
+      "name": "Multicopter Battery and Range Calculations",
+      "url": "https://github.com/tzi4/Multicopter_Battery_and_Range_Calculations/tree/bdc1ce02f48b570cd13c0788a80a3ddaeb263fc0",
+      "licenseSpdx": "MIT",
+      "included": false,
+      "commit": "bdc1ce02f48b570cd13c0788a80a3ddaeb263fc0",
+      "note": "Validation and model reference; binary calibration logs are not redistributed"
+    },
+    {
+      "name": "PropDBTools",
+      "url": "https://github.com/ramcdona/PropDBTools/tree/4fa41c8c9e07369474768567e968f1b16c453f48",
+      "licenseSpdx": "BSD-2-Clause",
+      "included": false,
+      "commit": "4fa41c8c9e07369474768567e968f1b16c453f48",
+      "note": "Parser behaviour reference for UIUC DAT and test-stand import"
+    },
+    {
+      "name": "LiionDB",
+      "url": "https://github.com/ndrewwang/liiondb",
+      "licenseSpdx": "MIT",
+      "included": false,
+      "note": "Candidate battery source; records require provenance normalization before bundling"
+    },
+    {
+      "name": "StrawsonDesign motor/propeller testing",
+      "url": "https://github.com/StrawsonDesign/motor_propeller_testing",
+      "licenseSpdx": "MIT",
+      "included": false,
+      "quality": "A_LAB",
+      "note": "Candidate test-stand curves; snapshot and attribution review pending"
+    },
+    {
+      "name": "PyThrust",
+      "url": "https://github.com/Setuav/PyThrust",
+      "licenseSpdx": "Apache-2.0",
+      "included": false,
+      "quality": "B_INDEPENDENT_TEST",
+      "note": "Candidate motor/prop catalog; audit upstream licence per record"
+    },
+    {
+      "name": "Unmanned Aerial Vehicle Database",
+      "url": "https://uavdb.org/",
+      "licenseSpdx": "NOASSERTION",
+      "included": false,
+      "quality": "C_DATASHEET",
+      "note": "Downloaded flight CSV archive; free with citation, retained in quarantine pending asset review"
+    },
+    {
+      "name": "PX4 airframe taxonomy",
+      "url": "https://github.com/PX4/PX4-Autopilot",
+      "licenseSpdx": "BSD-3-Clause",
+      "included": false,
+      "quality": "C_DATASHEET",
+      "note": "Taxonomy reference only; no product specifications copied"
     },
     {
       "name": "UIUC Propeller Database",
@@ -19,4 +74,3 @@
     }
   ]
 }
-

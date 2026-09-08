@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "retrievedAt": "2026-09-08T00:00:00.000Z",
+  "policy": "raw-snapshot-not-runtime-bundle",
+  "runtimeImages": [
+    { "path": "static/data/images/propeller-cyclone-t5045c-74v.png", "sourceId": "strawsondesign-motor-prop-testing", "licenseSpdx": "MIT" },
+    { "path": "static/data/images/propeller-gemfan-5x45-111v.png", "sourceId": "strawsondesign-motor-prop-testing", "licenseSpdx": "MIT" },
+    { "path": "static/data/images/propeller-lumenier-5x4-74v.png", "sourceId": "strawsondesign-motor-prop-testing", "licenseSpdx": "MIT" },
+    { "path": "static/data/images/airframe-starter.png", "sourceId": "multicopter-battery-range", "licenseSpdx": "MIT" },
+    { "path": "static/data/images/battery-range-validation.png", "sourceId": "multicopter-battery-range", "licenseSpdx": "MIT" },
+    { "path": "static/data/images/flight-validation.png", "sourceId": "multicopter-battery-range", "licenseSpdx": "MIT" }
+  ],
+  "snapshots": [
+    {
+      "sourceId": "strawsondesign-motor-prop-testing",
+      "localPath": "data/raw/strawsondesign-motor-prop-testing",
+      "revision": "7031418317178b832b0be474a997f6da18f83a40",
+      "fileCount": 682,
+      "licenseSpdx": "MIT",
+      "quality": "A_LAB",
+      "bundle": false,
+      "note": "test-stand curves and rendered plots; normalize before release"
+    },
+    {
+      "sourceId": "liiondb",
+      "localPath": "data/raw/liiondb",
+      "revision": "ecbf91288338ffe16efcf79eb3f398f4bc52559d",
+      "fileCount": 71,
+      "licenseSpdx": "MIT",
+      "quality": "A_LAB",
+      "bundle": false,
+      "note": "cell discharge/physics data; retain paper-level provenance"
+    },
+    {
+      "sourceId": "multicopter-battery-range",
+      "localPath": "data/raw/multicopter-battery-range",
+      "revision": "bdc1ce02f48b570cd13c0788a80a3ddaeb263fc0",
+      "fileCount": 81,
+      "licenseSpdx": "MIT",
+      "quality": "B_INDEPENDENT_TEST",
+      "bundle": false,
+      "note": "validation model and sample logs; large binary calibration files excluded"
+    },
+    {
+      "sourceId": "propdbtools",
+      "localPath": "data/raw/propdbtools",
+      "revision": "4fa41c8c9e07369474768567e968f1b16c453f48",
+      "fileCount": 7,
+      "licenseSpdx": "BSD-2-Clause",
+      "quality": "B_INDEPENDENT_TEST",
+      "bundle": false,
+      "note": "parser tooling only; UIUC measurements remain quarantined"
+    },
+    {
+      "sourceId": "pythrust",
+      "localPath": "data/quarantine/pythrust",
+      "revision": "7ce9d8b3857201862a5212252196e0d11803b347",
+      "fileCount": 8826,
+      "licenseSpdx": "Apache-2.0",
+      "quality": "B_INDEPENDENT_TEST",
+      "bundle": false,
+      "note": "downloaded for audit; upstream record licences and assets are not yet cleared"
+    },
+    {
+      "sourceId": "uavdb-org",
+      "localPath": "data/quarantine/uavdb/cub-csv",
+      "sourceUrl": "https://uavdb.org/download/cub/data/Cub_flight_data_csv.zip",
+      "archivePath": "data/quarantine/cub_flight_data_csv.zip",
+      "fileCount": 54,
+      "licenseSpdx": "NOASSERTION",
+      "quality": "A_LAB",
+      "bundle": false,
+      "note": "flight-test CSV archive; site requests citation and asset review remains open"
+    },
+    {
+      "sourceId": "uavdb-org",
+      "localPath": "data/quarantine/cub_flight_fig_and_data.zip",
+      "sourceUrl": "https://uavdb.org/download/cub/data/Cub_flight_fig_and_data.zip",
+      "archivePath": "data/quarantine/cub_flight_fig_and_data.zip",
+      "fileCount": 1,
+      "licenseSpdx": "NOASSERTION",
+      "quality": "A_LAB",
+      "bundle": false,
+      "note": "full figure/MAT archive retained as downloaded; not unpacked into runtime"
+    }
+  ]
+}

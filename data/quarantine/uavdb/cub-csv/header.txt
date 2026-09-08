@@ -1,0 +1,65 @@
+%% Format:
+%% variable, % (unit) - notes.
+
+Time, % (s)
+
+Euler_Angle_Phi, % (deg)
+Euler_Angle_Theta,
+Euler_Angle_Psi,
+
+Accel_x, % (m/s2) 
+Accel_y,
+Accel_z,
+
+Rot_Rate_x, % (rad/s)
+Rot_Rate_y,
+Rot_Rate_z,
+
+Mag_x, % (uT)
+Mag_y, 
+Mag_z,
+
+Vel_x, % (m/s)
+Vel_y, 
+Vel_z,
+
+V_tot_mps, % (m/s)
+
+Lat, % (deg)
+Long,
+
+Easting, % (m)
+Northing,
+Alt,
+
+Battery_Voltage,  % (V)
+
+Battery_Current, % (A)
+
+Motor_Rotation_Rate, % (RPM)
+
+Motor_PWM_Throttle, % (/%)
+
+Aileron_defl, % (deg)
+Elevator_defl,
+Rudder_del,
+Flap_defl,
+
+Airspeed, % (m/s)
+Pressure, % (Pa)
+Temp, % (C)
+
+A_x, % (m/s2) - Filtered acceleration with Savitzky-Golay Filtering, 5th order with frame size of 201, i.e. A_x_filtered = sgolayfilt(A_x_raw,5,201)
+A_y, 
+A_z,
+
+Rot_Rate_x_filt, % (deg/s) - Filtered rotation rates with Savitzky-Golay Filtering, 3rd order with frame size of 45, i.e. Rot_Rate_x_filtered = sgolayfilt(Rot_Rate_x,3,45) .
+Rot_Rate_y_filt,
+Rot_Rate_z_filt, 
+
+u_mps, % (m/s) - Body frame velocities calculated from GPS velocities, rotated using Euler angles.
+v_mps,
+w_mps,
+
+alpha_deg, % (deg) - Airflow angles calculated from above u,v,w. 
+beta_deg,
