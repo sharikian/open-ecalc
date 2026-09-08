@@ -60,8 +60,8 @@
   });
   function imageFor(row: Row): string {
     const imageHash = [...row.id].reduce((sum, char) => sum + char.charCodeAt(0), 0);
-    if (row.kind === 'battery') return imageHash % 2 ? '/data/images/battery-lipo-pack.png' : '/data/images/battery-range-validation.png';
-    if (row.kind === 'esc') return imageHash % 2 ? '/data/images/esc-high-current.png' : '/data/images/flight-validation.png';
+    if (row.kind === 'battery') return imageHash % 2 ? '/data/images/battery-lipo-pack.png' : '/data/images/battery-liion-pack.png';
+    if (row.kind === 'esc') return imageHash % 2 ? '/data/images/esc-high-current.png' : '/data/images/esc-compact-board.png';
     if (row.imageUrl && !row.imageUrl.includes('aircraft-catalog-grid') && !row.imageUrl.includes('airframe-starter')) return row.imageUrl;
     if (row.kind === 'motor') return '/data/images/motor-brushless.png';
     if (row.kind === 'propeller') return '/data/images/propeller-cyclone-t5045c-74v.png';
