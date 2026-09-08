@@ -1,10 +1,11 @@
 <script lang="ts">
   import Icon from './Icon.svelte';
+  import { locale } from '$lib/i18n';
   export let theme: 'light' | 'dark' = 'light';
   export let onChange: (theme: 'light' | 'dark') => void;
 </script>
 
-<button class="theme-toggle" type="button" aria-label={theme === 'light' ? 'حالت تاریک' : 'حالت روشن'} on:click={() => onChange(theme === 'light' ? 'dark' : 'light')}>
+<button class="theme-toggle" type="button" aria-label={theme === 'light' ? ($locale === 'en' ? 'Dark mode' : 'حالت تاریک') : ($locale === 'en' ? 'Light mode' : 'حالت روشن')} on:click={() => onChange(theme === 'light' ? 'dark' : 'light')}>
   <span class:dark={theme === 'dark'} aria-hidden="true"><Icon name={theme === 'light' ? 'sun' : 'moon'} size={21} /></span>
 </button>
 

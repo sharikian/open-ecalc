@@ -1,12 +1,13 @@
 <script lang="ts">
   export let value: 'simple' | 'advanced' = 'simple';
   export let onChange: (mode: 'simple' | 'advanced') => void;
+  import { locale } from '$lib/i18n';
 </script>
 
-<div class="modes" role="tablist" aria-label="نوع محاسبه" data-mode={value}>
+<div class="modes" role="tablist" aria-label={$locale === 'en' ? 'Calculation mode' : 'نوع محاسبه'} data-mode={value}>
   <span class="modes__indicator" aria-hidden="true"></span>
-  <button type="button" role="tab" aria-selected={value === 'simple'} on:click={() => onChange('simple')}>ساده</button>
-  <button type="button" role="tab" aria-selected={value === 'advanced'} on:click={() => onChange('advanced')}>پیشرفته</button>
+  <button type="button" role="tab" aria-selected={value === 'simple'} on:click={() => onChange('simple')}>{$locale === 'en' ? 'Simple' : 'ساده'}</button>
+  <button type="button" role="tab" aria-selected={value === 'advanced'} on:click={() => onChange('advanced')}>{$locale === 'en' ? 'Advanced' : 'پیشرفته'}</button>
 </div>
 
 <style>
@@ -18,4 +19,3 @@
   button[aria-selected='true'] { color: var(--ink); }
   button:active { transform: scale(0.98); }
 </style>
-

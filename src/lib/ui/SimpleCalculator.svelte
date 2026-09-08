@@ -1,10 +1,12 @@
 <script lang="ts">
   import type { LegacyInput } from '$core/types';
+  import { locale } from '$lib/i18n';
   import Field from './Field.svelte';
 
   export let input: LegacyInput;
   export let onCalculate: () => void;
   export let showErrors = false;
+  function copy(fa: string, en: string): string { return $locale === 'en' ? en : fa; }
 
   function addPoint() {
     input.currentPerMotorA = [...input.currentPerMotorA, '' as unknown as number];
@@ -19,29 +21,29 @@
 </script>
 
 <section class="simple" aria-labelledby="simple-title">
-  <div class="section-title"><div><h2 id="simple-title">ورودی‌ها</h2><p>پارامترهای محاسبه را وارد کنید</p></div><button class="ghost" type="button" on:click={addPoint}>+ نقطهٔ کاری</button></div>
+  <div class="section-title"><div><h2 id="simple-title">{copy('ورودی‌ها', 'Inputs')}</h2><p>{copy('پارامترهای محاسبه را وارد کنید', 'Enter calculation parameters')}</p></div><button class="ghost" type="button" on:click={addPoint}>+ {copy('نقطهٔ کاری', 'Operating point')}</button></div>
   <div class="field-grid">
-    <Field label="وزن خالی" suffix="g" invalid={showErrors && !(Number.isFinite(input.emptyMassG) && input.emptyMassG > 0)} bind:value={input.emptyMassG} min={0} />
-    <Field label="محموله" suffix="g" invalid={showErrors && !(Number.isFinite(input.payloadMassG) && input.payloadMassG >= 0)} bind:value={input.payloadMassG} min={0} />
-    <Field label="وزن باتری" suffix="g" invalid={showErrors && !(Number.isFinite(input.batteryMassG) && input.batteryMassG > 0)} bind:value={input.batteryMassG} min={0} />
-    <Field label="تعداد پک موازی" suffix="P" invalid={showErrors && !(Number.isFinite(input.batteryParallel) && input.batteryParallel > 0)} bind:value={input.batteryParallel} min={1} step="1" />
-    <Field label="ظرفیت هر پک" suffix="Ah" invalid={showErrors && !(Number.isFinite(input.cellCapacityAh) && input.cellCapacityAh > 0)} bind:value={input.cellCapacityAh} min={0.1} />
-    <Field label="تعداد روتور" invalid={showErrors && !(Number.isFinite(input.rotorCount) && input.rotorCount > 0)} bind:value={input.rotorCount} min={1} step="1" />
-    <Field label="سرعت پرواز" suffix="m/s" invalid={showErrors && !(Number.isFinite(input.speedMps) && input.speedMps > 0)} bind:value={input.speedMps} min={0} />
+    <Field label={copy('وزن خالی', 'Empty mass')} suffix="g" invalid={showErrors && !(Number.isFinite(input.emptyMassG) && input.emptyMassG > 0)} bind:value={input.emptyMassG} min={0} />
+    <Field label={copy('محموله', 'Payload')} suffix="g" invalid={showErrors && !(Number.isFinite(input.payloadMassG) && input.payloadMassG >= 0)} bind:value={input.payloadMassG} min={0} />
+    <Field label={copy('وزن باتری', 'Battery mass')} suffix="g" invalid={showErrors && !(Number.isFinite(input.batteryMassG) && input.batteryMassG > 0)} bind:value={input.batteryMassG} min={0} />
+    <Field label={copy('تعداد پک موازی', 'Parallel packs')} suffix="P" invalid={showErrors && !(Number.isFinite(input.batteryParallel) && input.batteryParallel > 0)} bind:value={input.batteryParallel} min={1} step="1" />
+    <Field label={copy('ظرفیت هر پک', 'Pack capacity')} suffix="Ah" invalid={showErrors && !(Number.isFinite(input.cellCapacityAh) && input.cellCapacityAh > 0)} bind:value={input.cellCapacityAh} min={0.1} />
+    <Field label={copy('تعداد روتور', 'Rotor count')} invalid={showErrors && !(Number.isFinite(input.rotorCount) && input.rotorCount > 0)} bind:value={input.rotorCount} min={1} step="1" />
+    <Field label={copy('سرعت پرواز', 'Flight speed')} suffix="m/s" invalid={showErrors && !(Number.isFinite(input.speedMps) && input.speedMps > 0)} bind:value={input.speedMps} min={0} />
   </div>
 
   <div class="points">
-    <div class="points__head"><h3>نقاط کاری موتور</h3><span>جریان هر موتور</span></div>
+    <div class="points__head"><h3>{copy('نقاط کاری موتور', 'Motor operating points')}</h3><span>{copy('جریان هر موتور', 'Current per motor')}</span></div>
     {#each input.currentPerMotorA as current, index}
       <div class="point-row">
         <span class="point-row__index data">{String(index + 1).padStart(2, '0')}</span>
-        <label class:invalid={showErrors && !(Number.isFinite(input.currentPerMotorA[index]) && input.currentPerMotorA[index] > 0)}><span>جریان</span><input type="number" min="0" step="0.1" placeholder={showErrors ? 'مقدار لازم' : ''} aria-invalid={showErrors && !(Number.isFinite(input.currentPerMotorA[index]) && input.currentPerMotorA[index] > 0)} bind:value={input.currentPerMotorA[index]} /><b>A</b></label>
+        <label class:invalid={showErrors && !(Number.isFinite(input.currentPerMotorA[index]) && input.currentPerMotorA[index] > 0)}><span>{copy('جریان', 'Current')}</span><input type="number" min="0" step="0.1" placeholder={showErrors ? copy('مقدار لازم', 'Required') : ''} aria-invalid={showErrors && !(Number.isFinite(input.currentPerMotorA[index]) && input.currentPerMotorA[index] > 0)} bind:value={input.currentPerMotorA[index]} /><b>A</b></label>
         <button type="button" aria-label="حذف نقطه" disabled={input.currentPerMotorA.length <= 1} on:click={() => removePoint(index)}>×</button>
       </div>
     {/each}
   </div>
 
-  <button class="calculate" type="button" on:click={onCalculate}>محاسبه</button>
+  <button class="calculate" type="button" on:click={onCalculate}>{copy('محاسبه', 'Calculate')}</button>
 </section>
 
 <style>
