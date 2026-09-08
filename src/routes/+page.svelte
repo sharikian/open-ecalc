@@ -165,7 +165,7 @@
   .app-shell { min-height: 100dvh; background: var(--paper); }
   .page-view { animation: page-slide-in 220ms var(--ease); }
   :global(.app-shell:has(.picker-backdrop)), :global(.app-shell:has(.editor-backdrop)), :global(.app-shell:has(.report-backdrop)) { position: relative; z-index: 1000; }
-  @keyframes page-slide-in { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes page-slide-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
   :global(html[data-motion='off']) .page-view { animation: none; }
   :global(html[dir='ltr']) .workspace { direction: ltr; }
   :global(html[dir='ltr']) .input-area { direction: ltr; }
