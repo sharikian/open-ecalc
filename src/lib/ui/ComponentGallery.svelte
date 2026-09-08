@@ -1,0 +1,31 @@
+<script lang="ts">
+  import { queryComponents } from '$data';
+  const all = queryComponents();
+  let query = '';
+  $: filtered = all.filter((record) => `${record.manufacturer} ${record.model} ${record.kind}`.toLocaleLowerCase('fa').includes(query.trim().toLocaleLowerCase('fa')));
+  const kinds = [
+    { key: 'motor', label: 'موتورها', icon: '✦' },
+    { key: 'propeller', label: 'ملخ‌ها', icon: '◉' },
+    { key: 'esc', label: 'ESCها', icon: '▤' },
+    { key: 'battery', label: 'باتری‌ها', icon: '▣' }
+  ] as const;
+</script>
+
+<section class="catalog" aria-labelledby="catalog-title">
+  <header class="catalog-head"><div><span class="eyebrow">بانک قطعات</span><h1 id="catalog-title">قطعات و منحنی‌ها</h1><p>منابع دریافت‌شده با نشانی و مجوز هر رکورد</p></div><div class="catalog-count"><strong class="data">۸۴۱</strong><span>فایل محلی</span></div></header>
+  <div class="catalog-toolbar"><label><span class="sr-only">جست‌وجوی قطعات</span><input bind:value={query} placeholder="جست‌وجوی نام یا سازنده" /></label><button type="button">همهٔ دسته‌ها</button></div>
+  <div class="kind-grid">
+    {#each kinds as kind}
+      {@const items = filtered.filter((record) => record.kind === kind.key)}
+      <article class="kind-card"><header><span class="kind-icon">{kind.icon}</span><div><h2>{kind.label}</h2><p>{items.length} رکورد پایه</p></div><span class="data">{String(items.length).padStart(2, '0')}</span></header>
+        {#if items.length === 0}<div class="kind-empty">در انتظار واردکردن منبع</div>{:else}<ul>{#each items.slice(0, 3) as item}<li>{#if item.imageUrl}<img src={item.imageUrl} alt="" />{:else}<span class="thumb">{kind.icon}</span>{/if}<div><strong>{item.model}</strong><small>{item.manufacturer}</small></div><b class="quality">{item.quality}</b></li>{/each}</ul>{/if}
+      </article>
+    {/each}
+  </div>
+  <footer class="catalog-foot"><span>دادهٔ خام در <code>data/raw</code> نگه‌داری می‌شود</span><span>مجوز هر منبع در manifest ثبت شده است</span></footer>
+</section>
+
+<style>
+  .catalog { display: grid; gap: 22px; }.catalog-head { display: flex; align-items: end; justify-content: space-between; gap: 18px; }.eyebrow { color: var(--blue); font-size: 13px; }.catalog h1 { margin: 5px 0 0; font-size: clamp(28px, 3vw, 40px); letter-spacing: -0.05em; }.catalog-head p { margin: 6px 0 0; color: var(--muted); font-size: 13px; }.catalog-count { display: grid; justify-items: end; gap: 1px; color: var(--muted); font-size: 12px; }.catalog-count strong { color: var(--ink); font-size: 27px; }.catalog-toolbar { display: flex; gap: 10px; }.catalog-toolbar label { flex: 1; }.catalog-toolbar input { width: 100%; min-height: 48px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); color: var(--ink); padding-inline: 15px; }.catalog-toolbar button { min-height: 48px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); color: var(--ink-soft); padding-inline: 16px; }.kind-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 15px; }.kind-card { display: grid; gap: 14px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); padding: 18px; box-shadow: var(--shadow-soft); }.kind-card header { display: flex; align-items: center; gap: 10px; }.kind-card header > div { flex: 1; }.kind-icon, .thumb { display: grid; width: 38px; height: 38px; place-items: center; border-radius: 11px; background: var(--blue-soft); color: var(--blue); font-size: 20px; }.kind-card h2 { margin: 0; font-size: 17px; }.kind-card p { margin: 2px 0 0; color: var(--muted); font-size: 12px; }.kind-card header > .data { color: var(--blue); font-size: 12px; }.kind-card ul { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }.kind-card li { display: flex; align-items: center; gap: 9px; min-width: 0; border-top: 1px solid var(--line); padding-top: 9px; }.kind-card li > div { min-width: 0; flex: 1; }.kind-card li strong, .kind-card li small { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }.kind-card li strong { font-size: 13px; }.kind-card li small { margin-top: 2px; color: var(--muted); font-size: 11px; }.kind-card li img { width: 38px; height: 38px; border-radius: 9px; object-fit: cover; }.quality { color: var(--muted); font-family: var(--font-data); font-size: 10px; font-weight: 500; }.kind-empty { min-height: 82px; display: grid; place-items: center; border: 1px dashed var(--line-strong); border-radius: 10px; color: var(--muted); font-size: 12px; }.catalog-foot { display: flex; justify-content: space-between; gap: 10px; color: var(--muted); font-size: 11px; }.catalog-foot code { color: var(--ink-soft); font-family: var(--font-data); }.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; }
+  @media (max-width: 560px) { .catalog-head { align-items: start; }.catalog-count { display: none; }.catalog-toolbar { display: grid; }.kind-grid { grid-template-columns: minmax(0, 1fr); }.catalog-foot { display: grid; gap: 4px; } }
+</style>

@@ -129,7 +129,8 @@
       "licenseSpdx": "CC0-1.0",
       "retrievedAt": "2026-09-06T00:00:00.000Z",
       "sourceHash": "9bcd2a6e9f1877b73426119c78ee82f2a68f2707801e7f9029bec85109e26387",
-      "quality": "estimated"
+      "quality": "estimated",
+      "imageUrl": "/data/images/propeller-cyclone-t5045c-74v.png"
     },
     {
       "id": "ref-prop-12x45",
@@ -146,8 +147,8 @@
       "licenseSpdx": "CC0-1.0",
       "retrievedAt": "2026-09-06T00:00:00.000Z",
       "sourceHash": "0d544bd71391f91009887a95442609616583de478534820ef204be266045a478",
-      "quality": "estimated"
+      "quality": "estimated",
+      "imageUrl": "/data/images/propeller-gemfan-5x45-111v.png"
     }
   ]
 }
-
