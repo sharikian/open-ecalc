@@ -109,6 +109,18 @@ export interface PowerBreakdown {
   auxiliaryW: number;
 }
 
+export interface SpeedProfilePoint {
+  speedMps: number;
+  flightTimeMin: number;
+  rangeKm: number;
+}
+
+export interface AltitudeProfilePoint {
+  altitudeM: number;
+  availableThrustN: number;
+  thrustMargin: number;
+}
+
 export interface MissionResult {
   takeoffMassKg: number;
   airDensityKgM3: number;
@@ -123,6 +135,8 @@ export interface MissionResult {
   totalPowerW: number;
   motorTemperatureC: number | null;
   points: MissionPoint[];
+  speedProfile: SpeedProfilePoint[];
+  altitudeProfile: AltitudeProfilePoint[];
   power: PowerBreakdown;
   warnings: CalculationWarning[];
 }
@@ -171,4 +185,3 @@ export interface ProjectFileV1 {
   units: 'metric' | 'imperial';
   input: MissionInput;
 }
-
