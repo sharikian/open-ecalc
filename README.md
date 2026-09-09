@@ -107,8 +107,7 @@ The bundled starter records are clearly marked as estimates. Manufacturer and co
 
 The GitHub Actions workflow in [`.github/workflows/release.yml`](.github/workflows/release.yml) builds:
 
-- one signed ARM APK containing ARMv8a and ARMv7
-- separate signed x86 and x86_64 emulator APKs
+- one signed ARM APK containing only ARMv8a and ARMv7 (no x86 or x86_64 payloads)
 - Windows NSIS installer
 - macOS Intel and Apple Silicon DMGs
 
