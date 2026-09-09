@@ -226,6 +226,8 @@ jobs:
         with:
           targets: ${{ matrix.target }}
       - run: pnpm install --frozen-lockfile
+      - name: Generate platform icons
+        run: pnpm tauri icon src-tauri/icons/icon.png
       - name: Build desktop bundle
         shell: bash
         env:
