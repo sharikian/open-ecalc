@@ -1,0 +1,251 @@
+name: Release builds
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  android-arm:
+    name: Android ARM universal APK
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.15.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: aarch64-linux-android,armv7-linux-androideabi
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - name: Install Android SDK and NDK
+        shell: bash
+        run: |
+          sdkmanager "platform-tools" "platforms;android-36" "build-tools;36.0.0" "ndk;27.0.12077973"
+          echo "ANDROID_NDK_HOME=$ANDROID_HOME/ndk/27.0.12077973" >> "$GITHUB_ENV"
+      - run: pnpm install --frozen-lockfile
+      - name: Initialize Android project
+        run: pnpm tauri android init --ci --skip-targets-install
+      - name: Configure Android signing
+        shell: bash
+        env:
+          ANDROID_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+        run: |
+          test -n "$ANDROID_KEYSTORE_BASE64"
+          test -n "$ANDROID_KEYSTORE_PASSWORD"
+          test -n "$ANDROID_KEY_ALIAS"
+          printf '%s' "$ANDROID_KEYSTORE_BASE64" | base64 --decode > "$RUNNER_TEMP/sharik.keystore"
+          cat > src-tauri/gen/android/keystore.properties <<EOF
+          storePassword=$ANDROID_KEYSTORE_PASSWORD
+          keyPassword=$ANDROID_KEY_PASSWORD
+          keyAlias=$ANDROID_KEY_ALIAS
+          storeFile=$RUNNER_TEMP/sharik.keystore
+          EOF
+          python3 - <<'PY'
+          from pathlib import Path
+          path = Path('src-tauri/gen/android/app/build.gradle.kts')
+          text = path.read_text()
+          if 'signingConfigs' not in text:
+              text = text.replace('import java.util.Properties\n', 'import java.util.Properties\nimport java.io.FileInputStream\n', 1)
+              block = '''    signingConfigs {
+                  create("release") {
+                      val keystorePropertiesFile = rootProject.file("keystore.properties")
+                      val keystoreProperties = Properties()
+                      if (keystorePropertiesFile.exists()) {
+                          keystoreProperties.load(FileInputStream(keystorePropertiesFile))
+                      }
+                      keyAlias = keystoreProperties["keyAlias"] as String
+                      keyPassword = keystoreProperties["keyPassword"] as String
+                      storeFile = file(keystoreProperties["storeFile"] as String)
+                      storePassword = keystoreProperties["storePassword"] as String
+                  }
+              }
+          '''
+              text = text.replace('    buildTypes {\n', block + '    buildTypes {\n', 1)
+              text = text.replace('        getByName("release") {\n            isMinifyEnabled', '        getByName("release") {\n            signingConfig = signingConfigs.getByName("release")\n            isMinifyEnabled', 1)
+              path.write_text(text)
+          PY
+      - name: Build ARMv8a and ARMv7 universal APK
+        run: pnpm tauri android build --ci --apk --target aarch64 armv7
+      - name: Collect ARM APK
+        shell: bash
+        run: |
+          mkdir -p artifacts
+          apk=$(find src-tauri/gen/android/app/build/outputs/apk -type f -name '*.apk' | head -n 1)
+          test -n "$apk"
+          cp "$apk" artifacts/open-ecalc-android-arm-universal.apk
+          file artifacts/open-ecalc-android-arm-universal.apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: open-ecalc-android-arm-universal
+          path: artifacts/open-ecalc-android-arm-universal.apk
+
+  android-x86:
+    name: Android ${{ matrix.label }} APK
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - target: i686
+            label: x86
+          - target: x86_64
+            label: x86_64
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.15.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.target == 'i686' && 'i686-linux-android' || 'x86_64-linux-android' }}
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - name: Install Android SDK and NDK
+        shell: bash
+        run: |
+          sdkmanager "platform-tools" "platforms;android-36" "build-tools;36.0.0" "ndk;27.0.12077973"
+          echo "ANDROID_NDK_HOME=$ANDROID_HOME/ndk/27.0.12077973" >> "$GITHUB_ENV"
+      - run: pnpm install --frozen-lockfile
+      - name: Initialize Android project
+        run: pnpm tauri android init --ci --skip-targets-install
+      - name: Configure Android signing
+        shell: bash
+        env:
+          ANDROID_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+        run: |
+          test -n "$ANDROID_KEYSTORE_BASE64"
+          test -n "$ANDROID_KEYSTORE_PASSWORD"
+          test -n "$ANDROID_KEY_ALIAS"
+          printf '%s' "$ANDROID_KEYSTORE_BASE64" | base64 --decode > "$RUNNER_TEMP/sharik.keystore"
+          cat > src-tauri/gen/android/keystore.properties <<EOF
+          storePassword=$ANDROID_KEYSTORE_PASSWORD
+          keyPassword=$ANDROID_KEY_PASSWORD
+          keyAlias=$ANDROID_KEY_ALIAS
+          storeFile=$RUNNER_TEMP/sharik.keystore
+          EOF
+          python3 - <<'PY'
+          from pathlib import Path
+          path = Path('src-tauri/gen/android/app/build.gradle.kts')
+          text = path.read_text()
+          text = text.replace('import java.util.Properties\n', 'import java.util.Properties\nimport java.io.FileInputStream\n', 1)
+          block = '''    signingConfigs {
+                  create("release") {
+                      val keystorePropertiesFile = rootProject.file("keystore.properties")
+                      val keystoreProperties = Properties()
+                      keystoreProperties.load(FileInputStream(keystorePropertiesFile))
+                      keyAlias = keystoreProperties["keyAlias"] as String
+                      keyPassword = keystoreProperties["keyPassword"] as String
+                      storeFile = file(keystoreProperties["storeFile"] as String)
+                      storePassword = keystoreProperties["storePassword"] as String
+                  }
+              }
+          '''
+          text = text.replace('    buildTypes {\n', block + '    buildTypes {\n', 1)
+          text = text.replace('        getByName("release") {\n            isMinifyEnabled', '        getByName("release") {\n            signingConfig = signingConfigs.getByName("release")\n            isMinifyEnabled', 1)
+          path.write_text(text)
+          PY
+      - name: Build ${{ matrix.label }} APK
+        run: pnpm tauri android build --ci --apk --target ${{ matrix.target }}
+      - name: Collect APK
+        shell: bash
+        run: |
+          mkdir -p artifacts
+          apk=$(find src-tauri/gen/android/app/build/outputs/apk -type f -name '*.apk' | head -n 1)
+          test -n "$apk"
+          cp "$apk" "artifacts/open-ecalc-android-${{ matrix.label }}.apk"
+          file "artifacts/open-ecalc-android-${{ matrix.label }}.apk"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: open-ecalc-android-${{ matrix.label }}
+          path: artifacts/open-ecalc-android-${{ matrix.label }}.apk
+
+  desktop:
+    name: ${{ matrix.label }} desktop build
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            label: windows
+            bundle: nsis
+            target: ''
+          - os: macos-13
+            label: macos-x86_64
+            bundle: dmg
+            target: x86_64-apple-darwin
+          - os: macos-14
+            label: macos-arm64
+            bundle: dmg
+            target: aarch64-apple-darwin
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.15.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.target }}
+      - run: pnpm install --frozen-lockfile
+      - name: Build desktop bundle
+        shell: bash
+        env:
+          TARGET: ${{ matrix.target }}
+          BUNDLE: ${{ matrix.bundle }}
+        run: |
+          if [ -n "$TARGET" ]; then
+            pnpm tauri build --bundles "$BUNDLE" --target "$TARGET"
+          else
+            pnpm tauri build --bundles "$BUNDLE"
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: open-ecalc-${{ matrix.label }}
+          path: src-tauri/target/**/release/bundle/**
+
+  release:
+    name: Publish tagged artifacts
+    if: startsWith(github.ref, 'refs/tags/')
+    needs: [android-arm, android-x86, desktop]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: release-assets
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: release-assets/**/*
+          generate_release_notes: true
