@@ -11,8 +11,10 @@
     chart = echarts.init(host, undefined, { renderer: 'svg' });
     chart.setOption(option);
     const resize = () => chart.resize();
+    const observer = new ResizeObserver(resize);
     window.addEventListener('resize', resize);
-    return () => { window.removeEventListener('resize', resize); chart.dispose(); };
+    observer.observe(host);
+    return () => { observer.disconnect(); window.removeEventListener('resize', resize); chart.dispose(); };
   });
 </script>
 
