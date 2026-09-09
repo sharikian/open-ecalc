@@ -51,6 +51,7 @@ jobs:
         run: |
           test -n "$ANDROID_KEYSTORE_BASE64"
           test -n "$ANDROID_KEYSTORE_PASSWORD"
+          test -n "$ANDROID_KEY_PASSWORD"
           test -n "$ANDROID_KEY_ALIAS"
           printf '%s' "$ANDROID_KEYSTORE_BASE64" | base64 --decode > "$RUNNER_TEMP/sharik.keystore"
           cat > src-tauri/gen/android/keystore.properties <<EOF
@@ -93,9 +94,12 @@ jobs:
           test -n "$apk"
           cp "$apk" artifacts/open-ecalc-android-arm-universal.apk
           file artifacts/open-ecalc-android-arm-universal.apk
+          unzip -l artifacts/open-ecalc-android-arm-universal.apk | grep -q 'lib/arm64-v8a/'
+          unzip -l artifacts/open-ecalc-android-arm-universal.apk | grep -q 'lib/armeabi-v7a/'
       - uses: actions/upload-artifact@v4
         with:
           name: open-ecalc-android-arm-universal
+          retention-days: 14
           path: artifacts/open-ecalc-android-arm-universal.apk
 
   android-x86:
@@ -144,6 +148,7 @@ jobs:
         run: |
           test -n "$ANDROID_KEYSTORE_BASE64"
           test -n "$ANDROID_KEYSTORE_PASSWORD"
+          test -n "$ANDROID_KEY_PASSWORD"
           test -n "$ANDROID_KEY_ALIAS"
           printf '%s' "$ANDROID_KEYSTORE_BASE64" | base64 --decode > "$RUNNER_TEMP/sharik.keystore"
           cat > src-tauri/gen/android/keystore.properties <<EOF
@@ -186,6 +191,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: open-ecalc-android-${{ matrix.label }}
+          retention-days: 14
           path: artifacts/open-ecalc-android-${{ matrix.label }}.apk
 
   desktop:
@@ -234,6 +240,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: open-ecalc-${{ matrix.label }}
+          retention-days: 14
           path: src-tauri/target/**/release/bundle/**
 
   release:
