@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { calculateLegacyExcel, calculateMission, DEFAULT_MISSION_INPUT, type LegacyInput, type LegacyResult, type MissionInput, type MissionResult } from '$core';
-  import { initializeAircraftCatalog, initializeComponentCatalog, initializeLocationCatalog, listReports, saveReport, type CalculationReport } from '$data';
+  import { deleteReport, initializeAircraftCatalog, initializeComponentCatalog, initializeLocationCatalog, listReports, saveReport, type CalculationReport } from '$data';
   import Icon from '$ui/Icon.svelte';
   import LegacyResults from '$ui/LegacyResults.svelte';
   import ComponentGallery from '$ui/ComponentGallery.svelte';
@@ -71,8 +71,14 @@
   }
   function setView(next: 'calculator' | 'reports' | 'components' | 'settings') {
     view = next;
+    missionResult = null;
+    legacyResult = null;
     showErrors = false;
     simpleShowErrors = false;
+  }
+  function removeReport(id: string) {
+    deleteReport(id);
+    reports = reports.filter((report) => report.id !== id);
   }
 
   function applyAircraftProfile(profile: 'mavic2' | 'mavic3') {
@@ -133,7 +139,7 @@
       {#if view === 'components'}
         <ComponentGallery />
       {:else if view === 'reports'}
-        <ReportsPanel {reports} onRedo={redoReport} />
+        <ReportsPanel {reports} onRedo={redoReport} onDelete={removeReport} />
       {:else if view === 'settings'}
         <SettingsPanel {theme} {motionEnabled} onThemeChange={setTheme} onMotionChange={setMotion} />
       {:else}
