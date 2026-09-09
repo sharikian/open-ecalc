@@ -4,9 +4,7 @@ The workflow in `.github/workflows/release.yml` runs for `workflow_dispatch` and
 
 ## Artifacts
 
-- `open-ecalc-android-arm-universal.apk`: one signed APK containing ARMv8a (`aarch64`) and ARMv7 (`armeabi-v7a`).
-- `open-ecalc-android-x86.apk`: signed 32-bit x86 emulator APK.
-- `open-ecalc-android-x86_64.apk`: signed 64-bit x86 emulator APK.
+- `open-ecalc-android-arm-universal.apk`: one signed APK containing only ARMv8a (`arm64-v8a`) and ARMv7 (`armeabi-v7a`). x86 and x86_64 are intentionally excluded to keep the download smaller.
 - `open-ecalc-windows`: Windows NSIS installer bundle.
 - `open-ecalc-macos-x86_64` and `open-ecalc-macos-arm64`: macOS DMG bundles.
 
