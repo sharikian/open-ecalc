@@ -9,6 +9,20 @@ The same SvelteKit + TypeScript codebase targets a static website, Windows, macO
 [![TypeScript](https://img.shields.io/badge/language-TypeScript-3178C6.svg)](https://www.typescriptlang.org/)
 [![Targets](https://img.shields.io/badge/targets-Web%20%7C%20Windows%20%7C%20macOS%20%7C%20Android-14171A.svg)](docs/release-pipeline.md)
 
+## Contents
+
+- [Why Open eCalc?](#why-open-ecalc)
+- [What it calculates](#what-it-calculates)
+- [Screens and language](#screens-and-language)
+- [Technology](#technology)
+- [Quick start](#quick-start)
+- [Useful commands](#useful-commands)
+- [Data, images, and provenance](#data-images-and-provenance)
+- [Desktop and Android releases](#desktop-and-android-releases)
+- [Project layout](#project-layout)
+- [Contributing](#contributing)
+- [Licence](#licence)
+
 ## Why Open eCalc?
 
 Commercial calculators are useful references, but their models and component databases are not open. This project keeps the calculation engine inspectable, works without an account or network connection, and records the source and licence of every bundled data record.
