@@ -21,6 +21,8 @@ export interface Provenance {
 
 export interface SpecificationSource {
   sourceUrl: string;
+  /** Supplementary facts can have different rights from the base dataset. */
+  licenseSpdx?: string;
   condition?: string;
 }
 
@@ -86,6 +88,8 @@ export interface MotorComponent extends ComponentBase {
   resistanceMohmText?: string;
   maxCurrentA?: number;
   maxPowerW?: number;
+  maxCurrentDurationS?: number;
+  maxPowerDurationS?: number;
   massKg?: number;
   poles?: number;
   thermalResistanceCPerW?: number;
@@ -101,6 +105,8 @@ export interface MotorComponent extends ComponentBase {
 
 export interface MotorKvSpecification {
   kv: number;
+  massKg?: number;
+  maxCells?: string;
   noLoadCurrentA?: number;
   noLoadCurrentTestVoltageV?: number;
   resistanceOhm?: number;

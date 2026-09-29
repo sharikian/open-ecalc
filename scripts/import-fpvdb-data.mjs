@@ -12,6 +12,8 @@ const componentsPath = path.join(root, 'static/data/components.v1.json');
 const aircraftPath = path.join(root, 'static/data/aircraft.v1.json');
 const normalizedPath = path.join(root, 'data/normalized/components.v1.json');
 const manufacturerSupplementPath = path.join(root, 'data/supplements/manufacturer-specifications.v1.json');
+const popularProductsPath = path.join(root, 'data/supplements/popular-brand-products.v1.json');
+const catalogImagesPath = path.join(root, 'data/supplements/catalog-images.v1.json');
 const brandProductsPath = path.join(root, 'data/supplements/known-brand-products.v1.json');
 const fpvFiles = ['motors.json', 'batteries.json', 'props.json', 'stacks.json', 'quads.json'];
 const supportFiles = ['LICENSE', 'README.md', 'manifest.json'];
@@ -261,7 +263,7 @@ function readSnapshot() {
 }
 
 function buildComponents(snapshot, base, manufacturerSupplement) {
-  const legacy = base.records.filter((record) => !record.id.startsWith('fpvdb-') && !record.id.startsWith('brand-'));
+  const legacy = base.records.filter((record) => !record.id.startsWith('fpvdb-') && !record.id.startsWith('brand-') && !record.id.startsWith('popular-'));
   const references = legacy.map(referenceRecord);
   const imported = [
     ...snapshot.files['motors.json'].dataset.items.map(importMotor),
@@ -271,14 +273,24 @@ function buildComponents(snapshot, base, manufacturerSupplement) {
   ];
   const brandProducts = readJson(brandProductsPath);
   if (brandProducts.schemaVersion !== 1 || !Array.isArray(brandProducts.records)) throw new Error('Invalid brand-product snapshot');
-  const brands = brandProducts.records.map(record => ({
-    id: record.id, kind: 'esc', productType: 'standalone-esc', manufacturer: record.manufacturer, model: record.model,
-    tags: ['manufacturer-facts', 'industrial', record.manufacturer.toLowerCase()],
-    sourceUrl: record.sourceUrl, licenseSpdx: brandProducts.licenseSpdx, retrievedAt: brandProducts.retrievedAt,
+  const popularProducts = readJson(popularProductsPath);
+  if (popularProducts.schemaVersion !== 1 || !Array.isArray(popularProducts.records)) throw new Error('Invalid popular-product snapshot');
+  const brands = [brandProducts, popularProducts].flatMap(dataset => dataset.records.filter(record => !record.targetId).map(record => ({
+    id: record.id, kind: record.kind ?? 'esc', productType: record.productType ?? 'standalone-esc', manufacturer: record.manufacturer, model: record.model,
+    tags: ['manufacturer-facts', record.kind === 'esc' || !record.kind ? 'industrial' : 'fpv', record.manufacturer.toLowerCase()],
+    sourceUrl: record.sourceUrl, licenseSpdx: dataset.licenseSpdx, retrievedAt: dataset.retrievedAt,
     sourceHash: sha256(JSON.stringify(record)), quality: 'manufacturer', ...record.values,
-    specificationSources: Object.fromEntries(Object.keys(record.values).map(field => [field, { sourceUrl: record.sourceUrl, ...(record.conditions?.[field] ? { condition: record.conditions[field] } : {}) }]))
-  }));
+    specificationSources: Object.fromEntries(Object.keys(record.values).map(field => [field, { sourceUrl: record.sourceUrl, licenseSpdx: dataset.licenseSpdx, ...(record.conditions?.[field] ? { condition: record.conditions[field] } : {}) }]))
+  })));
   const records = [...references, ...imported, ...brands];
+  const images = readJson(catalogImagesPath);
+  for (const record of [...imported, ...brands]) {
+    const key = record.productType === 'fc-esc-stack' ? 'stack' : record.kind;
+    const asset = images.assets.find(asset => asset.key === key);
+    if (!asset || !fs.existsSync(path.join(root, 'static', asset.imageUrl))) throw new Error('Missing catalog image: ' + key);
+    record.imageUrl = asset.imageUrl;
+    record.imageType = 'illustration';
+  }
   const identities = new Set();
   for (const record of records) {
     const key = `${record.kind}|${record.manufacturer}|${record.model}`.normalize('NFKC').toLowerCase().replace(/\s+/g, ' ').trim();
@@ -292,6 +304,23 @@ function buildComponents(snapshot, base, manufacturerSupplement) {
     if (supplement.kvSpecifications) target.kvSpecifications = supplement.kvSpecifications;
     if (supplement.specificationSources) target.specificationSources = supplement.specificationSources;
     target.supplementHash = sha256(JSON.stringify(supplement));
+  }
+  for (const fact of popularProducts.records.filter(record => record.targetId)) {
+    const target = records.find(record => record.id === fact.targetId);
+    if (!target || target.kind !== fact.kind || target.manufacturer.toLowerCase() !== fact.manufacturer.toLowerCase()) throw new Error('Invalid fact target: ' + fact.targetId);
+    const sources = Object.fromEntries(Object.keys(fact.values).map(field => [field, { sourceUrl: fact.sourceUrl, licenseSpdx: popularProducts.licenseSpdx, ...(fact.conditions?.[field] ? { condition: fact.conditions[field] } : {}) }]));
+    if (fact.targetKv != null) {
+      if (target.kind !== 'motor' || fact.values.kv !== fact.targetKv) throw new Error('Mismatched motor variant: ' + fact.id);
+      target.kvOptions = [...new Set([...(target.kvOptions ?? []), ...(target.kv ? [target.kv] : []), fact.targetKv])].sort((a, b) => a - b);
+      const previous = target.kvSpecifications?.find(item => item.kv === fact.targetKv);
+      const specification = { ...previous, ...fact.values, kv: fact.targetKv, specificationSources: { ...previous?.specificationSources, ...sources } };
+      target.kvSpecifications = [...(target.kvSpecifications ?? []).filter(item => item.kv !== fact.targetKv), specification].sort((a, b) => a.kv - b.kv);
+      if (target.kv === fact.targetKv) Object.assign(target, fact.values, { specificationSources: { ...target.specificationSources, ...sources } });
+    } else {
+      Object.assign(target, fact.values, { specificationSources: { ...target.specificationSources, ...sources } });
+    }
+    target.sourceUrls = [...new Set([target.sourceUrl, ...(target.sourceUrls ?? []), fact.sourceUrl])];
+    target.supplementHash = sha256(JSON.stringify(popularProducts.records.filter(record => record.targetId === target.id)));
   }
   return {
     schemaVersion: 1,
@@ -364,6 +393,24 @@ function writeManifests(snapshot, componentDataset, aircraftDataset) {
     urls: [...new Set(brandSnapshot.records.map(record => record.sourceUrl))],
     note: brandSnapshot.policy
   };
+  const popularSnapshot = readJson(popularProductsPath);
+  const popularSource = {
+    id: 'popular-brand-product-facts', name: 'Selected common-brand component facts',
+    kind: 'selected-manufacturer-product-facts', licenseSpdx: popularSnapshot.licenseSpdx,
+    retrievedAt: popularSnapshot.retrievedAt, status: 'field-attributed-facts', bundle: true, included: true,
+    recordCount: popularSnapshot.records.filter(record => !record.targetId).length,
+    researchedFactCount: popularSnapshot.records.length,
+    enrichedRecordCount: new Set(popularSnapshot.records.filter(record => record.targetId).map(record => record.targetId)).size,
+    sha256: sha256(fs.readFileSync(popularProductsPath)),
+    file: 'data/supplements/popular-brand-products.v1.json',
+    urls: [...new Set(popularSnapshot.records.map(record => record.sourceUrl))], note: popularSnapshot.policy
+  };
+  const imageSource = {
+    id: 'generated-catalog-illustrations', name: 'Generated category illustrations',
+    kind: 'generated-illustrations', included: true, bundle: true,
+    recordCount: readJson(catalogImagesPath).assets.length, file: 'data/supplements/catalog-images.v1.json',
+    sha256: sha256(fs.readFileSync(catalogImagesPath)), note: 'Generated illustrations, not manufacturer photographs or exact model depictions.'
+  };
   const sourceUrl = `https://github.com/fpvdb/fpv-db-data/tree/${sourceCommit}`;
   const recordCounts = {
     motors: snapshot.manifest.counts.motors,
@@ -401,7 +448,7 @@ function writeManifests(snapshot, componentDataset, aircraftDataset) {
   sourceManifest.generatedAt = retrievedAt;
   sourceManifest.policy = 'bundled product data requires an explicit redistribution licence; images require separate rights';
   sourceManifest.sources = [
-    ...sourceManifest.sources.filter((source) => !['fpvdb-open-dataset', 'manufacturer-specification-supplement', brandSource.id].includes(source.id)).map((source) => {
+    ...sourceManifest.sources.filter((source) => !['fpvdb-open-dataset', 'manufacturer-specification-supplement', brandSource.id, popularSource.id, imageSource.id].includes(source.id)).map((source) => {
       if (source.id === 'strawsondesign-motor-prop-testing') return { ...source, status: 'reference-only', bundle: true, recordCount: 408, reason: 'Retained as estimated reference rows; generated scalar defaults are excluded from normal catalog results' };
       if (source.id === 'liiondb') return { ...source, status: 'reference-only', bundle: true, recordCount: componentDataset.records.filter((record) => record.manufacturer === 'LiionDB').length, reason: 'Derived chemistry/parallel presets are reference-only, not named commercial packs' };
       if (source.id === 'uavdb-org') return { ...source, status: 'quarantine', bundle: false, licenseSpdx: 'NOASSERTION', reason: 'Heavy-UAV catalog lead; missing LICENSE file and mixed UIUC-derived data prevent redistribution approval' };
@@ -424,7 +471,9 @@ function writeManifests(snapshot, componentDataset, aircraftDataset) {
       note: 'CC BY 4.0 dataset snapshot. Product URLs and notes retained; no product images imported. ESC entries are FC/ESC stacks, not standalone ESCs.'
     },
     manufacturerSupplementManifest,
-    brandSource
+    brandSource,
+    popularSource,
+    imageSource
   ];
   writeJson(sourceManifestPath, sourceManifest);
 
@@ -433,7 +482,7 @@ function writeManifests(snapshot, componentDataset, aircraftDataset) {
   runtime.datasetVersion = componentDataset.version;
   runtime.generatedAt = retrievedAt;
   runtime.sources = [
-    ...runtime.sources.filter((source) => !['fpvdb-open-dataset', 'manufacturer-specification-supplement', brandSource.id].includes(source.id)),
+    ...runtime.sources.filter((source) => !['fpvdb-open-dataset', 'manufacturer-specification-supplement', brandSource.id, popularSource.id, imageSource.id].includes(source.id)),
     {
       id: 'fpvdb-open-dataset',
       name: 'FPV-DB Open Dataset',
@@ -454,7 +503,9 @@ function writeManifests(snapshot, componentDataset, aircraftDataset) {
       included: true,
       attribution: 'T-Motor / T-HOBBY and Tattu / GensTattu; see per-field URLs'
     },
-    brandSource
+    brandSource,
+    popularSource,
+    imageSource
   ];
   writeJson(runtimePath, runtime);
 
@@ -476,6 +527,8 @@ function writeManifests(snapshot, componentDataset, aircraftDataset) {
       referenceOnlyComponents: componentDataset.records.filter((record) => record.referenceOnly).length
     },
     knownBrandProducts: brandSource,
+    popularBrandProducts: popularSource,
+    generatedIllustrations: imageSource,
     manufacturerSupplement: {
       file: 'data/supplements/manufacturer-specifications.v1.json',
       sha256: sha256(fs.readFileSync(manufacturerSupplementPath)),
