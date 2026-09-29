@@ -16,6 +16,17 @@ const heavy: LegacyInput = {
 const light: LegacyInput = { ...heavy, emptyMassG: 11_700, payloadMassG: 5_000, batteryMassG: 5_600, cellCapacityAh: 16 };
 
 describe('legacy workbook model', () => {
+  it('calculates the 5000 mAh browser regression scenario with Ah internally', () => {
+    const result = calculateLegacyExcel({ emptyMassG: 850, payloadMassG: 0, batteryMassG: 300,
+      batteryParallel: 1, cellCapacityAh: 5, rotorCount: 4, speedMps: 10, currentPerMotorA: [10] });
+    expect(result.points[0].usableTimeMin).toBeCloseTo(5.8536585366);
+    expect(result.points[0].rangeKm * 0.8).toBeCloseTo(3.5121951219);
+  });
+
+  it('rejects non-finite and empty operating points', () => {
+    expect(() => calculateLegacyExcel({ ...heavy, cellCapacityAh: NaN })).toThrow(RangeError);
+    expect(() => calculateLegacyExcel({ ...heavy, currentPerMotorA: [] })).toThrow(RangeError);
+  });
   it('matches the three repeated workbook sheets', () => {
     const sheets = ['Z30 - X11 plus ', 'G620 - X9 PLUS', 'X9'].map(() => calculateLegacyExcel(heavy));
     expect(sheets[1]).toEqual(sheets[0]);
@@ -40,4 +51,3 @@ describe('legacy workbook model', () => {
     expect(result.points[3].rangeKm).toBeCloseTo(4.366944655041698, 12);
   });
 });
-

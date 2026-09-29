@@ -6,6 +6,7 @@ import {
   electricalLosses,
   findCoefficientOperatingPoint,
   loadedBatteryVoltage,
+  maximumLoadedOperatingPoint,
   nominalPackVoltage,
   packCapacityAh
 } from './physics';
@@ -28,13 +29,29 @@ function pointAtThrust(input: MissionInput, targetThrustN: number, density: numb
 }
 
 function stabilizePoint(input: MissionInput, targetThrustN: number, density: number): OperatingPoint | null {
-  let voltage = nominalPackVoltage(input.battery);
-  let point = pointAtThrust(input, targetThrustN, density, voltage);
-  for (let iteration = 0; point && iteration < 3; iteration += 1) {
-    voltage = loadedBatteryVoltage(input.battery, point.currentA * input.airframe.rotorCount + input.auxiliaryCurrentA);
-    point = pointAtThrust(input, targetThrustN, density, voltage);
+  const nominal = nominalPackVoltage(input.battery);
+  if (input.propeller.curve?.length) {
+    const point = pointAtThrust(input, targetThrustN, density, nominal);
+    if (!point) return null;
+    const voltage = loadedBatteryVoltage(input.battery, point.currentA * input.airframe.rotorCount + input.auxiliaryCurrentA);
+    // A test at another supply voltage is not automatically valid at this one.
+    if (Math.abs(voltage / point.voltageV - 1) > 0.1) throw new RangeError('Measured curve voltage differs from battery voltage');
+    return { ...point, voltageV: voltage };
   }
-  return point ? { ...point, voltageV: voltage } : null;
+  let lower = 0;
+  let upper = nominal;
+  for (let iteration = 0; iteration < 48; iteration += 1) {
+    const voltage = (lower + upper) / 2;
+    const point = pointAtThrust(input, targetThrustN, density, voltage);
+    if (!point) { lower = voltage; continue; }
+    const loaded = loadedBatteryVoltage(input.battery, point.currentA * input.airframe.rotorCount + input.auxiliaryCurrentA);
+    if (voltage > loaded) upper = voltage;
+    else lower = voltage;
+  }
+  const point = pointAtThrust(input, targetThrustN, density, upper);
+  if (!point) return null;
+  const loaded = loadedBatteryVoltage(input.battery, point.currentA * input.airframe.rotorCount + input.auxiliaryCurrentA);
+  return Math.abs(upper - loaded) < 0.001 ? { ...point, voltageV: loaded } : null;
 }
 
 function asMissionPoint(input: MissionInput, point: OperatingPoint, name: MissionPoint['name']): MissionPoint {
@@ -43,21 +60,35 @@ function asMissionPoint(input: MissionInput, point: OperatingPoint, name: Missio
 }
 
 export function calculateMission(input: MissionInput): MissionResult {
+  if (![input.battery.capacityAh, input.battery.series, input.battery.parallel,
+    input.battery.nominalCellVoltageV, input.airframe.rotorCount, input.motor.kv,
+    input.propeller.diameterM].every(value => Number.isFinite(value) && value > 0)
+    || !Number.isInteger(input.airframe.rotorCount)
+    || !Number.isInteger(input.battery.series) || !Number.isInteger(input.battery.parallel)
+    || !Number.isFinite(input.battery.usableFraction) || input.battery.usableFraction <= 0 || input.battery.usableFraction > 1
+    || !Number.isFinite(input.cruiseSpeedMps) || input.cruiseSpeedMps < 0
+    || !Number.isFinite(input.auxiliaryCurrentA) || input.auxiliaryCurrentA < 0) {
+    throw new RangeError('Invalid mission inputs or battery units');
+  }
   const takeoffMassKg = mass(input);
+  if (!Number.isFinite(takeoffMassKg) || takeoffMassKg <= 0) throw new RangeError('Invalid takeoff mass');
   const density = airDensity(input.environment.altitudeM, input.environment.temperatureC, input.environment.pressurePa);
   const weightN = takeoffMassKg * GRAVITY;
   const thrustPerRotorN = weightN / input.airframe.rotorCount;
   const maximumOpen = input.propeller.curve?.length
     ? [...input.propeller.curve].sort((a, b) => b.thrustN - a.thrustN)[0]
     : coefficientOperatingPoint(input.propeller, input.motor, input.esc, density, nominalPackVoltage(input.battery), 1);
-  const maximumLoadedVoltage = loadedBatteryVoltage(input.battery, maximumOpen.currentA * input.airframe.rotorCount + input.auxiliaryCurrentA);
   const maximum = input.propeller.curve?.length
-    ? { ...maximumOpen, voltageV: maximumLoadedVoltage }
-    : coefficientOperatingPoint(input.propeller, input.motor, input.esc, density, maximumLoadedVoltage, 1);
+    ? { ...maximumOpen, voltageV: loadedBatteryVoltage(input.battery, maximumOpen.currentA * input.airframe.rotorCount + input.auxiliaryCurrentA) }
+    : maximumLoadedOperatingPoint(input, density);
+  const maximumLoadedVoltage = maximum.voltageV;
 
   const definitions: Array<[MissionPoint['name'], number]> = [['hover', 1], ['cruise', 1.15], ['climb', 1.5]];
   const points = definitions.map(([name, multiplier]) => {
-    const resolved = stabilizePoint(input, thrustPerRotorN * multiplier, density) ?? maximum;
+    const resolved = stabilizePoint(input, thrustPerRotorN * multiplier, density);
+    if (!resolved || resolved.voltageV <= 0 || resolved.currentA <= 0) {
+      throw new RangeError(`Insufficient thrust or battery voltage for ${name}`);
+    }
     return asMissionPoint(input, resolved, name);
   });
   const hover = points[0];

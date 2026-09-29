@@ -6,6 +6,7 @@
   import Chart from './Chart.svelte';
   import Icon from './Icon.svelte';
   import RotorCoverage from './RotorCoverage.svelte';
+  import Feedback from './Feedback.svelte';
 
   export let result: MissionResult | null = null;
   export let input: MissionInput;
@@ -107,6 +108,7 @@
     <section class="curve-section" aria-labelledby="altitude-title"><div class="section-head"><div><h3 id="altitude-title">{text('سقف پرواز', 'Altitude ceiling')}</h3><p>{text('رانش موجود با خط نیازمندی مقایسه می‌شود.', 'Available thrust is compared with the required margin.')}</p></div><span class="data">{result.hoverCeilingM == null ? '—' : `${number(result.hoverCeilingM, 0)} m`}</span></div>{#if altitudeOption}<Chart option={altitudeOption} ariaLabel={text('منحنی رانش نسبت به ارتفاع', 'Thrust versus altitude curve')} height={290} />{/if}</section>
 
     <div class="lower-grid"><article class="coverage card"><div class="section-head"><h3>{text('چیدمان روتورها', 'Rotor layout')}</h3><span class="data">{number(result.thrustMargin * 100, 0)}%</span></div><RotorCoverage rotorCount={input.airframe.rotorCount} frameSizeM={input.airframe.frameSizeM} propellerDiameterM={input.propeller.diameterM} layout={input.airframe.layout} /></article><article class="warnings card"><div class="section-head"><h3>{text('کنترل محدودیت‌ها', 'Limit checks')}</h3><span class="data">{result.warnings.length}</span></div>{#if result.warnings.length === 0}<p>{text('محدودیت بحرانی دیده نشد.', 'No critical limit detected.')}</p>{:else}<ul>{#each result.warnings as warning}<li class:critical={warning.severity === 'critical'}><b>{warning.severity === 'critical' ? '!' : '·'}</b><span>{warningLabels[warning.code]?.[en ? 0 : 1] ?? text('نیازمند بررسی', 'Review required')}</span></li>{/each}</ul>{/if}</article></div>
+    <Feedback calculation={{ mode: 'advanced', input, result }} />
   </section>
 {/if}
 
@@ -119,4 +121,9 @@
   @media (max-width: 900px) { .gauges { grid-template-columns: repeat(2, minmax(0, 1fr)); }.lower-grid { grid-template-columns: minmax(0, 1fr); } }
   @media (max-width: 620px) { .result-heading h2 { font-size: 24px; }.headline-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }.headline-stats div:nth-child(3) { border-inline-start: 0; border-block-start: 1px solid var(--line); }.headline-stats div:nth-child(4) { border-block-start: 1px solid var(--line); }.gauge-section, .curve-section, .card { padding: 12px; }.section-head { gap: 8px; }.section-head p { max-width: 220px; }.curve-section :global(.chart) { min-height: 250px; } }
   @media (max-width: 380px) { .gauges { grid-template-columns: minmax(0, 1fr); }.gauge-card :global(.chart) { min-height: 145px; }.gauge-card small { min-height: 0; }.headline-stats b { font-size: 16px; } }
+  @media (max-width: 620px) {
+    .headline-stats span, .headline-stats small, .section-head p, .section-head > .data, .gauge-card small { font-size: 14px; }
+    .section-head h3 { font-size: 17px; }
+    .warnings ul, .warnings p { font-size: 15px; }
+  }
 </style>

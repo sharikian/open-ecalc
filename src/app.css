@@ -3,6 +3,10 @@
 @font-face { font-family: "Vazir"; src: url('/fonts/Vazir.woff2') format('woff2'); font-display: swap; font-style: normal; font-weight: 100 900; }
 
 :root {
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
   --paper: #f5f9fd; --paper-deep: #eaf2fc;
   --surface: #ffffff; --surface-strong: #ffffff;
   --ink: #071744; --ink-soft: #304a79; --muted: #60769d;
@@ -22,3 +26,8 @@ body { min-width: 320px; margin: 0; overflow-x: clip; background: var(--paper); 
 :focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; } .data { font-family: var(--font-data); font-variant-numeric: tabular-nums; }
 h1, h2, h3, strong { font-weight: 800; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 120ms !important; transition-duration: 120ms !important; } }
+
+@media (max-width: 560px) {
+  body { font-size: 17px; }
+  input, select, textarea { font-size: 16px; }
+}
