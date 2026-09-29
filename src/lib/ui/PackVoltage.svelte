@@ -8,7 +8,7 @@
   let active = 0;
   let pendingVoltage: number | undefined;
   $: voltage = Number.isFinite(battery.series) && Number.isFinite(battery.nominalCellVoltageV)
-    ? battery.series * battery.nominalCellVoltageV : pendingVoltage;
+    ? Number((battery.series * battery.nominalCellVoltageV).toFixed(6)) : pendingVoltage;
   $: options = (['LiPo', 'Li-ion', 'LiFePO4'].includes(battery.chemistry) ? [1, 2, 3, 4, 6, 8, 10, 12] : []).map(series => ({ series, voltage: Number((series * nominalCellVoltage(battery.chemistry)).toFixed(2)) }));
   function choose(index: number) {
     const option = options[index];

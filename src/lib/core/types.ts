@@ -41,6 +41,9 @@ export interface Motor {
   resistanceOhm: number;
   maxCurrentA: number;
   maxPowerW: number;
+  maxCurrentDurationS?: number;
+  maxPowerDurationS?: number;
+  noLoadCurrentTestVoltageV?: number;
   massKg: number;
   poles?: number;
   thermalResistanceCPerW?: number;

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
+  import { onMount, tick } from 'svelte';
   import { calculateLegacyExcel, calculateMission, DEFAULT_MISSION_INPUT, type LegacyInput, type LegacyResult, type MissionInput, type MissionResult } from '$core';
   import { deleteReport, initializeAircraftCatalog, initializeComponentCatalog, initializeLocationCatalog, listReports, saveReport, type CalculationReport } from '$data';
   import Icon from '$ui/Icon.svelte';
@@ -28,6 +28,7 @@
     input.battery.massKg = empty; input.motor.massKg = empty; input.motor.noLoadCurrentA = empty; input.motor.resistanceOhm = empty;
     input.esc.massKg = empty; input.esc.burstCurrentA = empty; input.esc.resistanceOhm = empty; input.esc.efficiency = empty;
     input.auxiliaryCurrentA = empty; input.currentScenariosA = [];
+    input.propeller.bladeCount = empty; input.propeller.thrustCoefficient = undefined; input.propeller.powerCoefficient = undefined;
     return input;
   };
   const blankLegacy = (): LegacyInput => ({ emptyMassG: empty, payloadMassG: empty, batteryMassG: empty, batteryParallel: empty, cellCapacityAh: empty, rotorCount: empty, speedMps: empty, currentPerMotorA: [empty] });
@@ -106,16 +107,25 @@
     legacyResult = calculateLegacyExcel(legacyInput);
     reports = [saveReport({ mode: 'simple', input: structuredClone(legacyInput), result: legacyResult }), ...reports].slice(0, 100);
   }
-  function calculateAdvanced() {
+  async function calculateAdvanced() {
     const valid = [0, 1, 2, 3].every(stepReady);
     if (!valid) { missionResult = null; showErrors = true; step = firstIncompleteStep(); return; }
-    try { missionResult = calculateMission(missionInput); reports = [saveReport({ mode: 'advanced', input: structuredClone(missionInput), result: missionResult }), ...reports].slice(0, 100); }
+    try { missionResult = calculateMission(missionInput); reports = [saveReport({ mode: 'advanced', input: structuredClone(missionInput), result: missionResult }), ...reports].slice(0, 100); await tick(); document.querySelector<HTMLElement>('.result-close')?.focus(); }
     catch {
       missionResult = null;
       window.alert($locale === 'en'
         ? 'This configuration cannot meet the required thrust, voltage or tested curve limits. Check the propulsion and battery inputs.'
         : 'این ترکیب رانش، ولتاژ یا محدودهٔ منحنی تست مورد نیاز را تأمین نمی‌کند. ورودی باتری و پیشران را بررسی کنید.');
     }
+  }
+  async function closeResult() { missionResult = null; await tick(); document.querySelector<HTMLElement>('.next')?.focus(); }
+  function resultKey(event: KeyboardEvent) {
+    if (event.key === 'Escape') { event.preventDefault(); closeResult(); }
+    if (event.key !== 'Tab') return;
+    const nodes = [...(event.currentTarget as HTMLElement).querySelectorAll<HTMLElement>('button:not(:disabled), a[href], input, select, textarea, [tabindex="0"]')];
+    const first = nodes[0], last = nodes[nodes.length - 1];
+    if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }
+    else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
   }
   function redoReport(report: CalculationReport) {
     if (report.mode === 'advanced') { missionInput = structuredClone(report.input as MissionInput); mode = 'advanced'; step = 3; }
@@ -129,7 +139,7 @@
 {#if !ready}
   <Preloader />
 {:else}
-  <div class:has-result={Boolean(missionResult || legacyResult)} class:scroll-view={view !== 'calculator'} class="app-shell">
+  <div inert={Boolean(missionResult)} class:has-result={Boolean(missionResult || legacyResult)} class:scroll-view={view !== 'calculator'} class="app-shell">
     <header class="topbar"><div class="brand"><img src="/icons/open-ecalc-logo.png" alt="" /><strong>{$locale === 'en' ? 'Drone calculator' : 'محاسب پهپاد'}</strong></div><div class="topbar__actions"><ThemeToggle {theme} onChange={setTheme} /></div></header>
     <div class="app-body">
       <nav class="side-nav" aria-label={$locale === 'en' ? 'Sections' : 'بخش‌ها'}>
@@ -169,11 +179,14 @@
     </nav>
   </div>
   {#if missionResult}
-    <div class="result-backdrop" role="presentation" on:click={() => (missionResult = null)}><div class="result-dialog" role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="result-dialog-title" on:click|stopPropagation on:keydown|stopPropagation><header class="result-dialog__head"><h2 id="result-dialog-title">{$locale === 'en' ? 'Calculation result' : 'نتیجهٔ محاسبه'}</h2><button type="button" class="result-close" aria-label={$locale === 'en' ? 'Close' : 'بستن'} on:click={() => (missionResult = null)}>×</button></header><ResultPanel result={missionResult} input={missionInput} /></div></div>
+<div class="result-backdrop" role="presentation" on:click={closeResult}><div class="result-dialog" role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="result-dialog-title" on:click|stopPropagation on:keydown|stopPropagation={resultKey}><header class="result-dialog__head"><h2 id="result-dialog-title">{$locale === 'en' ? 'Calculation result' : 'نتیجهٔ محاسبه'}</h2><button type="button" class="result-close" aria-label={$locale === 'en' ? 'Close' : 'بستن'} on:click={closeResult}>×</button></header><ResultPanel result={missionResult} input={missionInput} /></div></div>
   {/if}
 {/if}
 
 <style>
+  :global(body:has(.result-backdrop)) { overflow: hidden; }
+  .result-backdrop { z-index: 90 !important; }
+  .result-dialog__head { position: sticky; top: -1px; z-index: 2; padding-block: 8px; background: var(--paper); }
   .app-shell { min-height: 100dvh; background: var(--paper); }
   .page-view { animation: page-slide-in 220ms var(--ease); }
   :global(.app-shell:has(.picker-backdrop)), :global(.app-shell:has(.editor-backdrop)), :global(.app-shell:has(.report-backdrop)) { position: relative; z-index: 1000; }

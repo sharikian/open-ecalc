@@ -34,6 +34,16 @@ describe('mission properties', () => {
     expect(point.voltageV).toBeCloseTo(loadedBatteryVoltage(input.battery,
       point.currentA * input.airframe.rotorCount + input.auxiliaryCurrentA), 8);
   });
+  it('attaches electrical-limit warnings only to the corresponding current scenario', () => {
+    const result = calculateMission(mission(input => { input.currentScenariosA = [5, 100]; }));
+    expect(result.currentScenarios[0].warnings).toHaveLength(0);
+    const codes = result.currentScenarios[1].warnings.map(warning => warning.code);
+    expect(codes).toContain('battery-continuous-current');
+    expect(codes).toContain('esc-burst-current');
+    expect(codes).toContain('motor-current');
+    expect(codes).not.toContain('propeller-clearance');
+    expect(codes).not.toContain('missing-thermal-data');
+  });
   it('matches eCalc endurance using the observed hover operating point', () => {
     const input = mission(value => {
       value.airframe.takeoffMassKg = 0.85;

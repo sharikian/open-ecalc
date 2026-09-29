@@ -1,6 +1,11 @@
 import type { Battery, MissionInput } from '$core/types';
 import type { ComponentRecord } from '$data/types';
 
+export function applyMotorKv(input: MissionInput, component: Extract<ComponentRecord, { kind: 'motor' }>, kv: number): MissionInput {
+  const specification = component.kvSpecifications?.find((item) => item.kv === kv);
+  return applyComponent(input, { ...component, ...specification, kv });
+}
+
 /** Replace all properties belonging to the selected component; never inherit unknown specs. */
 export function applyComponent(input: MissionInput, component: ComponentRecord): MissionInput {
   const data = component as unknown as Record<string, unknown>;
@@ -18,6 +23,9 @@ export function applyComponent(input: MissionInput, component: ComponentRecord):
   if (component.kind === 'motor') return { ...input, motor: { kv: numeric('kv'), noLoadCurrentA: numeric('noLoadCurrentA'),
     resistanceOhm: numeric('resistanceOhm'), maxCurrentA: numeric('maxCurrentA'), maxPowerW: numeric('maxPowerW'),
     massKg: numeric('massKg'), poles: Number.isFinite(numeric('poles')) ? numeric('poles') : undefined,
+    maxCurrentDurationS: Number.isFinite(numeric('maxCurrentDurationS')) ? numeric('maxCurrentDurationS') : undefined,
+    maxPowerDurationS: Number.isFinite(numeric('maxPowerDurationS')) ? numeric('maxPowerDurationS') : undefined,
+    noLoadCurrentTestVoltageV: Number.isFinite(numeric('noLoadCurrentTestVoltageV')) ? numeric('noLoadCurrentTestVoltageV') : undefined,
     thermalResistanceCPerW: Number.isFinite(numeric('thermalResistanceCPerW')) ? numeric('thermalResistanceCPerW') : undefined },
     propeller: { ...input.propeller, curve: undefined } };
   if (component.kind === 'esc') return { ...input, esc: { continuousCurrentA: numeric('continuousCurrentA'), burstCurrentA: numeric('burstCurrentA'),

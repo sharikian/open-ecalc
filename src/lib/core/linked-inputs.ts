@@ -43,5 +43,7 @@ export function missionStepReady(input: MissionInput, step: number): boolean {
     input.esc.efficiency, input.propeller.diameterM, input.propeller.pitchM, input.motor.massKg, input.esc.massKg].every(positive)
     && [input.motor.noLoadCurrentA, input.motor.resistanceOhm, input.esc.resistanceOhm, input.auxiliaryCurrentA].every(nonnegative)
     && input.esc.efficiency <= 1 && input.esc.burstCurrentA >= input.esc.continuousCurrentA
+    && integer(input.propeller.bladeCount)
+    && (Boolean(input.propeller.curve?.length) || (positive(input.propeller.thrustCoefficient!) && positive(input.propeller.powerCoefficient!)))
     && (input.currentScenariosA ?? []).every(positive);
 }

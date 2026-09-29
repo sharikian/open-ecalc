@@ -1,9 +1,24 @@
 import { describe, it, expect } from 'vitest';
-import { applyComponent } from './component-selection';
+import { applyComponent, applyMotorKv } from './component-selection';
 import { DEFAULT_MISSION_INPUT } from '$core/presets';
 import type { ComponentRecord } from '$data/types';
 
 describe('component selection', () => {
+  it('applies every documented KV-specific value and clears unknown variant values', () => {
+    const component = { kind: 'motor', massKg: .05, kvSpecifications: [
+      { kv: 1750, maxCurrentA: 38, maxPowerW: 930, noLoadCurrentA: .8 },
+      { kv: 2550, maxCurrentA: 51, maxPowerW: 1200 }
+    ] } as Extract<ComponentRecord, { kind: 'motor' }>;
+    const first = applyMotorKv(structuredClone(DEFAULT_MISSION_INPUT), component, 1750);
+    expect(first.motor.maxCurrentA).toBe(38);
+    expect(first.motor.maxPowerW).toBe(930);
+    expect(first.motor.noLoadCurrentA).toBe(.8);
+    const next = applyMotorKv(first, component, 2550);
+    expect(next.motor.kv).toBe(2550);
+    expect(next.motor.maxCurrentA).toBe(51);
+    expect(Number.isNaN(next.motor.noLoadCurrentA)).toBe(true);
+    expect(Number.isNaN(next.motor.resistanceOhm)).toBe(true);
+  });
   it('clears missing motor specs and stale curves rather than carrying previous values', () => {
     const input = structuredClone(DEFAULT_MISSION_INPUT);
     input.propeller.curve = [{ throttle: 1, thrustN: 10, currentA: 5, voltageV: 12, rpm: 1000 }];
