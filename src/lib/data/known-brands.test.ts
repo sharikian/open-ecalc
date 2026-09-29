@@ -21,7 +21,8 @@ describe('known manufacturer product facts', () => {
       expect(product).toMatchObject({ kind: 'esc', productType: 'standalone-esc', licenseSpdx: 'NOASSERTION', quality: 'manufacturer' });
       expect(product.sourceHash).toMatch(/^[a-f0-9]{64}$/);
       expect(product.referenceOnly).not.toBe(true);
-      expect(product.imageUrl).toBeUndefined();
+      expect(product.imageType).toBe('illustration');
+      expect(product.imageUrl).toMatch(/^\/data\/images\/generated-catalog-v2\//);
       const source = snapshot.records.find(record => record.id === product.id)!;
       for (const field of Object.keys(source.values)) expect(product.specificationSources?.[field]?.sourceUrl).toBe(source.sourceUrl);
     }
