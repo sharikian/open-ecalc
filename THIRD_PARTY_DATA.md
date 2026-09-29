@@ -1,5 +1,11 @@
 # Third-party data
 
+Selected Hobbywing, APD and T-Motor standalone ESC factual specifications are
+documented in [docs/known-brands.md](docs/known-brands.md). Their snapshot and
+per-field sources are in `data/supplements/known-brand-products.v1.json`.
+These are attributed facts with `NOASSERTION` rights, not an MIT/CC manufacturer
+catalog. No source prose, manuals or product photographs are bundled.
+
 Open eCalc separates the MIT-licensed application code from component data.
 Every bundled or imported record must retain its original licence and source.
 
