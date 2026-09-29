@@ -12,6 +12,7 @@ const componentsPath = path.join(root, 'static/data/components.v1.json');
 const aircraftPath = path.join(root, 'static/data/aircraft.v1.json');
 const normalizedPath = path.join(root, 'data/normalized/components.v1.json');
 const manufacturerSupplementPath = path.join(root, 'data/supplements/manufacturer-specifications.v1.json');
+const brandProductsPath = path.join(root, 'data/supplements/known-brand-products.v1.json');
 const fpvFiles = ['motors.json', 'batteries.json', 'props.json', 'stacks.json', 'quads.json'];
 const supportFiles = ['LICENSE', 'README.md', 'manifest.json'];
 const expectedCounts = { motors: 206, batteries: 326, props: 207, stacks: 112, quads: 101 };
@@ -260,7 +261,7 @@ function readSnapshot() {
 }
 
 function buildComponents(snapshot, base, manufacturerSupplement) {
-  const legacy = base.records.filter((record) => !record.id.startsWith('fpvdb-'));
+  const legacy = base.records.filter((record) => !record.id.startsWith('fpvdb-') && !record.id.startsWith('brand-'));
   const references = legacy.map(referenceRecord);
   const imported = [
     ...snapshot.files['motors.json'].dataset.items.map(importMotor),
@@ -268,7 +269,22 @@ function buildComponents(snapshot, base, manufacturerSupplement) {
     ...snapshot.files['props.json'].dataset.items.map(importProp),
     ...snapshot.files['stacks.json'].dataset.items.map(importStack)
   ];
-  const records = [...references, ...imported];
+  const brandProducts = readJson(brandProductsPath);
+  if (brandProducts.schemaVersion !== 1 || !Array.isArray(brandProducts.records)) throw new Error('Invalid brand-product snapshot');
+  const brands = brandProducts.records.map(record => ({
+    id: record.id, kind: 'esc', productType: 'standalone-esc', manufacturer: record.manufacturer, model: record.model,
+    tags: ['manufacturer-facts', 'industrial', record.manufacturer.toLowerCase()],
+    sourceUrl: record.sourceUrl, licenseSpdx: brandProducts.licenseSpdx, retrievedAt: brandProducts.retrievedAt,
+    sourceHash: sha256(JSON.stringify(record)), quality: 'manufacturer', ...record.values,
+    specificationSources: Object.fromEntries(Object.keys(record.values).map(field => [field, { sourceUrl: record.sourceUrl, ...(record.conditions?.[field] ? { condition: record.conditions[field] } : {}) }]))
+  }));
+  const records = [...references, ...imported, ...brands];
+  const identities = new Set();
+  for (const record of records) {
+    const key = `${record.kind}|${record.manufacturer}|${record.model}`.normalize('NFKC').toLowerCase().replace(/\s+/g, ' ').trim();
+    if (identities.has(key) && !record.referenceOnly) throw new Error(`Duplicate product: ${key}`);
+    identities.add(key);
+  }
   for (const supplement of manufacturerSupplement.records) {
     const target = records.find((record) => record.id === supplement.id);
     if (!target) throw new Error(`Manufacturer supplement target not found: ${supplement.id}`);
@@ -338,6 +354,16 @@ function buildAircraft(snapshot, base) {
 }
 
 function writeManifests(snapshot, componentDataset, aircraftDataset) {
+  const brandSnapshot = readJson(brandProductsPath);
+  const brandSource = {
+    id: 'known-brand-product-facts', name: 'Hobbywing / APD / T-Motor selected ESC specifications',
+    kind: 'selected-manufacturer-product-facts', licenseSpdx: brandSnapshot.licenseSpdx,
+    retrievedAt: brandSnapshot.retrievedAt, status: 'field-attributed-facts', bundle: true, included: true,
+    recordCount: brandSnapshot.records.length, sha256: sha256(fs.readFileSync(brandProductsPath)),
+    file: 'data/supplements/known-brand-products.v1.json',
+    urls: [...new Set(brandSnapshot.records.map(record => record.sourceUrl))],
+    note: brandSnapshot.policy
+  };
   const sourceUrl = `https://github.com/fpvdb/fpv-db-data/tree/${sourceCommit}`;
   const recordCounts = {
     motors: snapshot.manifest.counts.motors,
@@ -375,7 +401,7 @@ function writeManifests(snapshot, componentDataset, aircraftDataset) {
   sourceManifest.generatedAt = retrievedAt;
   sourceManifest.policy = 'bundled product data requires an explicit redistribution licence; images require separate rights';
   sourceManifest.sources = [
-    ...sourceManifest.sources.filter((source) => !['fpvdb-open-dataset', 'manufacturer-specification-supplement'].includes(source.id)).map((source) => {
+    ...sourceManifest.sources.filter((source) => !['fpvdb-open-dataset', 'manufacturer-specification-supplement', brandSource.id].includes(source.id)).map((source) => {
       if (source.id === 'strawsondesign-motor-prop-testing') return { ...source, status: 'reference-only', bundle: true, recordCount: 408, reason: 'Retained as estimated reference rows; generated scalar defaults are excluded from normal catalog results' };
       if (source.id === 'liiondb') return { ...source, status: 'reference-only', bundle: true, recordCount: componentDataset.records.filter((record) => record.manufacturer === 'LiionDB').length, reason: 'Derived chemistry/parallel presets are reference-only, not named commercial packs' };
       if (source.id === 'uavdb-org') return { ...source, status: 'quarantine', bundle: false, licenseSpdx: 'NOASSERTION', reason: 'Heavy-UAV catalog lead; missing LICENSE file and mixed UIUC-derived data prevent redistribution approval' };
@@ -397,7 +423,8 @@ function writeManifests(snapshot, componentDataset, aircraftDataset) {
       files,
       note: 'CC BY 4.0 dataset snapshot. Product URLs and notes retained; no product images imported. ESC entries are FC/ESC stacks, not standalone ESCs.'
     },
-    manufacturerSupplementManifest
+    manufacturerSupplementManifest,
+    brandSource
   ];
   writeJson(sourceManifestPath, sourceManifest);
 
@@ -406,7 +433,7 @@ function writeManifests(snapshot, componentDataset, aircraftDataset) {
   runtime.datasetVersion = componentDataset.version;
   runtime.generatedAt = retrievedAt;
   runtime.sources = [
-    ...runtime.sources.filter((source) => !['fpvdb-open-dataset', 'manufacturer-specification-supplement'].includes(source.id)),
+    ...runtime.sources.filter((source) => !['fpvdb-open-dataset', 'manufacturer-specification-supplement', brandSource.id].includes(source.id)),
     {
       id: 'fpvdb-open-dataset',
       name: 'FPV-DB Open Dataset',
@@ -426,7 +453,8 @@ function writeManifests(snapshot, componentDataset, aircraftDataset) {
       name: 'Manufacturer field-level specification supplements',
       included: true,
       attribution: 'T-Motor / T-HOBBY and Tattu / GensTattu; see per-field URLs'
-    }
+    },
+    brandSource
   ];
   writeJson(runtimePath, runtime);
 
@@ -447,6 +475,7 @@ function writeManifests(snapshot, componentDataset, aircraftDataset) {
       aircraft: aircraftDataset.records.length,
       referenceOnlyComponents: componentDataset.records.filter((record) => record.referenceOnly).length
     },
+    knownBrandProducts: brandSource,
     manufacturerSupplement: {
       file: 'data/supplements/manufacturer-specifications.v1.json',
       sha256: sha256(fs.readFileSync(manufacturerSupplementPath)),
