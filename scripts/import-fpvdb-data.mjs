@@ -53,6 +53,13 @@ function parseResistanceOhm(value) {
   return match ? Number(match[1]) / 1000 : undefined;
 }
 
+function parseThrottlePercent(value) {
+  if (finite(value)) return { throttlePercent: value };
+  if (typeof value !== 'string') return {};
+  const match = value.trim().match(/^(\d+(?:\.\d+)?)\s*%$/);
+  return match ? { throttlePercent: Number(match[1]), throttleSourceValue: value } : { throttleSourceValue: value };
+}
+
 function productSources(item, category) {
   const sourceUrls = Array.isArray(item.sources) ? item.sources.filter((url) => typeof url === 'string' && url.length > 0) : [];
   const sourceFile = `https://github.com/fpvdb/fpv-db-data/blob/${sourceCommit}/${category}.json`;
@@ -81,24 +88,23 @@ function baseProduct(item, category, kind, productType, rawEntry) {
 function motorCurves(item) {
   if (!Array.isArray(item.specs?.thrust_table)) return undefined;
   const grouped = new Map();
-  for (const point of item.specs.thrust_table) {
-    if (!finite(point.kv) || !finite(point.throttle) || !finite(point.voltage_v) || !finite(point.current_a) || !finite(point.rpm) || !finite(point.thrust_g) || !finite(point.efficiency_gw) || typeof point.prop !== 'string' || typeof point.cells !== 'string') continue;
+  item.specs.thrust_table.forEach((point, sourcePointIndex) => {
+    if (!finite(point.kv) || typeof point.prop !== 'string' || typeof point.cells !== 'string') return;
     const key = JSON.stringify([point.kv, point.prop, point.cells]);
     const curve = grouped.get(key) ?? { kv: point.kv, propeller: point.prop, cells: point.cells, points: [] };
-    curve.points.push({
-      throttlePercent: point.throttle,
-      voltageV: point.voltage_v,
-      currentA: point.current_a,
-      rpm: point.rpm,
-      thrustG: point.thrust_g,
-      thrustN: point.thrust_g * 0.00980665,
-      efficiencyGPerW: point.efficiency_gw
-    });
+    curve.points.push(omitUndefined({
+      sourcePointIndex,
+      ...parseThrottlePercent(point.throttle),
+      voltageV: finite(point.voltage_v) ? point.voltage_v : undefined,
+      currentA: finite(point.current_a) ? point.current_a : undefined,
+      rpm: finite(point.rpm) ? point.rpm : undefined,
+      thrustG: finite(point.thrust_g) ? point.thrust_g : undefined,
+      thrustN: finite(point.thrust_g) ? point.thrust_g * 0.00980665 : undefined,
+      efficiencyGPerW: finite(point.efficiency_gw) ? point.efficiency_gw : undefined
+    }));
     grouped.set(key, curve);
-  }
-  const curves = [...grouped.values()];
-  for (const curve of curves) curve.points.sort((a, b) => a.throttlePercent - b.throttlePercent);
-  return curves.filter((curve) => curve.points.length >= 3).map((curve) => ({
+  });
+  return [...grouped.values()].map((curve) => ({
     ...curve,
     conditions: item.specs.thrust_conditions
   }));

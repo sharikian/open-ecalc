@@ -19,6 +19,12 @@ records remain available only as opt-in references (`referenceOnly: true`),
 excluded from the default catalog. They are not manufacturer specifications
 and are not copied from eCalc, Tyto, APC, or a manufacturer.
 
+FPV-DB specifications and bench curves are attributed to the pinned community
+snapshot; this import did not independently cross-check them against
+manufacturer datasheets or product pages and does not claim manufacturer
+verification. All thrust-table rows are retained, including rows with absent
+RPM or throttle fields; missing values remain unset.
+
 ## Approved import tooling
 
 - `tzi4/Multicopter_Battery_and_Range_Calculations` — MIT (commit

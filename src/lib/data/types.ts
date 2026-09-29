@@ -92,13 +92,15 @@ export interface MotorBenchCurve {
 }
 
 export interface MotorBenchPoint {
-  throttlePercent: number;
-  voltageV: number;
-  currentA: number;
-  rpm: number;
-  thrustG: number;
-  thrustN: number;
-  efficiencyGPerW: number;
+  sourcePointIndex: number;
+  throttlePercent?: number;
+  throttleSourceValue?: string;
+  voltageV?: number;
+  currentA?: number;
+  rpm?: number;
+  thrustG?: number;
+  thrustN?: number;
+  efficiencyGPerW?: number;
 }
 
 export interface PropellerComponent extends ComponentBase {

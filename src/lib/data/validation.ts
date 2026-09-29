@@ -67,14 +67,17 @@ export function validateComponentRecords(records: ComponentRecord[]): ImportIssu
     }
     if (record.kind === 'motor' && record.benchCurves) {
       record.benchCurves.forEach((curve, curveIndex) => {
-        const ordered = curve.points.every((point, pointIndex, points) =>
-          Number.isFinite(point.throttlePercent) &&
-          Number.isFinite(point.rpm) &&
-          Number.isFinite(point.thrustN) &&
-          (pointIndex === 0 || point.throttlePercent >= points[pointIndex - 1].throttlePercent)
-        );
-        if (curve.points.length < 3 || !ordered) {
-          issues.push({ row, field: `benchCurves.${curveIndex}`, code: 'unordered-curve', message: 'Motor bench curves need at least three finite, throttle-ordered points' });
+        const throttleValues = curve.points
+          .map((point) => point.throttlePercent)
+          .filter((throttle): throttle is number => typeof throttle === 'number' && Number.isFinite(throttle));
+        let previousThrottle: number | undefined;
+        const ordered = throttleValues.every((throttle) => {
+          const inOrder = previousThrottle === undefined || throttle >= previousThrottle;
+          previousThrottle = throttle;
+          return inOrder;
+        });
+        if (!ordered) {
+          issues.push({ row, field: `benchCurves.${curveIndex}`, code: 'unordered-curve', message: 'Present motor bench throttle values must be ordered' });
         }
       });
     }
