@@ -29,6 +29,7 @@
     input.esc.massKg = empty; input.esc.burstCurrentA = empty; input.esc.resistanceOhm = empty; input.esc.efficiency = empty;
     input.auxiliaryCurrentA = empty; input.currentScenariosA = [];
     input.propeller.bladeCount = empty; input.propeller.thrustCoefficient = undefined; input.propeller.powerCoefficient = undefined;
+    input.battery.burstC = undefined; input.motor.poles = undefined;
     return input;
   };
   const blankLegacy = (): LegacyInput => ({ emptyMassG: empty, payloadMassG: empty, batteryMassG: empty, batteryParallel: empty, cellCapacityAh: empty, rotorCount: empty, speedMps: empty, currentPerMotorA: [empty] });
