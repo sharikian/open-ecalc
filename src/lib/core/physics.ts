@@ -7,9 +7,9 @@ const GRAVITY = 9.80665;
 const AIR_GAS_CONSTANT = 287.05287;
 
 export function airPressureAtAltitude(altitudeM: number): number {
-  const boundedAltitude = Math.max(-500, Math.min(11_000, altitudeM));
+  if (!Number.isFinite(altitudeM) || altitudeM < -500 || altitudeM > 11000) throw new RangeError('Altitude outside atmosphere model');
   return STANDARD_PRESSURE_PA * Math.pow(
-    1 - (LAPSE_RATE_K_PER_M * boundedAltitude) / STANDARD_TEMPERATURE_K,
+    1 - (LAPSE_RATE_K_PER_M * altitudeM) / STANDARD_TEMPERATURE_K,
     GRAVITY / (AIR_GAS_CONSTANT * LAPSE_RATE_K_PER_M)
   );
 }

@@ -13,6 +13,21 @@ function mission(change: (input: MissionInput) => void = () => {}): MissionInput
 }
 
 describe('mission properties', () => {
+  it('compares currents without changing the physical mission points', () => {
+    const input = mission(value => {
+      value.battery.capacityAh = 5; value.battery.parallel = 1; value.battery.usableFraction = 0.8;
+      value.auxiliaryCurrentA = 1; value.cruiseSpeedMps = 10; value.currentScenariosA = [10, 20];
+    });
+    const result = calculateMission(input);
+    const without = calculateMission({ ...input, currentScenariosA: [] });
+    expect(result.points).toEqual(without.points);
+    expect(result.ceilingM).toEqual(without.ceilingM);
+    expect(result.currentScenarios[0].totalCurrentA).toBe(41);
+    expect(result.currentScenarios[0].flightTimeMin).toBeCloseTo(5.8536585);
+    expect(result.currentScenarios[0].rangeKm).toBeCloseTo(3.512195);
+    expect(result.currentScenarios[1].flightTimeMin).toBeLessThan(result.currentScenarios[0].flightTimeMin);
+    expect(() => calculateMission({ ...input, currentScenariosA: [NaN] })).toThrow();
+  });
   it('solves maximum current and battery sag at the same operating point', () => {
     const input = mission();
     const point = maximumLoadedOperatingPoint(input, 1.225);
