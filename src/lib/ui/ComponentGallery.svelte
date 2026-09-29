@@ -103,7 +103,7 @@
     return () => window.removeEventListener('resize', update);
   });
   function imageFor(row: Row): string {
-    if (row.id.startsWith('fpvdb-')) return '';
+    if (row.id.startsWith('fpvdb-') || row.id.startsWith('brand-')) return '';
     const imageHash = [...row.id].reduce((sum, char) => sum + char.charCodeAt(0), 0);
     if (row.kind === 'battery') return imageHash % 2 ? '/data/images/battery-lipo-pack.png' : '/data/images/battery-liion-pack.png';
     if (row.kind === 'esc') return imageHash % 2 ? '/data/images/esc-high-current.png' : '/data/images/esc-compact-board.png';

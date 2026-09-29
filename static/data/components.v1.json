@@ -94414,6 +94414,474 @@
       "massKg": 0.009000000000000001,
       "mcu": "F722",
       "mount": "30.5x30.5mm"
+    },
+    {
+      "id": "brand-esc-hobbywing-xrotor-pro-40a-6s-a",
+      "kind": "esc",
+      "productType": "standalone-esc",
+      "manufacturer": "Hobbywing",
+      "model": "XRotor Pro 40A 6S BLDC (Version A)",
+      "tags": [
+        "manufacturer-facts",
+        "industrial",
+        "hobbywing"
+      ],
+      "sourceUrl": "https://www.hobbywing.com/en/products/xrotor-pro-40a120",
+      "licenseSpdx": "NOASSERTION",
+      "retrievedAt": "2026-09-29T15:36:29.000Z",
+      "sourceHash": "372e4b45bae34c0ab13c0f669a9c50eeab1d212ae3ba763a041e2383321fba8d",
+      "quality": "manufacturer",
+      "continuousCurrentA": 40,
+      "burstCurrentA": 60,
+      "massKg": 0.05,
+      "maxCells": "3-6S",
+      "specificationSources": {
+        "continuousCurrentA": {
+          "sourceUrl": "https://www.hobbywing.com/en/products/xrotor-pro-40a120"
+        },
+        "burstCurrentA": {
+          "sourceUrl": "https://www.hobbywing.com/en/products/xrotor-pro-40a120",
+          "condition": "Peak rating; duration not published in the product table"
+        },
+        "massKg": {
+          "sourceUrl": "https://www.hobbywing.com/en/products/xrotor-pro-40a120",
+          "condition": "Version A; manufacturer table weight, cable exclusion not specified"
+        },
+        "maxCells": {
+          "sourceUrl": "https://www.hobbywing.com/en/products/xrotor-pro-40a120"
+        }
+      }
+    },
+    {
+      "id": "brand-esc-hobbywing-xrotor-pro-40a-6s-b",
+      "kind": "esc",
+      "productType": "standalone-esc",
+      "manufacturer": "Hobbywing",
+      "model": "XRotor Pro 40A 6S BLDC (Version B)",
+      "tags": [
+        "manufacturer-facts",
+        "industrial",
+        "hobbywing"
+      ],
+      "sourceUrl": "https://www.hobbywing.com/en/products/xrotor-pro-40a120",
+      "licenseSpdx": "NOASSERTION",
+      "retrievedAt": "2026-09-29T15:36:29.000Z",
+      "sourceHash": "02f8165652955d4fd1b58e30574714798c85b690de13d59986c33a816dc72a3a",
+      "quality": "manufacturer",
+      "continuousCurrentA": 40,
+      "burstCurrentA": 60,
+      "massKg": 0.045,
+      "maxCells": "3-6S",
+      "specificationSources": {
+        "continuousCurrentA": {
+          "sourceUrl": "https://www.hobbywing.com/en/products/xrotor-pro-40a120"
+        },
+        "burstCurrentA": {
+          "sourceUrl": "https://www.hobbywing.com/en/products/xrotor-pro-40a120",
+          "condition": "Peak rating; duration not published in the product table"
+        },
+        "massKg": {
+          "sourceUrl": "https://www.hobbywing.com/en/products/xrotor-pro-40a120",
+          "condition": "Version B; manufacturer table weight, cable exclusion not specified"
+        },
+        "maxCells": {
+          "sourceUrl": "https://www.hobbywing.com/en/products/xrotor-pro-40a120"
+        }
+      }
+    },
+    {
+      "id": "brand-esc-hobbywing-xrotor-pro-h80a-14s-foc",
+      "kind": "esc",
+      "productType": "standalone-esc",
+      "manufacturer": "Hobbywing",
+      "model": "XRotor Pro H80A 14S FOC",
+      "tags": [
+        "manufacturer-facts",
+        "industrial",
+        "hobbywing"
+      ],
+      "sourceUrl": "https://www.hobbywing.com/en/products/xrotorh80a14sfoc",
+      "licenseSpdx": "NOASSERTION",
+      "retrievedAt": "2026-09-29T15:36:29.000Z",
+      "sourceHash": "00f8559bf89654792629c04e2cc8fbbc0e6aa352b63cd81f43ee1abfa633f359",
+      "quality": "manufacturer",
+      "continuousCurrentA": 40,
+      "burstCurrentA": 100,
+      "burstDurationS": 3,
+      "massKg": 0.087,
+      "maxCells": "6-14S",
+      "minInputVoltageV": 18,
+      "maxInputVoltageV": 63,
+      "specificationSources": {
+        "continuousCurrentA": {
+          "sourceUrl": "https://www.hobbywing.com/en/products/xrotorh80a14sfoc",
+          "condition": "Requires effective heat dissipation; H80A is the model name, not the continuous rating"
+        },
+        "burstCurrentA": {
+          "sourceUrl": "https://www.hobbywing.com/en/products/xrotorh80a14sfoc",
+          "condition": "3-second peak"
+        },
+        "burstDurationS": {
+          "sourceUrl": "https://www.hobbywing.com/en/products/xrotorh80a14sfoc"
+        },
+        "massKg": {
+          "sourceUrl": "https://www.hobbywing.com/en/products/xrotorh80a14sfoc",
+          "condition": "Excludes cables"
+        },
+        "maxCells": {
+          "sourceUrl": "https://www.hobbywing.com/en/products/xrotorh80a14sfoc"
+        },
+        "minInputVoltageV": {
+          "sourceUrl": "https://www.hobbywing.com/en/products/xrotorh80a14sfoc"
+        },
+        "maxInputVoltageV": {
+          "sourceUrl": "https://www.hobbywing.com/en/products/xrotorh80a14sfoc"
+        }
+      }
+    },
+    {
+      "id": "brand-esc-hobbywing-xrotor-pro-h110a-14s-bldc",
+      "kind": "esc",
+      "productType": "standalone-esc",
+      "manufacturer": "Hobbywing",
+      "model": "XRotor Pro H110A 14S BLDC",
+      "tags": [
+        "manufacturer-facts",
+        "industrial",
+        "hobbywing"
+      ],
+      "sourceUrl": "https://www.hobbywing.com/en/products/xrotor-pro-h110a-14s-bldc",
+      "licenseSpdx": "NOASSERTION",
+      "retrievedAt": "2026-09-29T15:36:29.000Z",
+      "sourceHash": "212d0a755b69e24074af557e3bf850c614f833b417954d9b5b33a83ec5c00d6b",
+      "quality": "manufacturer",
+      "continuousCurrentA": 50,
+      "burstCurrentA": 110,
+      "burstDurationS": 15,
+      "massKg": 0.155,
+      "minInputVoltageV": 18,
+      "maxInputVoltageV": 63,
+      "specificationSources": {
+        "continuousCurrentA": {
+          "sourceUrl": "https://www.hobbywing.com/en/products/xrotor-pro-h110a-14s-bldc",
+          "condition": "7 m/s airflow at 28 C ambient"
+        },
+        "burstCurrentA": {
+          "sourceUrl": "https://www.hobbywing.com/en/products/xrotor-pro-h110a-14s-bldc",
+          "condition": "15 seconds with 7 m/s airflow at 28 C ambient"
+        },
+        "burstDurationS": {
+          "sourceUrl": "https://www.hobbywing.com/en/products/xrotor-pro-h110a-14s-bldc"
+        },
+        "massKg": {
+          "sourceUrl": "https://www.hobbywing.com/en/products/xrotor-pro-h110a-14s-bldc",
+          "condition": "Excludes wires; non-IPC version only"
+        },
+        "minInputVoltageV": {
+          "sourceUrl": "https://www.hobbywing.com/en/products/xrotor-pro-h110a-14s-bldc"
+        },
+        "maxInputVoltageV": {
+          "sourceUrl": "https://www.hobbywing.com/en/products/xrotor-pro-h110a-14s-bldc"
+        }
+      }
+    },
+    {
+      "id": "brand-esc-apd-40f3",
+      "kind": "esc",
+      "productType": "standalone-esc",
+      "manufacturer": "APD",
+      "model": "40F3",
+      "tags": [
+        "manufacturer-facts",
+        "industrial",
+        "apd"
+      ],
+      "sourceUrl": "https://docs.powerdrives.net/products/f_series",
+      "licenseSpdx": "NOASSERTION",
+      "retrievedAt": "2026-09-29T15:36:29.000Z",
+      "sourceHash": "883e8e61cf0abf27e7e15d285dba2e2aa5a4facac8611bc2ddc7c19b0ac3eae3",
+      "quality": "manufacturer",
+      "continuousCurrentA": 40,
+      "burstCurrentA": 100,
+      "massKg": 0.003,
+      "continuousDurationS": 60,
+      "specificationSources": {
+        "continuousCurrentA": {
+          "sourceUrl": "https://docs.powerdrives.net/products/f_series",
+          "condition": "60 seconds at full throttle with 33 m/s cooling airflow"
+        },
+        "burstCurrentA": {
+          "sourceUrl": "https://docs.powerdrives.net/products/f_series",
+          "condition": "Duration unspecified; do not treat as sustained current"
+        },
+        "massKg": {
+          "sourceUrl": "https://docs.powerdrives.net/products/f_series",
+          "condition": "Excludes cables"
+        },
+        "continuousDurationS": {
+          "sourceUrl": "https://docs.powerdrives.net/products/f_series"
+        }
+      }
+    },
+    {
+      "id": "brand-esc-apd-80f3x",
+      "kind": "esc",
+      "productType": "standalone-esc",
+      "manufacturer": "APD",
+      "model": "80F3[X]",
+      "tags": [
+        "manufacturer-facts",
+        "industrial",
+        "apd"
+      ],
+      "sourceUrl": "https://docs.powerdrives.net/products/f_series",
+      "licenseSpdx": "NOASSERTION",
+      "retrievedAt": "2026-09-29T15:36:29.000Z",
+      "sourceHash": "514f9726a962e0711aa9ca10e9038263ec90430ee946d732ce12a54feb0f4597",
+      "quality": "manufacturer",
+      "continuousCurrentA": 80,
+      "burstCurrentA": 140,
+      "massKg": 0.01,
+      "continuousDurationS": 60,
+      "specificationSources": {
+        "continuousCurrentA": {
+          "sourceUrl": "https://docs.powerdrives.net/products/f_series",
+          "condition": "60 seconds at full throttle with 33 m/s cooling airflow"
+        },
+        "burstCurrentA": {
+          "sourceUrl": "https://docs.powerdrives.net/products/f_series",
+          "condition": "Duration unspecified; do not treat as sustained current"
+        },
+        "massKg": {
+          "sourceUrl": "https://docs.powerdrives.net/products/f_series",
+          "condition": "Excludes cables"
+        },
+        "continuousDurationS": {
+          "sourceUrl": "https://docs.powerdrives.net/products/f_series"
+        }
+      }
+    },
+    {
+      "id": "brand-esc-apd-100f3x",
+      "kind": "esc",
+      "productType": "standalone-esc",
+      "manufacturer": "APD",
+      "model": "100F3[X]",
+      "tags": [
+        "manufacturer-facts",
+        "industrial",
+        "apd"
+      ],
+      "sourceUrl": "https://docs.powerdrives.net/products/f_series",
+      "licenseSpdx": "NOASSERTION",
+      "retrievedAt": "2026-09-29T15:36:29.000Z",
+      "sourceHash": "a12715cff111cd7c5bc0b0ec90e01a9f08f945e608e339f7f81f50da428e9608",
+      "quality": "manufacturer",
+      "continuousCurrentA": 100,
+      "burstCurrentA": 150,
+      "massKg": 0.013,
+      "continuousDurationS": 60,
+      "specificationSources": {
+        "continuousCurrentA": {
+          "sourceUrl": "https://docs.powerdrives.net/products/f_series",
+          "condition": "60 seconds at full throttle with 33 m/s cooling airflow"
+        },
+        "burstCurrentA": {
+          "sourceUrl": "https://docs.powerdrives.net/products/f_series",
+          "condition": "Duration unspecified; do not treat as sustained current"
+        },
+        "massKg": {
+          "sourceUrl": "https://docs.powerdrives.net/products/f_series",
+          "condition": "Excludes cables"
+        },
+        "continuousDurationS": {
+          "sourceUrl": "https://docs.powerdrives.net/products/f_series"
+        }
+      }
+    },
+    {
+      "id": "brand-esc-apd-120f3x",
+      "kind": "esc",
+      "productType": "standalone-esc",
+      "manufacturer": "APD",
+      "model": "120F3[X]",
+      "tags": [
+        "manufacturer-facts",
+        "industrial",
+        "apd"
+      ],
+      "sourceUrl": "https://docs.powerdrives.net/products/f_series",
+      "licenseSpdx": "NOASSERTION",
+      "retrievedAt": "2026-09-29T15:36:29.000Z",
+      "sourceHash": "65bfeba0fb5614d8eb8fdad7a0b74a711a0d8de0ea75f0b0c0ab03c6b734fe98",
+      "quality": "manufacturer",
+      "continuousCurrentA": 120,
+      "burstCurrentA": 200,
+      "massKg": 0.02,
+      "continuousDurationS": 60,
+      "specificationSources": {
+        "continuousCurrentA": {
+          "sourceUrl": "https://docs.powerdrives.net/products/f_series",
+          "condition": "60 seconds at full throttle with 33 m/s cooling airflow"
+        },
+        "burstCurrentA": {
+          "sourceUrl": "https://docs.powerdrives.net/products/f_series",
+          "condition": "Duration unspecified; do not treat as sustained current"
+        },
+        "massKg": {
+          "sourceUrl": "https://docs.powerdrives.net/products/f_series",
+          "condition": "Excludes cables"
+        },
+        "continuousDurationS": {
+          "sourceUrl": "https://docs.powerdrives.net/products/f_series"
+        }
+      }
+    },
+    {
+      "id": "brand-esc-apd-200f3x",
+      "kind": "esc",
+      "productType": "standalone-esc",
+      "manufacturer": "APD",
+      "model": "200F3[X]",
+      "tags": [
+        "manufacturer-facts",
+        "industrial",
+        "apd"
+      ],
+      "sourceUrl": "https://docs.powerdrives.net/products/f_series",
+      "licenseSpdx": "NOASSERTION",
+      "retrievedAt": "2026-09-29T15:36:29.000Z",
+      "sourceHash": "36f4a86d7d89c6a5e8ba5327f68cbfe082670c9b604cbed5de17d70f532d5db1",
+      "quality": "manufacturer",
+      "continuousCurrentA": 200,
+      "burstCurrentA": 300,
+      "massKg": 0.036,
+      "continuousDurationS": 60,
+      "specificationSources": {
+        "continuousCurrentA": {
+          "sourceUrl": "https://docs.powerdrives.net/products/f_series",
+          "condition": "60 seconds at full throttle with 33 m/s cooling airflow"
+        },
+        "burstCurrentA": {
+          "sourceUrl": "https://docs.powerdrives.net/products/f_series",
+          "condition": "Duration unspecified; do not treat as sustained current"
+        },
+        "massKg": {
+          "sourceUrl": "https://docs.powerdrives.net/products/f_series",
+          "condition": "Excludes cables"
+        },
+        "continuousDurationS": {
+          "sourceUrl": "https://docs.powerdrives.net/products/f_series"
+        }
+      }
+    },
+    {
+      "id": "brand-esc-tmotor-flame-60a-12s-v2",
+      "kind": "esc",
+      "productType": "standalone-esc",
+      "manufacturer": "T-Motor",
+      "model": "FLAME 60A 12S V2.0",
+      "tags": [
+        "manufacturer-facts",
+        "industrial",
+        "t-motor"
+      ],
+      "sourceUrl": "https://store.tmotor.com/goods.php?id=370",
+      "licenseSpdx": "NOASSERTION",
+      "retrievedAt": "2026-09-29T15:36:29.000Z",
+      "sourceHash": "a50cea9d54d3ae6671176bb27eba8410b0d1ecbabaf2a315dd57f1092ae9e907",
+      "quality": "manufacturer",
+      "continuousCurrentA": 60,
+      "burstCurrentA": 80,
+      "burstDurationS": 10,
+      "maxCells": "6-12S",
+      "specificationSources": {
+        "continuousCurrentA": {
+          "sourceUrl": "https://store.tmotor.com/goods.php?id=370"
+        },
+        "burstCurrentA": {
+          "sourceUrl": "https://store.tmotor.com/goods.php?id=370",
+          "condition": "10-second peak"
+        },
+        "burstDurationS": {
+          "sourceUrl": "https://store.tmotor.com/goods.php?id=370"
+        },
+        "maxCells": {
+          "sourceUrl": "https://store.tmotor.com/goods.php?id=370"
+        }
+      }
+    },
+    {
+      "id": "brand-esc-tmotor-flame-80a-12s-v2",
+      "kind": "esc",
+      "productType": "standalone-esc",
+      "manufacturer": "T-Motor",
+      "model": "FLAME 80A 12S V2.0",
+      "tags": [
+        "manufacturer-facts",
+        "industrial",
+        "t-motor"
+      ],
+      "sourceUrl": "https://store.tmotor.com/goods.php?id=830",
+      "licenseSpdx": "NOASSERTION",
+      "retrievedAt": "2026-09-29T15:36:29.000Z",
+      "sourceHash": "3360550d4847a8b31f1848589f1edbfdf44b8e82341d4658435f25276d246395",
+      "quality": "manufacturer",
+      "continuousCurrentA": 80,
+      "burstCurrentA": 120,
+      "burstDurationS": 10,
+      "maxCells": "6-12S",
+      "specificationSources": {
+        "continuousCurrentA": {
+          "sourceUrl": "https://store.tmotor.com/goods.php?id=830"
+        },
+        "burstCurrentA": {
+          "sourceUrl": "https://store.tmotor.com/goods.php?id=830",
+          "condition": "10-second peak"
+        },
+        "burstDurationS": {
+          "sourceUrl": "https://store.tmotor.com/goods.php?id=830"
+        },
+        "maxCells": {
+          "sourceUrl": "https://store.tmotor.com/goods.php?id=830"
+        }
+      }
+    },
+    {
+      "id": "brand-esc-tmotor-flame-100a-14s",
+      "kind": "esc",
+      "productType": "standalone-esc",
+      "manufacturer": "T-Motor",
+      "model": "FLAME 100A 14S",
+      "tags": [
+        "manufacturer-facts",
+        "industrial",
+        "t-motor"
+      ],
+      "sourceUrl": "https://store.tmotor.com/goods.php?id=387",
+      "licenseSpdx": "NOASSERTION",
+      "retrievedAt": "2026-09-29T15:36:29.000Z",
+      "sourceHash": "dfa79a2a66890e8edc7ae7ab6affd542fd71fe184c51f07d840bf3b23414cfd7",
+      "quality": "manufacturer",
+      "continuousCurrentA": 100,
+      "burstCurrentA": 120,
+      "burstDurationS": 10,
+      "maxCells": "6-14S",
+      "specificationSources": {
+        "continuousCurrentA": {
+          "sourceUrl": "https://store.tmotor.com/goods.php?id=387"
+        },
+        "burstCurrentA": {
+          "sourceUrl": "https://store.tmotor.com/goods.php?id=387",
+          "condition": "10-second peak"
+        },
+        "burstDurationS": {
+          "sourceUrl": "https://store.tmotor.com/goods.php?id=387"
+        },
+        "maxCells": {
+          "sourceUrl": "https://store.tmotor.com/goods.php?id=387"
+        }
+      }
     }
   ]
 }

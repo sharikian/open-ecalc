@@ -143,6 +143,29 @@
       ],
       "supplementSha256": "b20713fc78a4d3e97e27fc25670749a23d7dd3f8559dc405c09a4f51ba54d55c",
       "note": "Small set of explicitly attributed factual specifications only; source catalog terms were not evaluated for bulk redistribution. No source text, catalog database, or product images included."
+    },
+    {
+      "id": "known-brand-product-facts",
+      "name": "Hobbywing / APD / T-Motor selected ESC specifications",
+      "kind": "selected-manufacturer-product-facts",
+      "licenseSpdx": "NOASSERTION",
+      "retrievedAt": "2026-09-29T15:36:29.000Z",
+      "status": "field-attributed-facts",
+      "bundle": true,
+      "included": true,
+      "recordCount": 12,
+      "sha256": "6082173786f251e424feba1e7d96f8ffa37f79325f48a7ad9bf9121d115b0fae",
+      "file": "data/supplements/known-brand-products.v1.json",
+      "urls": [
+        "https://www.hobbywing.com/en/products/xrotor-pro-40a120",
+        "https://www.hobbywing.com/en/products/xrotorh80a14sfoc",
+        "https://www.hobbywing.com/en/products/xrotor-pro-h110a-14s-bldc",
+        "https://docs.powerdrives.net/products/f_series",
+        "https://store.tmotor.com/goods.php?id=370",
+        "https://store.tmotor.com/goods.php?id=830",
+        "https://store.tmotor.com/goods.php?id=387"
+      ],
+      "note": "Selected attributed numeric product facts, not a licensed manufacturer database. No source prose or images redistributed."
     }
   ]
 }

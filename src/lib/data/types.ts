@@ -66,6 +66,10 @@ export interface EscComponent extends ComponentBase {
   escFirmware?: string;
   mcu?: string;
   productNote?: string;
+  burstDurationS?: number;
+  continuousDurationS?: number;
+  minInputVoltageV?: number;
+  maxInputVoltageV?: number;
 }
 
 export interface MotorComponent extends ComponentBase {

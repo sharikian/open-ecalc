@@ -91,7 +91,7 @@ describe('component catalog reference visibility', () => {
     expect(visible.some((record) => record.referenceOnly)).toBe(false);
     expect(visible.some((record) => record.id === custom.id)).toBe(true);
     expect(queryComponentRecords({ includeReference: true }).filter((record) => record.referenceOnly)).toHaveLength(732);
-    expect(componentKinds().reduce((sum, entry) => sum + entry.count, 0)).toBe(852);
-    expect(componentKinds({ includeReference: true }).reduce((sum, entry) => sum + entry.count, 0)).toBe(1584);
+    expect(componentKinds().reduce((sum, entry) => sum + entry.count, 0)).toBe(864);
+    expect(componentKinds({ includeReference: true }).reduce((sum, entry) => sum + entry.count, 0)).toBe(1596);
   });
 });
