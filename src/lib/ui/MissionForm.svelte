@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { tick } from 'svelte';
   import type { MissionInput } from '$core/types';
   import { getComponent, getLocation, queryAircraft, queryComponents, queryLocations } from '$data';
   import { locale } from '$lib/i18n';
@@ -12,7 +13,7 @@
   export let input: MissionInput;
   export let step = 0;
   export let invalidStep = -1;
-  export let onApplyProfile: (profile: 'mavic2' | 'mavic3') => void = () => {};
+  let pickerTrigger: HTMLElement | null = null;
   type PickerKind = 'airframe' | 'environment' | ComponentKind;
   let pickerOpen = false;
   let pickerKind: PickerKind = 'airframe';
@@ -21,6 +22,7 @@
   $: motorVariants = (getComponent(selectedMotorId) as unknown as { kvOptions?: number[] } | undefined)?.kvOptions ?? [];
   $: environmentMode = pressureMode(input.environment);
   $: derivedPressure = (() => { try { return resolvePressure(input.environment); } catch { return undefined; } })();
+  $: displayedPressure = derivedPressure === undefined ? undefined : Math.round(derivedPressure / 10) * 10;
   $: totalCapacity = packCapacityAh(input.battery);
   $: currentLimit = batteryCurrentLimitA(input.battery);
   $: totalMass = takeoffMass(input);
@@ -54,26 +56,28 @@
     return ['/data/images/aircraft-product.png', '/data/images/aircraft-cinewhoop.png', '/data/images/aircraft-hexacopter.png'][hash % 3];
   }
 
-  function openPicker(kind: PickerKind) { pickerKind = kind; pickerQuery = ''; pickerOpen = true; }
-  function closePicker() { pickerOpen = false; }
-  function inferredRotorCount(model: string, classLabel: string): number {
-    const name = `${model} ${classLabel}`.toLocaleLowerCase('en');
-    if (/(octo|x8)/.test(name)) return 8;
-    if (/(hexa|x6)/.test(name)) return 6;
-    if (/tri/.test(name)) return 3;
-    return 4;
+  async function openPicker(kind: PickerKind) {
+    pickerTrigger = document.activeElement as HTMLElement;
+    pickerKind = kind; pickerQuery = ''; pickerOpen = true;
+    await tick(); document.querySelector<HTMLInputElement>('.picker-search input')?.focus();
+  }
+  function closePicker() { pickerOpen = false; pickerTrigger?.focus(); }
+  function pickerKey(event: KeyboardEvent) {
+    if (event.key === 'Escape') { event.preventDefault(); closePicker(); }
+    if (event.key !== 'Tab') return;
+    const nodes = [...(event.currentTarget as HTMLElement).querySelectorAll<HTMLElement>('button:not(:disabled), input, select, [tabindex="0"]')];
+    const first = nodes[0], last = nodes[nodes.length - 1];
+    if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }
+    else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
   }
   function selectAircraft(id: string) {
     const aircraft = queryAircraft().find((record) => record.id === id);
     if (!aircraft) return;
-    if (aircraft.model === 'Mavic 2 Pro' || aircraft.model === 'Mavic 3') onApplyProfile(aircraft.model === 'Mavic 3' ? 'mavic3' : 'mavic2');
-    else {
-      const mass = aircraft.massKg ?? 0;
-      const rotorCount = inferredRotorCount(aircraft.model, aircraft.classLabel);
-      const frameSizeM = Math.max(0.25, Math.min(1.8, 0.22 + Math.sqrt(Math.max(mass, 0.25)) * 0.22));
-      input = { ...input, airframe: { ...input.airframe, emptyMassKg: mass, payloadMassKg: 0, rotorCount, frameSizeM, layout: 'flat' } };
-    }
-    input = { ...input };
+    // Catalog mass is whole-aircraft mass, not empty airframe mass. Do not
+    // reinterpret it or infer frame geometry from a product name.
+    input = { ...input, airframe: { ...input.airframe, emptyMassKg: NaN,
+      rotorCount: NaN, frameSizeM: aircraft.wheelbaseM ?? NaN,
+      takeoffMassKg: undefined } };
     closePicker();
   }
   function selectLocation(id: string) {
@@ -111,7 +115,7 @@
     <div class="fields">
       <Field label={copy('ارتفاع محل', 'Altitude')} suffix="m" invalid={invalidStep === 1 && !(Number.isFinite(input.environment.altitudeM) && input.environment.altitudeM >= -500 && input.environment.altitudeM <= 11000)} bind:value={input.environment.altitudeM} min={-500} max={11000} />
       <Field label={copy('دما', 'Temperature')} suffix="°C" invalid={invalidStep === 1 && !Number.isFinite(input.environment.temperatureC)} bind:value={input.environment.temperatureC} />
-      {#if environmentMode === 'auto'}<Field label={copy('فشار هوا', 'Air pressure')} suffix="hPa" readonly value={derivedPressure} displayScale={0.01} required={false} />{:else}<Field label={copy('فشار هوا', 'Air pressure')} suffix="hPa" bind:value={input.environment.pressurePa} displayScale={0.01} min={1} invalid={invalidStep === 1 && !(Number.isFinite(input.environment.pressurePa) && input.environment.pressurePa! > 0)} />{/if}
+      {#if environmentMode === 'auto'}<Field label={copy('فشار هوا', 'Air pressure')} suffix="hPa" readonly value={displayedPressure} displayScale={0.01} required={false} />{:else}<Field label={copy('فشار هوا', 'Air pressure')} suffix="hPa" bind:value={input.environment.pressurePa} displayScale={0.01} min={1} invalid={invalidStep === 1 && !(Number.isFinite(input.environment.pressurePa) && input.environment.pressurePa! > 0)} />{/if}
       <Field label={copy('سرعت پرواز', 'Cruise speed')} suffix="m/s" invalid={invalidStep === 1 && !(Number.isFinite(input.cruiseSpeedMps) && input.cruiseSpeedMps >= 0)} bind:value={input.cruiseSpeedMps} min={0} />
     </div>
     <div class="pressure-mode" role="group" aria-label={copy('روش فشار هوا', 'Pressure mode')}><button type="button" aria-pressed={environmentMode === 'auto'} on:click={() => setPressureMode('auto')}>{copy('خودکار', 'Automatic')}</button><button type="button" aria-pressed={environmentMode === 'manual'} on:click={() => setPressureMode('manual')}>{copy('دستی', 'Manual')}</button></div>
@@ -119,7 +123,7 @@
 
   <article class="setup-card" class:active={step === 2}>
     <header class="card-header" role="button" tabindex="0" on:click={() => openPicker('battery')} on:keydown={(event) => event.key === 'Enter' && openPicker('battery')}><span class="card-icon"><Icon name="battery" size={23} /></span><div><h2>{copy('باتری', 'Battery')}</h2><p>{copy('انتخاب از فهرست', 'Choose from catalog')}</p></div><b class="data">03</b></header>
-    <label class="select-field"><span>{copy('نوع باتری', 'Battery chemistry')}</span><select bind:value={input.battery.chemistry} on:change={setChemistry}><option value="LiPo">LiPo</option><option value="Li-ion">Li-ion</option><option value="LiFePO4">LiFePO4</option></select></label>
+    <label class="select-field"><span>{copy('نوع باتری', 'Battery chemistry')}</span><select bind:value={input.battery.chemistry} on:change={setChemistry}><option value="" disabled>—</option><option value="LiPo">LiPo</option><option value="Li-ion">Li-ion</option><option value="LiFePO4">LiFePO4</option></select></label>
     <div class="fields">
       <Field label={copy('ظرفیت هر پک', 'Pack capacity')} suffix="mAh" displayScale={1000} invalid={invalidStep === 2 && !(Number.isFinite(input.battery.capacityAh) && input.battery.capacityAh > 0)} bind:value={input.battery.capacityAh} min={1} />
       <Field label={copy('سلول سری', 'Series cells')} suffix="S" invalid={invalidStep === 2 && !(Number.isFinite(input.battery.series) && input.battery.series > 0)} bind:value={input.battery.series} min={1} step="1" />
@@ -160,7 +164,7 @@
 </section>
 
 {#if pickerOpen}
-  <div class="picker-backdrop" role="presentation" on:click={closePicker}><div class="picker-sheet" role="dialog" aria-modal="true" aria-labelledby="picker-title" tabindex="-1" on:click|stopPropagation on:keydown|stopPropagation><header><div><span class="eyebrow">{$locale === 'en' ? 'Select' : 'انتخاب'}</span><h2 id="picker-title">{pickerKind === 'airframe' ? ($locale === 'en' ? 'Airframes' : 'بدنه‌های موجود') : pickerKind === 'environment' ? ($locale === 'en' ? 'Flight locations' : 'مکان‌های پرواز') : pickerKind === 'battery' ? ($locale === 'en' ? 'Batteries' : 'باتری‌های موجود') : pickerKind === 'motor' ? ($locale === 'en' ? 'Motors' : 'موتورهای موجود') : pickerKind === 'propeller' ? ($locale === 'en' ? 'Propellers' : 'ملخ‌های موجود') : 'ESC'}</h2></div><button type="button" class="picker-close" aria-label={$locale === 'en' ? 'Close' : 'بستن'} on:click={closePicker}>×</button></header><label class="picker-search"><Icon name="search" size={19} /><input bind:value={pickerQuery} placeholder={$locale === 'en' ? 'Search by name or region' : 'جست‌وجوی نام یا استان'} /></label><div class="picker-list">{#if pickerKind === 'airframe'}{#each pickerAircraft as aircraft}<button type="button" on:click={() => selectAircraft(aircraft.id)}><img src={aircraftImage(aircraft.imageUrl, aircraft.model)} alt="" /><span><strong>{componentLabel(aircraft)}</strong><small>{aircraft.classLabel}</small></span>{#if aircraft.massKg != null}<b class="data">{(aircraft.massKg * 1000).toFixed(0)} g</b>{/if}</button>{/each}{:else if pickerKind === 'environment'}{#each pickerLocations as location}<button type="button" on:click={() => selectLocation(location.id)}>{#if location.imageUrl}<img src={location.imageUrl} alt="" />{:else}<span class="picker-thumb location-thumb"><Icon name="map" size={22} /></span>{/if}<span><strong>{$locale === 'en' ? location.nameEn : location.nameFa}</strong><small>{($locale === 'en' ? location.provinceEn : location.provinceFa) || ''} · {location.altitudeM} m</small></span><b class="data">{location.temperatureC}°</b></button>{/each}{:else}{#each pickerComponents as component}<button type="button" on:click={() => selectComponent(component.id)}>{#if component.imageUrl}<img src={component.imageUrl} alt="" />{:else}<span class="picker-thumb"><Icon name={component.kind === 'battery' ? 'battery' : component.kind === 'motor' ? 'motor' : component.kind === 'propeller' ? 'propeller' : 'sliders'} size={22} /></span>{/if}<span><strong>{componentLabel(component)}</strong><small>{component.quality}</small></span></button>{/each}{/if}</div></div></div>
+  <div class="picker-backdrop" role="presentation" on:click={closePicker}><div class="picker-sheet" role="dialog" aria-modal="true" aria-labelledby="picker-title" tabindex="-1" on:click|stopPropagation on:keydown|stopPropagation={pickerKey}><header><div><span class="eyebrow">{$locale === 'en' ? 'Select' : 'انتخاب'}</span><h2 id="picker-title">{pickerKind === 'airframe' ? ($locale === 'en' ? 'Airframes' : 'بدنه‌های موجود') : pickerKind === 'environment' ? ($locale === 'en' ? 'Flight locations' : 'مکان‌های پرواز') : pickerKind === 'battery' ? ($locale === 'en' ? 'Batteries' : 'باتری‌های موجود') : pickerKind === 'motor' ? ($locale === 'en' ? 'Motors' : 'موتورهای موجود') : pickerKind === 'propeller' ? ($locale === 'en' ? 'Propellers' : 'ملخ‌های موجود') : 'ESC'}</h2></div><button type="button" class="picker-close" aria-label={$locale === 'en' ? 'Close' : 'بستن'} on:click={closePicker}>×</button></header><label class="picker-search"><Icon name="search" size={19} /><input bind:value={pickerQuery} placeholder={$locale === 'en' ? 'Search by name or region' : 'جست‌وجوی نام یا استان'} /></label><div class="picker-list">{#if pickerKind === 'airframe'}{#each pickerAircraft as aircraft}<button type="button" on:click={() => selectAircraft(aircraft.id)}>{#if !aircraft.id.startsWith('fpvdb-')}<img src={aircraftImage(aircraft.imageUrl, aircraft.model)} alt="" aria-label={copy('تصویر عمومی', 'Generic illustration')} />{:else}<span class="picker-thumb"><Icon name="drone" size={22} /></span>{/if}<span><strong>{componentLabel(aircraft)}</strong><small>{aircraft.classLabel}</small></span>{#if aircraft.massKg != null}<b class="data">{(aircraft.massKg * 1000).toFixed(0)} g</b>{/if}</button>{/each}{:else if pickerKind === 'environment'}{#each pickerLocations as location}<button type="button" on:click={() => selectLocation(location.id)}>{#if location.imageUrl}<img src={location.imageUrl} alt="" />{:else}<span class="picker-thumb location-thumb"><Icon name="map" size={22} /></span>{/if}<span><strong>{$locale === 'en' ? location.nameEn : location.nameFa}</strong><small>{($locale === 'en' ? location.provinceEn : location.provinceFa) || ''} · {location.altitudeM} m</small></span><b class="data">{location.temperatureC}°</b></button>{/each}{:else}{#each pickerComponents as component}<button type="button" on:click={() => selectComponent(component.id)}>{#if component.imageUrl}<img src={component.imageUrl} alt="" />{:else}<span class="picker-thumb"><Icon name={component.kind === 'battery' ? 'battery' : component.kind === 'motor' ? 'motor' : component.kind === 'propeller' ? 'propeller' : 'sliders'} size={22} /></span>{/if}<span><strong>{componentLabel(component)}</strong><small>{component.productType === 'fc-esc-stack' ? 'FC / ESC' : component.quality}</small></span></button>{/each}{/if}</div></div></div>
 {/if}
 
 <style>

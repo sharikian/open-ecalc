@@ -20,7 +20,7 @@
   $: baseRows = (() => {
     catalogRevision;
     return [
-      ...queryComponents().map((item) => ({ id: item.id, kind: item.kind, manufacturer: item.manufacturer, model: item.model, quality: item.quality, source: item.licenseSpdx, detail: $locale === 'en' ? (item.kind === 'battery' ? 'Cell and pack' : item.kind === 'motor' ? 'Brushless motor' : item.kind === 'propeller' ? 'Propeller profile' : 'Controller') : (item.kind === 'battery' ? 'سلول و پک' : item.kind === 'motor' ? 'موتور براشلس' : item.kind === 'propeller' ? 'پروفایل ملخ' : 'کنترل‌کننده'), imageUrl: item.imageUrl })),
+      ...queryComponents({ includeReference }).map((item) => ({ id: item.id, kind: item.kind, manufacturer: item.manufacturer, model: item.model, quality: item.quality, source: item.licenseSpdx, detail: item.productType === 'fc-esc-stack' ? 'FC / ESC' : $locale === 'en' ? (item.kind === 'battery' ? 'Cell and pack' : item.kind === 'motor' ? 'Brushless motor' : item.kind === 'propeller' ? 'Propeller profile' : 'Controller') : (item.kind === 'battery' ? 'سلول و پک' : item.kind === 'motor' ? 'موتور براشلس' : item.kind === 'propeller' ? 'پروفایل ملخ' : 'کنترل‌کننده'), imageUrl: item.imageUrl })),
       ...queryAircraft().map((item) => ({ id: item.id, kind: 'airframe' as const, manufacturer: item.manufacturer, model: item.model, quality: item.quality, source: item.licenseSpdx, detail: item.classLabel || ($locale === 'en' ? 'Aircraft frame' : 'بدنهٔ پرنده'), imageUrl: item.imageUrl })),
       ...queryLocations().map((item) => ({ id: item.id, kind: 'environment' as const, manufacturer: ($locale === 'en' ? item.provinceEn : item.provinceFa) ?? '', model: $locale === 'en' ? item.nameEn : item.nameFa, quality: item.quality, source: item.licenseSpdx, detail: $locale === 'en' ? (item.descriptionEn || `${item.altitudeM} m altitude`) : (item.descriptionFa || `ارتفاع ${item.altitudeM} m`), imageUrl: item.imageUrl }))
     ] as Row[];
@@ -47,6 +47,7 @@
   let query = '';
   let filter: FilterKind = 'all';
   let filterOpen = false;
+  let includeReference = false;
   let isMobile = false;
   let page = 1;
   let editorOpen = false;
@@ -101,6 +102,7 @@
     return () => window.removeEventListener('resize', update);
   });
   function imageFor(row: Row): string {
+    if (row.id.startsWith('fpvdb-')) return '';
     const imageHash = [...row.id].reduce((sum, char) => sum + char.charCodeAt(0), 0);
     if (row.kind === 'battery') return imageHash % 2 ? '/data/images/battery-lipo-pack.png' : '/data/images/battery-liion-pack.png';
     if (row.kind === 'esc') return imageHash % 2 ? '/data/images/esc-high-current.png' : '/data/images/esc-compact-board.png';
@@ -226,8 +228,8 @@
 
 <section class="catalog" aria-labelledby="catalog-title">
   <header class="catalog-head"><div><h1 id="catalog-title">{ui.title}</h1><p>{ui.count} {rows.length}</p></div><div class="catalog-actions"><strong class="data">{filtered.length} {ui.result}</strong><button class="add-button" type="button" aria-label={ui.add} on:click={openAdd}><Icon name="plus" size={18} /><span>{ui.add}</span></button></div></header>
-  <div class="catalog-toolbar"><div class="search-line"><label class="search-field"><Icon name="search" size={19} /><span class="sr-only">{ui.search}</span><input value={query} on:input={(event) => setQuery((event.currentTarget as HTMLInputElement).value)} placeholder={ui.search} /></label><button class="filter-trigger" type="button" aria-label={ui.filters} aria-expanded={filterOpen} on:click={() => (filterOpen = !filterOpen)}><Icon name={kindIcon[filter]} size={19} /></button></div><div class:open={filterOpen} class="filter-group">{#each (['all', 'battery', 'motor', 'propeller', 'esc', 'airframe', 'environment'] as FilterKind[]) as option}<button type="button" class:active={filter === option} on:click={() => setFilter(option)}><Icon name={kindIcon[option]} size={17} />{kindLabel[option]}</button>{/each}</div></div>
-  <div class="catalog-list" aria-live="polite">{#each pageRows as row}<article class="catalog-row"><img class="row-image" src={imageFor(row)} alt="" /><div class="row-main"><strong>{rowTitle(row)}</strong><small>{kindLabel[row.kind]} · {row.detail}</small></div><code>{row.source}</code><div class="row-actions"><button class="edit-button" type="button" aria-label={`${ui.editComponent} ${displayModel(row)}`} on:click={() => openEditor(row)}><Icon name="edit" size={17} /></button><button class="delete-button" type="button" aria-label={`${ui.delete} ${displayModel(row)}`} on:click={() => requestDelete(row)}><Icon name="trash" size={17} /></button></div></article>{:else}<div class="empty-state">{ui.empty}</div>{/each}</div>
+  <div class="catalog-toolbar"><div class="search-line"><label class="search-field"><Icon name="search" size={19} /><span class="sr-only">{ui.search}</span><input value={query} on:input={(event) => setQuery((event.currentTarget as HTMLInputElement).value)} placeholder={ui.search} /></label><button class="filter-trigger" type="button" aria-label={ui.filters} aria-expanded={filterOpen} on:click={() => (filterOpen = !filterOpen)}><Icon name={kindIcon[filter]} size={19} /></button></div><div class:open={filterOpen} class="filter-group">{#each (['all', 'battery', 'motor', 'propeller', 'esc', 'airframe', 'environment'] as FilterKind[]) as option}<button type="button" class:active={filter === option} on:click={() => setFilter(option)}><Icon name={kindIcon[option]} size={17} />{kindLabel[option]}</button>{/each}</div><label class="reference-toggle"><input type="checkbox" bind:checked={includeReference} on:change={() => page = 1} />{$locale === 'en' ? 'Estimated references' : 'مرجع تخمینی'}</label></div>
+  <div class="catalog-list" aria-live="polite">{#each pageRows as row}<article class="catalog-row">{#if imageFor(row)}<img class="row-image" src={imageFor(row)} alt="" aria-label={$locale === 'en' ? 'Generic illustration' : 'تصویر عمومی'} />{:else}<span class="row-image" aria-hidden="true"><Icon name={kindIcon[row.kind]} size={26} /></span>{/if}<div class="row-main"><strong>{rowTitle(row)}</strong><small>{kindLabel[row.kind]} · {row.detail}</small></div><code>{row.source}</code><div class="row-actions"><button class="edit-button" type="button" aria-label={`${ui.editComponent} ${displayModel(row)}`} on:click={() => openEditor(row)}><Icon name="edit" size={17} /></button><button class="delete-button" type="button" aria-label={`${ui.delete} ${displayModel(row)}`} on:click={() => requestDelete(row)}><Icon name="trash" size={17} /></button></div></article>{:else}<div class="empty-state">{ui.empty}</div>{/each}</div>
   <nav class="pagination" aria-label={ui.title}><button type="button" on:click={previousPage} disabled={page === 1} aria-label={ui.previous}>‹</button><span class="data">{page} / {pageCount}</span><button type="button" on:click={nextPage} disabled={page === pageCount} aria-label={ui.next}>›</button></nav>
 </section>
 

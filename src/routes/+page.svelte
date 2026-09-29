@@ -86,15 +86,11 @@
     reports = reports.filter((report) => report.id !== id);
   }
 
-  function applyAircraftProfile(profile: 'mavic2' | 'mavic3') {
-    const isMavic3 = profile === 'mavic3';
-    missionInput = { ...missionInput, airframe: { ...missionInput.airframe, emptyMassKg: isMavic3 ? 0.895 : 0.907, payloadMassKg: 0, rotorCount: 4, frameSizeM: isMavic3 ? 0.38 : 0.354 }, battery: { ...missionInput.battery, capacityAh: 5, series: 4, parallel: 1, nominalCellVoltageV: 3.85, internalResistanceOhm: 0.06, continuousC: 10, usableFraction: 0.8 }, environment: { ...missionInput.environment, altitudeM: 0, temperatureC: 25, pressurePa: 101325 }, cruiseSpeedMps: isMavic3 ? 9 : 7. }; 
-  }
-
   function stepReady(index: number): boolean {
     return missionStepReady(missionInput, index);
   }
-  function firstIncompleteStep(): number { for (let index = 0; index < 4; index += 1) if (!stepReady(index)) return index; return 3; }
+  $: incompleteStep = [0, 1, 2, 3].find((index) => !missionStepReady(missionInput, index)) ?? 3;
+  function firstIncompleteStep(): number { return incompleteStep; }
   function goToStep(next: number) { const blocked = firstIncompleteStep(); if (next > blocked) { showErrors = true; step = blocked; return; } showErrors = false; step = next; }
   function advanceStep() { if (!stepReady(step)) { showErrors = true; return; } showErrors = false; step = Math.min(3, step + 1); }
   function calculateSimple() {
@@ -157,8 +153,8 @@
         <div class="simple-layout"><SimpleCalculator bind:input={legacyInput} showErrors={simpleShowErrors} onCalculate={calculateSimple} /><LegacyResults result={legacyResult} /></div>
         {#if legacyResult}<Feedback calculation={{ mode: 'simple', input: legacyInput, result: legacyResult }} />{/if}
       {:else}
-        <StepTabs value={step} canOpen={(next) => next <= firstIncompleteStep()} onChange={goToStep} />
-        <div class="advanced-layout"><section class="input-area"><MissionForm bind:input={missionInput} {step} invalidStep={showErrors ? step : -1} onApplyProfile={applyAircraftProfile} /><div class="actions"><button type="button" class="back" disabled={step === 0} on:click={() => goToStep(step - 1)}>{$locale === 'en' ? 'Back' : 'بازگشت'}</button>{#if step < 3}<button type="button" class="next" on:click={advanceStep}>{$locale === 'en' ? 'Next step' : 'مرحلهٔ بعد'} <span>←</span></button>{:else}<button type="button" class="next" on:click={calculateAdvanced}>{$locale === 'en' ? 'Calculate' : 'محاسبه'} <span>↗</span></button>{/if}</div></section></div>
+        <StepTabs value={step} canOpen={(next) => next <= incompleteStep} onChange={goToStep} />
+<div class="advanced-layout"><section class="input-area"><MissionForm bind:input={missionInput} {step} invalidStep={showErrors ? step : -1} /><div class="actions"><button type="button" class="back" disabled={step === 0} on:click={() => goToStep(step - 1)}>{$locale === 'en' ? 'Back' : 'بازگشت'}</button>{#if step < 3}<button type="button" class="next" on:click={advanceStep}>{$locale === 'en' ? 'Next step' : 'مرحلهٔ بعد'} <span>←</span></button>{:else}<button type="button" class="next" on:click={calculateAdvanced}>{$locale === 'en' ? 'Calculate' : 'محاسبه'} <span>↗</span></button>{/if}</div></section></div>
       {/if}
       {/if}
       </div>
