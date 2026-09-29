@@ -11,5 +11,7 @@ src-tauri/gen/
 .DS_Store
 .env
 .env.*
+.wrangler/
+.dev.vars
 !.env.example
 sample/
