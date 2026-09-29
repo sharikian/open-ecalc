@@ -53,3 +53,13 @@ Screenshots were inspected locally (`/tmp/linked-*-step-*.png`, `/tmp/linked-mob
 Browser checks use Chromium, not a physical Android/iOS keyboard or Firefox. Native number spinners are disabled with both WebKit and Firefox CSS rules. Mobile safe-area and zoom checks are emulated. Eight existing unused-CSS warnings remain; type checking has no errors. This work does not claim new native platform build verification.
 
 FPV-DB coverage, primary-source supplements, deduplication and distribution restrictions are recorded in [data-sources.md](data-sources.md) and [THIRD_PARTY_DATA.md](../THIRD_PARTY_DATA.md). Most imported motors still lack some solver-required electrical parameters. Listing a real product does not imply that it is calculation-ready; missing parameters require manual entry. Measured curve rows preserve incomplete columns and test conditions and are not automatically turned into a generic motor curve at an arbitrary voltage.
+
+## Deployment evidence
+
+Published to the existing `open-ecalc` Worker on 2026-09-29, version `97f4b4fe-7f83-40a5-9555-22c01ea75e58`. The existing API bindings and custom domain were retained.
+
+`https://uav.sharik.dev/`, `/data/components.v1.json` and `/data/aircraft.v1.json` all returned HTTP 200. Both remote dataset hashes matched the final local build: 1,583 component records (851 default, 732 reference-only) and 257 deduplicated aircraft. The complete catalog also includes 20 locations, so its default UI total is 1,128 records, not a claim of 1,128 engineering-ready components.
+
+Live Chromium checks on the custom domain confirmed an empty initial advanced form and a complete 320 px four-step calculation with the current comparison visible, no horizontal overflow, and an inert background behind the result dialog. Local checks included 80-stage matrices and a final 16-stage mobile rerun. The screenshot `/tmp/linked-production-result.png` was inspected for actual viewport layering. No feedback was sent to Telegram during the deployment check.
+
+Changes were grouped into feature branches with 5, 6 and 5 commits respectively, using the required message format and `--no-ff` merges to `master`. This final documentation update is a follow-up merge of the existing validation branch; no direct commit was made on `master`.
