@@ -1,0 +1,2802 @@
+{
+ "generated": "2026-09-29",
+ "count": 101,
+ "license": "CC BY 4.0 - attribution: link https://fpv-db.com",
+ "items": [
+  {
+   "type": "quad",
+   "brand": "Axisflying",
+   "model": "KOLAS 6",
+   "slug": "axisflying-kolas-6",
+   "specs": {
+    "class": "long range (foldable)",
+    "weight_no_battery_g": 385,
+    "prop_size_in": 6,
+    "prop_mount": "M5",
+    "motors": "Axisflying AE2306.5 1800KV",
+    "vtx_system": "DJI Vista/Nebula HD (Walksnail variant on Kolas 7)",
+    "typical_current_a": 10,
+    "recommended_battery": {
+     "cells": "6S",
+     "capacity_mah": 2200,
+     "range_mah": "1800-3000",
+     "connector": "XT60",
+     "chemistry": "LiPo / Li-ion"
+    },
+    "wheelbase_mm": 245
+   },
+   "sources": [
+    "https://www.getfpv.com/axisflying-kolas-6-long-range-6-bnf-hd-drone-6s.html"
+   ],
+   "note": "Foldable arms, 245mm. BNF ~385g with electronics (frame alone 138g). Gemfan 6030 folding props."
+  },
+  {
+   "type": "quad",
+   "brand": "Axisflying",
+   "model": "Manta 3.5",
+   "slug": "axisflying-manta-3-5",
+   "specs": {
+    "class": "freestyle/cinematic (3.5in)",
+    "weight_no_battery_g": 233,
+    "prop_size_in": 3.5,
+    "prop_mount": "T-mount",
+    "motors": "Axisflying AF155 (2204.5)",
+    "vtx_system": "RunCam Link (DJI HD); O3 variants available",
+    "typical_current_a": 11,
+    "recommended_battery": {
+     "cells": "4S",
+     "capacity_mah": 1300,
+     "range_mah": "1300-1500",
+     "connector": "XT60",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 162,
+    "camera": "RunCam MIPI"
+   },
+   "sources": [
+    "https://buzzfpv.com.au/products/axisflying-manta-3-5inch-squashed-x-freestyle-hd-bnf-fpv-drone"
+   ],
+   "note": "233g for BNF with RunCam Link + MIPI cam. Gemfan 3520 tri-blade, wheelbase 162mm. Connector not stated by Axisflying - XT60 is class-standard."
+  },
+  {
+   "type": "quad",
+   "brand": "Axisflying",
+   "model": "Manta 5 SE",
+   "slug": "axisflying-manta-5-se",
+   "specs": {
+    "class": "freestyle",
+    "weight_no_battery_g": 461.1,
+    "typical_auw_g": 652.7,
+    "prop_size_in": 5.1,
+    "prop_mount": "M5",
+    "motors": "Axisflying AE2207 V2 1960KV",
+    "vtx_system": "analog Smurfs 1.6W (O3/O4 variants)",
+    "typical_current_a": 13,
+    "recommended_battery": {
+     "cells": "6S",
+     "capacity_mah": 1300,
+     "range_mah": "1100-1500",
+     "connector": "XT60",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 223,
+    "flight_controller": "Axisflying Argus ECO FC F405",
+    "receiver_options": "TBS Nano RX or ELRS 2.4 GHz"
+   },
+   "sources": [
+    "https://oscarliang.com/axisflying-manta-5-se-analog-bnf/"
+   ],
+   "note": "Analog SE version. 223mm SquashedX. V2 with O4 Pro exists."
+  },
+  {
+   "type": "quad",
+   "brand": "BetaFPV",
+   "model": "Air65",
+   "slug": "betafpv-air65",
+   "specs": {
+    "class": "tiny whoop (racing)",
+    "weight_no_battery_g": 17.3,
+    "prop_size_in": 1.2,
+    "prop_mount": "1.0mm shaft",
+    "motors": "BetaFPV 0702SE II 27000KV (racing) / 23000KV (freestyle)",
+    "vtx_system": "analog 25-400mW",
+    "typical_current_a": 3,
+    "manufacturer_flight_time_min": "4 (1S 260)",
+    "recommended_battery": {
+     "cells": "1S",
+     "capacity_mah": 300,
+     "range_mah": "260-300",
+     "connector": "BT2.0",
+     "chemistry": "LiHV (LAVA)"
+    },
+    "wheelbase_mm": 65,
+    "camera": "C03 Camera",
+    "flight_controller": "Air Brushless Flight Controller (5IN1 Version)",
+    "receiver_options": "Onboard ELRS 2.4G"
+   },
+   "sources": [
+    "https://betafpv.com/products/air65-brushless-whoop-quadcopter"
+   ],
+   "note": "Lightest 65mm racing whoop class. GF 1219S 3-blade props."
+  },
+  {
+   "type": "quad",
+   "brand": "BetaFPV",
+   "model": "Air75",
+   "slug": "betafpv-air75",
+   "specs": {
+    "class": "tiny whoop",
+    "weight_no_battery_g": 21,
+    "prop_size_in": 1.6,
+    "prop_mount": "1.0mm shaft",
+    "motors": "BetaFPV 0802SE 23000KV",
+    "vtx_system": "analog 25-400mW",
+    "typical_current_a": 3,
+    "manufacturer_flight_time_min": "6.5 (1S 450)",
+    "recommended_battery": {
+     "cells": "1S",
+     "capacity_mah": 450,
+     "connector": "BT2.0",
+     "chemistry": "LiHV (LAVA 75C)"
+    },
+    "wheelbase_mm": 75,
+    "camera": "C03 Camera",
+    "flight_controller": "Air Brushless Flight Controller (5IN1 Version)",
+    "receiver_options": "Onboard Serial ELRS 2.4G"
+   },
+   "sources": [
+    "https://betafpv.com/products/air75-brushless-whoop-quadcopter"
+   ],
+   "note": "Lightest 75mm class. Gemfan 40mm 2-blade props."
+  },
+  {
+   "type": "quad",
+   "brand": "BetaFPV",
+   "model": "Aquila16",
+   "slug": "betafpv-aquila16",
+   "specs": {
+    "class": "whoop (beginner RTF)",
+    "weight_no_battery_g": 47.1,
+    "typical_auw_g": 72.5,
+    "prop_size_in": 1.8,
+    "motors": "BetaFPV 1102 18000KV",
+    "vtx_system": "analog",
+    "typical_current_a": 7,
+    "manufacturer_flight_time_min": "5 (650mAh) / 8 (1100mAh)",
+    "recommended_battery": {
+     "cells": "1S",
+     "capacity_mah": 1100,
+     "range_mah": "650 or 1100",
+     "connector": "Aquila16 exclusive",
+     "chemistry": "LiHV"
+    },
+    "wheelbase_mm": 86,
+    "camera": "C02 (VTX module is integrated)",
+    "flight_controller": "Aquila16 V1.0",
+    "receiver_options": "Serial ELRS 2.4G 3.0 Version"
+   },
+   "sources": [
+    "https://betafpv.com/products/aquila16-fpv-kit"
+   ],
+   "note": "Uses proprietary Aquila16 battery. Beta 45mm 3-blade props, wheelbase 86mm."
+  },
+  {
+   "type": "quad",
+   "brand": "BetaFPV",
+   "model": "Beta95X V3",
+   "slug": "betafpv-beta95x-v3",
+   "specs": {
+    "class": "cinewhoop (pusher)",
+    "weight_no_battery_g": 99.1,
+    "prop_size_in": 2.5,
+    "motors": "BetaFPV 1404 4500KV",
+    "vtx_system": "Caddx Nebula Nano HD (analog variant)",
+    "typical_current_a": 6,
+    "manufacturer_flight_time_min": "3.5 (4S 450)",
+    "recommended_battery": {
+     "cells": "4S",
+     "capacity_mah": 450,
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 95,
+    "camera": "Caddx Ant Customized Camera (4:3)",
+    "flight_controller": "Toothpick F405 AIO 20A FC V4",
+    "receiver_options": "Frsky FCC/Frsky LBT/TBS/PNP"
+   },
+   "sources": [
+    "https://betafpv.com/products/beta95x-v3-whoop-quadcopter"
+   ],
+   "note": "SMO 4K-ready pusher. Gemfan D63 props, 95mm wheelbase."
+  },
+  {
+   "type": "quad",
+   "brand": "BetaFPV",
+   "model": "Cetus Pro",
+   "slug": "betafpv-cetus-pro",
+   "specs": {
+    "class": "whoop (beginner RTF)",
+    "weight_no_battery_g": 33.19,
+    "typical_auw_g": 45.8,
+    "prop_size_in": 1.6,
+    "prop_mount": "1.5mm shaft",
+    "motors": "BetaFPV 1102 18000KV",
+    "vtx_system": "analog",
+    "typical_current_a": 4,
+    "manufacturer_flight_time_min": "4-5",
+    "recommended_battery": {
+     "cells": "1S",
+     "capacity_mah": 450,
+     "connector": "BT2.0",
+     "chemistry": "LiHV (75C)"
+    },
+    "camera": "C02 FPV Micro Camera",
+    "flight_controller": "Lite 1-2S Pro brushless FC",
+    "receiver_options": "Frsky D8"
+   },
+   "sources": [
+    "https://betafpv.com/products/cetus-pro-fpv-kit"
+   ],
+   "note": "RTF kit with LiteRadio 2 SE + VR02 goggles. 40mm 3-blade props."
+  },
+  {
+   "type": "quad",
+   "brand": "BetaFPV",
+   "model": "Cetus X",
+   "slug": "betafpv-cetus-x",
+   "specs": {
+    "class": "whoop (beginner RTF)",
+    "weight_no_battery_g": 56,
+    "typical_auw_g": 81,
+    "prop_size_in": 2,
+    "motors": "BetaFPV 1103 11000KV",
+    "vtx_system": "analog",
+    "typical_current_a": 4,
+    "manufacturer_flight_time_min": "5",
+    "recommended_battery": {
+     "cells": "2S (2x 1S in series)",
+     "capacity_mah": 450,
+     "connector": "BT2.0 x2",
+     "chemistry": "LiHV"
+    },
+    "wheelbase_mm": 95,
+    "camera": "C04 FPV Camera (Caddx Nano Ant Camera/Runcam Nano 4)"
+   },
+   "sources": [
+    "https://betafpv.com/products/cetus-x-brushless-quadcopter"
+   ],
+   "note": "Powered by two 1S 450mAh BT2.0 packs in series. Gemfan 2020 4-blade props."
+  },
+  {
+   "type": "quad",
+   "brand": "BetaFPV",
+   "model": "HX115 LR",
+   "slug": "betafpv-hx115-lr",
+   "specs": {
+    "class": "toothpick (1S long range)",
+    "weight_no_battery_g": 44,
+    "typical_auw_g": 56,
+    "prop_size_in": 3,
+    "prop_mount": "1.5mm shaft",
+    "motors": "BetaFPV 1102 18000KV",
+    "vtx_system": "analog 350mW",
+    "typical_current_a": 4,
+    "manufacturer_flight_time_min": "3-5 (1S 450) / 15+ (18650 3000)",
+    "recommended_battery": {
+     "cells": "1S",
+     "capacity_mah": 450,
+     "range_mah": "450 LiPo or 18650 3000 Li-ion",
+     "connector": "BT2.0",
+     "chemistry": "LiHV / Li-ion"
+    },
+    "wheelbase_mm": 126,
+    "camera": "Caddx ANT camera",
+    "flight_controller": "F4 1S 12A AIO FC with ELRS 2.4G Receiver",
+    "receiver_options": "Built-in ExpressLRS 2.4G Receiver"
+   },
+   "sources": [
+    "https://betafpv.com/products/hx115-lr-toothpick-drone"
+   ],
+   "note": "HQ 3020 bi-blade props, 126mm wheelbase."
+  },
+  {
+   "type": "quad",
+   "brand": "BetaFPV",
+   "model": "Meteor65 Pro",
+   "slug": "betafpv-meteor65-pro",
+   "specs": {
+    "class": "tiny whoop",
+    "weight_no_battery_g": 23,
+    "prop_size_in": 1.4,
+    "prop_mount": "1.0mm shaft",
+    "motors": "BetaFPV 0802SE 19500KV",
+    "vtx_system": "analog (O4 variant available)",
+    "typical_current_a": 3,
+    "manufacturer_flight_time_min": "4.5",
+    "recommended_battery": {
+     "cells": "1S",
+     "capacity_mah": 300,
+     "connector": "BT2.0",
+     "chemistry": "LiHV (75C)"
+    },
+    "camera": "C03 FPV Camera",
+    "flight_controller": "F4 1S 5A FC (Serial ELRS 2.4G) / F4 1S 5A FC (SPI Frsky)"
+   },
+   "sources": [
+    "https://betafpv.com/products/meteor65-pro-brushless-whoop-quadcopter-1s"
+   ],
+   "note": "35mm 3-blade props."
+  },
+  {
+   "type": "quad",
+   "brand": "BetaFPV",
+   "model": "Meteor75 Pro",
+   "slug": "betafpv-meteor75-pro",
+   "specs": {
+    "class": "tiny whoop",
+    "weight_no_battery_g": 31,
+    "prop_size_in": 1.8,
+    "prop_mount": "1.0mm shaft",
+    "motors": "BetaFPV 1102 21000KV",
+    "vtx_system": "analog (O4 variant available)",
+    "typical_current_a": 4,
+    "recommended_battery": {
+     "cells": "1S",
+     "capacity_mah": 450,
+     "range_mah": "450-550",
+     "connector": "BT2.0",
+     "chemistry": "LiHV"
+    },
+    "camera": "C03 FPV Camera",
+    "flight_controller": "Matrix 1S Brushless Flight Controller",
+    "receiver_options": "Integrated Serial ELRS 2.4G",
+    "wheelbase_mm": 80.8
+   },
+   "sources": [
+    "https://betafpv.com/products/meteor75-pro-brushless-whoop-quadcopter"
+   ],
+   "note": "Analog 2024 edition. 45mm props, wheelbase 80.8mm. Largest 1S whoop class."
+  },
+  {
+   "type": "quad",
+   "brand": "BetaFPV",
+   "model": "Meteor75 Pro II",
+   "slug": "betafpv-meteor75-pro-ii",
+   "specs": {
+    "class": "tiny whoop (HD)",
+    "weight_no_battery_g": 41.5,
+    "prop_size_in": 1.8,
+    "prop_mount": "1.0mm shaft",
+    "motors": "BetaFPV Freestyle 1102 (2026 series)",
+    "vtx_system": "DJI O4 Wide",
+    "typical_current_a": 4,
+    "manufacturer_flight_time_min": "5 (1S 580) / 6 (1S 680)",
+    "recommended_battery": {
+     "cells": "1S",
+     "capacity_mah": 580,
+     "range_mah": "480-680 (LAVA II)",
+     "connector": "BT2.0",
+     "chemistry": "LiHV"
+    },
+    "wheelbase_mm": 80,
+    "camera": "DJI O4 Wide Camera",
+    "flight_controller": "Matrix 1S 3IN1 HD FC",
+    "receiver_options": "Onboard Serial ELRS 2.4G"
+   },
+   "sources": [
+    "https://betafpv.com/products/meteor75-pro-ii-o4-brushless-whoop-quadcopter"
+   ],
+   "note": "O4 Wide HD whoop, GF 1811 3-blade, 80mm wheelbase."
+  },
+  {
+   "type": "quad",
+   "brand": "BetaFPV",
+   "model": "Meteor85",
+   "slug": "betafpv-meteor85",
+   "specs": {
+    "class": "whoop (2S 85mm)",
+    "weight_no_battery_g": 43.85,
+    "prop_size_in": 2,
+    "motors": "BetaFPV 1103 11000KV",
+    "vtx_system": "analog (HD Digital variant)",
+    "typical_current_a": 5,
+    "recommended_battery": {
+     "cells": "2S",
+     "capacity_mah": 450,
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    },
+    "flight_controller": "F4 1S 12A FC",
+    "receiver_options": "ELRS 2.4G, SPI Frsky"
+   },
+   "sources": [
+    "https://betafpv.com/products/meteor85-brushless-whoop-quadcopter-2022"
+   ],
+   "note": "2022 edition. Gemfan 2015 2-blade props."
+  },
+  {
+   "type": "quad",
+   "brand": "BetaFPV",
+   "model": "Pavo Pico",
+   "slug": "betafpv-pavo-pico",
+   "specs": {
+    "class": "cinewhoop (sub-100)",
+    "weight_no_battery_g": 72,
+    "typical_auw_g": 99,
+    "prop_size_in": 1.8,
+    "motors": "BetaFPV 1102 14000KV",
+    "vtx_system": "DJI O3",
+    "typical_current_a": 5,
+    "manufacturer_flight_time_min": "4",
+    "recommended_battery": {
+     "cells": "2S",
+     "capacity_mah": 450,
+     "connector": "XT30",
+     "chemistry": "LiPo (LAVA 75C)"
+    },
+    "wheelbase_mm": 80.8,
+    "flight_controller": "F4 1S 12A AIO FC V3 , F4 2-3S 20A AIO FC V1",
+    "receiver_options": "Serial ELRS, TBS"
+   },
+   "sources": [
+    "https://betafpv.com/products/pavo-pico-brushless-whoop-quadcopter"
+   ],
+   "note": "Weight with DJI O3, no battery. Gemfan 45mm 3-blade props, wheelbase 80.8mm."
+  },
+  {
+   "type": "quad",
+   "brand": "BetaFPV",
+   "model": "Pavo Pico II",
+   "slug": "betafpv-pavo-pico-ii",
+   "specs": {
+    "class": "cinewhoop (sub-100)",
+    "weight_no_battery_g": 53.7,
+    "prop_size_in": 1.8,
+    "motors": "BetaFPV LAVA 1102 14000KV",
+    "vtx_system": "DJI O4/O4 Pro",
+    "typical_current_a": 4,
+    "manufacturer_flight_time_min": "6.5 (2S 550)",
+    "recommended_battery": {
+     "cells": "2S",
+     "capacity_mah": 550,
+     "range_mah": "450-550",
+     "connector": "XT30",
+     "chemistry": "LiPo (LAVA)"
+    },
+    "wheelbase_mm": 80,
+    "flight_controller": "F4 2-3S 20A AIO FC",
+    "receiver_options": "Serial ELRS, DJI SBUS"
+   },
+   "sources": [
+    "https://betafpv.com/products/pavo-pico-ii-brushless-whoop-quadcopter"
+   ],
+   "note": "O4 version 53.7g (PNP 39.1g, O4 Wide 59g). GF 45mm 3-blade, wheelbase 80mm."
+  },
+  {
+   "type": "quad",
+   "brand": "BetaFPV",
+   "model": "Pavo20",
+   "slug": "betafpv-pavo20",
+   "specs": {
+    "class": "cinewhoop",
+    "weight_no_battery_g": 94,
+    "prop_size_in": 2,
+    "motors": "BetaFPV 1103 8500KV",
+    "vtx_system": "DJI O3",
+    "typical_current_a": 5,
+    "manufacturer_flight_time_min": "4 (3S 450)",
+    "recommended_battery": {
+     "cells": "3S",
+     "capacity_mah": 450,
+     "range_mah": "450-650",
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    }
+   },
+   "sources": [
+    "https://betafpv.com/products/pavo20-brushless-whoop-quadcopter"
+   ],
+   "note": "94g with DJI O3 (55g without battery and FPV system)."
+  },
+  {
+   "type": "quad",
+   "brand": "BetaFPV",
+   "model": "Pavo20 Pro",
+   "slug": "betafpv-pavo20-pro",
+   "specs": {
+    "class": "cinewhoop",
+    "weight_no_battery_g": 66.3,
+    "prop_size_in": 2.2,
+    "prop_mount": "1.5mm shaft",
+    "motors": "BetaFPV LAVA 1104 7200KV",
+    "vtx_system": "DJI O3/O4 ready",
+    "typical_current_a": 4,
+    "manufacturer_flight_time_min": "6.7 (3S 550)",
+    "recommended_battery": {
+     "cells": "3S",
+     "capacity_mah": 550,
+     "range_mah": "450-650",
+     "connector": "XT30",
+     "chemistry": "LiPo (LAVA 75C)"
+    }
+   },
+   "sources": [
+    "https://www.getfpv.com/betafpv-pavo20-pro-cinewhoop-no-fpv-system.html"
+   ],
+   "note": "Weight without battery and air unit. Gemfan 2218 3-blade props."
+  },
+  {
+   "type": "quad",
+   "brand": "BetaFPV",
+   "model": "Pavo20 Pro II",
+   "slug": "betafpv-pavo20-pro-ii",
+   "specs": {
+    "class": "cinewhoop",
+    "weight_no_battery_g": 116.2,
+    "prop_size_in": 2.2,
+    "prop_mount": "1.5mm shaft",
+    "motors": "BetaFPV LAVA 1104 7200KV",
+    "vtx_system": "DJI O4 Pro",
+    "typical_current_a": 4,
+    "recommended_battery": {
+     "cells": "3S",
+     "capacity_mah": 550,
+     "range_mah": "450-680 (3S/4S LAVA II supported)",
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 93.9,
+    "flight_controller": "Cube 2-4S 30A 3IN1 FC (4S), F4 2-3S 20A AIO FC (3S)",
+    "receiver_options": "Serial ELRS, DJI SBUS"
+   },
+   "sources": [
+    "https://betafpv.com/products/pavo20-pro-ii-brushless-whoop-quadcopter"
+   ],
+   "note": "116.2g with O4 Pro (PNP 72.6g). Gemfan 2218 props, 93.9mm wheelbase."
+  },
+  {
+   "type": "quad",
+   "brand": "BetaFPV",
+   "model": "Pavo25 V2",
+   "slug": "betafpv-pavo25-v2",
+   "specs": {
+    "class": "cinewhoop",
+    "weight_no_battery_g": 190,
+    "prop_size_in": 2.5,
+    "motors": "BetaFPV 1505 4600KV",
+    "vtx_system": "DJI O3 (Walksnail/Caddx supported)",
+    "typical_current_a": 6,
+    "manufacturer_flight_time_min": "6-8",
+    "recommended_battery": {
+     "cells": "4S",
+     "capacity_mah": 850,
+     "range_mah": "650-850",
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 112,
+    "flight_controller": "F722 35A AIO V2",
+    "receiver_options": "ELRS, TBS"
+   },
+   "sources": [
+    "https://betafpv.com/products/pavo25-v2-brushless-whoop-quadcopter"
+   ],
+   "note": "190g with DJI O3 (153g without camera). GF D63 3-blade, wheelbase 112mm."
+  },
+  {
+   "type": "quad",
+   "brand": "BetaFPV",
+   "model": "X-Knight 35",
+   "slug": "betafpv-x-knight-35",
+   "specs": {
+    "class": "toothpick (3.5in)",
+    "weight_no_battery_g": 142.9,
+    "prop_size_in": 3.5,
+    "prop_mount": "T-mount",
+    "motors": "BetaFPV 1404 3800KV",
+    "vtx_system": "Caddx Polar Vista HD",
+    "typical_current_a": 6,
+    "recommended_battery": {
+     "cells": "4S",
+     "capacity_mah": 750,
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    },
+    "flight_controller": "F4 AIO 20A Brushless Flight Controller V3",
+    "receiver_options": "ELRS 2.4GHz Receiver / TBS Receiver"
+   },
+   "sources": [
+    "https://betafpv.com/products/x-knight-35-fpv-quadcopter"
+   ],
+   "note": "HQ/Gemfan 3520 3-blade props."
+  },
+  {
+   "type": "quad",
+   "brand": "DarwinFPV",
+   "model": "BabyApe II",
+   "slug": "darwinfpv-babyape-ii",
+   "specs": {
+    "class": "micro freestyle (sub-250)",
+    "weight_no_battery_g": 135.4,
+    "typical_auw_g": 224.4,
+    "prop_size_in": 3.5,
+    "prop_mount": "T-mount",
+    "motors": "DarwinFPV 1504 3600KV (4S)",
+    "vtx_system": "analog",
+    "typical_current_a": 6,
+    "recommended_battery": {
+     "cells": "4S",
+     "capacity_mah": 850,
+     "range_mah": "650-850",
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    }
+   },
+   "sources": [
+    "https://darwinfpv.com/products/darwinfpv-babyape-%e2%85%b1-freestyle-fpv-drone"
+   ],
+   "note": "6S variant exists. HQProp T3.5x2x3 props."
+  },
+  {
+   "type": "quad",
+   "brand": "DarwinFPV",
+   "model": "BabyApe Pro V2",
+   "slug": "darwinfpv-babyape-pro-v2",
+   "specs": {
+    "class": "micro freestyle (3in)",
+    "weight_no_battery_g": 70,
+    "prop_size_in": 3,
+    "prop_mount": "1.5mm shaft",
+    "motors": "DarwinFPV 1104 4300KV",
+    "vtx_system": "analog",
+    "typical_current_a": 5,
+    "recommended_battery": {
+     "cells": "3S (2-3S supported)",
+     "capacity_mah": 550,
+     "range_mah": "450-550",
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 143
+   },
+   "sources": [
+    "https://darwinfpv.com/products/darwinfpv-babyape-3"
+   ],
+   "note": "Gemfan 3016 props, 143mm diagonal."
+  },
+  {
+   "type": "quad",
+   "brand": "DarwinFPV",
+   "model": "CineApe25",
+   "slug": "darwinfpv-cineape25",
+   "specs": {
+    "class": "cinewhoop",
+    "weight_no_battery_g": 144,
+    "typical_auw_g": 238,
+    "prop_size_in": 2.5,
+    "motors": "DarwinFPV 1504 3600KV",
+    "vtx_system": "analog (Walksnail variant)",
+    "typical_current_a": 6,
+    "manufacturer_flight_time_min": "up to 9 (4S 850)",
+    "recommended_battery": {
+     "cells": "4S",
+     "capacity_mah": 850,
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 112
+   },
+   "sources": [
+    "https://darwinfpv.com/products/cineape-25-cinematic-whoop-fpv-drone"
+   ],
+   "note": "Budget cinewhoop. HQProp T63 six-blade, 112mm True-X."
+  },
+  {
+   "type": "quad",
+   "brand": "Diatone",
+   "model": "Roma F5 V2",
+   "slug": "diatone-roma-f5-v2",
+   "specs": {
+    "class": "freestyle",
+    "weight_no_battery_g": 380,
+    "prop_size_in": 5.1,
+    "prop_mount": "M5",
+    "motors": "Diatone MAMBA TOKA 2306.5 1770KV",
+    "vtx_system": "Caddx Vista HD (analog variant 320g)",
+    "typical_current_a": 13,
+    "recommended_battery": {
+     "cells": "6S",
+     "capacity_mah": 1100,
+     "range_mah": "1050-1300",
+     "connector": "XT60",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 218
+   },
+   "sources": [
+    "https://www.drone-fpv-racer.com/en/diatone-roma-f5-dji-v2-6s-8242.html"
+   ],
+   "note": "Vista version 380g (analog power kit 320g). 218mm wheelbase."
+  },
+  {
+   "type": "quad",
+   "brand": "Diatone",
+   "model": "Taycan MX-C",
+   "slug": "diatone-taycan-mx-c",
+   "specs": {
+    "class": "cinewhoop (ducted)",
+    "weight_no_battery_g": 175,
+    "typical_auw_g": 295,
+    "prop_size_in": 3,
+    "motors": "Diatone MAMBA MB1408 4000KV (4S) / 2800KV (6S)",
+    "vtx_system": "analog (Vista HD variant)",
+    "typical_current_a": 8,
+    "manufacturer_flight_time_min": "5-7 (4S 1300)",
+    "recommended_battery": {
+     "cells": "4S",
+     "capacity_mah": 1300,
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 158
+   },
+   "sources": [
+    "https://www.firstquadcopter.com/news/diatone-mx-c-349-taycan/"
+   ],
+   "note": "158mm wheelbase; V1.1 upgraded to 1606 motors. RunCam Nano 2."
+  },
+  {
+   "type": "quad",
+   "brand": "DJI",
+   "model": "Avata",
+   "slug": "dji-avata",
+   "specs": {
+    "class": "cinewhoop (ducted)",
+    "weight_no_battery_g": 248,
+    "typical_auw_g": 410,
+    "prop_size_in": 3,
+    "motors": "DJI (not published)",
+    "vtx_system": "DJI O3+ (built-in)",
+    "typical_current_a": 6,
+    "manufacturer_flight_time_min": "18 hover",
+    "recommended_battery": {
+     "cells": "4S (14.76V)",
+     "capacity_mah": 2420,
+     "connector": "DJI proprietary",
+     "chemistry": "Li-ion (Intelligent Flight Battery)"
+    }
+   },
+   "sources": [
+    "https://www.dji.com/support/product/avata"
+   ],
+   "note": "Takeoff 410g; battery ~162g (35.71Wh). Superseded by Avata 2 but still widely flown."
+  },
+  {
+   "type": "quad",
+   "brand": "DJI",
+   "model": "Avata 2",
+   "slug": "dji-avata-2",
+   "specs": {
+    "class": "cinewhoop (ducted)",
+    "weight_no_battery_g": 232,
+    "typical_auw_g": 377,
+    "prop_size_in": 3,
+    "motors": "DJI (not published)",
+    "vtx_system": "DJI O4 (built-in)",
+    "typical_current_a": 5,
+    "manufacturer_flight_time_min": "23",
+    "recommended_battery": {
+     "cells": "4S (14.76V)",
+     "capacity_mah": 2150,
+     "connector": "DJI proprietary",
+     "chemistry": "Li-ion (Intelligent Flight Battery)"
+    }
+   },
+   "sources": [
+    "https://www.dji.com/avata-2/specs"
+   ],
+   "note": "Takeoff weight 377g; battery ~145g. Proprietary ecosystem - parts pages are informational."
+  },
+  {
+   "type": "quad",
+   "brand": "DJI",
+   "model": "Avata 360",
+   "slug": "dji-avata-360",
+   "specs": {
+    "class": "cinewhoop (ducted, 360 cam)",
+    "weight_no_battery_g": 306,
+    "typical_auw_g": 455,
+    "prop_size_in": 3,
+    "motors": "DJI (not published)",
+    "vtx_system": "DJI O4+ (built-in)",
+    "typical_current_a": 6,
+    "manufacturer_flight_time_min": "23 (realistic 18-20)",
+    "recommended_battery": {
+     "cells": "4S",
+     "capacity_mah": 2700,
+     "connector": "DJI proprietary",
+     "chemistry": "Li-ion (Intelligent Flight Battery)"
+    }
+   },
+   "sources": [
+    "https://www.cliftoncameras.co.uk/uploads/specifications/CliftonCameras_DJI_Avata_360_Specs%201.pdf"
+   ],
+   "note": "March 2026 release: dual 1/1.1in sensors, 8K60 360 video, 42GB internal. Battery ~149g (38.67Wh)."
+  },
+  {
+   "type": "quad",
+   "brand": "DJI",
+   "model": "Neo",
+   "slug": "dji-neo",
+   "specs": {
+    "class": "camera whoop (guarded)",
+    "weight_no_battery_g": 90,
+    "typical_auw_g": 135,
+    "prop_size_in": 2,
+    "motors": "DJI (not published)",
+    "vtx_system": "DJI O4 (built-in)",
+    "typical_current_a": 4,
+    "manufacturer_flight_time_min": "18",
+    "recommended_battery": {
+     "cells": "2S (7.3V)",
+     "capacity_mah": 1435,
+     "connector": "DJI proprietary",
+     "chemistry": "Li-ion (Intelligent Flight Battery)"
+    }
+   },
+   "sources": [
+    "https://www.dji.com/neo/specs"
+   ],
+   "note": "Takeoff weight 135g; battery ~45g. Official props 2016S (50.8mm)."
+  },
+  {
+   "type": "quad",
+   "brand": "Eachine",
+   "model": "Novice-III",
+   "slug": "eachine-novice-iii",
+   "specs": {
+    "class": "micro racer (beginner RTF)",
+    "weight_no_battery_g": 62,
+    "prop_size_in": 3,
+    "motors": "Eachine 5500KV (2-3S)",
+    "vtx_system": "analog",
+    "typical_current_a": 5,
+    "manufacturer_flight_time_min": "up to 10 (3S 450)",
+    "recommended_battery": {
+     "cells": "3S",
+     "capacity_mah": 450,
+     "range_mah": "450 (2-3S)",
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 135
+   },
+   "sources": [
+    "https://www.eachine.com/Eachine-Novice-III-135mm-2-3S-3-Inch-FPV-Racing-Drone-RTF-and-Fly-more-w-or-5_8G-40CH-EV800-Goggles-2_4G-ER8-Transmitter-Fly-more-6x-Battery-Version-p-1739.html"
+   ],
+   "note": "RTF kit with EV800 goggles. 135mm wheelbase, bi-blade props."
+  },
+  {
+   "type": "quad",
+   "brand": "Eachine",
+   "model": "Novice-IV",
+   "slug": "eachine-novice-iv",
+   "specs": {
+    "class": "long range (sub-250, RTF)",
+    "weight_no_battery_g": 125,
+    "typical_auw_g": 215,
+    "prop_size_in": 4,
+    "motors": "Eachine 1404-class (3-4S)",
+    "vtx_system": "analog",
+    "typical_current_a": 5,
+    "manufacturer_flight_time_min": "20 (4S 1100) / up to 31 (Li-ion 3000)",
+    "recommended_battery": {
+     "cells": "4S",
+     "capacity_mah": 1100,
+     "range_mah": "1100 LiPo or 18650 3000 Li-ion",
+     "connector": "XT30",
+     "chemistry": "LiPo / Li-ion"
+    },
+    "wheelbase_mm": 170
+   },
+   "sources": [
+    "https://www.eachine.com/Eachine-Novice-IV-4-Inch-3-4S-Sub-250g-LR-Micro-Long-Range-FPV-Racing-Drone-RTF-and-Fly-more-w-or-EV800DM-Goggles-Radiomaster-TX12-Transmitter-RTF-2x-Battery-Version-p-2260.html"
+   ],
+   "note": "RTF LR kit with GPS (M8N), 170mm wheelbase."
+  },
+  {
+   "type": "quad",
+   "brand": "EMAX",
+   "model": "Babyhawk II HD",
+   "slug": "emax-babyhawk-ii-hd",
+   "specs": {
+    "class": "micro freestyle (sub-250)",
+    "weight_no_battery_g": 141,
+    "prop_size_in": 3.5,
+    "motors": "EMAX ECO 1404 3700KV",
+    "vtx_system": "Caddx Nebula/Polar Vista HD",
+    "typical_current_a": 6,
+    "recommended_battery": {
+     "cells": "4S",
+     "capacity_mah": 850,
+     "range_mah": "650-850 (3-4S)",
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 155
+   },
+   "sources": [
+    "https://emax-usa.com/products/babyhawk-ii-hd-3-5-micro-dji-hd-fpv-drone"
+   ],
+   "note": "155mm wheelbase, AVAN Scimitar 3.5in props. O3 refresh exists (Babyhawk O3)."
+  },
+  {
+   "type": "quad",
+   "brand": "EMAX",
+   "model": "EZ Pilot Pro",
+   "slug": "emax-ez-pilot-pro",
+   "specs": {
+    "class": "whoop (beginner RTF)",
+    "weight_no_battery_g": 32.5,
+    "prop_size_in": 1.6,
+    "motors": "EMAX 08025 II 15000KV",
+    "vtx_system": "analog 25-200mW",
+    "typical_current_a": 4,
+    "recommended_battery": {
+     "cells": "1S",
+     "capacity_mah": 450,
+     "connector": "PH2.0",
+     "chemistry": "LiHV"
+    },
+    "wheelbase_mm": 75,
+    "receiver_options": "FrSky D8 SPI"
+   },
+   "sources": [
+    "https://shop.emax-usa.com/collections/beginner/products/ez-pilot-pro-ready-to-fly-fpv-drone-w-controller-goggles"
+   ],
+   "note": "RTF kit with E8 transmitter + Transporter 2 goggles. 75mm wheelbase."
+  },
+  {
+   "type": "quad",
+   "brand": "EMAX",
+   "model": "Hawk Apex 5",
+   "slug": "emax-hawk-apex-5",
+   "specs": {
+    "class": "racing (ultralight)",
+    "weight_no_battery_g": 167,
+    "prop_size_in": 5,
+    "motors": "EMAX ECO II 2004 1600KV (6S) / 3000KV 3.5in variant",
+    "vtx_system": "HDZero",
+    "typical_current_a": 10,
+    "recommended_battery": {
+     "cells": "6S",
+     "capacity_mah": 850,
+     "range_mah": "650-1100 (4S/6S variants)",
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    },
+    "camera": "Runcam Nano HDZero"
+   },
+   "sources": [
+    "https://shop.emax-usa.com/collections/new-products/products/hawk-apex-5-inch-hdzero-ultralight-racing-drone"
+   ],
+   "note": "HDZero racing platform; 3.5in variant exists. 4S version uses XT30 per EMAX."
+  },
+  {
+   "type": "quad",
+   "brand": "EMAX",
+   "model": "Hawk Pro 5",
+   "slug": "emax-hawk-pro-5",
+   "specs": {
+    "class": "racing/freestyle",
+    "weight_no_battery_g": 265,
+    "prop_size_in": 5,
+    "prop_mount": "M5",
+    "motors": "EMAX Pulsar 2306 1700KV (6S) / 2400KV (4S)",
+    "vtx_system": "analog 25-200mW",
+    "typical_current_a": 12,
+    "recommended_battery": {
+     "cells": "6S",
+     "capacity_mah": 1100,
+     "range_mah": "1100-1300 (6S) / 1300-1500 (4S)",
+     "connector": "XT60",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 210
+   },
+   "sources": [
+    "https://www.getfpv.com/emax-hawk-pro-5-4s-6s-fpv-racing-drone-1700kv-2400kv-pnp.html"
+   ],
+   "note": "Legacy racing platform, 210mm wheelbase. Battery range is class-standard."
+  },
+  {
+   "type": "quad",
+   "brand": "EMAX",
+   "model": "Nanohawk",
+   "slug": "emax-nanohawk",
+   "specs": {
+    "class": "tiny whoop (guarded)",
+    "weight_no_battery_g": 20,
+    "prop_size_in": 1.2,
+    "prop_mount": "1.0mm shaft",
+    "motors": "EMAX TH0802 II 19000KV",
+    "vtx_system": "analog (RunCam Nano 3)",
+    "typical_current_a": 3,
+    "recommended_battery": {
+     "cells": "1S",
+     "capacity_mah": 300,
+     "connector": "GNB27",
+     "chemistry": "LiHV (60C)"
+    },
+    "wheelbase_mm": 65
+   },
+   "sources": [
+    "https://shop.emax-usa.com/products/nanohawk-1s-ultralight-brushless-fpv-drone"
+   ],
+   "note": "65mm wheelbase, Avia 31mm props, prop guards instead of ducts."
+  },
+  {
+   "type": "quad",
+   "brand": "EMAX",
+   "model": "Tinyhawk II Freestyle",
+   "slug": "emax-tinyhawk-ii-freestyle",
+   "specs": {
+    "class": "micro freestyle (2S)",
+    "weight_no_battery_g": 49,
+    "typical_auw_g": 79,
+    "prop_size_in": 2.5,
+    "prop_mount": "T-mount",
+    "motors": "EMAX TH1103 7000KV",
+    "vtx_system": "analog",
+    "typical_current_a": 4,
+    "recommended_battery": {
+     "cells": "2S (2x 1S in series)",
+     "capacity_mah": 450,
+     "connector": "PH2.0 x2",
+     "chemistry": "LiHV (80C)"
+    },
+    "wheelbase_mm": 115
+   },
+   "sources": [
+    "https://www.getfpv.com/emax-tinyhawk-ii-freestyle-2s-micro-brushless-fpv-drone-frsky-bnf.html"
+   ],
+   "note": "Runs two 1S 450 packs in series. Avan Rush 2.5in props, 115mm wheelbase."
+  },
+  {
+   "type": "quad",
+   "brand": "EMAX",
+   "model": "Tinyhawk III",
+   "slug": "emax-tinyhawk-iii",
+   "specs": {
+    "class": "whoop (beginner RTF)",
+    "weight_no_battery_g": 31,
+    "prop_size_in": 1.6,
+    "motors": "EMAX TH0802 II 15000KV",
+    "vtx_system": "analog",
+    "typical_current_a": 4,
+    "recommended_battery": {
+     "cells": "1S",
+     "capacity_mah": 450,
+     "connector": "PH2.0",
+     "chemistry": "LiHV"
+    },
+    "camera": "RunCam Nano 4",
+    "flight_controller": "F4 STM32 (MATEKF411RX), 1-2S, 5A 4-in-1 BLHeli_S",
+    "receiver_options": "SPI / FrSky D8/D16",
+    "wheelbase_mm": 76
+   },
+   "sources": [
+    "https://shop.emax-usa.com/products/tinyhawk-3-fpv-racing-drone-ready-to-fly-w-controller-and-goggles"
+   ],
+   "note": "76mm wheelbase. Plus version has bigger 650mAh pack and ELRS."
+  },
+  {
+   "type": "quad",
+   "brand": "EMAX",
+   "model": "Tinyhawk III Plus",
+   "slug": "emax-tinyhawk-iii-plus",
+   "specs": {
+    "class": "whoop (1-2S)",
+    "weight_no_battery_g": 32.5,
+    "prop_size_in": 1.6,
+    "motors": "EMAX TH0802 II 15000KV",
+    "vtx_system": "analog",
+    "typical_current_a": 5,
+    "recommended_battery": {
+     "cells": "1S (2S supported)",
+     "capacity_mah": 650,
+     "connector": "PH2.0",
+     "chemistry": "LiHV"
+    },
+    "camera": "Runcam Nano",
+    "wheelbase_mm": 76,
+    "flight_controller": "STM32F411, 6A BLHeli_S",
+    "receiver_options": "Integrated ELRS 2.4G"
+   },
+   "sources": [
+    "https://www.racedayquads.com/products/emax-bnf-tinyhawk-iii-plus-1-2s-analog-racing-drone-w-runcam-nano-elrs-2-4-ghz"
+   ],
+   "note": "Wheelbase 76mm, RunCam Nano camera, integrated ELRS. Re-cited 2026-09-13: the previous source URL (slug ...-whoop-...) now serves the Tinyhawk III Plus Freestyle, a different quad, which we carry separately. Specs here match the live whoop listing: 76 mm, 32.5 g, TH0802 II 15000KV."
+  },
+  {
+   "type": "quad",
+   "brand": "EMAX",
+   "model": "Tinyhawk III Plus Freestyle",
+   "slug": "emax-tinyhawk-iii-plus-freestyle",
+   "specs": {
+    "class": "micro freestyle (2.5in)",
+    "weight_no_battery_g": 62.5,
+    "prop_size_in": 2.5,
+    "wheelbase_mm": 110,
+    "motors": "EMAX 12025 7000KV",
+    "vtx_system": "analog",
+    "camera": "RunCam Nano",
+    "flight_controller": "STM32F411, 6A BLHeli_S",
+    "receiver_options": "Integrated ELRS 2.4G",
+    "recommended_battery": {
+     "cells": "1S (2S supported)",
+     "capacity_mah": 650,
+     "connector": "PH2.0",
+     "chemistry": "LiHV"
+    }
+   },
+   "sources": [
+    "https://www.racedayquads.com/products/emax-bnf-tinyhawk-iii-plus-whoop-1-2s-analog-racing-drone-w-runcam-nano-elrs-2-4-ghz"
+   ],
+   "note": "The 2.5in sibling of the Tinyhawk III Plus whoop, on AVAN Rush 2.5 props; 32Bit 40Ch VTX switchable 0/25/100/400 mW. Ships with two 1S HV 650 mAh packs. Note the citation: RaceDayQuads serves this product from a URL whose slug reads \"whoop\", which is how our whoop entry ended up pointing at the wrong quad."
+  },
+  {
+   "type": "quad",
+   "brand": "Flywoo",
+   "model": "CineRace20 V2",
+   "slug": "flywoo-cinerace20-v2",
+   "specs": {
+    "class": "cinewhoop (race)",
+    "weight_no_battery_g": 139,
+    "prop_size_in": 2,
+    "motors": "Flywoo NIN V2 1203PRO 5500KV",
+    "vtx_system": "DJI O3 (analog/Vista variants)",
+    "typical_current_a": 4,
+    "manufacturer_flight_time_min": "5.7 (4S 450) / 8.2 (4S 750)",
+    "recommended_battery": {
+     "cells": "4S",
+     "capacity_mah": 750,
+     "range_mah": "450-750",
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    }
+   },
+   "sources": [
+    "https://flywoo.net/products/cinerace20-hd-dji-o3-2inch-w-sandisk-128gb-sub250-4k-1080p-cinewhoop"
+   ],
+   "note": "O3 edition 139g (analog 112g, 4850KV). Gemfan D51 props."
+  },
+  {
+   "type": "quad",
+   "brand": "Flywoo",
+   "model": "Explorer LR4 V2",
+   "slug": "flywoo-explorer-lr4-v2",
+   "specs": {
+    "class": "long range (sub-250)",
+    "weight_no_battery_g": 179,
+    "typical_auw_g": 246,
+    "prop_size_in": 4,
+    "prop_mount": "T-mount",
+    "motors": "Flywoo NIN V2 1404 2750KV",
+    "vtx_system": "DJI O4 Pro (analog variant available)",
+    "typical_current_a": 5,
+    "manufacturer_flight_time_min": "up to 28 cruise (Li-ion 3000)",
+    "recommended_battery": {
+     "cells": "4S",
+     "capacity_mah": 3000,
+     "range_mah": "18650 3000 Li-ion or 750 LiPo",
+     "connector": "XT30",
+     "chemistry": "Li-ion / LiPo"
+    }
+   },
+   "sources": [
+    "https://flywoo.net/products/explorer-lr-4-o4-pro-v2-sub250-micro-long-range"
+   ],
+   "note": "AUW 246g with 4S 750 LiPo. Recommended Li-ion: Sony/Molicel 18650 4S1P."
+  },
+  {
+   "type": "quad",
+   "brand": "Flywoo",
+   "model": "Firefly Nano Baby 20",
+   "slug": "flywoo-firefly-nano-baby-20",
+   "specs": {
+    "class": "micro (2S 2in)",
+    "weight_no_battery_g": 33.8,
+    "prop_size_in": 2,
+    "motors": "Flywoo ROBO 1002 15500KV",
+    "vtx_system": "analog (Walksnail variant available)",
+    "typical_current_a": 4,
+    "recommended_battery": {
+     "cells": "2S",
+     "capacity_mah": 450,
+     "range_mah": "450-650",
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    }
+   },
+   "sources": [
+    "https://www.getfpv.com/flywoo-firefly-nano-baby-20-2s-micro-quadcopter-bnf-analog.html"
+   ],
+   "note": "Battery range/connector are class-standard values, not confirmed by Flywoo spec table."
+  },
+  {
+   "type": "quad",
+   "brand": "Flywoo",
+   "model": "Firefly18 Nano Baby V3",
+   "slug": "flywoo-firefly18-nano-baby-v3",
+   "specs": {
+    "class": "micro (1S toothpick)",
+    "weight_no_battery_g": 36,
+    "prop_size_in": 1.8,
+    "motors": "Flywoo ROBO 1002 19800KV",
+    "vtx_system": "DJI O4 (HDZero/Walksnail variants)",
+    "typical_current_a": 5,
+    "manufacturer_flight_time_min": "4.3 (1S 450) / 5.7 (1S 750)",
+    "recommended_battery": {
+     "cells": "1S",
+     "capacity_mah": 750,
+     "range_mah": "450-750",
+     "connector": "A30",
+     "chemistry": "LiHV"
+    }
+   },
+   "sources": [
+    "https://flywoo.net/products/firefly18-1s-nano-baby-v3-o4-tiny-drone"
+   ],
+   "note": "~36g with O4 (25.9g without FPV system; 56g AUW with 1S 750). HQ 45mm bi-blade props."
+  },
+  {
+   "type": "quad",
+   "brand": "Flywoo",
+   "model": "FlyLens 85",
+   "slug": "flywoo-flylens-85",
+   "specs": {
+    "class": "whoop (2S cinewhoop)",
+    "weight_no_battery_g": 76,
+    "prop_size_in": 2,
+    "motors": "Flywoo ROBO 1003 14800KV",
+    "vtx_system": "DJI O3 Lite naked (O4 variants available)",
+    "typical_current_a": 6,
+    "manufacturer_flight_time_min": "up to 8 (2S 1000)",
+    "recommended_battery": {
+     "cells": "2S",
+     "capacity_mah": 1000,
+     "range_mah": "750-1000",
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    }
+   },
+   "sources": [
+    "https://flywoo.net/products/flylens-85-hd-o3-lite-2s-brushless-whoop-fpv-drone"
+   ],
+   "note": "76g with naked O3 Lite (55g without FPV system)."
+  },
+  {
+   "type": "quad",
+   "brand": "Flywoo",
+   "model": "Mr.Croc 6 HD",
+   "slug": "flywoo-mr-croc-6-hd",
+   "specs": {
+    "class": "long range / freestyle (6in)",
+    "weight_no_battery_g": 389,
+    "prop_size_in": 6,
+    "prop_mount": "M5",
+    "motors": "Flywoo NIN 2306.5 1750KV",
+    "vtx_system": "DJI Digital HD (Air Unit)",
+    "typical_current_a": 12,
+    "recommended_battery": {
+     "cells": "6S",
+     "capacity_mah": 1500,
+     "range_mah": "1300-3000 or Li-ion",
+     "connector": "XT60",
+     "chemistry": "LiPo / Li-ion"
+    }
+   },
+   "sources": [
+    "https://www.getfpv.com/flywoo-mr-croc-6-6s-fpv-quadcopter-w-gps-dji-digital-hd-fpv-system.html"
+   ],
+   "note": "With GPS. 7in variant 498g (NIN 2806.5). Battery range is class-standard."
+  },
+  {
+   "type": "quad",
+   "brand": "GEPRC",
+   "model": "Cinebot25 S",
+   "slug": "geprc-cinebot25-s",
+   "specs": {
+    "class": "cinewhoop",
+    "weight_no_battery_g": 192.75,
+    "prop_size_in": 2.5,
+    "prop_mount": "T-mount",
+    "motors": "GEPRC 1505 4300KV",
+    "vtx_system": "DJI O3 (WTFPV/analog variants)",
+    "typical_current_a": 7,
+    "recommended_battery": {
+     "cells": "4S",
+     "capacity_mah": 850,
+     "range_mah": "650-850",
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 115,
+    "flight_controller": "TAKER G4 45A AIO",
+    "receiver_options": "PNP(internal VTX receiver) / ELRS2.4G / TBS NanoRX"
+   },
+   "sources": [
+    "https://geprc.com/product/geprc-cinebot25-s-wtfpv-quadcopter/"
+   ],
+   "note": "HD O3 version (WTFPV: 145g). HQProp DT63x4 props."
+  },
+  {
+   "type": "quad",
+   "brand": "GEPRC",
+   "model": "Cinebot25 V2",
+   "slug": "geprc-cinebot25-v2",
+   "specs": {
+    "class": "cinewhoop",
+    "weight_no_battery_g": 219,
+    "prop_size_in": 2.5,
+    "prop_mount": "T-mount",
+    "motors": "GEPRC SPEEDX2 1404 4600KV",
+    "vtx_system": "DJI O4 Pro",
+    "typical_current_a": 7,
+    "manufacturer_flight_time_min": "5-8 (cruise)",
+    "recommended_battery": {
+     "cells": "4S",
+     "capacity_mah": 900,
+     "range_mah": "750-1100",
+     "connector": "XT30",
+     "chemistry": "LiHV"
+    },
+    "wheelbase_mm": 123,
+    "camera": "DJI O4 Air Unit Pro camera module",
+    "receiver_options": "PNP (built-in receiver) / ELRS 2.4G"
+   },
+   "sources": [
+    "https://geprc.com/product/geprc-cinebot25-v2-o4-pro-quadcopter/"
+   ],
+   "note": "O4 Pro + GPS (GEP-M10nano). HQProp DT63x3 V2 props."
+  },
+  {
+   "type": "quad",
+   "brand": "GEPRC",
+   "model": "Cinebot30",
+   "slug": "geprc-cinebot30",
+   "specs": {
+    "class": "cinewhoop",
+    "weight_no_battery_g": 234.7,
+    "prop_size_in": 3,
+    "prop_mount": "T-mount",
+    "motors": "GEPRC SPEEDX2 1804 2450KV (6S) / 3450KV (4S)",
+    "vtx_system": "DJI O3",
+    "typical_current_a": 10,
+    "manufacturer_flight_time_min": "5.5-10.5",
+    "recommended_battery": {
+     "cells": "6S",
+     "capacity_mah": 1100,
+     "range_mah": "850-1100 (6S) / 1100-1300 (4S)",
+     "connector": "XT60H-M",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 127,
+    "camera": "DJI O3",
+    "flight_controller": "GEP-F722-45A AIO V2",
+    "receiver_options": "PNP, Frsky R-XSR, TBS Nano RX, ELRS 2.4G"
+   },
+   "sources": [
+    "https://geprc.com/product/geprc-cinebot30-hd-o3-fpv-drone/"
+   ],
+   "note": "O3 version (analog: 209.2g). Props HQ T76 3-blade."
+  },
+  {
+   "type": "quad",
+   "brand": "GEPRC",
+   "model": "Cinelog20",
+   "slug": "geprc-cinelog20",
+   "specs": {
+    "class": "cinewhoop",
+    "weight_no_battery_g": 140,
+    "prop_size_in": 2,
+    "motors": "GEPRC GR1303.5 5500KV",
+    "vtx_system": "DJI O3",
+    "typical_current_a": 6,
+    "manufacturer_flight_time_min": "4-6",
+    "recommended_battery": {
+     "cells": "4S",
+     "capacity_mah": 660,
+     "range_mah": "450-660",
+     "connector": "XT30",
+     "chemistry": "LiHV"
+    },
+    "wheelbase_mm": 100,
+    "camera": "O3 Camera",
+    "flight_controller": "Taker G4 35A AIO",
+    "receiver_options": "PNP(built-in DJI receiver), ELRS2.4G, TBS Nano RX / RXSR"
+   },
+   "sources": [
+    "https://geprc.com/product/geprc-cinelog20-hd-o3-fpv-drone/"
+   ],
+   "note": "HD O3 version (weight incl. TBS Nano RX). Props EMAX Avan Micro 2x2.4x4."
+  },
+  {
+   "type": "quad",
+   "brand": "GEPRC",
+   "model": "Cinelog30 V3",
+   "slug": "geprc-cinelog30-v3",
+   "specs": {
+    "class": "cinewhoop",
+    "weight_no_battery_g": 187,
+    "prop_size_in": 3,
+    "prop_mount": "T-mount",
+    "motors": "GEPRC SPEEDX2 1404 3850KV",
+    "vtx_system": "DJI O4 Pro",
+    "typical_current_a": 6,
+    "manufacturer_flight_time_min": "up to 8.2 (cruise)",
+    "recommended_battery": {
+     "cells": "4S",
+     "capacity_mah": 660,
+     "range_mah": "660-720",
+     "connector": "XT30",
+     "chemistry": "LiHV"
+    },
+    "flight_controller": "TAKER F722 45A 32-bit AIO"
+   },
+   "sources": [
+    "https://oscarliang.com/geprc-cinelog30-v3/"
+   ],
+   "note": "O4 Pro version, HQProp DT76x3 props. Connector XT30 is class-standard, not stated by GEPRC."
+  },
+  {
+   "type": "quad",
+   "brand": "GEPRC",
+   "model": "Cinelog35 V2",
+   "slug": "geprc-cinelog35-v2",
+   "specs": {
+    "class": "cinewhoop",
+    "weight_no_battery_g": 285.8,
+    "prop_size_in": 3.5,
+    "prop_mount": "T-mount",
+    "motors": "GEPRC SPEEDX2 2105.5 2650KV",
+    "vtx_system": "DJI O3",
+    "typical_current_a": 10,
+    "manufacturer_flight_time_min": "5-8.5",
+    "recommended_battery": {
+     "cells": "6S",
+     "capacity_mah": 1100,
+     "range_mah": "1050-1300",
+     "connector": "XT60",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 142,
+    "camera": "O3",
+    "flight_controller": "GEP-F722-45A AIO V2",
+    "receiver_options": "PNP, GEPRC ELRS 2.4G, TBS Nano RX"
+   },
+   "sources": [
+    "https://geprc.com/product/geprc-cinelog35-v2-hd-o3-fpv-drone/"
+   ],
+   "note": "HD O3 version (analog: 263.8g). Specs from geprc.com."
+  },
+  {
+   "type": "quad",
+   "brand": "GEPRC",
+   "model": "Cinelog35 V3",
+   "slug": "geprc-cinelog35-v3",
+   "specs": {
+    "class": "cinewhoop",
+    "weight_no_battery_g": 280,
+    "prop_size_in": 3.5,
+    "prop_mount": "T-mount",
+    "motors": "GEPRC SPEEDX2 2105.5 2650KV",
+    "vtx_system": "DJI O4 Pro",
+    "typical_current_a": 10,
+    "recommended_battery": {
+     "cells": "6S",
+     "capacity_mah": 1100,
+     "range_mah": "1100-1300",
+     "connector": "XT60",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 142,
+    "camera": "DJI O4 Air Unit Pro camera module",
+    "flight_controller": "GEP-F722-45A AIO V2",
+    "receiver_options": "PNP (O4 Pro built-in) / ELRS 2.4G"
+   },
+   "sources": [
+    "https://geprc.com/product/geprc-cinelog35-v3-o4-pro-fpv-drone/"
+   ],
+   "note": "O4 Pro version, 142mm wheelbase, HQProp D-T90 props. Connector XT60 is class-standard."
+  },
+  {
+   "type": "quad",
+   "brand": "GEPRC",
+   "model": "Crocodile Baby 4",
+   "slug": "geprc-crocodile-baby-4",
+   "specs": {
+    "class": "long range (sub-250)",
+    "weight_no_battery_g": 155,
+    "typical_auw_g": 242,
+    "prop_size_in": 4,
+    "motors": "GEPRC GR1404 2750KV",
+    "vtx_system": "Caddx Vista HD (Wasp/analog variants)",
+    "typical_current_a": 5,
+    "manufacturer_flight_time_min": "28+ (Li-ion 3000)",
+    "recommended_battery": {
+     "cells": "4S",
+     "capacity_mah": 750,
+     "range_mah": "650-1300 LiPo or 18650 3000 Li-ion",
+     "connector": "XT30",
+     "chemistry": "LiPo / Li-ion"
+    },
+    "wheelbase_mm": 174,
+    "receiver_options": "PNP(with DJI Receiver) / Frsky R-XSR/TBS Nano RX"
+   },
+   "sources": [
+    "https://geprc.com/product/geprc-crocodile-baby-4-hd-micro-long-range/"
+   ],
+   "note": "Dry weight derived: 242g incl. 4S 750 pack. Gemfan 4024 props, 174mm wheelbase."
+  },
+  {
+   "type": "quad",
+   "brand": "GEPRC",
+   "model": "DarkStar20",
+   "slug": "geprc-darkstar20",
+   "specs": {
+    "class": "cinewhoop",
+    "weight_no_battery_g": 86,
+    "typical_auw_g": 120,
+    "prop_size_in": 2,
+    "motors": "GEPRC SPEEDX2 1102 10000KV",
+    "vtx_system": "DJI O3 (WTFPV/Wasp variants)",
+    "typical_current_a": 5,
+    "recommended_battery": {
+     "cells": "2S",
+     "capacity_mah": 500,
+     "range_mah": "450-550",
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 90,
+    "camera": "O3 Camera",
+    "flight_controller": "TAKER F411-12A-E 1-2S AIO",
+    "receiver_options": "PNP / ELRS2.4G / TBS Nano RX"
+   },
+   "sources": [
+    "https://geprc.com/product/geprc-darkstar20-o3-cinewhoop-quadcopter/"
+   ],
+   "note": "90mm diagonal."
+  },
+  {
+   "type": "quad",
+   "brand": "GEPRC",
+   "model": "Mark4",
+   "slug": "geprc-mark4",
+   "specs": {
+    "class": "freestyle",
+    "weight_no_battery_g": 346,
+    "prop_size_in": 5.1,
+    "prop_mount": "M5",
+    "motors": "GEPRC 2306.5 1850KV (6S) / 2450KV (4S)",
+    "vtx_system": "Caddx Nebula HD (analog variants)",
+    "typical_current_a": 13,
+    "recommended_battery": {
+     "cells": "6S",
+     "capacity_mah": 1300,
+     "range_mah": "1100-1400",
+     "connector": "XT60",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 225,
+    "camera": "Caddx Ratel",
+    "flight_controller": "SPAN F722-BT-HD V2",
+    "receiver_options": "Without Receiver/Frsky R-XSR / Frsky XM+ / FS-A8S v2 / TBS Nano RX"
+   },
+   "sources": [
+    "https://geprc.com/product/mark4-drone-for-freestyle-fpv-4s-6s/"
+   ],
+   "note": "Legacy freestyle platform (pre-Mark5), 225mm. GEPRC G5x4.3x3 props."
+  },
+  {
+   "type": "quad",
+   "brand": "GEPRC",
+   "model": "Mark5",
+   "slug": "geprc-mark5",
+   "specs": {
+    "class": "freestyle",
+    "weight_no_battery_g": 404.9,
+    "prop_size_in": 5.1,
+    "prop_mount": "M5",
+    "motors": "GEPRC SPEEDX2 2107.5 1960KV (6S)",
+    "vtx_system": "DJI O3",
+    "typical_current_a": 13,
+    "recommended_battery": {
+     "cells": "6S",
+     "capacity_mah": 1300,
+     "range_mah": "1050-1550",
+     "connector": "XT60",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 225,
+    "camera": "DJI O3",
+    "flight_controller": "GEP-F722-BT-HD V3 FC",
+    "receiver_options": "PNP, TBS Nano RX, ELRS 2.4G"
+   },
+   "sources": [
+    "https://geprc.com/product/geprc-mark5-hd-o3-freestyle-fpv-drone-green/"
+   ],
+   "note": "HD O3 version. Props Gemfan 5136. Wheelbase 225mm."
+  },
+  {
+   "type": "quad",
+   "brand": "GEPRC",
+   "model": "MOZ7 V2",
+   "slug": "geprc-moz7-v2",
+   "specs": {
+    "class": "long range",
+    "weight_no_battery_g": 750,
+    "prop_size_in": 7,
+    "vtx_system": "DJI O4 Pro (O3/Wasp variants)",
+    "typical_current_a": 12,
+    "manufacturer_flight_time_min": "~25-30 (Li-ion 6S)",
+    "recommended_battery": {
+     "cells": "6S",
+     "capacity_mah": 8000,
+     "range_mah": "3300-4000 LiPo or 6S2P Li-ion 6000-8000",
+     "connector": "XT60",
+     "chemistry": "LiPo / Li-ion"
+    },
+    "wheelbase_mm": 336,
+    "flight_controller": "TAKER H743 BT",
+    "receiver_options": "PNP / ELRS 915M/2.4G GemX / TBSNanoRX"
+   },
+   "sources": [
+    "https://geprc.com/product/geprc-moz7-v2-o4-pro-long-range-fpv/"
+   ],
+   "note": "Manufacturer spec ~750g; independent reviews measured closer to 843g dry."
+  },
+  {
+   "type": "quad",
+   "brand": "GEPRC",
+   "model": "Rocket Plus",
+   "slug": "geprc-rocket-plus",
+   "specs": {
+    "class": "cinewhoop (ducted)",
+    "weight_no_battery_g": 148,
+    "prop_size_in": 2,
+    "motors": "GEPRC GR1204 5000KV",
+    "vtx_system": "DJI FPV Air Unit (Vista/analog Lite variants)",
+    "typical_current_a": 7,
+    "recommended_battery": {
+     "cells": "4S",
+     "capacity_mah": 850,
+     "range_mah": "650-850",
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 112
+   },
+   "sources": [
+    "https://geprc.com/product/rocket-plus-dji-air-unit-hd-fpv/"
+   ],
+   "note": "112mm wheelbase, 2in 4-blade props, onboard 1080p60 recording via Air Unit."
+  },
+  {
+   "type": "quad",
+   "brand": "GEPRC",
+   "model": "Smart 35",
+   "slug": "geprc-smart-35",
+   "specs": {
+    "class": "micro freestyle (sub-250)",
+    "weight_no_battery_g": 142.1,
+    "prop_size_in": 3.5,
+    "motors": "GEPRC GR1404 3850KV",
+    "vtx_system": "Caddx Polar Vista HD (Nano/analog variants)",
+    "typical_current_a": 6,
+    "recommended_battery": {
+     "cells": "4S",
+     "capacity_mah": 850,
+     "range_mah": "850-1300",
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 155,
+    "camera": "Caddx Ratel V2",
+    "flight_controller": "GEP-F411-35A AIO",
+    "receiver_options": "PNP / Frsky RXSR / TBS Nano RX"
+   },
+   "sources": [
+    "https://geprc.com/product/geprc-smart-35-analog-3-5inch-micro-freestyle-drone/"
+   ],
+   "note": "Polar HD version 142.1g (Nano 137.6g, analog 127.4g). EMAX 3.5x2.8x3 props, 155mm."
+  },
+  {
+   "type": "quad",
+   "brand": "GEPRC",
+   "model": "Tern-LR40",
+   "slug": "geprc-tern-lr40",
+   "specs": {
+    "class": "long range",
+    "weight_no_battery_g": 159,
+    "prop_size_in": 4,
+    "prop_mount": "T-mount",
+    "motors": "GEPRC SPEEDX2 1404 3000KV",
+    "vtx_system": "analog",
+    "typical_current_a": 6,
+    "manufacturer_flight_time_min": "7 (LiPo 750) / 25 (Li-ion 3000)",
+    "recommended_battery": {
+     "cells": "4S",
+     "capacity_mah": 3000,
+     "range_mah": "660-850 LiPo or 18650 3000 Li-ion",
+     "connector": "XT30",
+     "chemistry": "LiPo / Li-ion"
+    },
+    "camera": "Caddx Ratel2",
+    "flight_controller": "Taker G4 45A AIO",
+    "receiver_options": "PNP/GEPRC ELRS24/GEPRC ELRS915/TBS Nano RX"
+   },
+   "sources": [
+    "https://geprc.com/product/geprc-tern-lr40-analog-long-range-fpv/"
+   ],
+   "note": "Analog version 159g (Wasp HD: 171g, O3: 180g). Props HQProp T4X2.5. Connector XT30 not stated by GEPRC - standard for this class."
+  },
+  {
+   "type": "quad",
+   "brand": "GEPRC",
+   "model": "Vapor D5",
+   "slug": "geprc-vapor-d5",
+   "specs": {
+    "class": "freestyle (deadcat)",
+    "weight_no_battery_g": 428,
+    "prop_size_in": 5.1,
+    "prop_mount": "M5",
+    "motors": "GEPRC SPEEDX2 2207E 1960KV",
+    "vtx_system": "DJI O4 Pro",
+    "typical_current_a": 13,
+    "recommended_battery": {
+     "cells": "6S",
+     "capacity_mah": 1400,
+     "range_mah": "1300-1800",
+     "connector": "XT60",
+     "chemistry": "LiPo"
+    },
+    "receiver_options": "GEPRC ELRS Nano 2.4GHz",
+    "wheelbase_mm": 238
+   },
+   "sources": [
+    "https://www.rotorama.com/product/geprc-vapor-d5-o4-pro-elrs-2-4g"
+   ],
+   "note": "O4 Pro version, 238mm deadcat frame, Gemfan 5136 props."
+  },
+  {
+   "type": "quad",
+   "brand": "Happymodel",
+   "model": "Bassline",
+   "slug": "happymodel-bassline",
+   "specs": {
+    "class": "toothpick (2S)",
+    "weight_no_battery_g": 45,
+    "prop_size_in": 2,
+    "motors": "Happymodel EX1103 11000KV",
+    "vtx_system": "HDZero (Walksnail/analog variants)",
+    "typical_current_a": 4,
+    "recommended_battery": {
+     "cells": "2S",
+     "capacity_mah": 450,
+     "range_mah": "350-650",
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 90,
+    "receiver_options": "SPI ExpressLRS"
+   },
+   "sources": [
+    "https://www.happymodel.cn/index.php/2022/12/23/happymodel-bassline-2s-micro-fpv-racer-drone/"
+   ],
+   "note": "HDZero version 45g. 90mm diagonal."
+  },
+  {
+   "type": "quad",
+   "brand": "Happymodel",
+   "model": "Crux3",
+   "slug": "happymodel-crux3",
+   "specs": {
+    "class": "toothpick (1S 3in)",
+    "weight_no_battery_g": 40,
+    "prop_size_in": 3,
+    "motors": "Happymodel EX1202.5 11500KV",
+    "vtx_system": "analog",
+    "typical_current_a": 6,
+    "manufacturer_flight_time_min": "4.5 (1S 650, with camera payload)",
+    "recommended_battery": {
+     "cells": "1S",
+     "capacity_mah": 650,
+     "range_mah": "450-720",
+     "chemistry": "LiHV"
+    },
+    "wheelbase_mm": 115
+   },
+   "sources": [
+    "https://www.happymodel.cn/index.php/2021/10/11/happymodel-crux3-1s-elrs-3-inch-toothpick-fpv-racing-drone-bnf/"
+   ],
+   "note": "115mm wheelbase, Gemfan 75mm bi-blade. NLR 18650 variant exists for long range."
+  },
+  {
+   "type": "quad",
+   "brand": "Happymodel",
+   "model": "Crux35",
+   "slug": "happymodel-crux35",
+   "specs": {
+    "class": "toothpick (3.5in)",
+    "weight_no_battery_g": 87,
+    "prop_size_in": 3.5,
+    "prop_mount": "T-mount",
+    "motors": "Happymodel EX1404 3500KV",
+    "vtx_system": "analog (HDZero variant available)",
+    "typical_current_a": 4,
+    "manufacturer_flight_time_min": "9-15 (4S 750)",
+    "recommended_battery": {
+     "cells": "4S",
+     "capacity_mah": 750,
+     "range_mah": "750 (max 1100)",
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 150,
+    "receiver_options": "UART ExpressLRS 2.4GHz"
+   },
+   "sources": [
+    "https://www.happymodel.cn/index.php/2021/08/30/happymodel-crux35-crux35-digital-hd-3-5-inch-4s-micro-freestyle-fpv-racing-drone/"
+   ],
+   "note": "Analog V2 87g (digital HD: 108g). HQProp T3.5x2x3 props."
+  },
+  {
+   "type": "quad",
+   "brand": "Happymodel",
+   "model": "Larva X",
+   "slug": "happymodel-larva-x",
+   "specs": {
+    "class": "toothpick (2-3S)",
+    "weight_no_battery_g": 50,
+    "prop_size_in": 2.5,
+    "motors": "Happymodel EX1103 7000KV",
+    "vtx_system": "analog (HD variant)",
+    "typical_current_a": 5,
+    "recommended_battery": {
+     "cells": "3S",
+     "capacity_mah": 350,
+     "range_mah": "300-450 (2-3S)",
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 100,
+    "camera": "Runcam Nano2",
+    "receiver_options": "Frsky D8 ,Flysky , Specktrum ,Frsky RXSR ,TBS CRSF"
+   },
+   "sources": [
+    "https://www.happymodel.cn/index.php/2019/08/17/happymodel-larva-x-2-3s-micro-brushless-fpv-racer-drone/"
+   ],
+   "note": "Legacy 100mm toothpick, still popular for racing practice."
+  },
+  {
+   "type": "quad",
+   "brand": "Happymodel",
+   "model": "Moblite6",
+   "slug": "happymodel-moblite6",
+   "specs": {
+    "class": "tiny whoop (ultralight)",
+    "weight_no_battery_g": 18.5,
+    "typical_auw_g": 26,
+    "prop_size_in": 1.2,
+    "prop_mount": "1.0mm shaft",
+    "motors": "Happymodel SE0802 19000KV",
+    "vtx_system": "analog 25-200mW",
+    "typical_current_a": 3,
+    "recommended_battery": {
+     "cells": "1S",
+     "capacity_mah": 300,
+     "connector": "PH2.0",
+     "chemistry": "LiHV (30C)"
+    },
+    "wheelbase_mm": 65
+   },
+   "sources": [
+    "https://www.happymodel.cn/index.php/2020/12/14/happymodel-moblite6-ultra-light-1s-65mm-brushless-whoop/"
+   ],
+   "note": "Gemfan 1219 31mm props, RunCam Nano 3."
+  },
+  {
+   "type": "quad",
+   "brand": "Happymodel",
+   "model": "Moblite7",
+   "slug": "happymodel-moblite7",
+   "specs": {
+    "class": "tiny whoop (ultralight LR)",
+    "weight_no_battery_g": 34.5,
+    "prop_size_in": 1.6,
+    "vtx_system": "Walksnail Avatar (V3)",
+    "typical_current_a": 4,
+    "recommended_battery": {
+     "cells": "1S",
+     "capacity_mah": 450,
+     "range_mah": "450-650",
+     "chemistry": "LiHV"
+    },
+    "receiver_options": "CRSF",
+    "wheelbase_mm": 75
+   },
+   "sources": [
+    "https://www.happymodel.cn/index.php/2023/09/04/moblite7-walksnail-1s-75mm-digital-hd-brushless-whoop-v3/"
+   ],
+   "note": "Walksnail V3 version. 75mm wheelbase, 40mm props. Battery connector varies by revision - verify before publish-critical use."
+  },
+  {
+   "type": "quad",
+   "brand": "Happymodel",
+   "model": "Mobula6 2024",
+   "slug": "happymodel-mobula6-2024",
+   "specs": {
+    "class": "tiny whoop",
+    "weight_no_battery_g": 17.6,
+    "prop_size_in": 1.2,
+    "prop_mount": "1.0mm shaft",
+    "motors": "Happymodel SE0702 28000KV",
+    "vtx_system": "analog (HDZero ECO variant)",
+    "typical_current_a": 3,
+    "recommended_battery": {
+     "cells": "1S",
+     "capacity_mah": 300,
+     "connector": "A30 (BT2.0 compatible)",
+     "chemistry": "LiHV"
+    },
+    "wheelbase_mm": 65,
+    "receiver_options": "Serial ELRS 2.4GHz"
+   },
+   "sources": [
+    "https://www.happymodel.cn/index.php/2025/12/11/mobula6-2024-v3-1s-65mm-ultra-light-micro-fpv-whoop/"
+   ],
+   "note": "2024 V3 analog 17.6g (ECO HD: 23.3g). 31mm props, 65mm wheelbase."
+  },
+  {
+   "type": "quad",
+   "brand": "Happymodel",
+   "model": "Mobula7 1S",
+   "slug": "happymodel-mobula7-1s",
+   "specs": {
+    "class": "tiny whoop",
+    "weight_no_battery_g": 24,
+    "prop_size_in": 1.6,
+    "prop_mount": "1.0mm shaft",
+    "motors": "Happymodel SE0802 20000KV",
+    "vtx_system": "analog (HDZero variant available)",
+    "typical_current_a": 4,
+    "recommended_battery": {
+     "cells": "1S",
+     "capacity_mah": 450,
+     "range_mah": "450-650",
+     "connector": "A30 (GNB27/BT2.0 compatible)",
+     "chemistry": "LiHV"
+    },
+    "receiver_options": "SPI ELRS + ceramic SMD antenna",
+    "wheelbase_mm": 75
+   },
+   "sources": [
+    "https://www.rotorama.com/product/happymodel-mobula7-1s-elrs-2-4g"
+   ],
+   "note": "Analog edition 24g (HD: 33g). 40mm props, 75mm wheelbase."
+  },
+  {
+   "type": "quad",
+   "brand": "Happymodel",
+   "model": "Mobula8",
+   "slug": "happymodel-mobula8",
+   "specs": {
+    "class": "whoop (2S 85mm)",
+    "weight_no_battery_g": 43,
+    "prop_size_in": 2,
+    "prop_mount": "1.0mm shaft",
+    "motors": "Happymodel EX1103 11000KV",
+    "vtx_system": "analog 400mW",
+    "typical_current_a": 5,
+    "recommended_battery": {
+     "cells": "2S",
+     "capacity_mah": 450,
+     "range_mah": "450-650",
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 85,
+    "receiver_options": "Serial_based CRSF"
+   },
+   "sources": [
+    "https://www.happymodel.cn/index.php/2023/11/16/happymodel-mobula8-uart-elrs-2s-85mm-micro-fpv-whoop-drone/"
+   ],
+   "note": "Gemfan 2023 tri-blade props, wheelbase 85mm. Caddx Ant camera."
+  },
+  {
+   "type": "quad",
+   "brand": "HGLRC",
+   "model": "Sector30CR",
+   "slug": "hglrc-sector30cr",
+   "specs": {
+    "class": "cinewhoop/freestyle (3in)",
+    "weight_no_battery_g": 190,
+    "prop_size_in": 3,
+    "motors": "HGLRC AEOLUS 2004 3000KV (4S) / 1800KV (6S)",
+    "vtx_system": "analog Zeus 350mW (Vista variant)",
+    "typical_current_a": 7,
+    "recommended_battery": {
+     "cells": "4S",
+     "capacity_mah": 850,
+     "range_mah": "550-1000 (4S or 6S)",
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 150
+   },
+   "sources": [
+    "https://www.firstquadcopter.com/news/hglrc-sector25-sector30/"
+   ],
+   "note": "150mm wheelbase, Gemfan D76 5-blade."
+  },
+  {
+   "type": "quad",
+   "brand": "HGLRC",
+   "model": "Veyron30CR",
+   "slug": "hglrc-veyron30cr",
+   "specs": {
+    "class": "cinewhoop",
+    "weight_no_battery_g": 251,
+    "prop_size_in": 3,
+    "motors": "HGLRC AEOLUS 2004 1800KV (6S) / 3000KV (4S)",
+    "vtx_system": "Caddx Polar Vista HD (analog variant)",
+    "typical_current_a": 9,
+    "recommended_battery": {
+     "cells": "6S",
+     "capacity_mah": 750,
+     "range_mah": "650-850 (6S) / 750-1300 (4S)",
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 140
+   },
+   "sources": [
+    "https://www.getfpv.com/hglrc-veyron30cr-3-cinewhoop-bnf-hd-w-caddx-polar-micro-vista-6s-1800kv-tbs-crossfire.html"
+   ],
+   "note": "140mm wheelbase."
+  },
+  {
+   "type": "quad",
+   "brand": "iFlight",
+   "model": "AOS 3.5 V5",
+   "slug": "iflight-aos-3-5-v5",
+   "specs": {
+    "class": "micro freestyle (sub-250)",
+    "weight_no_battery_g": 197,
+    "prop_size_in": 3.5,
+    "prop_mount": "T-mount",
+    "motors": "iFlight XING 1504 3100KV",
+    "vtx_system": "DJI O3 (O4 Pro variant)",
+    "typical_current_a": 7,
+    "manufacturer_flight_time_min": "12 hover (4S 850)",
+    "recommended_battery": {
+     "cells": "4S",
+     "capacity_mah": 850,
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 162
+   },
+   "sources": [
+    "https://pyrodrone.com/products/iflight-aos-3-5-v5-4s-hd-o3-fpv-freestyle-drone-bnf-pnp-choose-receiver"
+   ],
+   "note": "Chris Rosser AOS aero design, 162mm. HQ 3.5x2.5x3 props."
+  },
+  {
+   "type": "quad",
+   "brand": "iFlight",
+   "model": "AOS 5R",
+   "slug": "iflight-aos-5r",
+   "specs": {
+    "class": "racing",
+    "weight_no_battery_g": 300,
+    "typical_auw_g": 525,
+    "prop_size_in": 5.1,
+    "prop_mount": "M5",
+    "motors": "iFlight R5 2207 2050KV",
+    "vtx_system": "analog (HD variants)",
+    "typical_current_a": 14,
+    "recommended_battery": {
+     "cells": "6S",
+     "capacity_mah": 1400,
+     "connector": "XT60",
+     "chemistry": "LiPo"
+    }
+   },
+   "sources": [
+    "https://web.archive.org/web/20251018114450/https://shop.iflight.com/AOS-5R-6S-Pro2131"
+   ],
+   "note": "Chris Rosser-designed AOS aero frame, race edition. Source archived 2025-10-18: the manufacturer page for this revision was taken down when the model was superseded, so the citation points at the Internet Archive copy of https://shop.iflight.com/AOS-5R-6S-Pro2131. The specs were verified against that page when written."
+  },
+  {
+   "type": "quad",
+   "brand": "iFlight",
+   "model": "Chimera4 LR",
+   "slug": "iflight-chimera4-lr",
+   "specs": {
+    "class": "long range (sub-250)",
+    "weight_no_battery_g": 173,
+    "typical_auw_g": 265.8,
+    "prop_size_in": 4,
+    "motors": "iFlight XING 1404 3000KV (Cruiser) / 3800KV (Speed)",
+    "vtx_system": "Caddx Nebula HD (analog variant)",
+    "typical_current_a": 5,
+    "manufacturer_flight_time_min": "15+ (4S 850)",
+    "recommended_battery": {
+     "cells": "4S",
+     "capacity_mah": 850,
+     "range_mah": "850 LiPo or 18650 Li-ion",
+     "connector": "XT30",
+     "chemistry": "LiPo / Li-ion"
+    },
+    "wheelbase_mm": 178
+   },
+   "sources": [
+    "https://www.getfpv.com/iflight-chimera4-4-4s-lr-hd-freestyle-quadcopter-w-caddx-nebula-nano-digital-hd-system-bnf-11905.html"
+   ],
+   "note": "178mm wheelbase."
+  },
+  {
+   "type": "quad",
+   "brand": "iFlight",
+   "model": "Chimera7 Pro V2",
+   "slug": "iflight-chimera7-pro-v2",
+   "specs": {
+    "class": "long range",
+    "weight_no_battery_g": 695,
+    "prop_size_in": 7.5,
+    "prop_mount": "M5",
+    "motors": "iFlight XING2 2809 1250KV",
+    "vtx_system": "DJI O3 (O4 Pro variant available)",
+    "typical_current_a": 12,
+    "manufacturer_flight_time_min": "up to 30 hover (21700 8000mAh)",
+    "recommended_battery": {
+     "cells": "6S",
+     "capacity_mah": 8000,
+     "range_mah": "2000-4500 LiPo or 21700 Li-ion 6S1P-6S2P",
+     "connector": "XT60",
+     "chemistry": "LiPo / Li-ion"
+    },
+    "flight_controller": "BLITZ F722 Flight Controller",
+    "wheelbase_mm": 327
+   },
+   "sources": [
+    "https://shop.iflight.com/Chimera7-Pro-V2-6S-Pro1947"
+   ],
+   "note": "HD version 695g; O4 Pro 725g. Wheelbase 327mm."
+  },
+  {
+   "type": "quad",
+   "brand": "iFlight",
+   "model": "Cidora SL5 V2.1",
+   "slug": "iflight-cidora-sl5",
+   "specs": {
+    "class": "freestyle",
+    "weight_no_battery_g": 445.4,
+    "prop_size_in": 5.1,
+    "prop_mount": "M5",
+    "motors": "iFlight XING 2207 (V2.1 HD) / XING-E 2207 1800KV (SL5-E)",
+    "vtx_system": "Caddx Nebula Nano HD (analog variants)",
+    "typical_current_a": 13,
+    "recommended_battery": {
+     "cells": "6S",
+     "capacity_mah": 1100,
+     "range_mah": "1000-1300",
+     "connector": "XT60",
+     "chemistry": "LiPo"
+    }
+   },
+   "sources": [
+    "https://www.getfpv.com/iflight-cidora-sl5-5-fpv-racing-drone-pnp.html"
+   ],
+   "note": "V2.1 HD version 445.4g. Squashed-X frame."
+  },
+  {
+   "type": "quad",
+   "brand": "iFlight",
+   "model": "Defender 16",
+   "slug": "iflight-defender-16",
+   "specs": {
+    "class": "cinewhoop (micro)",
+    "weight_no_battery_g": 71.5,
+    "typical_auw_g": 120,
+    "prop_size_in": 1.6,
+    "motors": "iFlight Defender16 1103 14000KV (early units: 1002)",
+    "vtx_system": "DJI O3",
+    "typical_current_a": 4,
+    "recommended_battery": {
+     "cells": "2S",
+     "capacity_mah": 900,
+     "connector": "quick-release shell",
+     "chemistry": "LiPo (25C)"
+    }
+   },
+   "sources": [
+    "https://www.getfpv.com/iflight-defender-16-1-6-sub250-drone-hd-w-dji-o3-2s.html"
+   ],
+   "note": "Dry weight derived: 120g takeoff minus 48.5g pack. Proprietary crash-protected battery shell."
+  },
+  {
+   "type": "quad",
+   "brand": "iFlight",
+   "model": "Defender 20",
+   "slug": "iflight-defender-20",
+   "specs": {
+    "class": "cinewhoop (sub-250)",
+    "weight_no_battery_g": 178,
+    "typical_auw_g": 247,
+    "prop_size_in": 2,
+    "motors": "iFlight Defender20 1204 6200KV",
+    "vtx_system": "DJI O3 (O4 Lite 2S variant)",
+    "typical_current_a": 6,
+    "manufacturer_flight_time_min": "7 (3S 900)",
+    "recommended_battery": {
+     "cells": "3S",
+     "capacity_mah": 900,
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    }
+   },
+   "sources": [
+    "https://web.archive.org/web/20251117073607/https://shop.iflight.com/Defender-20-3S-HD-RTF-Pro2019"
+   ],
+   "note": "3S HD version; quick-release crash-protected battery shell. Defender20 2020-3 props. Source archived 2025-11-17: the manufacturer page for this revision was taken down when the model was superseded, so the citation points at the Internet Archive copy of https://shop.iflight.com/Defender-20-3S-HD-RTF-Pro2019. The specs were verified against that page when written."
+  },
+  {
+   "type": "quad",
+   "brand": "iFlight",
+   "model": "Defender 25",
+   "slug": "iflight-defender-25",
+   "specs": {
+    "class": "cinewhoop (sub-250)",
+    "weight_no_battery_g": 180,
+    "typical_auw_g": 249,
+    "prop_size_in": 2.5,
+    "motors": "iFlight Defender25 1404",
+    "vtx_system": "DJI O3 (O4 variant available)",
+    "typical_current_a": 5,
+    "manufacturer_flight_time_min": "6 (550mAh) / 10 (900mAh)",
+    "recommended_battery": {
+     "cells": "4S",
+     "capacity_mah": 550,
+     "range_mah": "550 (sub-250) or 900",
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    }
+   },
+   "sources": [
+    "https://web.archive.org/web/20250418194724/https://shop.iflight.com/Defender-25-O3-4S-HD-Pro1923"
+   ],
+   "note": "O3 version. Defender25 2525 props. AUW 249g with 550mAh pack. Source archived 2025-04-18: the manufacturer page for this revision was taken down when the model was superseded, so the citation points at the Internet Archive copy of https://shop.iflight.com/Defender-25-O3-4S-HD-Pro1923. The specs were verified against that page when written."
+  },
+  {
+   "type": "quad",
+   "brand": "iFlight",
+   "model": "Green Hornet V3",
+   "slug": "iflight-green-hornet-v3",
+   "specs": {
+    "class": "cinewhoop",
+    "weight_no_battery_g": 280.1,
+    "prop_size_in": 3,
+    "motors": "iFlight XING 1408 3600KV (4S) / 1507 2800KV (6S)",
+    "vtx_system": "analog 300mW (HD variants)",
+    "typical_current_a": 9,
+    "recommended_battery": {
+     "cells": "4S",
+     "capacity_mah": 1300,
+     "range_mah": "1300 (4S) / 1050 (6S)",
+     "connector": "XT60",
+     "chemistry": "LiPo"
+    }
+   },
+   "sources": [
+    "https://www.getfpv.com/iflight-green-hornet-v3-3-bnf-cinewhoop-w-runcam-nano-2-pnp-4s-6s.html"
+   ],
+   "note": "Bumper-guard cinewhoop, RunCam Nano 2."
+  },
+  {
+   "type": "quad",
+   "brand": "iFlight",
+   "model": "Nazgul DC5 ECO",
+   "slug": "iflight-nazgul-dc5-eco",
+   "specs": {
+    "class": "freestyle (budget)",
+    "weight_no_battery_g": 450,
+    "typical_auw_g": 675,
+    "prop_size_in": 5.1,
+    "prop_mount": "M5",
+    "motors": "iFlight XING-E Pro 2207 1800KV",
+    "vtx_system": "DJI O4 Pro (O3 variant)",
+    "typical_current_a": 13,
+    "manufacturer_flight_time_min": "11.5 hover (6S 1550)",
+    "recommended_battery": {
+     "cells": "6S",
+     "capacity_mah": 1400,
+     "range_mah": "1300-1500",
+     "connector": "XT60",
+     "chemistry": "LiPo"
+    },
+    "flight_controller": "BLITZ F7 Flight Controller",
+    "wheelbase_mm": 240
+   },
+   "sources": [
+    "https://shop.iflight.com/Nazgul-DC5-ECO-6S-O4-HD-Pro2263"
+   ],
+   "note": "Budget DeadCat 240mm. XL5 ECO variant exists."
+  },
+  {
+   "type": "quad",
+   "brand": "iFlight",
+   "model": "Nazgul Evoque F5 V2",
+   "slug": "iflight-nazgul-evoque-f5-v2",
+   "specs": {
+    "class": "freestyle",
+    "weight_no_battery_g": 419,
+    "typical_auw_g": 644,
+    "prop_size_in": 5.1,
+    "prop_mount": "M5",
+    "motors": "iFlight XING-E Pro 2207 1800KV",
+    "vtx_system": "DJI O3 (O4 variant available)",
+    "typical_current_a": 13,
+    "recommended_battery": {
+     "cells": "6S",
+     "capacity_mah": 1400,
+     "range_mah": "1300-1500",
+     "connector": "XT60",
+     "chemistry": "LiPo"
+    },
+    "flight_controller": "BLITZ Mini F722 Flight Controller",
+    "wheelbase_mm": 225
+   },
+   "sources": [
+    "https://shop.iflight.com/Nazgul-Evoque-F5-V2-6S-Pro1954"
+   ],
+   "note": "6S HD version. Squashed-X 225mm / DeadCat 223mm frame geometry."
+  },
+  {
+   "type": "quad",
+   "brand": "iFlight",
+   "model": "Nazgul Evoque F5 V3",
+   "slug": "iflight-nazgul-evoque-f5-v3",
+   "specs": {
+    "class": "freestyle",
+    "weight_no_battery_g": 492,
+    "typical_auw_g": 736,
+    "prop_size_in": 5.1,
+    "prop_mount": "M5",
+    "motors": "iFlight XING2 2207 1750KV",
+    "vtx_system": "DJI O4 Pro",
+    "typical_current_a": 13,
+    "manufacturer_flight_time_min": "12-13 hover (6S 1480)",
+    "recommended_battery": {
+     "cells": "6S",
+     "capacity_mah": 1480,
+     "range_mah": "1480-1550",
+     "connector": "XT60",
+     "chemistry": "LiPo"
+    },
+    "flight_controller": "Borg Mini F7 Flight Controller",
+    "wheelbase_mm": 239
+   },
+   "sources": [
+    "https://shop.iflight.com/Nazgul-Evoque-F5-V3-O4-6S-HD-Pro2397"
+   ],
+   "note": "O4 Pro + GPS version. DeadCat 236mm / True X 239mm dual geometry."
+  },
+  {
+   "type": "quad",
+   "brand": "iFlight",
+   "model": "Nazgul XL5 ECO",
+   "slug": "iflight-nazgul-xl5-eco",
+   "specs": {
+    "class": "freestyle (budget)",
+    "weight_no_battery_g": 427,
+    "typical_auw_g": 652,
+    "prop_size_in": 5.1,
+    "prop_mount": "M5",
+    "motors": "iFlight XING-E Pro 2207 1800KV",
+    "vtx_system": "analog 1.6W",
+    "typical_current_a": 13,
+    "recommended_battery": {
+     "cells": "6S",
+     "capacity_mah": 1400,
+     "connector": "XT60",
+     "chemistry": "LiPo"
+    },
+    "flight_controller": "BLITZ F7 Flight Controller",
+    "wheelbase_mm": 245
+   },
+   "sources": [
+    "https://shop.iflight.com/Nazgul-XL5-ECO-6S-Pro2193"
+   ],
+   "note": "Budget analog True-X 245mm, Nazgul F5 props."
+  },
+  {
+   "type": "quad",
+   "brand": "iFlight",
+   "model": "Nazgul5 V2",
+   "slug": "iflight-nazgul5-v2",
+   "specs": {
+    "class": "freestyle",
+    "weight_no_battery_g": 393.4,
+    "typical_auw_g": 620,
+    "prop_size_in": 5.1,
+    "prop_mount": "M5",
+    "motors": "iFlight XING-E 2207 1800KV",
+    "vtx_system": "analog (HD variants)",
+    "typical_current_a": 13,
+    "recommended_battery": {
+     "cells": "6S",
+     "capacity_mah": 1400,
+     "range_mah": "1300-1500",
+     "connector": "XT60",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 235
+   },
+   "sources": [
+    "https://web.archive.org/web/20230926112347/https://shop.iflight.com/Nazgul5-Analog-V2-6S-BNF-Pro1820"
+   ],
+   "note": "Legacy bestseller, superseded by V3 but still widely flown. 235mm wheelbase. Source archived 2023-09-26: the manufacturer page for this revision was taken down when the model was superseded, so the citation points at the Internet Archive copy of https://shop.iflight.com/Nazgul5-Analog-V2-6S-BNF-Pro1820. The specs were verified against that page when written."
+  },
+  {
+   "type": "quad",
+   "brand": "iFlight",
+   "model": "Nazgul5 V3",
+   "slug": "iflight-nazgul5-v3",
+   "specs": {
+    "class": "freestyle",
+    "weight_no_battery_g": 435,
+    "typical_auw_g": 660,
+    "prop_size_in": 5.1,
+    "prop_mount": "M5",
+    "motors": "iFlight XING-E Pro 2207 1800KV",
+    "vtx_system": "DJI O3",
+    "typical_current_a": 13,
+    "recommended_battery": {
+     "cells": "6S",
+     "capacity_mah": 1400,
+     "range_mah": "1300-1500",
+     "connector": "XT60",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 245
+   },
+   "sources": [
+    "https://www.getfpv.com/iflight-nazgul5-v3-hd-5-fpv-freestyle-bnf-w-dji-o3-air-unit-6s.html"
+   ],
+   "note": "HD O3 version. Wheelbase 245mm, Nazgul 5140 props."
+  },
+  {
+   "type": "quad",
+   "brand": "iFlight",
+   "model": "ProTek25 Pusher",
+   "slug": "iflight-protek25-pusher",
+   "specs": {
+    "class": "cinewhoop (pusher)",
+    "weight_no_battery_g": 143.8,
+    "prop_size_in": 2.5,
+    "motors": "iFlight XING 1404 4600KV",
+    "vtx_system": "Caddx Polar Vista HD (analog variant)",
+    "typical_current_a": 6,
+    "recommended_battery": {
+     "cells": "4S",
+     "capacity_mah": 850,
+     "range_mah": "650-850",
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    }
+   },
+   "sources": [
+    "https://www.getfpv.com/iflight-protek25-pusher-2-5-4s-hd-bnf-cinewhoop-w-caddx-polar-vista-digital-hd-system.html"
+   ],
+   "note": "Pusher variant 143.8g; standard ProTek25 194.3g with 1404 5500KV."
+  },
+  {
+   "type": "quad",
+   "brand": "iFlight",
+   "model": "ProTek35 V1.4",
+   "slug": "iflight-protek35",
+   "specs": {
+    "class": "cinewhoop",
+    "weight_no_battery_g": 363,
+    "prop_size_in": 3.5,
+    "motors": "iFlight 2205 2300KV",
+    "vtx_system": "DJI O3",
+    "typical_current_a": 11,
+    "manufacturer_flight_time_min": "6 hover (6S 1400)",
+    "recommended_battery": {
+     "cells": "6S",
+     "capacity_mah": 1400,
+     "connector": "XT60",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 151
+   },
+   "sources": [
+    "https://web.archive.org/web/20251011094659/https://shop.iflight.com/ProTek35-V1.4-O3-6S-HD-Pro2033"
+   ],
+   "note": "O3 HD version 363g; analog 216g. Nazgul 3535 props, wheelbase 151mm. Source archived 2025-10-11: the manufacturer page for this revision was taken down when the model was superseded, so the citation points at the Internet Archive copy of https://shop.iflight.com/ProTek35-V1.4-O3-6S-HD-Pro2033. The specs were verified against that page when written."
+  },
+  {
+   "type": "quad",
+   "brand": "iFlight",
+   "model": "ProTek60 Pro",
+   "slug": "iflight-protek60-pro",
+   "specs": {
+    "class": "cinelifter (6in)",
+    "weight_no_battery_g": 1466,
+    "prop_size_in": 6,
+    "motors": "iFlight XING2 3110 1600KV",
+    "vtx_system": "DJI O3 (Air Unit variants)",
+    "typical_current_a": 40,
+    "manufacturer_flight_time_min": "3-6",
+    "recommended_battery": {
+     "cells": "6S",
+     "capacity_mah": 4400,
+     "range_mah": "3700-5600",
+     "connector": "XT60",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 282
+   },
+   "sources": [
+    "https://web.archive.org/web/20251015105928/https://shop.iflight.com/ProTek60-Pro-O3-6S-HD-Cinelifter-Pro1976"
+   ],
+   "note": "Ducted cinelifter for BMPCC/Z-CAM payloads (up to 1.5kg). 282mm, Nazgul 6x4x3. Source archived 2025-10-15: the manufacturer page for this revision was taken down when the model was superseded, so the citation points at the Internet Archive copy of https://shop.iflight.com/ProTek60-Pro-O3-6S-HD-Cinelifter-Pro1976. The specs were verified against that page when written."
+  },
+  {
+   "type": "quad",
+   "brand": "NewBeeDrone",
+   "model": "AcroBee65 BLV4",
+   "slug": "newbeedrone-acrobee65-blv4",
+   "specs": {
+    "class": "tiny whoop",
+    "weight_no_battery_g": 24.8,
+    "prop_size_in": 1.4,
+    "prop_mount": "1.0mm shaft",
+    "motors": "NewBeeDrone Flow 0802 (27000KV Ghost edition available)",
+    "vtx_system": "analog (5-25mW, 400mW SmartMAX)",
+    "typical_current_a": 4,
+    "recommended_battery": {
+     "cells": "1S (2S with throttle cap)",
+     "capacity_mah": 300,
+     "connector": "PH2.0",
+     "chemistry": "LiHV (Nitro Nectar Gold)"
+    }
+   },
+   "sources": [
+    "https://oscarliang.com/newbeedrone-acrobee65-blv4-tiny-whoop/"
+   ],
+   "note": "Connector PH2.0 per NewBeeDrone Nitro Nectar line; verify on newbeedrone.com before publish-critical use."
+  },
+  {
+   "type": "quad",
+   "brand": "NewBeeDrone",
+   "model": "AcroBee75 BLV5",
+   "slug": "newbeedrone-acrobee75-blv5",
+   "specs": {
+    "class": "whoop (75mm 1-2S)",
+    "weight_no_battery_g": 36.4,
+    "prop_size_in": 1.6,
+    "motors": "NewBeeDrone Flow 0804 (2S 14000KV)",
+    "vtx_system": "analog (O3/O4 HD pusher variants)",
+    "typical_current_a": 5,
+    "recommended_battery": {
+     "cells": "2S",
+     "capacity_mah": 450,
+     "connector": "XT30",
+     "chemistry": "LiHV (supports 1S/2S)"
+    },
+    "camera": "Caddx Ant Nano 1200TVL",
+    "flight_controller": "BeeBrain BLV5 flight controller",
+    "receiver_options": "Built-in TCXO Crystal Oscillator ExpressLRS 2.4GHz Diversity Receiver(Uart Base)"
+   },
+   "sources": [
+    "https://newbeedrone.com/products/newbeedrone-acrobee75-blv5-bnf-elrs2-4g-2s"
+   ],
+   "note": "BLV5 analog version 36.4g; O3/O4 HD variants heavier."
+  },
+  {
+   "type": "quad",
+   "brand": "SpeedyBee",
+   "model": "Bee25",
+   "slug": "speedybee-bee25",
+   "specs": {
+    "class": "cinewhoop",
+    "weight_no_battery_g": 124,
+    "prop_size_in": 2.5,
+    "prop_mount": "T-mount",
+    "motors": "SpeedyBee 1404 V2 4600KV",
+    "vtx_system": "modular (no VTX included; analog/DJI/Walksnail mounts)",
+    "typical_current_a": 7,
+    "recommended_battery": {
+     "cells": "4S",
+     "capacity_mah": 850,
+     "range_mah": "650-1100 (4S) / 650-850 (6S build)",
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 120
+   },
+   "sources": [
+    "https://www.speedybee.com/speedybee-bee25-frame/"
+   ],
+   "note": "Assembled ELRS version 124g. HQProp DT63x3, 120mm wheelbase, Meteor LED ring."
+  },
+  {
+   "type": "quad",
+   "brand": "SpeedyBee",
+   "model": "Flex25",
+   "slug": "speedybee-flex25",
+   "specs": {
+    "class": "cinewhoop (ducted)",
+    "weight_no_battery_g": 140,
+    "prop_size_in": 2.5,
+    "motors": "SpeedyBee 1404 4500KV",
+    "vtx_system": "analog TX800 (HD O3/Falcon variants)",
+    "typical_current_a": 7,
+    "recommended_battery": {
+     "cells": "4S",
+     "capacity_mah": 650,
+     "range_mah": "450-850",
+     "connector": "XT30",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 78
+   },
+   "sources": [
+    "https://web.archive.org/web/20260119183431/https://www.speedybee.com/speedybee-flex25-analog-cinewhoop/"
+   ],
+   "note": "78mm wheelbase unibody duct - 2.5in props in 2in-class footprint. Gemfan D63-3. Source archived 2026-01-19: the manufacturer page for this revision was taken down when the model was superseded, so the citation points at the Internet Archive copy of https://www.speedybee.com/speedybee-flex25-analog-cinewhoop/. The specs were verified against that page when written."
+  },
+  {
+   "type": "quad",
+   "brand": "SpeedyBee",
+   "model": "Master 5 V2",
+   "slug": "speedybee-master-5-v2",
+   "specs": {
+    "class": "freestyle",
+    "weight_no_battery_g": 420,
+    "prop_size_in": 5.1,
+    "prop_mount": "M5",
+    "motors": "SpeedyBee 2306.5 1800KV",
+    "vtx_system": "DJI O3 (analog variant available)",
+    "typical_current_a": 13,
+    "recommended_battery": {
+     "cells": "6S",
+     "capacity_mah": 1300,
+     "range_mah": "1050-1500",
+     "connector": "XT60",
+     "chemistry": "LiPo"
+    }
+   },
+   "sources": [
+    "https://www.getfpv.com/speedybee-master-5-v2-drone.html"
+   ],
+   "note": "HD O3 version 420g (analog ~410g)."
+  },
+  {
+   "type": "quad",
+   "brand": "Sub250",
+   "model": "Nanofly16",
+   "slug": "sub250-nanofly16",
+   "specs": {
+    "class": "ultralight toothpick",
+    "weight_no_battery_g": 28,
+    "typical_auw_g": 38,
+    "prop_size_in": 1.6,
+    "motors": "Sub250 M1 0803 19000KV",
+    "vtx_system": "analog (Caddx Ant)",
+    "typical_current_a": 4,
+    "manufacturer_flight_time_min": "4.5",
+    "recommended_battery": {
+     "cells": "1S",
+     "capacity_mah": 380,
+     "connector": "GNB27",
+     "chemistry": "LiHV (90C)"
+    },
+    "camera": "Ant",
+    "flight_controller": "F411-1S AIO/250mW/ELRS",
+    "receiver_options": "ELRS 2.4G \\ TBS 915 Mhz",
+    "wheelbase_mm": 77
+   },
+   "sources": [
+    "https://sub250.com/products/1s-nanofly-16-freestyle-quadcopter"
+   ],
+   "note": "77mm wheelbase, 40mm props."
+  },
+  {
+   "type": "quad",
+   "brand": "Sub250",
+   "model": "Nanofly20",
+   "slug": "sub250-nanofly20",
+   "specs": {
+    "class": "micro freestyle (2in)",
+    "weight_no_battery_g": 77,
+    "prop_size_in": 2,
+    "motors": "Sub250 1002 14000KV (2S HD) / 21000KV (1S analog)",
+    "vtx_system": "DJI O4 (1S analog variant 33g)",
+    "typical_current_a": 5,
+    "recommended_battery": {
+     "cells": "2S",
+     "capacity_mah": 500,
+     "connector": "GNB27",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 88
+   },
+   "sources": [
+    "https://www.getfpv.com/sub250-nanofly20-2-drone-hd-w-dji-o4.html"
+   ],
+   "note": "2S O4 HD version 77g; 1S analog 33g. HQ 51mm props, 88mm wheelbase."
+  },
+  {
+   "type": "quad",
+   "brand": "Sub250",
+   "model": "Whoopfly16",
+   "slug": "sub250-whoopfly16",
+   "specs": {
+    "class": "tiny whoop",
+    "weight_no_battery_g": 42.9,
+    "typical_auw_g": 55.7,
+    "prop_size_in": 1.6,
+    "prop_mount": "1.0mm shaft",
+    "motors": "Sub250 1002 21000KV",
+    "vtx_system": "Walksnail Avatar (analog/HDZero variants available)",
+    "typical_current_a": 6,
+    "manufacturer_flight_time_min": "4.5 (1S 530)",
+    "recommended_battery": {
+     "cells": "1S",
+     "capacity_mah": 530,
+     "connector": "GNB27",
+     "chemistry": "LiHV"
+    }
+   },
+   "sources": [
+    "https://sub250.com/collections/whoopfly16-series"
+   ],
+   "note": "Walksnail HD version 42.9g (analog ~35g). Gemfan 1608 40mm props, pusher config."
+  },
+  {
+   "type": "quad",
+   "brand": "T-Motor",
+   "model": "FT5 MKII",
+   "slug": "t-motor-ft5-mkii",
+   "specs": {
+    "class": "freestyle",
+    "weight_no_battery_g": 424,
+    "prop_size_in": 5.1,
+    "prop_mount": "M5",
+    "motors": "T-Motor Velox V2 2306 1950KV (6S)",
+    "vtx_system": "DJI Air Unit HD (Vista/analog variants)",
+    "typical_current_a": 13,
+    "recommended_battery": {
+     "cells": "6S",
+     "capacity_mah": 1300,
+     "range_mah": "1100-1500",
+     "connector": "XT60",
+     "chemistry": "LiPo"
+    },
+    "wheelbase_mm": 225
+   },
+   "sources": [
+    "https://www.getfpv.com/t-motor-ft5-mkii-v2-hd-5-6s-fpv-freestyle-drone-w-dji-air-unit-pnp.html"
+   ],
+   "note": "Battery range is class-standard - T-Motor does not publish a recommendation. T4943 props, 225mm."
+  }
+ ]
+}

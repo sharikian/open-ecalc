@@ -1,17 +1,18 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-08T00:00:00.000Z",
-  "policy": "metadata-only-until-redistribution-confirmed",
+  "generatedAt": "2026-09-29T12:58:39.000Z",
+  "policy": "bundled product data requires an explicit redistribution licence; images require separate rights",
   "sources": [
     {
       "id": "strawsondesign-motor-prop-testing",
       "kind": "motor-prop-test-curves",
       "url": "https://github.com/StrawsonDesign/motor_propeller_testing",
       "licenseSpdx": "MIT",
-      "status": "candidate",
+      "status": "reference-only",
       "quality": "A_LAB",
-      "bundle": false,
-      "reason": "snapshot and attribution review pending"
+      "bundle": true,
+      "reason": "Retained as estimated reference rows; generated scalar defaults are excluded from normal catalog results",
+      "recordCount": 408
     },
     {
       "id": "pythrust",
@@ -31,17 +32,18 @@
       "status": "quarantine",
       "quality": "A_LAB",
       "bundle": false,
-      "reason": "free download with citation; retain site attribution and review asset terms"
+      "reason": "Heavy-UAV catalog lead; missing LICENSE file and mixed UIUC-derived data prevent redistribution approval"
     },
     {
       "id": "liiondb",
       "kind": "battery-cells-discharge-curves",
       "url": "https://github.com/ndrewwang/liiondb",
       "licenseSpdx": "MIT",
-      "status": "candidate",
+      "status": "reference-only",
       "quality": "A_LAB",
-      "bundle": false,
-      "reason": "cell physics source; normalize paper-level provenance"
+      "bundle": true,
+      "reason": "Derived chemistry/parallel presets are reference-only, not named commercial packs",
+      "recordCount": 240
     },
     {
       "id": "uiuc-propdb",
@@ -72,6 +74,75 @@
       "quality": "C_DATASHEET",
       "bundle": true,
       "reason": "159 normalized model profiles from list.csv"
+    },
+    {
+      "id": "fpvdb-open-dataset",
+      "kind": "motors-batteries-props-esc-stacks-and-quads",
+      "url": "https://github.com/fpvdb/fpv-db-data/tree/5333aba81229e1d0e7b1585e165136fd1187174c",
+      "datasetUrl": "https://www.fpv-db.com/data/",
+      "licenseSpdx": "CC-BY-4.0",
+      "attribution": "FPV-DB — https://fpv-db.com",
+      "sourceCommit": "5333aba81229e1d0e7b1585e165136fd1187174c",
+      "retrievedAt": "2026-09-29T12:58:39.000Z",
+      "status": "verified",
+      "quality": "community",
+      "bundle": true,
+      "recordCounts": {
+        "motors": 206,
+        "batteries": 326,
+        "props": 207,
+        "escStacks": 112,
+        "quads": 101
+      },
+      "files": {
+        "motors.json": "b1ef6b7a4b156eb4c5064248acf2b39f4a97cc7b7ad6fddb25724b36c676de68",
+        "batteries.json": "ef267a0871d6d7ab074bb4641380b9637d30109214016e290a74f86e819e157e",
+        "props.json": "0a834c558b7ce30414e04af14c9f1deede7492c17bfc9b29c5b8ee05cc77ddd2",
+        "stacks.json": "18ac53ade1d6de239cd3c8fa71557b3f141526c9d24a2371589fb462e25a226f",
+        "quads.json": "c667fa44d9f4b6c19ee67d1be815d2dfe54d8be5a4b24d5efa64e657914808bd"
+      },
+      "note": "CC BY 4.0 dataset snapshot. Product URLs and notes retained; no product images imported. ESC entries are FC/ESC stacks, not standalone ESCs."
+    },
+    {
+      "id": "manufacturer-specification-supplement",
+      "kind": "selected-component-specification-facts",
+      "urls": [
+        "https://store.tmotor.com/product/f60prov-fpv-motor.html",
+        "https://store.tmotor.com/product/f1507-kv3800-fpv-motor.html",
+        "https://store.tmotor.com/product/f1408-2-fpv-motor.html",
+        "https://genstattu.com/tattu-r-line-version-5-0-1550mah-6s-150c-22-2v-lipo-battery-pack-with-xt60-plug/"
+      ],
+      "licenseSpdx": "NOASSERTION",
+      "retrievedAt": "2026-09-29",
+      "status": "field-attributed-supplement",
+      "bundle": true,
+      "recordCount": 4,
+      "fields": [
+        "fpvdb-motor-t-motor-f60-pro-v-2207-5.kv1750.noLoadCurrentA",
+        "fpvdb-motor-t-motor-f60-pro-v-2207-5.kv1750.maxCurrentA",
+        "fpvdb-motor-t-motor-f60-pro-v-2207-5.kv1750.maxPowerW",
+        "fpvdb-motor-t-motor-f60-pro-v-2207-5.kv2020.noLoadCurrentA",
+        "fpvdb-motor-t-motor-f60-pro-v-2207-5.kv2020.maxCurrentA",
+        "fpvdb-motor-t-motor-f60-pro-v-2207-5.kv2020.maxPowerW",
+        "fpvdb-motor-t-motor-f60-pro-v-2207-5.kv2550.noLoadCurrentA",
+        "fpvdb-motor-t-motor-f60-pro-v-2207-5.kv2550.maxCurrentA",
+        "fpvdb-motor-t-motor-f60-pro-v-2207-5.kv2550.maxPowerW",
+        "fpvdb-motor-t-motor-f1507.kv2700.noLoadCurrentA",
+        "fpvdb-motor-t-motor-f1507.kv2700.resistanceOhm",
+        "fpvdb-motor-t-motor-f1507.kv2700.maxCurrentA",
+        "fpvdb-motor-t-motor-f1507.kv2700.maxPowerW",
+        "fpvdb-motor-t-motor-f1507.kv3800.noLoadCurrentA",
+        "fpvdb-motor-t-motor-f1507.kv3800.resistanceOhm",
+        "fpvdb-motor-t-motor-f1507.kv3800.maxCurrentA",
+        "fpvdb-motor-t-motor-f1507.kv3800.maxPowerW",
+        "fpvdb-motor-t-motor-f1408-ii-1408.noLoadCurrentA",
+        "fpvdb-motor-t-motor-f1408-ii-1408.resistanceOhm",
+        "fpvdb-motor-t-motor-f1408-ii-1408.maxCurrentA",
+        "fpvdb-motor-t-motor-f1408-ii-1408.maxPowerW",
+        "fpvdb-battery-tattu-r-line-version-5-0-1550mah-6s.nominalVoltageV"
+      ],
+      "supplementSha256": "b20713fc78a4d3e97e27fc25670749a23d7dd3f8559dc405c09a4f51ba54d55c",
+      "note": "Small set of explicitly attributed factual specifications only; source catalog terms were not evaluated for bulk redistribution. No source text, catalog database, or product images included."
     }
   ]
 }

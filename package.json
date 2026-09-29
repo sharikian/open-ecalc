@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build && node scripts/optimize-build-images.mjs",
-    "data:aircraft": "node scripts/build-aircraft-data.mjs",
+    "data:aircraft": "node scripts/build-aircraft-data.mjs && node scripts/import-fpvdb-data.mjs",
+    "data:components": "node scripts/import-fpvdb-data.mjs",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "test": "vitest run",

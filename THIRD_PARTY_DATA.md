@@ -5,10 +5,37 @@ Every bundled or imported record must retain its original licence and source.
 
 ## Bundled data
 
-Version `2026.09` contains only generic reference components authored for this
-project under CC0-1.0. They are intended for exercising calculations and must
-not be treated as manufacturer specifications. The records are intentionally
-marked `estimated` and are not copied from eCalc, Tyto, APC, or a manufacturer.
+The component bundle includes a pinned FPV-DB snapshot from commit
+`5333aba81229e1d0e7b1585e165136fd1187174c`, licensed CC BY 4.0. Attribute it
+as “FPV-DB — https://fpv-db.com”. The imported subset is 206 motors, 326
+batteries, 207 propellers, 112 combined FC/ESC stacks, and 101 quad profiles;
+cameras and VTX are excluded. Raw source files and the license are retained in
+`data/raw/fpvdb/2026-09-29/`; generated counts and hashes are in
+`data/manifests/fpvdb-snapshot.v1.json`.
+
+No product photos are bundled. Unavailable specifications remain absent rather
+than being inferred or filled with defaults. The 732 older generic/estimated
+records remain available only as opt-in references (`referenceOnly: true`),
+excluded from the default catalog. They are not manufacturer specifications
+and are not copied from eCalc, Tyto, APC, or a manufacturer.
+
+Of the 101 source quad profiles, three exact DJI name matches (Avata, Avata 2,
+Neo) merge into existing OpenDroneList rows. The runtime therefore adds 98
+unique profiles from FPV-DB; merged records retain both licenses and source
+hashes in `sourceProvenance` rather than presenting a second selectable row.
+
+FPV-DB specifications and bench curves are attributed to the pinned community
+snapshot; this import did not independently cross-check them against
+manufacturer datasheets or product pages and does not claim manufacturer
+verification. All thrust-table rows are retained, including rows with absent
+RPM or throttle fields; missing values remain unset.
+
+A separate, small manufacturer-fact supplement adds documented values for
+three T-Motor models (F60 Pro V, F1507, F1408-II) and one Tattu battery. Each
+field points to its official product page; KV variants, test voltage, and
+current/power duration qualifiers are retained where published. The manifest
+records these selected factual values as `NOASSERTION`: no bulk catalog rights
+are claimed or evaluated, and no manufacturer text or images are redistributed.
 
 ## Approved import tooling
 
@@ -24,9 +51,9 @@ marked `estimated` and are not copied from eCalc, Tyto, APC, or a manufacturer.
   curves; snapshot and attribution review is pending.
 - `Setuav/PyThrust` — Apache-2.0 candidate catalog; upstream licence is
   audited per record before any bundle is produced.
-- `uavdb.org` — flight-test CSV/MAT archives; site states free download with
-  citation. Snapshots are kept in quarantine until asset-level terms are
-  recorded.
+- `uavdb.org` — flight-test CSV/MAT archives and heavy-lift product records.
+  Not bundled: no clear, verified redistribution license for the dataset was
+  established. Public access or a citation request alone is not a data license.
 - PX4 airframe taxonomy — BSD-3-Clause reference only; no product image or
   specification is copied into the runtime dataset.
 

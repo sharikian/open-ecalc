@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "source": "https://github.com/fpvdb/fpv-db-data/tree/5333aba81229e1d0e7b1585e165136fd1187174c",
+  "datasetUrl": "https://www.fpv-db.com/data/",
+  "licenseSpdx": "CC-BY-4.0",
+  "attribution": "FPV-DB — https://fpv-db.com",
+  "sourceCommit": "5333aba81229e1d0e7b1585e165136fd1187174c",
+  "retrievedAt": "2026-09-29T12:58:39.000Z",
+  "snapshotDate": "2026-09-29",
+  "manifestSha256": "b7d7e4209c73e82dd35689db90bdba47a2f1fceb8a8b8800001bd8f7584f1d1d",
+  "sourceFileSha256": {
+    "motors.json": "b1ef6b7a4b156eb4c5064248acf2b39f4a97cc7b7ad6fddb25724b36c676de68",
+    "batteries.json": "ef267a0871d6d7ab074bb4641380b9637d30109214016e290a74f86e819e157e",
+    "props.json": "0a834c558b7ce30414e04af14c9f1deede7492c17bfc9b29c5b8ee05cc77ddd2",
+    "stacks.json": "18ac53ade1d6de239cd3c8fa71557b3f141526c9d24a2371589fb462e25a226f",
+    "quads.json": "c667fa44d9f4b6c19ee67d1be815d2dfe54d8be5a4b24d5efa64e657914808bd"
+  },
+  "importedCounts": {
+    "motors": 206,
+    "batteries": 326,
+    "props": 207,
+    "escStacks": 112,
+    "quads": 101
+  },
+  "bundledRecordCounts": {
+    "components": 1583,
+    "aircraft": 257,
+    "referenceOnlyComponents": 732
+  },
+  "manufacturerSupplement": {
+    "file": "data/supplements/manufacturer-specifications.v1.json",
+    "sha256": "b20713fc78a4d3e97e27fc25670749a23d7dd3f8559dc405c09a4f51ba54d55c",
+    "recordCount": 4,
+    "records": [
+      {
+        "id": "fpvdb-motor-t-motor-f60-pro-v-2207-5",
+        "fields": [
+          "kvSpecifications.1750.noLoadCurrentA",
+          "kvSpecifications.1750.maxCurrentA",
+          "kvSpecifications.1750.maxPowerW",
+          "kvSpecifications.2020.noLoadCurrentA",
+          "kvSpecifications.2020.maxCurrentA",
+          "kvSpecifications.2020.maxPowerW",
+          "kvSpecifications.2550.noLoadCurrentA",
+          "kvSpecifications.2550.maxCurrentA",
+          "kvSpecifications.2550.maxPowerW"
+        ],
+        "sourceUrls": [
+          "https://store.tmotor.com/product/f60prov-fpv-motor.html"
+        ]
+      },
+      {
+        "id": "fpvdb-motor-t-motor-f1507",
+        "fields": [
+          "kvSpecifications.2700.noLoadCurrentA",
+          "kvSpecifications.2700.resistanceOhm",
+          "kvSpecifications.2700.maxCurrentA",
+          "kvSpecifications.2700.maxPowerW",
+          "kvSpecifications.3800.noLoadCurrentA",
+          "kvSpecifications.3800.resistanceOhm",
+          "kvSpecifications.3800.maxCurrentA",
+          "kvSpecifications.3800.maxPowerW"
+        ],
+        "sourceUrls": [
+          "https://store.tmotor.com/product/f1507-kv3800-fpv-motor.html"
+        ]
+      },
+      {
+        "id": "fpvdb-motor-t-motor-f1408-ii-1408",
+        "fields": [
+          "noLoadCurrentA",
+          "resistanceOhm",
+          "maxCurrentA",
+          "maxPowerW"
+        ],
+        "sourceUrls": [
+          "https://store.tmotor.com/product/f1408-2-fpv-motor.html"
+        ]
+      },
+      {
+        "id": "fpvdb-battery-tattu-r-line-version-5-0-1550mah-6s",
+        "fields": [
+          "nominalVoltageV"
+        ],
+        "sourceUrls": [
+          "https://genstattu.com/tattu-r-line-version-5-0-1550mah-6s-150c-22-2v-lipo-battery-pack-with-xt60-plug/"
+        ]
+      }
+    ]
+  },
+  "imagePolicy": "No source product images included; quad profiles use the existing generic project illustration."
+}

@@ -1,0 +1,2468 @@
+{
+ "generated": "2026-09-29",
+ "count": 112,
+ "license": "CC BY 4.0 - attribution: link https://fpv-db.com",
+ "items": [
+  {
+   "type": "stack",
+   "brand": "AIKON",
+   "model": "3-6S F7 AIO Whoop/Toothpick w/ 60A 8Bit ESC",
+   "slug": "aikon-3-6s-f7-aio-whoop-toothpick-w-60a-8bit-esc",
+   "specs": {
+    "max_cells": "3-6S",
+    "mcu": "F722",
+    "gyro": "BMI270",
+    "bec_output": "10V 1.5A for DJI",
+    "esc_firmware": "BLHeli_S (Supports BlueJay)",
+    "mount_mm": "25.5x25.5mm",
+    "kind": "AIO",
+    "esc_current_a": 60,
+    "weight_g": 14.0,
+    "price_usd": 115.49,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/aikon-3-6s-f7-aio-flight-controlller-w-60a-8bit-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "AIKON",
+   "model": "3-6S F7 Mini AIO Whoop w/32Bit 45A 4in1 ESC",
+   "slug": "aikon-3-6s-f7-mini-aio-whoop-w-32bit-45a-4in1-esc",
+   "specs": {
+    "mount_mm": "25.5x25.5mm",
+    "fc_firmware": "Betaflight AIKONF7 Target",
+    "mcu": "F722",
+    "gyro": "MPU6000",
+    "esc_firmware": "BLHeli_32",
+    "max_cells": "3-6S",
+    "kind": "AIO",
+    "esc_current_a": 45,
+    "weight_g": 14.5,
+    "price_usd": 155.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/aikon-f7-mini-25x25-aio-flight-controller-w-45a-32bit-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "AIRBOT",
+   "model": "Fenix G4 4-6S AIO Toothpick/Whoop (w/ 35A 32Bit AM32 4in1 ESC)",
+   "slug": "airbot-fenix-g4-4-6s-aio-toothpick-whoop-w-35a-32bit-am32-4in1-esc",
+   "specs": {
+    "mcu": "G473",
+    "bec_output": "5V 2.5A + 10V 2.5A",
+    "gyro": "ICM42688",
+    "mount_mm": "25.5x25.5mm",
+    "max_cells": "4-6S",
+    "kind": "AIO",
+    "esc_current_a": 35,
+    "weight_g": 10.4,
+    "price_usd": 89.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/airbot-fenix-g4-4-6s-aio-toothpick-whoop-flight-controller-w-35a-32bit-am32-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "Axisflying",
+   "model": "Argus F722 3-6S 30x30 Stack/Combo (F7 FC / 32bit 55A 4in1 ESC)",
+   "slug": "axisflying-argus-f722-3-6s-30x30-stack-combo-f7-fc-32bit-55a-4in1-esc",
+   "specs": {
+    "mcu": "F722",
+    "gyro": "BMI270",
+    "max_cells": "3-6S",
+    "mount_mm": "30.5x30.5mm",
+    "kind": "stack",
+    "esc_current_a": 55,
+    "weight_g": 16.2,
+    "price_usd": 136.99,
+    "mount_class": "30x30"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/axisflying-argus-f722-3-6s-30x30-stack-combo-f7-fc-32bit-55a-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "Axisflying",
+   "model": "Argus F722 F7 4-6S AIO Whoop/Toothpick (w/ 40A 8Bit 4in1 ESC)",
+   "slug": "axisflying-argus-f722-f7-4-6s-aio-whoop-toothpick-w-40a-8bit-4in1-esc",
+   "specs": {
+    "mcu": "F722",
+    "gyro": "ICM42688P",
+    "max_cells": "4-6S",
+    "mount_mm": "25.5x25.5mm / 26.5x26.5mm",
+    "kind": "AIO",
+    "esc_current_a": 40,
+    "price_usd": 101.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/axisflying-argus-f722-f7-4-6s-whoop-toothpick-aio-flight-controller-w-40a-8bit-4in1-esc-pink-aluminum-shell"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "Axisflying",
+   "model": "Argus F745 AIO - F745 FC + 40A 4-6S AM32 ESC",
+   "slug": "axisflying-argus-f745-aio-f745-fc-40a-4-6s-am32-esc",
+   "specs": {
+    "bec_output": "5V / 2A(Max 3A) 12V / 2A(Max 3A)",
+    "mcu": "F745",
+    "gyro": "ICM42688P",
+    "mount_mm": "20x20mm",
+    "max_cells": "4-6S",
+    "kind": "AIO",
+    "esc_current_a": 40,
+    "weight_g": 14.4,
+    "price_usd": 91.99,
+    "mount_class": "20x20"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/axisflying-argus-f745-aio-f745-fc-40a-4-6s-am32-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "Axisflying",
+   "model": "Argus PRO F7 3-6S 30x30 Stack/Combo (F722 FC / 32Bit 65A 4in1 ESC + Heatsink)",
+   "slug": "axisflying-argus-pro-f7-3-6s-30x30-stack-combo-f722-fc-32bit-65a-4in1-esc-heatsink",
+   "specs": {
+    "mcu": "F722",
+    "gyro": "BMI270",
+    "max_cells": "3-6S",
+    "mount_mm": "30.5x30.5mm",
+    "kind": "stack",
+    "esc_current_a": 65,
+    "weight_g": 32.0,
+    "price_usd": 187.49,
+    "mount_class": "30x30"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/axisflying-argus-pro-f722-3-6s-30x30-stack-combo-f7-fc-32bit-65a-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "Axisflying",
+   "model": "ECO F405 4-6S 30x30 Stack/Combo (F405 FC / 32Bit 60A 4in1 ESC)",
+   "slug": "axisflying-eco-f405-4-6s-30x30-stack-combo-f405-fc-32bit-60a-4in1-esc",
+   "specs": {
+    "fc_firmware": "SPDX-SPEDIXF405(Betaflight)",
+    "mcu": "F405",
+    "gyro": "ICM42688P",
+    "max_cells": "4-6S",
+    "mount_mm": "30.5x30.5mm",
+    "kind": "stack",
+    "esc_current_a": 60,
+    "weight_g": 7.0,
+    "price_usd": 119.99,
+    "mount_class": "30x30"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/draft-axis-flying-eco-f405-60a-stack"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "BetaFPV",
+   "model": "Air 4-in-1 AIO - G4 FC + 1S ESC + 400mW + OSD",
+   "slug": "betafpv-air-4-in-1-aio-g4-fc-1s-esc-400mw-osd",
+   "specs": {
+    "esc_firmware": "A_X_5_96KHz_V0.19.hex for BB51 Bluejay hardware",
+    "fc_firmware": "Betaflight_4.5.0_BETAFPVG473",
+    "max_cells": "1S",
+    "mount_mm": "26x26mm",
+    "mcu": "G473",
+    "kind": "AIO",
+    "esc_current_a": 5,
+    "weight_g": 2.9,
+    "price_usd": 53.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/betafpv-air-4-in-1-aio-g4-fc-1s-esc-400mw-vtx-osd"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "BetaFPV",
+   "model": "Air 5-in-1 AIO - G4 FC + 1S ESC + 400mW + ELRS RX + OSD",
+   "slug": "betafpv-air-5-in-1-aio-g4-fc-1s-esc-400mw-elrs-rx-osd",
+   "specs": {
+    "esc_firmware": "A_X_5_96KHz_V0.19.hex for BB51 Bluejay hardware",
+    "fc_firmware": "Betaflight_4.5.0_BETAFPVG473",
+    "max_cells": "1S",
+    "mount_mm": "26x26mm",
+    "mcu": "G473",
+    "kind": "AIO",
+    "esc_current_a": 5,
+    "weight_g": 3.6,
+    "price_usd": 59.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/betafpv-air-5-in-1-aio-g4-fc-1s-esc-400mw-vtx-elrs-rx-osd"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "BetaFPV",
+   "model": "F405 V5 2-4S HD AIO Whoop/Toothpick (w/ 20A 8Bit 4in1 ESC) - ICM42688",
+   "slug": "betafpv-f405-v5-2-4s-hd-aio-whoop-toothpick-w-20a-8bit-4in1-esc-icm42688",
+   "specs": {
+    "mcu": "F405",
+    "mount_mm": "25.5x25.5mm",
+    "fc_firmware": "betaflight_4.3.1_BETAFPVF405",
+    "bec_output": "5V 3A",
+    "max_cells": "2-4S",
+    "esc_firmware": "G_H_20_48_v0.16.HEX (Default BLUEJAY), BLHeli_S (Optional)",
+    "kind": "AIO",
+    "esc_current_a": 20,
+    "weight_g": 8.35,
+    "price_usd": 81.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/betafpv-f405-v5-2-4s-aio-whoop-toothpick-flight-controller-w-20a-8bit-4in1-esc-icm42688"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "BetaFPV",
+   "model": "F411 V5 2-4S AIO Whoop/Toothpick (w/ 20A 8Bit 4in1 ESC) - BMI270",
+   "slug": "betafpv-f411-v5-2-4s-aio-whoop-toothpick-w-20a-8bit-4in1-esc-bmi270",
+   "specs": {
+    "mcu": "F411",
+    "mount_mm": "25.5x25.5mm",
+    "fc_firmware": "betaflight_4.3.x_BETAFPVF411",
+    "bec_output": "5V 3A",
+    "max_cells": "2-4S",
+    "esc_firmware": "G_H_20_REV16_7.HEX (Default BLHeli_S), BLUEJAY (Optional)",
+    "kind": "AIO",
+    "esc_current_a": 20,
+    "weight_g": 8.15,
+    "price_usd": 75.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/betafpv-f411-2-4s-20a-whoop-toothpick-flight-controller-v5-8bit-4in1-esc-blheli_s-bmi270"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "BetaFPV",
+   "model": "F722 V2 2-6S AIO Whoop/Toothpick (w/ 35A 32Bit 4in1 ESC) - ICM42688",
+   "slug": "betafpv-f722-v2-2-6s-aio-whoop-toothpick-w-35a-32bit-4in1-esc-icm42688",
+   "specs": {
+    "esc_firmware": "BLHeli_32.9, 32-bit",
+    "mcu": "F722",
+    "mount_mm": "26x26mm",
+    "fc_firmware": "betaflight_4.3.0_STM32F7X2",
+    "max_cells": "2-6S",
+    "kind": "AIO",
+    "esc_current_a": 35,
+    "weight_g": 9.0,
+    "price_usd": 113.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/betafpv-f7-v2-2-6s-aio-whoop-toothpick-flight-controller-w-35a-32bit-4in1-esc-icm42688"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "BetaFPV",
+   "model": "Matrix 4-in-1 AIO - G473 FC + 12A 1S ESC + ELRS RX + OSD - 25x25",
+   "slug": "betafpv-matrix-4-in-1-aio-g473-fc-12a-1s-esc-elrs-rx-osd-25x25",
+   "specs": {
+    "mcu": "G473",
+    "gyro": "ICM42688P",
+    "bec_output": "5V/3A",
+    "fc_firmware": "Betaflight_4.5.2_BETAFPVG473_V2",
+    "mount_mm": "25.5x25.5mm",
+    "max_cells": "1S",
+    "esc_firmware": "A_X_5_96_v0.19.2.hex for BB51 Bluejay firmware",
+    "kind": "AIO",
+    "esc_current_a": 12,
+    "price_usd": 45.49,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/betafpv-matrix-4-in-1-aio-g473-fc-12a-1s-esc-elrs-rx-osd-25x25"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "BetaFPV",
+   "model": "Matrix 5-in-1 AIO - G4 FC + 1S ESC + 400mW + ELRS RX + OSD",
+   "slug": "betafpv-matrix-5-in-1-aio-g4-fc-1s-esc-400mw-elrs-rx-osd",
+   "specs": {
+    "esc_firmware": "A_X_5_96KHz_V0.19.hex for BB51 Bluejay firmware",
+    "max_cells": "1S",
+    "fc_firmware": "Betaflight_4.5.0_BETAFPVG473",
+    "mount_mm": "26x26mm",
+    "mcu": "G473",
+    "gyro": "ICM42688P",
+    "bec_output": "5V, Max 3A",
+    "kind": "AIO",
+    "esc_current_a": 5,
+    "price_usd": 59.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/betafpv-matrix-5-in-1-aio-g4-fc-1s-esc-400mw-vtx-elrs-rx-osd"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "BetaFPV",
+   "model": "Matrix HD AIO - G4 FC + 12A 1S 3-in-1 ESC + ELRS RX - 25x25",
+   "slug": "betafpv-matrix-hd-aio-g4-fc-12a-1s-3-in-1-esc-elrs-rx-25x25",
+   "specs": {
+    "fc_firmware": "Betaflight 4.5.1 (BETAFPVG473)",
+    "mcu": "G473",
+    "mount_mm": "25.5x25.5mm",
+    "gyro": "ICM42688P",
+    "bec_output": "5V/3A",
+    "esc_firmware": "A_X_5_96_v0.19.2.hex (BB51 Bluejay firmware)",
+    "max_cells": "1S",
+    "kind": "AIO",
+    "esc_current_a": 12,
+    "price_usd": 47.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/betafpv-matrix-hd-aio-g4-fc-12a-1s-3-in-1-esc-elrs-rx-25x25"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "BetaFPV",
+   "model": "Matrix V2 AIO - G4 FC + 12A 1S ESC + 400mW + ELRS 2.4GHz - Solderless",
+   "slug": "betafpv-matrix-v2-aio-g4-fc-12a-1s-esc-400mw-elrs-2-4ghz-solderless",
+   "specs": {
+    "mcu": "G473",
+    "gyro": "ICM42688P",
+    "bec_output": "5V, Max 3A",
+    "fc_firmware": "Betaflight_4.5.3_BETAFPVG473_V2",
+    "mount_mm": "26x26mm",
+    "esc_firmware": "A_X_5_96KHz_V0.19.hex for BB51 Bluejay firmware",
+    "max_cells": "1S",
+    "kind": "AIO",
+    "esc_current_a": 12,
+    "weight_g": 4.1,
+    "price_usd": 59.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/betafpv-matrix-v2-aio-g4-fc-12a-1s-esc-400mw-vtx-elrs-2-4ghz-solderless"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "BetaFPV",
+   "model": "Matrix V2 AIO - G4 FC + 12A 1S ESC + 400mW + ELRS - Solder Required",
+   "slug": "betafpv-matrix-v2-aio-g4-fc-12a-1s-esc-400mw-elrs-solder-required",
+   "specs": {
+    "mcu": "G473",
+    "gyro": "ICM42688P",
+    "bec_output": "5V, Max 3A",
+    "fc_firmware": "Betaflight_4.5.3_BETAFPVG473_V2",
+    "mount_mm": "26x26mm",
+    "esc_firmware": "A_X_5_96KHz_V0.19.hex for BB51 Bluejay firmware",
+    "max_cells": "1S",
+    "kind": "AIO",
+    "esc_current_a": 12,
+    "weight_g": 3.76,
+    "price_usd": 59.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/betafpv-matrix-v2-aio-g4-fc-12a-1s-esc-400mw-vtx-elrs-solder-required"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "DarwinFPV",
+   "model": "1-3S F4 AIO w/ 15A ESC",
+   "slug": "darwinfpv-1-3s-f4-aio-w-15a-esc",
+   "specs": {
+    "mcu": "F411",
+    "gyro": "MPU6000",
+    "bec_output": "5V/2A,3.3V",
+    "max_cells": "1-3S",
+    "esc_firmware": "BLHeli_S",
+    "kind": "AIO",
+    "esc_current_a": 15,
+    "price_usd": 47.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/darwinfpv-1-3s-f4-aio-flight-controller-w-15a-esc"
+   ],
+   "note": "Mounting standard read from the listing: \"Mounting: 25.5X25.5 M2\"."
+  },
+  {
+   "type": "stack",
+   "brand": "DarwinFPV",
+   "model": "1-3S F411 AIO w/ 15A Bluejay ESC and ELRS2.0",
+   "slug": "darwinfpv-1-3s-f411-aio-w-15a-bluejay-esc-and-elrs2-0",
+   "specs": {
+    "mcu": "F411",
+    "gyro": "ICM20689",
+    "bec_output": "5V/2A,3.3V",
+    "max_cells": "1-3S",
+    "fc_firmware": "betaflight_4.3.0_BETAFPVF4SX1280",
+    "esc_firmware": "Bluejay_S_H_50_48_v0.14",
+    "kind": "AIO",
+    "esc_current_a": 15,
+    "price_usd": 59.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/darwinfpv-1-3s-f411-aio-flight-controller-w-15a-bluejay-esc-and-elrs2-0"
+   ],
+   "note": "Mounting standard read from the listing: \"Mounting: 25.5X25.5 M2\"."
+  },
+  {
+   "type": "stack",
+   "brand": "DarwinFPV",
+   "model": "F405 2-6S 30x30 Stack/Combo (F405 FC/50A 8Bit 4in1 ESC)",
+   "slug": "darwinfpv-f405-2-6s-30x30-stack-combo-f405-fc-50a-8bit-4in1-esc",
+   "specs": {
+    "mcu": "F405",
+    "gyro": "MPU6000",
+    "mount_mm": "30x30mm",
+    "max_cells": "2-6S",
+    "bec_output": "5V/2A",
+    "kind": "stack",
+    "esc_current_a": 50,
+    "price_usd": 95.99,
+    "mount_class": "30x30"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/darwin-fpv-f405-2-6s-30x30-stack-combo-f405-fc-50a-8bit-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "Diatone",
+   "model": "Mamba MK4 F405 Mini F40 8Bit 6S 20x20 Stack/Combo (F405 Mini FC / 40A 8Bit F40_BLS Mini 4in1 ESC)",
+   "slug": "diatone-mamba-mk4-f405-mini-f40-8bit-6s-20x20-stack-combo-f405-mini-fc-40a-8bit-f40-bls-mini-4in1-esc",
+   "specs": {
+    "mcu": "F405",
+    "gyro": "ICM42688P",
+    "max_cells": "3-6S",
+    "mount_mm": "20x20mm",
+    "kind": "stack",
+    "esc_current_a": 40,
+    "weight_g": 6.0,
+    "price_usd": 71.99,
+    "mount_class": "20x20"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/diatone-mamba-mk4-f405-mini-f40-8bit-6s-20x20-stack-combo-f405-mini-fc-40a-8bit-f40_bls-mini-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "Diatone",
+   "model": "Mamba MK4 F722 APP F55_128k 3-6S 30x30 Stack/Combo (F722 FC / 55A 128k 32bit 4in1 ESC)",
+   "slug": "diatone-mamba-mk4-f722-app-f55-128k-3-6s-30x30-stack-combo-f722-fc-55a-128k-32bit-4in1-esc",
+   "specs": {
+    "max_cells": "3-6S",
+    "mcu": "F722",
+    "gyro": "ICM42688P",
+    "mount_mm": "30x30mm",
+    "kind": "stack",
+    "esc_current_a": 55,
+    "price_usd": 136.99,
+    "mount_class": "30x30"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/diatone-mamba-mk4-f722-app-f55_128k-3-6s-30x30-stack-combo-f722-fc-55a-128k-32bit-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "Diatone",
+   "model": "Mamba MK4 F740 3-6S AIO Whoop/Toothpick w/ 40A 32Bit 4in1 ESC - WIFI",
+   "slug": "diatone-mamba-mk4-f740-3-6s-aio-whoop-toothpick-w-40a-32bit-4in1-esc-wifi",
+   "specs": {
+    "mcu": "F722",
+    "gyro": "ICM42688P",
+    "max_cells": "3-6S",
+    "bec_output": "3.3V 0.5A & 5V 2A",
+    "mount_mm": "25.5x25.5mm",
+    "kind": "AIO",
+    "esc_current_a": 40,
+    "price_usd": 115.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/diatone-mamba-mk4-f740-3-6s-aio-whoop-toothpick-flight-controller-w-40a-32bit-4in1-esc-wifi"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "Diatone",
+   "model": "Mamba MK5 G4 4-6S AIO Whoop/Toothpick w/ 40A 32Bit 4in1 ESC - DSHOT2400",
+   "slug": "diatone-mamba-mk5-g4-4-6s-aio-whoop-toothpick-w-40a-32bit-4in1-esc-dshot2400",
+   "specs": {
+    "mcu": "G473",
+    "gyro": "IIM42652",
+    "max_cells": "4-6S",
+    "bec_output": "10V 2A& 5V 2A",
+    "mount_mm": "25.5x25.5mm",
+    "kind": "AIO",
+    "esc_current_a": 40,
+    "price_usd": 95.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/diatone-mamba-mk5-g4-4-6s-aio-whoop-toothpick-flight-controller-w-40a-32bit-4in1-esc-dshot2400"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "Flycolor",
+   "model": "SpeedyPizza CrustCore Stack - F7 FC + 60A 3-6S BLHeli_32 4-in-1 ESC - ICM42688 - 20x20",
+   "slug": "flycolor-speedypizza-crustcore-stack-f7-fc-60a-3-6s-blheli-32-4-in-1-esc-icm42688-20x20",
+   "specs": {
+    "mcu": "F405",
+    "gyro": "ICM42688",
+    "bec_output": "10V @2.0A",
+    "esc_firmware": "BLHeli_32",
+    "max_cells": "3-6S",
+    "mount_mm": "20x20mm",
+    "kind": "stack",
+    "esc_current_a": 60,
+    "weight_g": 5.0,
+    "price_usd": 154.99,
+    "mount_class": "20x20"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/flycolor-speedypizza-crustcore-stack-f7-fc-60a-3-6s-blheli_32-4-in-1-esc-icm42688-20x20"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "Flywoo",
+   "model": "GOKU ERVT 5-in-1 AIO - F405 FC + 1S 5A ESC + 400mw + ELRS RX + OSD",
+   "slug": "flywoo-goku-ervt-5-in-1-aio-f405-fc-1s-5a-esc-400mw-elrs-rx-osd",
+   "specs": {
+    "mcu": "F405",
+    "gyro": "ICM42688P",
+    "bec_output": "5V 2.0A max",
+    "fc_firmware": "FLYWOOF405S_AIO",
+    "mount_mm": "25.5x25.5mm",
+    "max_cells": "1S",
+    "esc_firmware": "O_H_5_48KHz_V0.19.hex Bluejay firmware",
+    "kind": "AIO",
+    "esc_current_a": 5,
+    "weight_g": 4.0,
+    "price_usd": 79.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/flywoo-goku-ervt-5-in-1-aio-f405-fc-1s-5a-esc-400mw-vtx-elrs-rx-osd"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "Flywoo",
+   "model": "GOKU F405 V2 1-2S AIO Whoop/Toothpick (w/ 12A BLHeli_S 4in1 ESC) + ELRS 2.4 GHz",
+   "slug": "flywoo-goku-f405-v2-1-2s-aio-whoop-toothpick-w-12a-blheli-s-4in1-esc-elrs-2-4-ghz",
+   "specs": {
+    "esc_firmware": "Z_H_30_REV16.7",
+    "max_cells": "1-2S",
+    "mount_mm": "25.5x25.5mm",
+    "mcu": "F405",
+    "bec_output": "5V 2A / 9V 2A",
+    "gyro": "BMI270",
+    "kind": "AIO",
+    "esc_current_a": 12,
+    "weight_g": 4.9,
+    "price_usd": 89.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/flywoo-goku-f405-v2-1-2s-aio-whoop-toothpick-flight-controller-w-12a-blheli_s-4in1-esc-elrs-2-4-ghz"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "Flywoo",
+   "model": "GOKU F405S 2-6S AIO Whoop/Toothpick w/ 40A 8Bit 4in1 ESC",
+   "slug": "flywoo-goku-f405s-2-6s-aio-whoop-toothpick-w-40a-8bit-4in1-esc",
+   "specs": {
+    "mcu": "F405",
+    "gyro": "MPU6000",
+    "mount_mm": "25.5x25.5mm",
+    "max_cells": "2-6S",
+    "esc_firmware": "BLHELI_S",
+    "kind": "AIO",
+    "esc_current_a": 40,
+    "weight_g": 8.5,
+    "price_usd": 107.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/flywoo-goku-f405s-2-6s-aio-whoop-toothpick-flight-controller-w-40a-8bit-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "Flywoo",
+   "model": "GOKU GN F745 EVO HD 2-6S 20x20 AIO w/ 40A 32Bit 4in1 ESC",
+   "slug": "flywoo-goku-gn-f745-evo-hd-2-6s-20x20-aio-w-40a-32bit-4in1-esc",
+   "specs": {
+    "mcu": "F745",
+    "gyro": "MPU6000",
+    "mount_mm": "20x20mm",
+    "max_cells": "2-6S",
+    "esc_firmware": "BLHELI_32",
+    "kind": "AIO",
+    "esc_current_a": 40,
+    "weight_g": 8.5,
+    "price_usd": 132.99,
+    "mount_class": "20x20"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/flywoo-goku-gn-f745-evo-hd-2-6s-aio-20x20-aio-flight-controller-w-40a-32bit-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "Flywoo",
+   "model": "GOKU GN405 F4 2-6S 16x16 Stack/Combo (F4 FC / 35A 8Bit 4in1 ESC)",
+   "slug": "flywoo-goku-gn405-f4-2-6s-16x16-stack-combo-f4-fc-35a-8bit-4in1-esc",
+   "specs": {
+    "mcu": "F405",
+    "gyro": "ICM42688",
+    "max_cells": "2-6S",
+    "mount_mm": "16x16mm",
+    "kind": "stack",
+    "esc_current_a": 35,
+    "weight_g": 2.3,
+    "price_usd": 89.99,
+    "mount_class": "16x16"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/flywoo-goku-gn405-2-6s-16x16-stack-combo-gn405-nano-fc-35a-8bit-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "Flywoo",
+   "model": "GOKU GN745 V3 AIO - F7 FC + 45A 2-6S AM32 4-in-1 ESC - ICM42688 - 25X25",
+   "slug": "flywoo-goku-gn745-v3-aio-f7-fc-45a-2-6s-am32-4-in-1-esc-icm42688-25x25",
+   "specs": {
+    "mcu": "F745",
+    "gyro": "ICM42688",
+    "max_cells": "2-6S",
+    "kind": "AIO",
+    "esc_current_a": 45,
+    "weight_g": 9.4,
+    "price_usd": 107.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/flywoo-goku-gn745-v3-aio-f7-fc-45a-2-6s-am32-4-in-1-esc-mpu6000-25x25"
+   ],
+   "note": "Mounting standard read from the listing: \"Mounting Holes: Standard 25.5/26.5mm (center to center)\"."
+  },
+  {
+   "type": "stack",
+   "brand": "Flywoo",
+   "model": "GOKU Pro Mini Stack - F7 FC + 45A 2-6S AM32 4-in-1 ESC - ICM42688 - 20x20",
+   "slug": "flywoo-goku-pro-mini-stack-f7-fc-45a-2-6s-am32-4-in-1-esc-icm42688-20x20",
+   "specs": {
+    "max_cells": "2-6S",
+    "mount_mm": "20x20mm",
+    "gyro": "ICM42688",
+    "bec_output": "10V 2A / 5V 2A",
+    "mcu": "F722",
+    "kind": "stack",
+    "esc_current_a": 45,
+    "weight_g": 9.9,
+    "price_usd": 83.99,
+    "mount_class": "20x20"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/flywoo-goku-pro-mini-stack-f7-fc-45a-2-6s-am32-4-in-1-esc-icm42688-20x20"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "Flywoo",
+   "model": "GOKU Versatile F405 1-2S AIO Whoop/Toothpick (w/12A 8Bit 4in1 ESC & 400mW ) - ELRS 2.4GHz",
+   "slug": "flywoo-goku-versatile-f405-1-2s-aio-whoop-toothpick-w-12a-8bit-4in1-esc-400mw-elrs-2-4ghz",
+   "specs": {
+    "mcu": "F405",
+    "gyro": "ICM42688",
+    "esc_firmware": "Z.H_30_REV16.7(BLHELI.S)",
+    "mount_mm": "25.5x25.5mm",
+    "max_cells": "1-2S",
+    "kind": "AIO",
+    "esc_current_a": 12,
+    "weight_g": 4.6,
+    "price_usd": 125.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/flywoo-goku-versatile-f405-1-2s-aio-whoop-toothpick-flight-controller-w"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "FPVELITE",
+   "model": "JHEMCU GHF745 F7 HD 3-6S AIO Whoop/Toothpick (w/ 50A AM32 4in1 ESC)",
+   "slug": "fpvelite-jhemcu-ghf745-f7-hd-3-6s-aio-whoop-toothpick-w-50a-am32-4in1-esc",
+   "specs": {
+    "mcu": "F745",
+    "gyro": "MPU6000",
+    "max_cells": "3-6S",
+    "fc_firmware": "betaflight_4.4.2 JHEF745.HEX",
+    "mount_mm": "25.5x25.5mm",
+    "kind": "AIO",
+    "esc_current_a": 50,
+    "weight_g": 8.5,
+    "price_usd": 107.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/jhemcu-ghf745-f7-hd-3-6s-aio-whoop-toothpick-flight-controller-w-50a-am32-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "FPVELITE",
+   "model": "JHEMCU GSF405A 1-2S Toothpick/Whoop AIO w/ 8bit 5A ESC and ELRS 2.4GHz RX",
+   "slug": "fpvelite-jhemcu-gsf405a-1-2s-toothpick-whoop-aio-w-8bit-5a-esc-and-elrs-2-4ghz-rx",
+   "specs": {
+    "max_cells": "1-2S",
+    "mcu": "F405",
+    "gyro": "MPU6000",
+    "esc_firmware": "BLHELI_S S_H_50_REV16_7.HEX",
+    "mount_mm": "25x25mm",
+    "kind": "AIO",
+    "esc_current_a": 5,
+    "weight_g": 3.3,
+    "price_usd": 67.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/jhemcu-gsf405a-1-2s-toothpick-whoop-aio-flight-controller-w-8bit-5a-esc-and-elrs-2-4ghz-rx"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "GEPRC",
+   "model": "F411 2-6S AIO Toothpick / Whoop w/ 35A 4in1 ESC",
+   "slug": "geprc-f411-2-6s-aio-toothpick-whoop-w-35a-4in1-esc",
+   "specs": {
+    "mcu": "F411",
+    "gyro": "BMI270",
+    "fc_firmware": "GEPRC_F411_AIO",
+    "bec_output": "5V@1A",
+    "max_cells": "2-6S",
+    "mount_mm": "25.5x25.5mm",
+    "kind": "AIO",
+    "esc_current_a": 35,
+    "weight_g": 8.8,
+    "price_usd": 86.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/geprc-f411-2-6s-aio-toothpick-whoop-flight-controller-w-35a-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "GEPRC",
+   "model": "F722 2-6S F7 AIO FC w/ 35A 8Bit 4in1 ESC",
+   "slug": "geprc-f722-2-6s-f7-aio-fc-w-35a-8bit-4in1-esc",
+   "specs": {
+    "mcu": "F722",
+    "bec_output": "5V@1A",
+    "max_cells": "2-6S",
+    "mount_mm": "25.5x25.5mm",
+    "kind": "AIO",
+    "esc_current_a": 35,
+    "weight_g": 8.8,
+    "price_usd": 107.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/geprc-f722-aio-fc-w-35a-2-6s-bls-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "GEPRC",
+   "model": "F722 2-6S F7 AIO w/ 45A 8-bit ESC",
+   "slug": "geprc-f722-2-6s-f7-aio-w-45a-8-bit-esc",
+   "specs": {
+    "mcu": "F722",
+    "bec_output": "5V@1A",
+    "max_cells": "2-6S",
+    "mount_mm": "25.5x25.5mm",
+    "kind": "AIO",
+    "esc_current_a": 45,
+    "weight_g": 8.8,
+    "price_usd": 131.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/geprc-f722-aio-fc-w-45a-2-6s-bls-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "GEPRC",
+   "model": "FETtec Alpha Stack - G4 FC + 50A 2-6S 4-in-1 ESC - 30x30",
+   "slug": "geprc-fettec-alpha-stack-g4-fc-50a-2-6s-4-in-1-esc-30x30",
+   "specs": {
+    "bec_output": "9V @ 2A (Max 2.5A), 5V @ 2A (Max 2.5A)",
+    "esc_firmware": "FETTEC ALPHA",
+    "mcu": "G473",
+    "max_cells": "2-6S",
+    "mount_mm": "30.5x30.5mm",
+    "kind": "stack",
+    "esc_current_a": 50,
+    "weight_g": 6.6,
+    "price_usd": 155.99,
+    "mount_class": "30x30"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/geprc-fettec-alpha-stack-g4-fc-50a-2-6s-4-in-1-esc-30x30"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "GEPRC",
+   "model": "Stable F4 2-4S AIO Whoop/Toothpick (w/ 12A 8Bit 4in1 ESC & 200mW U.FL )",
+   "slug": "geprc-stable-f4-2-4s-aio-whoop-toothpick-w-12a-8bit-4in1-esc-200mw-u-fl",
+   "specs": {
+    "mcu": "F411",
+    "gyro": "MPU6000",
+    "bec_output": "5V@1A",
+    "max_cells": "2-4S",
+    "mount_mm": "25.5x25.5mm",
+    "kind": "AIO",
+    "esc_current_a": 12,
+    "weight_g": 2.0,
+    "price_usd": 81.49,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/geprc-stable-f4-2-4s-aio-whoop-toothpick-flight-controller-12a-8bit-4in1-esc-w-vtx25-200mw-5-8ghz-48ch-u-fl"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "GEPRC",
+   "model": "Taker F405 BLS 3-6S 30x30 Stack/Combo (F405 FC / 8Bit 50A 4in1 ESC)",
+   "slug": "geprc-taker-f405-bls-3-6s-30x30-stack-combo-f405-fc-8bit-50a-4in1-esc",
+   "specs": {
+    "mcu": "F405",
+    "gyro": "ICM42688P",
+    "max_cells": "3-6S",
+    "mount_mm": "30.5x30.5mm",
+    "kind": "stack",
+    "esc_current_a": 50,
+    "weight_g": 7.7,
+    "price_usd": 69.99,
+    "mount_class": "30x30"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/geprc-taker-f405-bls-3-6s-30x30-stack-combo-f405-fc-8bit-50a-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "GEPRC",
+   "model": "Taker F411 2-4S AIO Whoop/Toothpick w/12A 8Bit 4in1 ESC - ELRS 2.4GHz (SPI)",
+   "slug": "geprc-taker-f411-2-4s-aio-whoop-toothpick-w-12a-8bit-4in1-esc-elrs-2-4ghz-spi",
+   "specs": {
+    "mcu": "F411",
+    "gyro": "ICM42688P",
+    "max_cells": "2-4S",
+    "esc_firmware": "G-H-30 – Bluejay, 0.16, 48kH",
+    "mount_mm": "25.5x25.5mm",
+    "kind": "AIO",
+    "esc_current_a": 12,
+    "weight_g": 7.0,
+    "price_usd": 95.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/geprc-taker-f411-2-4s-aio-whoop-toothpick-w-12a-8bit-4in1-esc-elrs-2-4ghz-spi"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "HAKRC",
+   "model": "F4126 F411 2-5S AIO Whoop/Toothpick (w/ 20A 8Bit 4in1 ESC)",
+   "slug": "hakrc-f4126-f411-2-5s-aio-whoop-toothpick-w-20a-8bit-4in1-esc",
+   "specs": {
+    "mount_mm": "25.5x25.5mm / 26.5x26.5mm",
+    "mcu": "F411",
+    "gyro": "ICM42688",
+    "esc_firmware": "BLHELI_ S (G- H-20)",
+    "max_cells": "2-5S",
+    "kind": "AIO",
+    "esc_current_a": 20,
+    "weight_g": 8.5,
+    "price_usd": 67.49,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hakrc-f411-2-5s-f4126-aio-fc-w-20a-8bit-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "HAKRC",
+   "model": "F722 2-6S AIO Whoop/Toothpick w/ 8Bit 40A ESC & External USB Board",
+   "slug": "hakrc-f722-2-6s-aio-whoop-toothpick-w-8bit-40a-esc-external-usb-board",
+   "specs": {
+    "max_cells": "2-6S",
+    "mcu": "F722",
+    "gyro": "MPU6000",
+    "bec_output": "5V/3A",
+    "esc_firmware": "BLHELI _S (G- H-30)",
+    "kind": "AIO",
+    "esc_current_a": 40,
+    "price_usd": 92.49,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hakrc-f722-aio-whoop-toothpick-flight-controller-w-2-6s-8bit-40a-esc-external-usb-board"
+   ],
+   "note": "Mounting standard read from the listing: \"Dimensions: 32x32mm (25.5mm-26.5mm mounting hole)\"."
+  },
+  {
+   "type": "stack",
+   "brand": "HAKRC",
+   "model": "F7220 2-6S AIO 20x20 w/ 32Bit 40A 4in1 ESC",
+   "slug": "hakrc-f7220-2-6s-aio-20x20-w-32bit-40a-4in1-esc",
+   "specs": {
+    "max_cells": "2-6S",
+    "mcu": "F722",
+    "gyro": "ICM42688",
+    "esc_firmware": "BLHeli_32",
+    "mount_mm": "20x20mm",
+    "kind": "AIO",
+    "esc_current_a": 40,
+    "weight_g": 10.0,
+    "price_usd": 115.49,
+    "mount_class": "20x20"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hakrc-f7220-2-6s-aio-flight-controller-w-32bit-40a-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "HAKRC",
+   "model": "F7220 3-6S AIO 20x20 w/ 32Bit 50A 4in1 ESC",
+   "slug": "hakrc-f7220-3-6s-aio-20x20-w-32bit-50a-4in1-esc",
+   "specs": {
+    "fc_firmware": "HAKRCF7220D",
+    "esc_firmware": "HAKRC_ AT4G_ Multi_ 32_ 9. Hex",
+    "mcu": "F722",
+    "gyro": "ICM42688",
+    "mount_mm": "20x20mm",
+    "max_cells": "3-6S",
+    "kind": "AIO",
+    "esc_current_a": 50,
+    "weight_g": 10.0,
+    "price_usd": 131.99,
+    "mount_class": "20x20"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hakrc-f7220-3-6s-aio-20x20-flight-controller-w-32bit-50a-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "HAKRC",
+   "model": "Flytower Stack - F722 F7230 V2 FC + 50A 2-6S BLHeli_S ESC - 30.5x30.5",
+   "slug": "hakrc-flytower-stack-f722-f7230-v2-fc-50a-2-6s-blheli-s-esc-30-5x30-5",
+   "specs": {
+    "mcu": "F722",
+    "gyro": "ICM42688",
+    "bec_output": "5V/3A; 10V/2.5A",
+    "max_cells": "2-6S",
+    "esc_firmware": "G_H_30 – Rev. 16.7 – Multi",
+    "kind": "stack",
+    "esc_current_a": 50,
+    "weight_g": 8.5,
+    "price_usd": 92.49,
+    "mount_class": "30x30"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hakrc-flytower-stack-f722-f7230-v2-fc-50a-2-6s-blheli_s-esc-30-5x30-5"
+   ],
+   "note": "Mounting standard read from the listing: \"product title: ... BLHeli_S ESC - 30.5x30.5\"."
+  },
+  {
+   "type": "stack",
+   "brand": "Happymodel",
+   "model": "Crazybee V1.0 5-in-1 AIO - G473 FC + 5A 1S Bluejay ESC + ELRS RX",
+   "slug": "happymodel-crazybee-v1-0-5-in-1-aio-g473-fc-5a-1s-bluejay-esc-elrs-rx",
+   "specs": {
+    "mcu": "G473",
+    "gyro": "ICM42688P",
+    "bec_output": "5V, Max. 2A",
+    "fc_firmware": "CRAZYBEEG473",
+    "mount_mm": "25.5x25.5mm",
+    "max_cells": "1S",
+    "esc_firmware": "V0.21.hex Bluejay",
+    "kind": "AIO",
+    "esc_current_a": 5,
+    "weight_g": 3.8,
+    "price_usd": 74.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/happymodel-crazybee-v1-0-5-in-1-aio-g473-fc-5a-1s-bluejay-esc-elrs-rx"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "Happymodel",
+   "model": "CrazyF405 ELRS HD 1-2S AIO Whoop/Toothpick w/ 12A 8Bit 4in1 ESC & ELRS 2.4GHz RX",
+   "slug": "happymodel-crazyf405-elrs-hd-1-2s-aio-whoop-toothpick-w-12a-8bit-4in1-esc-elrs-2-4ghz-rx",
+   "specs": {
+    "mount_mm": "25.5x25.5mm",
+    "fc_firmware": "BetaflightF4",
+    "mcu": "F405",
+    "esc_firmware": "Z-H-30",
+    "max_cells": "1-2S",
+    "kind": "AIO",
+    "esc_current_a": 12,
+    "weight_g": 4.8,
+    "price_usd": 65.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/happymodel-crazyf405-elrs-hd"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "Happymodel",
+   "model": "CrazyF411 F4 2-4S Whoop/Toothpick AIO w/ 20A 8Bit 4in1 ESC - ELRS 2.4GHz (UART)",
+   "slug": "happymodel-crazyf411-f4-2-4s-whoop-toothpick-aio-w-20a-8bit-4in1-esc-elrs-2-4ghz-uart",
+   "specs": {
+    "mcu": "F411",
+    "mount_mm": "25.5x25.5mm",
+    "max_cells": "2-4S",
+    "kind": "AIO",
+    "esc_current_a": 20,
+    "price_usd": 76.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/happymodel-crazyf411-f4-2-4s-whoop-toothpick-aio-flight-controller-w-20a-8bit-4in1-esc-elrs-2-4ghz-uart"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "Happymodel",
+   "model": "CruxF405HD 2-4S F4 AIO 20x20 (w/ 20A 8Bit 4in1 ESC & 2.4GHz ELRS RX)",
+   "slug": "happymodel-cruxf405hd-2-4s-f4-aio-20x20-w-20a-8bit-4in1-esc-2-4ghz-elrs-rx",
+   "specs": {
+    "mcu": "F405",
+    "mount_mm": "20x20mm",
+    "esc_firmware": "F_H_40_48_v0.19.2",
+    "max_cells": "2-4S",
+    "kind": "AIO",
+    "esc_current_a": 20,
+    "price_usd": 69.99,
+    "mount_class": "20x20"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/happymodel-2-4s-f405-aio-toothpick-whoop-flight-controller-w-20a-8bit-4in1-esc-2-4ghz-elrs-rx"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "Happymodel",
+   "model": "SuperF405HD 2-4S F4 AIO Toothpick/Whoop (w/ 20A 8Bit 4in1 ESC & 2.4GHz ELRS RX)",
+   "slug": "happymodel-superf405hd-2-4s-f4-aio-toothpick-whoop-w-20a-8bit-4in1-esc-2-4ghz-elrs-rx",
+   "specs": {
+    "mcu": "F405",
+    "mount_mm": "25x25mm",
+    "esc_firmware": "F_H_40_48_v0.19.2",
+    "max_cells": "2-4S",
+    "kind": "AIO",
+    "esc_current_a": 20,
+    "price_usd": 69.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/happymodel-superf405hd-2-4s-f4-aio-toothpick-whoop-flight-controller-w-20a-8bit-4in1-esc-2-4ghz-elrs-rx"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "Happymodel",
+   "model": "SuperX AIO - F4 FC + 5A 1S BLHeli_S ESC",
+   "slug": "happymodel-superx-aio-f4-fc-5a-1s-blheli-s-esc",
+   "specs": {
+    "mcu": "F411",
+    "mount_mm": "25.5x25.5mm",
+    "esc_firmware": "O-H-5 48kHz",
+    "max_cells": "1S",
+    "kind": "AIO",
+    "esc_current_a": 5,
+    "price_usd": 83.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/happymodel-superx-aio-f4-fc-5a-1s-blheli_s-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "Happymodel",
+   "model": "SuperX AIO V2 - F4 + 5A 1S BLHeli_S ESC + ELRS 2.4GHz",
+   "slug": "happymodel-superx-aio-v2-f4-5a-1s-blheli-s-esc-elrs-2-4ghz",
+   "specs": {
+    "mcu": "F411",
+    "mount_mm": "25.5x25.5mm",
+    "esc_firmware": "O-H-5 48kHz",
+    "max_cells": "1S",
+    "kind": "AIO",
+    "esc_current_a": 5,
+    "price_usd": 83.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/happymodel-superx-aio-v2-f4-5a-1s-blheli_s-esc-elrs-2-4ghz"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "Happymodel",
+   "model": "X12 AIO 5-IN-1 BOARD - F4 FC + 12A ESC - Choose your version",
+   "slug": "happymodel-x12-aio-5-in-1-board-f4-fc-12a-esc-choose-your-version",
+   "specs": {
+    "max_cells": "1-2S",
+    "mcu": "F411",
+    "esc_firmware": "Z_H_30_REV16_7",
+    "mount_mm": "25x25mm",
+    "kind": "AIO",
+    "esc_current_a": 12,
+    "weight_g": 5.1,
+    "price_usd": 75.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/happymodel-x12-2s-aio-whoop-flight-controller-f4-fc-12a-4in1-esc-25-400mw-vtx-choose-version"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "Happymodel",
+   "model": "X12 Lite V1.0 F411 1-2S Whoop/Toothpick AIO w/ 12A 8Bit 4in1 ESC",
+   "slug": "happymodel-x12-lite-v1-0-f411-1-2s-whoop-toothpick-aio-w-12a-8bit-4in1-esc",
+   "specs": {
+    "max_cells": "1-2S",
+    "mcu": "F411",
+    "gyro": "ICM20689",
+    "mount_mm": "25x25mm",
+    "kind": "AIO",
+    "esc_current_a": 12,
+    "weight_g": 5.1,
+    "price_usd": 75.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/happymodel-x12-lite-v1-flight-controller"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "HDZero",
+   "model": "Halo Stack - H743 ELRS FC (ICM42688) + 70A BLHeli_32 ESC - 20x20",
+   "slug": "hdzero-halo-stack-h743-elrs-fc-icm42688-70a-blheli-32-esc-20x20",
+   "specs": {
+    "mcu": "H743",
+    "gyro": "ICM42688",
+    "bec_output": "5V/4A",
+    "fc_firmware": "Betaflight: HDZERO_HALO",
+    "esc_firmware": "BLHeli 32.10",
+    "max_cells": "3-8S",
+    "mount_mm": "20x20mm",
+    "kind": "stack",
+    "esc_current_a": 70,
+    "weight_g": 13.4,
+    "price_usd": 164.99,
+    "mount_class": "20x20"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hdzero-halo-stack-h743-elrs-fc-icm42688-70a-blheli_32-esc-20x20"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "HDZero",
+   "model": "Halo Stack - H743 ELRS FC (MPU6000) + 70A AM32 ESC - 20x20",
+   "slug": "hdzero-halo-stack-h743-elrs-fc-mpu6000-70a-am32-esc-20x20",
+   "specs": {
+    "mcu": "H743",
+    "gyro": "MPU6000",
+    "bec_output": "5V/4A",
+    "fc_firmware": "Betaflight: HDZERO_HALO",
+    "esc_firmware": "AM32 2.18",
+    "max_cells": "3-8S",
+    "mount_mm": "20x20mm",
+    "kind": "stack",
+    "esc_current_a": 70,
+    "price_usd": 148.99,
+    "mount_class": "20x20"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hdzero-halo-stack-h743-elrs-fc-mpu6000-70a-am32-esc-20x20"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "HDZero",
+   "model": "Halo Stack - H743 ELRS FC (MPU6000) + 70A BLHeli_32 ESC - 20x20",
+   "slug": "hdzero-halo-stack-h743-elrs-fc-mpu6000-70a-blheli-32-esc-20x20",
+   "specs": {
+    "mcu": "H743",
+    "gyro": "MPU6000",
+    "bec_output": "5V/4A",
+    "fc_firmware": "Betaflight: HDZERO_HALO",
+    "esc_firmware": "BLHeli 32.10",
+    "max_cells": "3-8S",
+    "mount_mm": "20x20mm",
+    "kind": "stack",
+    "esc_current_a": 70,
+    "price_usd": 166.49,
+    "mount_class": "20x20"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hdzero-halo-stack-h743-elrs-fc-mpu6000-70a-blheli_32-esc-20x20"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "HGLRC",
+   "model": "Specter AIO - F411 FC + 12A 2-4S BLHeli_S ESC + ELRS RX",
+   "slug": "hglrc-specter-aio-f411-fc-12a-2-4s-blheli-s-esc-elrs-rx",
+   "specs": {
+    "mcu": "F411",
+    "bec_output": "5V 1.5A",
+    "esc_firmware": "Z-H-30 (BLHeli_S)",
+    "max_cells": "2-4S",
+    "mount_mm": "25.5x25.5mm",
+    "kind": "AIO",
+    "esc_current_a": 12,
+    "weight_g": 5.6,
+    "price_usd": 85.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hglrc-specter-aio-f411-fc-12a-2-4s-blheli_s-esc-elrs-rx"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "HGLRC",
+   "model": "Specter F411 1-2S AIO Whoop/Toothpick (w/ 10A 8Bit 4in1 ESC & 400mW ) - ELRS 2.4GHz (SPI)",
+   "slug": "hglrc-specter-f411-1-2s-aio-whoop-toothpick-w-10a-8bit-4in1-esc-400mw-elrs-2-4ghz-spi",
+   "specs": {
+    "mcu": "F411",
+    "bec_output": "5V1.5A",
+    "esc_firmware": "Z-H-30 (Bluejay)",
+    "max_cells": "1-2S",
+    "kind": "AIO",
+    "esc_current_a": 10,
+    "weight_g": 4.9,
+    "price_usd": 89.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hglrc-specter-f411-1-2s-aio-whoop-toothpick-flight-controller-w-10a-8bit-4in1-esc-400mw-vtx-elrs-2-4ghz-spi"
+   ],
+   "note": "Mounting standard read from the listing: \"Mounting hole: 25.5X25.5mm.M2\"."
+  },
+  {
+   "type": "stack",
+   "brand": "HGLRC",
+   "model": "SPECTER F460 HD 2-6S 30x30 Stack/Combo (F405 V2 FC / 8Bit 60A 4in1 ESC) - MPU6000",
+   "slug": "hglrc-specter-f460-hd-2-6s-30x30-stack-combo-f405-v2-fc-8bit-60a-4in1-esc-mpu6000",
+   "specs": {
+    "max_cells": "2-6S",
+    "mcu": "F405",
+    "gyro": "MPU6000",
+    "bec_output": "9V2A/5V2.5A",
+    "fc_firmware": "HGLRCF405V2",
+    "esc_firmware": "BL_S (J-H-30)",
+    "mount_mm": "30.5x30.5mm",
+    "kind": "stack",
+    "esc_current_a": 60,
+    "weight_g": 29.0,
+    "price_usd": 76.99,
+    "mount_class": "30x30"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hglrc-specter-f460-hd-3-6s-30x30-stack-combo-f4-fc-8bit-60a-4in1-esc-mpu6000"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "HGLRC",
+   "model": "Specter F722 3-6S AIO Whoop/Toothpick (w/ 25A 8Bit 4in1 ESC)",
+   "slug": "hglrc-specter-f722-3-6s-aio-whoop-toothpick-w-25a-8bit-4in1-esc",
+   "specs": {
+    "max_cells": "3-6S",
+    "esc_firmware": "Q-H-30-Bluejay",
+    "mcu": "F722",
+    "gyro": "MPU6000",
+    "bec_output": "5V 2A",
+    "mount_mm": "25.5x25.5mm",
+    "kind": "AIO",
+    "esc_current_a": 25,
+    "weight_g": 12.05,
+    "price_usd": 95.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hglrc-specter-f722-3-6s-aio-whoop-toothpick-flight-controller-w-25a-8bit-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "HGLRC",
+   "model": "SPECTER F722 4-6S AIO Whoop/Toothpick (w/ 40A 8Bit 4in1 ESC) - MPU6000",
+   "slug": "hglrc-specter-f722-4-6s-aio-whoop-toothpick-w-40a-8bit-4in1-esc-mpu6000",
+   "specs": {
+    "mcu": "F722",
+    "bec_output": "5V2A",
+    "max_cells": "4-6S",
+    "mount_mm": "25.5x25.5mm",
+    "kind": "AIO",
+    "esc_current_a": 40,
+    "weight_g": 9.8,
+    "price_usd": 98.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hglrc-specter-f722-4-6s-aio-whoop-toothpick-flight-controller-w-40a-8bit-4in1-esc-mpu6000"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "HOBBYWING",
+   "model": "XRotor F722 3-6S 20x20 Stack/Combo (F7 FC / 32Bit 45A 4in1 ESC)",
+   "slug": "hobbywing-xrotor-f722-3-6s-20x20-stack-combo-f7-fc-32bit-45a-4in1-esc",
+   "specs": {
+    "mcu": "F722",
+    "gyro": "MPU6500",
+    "max_cells": "3-6S",
+    "mount_mm": "20x20mm / 30x30mm",
+    "esc_firmware": "Hobbywing_XRotor_BLHeli-32 Version",
+    "kind": "stack",
+    "esc_current_a": 45,
+    "weight_g": 12.0,
+    "price_usd": 159.99,
+    "mount_class": "20x20"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hobbywing-xrotor-f722-3-6s-20x20-stack-combo-f7-fc-32bit-45a-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "HOLYBRO",
+   "model": "Kakute F4 HD V2.4 4-6S 30x30 Stack/Combo (F405 FC/ 50A F4 32Bit 4in1 ESC)",
+   "slug": "holybro-kakute-f4-hd-v2-4-4-6s-30x30-stack-combo-f405-fc-50a-f4-32bit-4in1-esc",
+   "specs": {
+    "mcu": "F405",
+    "gyro": "MPU6000",
+    "mount_mm": "30x30mm",
+    "max_cells": "4-6S",
+    "kind": "stack",
+    "esc_current_a": 50,
+    "weight_g": 7.0,
+    "price_usd": 122.49,
+    "mount_class": "30x30"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/holybro-kakute-f4-hd-v2-4-4-6s-30x30-stack-combo-f405-fc-50a-f4-32bit-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "HOLYBRO",
+   "model": "Kakute G4 2-6S AIO Whoop/Toothpick w/ F4 AM32 35A 32Bit 4in1 ESC",
+   "slug": "holybro-kakute-g4-2-6s-aio-whoop-toothpick-w-f4-am32-35a-32bit-4in1-esc",
+   "specs": {
+    "mcu": "G473",
+    "gyro": "ICM42688",
+    "bec_output": "5V/3A & 10V/2.5A",
+    "max_cells": "2-6S",
+    "mount_mm": "25x25mm",
+    "kind": "AIO",
+    "esc_current_a": 35,
+    "weight_g": 7.5,
+    "price_usd": 116.49,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/holybro-kakute-g4-2-6s-aio-whoop-toothpick-flight-controller-w-f4-am32-35a-32bit-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "iFlight",
+   "model": "Blitz ATF435 E55S 2-6S 30x30 Stack/Combo (ATF435 FC/ 55A 8Bit 4in1 ESC)",
+   "slug": "iflight-blitz-atf435-e55s-2-6s-30x30-stack-combo-atf435-fc-55a-8bit-4in1-esc",
+   "specs": {
+    "mcu": "AT32F435",
+    "gyro": "BMI270",
+    "mount_mm": "30.5x30.5mm",
+    "max_cells": "2-6S",
+    "kind": "stack",
+    "esc_current_a": 55,
+    "weight_g": 7.8,
+    "price_usd": 86.49,
+    "mount_class": "30x30"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/iflight-blitz-atf435-e55s-2-6s-30x30-stack-combo-atf435-fc-55a-8bit-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "iFlight",
+   "model": "Blitz F7 V1.2 2-6S 30x30 Stack/Combo (F7 FC/ E55 32Bit 55A 4in1 ESC)",
+   "slug": "iflight-blitz-f7-v1-2-2-6s-30x30-stack-combo-f7-fc-e55-32bit-55a-4in1-esc",
+   "specs": {
+    "mcu": "F722",
+    "gyro": "ICM42688",
+    "mount_mm": "30.5x30.5mm",
+    "max_cells": "2-6S",
+    "esc_firmware": "BLHeli32",
+    "kind": "stack",
+    "esc_current_a": 55,
+    "weight_g": 7.8,
+    "price_usd": 155.99,
+    "mount_class": "30x30"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/draft-blitz-f7blitz-f7-v1-2-icm42688-e55-4-in-1-flight-tower-system"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "iFlight",
+   "model": "Blitz F722 E55 2-6S 30x30 Stack/Combo (F722 FC/ 55A 32bit 4in1 ESC)",
+   "slug": "iflight-blitz-f722-e55-2-6s-30x30-stack-combo-f722-fc-55a-32bit-4in1-esc",
+   "specs": {
+    "mcu": "F722",
+    "gyro": "BMI270",
+    "mount_mm": "30.5x30.5mm",
+    "max_cells": "2-6S",
+    "esc_firmware": "BLHeli 32",
+    "kind": "stack",
+    "esc_current_a": 55,
+    "price_usd": 155.99,
+    "mount_class": "30x30"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/iflight-blitz-f722-e55-2-6s-30x30-stack-combo-f722-fc-55a-32bit-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "iFlight",
+   "model": "BLITZ Mini F7 V1.2 2-6S 20x20 Stack/Combo (F7 FC/ 55A 32Bit 4in1 ESC)",
+   "slug": "iflight-blitz-mini-f7-v1-2-2-6s-20x20-stack-combo-f7-fc-55a-32bit-4in1-esc",
+   "specs": {
+    "mcu": "F722",
+    "gyro": "ICM42688",
+    "mount_mm": "20x20mm",
+    "bec_output": "none",
+    "esc_firmware": "BLHeli 32",
+    "max_cells": "2-6S",
+    "kind": "stack",
+    "esc_current_a": 55,
+    "weight_g": 5.0,
+    "price_usd": 124.99,
+    "mount_class": "20x20"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/draft-iflight-blitz-mini-f7-v1-2-e55-4-in-1-flight-tower-system"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "iFlight",
+   "model": "BLITZ Mini F7 V1.2 E55S 2-6S 20x20 Stack/Combo (F7 FC / 55A BlheliS 4in1 ESC)",
+   "slug": "iflight-blitz-mini-f7-v1-2-e55s-2-6s-20x20-stack-combo-f7-fc-55a-blhelis-4in1-esc",
+   "specs": {
+    "mcu": "F722",
+    "gyro": "ICM42688",
+    "mount_mm": "20x20mm",
+    "bec_output": "none",
+    "max_cells": "2-6S",
+    "kind": "stack",
+    "esc_current_a": 55,
+    "weight_g": 5.0,
+    "price_usd": 95.99,
+    "mount_class": "20x20"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/iflight-blitz-mini-f7-v1-2-e55s-2-6s-20x20-stack-combo-f7-fc-55a-blhelis-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "iFlight",
+   "model": "Blitz Mini F722 E55 2-6S 20x20 Stack/Combo (F722 FC/ 55A 32bit 4in1 V1.3 ESC)",
+   "slug": "iflight-blitz-mini-f722-e55-2-6s-20x20-stack-combo-f722-fc-55a-32bit-4in1-v1-3-esc",
+   "specs": {
+    "max_cells": "2-6S",
+    "mcu": "F722",
+    "gyro": "BMI270",
+    "mount_mm": "20x20mm",
+    "bec_output": "none",
+    "esc_firmware": "BLHeli32",
+    "kind": "stack",
+    "esc_current_a": 55,
+    "weight_g": 11.3,
+    "price_usd": 139.99,
+    "mount_class": "20x20"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/iflight-blitz-mini-f722-e55-2-6s-20x20-stack-combo-f722-fc-55a-32bit-4in1-v1-3-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "iFlight",
+   "model": "Blitz Whoop F7 AIO [V1.1] 2-6S AIO Toothpick / Whoop (w/ 55A 8Bit 4in1 ESC)",
+   "slug": "iflight-blitz-whoop-f7-aio-v1-1-2-6s-aio-toothpick-whoop-w-55a-8bit-4in1-esc",
+   "specs": {
+    "mcu": "F745",
+    "gyro": "BMI270",
+    "fc_firmware": "IFLIGHT_BLITZ_F7_AIO",
+    "mount_mm": "25.5x25.5mm",
+    "max_cells": "2-6S",
+    "esc_firmware": "Q-H-40 - Bluejay, 0.16, 24kHz",
+    "kind": "AIO",
+    "esc_current_a": 55,
+    "weight_g": 10.5,
+    "price_usd": 131.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/iflight-blitz-whoop-f7-aio-v1-1"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "iFlight",
+   "model": "Borg Stack - 5S RX F4 FC + 60RS 60A 4-in-1 BLHeli_32 4-8S ESC - 20X20",
+   "slug": "iflight-borg-stack-5s-rx-f4-fc-60rs-60a-4-in-1-blheli-32-4-8s-esc-20x20",
+   "specs": {
+    "max_cells": "4-8S",
+    "mcu": "AT32F435",
+    "gyro": "ICM42688",
+    "fc_firmware": "IFLIGHT_BLITZ_ATF435(Betaflight)",
+    "mount_mm": "20x20mm",
+    "esc_firmware": "BL32 (32bit ESC)",
+    "kind": "stack",
+    "esc_current_a": 60,
+    "weight_g": 21.0,
+    "price_usd": 104.99,
+    "mount_class": "20x20"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/iflight-borg-stack-5s-rx-f4-fc-60rs-60a-4-in-1-blheli_32-4-8s-esc-20x20"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "iFlight",
+   "model": "F411 V1.1 2-4S AIO FC w/ 20A 8Bit ESC",
+   "slug": "iflight-f411-v1-1-2-4s-aio-fc-w-20a-8bit-esc",
+   "specs": {
+    "mount_mm": "25.5x25.5mm",
+    "mcu": "F411",
+    "gyro": "BMI270",
+    "bec_output": "5V 2A",
+    "max_cells": "2-4S",
+    "esc_firmware": "Bluejay Q-H-50",
+    "kind": "AIO",
+    "esc_current_a": 20,
+    "weight_g": 7.5,
+    "price_usd": 83.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/iflight-f411-v1-1-aio-fc-w-20a-8-bit-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "NewBeeDrone",
+   "model": "BeeBrain BLV4 F411 1-2S AIO Whoop/Toothpick w/ 12A 8Bit 4in1 ESC & 400mW - CRSF",
+   "slug": "newbeedrone-beebrain-blv4-f411-1-2s-aio-whoop-toothpick-w-12a-8bit-4in1-esc-400mw-crsf",
+   "specs": {
+    "mcu": "F411",
+    "gyro": "BMI270",
+    "mount_mm": "25x25mm",
+    "max_cells": "1-2S",
+    "kind": "AIO",
+    "esc_current_a": 12,
+    "weight_g": 6.5,
+    "price_usd": 98.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/newbeedrone-beebrain-blv4-f411-1-2s-aio-whoop-toothpick-flight-controller-w-12a-8bit-4in1-esc-400mw-vtx-crsf"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "NewBeeDrone",
+   "model": "BeeBrain BLV5 AIO - G4 FC + 18A 1-2S 4-in-1 Bluejay ESC - MPU6000 - 25X25",
+   "slug": "newbeedrone-beebrain-blv5-aio-g4-fc-18a-1-2s-4-in-1-bluejay-esc-mpu6000-25x25",
+   "specs": {
+    "mcu": "G474",
+    "gyro": "MPU6000",
+    "mount_mm": "25x25mm",
+    "max_cells": "1-2S",
+    "kind": "AIO",
+    "esc_current_a": 18,
+    "weight_g": 5.8,
+    "price_usd": 118.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/newbeedrone-beebrain-blv5-aio-g4-fc-18a-1-2s-4-in-1-bluejay-esc-mpu6000-25x25"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "NewBeeDrone",
+   "model": "Hummingbird 200 RaceSpec Stack - F4 ELRS FC + 80A AM32 ESC - 20x20",
+   "slug": "newbeedrone-hummingbird-200-racespec-stack-f4-elrs-fc-80a-am32-esc-20x20",
+   "specs": {
+    "mcu": "AT32F435",
+    "gyro": "ICM42688",
+    "mount_mm": "20x20mm",
+    "max_cells": "3-6S",
+    "esc_firmware": "AM32",
+    "kind": "stack",
+    "esc_current_a": 80,
+    "weight_g": 4.8,
+    "price_usd": 92.49,
+    "mount_class": "20x20"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/newbeedrone-hummingbird-200-racespec-stack-f4-elrs-fc-80a-am32-esc-20x20"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "NewBeeDrone",
+   "model": "Hummingbird 255 AIO - F4 FC + 50A 3-6S AM32 ESC",
+   "slug": "newbeedrone-hummingbird-255-aio-f4-fc-50a-3-6s-am32-esc",
+   "specs": {
+    "mcu": "AT32F435",
+    "gyro": "ICM42688",
+    "mount_mm": "25.5x25.5mm",
+    "max_cells": "3-6S",
+    "kind": "AIO",
+    "esc_current_a": 50,
+    "weight_g": 10.2,
+    "price_usd": 73.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/newbeedrone-hummingbird-255-aio-f4-fc-50a-3-6s-am32-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "NewBeeDrone",
+   "model": "HummingBird V3 F411 1S AIO Whoop/Toothpick (w/12A 8Bit 4in1 ESC & 25mW ) - ELRS 2.4GHz (SPI)",
+   "slug": "newbeedrone-hummingbird-v3-f411-1s-aio-whoop-toothpick-w-12a-8bit-4in1-esc-25mw-elrs-2-4ghz-spi",
+   "specs": {
+    "mcu": "F411",
+    "mount_mm": "25.5x25.5mm",
+    "max_cells": "1S",
+    "kind": "AIO",
+    "esc_current_a": 12,
+    "weight_g": 4.57,
+    "price_usd": 83.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/newbeedrone-hummingbird-v3-f411-1s-aio-whoop-toothpick-flight-controller-w-12a-8bit-4in1-esc-25mw-vtx-elrs-2-4ghz"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "NewBeeDrone",
+   "model": "HummingBird V4 AIO - F4 FC + 12A 1S 4-in-1 BLHeliS ESC + ELRS RX + 400mW - 25x25",
+   "slug": "newbeedrone-hummingbird-v4-aio-f4-fc-12a-1s-4-in-1-blhelis-esc-elrs-rx-400mw-25x25",
+   "specs": {
+    "mcu": "F411",
+    "gyro": "BMI270",
+    "mount_mm": "25x25mm",
+    "max_cells": "1S",
+    "kind": "AIO",
+    "esc_current_a": 12,
+    "weight_g": 4.57,
+    "price_usd": 90.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/newbeedrone-hummingbird-v4-aio-f4-fc-12a-1s-4-in-1-blhelis-esc-elrs-rx-400mw-vtx-25x25"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "NewBeeDrone",
+   "model": "Infinity V2 PRO 3-6S 30x30 AIO w/ 55A 32bit ESC",
+   "slug": "newbeedrone-infinity-v2-pro-3-6s-30x30-aio-w-55a-32bit-esc",
+   "specs": {
+    "max_cells": "3-6S",
+    "mcu": "F745",
+    "gyro": "BMI270",
+    "bec_output": "10V 3A 30W Design for DJI FPV Air Unit",
+    "mount_mm": "30.5x30.5mm",
+    "kind": "AIO",
+    "esc_current_a": 55,
+    "weight_g": 22.0,
+    "price_usd": 191.99,
+    "mount_class": "30x30"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/newbeedrone-infinity-v2-pro-3-6s-30x30-aio-flight-controller-w-55a-32bit-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "RunCam",
+   "model": "SpeedyBee AIO - F4 FC + 40A 3-6S 4-in-1 Bluejay ESC - 25x25",
+   "slug": "runcam-speedybee-aio-f4-fc-40a-3-6s-4-in-1-bluejay-esc-25x25",
+   "specs": {
+    "mount_mm": "25.5x25.5mm",
+    "max_cells": "3-6S",
+    "gyro": "ICM42688P",
+    "mcu": "F405",
+    "esc_firmware": "Bluejay JH-40 48kHz",
+    "kind": "AIO",
+    "esc_current_a": 40,
+    "weight_g": 13.6,
+    "price_usd": 67.49,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/speedybee-aio-f4-fc-40a-3-6s-4-in-1-bluejay-esc-25x25"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "RunCam",
+   "model": "SpeedyBee F4 Mini 3-6S 20x20 Stack/Combo (F405 FC / 35A 8Bit 4in1 ESC)",
+   "slug": "runcam-speedybee-f4-mini-3-6s-20x20-stack-combo-f405-fc-35a-8bit-4in1-esc",
+   "specs": {
+    "max_cells": "3-6S",
+    "mount_mm": "20x20mm",
+    "mcu": "F405",
+    "esc_firmware": "BLHeli_S J-H-40",
+    "kind": "stack",
+    "esc_current_a": 35,
+    "weight_g": 13.5,
+    "price_usd": 110.99,
+    "mount_class": "20x20"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/speedybee-f4-3-6s-20x20-stack-combo-f405-fc-35a-8bit-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "RunCam",
+   "model": "SpeedyBee F405 V3 BLS 3-6S 30x30 Stack/Combo (F405 FC / 8Bit 50A 4in1 ESC)",
+   "slug": "runcam-speedybee-f405-v3-bls-3-6s-30x30-stack-combo-f405-fc-8bit-50a-4in1-esc",
+   "specs": {
+    "mcu": "F405",
+    "max_cells": "3-6S",
+    "mount_mm": "30.5x30.5mm",
+    "esc_firmware": "BLHeli_S JH50",
+    "kind": "stack",
+    "esc_current_a": 50,
+    "weight_g": 9.6,
+    "price_usd": 86.49,
+    "mount_class": "30x30"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/speedybee-f405-v3-bls-3-6s-30x30-stack-combo-f405-fc-50a-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "RunCam",
+   "model": "SpeedyBee F405 V4 BLS 3-6S 30x30 Stack/Combo (F405 FC / 8Bit 55A 4in1 ESC)",
+   "slug": "runcam-speedybee-f405-v4-bls-3-6s-30x30-stack-combo-f405-fc-8bit-55a-4in1-esc",
+   "specs": {
+    "mcu": "F405",
+    "max_cells": "3-6S",
+    "mount_mm": "30.5x30.5mm",
+    "esc_firmware": "BLHeli_S J-H-40",
+    "kind": "stack",
+    "esc_current_a": 55,
+    "weight_g": 10.5,
+    "price_usd": 86.49,
+    "mount_class": "30x30"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/speedybee-f405-v4-bls-3-6s-30x30-stack-combo-f405-fc-8bit-55a-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "RunCam",
+   "model": "SpeedyBee F405 V5 Stack - F405 FC + 55A 3-6S OX32 ESC - 30x30 - Deluxe",
+   "slug": "runcam-speedybee-f405-v5-stack-f405-fc-55a-3-6s-ox32-esc-30x30-deluxe",
+   "specs": {
+    "mcu": "F405",
+    "max_cells": "3-6S",
+    "mount_mm": "30.5x30.5mm",
+    "kind": "stack",
+    "esc_current_a": 55,
+    "weight_g": 8.1,
+    "price_usd": 129.49,
+    "mount_class": "30x30"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/speedybee-f405-v5-stack-f405-fc-55a-3-6s-ox32-esc-30x30-deluxe"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "RunCam",
+   "model": "SpeedyBee F405 V5 Stack - F405 FC + 55A 3-6S OX32 ESC - 30x30 - Standard",
+   "slug": "runcam-speedybee-f405-v5-stack-f405-fc-55a-3-6s-ox32-esc-30x30-standard",
+   "specs": {
+    "mcu": "F405",
+    "max_cells": "3-6S",
+    "mount_mm": "30.5x30.5mm",
+    "kind": "stack",
+    "esc_current_a": 55,
+    "weight_g": 8.1,
+    "price_usd": 119.99,
+    "mount_class": "30x30"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/speedybee-f405-v5-stack-f405-fc-55a-3-6s-ox32-esc-30x30-standard"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "RunCam",
+   "model": "SpeedyBee F7 Mini 35A 3-6S 20x20 Stack/Combo (F7 FC / 35A 8bit 4in1 ESC)",
+   "slug": "runcam-speedybee-f7-mini-35a-3-6s-20x20-stack-combo-f7-fc-35a-8bit-4in1-esc",
+   "specs": {
+    "max_cells": "3-6S",
+    "mcu": "F722",
+    "gyro": "BMI270",
+    "fc_firmware": "BetaFlight(Default), EMUFlight, INAV",
+    "mount_mm": "20x20mm",
+    "esc_firmware": "BLHeli_S JH40",
+    "kind": "stack",
+    "esc_current_a": 35,
+    "weight_g": 5.7,
+    "price_usd": 95.99,
+    "mount_class": "20x20"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/speedybee-f7-mini-35a-3-6s-20x20-stack-combo-f7-fc-35a-8bit-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "RunCam",
+   "model": "SpeedyBee V3 F722 3-6S 30x30 Stack/Combo (F722 FC / 50A 32bit 4in1 ESC)",
+   "slug": "runcam-speedybee-v3-f722-3-6s-30x30-stack-combo-f722-fc-50a-32bit-4in1-esc",
+   "specs": {
+    "mcu": "F722",
+    "gyro": "BMI270",
+    "max_cells": "3-6S",
+    "mount_mm": "30.5x30.5mm",
+    "esc_firmware": "SpeedyBee BL32 50A",
+    "kind": "stack",
+    "esc_current_a": 50,
+    "weight_g": 9.0,
+    "price_usd": 151.49,
+    "mount_class": "30x30"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/speedybee-v3-f722-3-6s-30x30-stack-combo-f722-fc-50a-32bit-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "SEQURE",
+   "model": "H743 & E70 G1 4-8S 20x20 Stack/Combo (H743 MPU6000 FC / 70A 128K ESC)",
+   "slug": "sequre-h743-e70-g1-4-8s-20x20-stack-combo-h743-mpu6000-fc-70a-128k-esc",
+   "specs": {
+    "mcu": "H743",
+    "gyro": "MPU6000",
+    "max_cells": "4-8S",
+    "mount_mm": "20x20mm / 30.5x30.5mm",
+    "kind": "stack",
+    "esc_current_a": 70,
+    "weight_g": 7.5,
+    "price_usd": 199.49,
+    "mount_class": "20x20"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/sequre-h743-e70-g1-stack-4-8s-20x20-stack-combo-h743-mpu6000-fc-70a-128k-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "SKYSTARSRC",
+   "model": "F722 HD PRO4 3-6S 30x30 Stack/Combo (F722 FC / KM60 AM-32 32Bit 60A 4in1 ESC) - MPU6000",
+   "slug": "skystarsrc-f722-hd-pro4-3-6s-30x30-stack-combo-f722-fc-km60-am-32-32bit-60a-4in1-esc-mpu6000",
+   "specs": {
+    "mcu": "F722",
+    "gyro": "MPU6000",
+    "max_cells": "3-6S",
+    "mount_mm": "30.5x30.5mm",
+    "esc_firmware": "AM_32",
+    "bec_output": "none",
+    "kind": "stack",
+    "esc_current_a": 60,
+    "weight_g": 6.9,
+    "price_usd": 113.99,
+    "mount_class": "30x30"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/skystarsrc-f7hd-pro3-f7-3-6s-30x30-stack-combo-f7-fc-km60-am-32-32bit-60a-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "SKYSTARSRC",
+   "model": "F722 RS 3-6S 20x20 Stack/Combo (F722 FC / MVP60 F4 128K 32Bit 60A 4in1 ESC) - MPU6000",
+   "slug": "skystarsrc-f722-rs-3-6s-20x20-stack-combo-f722-fc-mvp60-f4-128k-32bit-60a-4in1-esc-mpu6000",
+   "specs": {
+    "mcu": "F722",
+    "gyro": "MPU6000",
+    "max_cells": "3-6S",
+    "mount_mm": "20x20mm",
+    "esc_firmware": "BLHeli_32",
+    "kind": "stack",
+    "esc_current_a": 60,
+    "weight_g": 4.9,
+    "price_usd": 131.99,
+    "mount_class": "20x20"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/skystarsrc-fly-stack-f722rs-3-6s-20x20-stack-combo-f722-fc-mvp60-f4-128k-32bit-60a-4in1-esc-mpu6000"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "SKYSTARSRC",
+   "model": "Fly Stack F405 HD2 3-6S 30x30 Stack/Combo (F405 FC / KO50A 8Bit 50A 4in1 ESC)",
+   "slug": "skystarsrc-fly-stack-f405-hd2-3-6s-30x30-stack-combo-f405-fc-ko50a-8bit-50a-4in1-esc",
+   "specs": {
+    "mcu": "F405",
+    "gyro": "BMI270",
+    "mount_mm": "30.5x30.5mm",
+    "max_cells": "3-6S",
+    "kind": "stack",
+    "esc_current_a": 50,
+    "weight_g": 6.0,
+    "price_usd": 77.99,
+    "mount_class": "30x30"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/skystarsrc-fly-stack-f405-hd2-3-6s-30x30-stack-combo-f405-fc-ko50-32bit-50a-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "SKYSTARSRC",
+   "model": "Fly Stack F7 HD Pro 3 3-6S 30x30 Stack/Combo (F722 FC / KO45 32Bit 45A 4in1 ESC)",
+   "slug": "skystarsrc-fly-stack-f7-hd-pro-3-3-6s-30x30-stack-combo-f722-fc-ko45-32bit-45a-4in1-esc",
+   "specs": {
+    "mount_mm": "30.5x30.5mm",
+    "mcu": "F722",
+    "max_cells": "3-6S",
+    "gyro": "BMI270",
+    "esc_firmware": "BLHELI 32 ESC",
+    "kind": "stack",
+    "esc_current_a": 45,
+    "weight_g": 6.9,
+    "price_usd": 118.99,
+    "mount_class": "30x30"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/skystarsrc-fly-stack-f7-hd-pro-3-3-6s-30x30-stack-combo-f722-fc-ko45-32bit-45a-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "SKYSTARSRC",
+   "model": "Fly Stack F7 HD Pro3 3-6S 30x30 Stack/Combo (F722 FC / KM50 32Bit 50A 4in1 ESC)",
+   "slug": "skystarsrc-fly-stack-f7-hd-pro3-3-6s-30x30-stack-combo-f722-fc-km50-32bit-50a-4in1-esc",
+   "specs": {
+    "mount_mm": "30.5x30.5mm",
+    "mcu": "F722",
+    "max_cells": "3-6S",
+    "gyro": "BMI270",
+    "esc_firmware": "Blheli_32",
+    "bec_output": "none",
+    "kind": "stack",
+    "esc_current_a": 50,
+    "weight_g": 6.9,
+    "price_usd": 118.99,
+    "mount_class": "30x30"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/skystarsrc-fly-stack-f7hd-pro-3-6s-30x30-stack-combo-f722-fc-km50-32-bit-50a-4-in-1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "SKYSTARSRC",
+   "model": "Fly Stack F7 HD Pro3 3-6S 30x30 Stack/Combo (F722 FC / KM60 32Bit 60A 4in1 ESC)",
+   "slug": "skystarsrc-fly-stack-f7-hd-pro3-3-6s-30x30-stack-combo-f722-fc-km60-32bit-60a-4in1-esc",
+   "specs": {
+    "mcu": "F722",
+    "gyro": "BMI270",
+    "max_cells": "3-6S",
+    "esc_firmware": "BLHeli_32",
+    "mount_mm": "30.5x30.5mm",
+    "bec_output": "none",
+    "kind": "stack",
+    "esc_current_a": 60,
+    "weight_g": 17.0,
+    "price_usd": 117.99,
+    "mount_class": "30x30"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/skystarsrc-fly-stack-f7-hd-pro3-3-6s-30x30-stack-combo-f722-fc-km60-32bit-60a-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "SKYSTARSRC",
+   "model": "Fly Stack F7 HD Pro4 3-6S 30x30 Stack/Combo (F722 FC / KM65 F4 128K 32Bit 65A 4in1 ESC) - MPU6000",
+   "slug": "skystarsrc-fly-stack-f7-hd-pro4-3-6s-30x30-stack-combo-f722-fc-km65-f4-128k-32bit-65a-4in1-esc-mpu6000",
+   "specs": {
+    "mcu": "F722",
+    "gyro": "MPU6000",
+    "mount_mm": "30.5x30.5mm",
+    "max_cells": "3-6S",
+    "esc_firmware": "BLHeli_32",
+    "kind": "stack",
+    "esc_current_a": 65,
+    "weight_g": 19.0,
+    "price_usd": 137.99,
+    "mount_class": "30x30"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/skystarsrc-fly-stack-f7-hd-pro4-3-6s-30x30-stack-combo-f722-fc-km65-f4-128k-32bit-65a-4in1-esc-mpu6000"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "SKYSTARSRC",
+   "model": "Fly Stack H7 3-6S 30x30 Stack/Combo (H7 FC / KM60 32Bit 60A 4in1 ESC) - Dual Gyro",
+   "slug": "skystarsrc-fly-stack-h7-3-6s-30x30-stack-combo-h7-fc-km60-32bit-60a-4in1-esc-dual-gyro",
+   "specs": {
+    "mcu": "H743",
+    "gyro": "BMI270",
+    "bec_output": "5V 2A Continuous (Max 3A)",
+    "fc_firmware": "Betaflight - SKYSTARSH7HD",
+    "mount_mm": "30.5x30.5mm",
+    "max_cells": "3-6S",
+    "kind": "stack",
+    "esc_current_a": 60,
+    "weight_g": 10.1,
+    "price_usd": 140.49,
+    "mount_class": "30x30"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/skystarsrc-fly-stack-h7-3-6s-30x30-stack-combo-h7-fc-km60-32bit-60a-4in1-esc-dual-gyro"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "SKYSTARSRC",
+   "model": "SkyStars Fly Stack - F722 HD Pro FC + KM40 Pro 40A BLHeli_32 ESC - Mini 20x20",
+   "slug": "skystarsrc-skystars-fly-stack-f722-hd-pro-fc-km40-pro-40a-blheli-32-esc-mini-20x20",
+   "specs": {
+    "mcu": "F722",
+    "gyro": "BMI270",
+    "max_cells": "3-6S",
+    "mount_mm": "20x20mm",
+    "esc_firmware": "BLHeli_32",
+    "bec_output": "none",
+    "kind": "stack",
+    "esc_current_a": 40,
+    "weight_g": 6.0,
+    "price_usd": 103.49,
+    "mount_class": "20x20"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/skystars-fly-stack-f722-hd-pro-fc-km40-pro-40a-blheli_32-esc-mini-20x20"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "SKYSTARSRC",
+   "model": "Skystars FlyStack - Mini F7HD Pro3 FC + KM55II AM32 55A ESC - 20x20",
+   "slug": "skystarsrc-skystars-flystack-mini-f7hd-pro3-fc-km55ii-am32-55a-esc-20x20",
+   "specs": {
+    "mcu": "F722",
+    "gyro": "BMI270",
+    "max_cells": "3-6S",
+    "mount_mm": "20x20mm",
+    "esc_firmware": "AM_32",
+    "bec_output": "none",
+    "kind": "stack",
+    "esc_current_a": 55,
+    "weight_g": 4.2,
+    "price_usd": 101.99,
+    "mount_class": "20x20"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/skystars-flystack-mini-f7hd-pro3-fc-km55ii-am32-55a-esc-20x20"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "SKYSTARSRC",
+   "model": "Skystars Jupiter AIO F4 3-6S Whoop/Toothpick (w/ 45A BLHeli_S 4in1 ESC) - MPU6000",
+   "slug": "skystarsrc-skystars-jupiter-aio-f4-3-6s-whoop-toothpick-w-45a-blheli-s-4in1-esc-mpu6000",
+   "specs": {
+    "fc_firmware": "SKYSTARSF405AIO",
+    "mcu": "F405",
+    "bec_output": "5V/3A",
+    "gyro": "MPU6000",
+    "mount_mm": "25.5x25.5mm",
+    "esc_firmware": "BLHeli_S",
+    "max_cells": "3-6S",
+    "kind": "AIO",
+    "esc_current_a": 45,
+    "weight_g": 13.5,
+    "price_usd": 83.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/skystars-jupiter-aio-f4-3-6s-whoop-toothpick-flight-controller-w-45a-blheli_s-4in1-esc-mpu6000"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "T-Motor",
+   "model": "CINE F7 FC + V50A SE 3-6S 30x30 Stack/Combo (F722 FC / 32Bit 50A F4 4in1 ESC)",
+   "slug": "t-motor-cine-f7-fc-v50a-se-3-6s-30x30-stack-combo-f722-fc-32bit-50a-f4-4in1-esc",
+   "specs": {
+    "mcu": "F722",
+    "max_cells": "3-6S",
+    "gyro": "ICM42688P",
+    "mount_mm": "30.5x30.5mm",
+    "fc_firmware": "TMTR-TMOTORVELOXF7V2 (BETAFLIGHT)",
+    "kind": "stack",
+    "esc_current_a": 50,
+    "weight_g": 9.2,
+    "price_usd": 137.99,
+    "mount_class": "30x30"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/t-motor-cine-f7-fc-v50a-se-3-6s-30x30-stack-combo-f722-fc-f4-32bit-50a-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "T-Motor",
+   "model": "F411 1S Toothpick/Whoop AIO w/ 13A 4in1 ESC",
+   "slug": "t-motor-f411-1s-toothpick-whoop-aio-w-13a-4in1-esc",
+   "specs": {
+    "mcu": "F411",
+    "gyro": "BMI270",
+    "bec_output": "5V@1A",
+    "max_cells": "1S",
+    "esc_firmware": "BLHeli_32",
+    "mount_mm": "25.5x25.5mm",
+    "kind": "AIO",
+    "esc_current_a": 13,
+    "weight_g": 5.7,
+    "price_usd": 116.49,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/t-motor-f411-1s-toothpick-whoop-aio-w-13a-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "T-Motor",
+   "model": "F411 1S Toothpick/Whoop AIO w/ BlueJay 6A ESC & ELRS RX",
+   "slug": "t-motor-f411-1s-toothpick-whoop-aio-w-bluejay-6a-esc-elrs-rx",
+   "specs": {
+    "mcu": "F411",
+    "gyro": "BMI270",
+    "bec_output": "5V@1A",
+    "max_cells": "1S",
+    "mount_mm": "25.5x25.5mm",
+    "kind": "AIO",
+    "esc_current_a": 6,
+    "weight_g": 6.7,
+    "price_usd": 93.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/t-motor-f411-1s-toothpick-whoop-aio-w-bluejay-6a-esc-elrs-rx"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "T-Motor",
+   "model": "F7 3-6S AIO Whoop/Toothpick w/ 35A 8Bit 4in1 ESC",
+   "slug": "t-motor-f7-3-6s-aio-whoop-toothpick-w-35a-8bit-4in1-esc",
+   "specs": {
+    "mcu": "F722",
+    "gyro": "MPU6500",
+    "bec_output": "5V/1.5A",
+    "max_cells": "3-6S",
+    "esc_firmware": "BLS\\Bluejay",
+    "mount_mm": "25.5x25.5mm",
+    "kind": "AIO",
+    "esc_current_a": 35,
+    "price_usd": 124.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/t-motor-f7-3-6s-aio-whoop-toothpick-flight-controller-w-35a-8bit-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "T-Motor",
+   "model": "F7 3-6S AIO Whoop/Toothpick w/ 45A 8Bit 4in1 ESC",
+   "slug": "t-motor-f7-3-6s-aio-whoop-toothpick-w-45a-8bit-4in1-esc",
+   "specs": {
+    "mcu": "F722",
+    "gyro": "MPU6500",
+    "bec_output": "5V/1.5A",
+    "max_cells": "3-6S",
+    "esc_firmware": "BLS\\Bluejay",
+    "mount_mm": "25.5x25.5mm",
+    "kind": "AIO",
+    "esc_current_a": 45,
+    "price_usd": 148.99,
+    "mount_class": "25.5x25.5"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/t-motor-f7-3-6s-aio-whoop-toothpick-flight-controller-w-45a-32bit-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "T-Motor",
+   "model": "F7 & F55A Pro II 3-6S 30x30 Stack/Combo (F7 FC / 32Bit 55A 4in1 ESC)",
+   "slug": "t-motor-f7-f55a-pro-ii-3-6s-30x30-stack-combo-f7-fc-32bit-55a-4in1-esc",
+   "specs": {
+    "mcu": "F722",
+    "gyro": "BMI270",
+    "max_cells": "3-6S",
+    "mount_mm": "30.5x30.5mm",
+    "fc_firmware": "TMOTORF7 (Betaflight)",
+    "kind": "stack",
+    "esc_current_a": 55,
+    "weight_g": 7.4,
+    "price_usd": 181.99,
+    "mount_class": "30x30"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/t-motor-f7-f55a-pro-ii-3-6s-30x30-stack-combo-f7-fc-32bit-55a-4in1-esc"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "T-Motor",
+   "model": "Pro II HD Stack - F7 FC + 55A 3-6S AM32 4-in-1 ESC - 30x30",
+   "slug": "t-motor-pro-ii-hd-stack-f7-fc-55a-3-6s-am32-4-in-1-esc-30x30",
+   "specs": {
+    "esc_firmware": "BLHeli_32",
+    "fc_firmware": "TMOTORF7 (Betaflight)",
+    "mount_mm": "30.5x30.5mm",
+    "max_cells": "3-6S",
+    "mcu": "F722",
+    "gyro": "BMI270",
+    "kind": "stack",
+    "esc_current_a": 55,
+    "weight_g": 17.3,
+    "price_usd": 174.99,
+    "mount_class": "30x30"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/t-motor-pro-ii-hd-stack-f7-fc-55a-3-6s-am32-4-in-1-esc-30x30"
+   ]
+  },
+  {
+   "type": "stack",
+   "brand": "T-Motor",
+   "model": "Velox F7 FC + V50A SE 3-6S 30x30 Stack/Combo (F722 FC / 32Bit 50A F4 4in1 ESC)",
+   "slug": "t-motor-velox-f7-fc-v50a-se-3-6s-30x30-stack-combo-f722-fc-32bit-50a-f4-4in1-esc",
+   "specs": {
+    "mcu": "F722",
+    "max_cells": "3-6S",
+    "gyro": "ICM42688P",
+    "bec_output": "5V2A & 12V1.5A",
+    "mount_mm": "30.5x30.5mm",
+    "kind": "stack",
+    "esc_current_a": 50,
+    "weight_g": 9.0,
+    "price_usd": 112.99,
+    "mount_class": "30x30"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/t-motor-velox-f7-fc-v50a-se-3-6s-30x30-stack-combo-f722-fc-32bit-50a-f4-4in1-esc"
+   ]
+  }
+ ]
+}

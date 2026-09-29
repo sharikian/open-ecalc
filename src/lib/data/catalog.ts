@@ -30,6 +30,7 @@ export function queryComponentRecords(filter: ComponentFilter = {}): ComponentRe
   const needle = filter.text?.trim().toLocaleLowerCase('en-US');
   const minimumRank = filter.minQuality ? qualityRank[filter.minQuality] : -1;
   return records.filter((record) => {
+    if (record.referenceOnly && !filter.includeReference) return false;
     if (filter.kind && record.kind !== filter.kind) return false;
     if (filter.manufacturer && record.manufacturer !== filter.manufacturer) return false;
     if (qualityRank[record.quality] < minimumRank) return false;
@@ -42,9 +43,10 @@ export function queryComponentRecords(filter: ComponentFilter = {}): ComponentRe
 }
 
 export function queryComponents(filter: ComponentFilter = {}): ComponentSummary[] {
-  return queryComponentRecords(filter).map(({ id, kind, manufacturer, model, quality, licenseSpdx, imageUrl }) => ({
+  return queryComponentRecords(filter).map(({ id, kind, productType, manufacturer, model, quality, licenseSpdx, imageUrl }) => ({
     id,
     kind,
+    productType,
     manufacturer,
     model,
     quality,
@@ -53,9 +55,9 @@ export function queryComponents(filter: ComponentFilter = {}): ComponentSummary[
   }));
 }
 
-export function componentKinds(): Array<{ kind: ComponentRecord['kind']; count: number }> {
+export function componentKinds(options: { includeReference?: boolean } = {}): Array<{ kind: ComponentRecord['kind']; count: number }> {
   return (['battery', 'esc', 'motor', 'propeller'] as const).map((kind) => ({
     kind,
-    count: records.filter((record) => record.kind === kind).length
+    count: records.filter((record) => record.kind === kind && (options.includeReference || !record.referenceOnly)).length
   }));
 }

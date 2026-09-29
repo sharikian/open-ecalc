@@ -24,9 +24,28 @@ export interface AircraftProfile {
   sourceHash: string;
   quality: 'manufacturer' | 'community';
   imageUrl: string;
+  productType?: 'airframe' | 'quad';
+  sourceUrls?: string[];
+  sourceCommit?: string;
+  sourceProvenance?: Array<{ sourceUrl: string; licenseSpdx: string; attribution: string; sourceCommit?: string; sourceHash?: string }>;
   maxFlightDistanceKm: number | null;
   maxServiceCeilingM: number | null;
   battery: string | null;
+  recommendedBattery?: {
+    cells?: string;
+    capacityAh?: number;
+    capacityRangeAh?: string;
+    connector?: string;
+    chemistry?: string;
+  };
+  propSizeM?: number;
+  propMount?: string;
+  wheelbaseM?: number;
+  typicalCurrentA?: number;
+  motorRecommendation?: string;
+  videoSystem?: string;
+  camera?: string;
+  sourceNote?: string;
 }
 
 interface AircraftDatasetV1 {
