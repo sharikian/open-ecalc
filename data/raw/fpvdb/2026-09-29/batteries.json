@@ -1,0 +1,7149 @@
+{
+ "generated": "2026-09-29",
+ "count": 326,
+ "license": "CC BY 4.0 - attribution: link https://fpv-db.com",
+ "items": [
+  {
+   "type": "battery",
+   "brand": "Auline",
+   "model": "18650 1C w/ Built-In Protective Board 2600mAh 4S",
+   "slug": "auline-18650-1c-w-built-in-protective-board-2600mah-4s",
+   "specs": {
+    "chemistry": "Li-ion",
+    "cells": "4S",
+    "capacity_mah": 2600,
+    "c_rating": "1C",
+    "weight_g": 202.4,
+    "connector": "XT60",
+    "energy_wh": 37.4,
+    "price_per_wh_usd": 0.72,
+    "price_usd": 26.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/auline-14-8v-4s-18650-2600mah-1c-li-ion-battery-w-built-in-protective-board-for-dji-goggles-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Auline",
+   "model": "1C 4800mAh 3S",
+   "slug": "auline-1c-4800mah-3s",
+   "specs": {
+    "chemistry": "Li-ion",
+    "cells": "3S",
+    "capacity_mah": 4800,
+    "c_rating": "1C",
+    "weight_g": 249.0,
+    "connector": "XT60",
+    "dimensions_mm": "95x42x42mm",
+    "energy_wh": 51.8,
+    "price_per_wh_usd": 0.7,
+    "price_usd": 36.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/auline-11-1v-3s-4800mah-1c-li-ion-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Auline",
+   "model": "3000mAh 3S",
+   "slug": "auline-3000mah-3s",
+   "specs": {
+    "chemistry": "Li-ion",
+    "cells": "3S",
+    "capacity_mah": 3000,
+    "c_rating": "10C",
+    "weight_g": 150.0,
+    "connector": "XT30",
+    "energy_wh": 32.4,
+    "price_per_wh_usd": 1.47,
+    "price_usd": 47.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/auline-11-1v-3s-3000mah-10c-li-ion-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Auline",
+   "model": "3000mAh 6S",
+   "slug": "auline-3000mah-6s",
+   "specs": {
+    "chemistry": "Li-ion",
+    "cells": "6S",
+    "capacity_mah": 3000,
+    "c_rating": "10C",
+    "weight_g": 297.0,
+    "connector": "XT60",
+    "energy_wh": 64.8,
+    "price_per_wh_usd": 1.44,
+    "price_usd": 92.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/auline-22-2v-6s-3000mah-10c-li-ion-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Auline",
+   "model": "3300mAh 6S",
+   "slug": "auline-3300mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 3300,
+    "c_rating": "45C",
+    "weight_g": 430.0,
+    "connector": "XT60",
+    "dimensions_mm": "135x42x35mm",
+    "energy_wh": 73.3,
+    "price_per_wh_usd": 1.02,
+    "price_usd": 74.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/auline-22-2v-6s-3300mah-45c-liion-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Auline",
+   "model": "EX 1050mAh 6S",
+   "slug": "auline-ex-1050mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1050,
+    "c_rating": "120C",
+    "weight_g": 193.6,
+    "connector": "XT60",
+    "dimensions_mm": "69x38x36mm",
+    "energy_wh": 23.3,
+    "price_per_wh_usd": 1.87,
+    "price_usd": 43.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/auline-ex-22-2v-6s-1050mah-120c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Auline",
+   "model": "EX 1550mAh 4S",
+   "slug": "auline-ex-1550mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 1550,
+    "c_rating": "120C",
+    "weight_g": 176.6,
+    "connector": "XT60",
+    "energy_wh": 22.9,
+    "price_per_wh_usd": 1.57,
+    "price_usd": 35.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/auline-sr-14-8v-4s-1350mah-120c-lipo-battery-xt60-1"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Auline",
+   "model": "EX 500mAh 1S",
+   "slug": "auline-ex-500mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 500,
+    "c_rating": "80C",
+    "weight_g": 13.2,
+    "connector": "PH2.0",
+    "energy_wh": 1.9,
+    "price_per_wh_usd": 2.21,
+    "price_usd": 4.19
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/auline-ex-3-8v-1s-500mah-80c-lihv-whoop-micro-battery-ph2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Auline",
+   "model": "SR 1350mAh 4S",
+   "slug": "auline-sr-1350mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 1350,
+    "c_rating": "120C",
+    "weight_g": 154.0,
+    "connector": "XT60",
+    "energy_wh": 20.0,
+    "price_per_wh_usd": 2.38,
+    "price_usd": 47.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/auline-sr-14-8v-4s-1350mah-120c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Auline",
+   "model": "SR 1350mAh 6S",
+   "slug": "auline-sr-1350mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1350,
+    "c_rating": "120C",
+    "weight_g": 219.0,
+    "connector": "XT60",
+    "energy_wh": 30.0,
+    "price_per_wh_usd": 1.3,
+    "price_usd": 38.89
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/auline-sr-22-2v-6s-1350mah-120c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "BetaFPV",
+   "model": "300mAh 1S",
+   "slug": "betafpv-300mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 300,
+    "c_rating": "30C",
+    "weight_g": 8.28,
+    "connector": "BT2.0",
+    "dimensions_mm": "67.3x11.8x6.1mm",
+    "energy_wh": 1.1,
+    "price_per_wh_usd": 35.52,
+    "price_usd": 40.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/betafpv-3-8v-1s-300mah-30c-lihv-whoop-micro-battery-8-pack-bt2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "BetaFPV",
+   "model": "450mAh 1S",
+   "slug": "betafpv-450mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 450,
+    "c_rating": "30C",
+    "weight_g": 12.7,
+    "connector": "BT2.0",
+    "dimensions_mm": "61x15x7.5mm",
+    "energy_wh": 1.7,
+    "price_per_wh_usd": 20.75,
+    "price_usd": 35.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/betafpv-3-8v-1s-450mah-30c-lihv-whoop-micro-battery-4-pack-bt2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "BetaFPV",
+   "model": "550mAh 1S",
+   "slug": "betafpv-550mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 550,
+    "c_rating": "40C",
+    "weight_g": 13.99,
+    "connector": "BT2.0",
+    "dimensions_mm": "69.5x16.2x6.5mm",
+    "energy_wh": 2.1,
+    "price_per_wh_usd": 15.55,
+    "price_usd": 32.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/betafpv-3-8v-1s-550mah-40c-lihv-whoop-micro-battery-4-pack-bt2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "BetaFPV",
+   "model": "Aquila16 Exclusive 1100mAh 1S",
+   "slug": "betafpv-aquila16-exclusive-1100mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 1100,
+    "c_rating": "15C",
+    "weight_g": 25.5,
+    "connector": "BT2.0",
+    "energy_wh": 4.2,
+    "price_per_wh_usd": 5.26,
+    "price_usd": 21.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/betafpv-3-8v-1s-1100mah-15c-lihv-aquila16-exclusive-battery-2-pack-bt2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "BetaFPV",
+   "model": "LAVA II Pack 280mAh 1S",
+   "slug": "betafpv-lava-ii-pack-280mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 280,
+    "c_rating": "95C",
+    "weight_g": 6.8,
+    "connector": "BT2.0",
+    "dimensions_mm": "54x10x6mm",
+    "energy_wh": 1.1,
+    "price_per_wh_usd": 23.49,
+    "price_usd": 24.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/betafpv-lava-ii-280mah-1s-95c-lihv-battery-pack-5-pcs-bt2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "BetaFPV",
+   "model": "LAVA II Pack 320mAh 1S",
+   "slug": "betafpv-lava-ii-pack-320mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 320,
+    "c_rating": "95C",
+    "weight_g": 8.2,
+    "connector": "BT2.0",
+    "dimensions_mm": "64x10x6mm",
+    "energy_wh": 1.2,
+    "price_per_wh_usd": 22.2,
+    "price_usd": 26.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/betafpv-lava-ii-320mah-1s-95c-lihv-battery-pack-5-pcs-bt2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "BetaFPV",
+   "model": "LAVA II Pack 480mAh 1S",
+   "slug": "betafpv-lava-ii-pack-480mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 480,
+    "c_rating": "95C",
+    "weight_g": 12.6,
+    "connector": "BT2.0",
+    "dimensions_mm": "61x15.5x6mm",
+    "energy_wh": 1.8,
+    "price_per_wh_usd": 14.8,
+    "price_usd": 26.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/betafpv-lava-ii-480mah-1s-95c-lihv-battery-pack-4-pcs-bt2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "BetaFPV",
+   "model": "LAVA II Pack 580mAh 1S",
+   "slug": "betafpv-lava-ii-pack-580mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 580,
+    "c_rating": "95C",
+    "weight_g": 14.1,
+    "connector": "BT2.0",
+    "dimensions_mm": "70x15x6.5mm",
+    "energy_wh": 2.2,
+    "price_per_wh_usd": 13.15,
+    "price_usd": 28.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/betafpv-lava-ii-580mah-1s-95c-lihv-battery-pack-4-pcs-bt2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "BetaFPV",
+   "model": "LAVA II Pack 680mAh 1S",
+   "slug": "betafpv-lava-ii-pack-680mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 680,
+    "c_rating": "95C",
+    "weight_g": 16.2,
+    "connector": "BT2.0",
+    "dimensions_mm": "80x15x6.5mm",
+    "energy_wh": 2.6,
+    "price_per_wh_usd": 12.38,
+    "price_usd": 31.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/betafpv-lava-ii-680mah-1s-95c-lihv-battery-pack-4-pcs-bt2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "5200mAh 3S",
+   "slug": "cnhl-5200mah-3s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "3S",
+    "capacity_mah": 5200,
+    "c_rating": "90C",
+    "weight_g": 395.0,
+    "connector": "EC5",
+    "dimensions_mm": "160x45x28mm",
+    "energy_wh": 57.7,
+    "price_per_wh_usd": 0.85,
+    "price_usd": 48.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/cnhl-5200mah-3s-90c-11-1v-lipo-battery-ec5"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "5200mAh 4S",
+   "slug": "cnhl-5200mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 5200,
+    "c_rating": "90C",
+    "weight_g": 530.0,
+    "connector": "EC5",
+    "dimensions_mm": "160x45x37mm",
+    "energy_wh": 77.0,
+    "price_per_wh_usd": 0.95,
+    "price_usd": 72.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/cnhl-5200mah-4s-90c-14-8v-lipo-battery-ec5"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "5200mAh 6S",
+   "slug": "cnhl-5200mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 5200,
+    "c_rating": "90C",
+    "weight_g": 790.0,
+    "connector": "EC5",
+    "dimensions_mm": "160x45x55mm",
+    "energy_wh": 115.4,
+    "price_per_wh_usd": 0.94,
+    "price_usd": 107.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/cnhl-5200mah-6s-90c-22-2v-lipo-battery-ec5"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "6200mAh 6S",
+   "slug": "cnhl-6200mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 6200,
+    "c_rating": "90C",
+    "weight_g": 949.0,
+    "connector": "EC5",
+    "dimensions_mm": "160x46.8x60mm",
+    "energy_wh": 137.6,
+    "price_per_wh_usd": 0.89,
+    "price_usd": 122.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/cnhl-6200mah-6s-90c-22-2v-lipo-battery-ec5"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "9500mAh 4S",
+   "slug": "cnhl-9500mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 9500,
+    "c_rating": "90C",
+    "weight_g": 775.0,
+    "connector": "EC5",
+    "dimensions_mm": "180x48x42mm",
+    "energy_wh": 140.6,
+    "price_per_wh_usd": 1.02,
+    "price_usd": 143.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/cnhl-9500mah-4s-90c-14-8v-lipo-battery-ec5"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "Black Series 1100mAh 4S",
+   "slug": "cnhl-black-series-1100mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 1100,
+    "c_rating": "100C",
+    "weight_g": 146.0,
+    "connector": "XT60",
+    "dimensions_mm": "76x34x30mm",
+    "energy_wh": 16.3,
+    "price_per_wh_usd": 2.24,
+    "price_usd": 36.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/cnhl-black-series-14-8v-4s-1100mah-100c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "Black Series 1300mAh 6S",
+   "slug": "cnhl-black-series-1300-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S (22.2V)",
+    "capacity_mah": 1300,
+    "c_rating": "100C",
+    "weight_g": 207,
+    "dimensions_mm": "70x36x45",
+    "connector": "XT60",
+    "energy_wh": 28.9
+   },
+   "sources": [],
+   "note": "SEED DATA — verify against manufacturer page before launch"
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "Black Series 2000mAh 4S",
+   "slug": "cnhl-black-series-2000mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 2000,
+    "c_rating": "100C",
+    "weight_g": 232.0,
+    "connector": "XT60",
+    "dimensions_mm": "78x39x48mm",
+    "energy_wh": 29.6,
+    "price_per_wh_usd": 1.37,
+    "price_usd": 40.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/cnhl-black-series-14-8v-4s-2000mah-100c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "Black Series 2000mAh 6S",
+   "slug": "cnhl-black-series-2000mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 2000,
+    "c_rating": "100C",
+    "weight_g": 339.0,
+    "connector": "XT60",
+    "dimensions_mm": "78x39x71mm",
+    "energy_wh": 44.4,
+    "price_per_wh_usd": 1.28,
+    "price_usd": 56.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/cnhl-black-series-22-2v-6s-2000mah-100c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "Black Series V2.0 1300mAh 4S",
+   "slug": "cnhl-black-series-v2-0-1300mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 1300,
+    "c_rating": "130C",
+    "weight_g": 151.0,
+    "connector": "XT60",
+    "dimensions_mm": "74x33x31mm",
+    "energy_wh": 19.2,
+    "price_per_wh_usd": 1.27,
+    "price_usd": 24.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/cnhl-black-series-v2-0-14-8v-4s-1300mah-130c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "Black Series V2.0 1300mAh 6S",
+   "slug": "cnhl-black-series-v2-0-1300mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1300,
+    "c_rating": "130C",
+    "weight_g": 223.0,
+    "connector": "XT60",
+    "dimensions_mm": "77x33x48mm",
+    "energy_wh": 28.9,
+    "price_per_wh_usd": 1.26,
+    "price_usd": 36.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/cnhl-black-series-v2-0-1300mah-22-2v-130c-6s-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "Black Series V2.0 1500mAh 4S",
+   "slug": "cnhl-black-series-v2-0-1500mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 1500,
+    "c_rating": "130C",
+    "weight_g": 174.0,
+    "connector": "XT60",
+    "dimensions_mm": "76x33x36mm",
+    "energy_wh": 22.2,
+    "price_per_wh_usd": 1.42,
+    "price_usd": 31.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/cnhl-black-series-v2-0-14-8v-4s-1500mah-100c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "Black Series V2.0 1500mAh 6S",
+   "slug": "cnhl-black-series-v2-0-1500mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1500,
+    "c_rating": "130C",
+    "weight_g": 251.0,
+    "connector": "XT60",
+    "dimensions_mm": "75x33x52mm",
+    "energy_wh": 33.3,
+    "price_per_wh_usd": 1.31,
+    "price_usd": 43.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/cnhl-black-series-v2-0-1500mah-22-2v-6s-130c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "Black Series V2 1100mAh 6S",
+   "slug": "cnhl-black-series-v2-1100mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1100,
+    "c_rating": "130C",
+    "weight_g": 211.0,
+    "connector": "XT60",
+    "dimensions_mm": "75x35x39.5mm",
+    "energy_wh": 24.4,
+    "price_per_wh_usd": 1.35,
+    "price_usd": 32.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/cnhl-black-series-22-2v-6s-1100mah-100c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "MiniStar 1500mAh 4S",
+   "slug": "cnhl-ministar-1500mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 1500,
+    "c_rating": "120C",
+    "weight_g": 189.0,
+    "connector": "XT60",
+    "dimensions_mm": "75x34.5x39.5mm",
+    "energy_wh": 22.2,
+    "price_per_wh_usd": 1.64,
+    "price_usd": 36.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/cnhl-1500mah-120c-4s-ministar-li-po-battery"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "MiniStar 1800mAh 4S",
+   "slug": "cnhl-ministar-1800mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 1800,
+    "c_rating": "120C",
+    "weight_g": 209.0,
+    "connector": "XT60",
+    "dimensions_mm": "86x34x38.5mm",
+    "energy_wh": 26.6,
+    "price_per_wh_usd": 1.37,
+    "price_usd": 36.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/cnhl-ministar-14-8v-4s-1800mah-120c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "MiniStar 450mAh 3S",
+   "slug": "cnhl-ministar-450mah-3s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "3S",
+    "capacity_mah": 450,
+    "c_rating": "70C",
+    "weight_g": 49.0,
+    "connector": "XT30",
+    "dimensions_mm": "65x18x23mm",
+    "energy_wh": 5.0,
+    "price_per_wh_usd": 1.0,
+    "price_usd": 5.0
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/cnhl-450mah-3s-70c-11-1v-li-po-fpv-battery-for-2-and-3-quads-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "MiniStar 450mAh 4S",
+   "slug": "cnhl-ministar-450mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 450,
+    "c_rating": "70C",
+    "weight_g": 62.0,
+    "connector": "XT30",
+    "dimensions_mm": "65x18x30mm",
+    "energy_wh": 6.7,
+    "price_per_wh_usd": 0.54,
+    "price_usd": 3.6
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/cnhl-450mah-4s-70c-ministar-14-8v-li-po-fpv-battery-for-2-and-3-quads-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "MiniStar 650mAh 4S",
+   "slug": "cnhl-ministar-650mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 650,
+    "c_rating": "70C",
+    "weight_g": 87.0,
+    "connector": "XT30",
+    "dimensions_mm": "58x30x27mm",
+    "energy_wh": 9.6,
+    "price_per_wh_usd": 1.97,
+    "price_usd": 18.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/cnhl-650mah-4s-70c-ministar-fpv-lipo-for-2-3-quads-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "MiniStar 850mAh 4S",
+   "slug": "cnhl-ministar-850mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 850,
+    "c_rating": "70C",
+    "weight_g": 110.0,
+    "connector": "XT30",
+    "dimensions_mm": "62x30x33mm",
+    "energy_wh": 12.6,
+    "price_per_wh_usd": 1.91,
+    "price_usd": 23.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/cnhl-ministar-14-8v-4s-850mah-70c-lipo-micro-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "Speedy Pizza Series Pro 1500mAh 6S",
+   "slug": "cnhl-speedy-pizza-series-pro-1500mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1500,
+    "c_rating": "150C",
+    "weight_g": 247.0,
+    "connector": "XT60",
+    "dimensions_mm": "77x37x43mm",
+    "energy_wh": 33.3,
+    "price_per_wh_usd": 1.62,
+    "price_usd": 53.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/cnhl-speedy-pizza-series-pro-1500mah-22-2v-6s-150c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "SpeedyPizza 1200mAh 4S",
+   "slug": "cnhl-speedypizza-1200mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 1200,
+    "c_rating": "120C",
+    "weight_g": 152.0,
+    "connector": "XT60",
+    "dimensions_mm": "78x34x32mm",
+    "energy_wh": 17.8,
+    "price_per_wh_usd": 1.52,
+    "price_usd": 26.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/cnhl-speedy-pizza-14-8v-4s-1200mah-100c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "SpeedyPizza 1200mAh 6S",
+   "slug": "cnhl-speedypizza-1200mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1200,
+    "c_rating": "120C",
+    "weight_g": 208.0,
+    "connector": "XT60",
+    "dimensions_mm": "80x35x45mm",
+    "energy_wh": 26.6,
+    "price_per_wh_usd": 1.13,
+    "price_usd": 29.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/cnhl-speedy-pizza-22-2v-6s-1200mah-100c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "SpeedyPizza 1550mAh 4S",
+   "slug": "cnhl-speedypizza-1550mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 1550,
+    "c_rating": "100C",
+    "weight_g": 189.0,
+    "connector": "XT60",
+    "dimensions_mm": "77x40x35mm",
+    "energy_wh": 22.9,
+    "price_per_wh_usd": 1.18,
+    "price_usd": 26.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/cnhl-speedy-pizza-14-8v-4s-1550mah-100c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "SpeedyPizza 350mAh 1S",
+   "slug": "cnhl-speedypizza-350mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 350,
+    "c_rating": "75C",
+    "weight_g": 8.0,
+    "connector": "BT2.0",
+    "dimensions_mm": "67x11x6mm",
+    "energy_wh": 1.3,
+    "price_per_wh_usd": 18.04,
+    "price_usd": 23.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/cnhl-speedypizza-3-7v-1s-350mah-75c-lihv-battery-bt2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "SpeedyPizza 600mAh 3S",
+   "slug": "cnhl-speedypizza-600mah-3s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "3S",
+    "capacity_mah": 600,
+    "c_rating": "120C",
+    "weight_g": 53.0,
+    "connector": "XT30",
+    "dimensions_mm": "70x12x24mm",
+    "energy_wh": 6.7,
+    "price_per_wh_usd": 2.25,
+    "price_usd": 14.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/cnhl-speedypizza-11-1v-3s-600ah-120c-lipo-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "SpeedyPizza 600mAh 4S",
+   "slug": "cnhl-speedypizza-600mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 600,
+    "c_rating": "120C",
+    "weight_g": 67.0,
+    "connector": "XT30",
+    "dimensions_mm": "70x17x31.5mm",
+    "energy_wh": 8.9,
+    "price_per_wh_usd": 2.03,
+    "price_usd": 17.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/cnhl-speedypizza-14-8v-4s-600mah-120c-lipo-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "Ultra Black Series 1050mAh 6S",
+   "slug": "cnhl-ultra-black-series-1050mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1050,
+    "c_rating": "150C",
+    "weight_g": 180.0,
+    "connector": "XT60",
+    "dimensions_mm": "76x38x31mm",
+    "energy_wh": 23.3,
+    "price_per_wh_usd": 2.32,
+    "price_usd": 53.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/cnhl-ultra-black-series-22-2v-6s-1050mah-150c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "Ultra Black Series 1400mAh 6S",
+   "slug": "cnhl-ultra-black-series-1400mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1400,
+    "c_rating": "150C",
+    "weight_g": 239.0,
+    "connector": "XT60",
+    "dimensions_mm": "78x39x39.5mm",
+    "energy_wh": 31.1,
+    "price_per_wh_usd": 1.96,
+    "price_usd": 60.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/cnhl-ultra-black-series-22-2v-6s-1400mah-150c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "Ultra Black Series 1550mAh 4S",
+   "slug": "cnhl-ultra-black-series-1550mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 1550,
+    "c_rating": "150C",
+    "weight_g": 171.0,
+    "connector": "XT60",
+    "dimensions_mm": "78x39x31mm",
+    "energy_wh": 22.9,
+    "price_per_wh_usd": 1.72,
+    "price_usd": 39.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/cnhl-ultra-black-series-14-8v-4s-1550mah-150c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "CNHL",
+   "model": "Ultra Black Series 1550mAh 6S",
+   "slug": "cnhl-ultra-black-series-1550mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1550,
+    "c_rating": "150C",
+    "weight_g": 256.0,
+    "connector": "XT60",
+    "dimensions_mm": "80x40x46mm",
+    "energy_wh": 34.4,
+    "price_per_wh_usd": 1.82,
+    "price_usd": 62.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/cnhl-ultra-black-series-22-2v-6s-1550mah-150c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Dogcom",
+   "model": "1300mAh 4S",
+   "slug": "dogcom-1300mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 1300,
+    "c_rating": "150C",
+    "weight_g": 157.0,
+    "connector": "XT60",
+    "dimensions_mm": "79x39.5x26mm",
+    "energy_wh": 19.2,
+    "price_per_wh_usd": 1.45,
+    "price_usd": 27.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/dogcom-14-8v-4s-1300mah-150c-lipo-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Dogcom",
+   "model": "1300mAh 6S",
+   "slug": "dogcom-1300mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1300,
+    "c_rating": "150C",
+    "weight_g": 216.0,
+    "connector": "XT60",
+    "dimensions_mm": "78x38x37mm",
+    "energy_wh": 28.9,
+    "price_per_wh_usd": 1.59,
+    "price_usd": 45.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/dogcom-1300mah-6s-150c-lipo-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Dogcom",
+   "model": "1380mAh 6S",
+   "slug": "dogcom-1380mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1380,
+    "c_rating": "150C",
+    "weight_g": 223.0,
+    "connector": "XT60",
+    "dimensions_mm": "78x38x38.5mm",
+    "energy_wh": 30.6,
+    "price_per_wh_usd": 1.31,
+    "price_usd": 39.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/dogcom-1380mah-6s-22-2v-150c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Dogcom",
+   "model": "1550mAh 6S",
+   "slug": "dogcom-1550mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1550,
+    "c_rating": "150C",
+    "weight_g": 260.0,
+    "connector": "XT60",
+    "dimensions_mm": "78x38x43mm",
+    "energy_wh": 34.4,
+    "price_per_wh_usd": 1.7,
+    "price_usd": 58.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/dogcom-22-2v-6s-1550mah-150c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Dogcom",
+   "model": "1600mAh 6S",
+   "slug": "dogcom-1600mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1600,
+    "c_rating": "180C",
+    "weight_g": 241.0,
+    "connector": "XT60",
+    "energy_wh": 35.5,
+    "price_per_wh_usd": 1.55,
+    "price_usd": 54.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/dogcom-1600mah-6s-22-2v-180c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Dogcom",
+   "model": "1850mAh 4S",
+   "slug": "dogcom-1850mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 1850,
+    "c_rating": "150C",
+    "weight_g": 199.0,
+    "connector": "XT60",
+    "dimensions_mm": "78x38x37mm",
+    "energy_wh": 27.4,
+    "price_per_wh_usd": 1.79,
+    "price_usd": 48.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/dogcom-gnb-14-8v-4s-1850mah-150c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Dogcom",
+   "model": "1850mAh 6S",
+   "slug": "dogcom-1850mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1850,
+    "c_rating": "150C",
+    "weight_g": 292.0,
+    "connector": "XT60",
+    "dimensions_mm": "88x34x48mm",
+    "energy_wh": 41.1,
+    "price_per_wh_usd": 1.68,
+    "price_usd": 68.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/dogcom-gnb-22-2v-6s-1850mah-150c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Dogcom",
+   "model": "320mAh 1S",
+   "slug": "dogcom-320mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 320,
+    "c_rating": "75C",
+    "weight_g": 7.5,
+    "connector": "BT2.0",
+    "dimensions_mm": "64x11x7mm",
+    "energy_wh": 1.2,
+    "price_per_wh_usd": 7.39,
+    "price_usd": 8.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/dogcom-3-8v-1s-320mah-75c-lihv-battery-w-plastic-head-bt2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Dogcom",
+   "model": "560mAh 3S",
+   "slug": "dogcom-560mah-3s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "3S",
+    "capacity_mah": 560,
+    "c_rating": "150C",
+    "weight_g": 46.0,
+    "connector": "XT30",
+    "dimensions_mm": "63x18x20mm",
+    "energy_wh": 6.2,
+    "price_per_wh_usd": 2.73,
+    "price_usd": 16.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/dogcom-11-1v-3s-560mah-150c-lipo-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Dogcom",
+   "model": "560mAh 4S",
+   "slug": "dogcom-560mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 560,
+    "c_rating": "150C",
+    "weight_g": 58.0,
+    "connector": "XT30",
+    "dimensions_mm": "63x18x26mm",
+    "energy_wh": 8.3,
+    "price_per_wh_usd": 2.65,
+    "price_usd": 21.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/dogcom-14-8v-4s-560mah-150c-lipo-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Dogcom",
+   "model": "850mAh 4S",
+   "slug": "dogcom-850mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 850,
+    "c_rating": "150C",
+    "weight_g": 100.0,
+    "connector": "XT30",
+    "dimensions_mm": "58x30x34mm",
+    "energy_wh": 12.6,
+    "price_per_wh_usd": 2.15,
+    "price_usd": 26.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/dogcom-14-8v-4s-850mah-150c-lipo-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Dogcom",
+   "model": "MCK EDITION V2.0 1380mAh 6S",
+   "slug": "dogcom-mck-edition-v2-0-1380mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1380,
+    "c_rating": "160C",
+    "weight_g": 229.0,
+    "connector": "XT60",
+    "dimensions_mm": "80x39x36mm",
+    "energy_wh": 30.6,
+    "price_per_wh_usd": 5.12,
+    "price_usd": 156.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/3-pack-of-dogcom-mck-edition-v2-0-22-2v-6s-1380mah-160c-lipo-battery-xt60-1"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Dogcom",
+   "model": "SBang 1480mAh 6S",
+   "slug": "dogcom-sbang-1480mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1480,
+    "c_rating": "150C",
+    "weight_g": 239.0,
+    "connector": "XT60",
+    "dimensions_mm": "78x38x41mm",
+    "energy_wh": 32.9,
+    "price_per_wh_usd": 1.73,
+    "price_usd": 56.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/dogcom-sbang-22-2v-6s-1480mah-150c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Dogcom",
+   "model": "SBang V2 1480mAh 6S",
+   "slug": "dogcom-sbang-v2-1480mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1480,
+    "c_rating": "160C",
+    "weight_g": 244.0,
+    "connector": "XT60",
+    "dimensions_mm": "81x39x37.5mm",
+    "energy_wh": 32.9,
+    "price_per_wh_usd": 1.86,
+    "price_usd": 60.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/dogcom-sbang-v2-22-2v-6s-1480mah-160c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Dogcom",
+   "model": "Ultra Series 1480mAh 6S",
+   "slug": "dogcom-ultra-series-1480mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1480,
+    "c_rating": "150C",
+    "weight_g": 216.0,
+    "connector": "XT60",
+    "dimensions_mm": "80x39x35mm",
+    "energy_wh": 32.9,
+    "price_per_wh_usd": 1.52,
+    "price_usd": 49.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/dogcom-ultra-series-1480mah-6s-22-2v-150c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Dogcom",
+   "model": "Ultra Series 1550mAh 6S",
+   "slug": "dogcom-ultra-series-1550mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1550,
+    "c_rating": "150C",
+    "weight_g": 239.0,
+    "connector": "XT60",
+    "energy_wh": 34.4,
+    "price_per_wh_usd": 1.45,
+    "price_usd": 49.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/dogcom-ultra-series-1550mah-6s-22-2v-150c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Dogcom",
+   "model": "Ultra Series 1700mAh 6S",
+   "slug": "dogcom-ultra-series-1700mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1700,
+    "c_rating": "150C",
+    "weight_g": 253.0,
+    "connector": "XT60",
+    "energy_wh": 37.7,
+    "price_per_wh_usd": 1.4,
+    "price_usd": 52.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/dogcom-ultra-series-1700mah-6s-22-2v-150c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Dogcom",
+   "model": "w/ Cabled 300mAh 1S",
+   "slug": "dogcom-w-cabled-300mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 300,
+    "c_rating": "75C",
+    "weight_g": 7.5,
+    "connector": "BT2.0",
+    "dimensions_mm": "62x11x7mm",
+    "energy_wh": 1.1,
+    "price_per_wh_usd": 7.45,
+    "price_usd": 8.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/dogcom-300mah-1s-hv-75c-lipo-bt2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Flywoo",
+   "model": "18650 3000mAh 4S",
+   "slug": "flywoo-18650-3000mah-4s",
+   "specs": {
+    "chemistry": "Li-ion",
+    "cells": "4S",
+    "capacity_mah": 3000,
+    "c_rating": "10C",
+    "weight_g": 198.0,
+    "connector": "XT30",
+    "dimensions_mm": "68x37x37mm",
+    "energy_wh": 43.2,
+    "price_per_wh_usd": 1.45,
+    "price_usd": 62.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/flywoo-14-8v-4s-18650-3000mah-10c-li-ion-battery-for-explorer-lr-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Flywoo",
+   "model": "Explorer 450mAh 1S",
+   "slug": "flywoo-explorer-450mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 450,
+    "c_rating": "80C",
+    "weight_g": 13.2,
+    "connector": "GNB27",
+    "energy_wh": 1.7,
+    "price_per_wh_usd": 15.78,
+    "price_usd": 26.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/flywoo-explorer-4-35v-1s-450mah-80c-lihv-battery-4-pack-gnb27"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Flywoo",
+   "model": "Explorer V2 450mAh 1S",
+   "slug": "flywoo-explorer-v2-450mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 450,
+    "c_rating": "80C",
+    "weight_g": 13.2,
+    "connector": "A30",
+    "energy_wh": 1.7,
+    "price_per_wh_usd": 19.0,
+    "price_usd": 32.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/flywoo-explorer-3-8v-1s-450mah-80c-lihv-battery-4-pack-gnb27"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Flywoo",
+   "model": "Explorer V2 750mAh 1S",
+   "slug": "flywoo-explorer-v2-750mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 750,
+    "c_rating": "80C",
+    "weight_g": 14.0,
+    "connector": "A30",
+    "energy_wh": 2.8,
+    "price_per_wh_usd": 12.8,
+    "price_usd": 36.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/flywoo-explorer-v2-3-8v-1s-750mah-80c-lihv-battery-4-pack-a30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "10 PACK of RDQ Series / - Cabled 380mAh 1S",
+   "slug": "gnb-10-pack-of-rdq-series-cabled-380mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 380,
+    "c_rating": "60C",
+    "weight_g": 8.0,
+    "connector": "PH2.0",
+    "dimensions_mm": "62x11.1x6.36mm",
+    "energy_wh": 1.4,
+    "price_per_wh_usd": 6.23,
+    "price_usd": 9.0
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/10-pack-rdq-series-3-8v-1s-380mah-1s-60c-lihv-whoop-micro-battery-ph2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "10 PACK of RDQ Series / - Plastic Head 380mAh 1S",
+   "slug": "gnb-10-pack-of-rdq-series-plastic-head-380mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 380,
+    "c_rating": "60C",
+    "weight_g": 8.0,
+    "connector": "PH2.0",
+    "dimensions_mm": "62x11.1x6.36mm",
+    "energy_wh": 1.4,
+    "price_per_wh_usd": 6.23,
+    "price_usd": 9.0
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/10-pack-of-rdq-series-3-8v-1s-380mah-1s-60c-lihv-whoop-micro-battery-ph2-0-plastic-head"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 1100mAh 4S",
+   "slug": "gnb-gaoneng-1100mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 1100,
+    "c_rating": "120C",
+    "weight_g": 133.0,
+    "connector": "XT60",
+    "dimensions_mm": "76x35x26mm",
+    "energy_wh": 16.3,
+    "price_per_wh_usd": 1.6,
+    "price_usd": 25.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-14-8v-4s-1100mah-120c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 1100mAh 6S",
+   "slug": "gnb-gaoneng-1100mah-6s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "6S",
+    "capacity_mah": 1100,
+    "c_rating": "60C",
+    "weight_g": 130.0,
+    "connector": "XT30",
+    "dimensions_mm": "64x25x49mm",
+    "energy_wh": 25.1,
+    "price_per_wh_usd": 1.55,
+    "price_usd": 38.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-22-8v-6s-1100mah-60c-lipo-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 1100mAh 8S",
+   "slug": "gnb-gaoneng-1100mah-8s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "8S",
+    "capacity_mah": 1100,
+    "c_rating": "120C",
+    "weight_g": 227.0,
+    "connector": "XT60",
+    "dimensions_mm": "77x35x50mm",
+    "energy_wh": 33.4,
+    "price_per_wh_usd": 1.49,
+    "price_usd": 49.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-29-6v-8s-1100mah-120c-lipo-battery-xt60",
+    "https://www.racedayquads.com/products/gnb-30-4v-8s-1100mah-120c-lihv-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 1300mAh 4S",
+   "slug": "gnb-gaoneng-1300mah-4s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "4S",
+    "capacity_mah": 1300,
+    "c_rating": "120C",
+    "weight_g": 129.0,
+    "connector": "XT60",
+    "dimensions_mm": "80x38x23.5mm",
+    "energy_wh": 19.8,
+    "price_per_wh_usd": 1.77,
+    "price_usd": 34.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-15-2v-4s-1300mah-120c-lihv-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 1300mAh 6S",
+   "slug": "gnb-gaoneng-1300mah-6s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "6S",
+    "capacity_mah": 1300,
+    "c_rating": "120C",
+    "weight_g": 189.0,
+    "connector": "XT60",
+    "dimensions_mm": "80x38x34mm",
+    "energy_wh": 29.6,
+    "price_per_wh_usd": 1.55,
+    "price_usd": 45.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-22-8v-6s-1300mah-120c-lihv-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 1350mAh 6S",
+   "slug": "gnb-gaoneng-1350mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1350,
+    "c_rating": "100C",
+    "weight_g": 211.0,
+    "connector": "XT60",
+    "dimensions_mm": "72x34x45mm",
+    "energy_wh": 30.0,
+    "price_per_wh_usd": 1.27,
+    "price_usd": 37.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-22-2v-6s-1350mah-100c-lihv-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 1400mAh 6S",
+   "slug": "gnb-gaoneng-1400mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1400,
+    "c_rating": "160C",
+    "weight_g": 269.0,
+    "connector": "XT60",
+    "energy_wh": 31.1,
+    "price_per_wh_usd": 1.45,
+    "price_usd": 44.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-22-2v-6s-1400mah-160c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 1500mAh 4S",
+   "slug": "gnb-gaoneng-1500mah-4s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "4S",
+    "capacity_mah": 1500,
+    "c_rating": "120C",
+    "weight_g": 146.0,
+    "connector": "XT60",
+    "dimensions_mm": "79x38x26mm",
+    "energy_wh": 22.8,
+    "price_per_wh_usd": 1.47,
+    "price_usd": 33.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-15-2v-4s-1500mah-120c-lihv-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 1500mAh 6S",
+   "slug": "gnb-gaoneng-1500mah-6s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "6S",
+    "capacity_mah": 1500,
+    "c_rating": "120C",
+    "weight_g": 218.0,
+    "connector": "XT60",
+    "dimensions_mm": "79x38x38mm",
+    "energy_wh": 34.2,
+    "price_per_wh_usd": 1.43,
+    "price_usd": 48.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-22-8v-6s-1500mah-120c-lihv-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 1530mAh 4S",
+   "slug": "gnb-gaoneng-1530mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 1530,
+    "c_rating": "160C",
+    "weight_g": 177.0,
+    "connector": "XT60",
+    "dimensions_mm": "80x38x31mm",
+    "energy_wh": 22.6,
+    "price_per_wh_usd": 1.5,
+    "price_usd": 33.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-14-8v-4s-1530mah-160c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 1530mAh 6S",
+   "slug": "gnb-gaoneng-1530mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1530,
+    "c_rating": "160C",
+    "weight_g": 253.0,
+    "connector": "XT60",
+    "dimensions_mm": "80x38x45mm",
+    "energy_wh": 34.0,
+    "price_per_wh_usd": 1.32,
+    "price_usd": 44.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-22-2v-6s-1530mah-160c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 1530mAh 8S",
+   "slug": "gnb-gaoneng-1530mah-8s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "8S",
+    "capacity_mah": 1530,
+    "c_rating": "160C",
+    "weight_g": 330.0,
+    "connector": "XT60",
+    "dimensions_mm": "80x38x59mm",
+    "energy_wh": 45.3,
+    "price_per_wh_usd": 1.31,
+    "price_usd": 59.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-29-6v-8s-1530mah-160c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 1550mAh 4S",
+   "slug": "gnb-gaoneng-1550mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 1550,
+    "c_rating": "120C",
+    "weight_g": 182.0,
+    "connector": "XT60",
+    "dimensions_mm": "76x35x36mm",
+    "energy_wh": 22.9,
+    "price_per_wh_usd": 1.12,
+    "price_usd": 25.79
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-14-8v-4s-1550mah-120c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 1550mAh 6S",
+   "slug": "gnb-gaoneng-1550mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1550,
+    "c_rating": "120C",
+    "weight_g": 259.0,
+    "connector": "XT60",
+    "dimensions_mm": "76x35x53mm",
+    "energy_wh": 34.4,
+    "price_per_wh_usd": 1.5,
+    "price_usd": 51.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-22-2v-6s-1550mah-120c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 1850mAh 4S",
+   "slug": "gnb-gaoneng-1850mah-4s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "4S",
+    "capacity_mah": 1850,
+    "c_rating": "120C",
+    "weight_g": 180.0,
+    "connector": "XT60",
+    "dimensions_mm": "80x39x32mm",
+    "energy_wh": 28.1,
+    "price_per_wh_usd": 1.37,
+    "price_usd": 38.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-15-2v-4s-1850mah-120c-lihv-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 1850mAh 6S",
+   "slug": "gnb-gaoneng-1850mah-6s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "6S",
+    "capacity_mah": 1850,
+    "c_rating": "120C",
+    "weight_g": 257.0,
+    "connector": "XT60",
+    "dimensions_mm": "81x39x47mm",
+    "energy_wh": 42.2,
+    "price_per_wh_usd": 1.35,
+    "price_usd": 56.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-22-8v-6s-1850mah-120c-lihv-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 300mAh 1S",
+   "slug": "gnb-gaoneng-300mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 300,
+    "c_rating": "60C",
+    "weight_g": 7.0,
+    "connector": "PH2.0",
+    "dimensions_mm": "50x11.5x6.5mm",
+    "energy_wh": 1.1,
+    "price_per_wh_usd": 3.94,
+    "price_usd": 4.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-3-8v-1s-300mah-60c-lipo-whoop-micro-battery-w-cabled-connector-ph2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 300mAh 3S",
+   "slug": "gnb-gaoneng-300mah-3s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "3S",
+    "capacity_mah": 300,
+    "c_rating": "80C",
+    "weight_g": 28.0,
+    "connector": "XT30",
+    "dimensions_mm": "53x17x18mm",
+    "energy_wh": 3.4,
+    "price_per_wh_usd": 2.92,
+    "price_usd": 9.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/1x-gaoneng-gnb-11-4v-3s-300mah-80c-lihv-micro-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 300mAh 4S",
+   "slug": "gnb-gaoneng-300mah-4s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "4S",
+    "capacity_mah": 300,
+    "c_rating": "80C",
+    "weight_g": 36.0,
+    "connector": "XT30",
+    "dimensions_mm": "53x17x24mm",
+    "energy_wh": 4.6,
+    "price_per_wh_usd": 2.96,
+    "price_usd": 13.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-15-2v-4s-300mah-80c-lihv-micro-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 380mAh 1S",
+   "slug": "gnb-gaoneng-380mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 380,
+    "c_rating": "90C",
+    "weight_g": 10.0,
+    "connector": "A30",
+    "dimensions_mm": "49x17x6.7mm",
+    "energy_wh": 1.4,
+    "price_per_wh_usd": 4.49,
+    "price_usd": 6.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-3-8v-1s-380mah-90c-lihv-whoop-micro-battery-w-plastic-head-a30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 380mAh 2S",
+   "slug": "gnb-gaoneng-380mah-2s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "2S",
+    "capacity_mah": 380,
+    "c_rating": "90C",
+    "weight_g": 22.0,
+    "connector": "XT30",
+    "dimensions_mm": "52x17x13mm",
+    "energy_wh": 2.9,
+    "price_per_wh_usd": 3.29,
+    "price_usd": 9.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-7-6v-2s-380mah-90c-lihv-micro-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 380mAh 3S",
+   "slug": "gnb-gaoneng-380mah-3s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "3S",
+    "capacity_mah": 380,
+    "c_rating": "90C",
+    "weight_g": 32.0,
+    "connector": "XT30",
+    "dimensions_mm": "55x17x20mm",
+    "energy_wh": 4.3,
+    "price_per_wh_usd": 2.88,
+    "price_usd": 12.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-11-4v-3s-380mah-90c-lihv-micro-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 380mAh 4S",
+   "slug": "gnb-gaoneng-380mah-4s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "4S",
+    "capacity_mah": 380,
+    "c_rating": "90C",
+    "weight_g": 43.0,
+    "connector": "XT30",
+    "dimensions_mm": "54x17x27mm",
+    "energy_wh": 5.8,
+    "price_per_wh_usd": 2.85,
+    "price_usd": 16.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-15-2v-4s-380mah-90c-lihv-micro-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 450mAh 1S",
+   "slug": "gnb-gaoneng-450mah-1s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "1S",
+    "capacity_mah": 450,
+    "c_rating": "80C",
+    "weight_g": 12.0,
+    "connector": "PH2.0",
+    "dimensions_mm": "59x17x6mm",
+    "energy_wh": 1.7,
+    "price_per_wh_usd": 0.6,
+    "price_usd": 1.0
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-3-7v-1s-450mah-80c-lihv-whoop-micro-battery-w-plastic-head-ph2-0",
+    "https://www.racedayquads.com/products/gaoneng-gnb-3-7v-1s-450mah-80c-lipo-whoop-micro-battery-w-plastic-head-ph2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 450mAh 2S",
+   "slug": "gnb-gaoneng-450mah-2s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "2S",
+    "capacity_mah": 450,
+    "c_rating": "80C",
+    "weight_g": 27.0,
+    "connector": "XT30",
+    "dimensions_mm": "64x17x13mm",
+    "energy_wh": 3.4,
+    "price_per_wh_usd": 3.21,
+    "price_usd": 10.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-7-6v-2s-450mah-80c-lihv-micro-battery-long-type-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 450mAh 3S",
+   "slug": "gnb-gaoneng-450mah-3s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "3S",
+    "capacity_mah": 450,
+    "c_rating": "80C",
+    "weight_g": 40.0,
+    "connector": "XT30",
+    "dimensions_mm": "64x17.5x19mm",
+    "energy_wh": 5.0,
+    "price_per_wh_usd": 2.7,
+    "price_usd": 13.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-11-1v-3s-450mah-80c-lihv-micro-battery-long-type-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 450mAh 4S",
+   "slug": "gnb-gaoneng-450mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 450,
+    "c_rating": "80C",
+    "weight_g": 51.0,
+    "connector": "XT30",
+    "dimensions_mm": "65x17x25mm",
+    "energy_wh": 6.7,
+    "price_per_wh_usd": 2.48,
+    "price_usd": 16.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-14-8v-4s-450mah-80c-lipo-micro-battery-long-type-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 450mAh 6S",
+   "slug": "gnb-gaoneng-450mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 450,
+    "c_rating": "80C",
+    "weight_g": 77.0,
+    "connector": "XT30",
+    "dimensions_mm": "66x17x39mm",
+    "energy_wh": 10.0,
+    "price_per_wh_usd": 2.5,
+    "price_usd": 24.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-22-2v-6s-450mah-80c-lipo-micro-battery-long-type-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 530mAh 1S",
+   "slug": "gnb-gaoneng-530mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 530,
+    "c_rating": "90C",
+    "weight_g": 12.0,
+    "connector": "A30",
+    "dimensions_mm": "59x17.5x6.5mm",
+    "energy_wh": 2.0,
+    "price_per_wh_usd": 3.47,
+    "price_usd": 6.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-3-8v-1s-530mah-90c-lihv-whoop-micro-battery-a30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 530mAh 2S",
+   "slug": "gnb-gaoneng-530mah-2s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "2S",
+    "capacity_mah": 530,
+    "c_rating": "90C",
+    "weight_g": 26.0,
+    "connector": "XT30",
+    "dimensions_mm": "64x17x13mm",
+    "energy_wh": 4.0,
+    "price_per_wh_usd": 2.73,
+    "price_usd": 10.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-7-6v-2s-530mah-90c-lihv-micro-battery-long-type-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 550mAh 1S",
+   "slug": "gnb-gaoneng-550mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 550,
+    "c_rating": "100C",
+    "weight_g": 13.5,
+    "connector": "A30",
+    "dimensions_mm": "65x18x6mm",
+    "energy_wh": 2.1,
+    "price_per_wh_usd": 3.58,
+    "price_usd": 7.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-3-8v-1s-550mah-100c-lihv-whoop-micro-battery-w-plastic-head-a30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 550mAh 3S",
+   "slug": "gnb-gaoneng-550mah-3s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "3S",
+    "capacity_mah": 550,
+    "c_rating": "100C",
+    "weight_g": 43.0,
+    "connector": "XT30",
+    "dimensions_mm": "70x18x18mm",
+    "energy_wh": 6.3,
+    "price_per_wh_usd": 2.39,
+    "price_usd": 14.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-11-4v-3s-550mah-100c-lihv-micro-battery-long-type-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 550mAh 4S",
+   "slug": "gnb-gaoneng-550mah-4s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "4S",
+    "capacity_mah": 550,
+    "c_rating": "100C",
+    "weight_g": 56.0,
+    "connector": "XT30",
+    "dimensions_mm": "71x18x24mm",
+    "energy_wh": 8.4,
+    "price_per_wh_usd": 2.33,
+    "price_usd": 19.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-15-2v-4s-550mah-100c-lipo-micro-battery-long-type-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 5C 5000mAh 2S",
+   "slug": "gnb-gaoneng-5c-5000mah-2s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "2S",
+    "capacity_mah": 5000,
+    "c_rating": "5C",
+    "weight_g": 178.0,
+    "connector": "XT60",
+    "dimensions_mm": "81x53x20mm",
+    "energy_wh": 37.0,
+    "price_per_wh_usd": 0.73,
+    "price_usd": 26.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-7-4v-2s-5000mah-5c-lipo-battery-w-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 650mAh 2S",
+   "slug": "gnb-gaoneng-650mah-2s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "2S",
+    "capacity_mah": 650,
+    "c_rating": "120C",
+    "weight_g": 36.0,
+    "connector": "XT30",
+    "dimensions_mm": "61x30x11mm",
+    "energy_wh": 4.9,
+    "price_per_wh_usd": 2.53,
+    "price_usd": 12.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-7-6v-2s-930mah-120c-lihv-micro-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 650mAh 3S",
+   "slug": "gnb-gaoneng-650mah-3s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "3S",
+    "capacity_mah": 650,
+    "c_rating": "120C",
+    "weight_g": 53.0,
+    "connector": "XT30",
+    "dimensions_mm": "63x30x16mm",
+    "energy_wh": 7.4,
+    "price_per_wh_usd": 2.23,
+    "price_usd": 16.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-11-4v-3s-930mah-120c-lihv-micro-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 650mAh 4S",
+   "slug": "gnb-gaoneng-650mah-4s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "4S",
+    "capacity_mah": 650,
+    "c_rating": "120C",
+    "weight_g": 70.0,
+    "connector": "XT30",
+    "dimensions_mm": "63x30x21mm",
+    "energy_wh": 9.9,
+    "price_per_wh_usd": 2.12,
+    "price_usd": 20.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-15-2v-4s-650mah-120c-lihv-micro-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 660mAh 1S",
+   "slug": "gnb-gaoneng-660mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 660,
+    "c_rating": "90C",
+    "weight_g": 15.5,
+    "connector": "A30",
+    "dimensions_mm": "60x17.5x8mm",
+    "energy_wh": 2.5,
+    "price_per_wh_usd": 2.99,
+    "price_usd": 7.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-3-8v-1s-660mah-90c-lihv-whoop-micro-battery-w-plastic-head-a30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 660mAh 2S",
+   "slug": "gnb-gaoneng-660mah-2s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "2S",
+    "capacity_mah": 660,
+    "c_rating": "90C",
+    "weight_g": 34.0,
+    "connector": "XT30",
+    "energy_wh": 5.0,
+    "price_per_wh_usd": 2.49,
+    "price_usd": 12.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-7-6v-2s-660mah-90c-lihv-micro-battery-long-type-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 660mAh 3S",
+   "slug": "gnb-gaoneng-660mah-3s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "3S",
+    "capacity_mah": 660,
+    "c_rating": "90C",
+    "weight_g": 49.0,
+    "connector": "XT30",
+    "dimensions_mm": "65x18x23.5mm",
+    "energy_wh": 7.5,
+    "price_per_wh_usd": 2.39,
+    "price_usd": 17.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-11-4v-3s-660mah-90c-lihv-micro-battery-long-type-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 660mAh 4S",
+   "slug": "gnb-gaoneng-660mah-4s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "4S",
+    "capacity_mah": 660,
+    "c_rating": "90C",
+    "weight_g": 63.0,
+    "connector": "XT30",
+    "dimensions_mm": "65x18x31mm",
+    "energy_wh": 10.0,
+    "price_per_wh_usd": 2.04,
+    "price_usd": 20.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-15-2v-4s-660mah-90c-lihv-micro-battery-long-type-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 660mAh 6S",
+   "slug": "gnb-gaoneng-660mah-6s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "6S",
+    "capacity_mah": 660,
+    "c_rating": "90C",
+    "weight_g": 94.0,
+    "connector": "XT30",
+    "dimensions_mm": "65x18x47mm",
+    "energy_wh": 15.0,
+    "price_per_wh_usd": 2.09,
+    "price_usd": 31.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-22-8v-6s-660mah-90c-lihv-micro-battery-long-type-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 720mAh 1S",
+   "slug": "gnb-gaoneng-720mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 720,
+    "c_rating": "100C",
+    "weight_g": 16.0,
+    "connector": "A30",
+    "dimensions_mm": "65x18x7.5mm",
+    "energy_wh": 2.7,
+    "price_per_wh_usd": 3.29,
+    "price_usd": 8.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-3-8v-1s-720mah-100c-lihv-whoop-micro-battery-w-plastic-head-a30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 720mAh 2S",
+   "slug": "gnb-gaoneng-720mah-2s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "2S",
+    "capacity_mah": 720,
+    "c_rating": "100C",
+    "weight_g": 36.0,
+    "connector": "XT30",
+    "dimensions_mm": "70x18x14.5mm",
+    "energy_wh": 5.5,
+    "price_per_wh_usd": 2.1,
+    "price_usd": 11.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-7-6v-2s-720mah-100c-lihv-micro-battery-long-type-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 720mAh 3S",
+   "slug": "gnb-gaoneng-720mah-3s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "3S",
+    "capacity_mah": 720,
+    "c_rating": "100C",
+    "weight_g": 54.0,
+    "connector": "XT30",
+    "dimensions_mm": "71x18x22mm",
+    "energy_wh": 8.2,
+    "price_per_wh_usd": 2.07,
+    "price_usd": 16.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-11-4v-3s-720mah-100c-lihv-micro-battery-long-type-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 720mAh 4S",
+   "slug": "gnb-gaoneng-720mah-4s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "4S",
+    "capacity_mah": 720,
+    "c_rating": "100C",
+    "weight_g": 72.0,
+    "connector": "XT30",
+    "dimensions_mm": "71x18x30mm",
+    "energy_wh": 10.9,
+    "price_per_wh_usd": 1.92,
+    "price_usd": 20.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-14-8v-4s-720mah-100c-lihv-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 720mAh 6S",
+   "slug": "gnb-gaoneng-720mah-6s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "6S",
+    "capacity_mah": 720,
+    "c_rating": "100C",
+    "weight_g": 106.0,
+    "connector": "XT30",
+    "energy_wh": 16.4,
+    "price_per_wh_usd": 1.98,
+    "price_usd": 32.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-22-8v-6s-720mah-100c-lihv-micro-battery-long-type-xt30",
+    "https://www.racedayquads.com/products/rdq-series-22-8v-6s-720mah-100c-lihv-whoop-micro-battery-xt30"
+   ],
+   "note": "Size withheld: the listing prints \"Pack Dimension: 44x8x72mm (HxWxL)\" beside \"Net Weight: 106g (+/-4g)\", and 106 g in 25.3 cm3 is 4.18 g/cm3 - denser than the 2.7-2.9 of a bare 18650 cell, so no pack of cells is that size. The weight is the figure that survives its other check (155 Wh/kg, ordinary for a 6S LiHV micro pack), and the 8 is the suspect figure: the RDQ Series 720mAh 6S sold beside it - same capacity, cell count and C-rating - prints 74x44x18.5mm at 103 g. That is a different product, so its 18.5 is not written here. Gaoneng publishes no product page of its own - gnbbattery.com serves no catalogue - so there is no second figure to take"
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 850mAh 2S",
+   "slug": "gnb-gaoneng-850mah-2s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "2S",
+    "capacity_mah": 850,
+    "c_rating": "60C",
+    "weight_g": 38.0,
+    "connector": "XT30",
+    "dimensions_mm": "70x18x18mm",
+    "energy_wh": 6.5,
+    "price_per_wh_usd": 1.93,
+    "price_usd": 12.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-7-6v-2s-850mah-60c-lihv-micro-battery-long-type-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 850mAh 3S",
+   "slug": "gnb-gaoneng-850mah-3s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "3S",
+    "capacity_mah": 850,
+    "c_rating": "120C",
+    "weight_g": 68.0,
+    "connector": "XT30",
+    "dimensions_mm": "63x30x20mm",
+    "energy_wh": 9.7,
+    "price_per_wh_usd": 1.96,
+    "price_usd": 18.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-11-4v-3s-850mah-120c-lihv-micro-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 850mAh 4S",
+   "slug": "gnb-gaoneng-850mah-4s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "4S",
+    "capacity_mah": 850,
+    "c_rating": "60C",
+    "weight_g": 73.0,
+    "connector": "XT30",
+    "dimensions_mm": "73x18x32mm",
+    "energy_wh": 12.9,
+    "price_per_wh_usd": 1.7,
+    "price_usd": 21.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-15-2v-4s-850mah-60c-lihv-micro-battery-long-type-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 850mAh 6S",
+   "slug": "gnb-gaoneng-850mah-6s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "6S",
+    "capacity_mah": 850,
+    "c_rating": "120C",
+    "weight_g": 130.0,
+    "connector": "XT30",
+    "dimensions_mm": "64x30x40mm",
+    "energy_wh": 19.4,
+    "price_per_wh_usd": 1.78,
+    "price_usd": 34.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-22-8v-6s-850mah-120c-lihv-micro-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 930mAh 4S",
+   "slug": "gnb-gaoneng-930mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 930,
+    "c_rating": "120C",
+    "weight_g": 100.0,
+    "connector": "XT30",
+    "dimensions_mm": "65x30x30mm",
+    "energy_wh": 13.8,
+    "price_per_wh_usd": 1.74,
+    "price_usd": 23.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-14-8v-4s-930mah-120c-lipo-micro-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng 930mAh 6S",
+   "slug": "gnb-gaoneng-930mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 930,
+    "c_rating": "120C",
+    "weight_g": 148.0,
+    "connector": "XT30",
+    "dimensions_mm": "65x30x45mm",
+    "energy_wh": 20.6,
+    "price_per_wh_usd": 1.94,
+    "price_usd": 39.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-22-2v-6s-930mah-120c-lipo-micro-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng (Square Type) 650mAh 2S",
+   "slug": "gnb-gaoneng-square-type-650mah-2s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "2S",
+    "capacity_mah": 650,
+    "c_rating": "80C",
+    "weight_g": 44.0,
+    "connector": "XT30",
+    "dimensions_mm": "62x28x14mm",
+    "energy_wh": 4.8,
+    "price_per_wh_usd": 2.39,
+    "price_usd": 11.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-7-4v-2s-650mah-80c-lipo-micro-battery-square-type-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng (Square Type) 650mAh 4S",
+   "slug": "gnb-gaoneng-square-type-650mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 650,
+    "c_rating": "80C",
+    "weight_g": 79.0,
+    "connector": "XT30",
+    "dimensions_mm": "64x28x26mm",
+    "energy_wh": 9.6,
+    "price_per_wh_usd": 2.13,
+    "price_usd": 20.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-14-8v-4s-650mah-80c-lipo-micro-battery-square-type-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng (Square Type) 650mAh 6S",
+   "slug": "gnb-gaoneng-square-type-650mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 650,
+    "c_rating": "80C",
+    "weight_g": 118.0,
+    "connector": "XT30",
+    "dimensions_mm": "65x28x39mm",
+    "energy_wh": 14.4,
+    "price_per_wh_usd": 2.11,
+    "price_usd": 30.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-22-2v-6s-650mah-80c-lipo-micro-battery-square-type-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng (Square Type) 850mAh 3S",
+   "slug": "gnb-gaoneng-square-type-850mah-3s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "3S",
+    "capacity_mah": 850,
+    "c_rating": "80C",
+    "weight_g": 80.0,
+    "connector": "XT30",
+    "dimensions_mm": "63x30x24mm",
+    "energy_wh": 9.4,
+    "price_per_wh_usd": 1.8,
+    "price_usd": 16.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-11-1v-3s-850mah-80c-lipo-micro-battery-square-type-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng (Square Type) 850mAh 4S",
+   "slug": "gnb-gaoneng-square-type-850mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 850,
+    "c_rating": "80C",
+    "weight_g": 102.0,
+    "connector": "XT30",
+    "dimensions_mm": "64x30x31mm",
+    "energy_wh": 12.6,
+    "price_per_wh_usd": 1.75,
+    "price_usd": 21.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-14-8v-4s-850mah-80c-lipo-micro-battery-square-type-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng (Square Type) 850mAh 6S",
+   "slug": "gnb-gaoneng-square-type-850mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 850,
+    "c_rating": "80C",
+    "weight_g": 150.0,
+    "connector": "XT30",
+    "dimensions_mm": "65x30x45mm",
+    "energy_wh": 18.9,
+    "price_per_wh_usd": 1.72,
+    "price_usd": 32.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-22-2v-6s-850mah-80c-lipo-micro-battery-square-type-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng / w 450mAh 1S",
+   "slug": "gnb-gaoneng-w-450mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 450,
+    "c_rating": "80C",
+    "weight_g": 13.3,
+    "connector": "PH2.0",
+    "dimensions_mm": "59.6x18.4x6.9mm",
+    "energy_wh": 1.7,
+    "price_per_wh_usd": 3.5,
+    "price_usd": 5.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-3-8v-1s-450mah-80c-lihv-whoop-micro-battery-w-ph2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng w 450mAh 2S",
+   "slug": "gnb-gaoneng-w-450mah-2s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "2S",
+    "capacity_mah": 450,
+    "c_rating": "80C",
+    "weight_g": 28.0,
+    "connector": "XT30",
+    "dimensions_mm": "61x17x14mm",
+    "energy_wh": 3.3,
+    "price_per_wh_usd": 3.0,
+    "price_usd": 9.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-7-4v-2s-450mah-80c-lipo-whoop-micro-battery-w-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng / w 550mAh 1S",
+   "slug": "gnb-gaoneng-w-550mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 550,
+    "c_rating": "100C",
+    "weight_g": 13.5,
+    "connector": "PH2.0",
+    "dimensions_mm": "65x18x6mm",
+    "energy_wh": 2.1,
+    "price_per_wh_usd": 2.63,
+    "price_usd": 5.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-3-8v-1s-550mah-100c-lihv-whoop-micro-battery-w-ph2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng w 550mAh 2S",
+   "slug": "gnb-gaoneng-w-550mah-2s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "2S",
+    "capacity_mah": 550,
+    "c_rating": "100C",
+    "weight_g": 29.0,
+    "connector": "XT30",
+    "dimensions_mm": "69x18x12mm",
+    "energy_wh": 4.2,
+    "price_per_wh_usd": 2.51,
+    "price_usd": 10.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-7-4v-2s-550mah-100c-lihv-micro-battery-w-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng / w 660mAh 1S",
+   "slug": "gnb-gaoneng-w-660mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 660,
+    "c_rating": "90C",
+    "weight_g": 15.0,
+    "connector": "PH2.0",
+    "energy_wh": 2.5,
+    "price_per_wh_usd": 2.79,
+    "price_usd": 6.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-3-8v-1s-660mah-90c-lihv-whoop-micro-battery-w-ph2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng / w/ Cabled 300mAh 1S",
+   "slug": "gnb-gaoneng-w-cabled-300mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 300,
+    "c_rating": "80C",
+    "weight_g": 8.5,
+    "connector": "PH2.0",
+    "dimensions_mm": "48x17x6mm",
+    "energy_wh": 1.1,
+    "price_per_wh_usd": 3.06,
+    "price_usd": 3.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-3-8v-1s-300mah-80c-lihv-whoop-micro-battery-w-cabled-connector-ph2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng / w/ Cabled 380mAh 1S",
+   "slug": "gnb-gaoneng-w-cabled-380mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 380,
+    "c_rating": "90C",
+    "weight_g": 10.0,
+    "connector": "A30",
+    "dimensions_mm": "50x17x6.7mm",
+    "energy_wh": 1.4,
+    "price_per_wh_usd": 4.15,
+    "price_usd": 5.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-3-8v-1s-380mah-90c-lihv-whoop-micro-battery-w-cabled-a30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng / w/ Cabled 450mAh 1S",
+   "slug": "gnb-gaoneng-w-cabled-450mah-1s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "1S",
+    "capacity_mah": 450,
+    "c_rating": "80C",
+    "weight_g": 12.0,
+    "connector": "PH2.0",
+    "dimensions_mm": "59x17x6mm",
+    "energy_wh": 1.7,
+    "price_per_wh_usd": 3.0,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-3-7v-1s-450mah-80c-lipo-whoop-micro-battery-long-type-w-cabled-connector-ph2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng / w/ Cabled 530mAh 1S",
+   "slug": "gnb-gaoneng-w-cabled-530mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 530,
+    "c_rating": "90C",
+    "weight_g": 12.0,
+    "connector": "PH2.0",
+    "dimensions_mm": "60x17x6mm",
+    "energy_wh": 2.0,
+    "price_per_wh_usd": 3.22,
+    "price_usd": 6.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-3-8v-1s-530mah-90c-lihv-whoop-micro-battery-w-cabled-connector-ph2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng / w/ Cabled 550mAh 1S",
+   "slug": "gnb-gaoneng-w-cabled-550mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 550,
+    "c_rating": "100C",
+    "weight_g": 13.5,
+    "connector": "A30",
+    "dimensions_mm": "65x18x6mm",
+    "energy_wh": 2.1,
+    "price_per_wh_usd": 3.58,
+    "price_usd": 7.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-3-8v-1s-550mah-100c-lihv-whoop-micro-battery-w-cabled-a30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng / w/ Cabled 660mAh 1S",
+   "slug": "gnb-gaoneng-w-cabled-660mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 660,
+    "c_rating": "90C",
+    "weight_g": 15.0,
+    "connector": "A30",
+    "energy_wh": 2.5,
+    "price_per_wh_usd": 2.99,
+    "price_usd": 7.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-3-8v-1s-660mah-90c-lihv-whoop-micro-battery-w-cabled-a30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "Gaoneng / w/ Cabled 720mAh 1S",
+   "slug": "gnb-gaoneng-w-cabled-720mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 720,
+    "c_rating": "100C",
+    "weight_g": 18.5,
+    "connector": "A30",
+    "dimensions_mm": "66x18x7.5mm",
+    "energy_wh": 2.7,
+    "price_per_wh_usd": 2.92,
+    "price_usd": 7.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gaoneng-gnb-3-8v-1s-720mah-100c-lihv-whoop-micro-battery-w-cabled-a30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "RDQ Series 1000mAh 6S",
+   "slug": "gnb-rdq-series-1000mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1000,
+    "c_rating": "100C",
+    "weight_g": 194.0,
+    "connector": "XT60",
+    "dimensions_mm": "78x38x24mm",
+    "energy_wh": 22.2,
+    "price_per_wh_usd": 3.83,
+    "price_usd": 84.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/3-pack-of-rdq-series-22-2v-6s-1000mah-100c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "RDQ Series 1300mAh 4S",
+   "slug": "gnb-rdq-series-1300mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 1300,
+    "c_rating": "100C",
+    "weight_g": 164.0,
+    "connector": "XT60",
+    "dimensions_mm": "78x35x34mm",
+    "energy_wh": 19.2,
+    "price_per_wh_usd": 1.51,
+    "price_usd": 29.0
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-14-8v-4s-1300mah-100c-lipo-battery-3-pack-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "RDQ Series 1300mAh 6S",
+   "slug": "gnb-rdq-series-1300mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1300,
+    "c_rating": "100C",
+    "weight_g": 243.0,
+    "connector": "XT60",
+    "dimensions_mm": "89x35x43mm",
+    "energy_wh": 28.9,
+    "price_per_wh_usd": 3.78,
+    "price_usd": 109.19
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-22-2v-6s-1300mah-100c-lipo-battery-3-pack-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "RDQ Series 2200mAh 5S",
+   "slug": "gnb-rdq-series-2200mah-5s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "5S",
+    "capacity_mah": 2200,
+    "c_rating": "80C",
+    "weight_g": 318.0,
+    "connector": "XT60",
+    "dimensions_mm": "107.5x34.5x42.5mm",
+    "energy_wh": 40.7,
+    "price_per_wh_usd": 3.5,
+    "price_usd": 142.29
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/3-pack-of-rdq-series-18-5v-5s-2200mah-80c-long-range-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "RDQ Series 450mAh 1S",
+   "slug": "gnb-rdq-series-450mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 450,
+    "c_rating": "80C",
+    "weight_g": 10.0,
+    "connector": "PH2.0",
+    "dimensions_mm": "62x17x6.9mm",
+    "energy_wh": 1.7,
+    "price_per_wh_usd": 5.26,
+    "price_usd": 9.0
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-3-8v-1s-450mah-80c-lihv-whoop-micro-battery-for-tinyhawk-5-pack-ph2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "RDQ Series 720mAh 6S",
+   "slug": "gnb-rdq-series-720mah-6s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "6S",
+    "capacity_mah": 720,
+    "c_rating": "100C",
+    "weight_g": 103.0,
+    "connector": "XT30",
+    "dimensions_mm": "74x44x18.5mm",
+    "energy_wh": 16.4,
+    "price_per_wh_usd": 1.77,
+    "price_usd": 29.0
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/3-pack-of-rdq-series-22-8v-6s-720mah-100c-lihv-whoop-micro-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "GNB",
+   "model": "RDQ Series 850mAh 4S",
+   "slug": "gnb-rdq-series-850mah-4s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "4S",
+    "capacity_mah": 850,
+    "c_rating": "60C",
+    "weight_g": 70.5,
+    "connector": "XT30",
+    "dimensions_mm": "73x30x19mm",
+    "energy_wh": 12.9,
+    "price_per_wh_usd": 1.47,
+    "price_usd": 19.0
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/3-pack-of-rdq-series-14-8v-4s-850mah-75c-lipo-micro-battery-xt60",
+    "https://www.racedayquads.com/products/3-pack-of-rdq-series-15-2v-4s-850mah-60c-lihv-whoop-micro-battery-long-type-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Happymodel",
+   "model": "650mAh 1S",
+   "slug": "happymodel-650mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 650,
+    "c_rating": "60C",
+    "weight_g": 16.0,
+    "connector": "PH2.0",
+    "dimensions_mm": "60x18x8mm",
+    "energy_wh": 2.5,
+    "price_per_wh_usd": 2.83,
+    "price_usd": 6.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/happymodel-3-8v-1s-650mah-60c-lihv-micro-battery-ph2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "iFlight",
+   "model": "Defender 25 550mAh 4S",
+   "slug": "iflight-defender-25-550mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 550,
+    "c_rating": "60C",
+    "weight_g": 70.0,
+    "connector": "XT30",
+    "dimensions_mm": "105x35x31.5mm",
+    "energy_wh": 8.1,
+    "price_per_wh_usd": 3.32,
+    "price_usd": 26.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/iflight-defender-25-4s-550mah-battery",
+    "https://shop.iflight.com/Defender-25-Battery-Pro1925"
+   ],
+   "note": "The size is the housing's, not a pouch's: 105x35x31.5 mm around a 550mAh 4S is 0.60 g/cm3, a third of what a pack of cells weighs for its volume, because this pack is a moulded, vented shell with a latch and slide rails that only the Defender 25 accepts. iFlight's own page states the same 105*35*31.5mm (and the same three figures for the 900mAh version at 100 g - a size that does not move with the capacity is the enclosure's), 70+/-2 g, 8.14 Wh, 4S1P, 60C and XT30, so every figure here is the manufacturer's as well as the retailer's"
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "10000mAh 4S",
+   "slug": "lumenier-10000mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 10000,
+    "c_rating": "25C",
+    "weight_g": 845.0,
+    "connector": "XT60",
+    "dimensions_mm": "172x70x43mm",
+    "energy_wh": 148.0,
+    "price_per_wh_usd": 1.28,
+    "price_usd": 188.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-10000mah-4s-25c-lipo-battery"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "10000mAh 6S",
+   "slug": "lumenier-10000mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 10000,
+    "c_rating": "25C",
+    "weight_g": 1245.0,
+    "connector": "XT90",
+    "dimensions_mm": "172x70x48mm",
+    "energy_wh": 222.0,
+    "price_per_wh_usd": 1.13,
+    "price_usd": 251.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-10000mah-6s-25c-lipo-battery-xt90"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "1000mAh 3S",
+   "slug": "lumenier-1000mah-3s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "3S",
+    "capacity_mah": 1000,
+    "c_rating": "60C",
+    "weight_g": 100.0,
+    "connector": "XT60",
+    "dimensions_mm": "74x34x19mm",
+    "energy_wh": 11.1,
+    "price_per_wh_usd": 2.57,
+    "price_usd": 28.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-1000mah-3s-60c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "11.1 V 700mAh 3S",
+   "slug": "lumenier-11-1-v-700mah-3s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "3S",
+    "capacity_mah": 700,
+    "c_rating": "75C",
+    "weight_g": 64.0,
+    "connector": "XT30",
+    "dimensions_mm": "59x30x19mm",
+    "energy_wh": 7.8,
+    "price_per_wh_usd": 3.34,
+    "price_usd": 25.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-11-1-v-3s-700mah-75c-lipo-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "12000mAh 4S",
+   "slug": "lumenier-12000mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 12000,
+    "c_rating": "20C",
+    "weight_g": 940.0,
+    "connector": "XT60",
+    "dimensions_mm": "182x74x32mm",
+    "energy_wh": 177.6,
+    "price_per_wh_usd": 1.22,
+    "price_usd": 217.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-12000mah-4s-20c-lipo-battery"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "13000mAh 6S",
+   "slug": "lumenier-13000mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 13000,
+    "c_rating": "20C",
+    "weight_g": 940.0,
+    "connector": "XT90",
+    "dimensions_mm": "182x74x32mm",
+    "energy_wh": 288.6,
+    "price_per_wh_usd": 1.03,
+    "price_usd": 295.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-13000mah-6s-20c-lipo-battery-xt90"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "1300mAh 3S",
+   "slug": "lumenier-1300mah-3s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "3S",
+    "capacity_mah": 1300,
+    "c_rating": "35C",
+    "weight_g": 100.0,
+    "connector": "XT60",
+    "dimensions_mm": "70x32x22mm",
+    "energy_wh": 14.4,
+    "price_per_wh_usd": 1.87,
+    "price_usd": 26.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-1300mah-3s-35c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "1300mAh 4S",
+   "slug": "lumenier-1300mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 1300,
+    "c_rating": "35C",
+    "weight_g": 135.0,
+    "connector": "XT60",
+    "dimensions_mm": "70x32x35mm",
+    "energy_wh": 19.2,
+    "price_per_wh_usd": 1.48,
+    "price_usd": 28.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-1300mah-4s-35c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "1300mAh 6S",
+   "slug": "lumenier-1300mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1300,
+    "c_rating": "95C",
+    "weight_g": 241.0,
+    "connector": "XT60",
+    "dimensions_mm": "75x34x50mm",
+    "energy_wh": 28.9,
+    "price_per_wh_usd": 2.03,
+    "price_usd": 58.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-1300mah-6s-95c-lipo-battery"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "1500mAh 3S",
+   "slug": "lumenier-1500mah-3s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "3S",
+    "capacity_mah": 1500,
+    "c_rating": "45C",
+    "weight_g": 125.0,
+    "connector": "XT60",
+    "dimensions_mm": "88x35x26mm",
+    "energy_wh": 16.7,
+    "price_per_wh_usd": 2.04,
+    "price_usd": 33.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-1500mah-3s-45c-lipo-battery"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "1500mAh 4S",
+   "slug": "lumenier-1500mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 1500,
+    "c_rating": "95C",
+    "weight_g": 192.0,
+    "connector": "XT60",
+    "dimensions_mm": "75x34x38mm",
+    "energy_wh": 22.2,
+    "price_per_wh_usd": 1.82,
+    "price_usd": 40.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-1500mah-4s-95c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "1500mAh 6S",
+   "slug": "lumenier-1500mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1500,
+    "c_rating": "95C",
+    "weight_g": 273.0,
+    "connector": "XT60",
+    "dimensions_mm": "74x34x56mm",
+    "energy_wh": 33.3,
+    "price_per_wh_usd": 1.88,
+    "price_usd": 62.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-1500mah-6s-95c-lipo-battery"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "16000mAh 4S",
+   "slug": "lumenier-16000mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 16000,
+    "c_rating": "20C",
+    "weight_g": 1190.0,
+    "connector": "XT90",
+    "dimensions_mm": "182x74x40mm",
+    "energy_wh": 236.8,
+    "price_per_wh_usd": 1.12,
+    "price_usd": 264.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-16000mah-4s-20c-lipo-battery-xt90"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "1800mAh 4S",
+   "slug": "lumenier-1800mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 1800,
+    "c_rating": "75C",
+    "weight_g": 228.0,
+    "connector": "XT60",
+    "dimensions_mm": "104x34x30mm",
+    "energy_wh": 26.6,
+    "price_per_wh_usd": 1.48,
+    "price_usd": 39.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-1800mah-4s-75c-lipo-battery"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "500mAh 2S",
+   "slug": "lumenier-500mah-2s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "2S",
+    "capacity_mah": 500,
+    "c_rating": "50C",
+    "weight_g": 30.0,
+    "connector": "JST",
+    "dimensions_mm": "60x27x12mm",
+    "energy_wh": 3.7,
+    "price_per_wh_usd": 4.46,
+    "price_usd": 16.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-500mah-2s-50c-lipo-battery"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "5200mAh 4S",
+   "slug": "lumenier-5200mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 5200,
+    "c_rating": "35C",
+    "weight_g": 473.0,
+    "connector": "XT60",
+    "dimensions_mm": "145x44x38mm",
+    "energy_wh": 77.0,
+    "price_per_wh_usd": 1.21,
+    "price_usd": 93.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-5200mah-4s-35c-lipo-battery"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "8000mAh 4S",
+   "slug": "lumenier-8000mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 8000,
+    "c_rating": "25C",
+    "weight_g": 735.0,
+    "connector": "XT60",
+    "dimensions_mm": "170x60x35mm",
+    "energy_wh": 118.4,
+    "price_per_wh_usd": 1.31,
+    "price_usd": 155.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-8000mah-4s-25c-lipo-battery"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "CineLifter 2900mAh 6S",
+   "slug": "lumenier-cinelifter-2900mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 2900,
+    "c_rating": "120C",
+    "weight_g": 485.0,
+    "connector": "XT60",
+    "dimensions_mm": "145x38x43mm",
+    "energy_wh": 64.4,
+    "price_per_wh_usd": 2.18,
+    "price_usd": 140.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-2900mah-6s-120c-cinelifter-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "CineLifter 3500mAh 6S",
+   "slug": "lumenier-cinelifter-3500mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 3500,
+    "c_rating": "120C",
+    "weight_g": 580.0,
+    "connector": "XT60",
+    "dimensions_mm": "140x45x43mm",
+    "energy_wh": 77.7,
+    "price_per_wh_usd": 2.0,
+    "price_usd": 155.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-3500mah-6s-120c-cinelifter-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "CineLifter 4000mAh 6S",
+   "slug": "lumenier-cinelifter-4000mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 4000,
+    "c_rating": "120C",
+    "weight_g": 655.0,
+    "connector": "XT90",
+    "dimensions_mm": "143x52x53mm",
+    "energy_wh": 88.8,
+    "price_per_wh_usd": 2.03,
+    "price_usd": 179.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-4000mah-6s-120c-cinelifter-lipo-battery-xt90"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "CineLifter 4500mAh 6S",
+   "slug": "lumenier-cinelifter-4500mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 4500,
+    "c_rating": "120C",
+    "weight_g": 745.0,
+    "connector": "XT90",
+    "dimensions_mm": "160x45x47mm",
+    "energy_wh": 99.9,
+    "price_per_wh_usd": 2.03,
+    "price_usd": 202.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-4500mah-6s-120c-cinelifter-lipo-battery-xt90"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "CineLifter 5200mAh 6S",
+   "slug": "lumenier-cinelifter-5200mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 5200,
+    "c_rating": "120C",
+    "weight_g": 810.0,
+    "connector": "XT90",
+    "dimensions_mm": "160x45x47mm",
+    "energy_wh": 115.4,
+    "price_per_wh_usd": 1.88,
+    "price_usd": 217.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-5200mah-6s-120c-cinelifter-lipo-battery-xt90"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "CineLifter - AS150 4500mAh 6S",
+   "slug": "lumenier-cinelifter-as150-4500mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 4500,
+    "c_rating": "120C",
+    "weight_g": 705.0,
+    "connector": "AS150",
+    "dimensions_mm": "160x49x45mm",
+    "energy_wh": 99.9,
+    "price_per_wh_usd": 2.03,
+    "price_usd": 202.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-4500mah-6s-120c-cinelifter-lipo-battery-as150"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "CineLifter - AS150 5200mAh 4S",
+   "slug": "lumenier-cinelifter-as150-5200mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 5200,
+    "c_rating": "120C",
+    "weight_g": 555.0,
+    "connector": "AS150",
+    "dimensions_mm": "152x30x48mm",
+    "energy_wh": 77.0,
+    "price_per_wh_usd": 1.58,
+    "price_usd": 121.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-5200mah-4s-120c-cinelifter-lipo-battery-as150"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "CineLifter - AS150 5200mAh 6S",
+   "slug": "lumenier-cinelifter-as150-5200mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 5200,
+    "c_rating": "120C",
+    "weight_g": 800.0,
+    "connector": "AS150",
+    "dimensions_mm": "155x45x48mm",
+    "energy_wh": 115.4,
+    "price_per_wh_usd": 1.88,
+    "price_usd": 217.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-5200mah-6s-120c-cinelifter-lipo-battery-as150"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "Graphene (XT-30) 700mAh 4S",
+   "slug": "lumenier-graphene-xt-30-700mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 700,
+    "c_rating": "75C",
+    "weight_g": 80.0,
+    "connector": "XT30",
+    "dimensions_mm": "57x30x25mm",
+    "energy_wh": 10.4,
+    "price_per_wh_usd": 2.89,
+    "price_usd": 29.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-graphene-700mah-4s-75c-lipo-battery-xt-30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "HV 450mAh 2S",
+   "slug": "lumenier-hv-450mah-2s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "2S",
+    "capacity_mah": 450,
+    "c_rating": "80C",
+    "weight_g": 30.49,
+    "connector": "XT30",
+    "dimensions_mm": "68x12x15mm",
+    "energy_wh": 3.4,
+    "price_per_wh_usd": 4.38,
+    "price_usd": 14.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-450mah-2s-80c-micro-hv-lipo-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "HV 450mAh 3S",
+   "slug": "lumenier-hv-450mah-3s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "3S",
+    "capacity_mah": 450,
+    "c_rating": "80C",
+    "weight_g": 45.62,
+    "connector": "XT30",
+    "dimensions_mm": "68x20x15mm",
+    "energy_wh": 5.1,
+    "price_per_wh_usd": 3.51,
+    "price_usd": 17.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-450mah-3s-80c-micro-hv-lipo-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "HV 550mAh 2S",
+   "slug": "lumenier-hv-550mah-2s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "2S",
+    "capacity_mah": 550,
+    "c_rating": "90C",
+    "weight_g": 30.9,
+    "connector": "XT30",
+    "dimensions_mm": "68x13.9x16.9mm",
+    "energy_wh": 4.2,
+    "price_per_wh_usd": 3.94,
+    "price_usd": 16.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-550mah-2s-90c-micro-hv-lipo-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "HV JST-2.0PXH 550mAh 1S",
+   "slug": "lumenier-hv-jst-2-0pxh-550mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 550,
+    "c_rating": "90C",
+    "weight_g": 13.87,
+    "connector": "PH2.0",
+    "dimensions_mm": "65x7x12mm",
+    "energy_wh": 2.1,
+    "price_per_wh_usd": 6.45,
+    "price_usd": 13.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-550mah-1s-90c-micro-hv-lipo-battery-jst-2-0pxh"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "HV (XT-30) 450mAh 4S",
+   "slug": "lumenier-hv-xt-30-450mah-4s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "4S",
+    "capacity_mah": 450,
+    "c_rating": "80C",
+    "weight_g": 59.14,
+    "connector": "XT30",
+    "dimensions_mm": "69x27.5x16.7mm",
+    "energy_wh": 6.8,
+    "price_per_wh_usd": 3.0,
+    "price_usd": 20.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-450mah-4s-80c-micro-hv-lipo-battery-xt-30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "(JST) 1300mAh 3S",
+   "slug": "lumenier-jst-1300mah-3s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "3S",
+    "capacity_mah": 1300,
+    "c_rating": "35C",
+    "weight_g": 98.0,
+    "connector": "JST",
+    "dimensions_mm": "70x32x22mm",
+    "energy_wh": 14.4,
+    "price_per_wh_usd": 1.32,
+    "price_usd": 18.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-1300mah-3s-35c-lipo-battery-jst"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "(JST) 300mAh 2S",
+   "slug": "lumenier-jst-300mah-2s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "2S",
+    "capacity_mah": 300,
+    "c_rating": "75C",
+    "weight_g": 18.0,
+    "connector": "JST",
+    "dimensions_mm": "48x17x13mm",
+    "energy_wh": 2.2,
+    "price_per_wh_usd": 6.75,
+    "price_usd": 14.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-300mah-2s-75c-lipo-battery-jst"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "JST-PH 2.0 205mAh 1S",
+   "slug": "lumenier-jst-ph-2-0-205mah-1s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "1S",
+    "capacity_mah": 205,
+    "c_rating": "25C",
+    "weight_g": 6.1,
+    "connector": "PH2.0",
+    "dimensions_mm": "52x11.5x6mm",
+    "energy_wh": 0.8,
+    "price_per_wh_usd": 7.24,
+    "price_usd": 5.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-205mah-1s-25c-lipo-battery-jst-ph-2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "N2O Feather-Lite - XT-30 750mAh 2S",
+   "slug": "lumenier-n2o-feather-lite-xt-30-750mah-2s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "2S",
+    "capacity_mah": 750,
+    "c_rating": "100C",
+    "weight_g": 50.0,
+    "connector": "XT30",
+    "dimensions_mm": "60x15x24mm",
+    "energy_wh": 5.6,
+    "price_per_wh_usd": 4.41,
+    "price_usd": 24.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-n2o-feather-lite-750mah-2s-100c-lipo-battery-xt-30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "N2O Feather-Lite - XT-30 750mAh 4S",
+   "slug": "lumenier-n2o-feather-lite-xt-30-750mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 750,
+    "c_rating": "100C",
+    "weight_g": 95.0,
+    "connector": "XT30",
+    "dimensions_mm": "60x30x25mm",
+    "energy_wh": 11.1,
+    "price_per_wh_usd": 3.2,
+    "price_usd": 35.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-n2o-feather-lite-750mah-4s-100c-lipo-battery-xt-30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "N2O Feather-Lite - XT-30 750mAh 6S",
+   "slug": "lumenier-n2o-feather-lite-xt-30-750mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 750,
+    "c_rating": "100C",
+    "weight_g": 135.0,
+    "connector": "XT30",
+    "dimensions_mm": "65x46x23mm",
+    "energy_wh": 16.7,
+    "price_per_wh_usd": 2.43,
+    "price_usd": 40.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-n2o-feather-lite-750mah-6s-100c-lipo-battery-xt-30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "N2O Feather-Lite - XT-60 1400mAh 4S",
+   "slug": "lumenier-n2o-feather-lite-xt-60-1400mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 1400,
+    "c_rating": "150C",
+    "weight_g": 155.0,
+    "connector": "XT60",
+    "dimensions_mm": "80x30x38mm",
+    "energy_wh": 20.7,
+    "price_per_wh_usd": 3.14,
+    "price_usd": 64.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-n2o-feather-lite-1400mah-4s-150c-lipo-battery-xt-60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "N2O Feather-Lite - XT-60 1400mAh 6S",
+   "slug": "lumenier-n2o-feather-lite-xt-60-1400mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1400,
+    "c_rating": "150C",
+    "weight_g": 212.0,
+    "connector": "XT60",
+    "dimensions_mm": "85x40x35mm",
+    "energy_wh": 31.1,
+    "price_per_wh_usd": 2.61,
+    "price_usd": 80.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-n2o-feather-lite-1400mah-6s-150c-lipo-battery-xt-60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "N2O Feather-Lite (XT-60) 1550mAh 6S",
+   "slug": "lumenier-n2o-feather-lite-xt-60-1550mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1550,
+    "c_rating": "150C",
+    "weight_g": 265.0,
+    "connector": "XT60",
+    "dimensions_mm": "85x45x38mm",
+    "energy_wh": 34.4,
+    "price_per_wh_usd": 2.63,
+    "price_usd": 90.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-n2o-feather-lite-1550mah-6s-150c-lipo-battery-xt-60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "N2O (XT-60) 1500mAh 4S",
+   "slug": "lumenier-n2o-xt-60-1500mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 1500,
+    "c_rating": "120C",
+    "weight_g": 185.0,
+    "connector": "XT60",
+    "dimensions_mm": "74x34x37mm",
+    "energy_wh": 22.2,
+    "price_per_wh_usd": 2.81,
+    "price_usd": 62.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-n2o-1500mah-4s-120c-lipo-battery-xt-60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "N2O (XT-60) 850mAh 6S",
+   "slug": "lumenier-n2o-xt-60-850mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 850,
+    "c_rating": "120C",
+    "weight_g": 165.0,
+    "connector": "XT60",
+    "dimensions_mm": "58x48x30mm",
+    "energy_wh": 18.9,
+    "price_per_wh_usd": 3.31,
+    "price_usd": 62.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-n2o-850mah-6s-120c-lipo-battery-xt-60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "NAV 18650 6000mAh 6S",
+   "slug": "lumenier-nav-18650-6000mah-6s",
+   "specs": {
+    "chemistry": "Li-ion",
+    "cells": "6S",
+    "capacity_mah": 6000,
+    "c_rating": "10C",
+    "weight_g": 635.0,
+    "connector": "XT60",
+    "dimensions_mm": "135x55x47mm",
+    "energy_wh": 129.6,
+    "price_per_wh_usd": 1.46,
+    "price_usd": 188.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-nav-22-2v-6s-18650-6000mah-10c-li-ion-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "NAV Lithium-Ion 3000mAh 4S",
+   "slug": "lumenier-nav-lithium-ion-3000mah-4s",
+   "specs": {
+    "chemistry": "Li-ion",
+    "cells": "4S",
+    "capacity_mah": 3000,
+    "c_rating": "10C",
+    "weight_g": 205.0,
+    "connector": "XT60",
+    "dimensions_mm": "70x32x32mm",
+    "energy_wh": 43.2,
+    "price_per_wh_usd": 1.56,
+    "price_usd": 67.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-nav-3000mah-4s-lithium-ion-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "NAV Lithium-Ion 3000mAh 6S",
+   "slug": "lumenier-nav-lithium-ion-3000mah-6s",
+   "specs": {
+    "chemistry": "Li-ion",
+    "cells": "6S",
+    "capacity_mah": 3000,
+    "c_rating": "10C",
+    "weight_g": 310.0,
+    "connector": "XT60",
+    "dimensions_mm": "70x55x38mm",
+    "energy_wh": 64.8,
+    "price_per_wh_usd": 1.46,
+    "price_usd": 94.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-nav-3000mah-6s-lithium-ion-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "Silicon Graphene 1300mAh 6S",
+   "slug": "lumenier-silicon-graphene-1300mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1300,
+    "c_rating": "95C",
+    "weight_g": 240.0,
+    "connector": "XT60",
+    "dimensions_mm": "74x34x50mm",
+    "energy_wh": 28.9,
+    "price_per_wh_usd": 2.06,
+    "price_usd": 59.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-silicon-graphene-1300mah-6s-95c-lipo-battery"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "(XT-30) 300mAh 2S",
+   "slug": "lumenier-xt-30-300mah-2s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "2S",
+    "capacity_mah": 300,
+    "c_rating": "75C",
+    "weight_g": 18.0,
+    "connector": "XT30",
+    "dimensions_mm": "48x17x12mm",
+    "energy_wh": 2.2,
+    "price_per_wh_usd": 6.08,
+    "price_usd": 13.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-300mah-2s-75c-lipo-battery-xt-30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "(XT-30) 300mAh 3S",
+   "slug": "lumenier-xt-30-300mah-3s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "3S",
+    "capacity_mah": 300,
+    "c_rating": "75C",
+    "weight_g": 26.0,
+    "connector": "XT30",
+    "dimensions_mm": "48x17x17mm",
+    "energy_wh": 3.3,
+    "price_per_wh_usd": 4.95,
+    "price_usd": 16.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-300mah-3s-75c-lipo-battery-xt-30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "(XT-30) 300mAh 4S",
+   "slug": "lumenier-xt-30-300mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 300,
+    "c_rating": "75C",
+    "weight_g": 34.0,
+    "connector": "XT30",
+    "dimensions_mm": "48x17x24mm",
+    "energy_wh": 4.4,
+    "price_per_wh_usd": 5.18,
+    "price_usd": 22.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-300mah-4s-75c-lipo-battery-xt-30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "(XT-30) 550mAh 2S",
+   "slug": "lumenier-xt-30-550mah-2s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "2S",
+    "capacity_mah": 550,
+    "c_rating": "80C",
+    "weight_g": 28.0,
+    "connector": "XT30",
+    "dimensions_mm": "68x14x16mm",
+    "energy_wh": 4.1,
+    "price_per_wh_usd": 3.68,
+    "price_usd": 14.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-550mah-2s-80c-lipo-battery-xt-30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "(XT-30) 550mAh 3S",
+   "slug": "lumenier-xt-30-550mah-3s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "3S",
+    "capacity_mah": 550,
+    "c_rating": "80C",
+    "weight_g": 44.0,
+    "connector": "XT30",
+    "dimensions_mm": "73x22x17mm",
+    "energy_wh": 6.1,
+    "price_per_wh_usd": 3.11,
+    "price_usd": 18.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-550mah-3s-80c-lipo-battery-xt-30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "(XT-30) 550mAh 4S",
+   "slug": "lumenier-xt-30-550mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 550,
+    "c_rating": "80C",
+    "weight_g": 59.0,
+    "connector": "XT30",
+    "dimensions_mm": "76x29x17mm",
+    "energy_wh": 8.1,
+    "price_per_wh_usd": 3.01,
+    "price_usd": 24.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-550mah-4s-80c-lipo-battery-xt-30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "(XT-30) 850mAh 2S",
+   "slug": "lumenier-xt-30-850mah-2s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "2S",
+    "capacity_mah": 850,
+    "c_rating": "35C",
+    "weight_g": 49.0,
+    "connector": "XT30",
+    "dimensions_mm": "58x30x15mm",
+    "energy_wh": 6.3,
+    "price_per_wh_usd": 2.62,
+    "price_usd": 16.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-850mah-2s-35c-lipo-battery-xt-30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "(XT-30) 850mAh 3S",
+   "slug": "lumenier-xt-30-850mah-3s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "3S",
+    "capacity_mah": 850,
+    "c_rating": "35C",
+    "weight_g": 71.0,
+    "connector": "XT30",
+    "dimensions_mm": "58x30x22mm",
+    "energy_wh": 9.4,
+    "price_per_wh_usd": 2.17,
+    "price_usd": 20.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-850mah-3s-35c-lipo-battery-xt-30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "LUMENIER",
+   "model": "(XT-30) 850mAh 4S",
+   "slug": "lumenier-xt-30-850mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 850,
+    "c_rating": "75C",
+    "weight_g": 101.0,
+    "connector": "XT30",
+    "dimensions_mm": "60x30x31mm",
+    "energy_wh": 12.6,
+    "price_per_wh_usd": 2.5,
+    "price_usd": 31.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/lumenier-850mah-4s-75c-lipo-battery-xt-30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "NewBeeDrone",
+   "model": "Nitro Nectar HV - NX69 300mAh 1S",
+   "slug": "newbeedrone-nitro-nectar-hv-nx69-300mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 300,
+    "c_rating": "80C",
+    "weight_g": 8.4,
+    "connector": "NX69",
+    "energy_wh": 1.1,
+    "price_per_wh_usd": 14.03,
+    "price_usd": 15.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/newbeedrone-nitro-nectar-300mah-1s-80c-hv-lipo-battery-4-pcs-nx69"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "NewBeeDrone",
+   "model": "Nitro Nectar HV - NX69 550mAh 1S",
+   "slug": "newbeedrone-nitro-nectar-hv-nx69-550mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 550,
+    "c_rating": "80C",
+    "weight_g": 14.3,
+    "connector": "NX69",
+    "energy_wh": 2.1,
+    "price_per_wh_usd": 5.5,
+    "price_usd": 11.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/newbeedrone-nitro-nectar-550mah-1s-80c-hv-lipo-battery-2pcs-nx69"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RaceDayQuads",
+   "model": "CNHL Black Series 1500mAh 6S",
+   "slug": "racedayquads-cnhl-black-series-1500mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1500,
+    "c_rating": "100C",
+    "weight_g": 254.0,
+    "connector": "XT60",
+    "dimensions_mm": "75x33x53mm",
+    "energy_wh": 33.3,
+    "price_per_wh_usd": 3.24,
+    "price_usd": 107.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/3-pack-of-cnhl-black-series-22-2v-6s-1500mah-100c-lipo-battery-xt60-1"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 1000mAh 6S",
+   "slug": "rdq-rdq-series-1000mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1000,
+    "c_rating": "100C",
+    "weight_g": 185.0,
+    "connector": "XT60",
+    "dimensions_mm": "78x38x24mm",
+    "energy_wh": 22.2,
+    "price_per_wh_usd": 1.73,
+    "price_usd": 38.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-22-2v-6s-1000mah-100c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 1100mAh 3S",
+   "slug": "rdq-rdq-series-1100mah-3s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "3S",
+    "capacity_mah": 1100,
+    "c_rating": "60C",
+    "weight_g": 69.0,
+    "connector": "XT30",
+    "energy_wh": 12.5,
+    "price_per_wh_usd": 1.51,
+    "price_usd": 18.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-11-4v-3s-1100mah-60c-lipo-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 1300mAh 4S",
+   "slug": "rdq-rdq-series-1300mah-4s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "4S",
+    "capacity_mah": 1300,
+    "c_rating": "120C",
+    "weight_g": 132.0,
+    "connector": "XT60",
+    "dimensions_mm": "80x38x24mm",
+    "energy_wh": 19.8,
+    "price_per_wh_usd": 1.77,
+    "price_usd": 34.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-15-2v-4s-1300mah-120c-lihv-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 1300mAh 6S",
+   "slug": "rdq-rdq-series-1300mah-6s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "6S",
+    "capacity_mah": 1300,
+    "c_rating": "120C",
+    "weight_g": 193.0,
+    "connector": "XT60",
+    "dimensions_mm": "80x38x34mm",
+    "energy_wh": 29.6,
+    "price_per_wh_usd": 1.72,
+    "price_usd": 50.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-22-8v-6s-1300mah-120c-lihv-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 1500mAh 4S",
+   "slug": "rdq-rdq-series-1500mah-4s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "4S",
+    "capacity_mah": 1500,
+    "c_rating": "120C",
+    "weight_g": 151.0,
+    "connector": "XT60",
+    "dimensions_mm": "79x38x36mm",
+    "energy_wh": 22.8,
+    "price_per_wh_usd": 1.56,
+    "price_usd": 35.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-15-2v-4s-1500mah-120c-lihv-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 1500mAh 6S",
+   "slug": "rdq-rdq-series-1500mah-6s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "6S",
+    "capacity_mah": 1500,
+    "c_rating": "120C",
+    "weight_g": 218.0,
+    "connector": "XT60",
+    "dimensions_mm": "79x38x38mm",
+    "energy_wh": 34.2,
+    "price_per_wh_usd": 1.55,
+    "price_usd": 52.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-22-2v-6s-1500mah-120c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 1800mAh 6S",
+   "slug": "rdq-rdq-series-1800mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1800,
+    "c_rating": "100C",
+    "weight_g": 310.0,
+    "connector": "XT60",
+    "dimensions_mm": "90x58x34mm",
+    "energy_wh": 40.0,
+    "price_per_wh_usd": 1.53,
+    "price_usd": 60.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-22-2v-6s-1800mah-100c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 2200mAh 4S",
+   "slug": "rdq-rdq-series-2200mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 2200,
+    "c_rating": "80C",
+    "weight_g": 245.0,
+    "connector": "XT60",
+    "energy_wh": 32.6,
+    "price_per_wh_usd": 1.54,
+    "price_usd": 49.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-14-8v-4s-2200mah-100c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 2200mAh 5S",
+   "slug": "rdq-rdq-series-2200mah-5s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "5S",
+    "capacity_mah": 2200,
+    "c_rating": "80C",
+    "weight_g": 318.0,
+    "connector": "XT60",
+    "energy_wh": 40.7,
+    "price_per_wh_usd": 1.54,
+    "price_usd": 62.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-2200mah-5s-80c-fpv-drone-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 2800mAh 3S",
+   "slug": "rdq-rdq-series-2800mah-3s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "3S",
+    "capacity_mah": 2800,
+    "c_rating": "100C",
+    "weight_g": 212.5,
+    "connector": "XT60",
+    "energy_wh": 31.1,
+    "price_per_wh_usd": 1.17,
+    "price_usd": 36.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-11-1v-3s-2800mah-100c-lipo-battery-xt60"
+   ],
+   "note": "Size withheld: the listing prints \"Dimensions: 79x23x34mm\" beside \"Weight: 212.5g (+/- 1%)\", which is 3.44 g/cm3 - denser than any lithium cell sold, so the two figures cannot both describe this pack. The weight is the one that survives its other check (146 Wh/kg, ordinary for a 3S LiPo), and at this class's 1.7-1.9 g/cm3 the pack would be about 112-125 cm3 against the 62 the three figures give. RDQ Series is RaceDayQuads' own house brand, so there is no second source to take a replacement from"
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 2800mAh 4S",
+   "slug": "rdq-rdq-series-2800mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 2800,
+    "c_rating": "100C",
+    "weight_g": 270.0,
+    "connector": "XT60",
+    "dimensions_mm": "107x33x46mm",
+    "energy_wh": 41.4,
+    "price_per_wh_usd": 1.33,
+    "price_usd": 54.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-11-1v-4s-2800mah-100c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 2800mAh 6S",
+   "slug": "rdq-rdq-series-2800mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 2800,
+    "c_rating": "100C",
+    "weight_g": 400.0,
+    "connector": "XT60",
+    "dimensions_mm": "113x55x35mm",
+    "energy_wh": 62.2,
+    "price_per_wh_usd": 1.37,
+    "price_usd": 84.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-11-1v-6s-2800mah-100c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 2C QX7 Compatible HV 3500mAh 2S",
+   "slug": "rdq-rdq-series-2c-qx7-compatible-hv-3500mah-2s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "2S",
+    "capacity_mah": 3500,
+    "c_rating": "2C",
+    "weight_g": 122.0,
+    "connector": "XT30",
+    "dimensions_mm": "50x85x14mm",
+    "energy_wh": 26.6,
+    "price_per_wh_usd": 0.75,
+    "price_usd": 19.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-7-6v-2s-3500mah-qx7-compatible-lipo-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 300mAh 1S",
+   "slug": "rdq-rdq-series-300mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 300,
+    "c_rating": "60C",
+    "weight_g": 6.7,
+    "connector": "PH2.0",
+    "energy_wh": 1.1,
+    "price_per_wh_usd": 4.82,
+    "price_usd": 5.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-3-8v-1s-300mah-60c-lihv-battery-ph2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 300mAh 2S",
+   "slug": "rdq-rdq-series-300mah-2s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "2S",
+    "capacity_mah": 300,
+    "c_rating": "70C",
+    "weight_g": 20.28,
+    "connector": "XT30",
+    "dimensions_mm": "51x16.7x12.5mm",
+    "energy_wh": 2.3,
+    "price_per_wh_usd": 3.72,
+    "price_usd": 8.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-300mah-2s-70c-fpv-micro-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 300mAh 4S",
+   "slug": "rdq-rdq-series-300mah-4s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "4S",
+    "capacity_mah": 300,
+    "c_rating": "80C",
+    "weight_g": 35.5,
+    "connector": "XT30",
+    "dimensions_mm": "60x27x22mm",
+    "energy_wh": 4.6,
+    "price_per_wh_usd": 3.18,
+    "price_usd": 14.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-15-2v-4s-300mah-80c-lihv-battery-long-type-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 350mAh 2S",
+   "slug": "rdq-rdq-series-350mah-2s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "2S",
+    "capacity_mah": 350,
+    "c_rating": "70C",
+    "weight_g": 16.4,
+    "connector": "PH2.0",
+    "energy_wh": 2.7,
+    "price_per_wh_usd": 3.19,
+    "price_usd": 8.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-7-6v-2s-350mah-70c-lihv-battery-ph2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 350mAh 3S",
+   "slug": "rdq-rdq-series-350mah-3s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "3S",
+    "capacity_mah": 350,
+    "c_rating": "50C",
+    "weight_g": 28.4,
+    "connector": "XT30",
+    "dimensions_mm": "52x20.2x17.3mm",
+    "energy_wh": 4.0,
+    "price_per_wh_usd": 3.63,
+    "price_usd": 14.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-11-4v-3s-350mah-50c-lihv-micro-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 380mAh 1S",
+   "slug": "rdq-rdq-series-380mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 380,
+    "c_rating": "60C",
+    "weight_g": 8.0,
+    "connector": "PH2.0",
+    "dimensions_mm": "62x11.1x6.36mm",
+    "energy_wh": 1.4,
+    "price_per_wh_usd": 4.84,
+    "price_usd": 6.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-3-8v-1s-380mah-1s-60c-lihv-whoop-micro-battery-ph2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 380mAh 3S",
+   "slug": "rdq-rdq-series-380mah-3s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "3S",
+    "capacity_mah": 380,
+    "c_rating": "60C",
+    "weight_g": 26.3,
+    "connector": "XT30",
+    "energy_wh": 4.3,
+    "price_per_wh_usd": 3.46,
+    "price_usd": 14.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-11-4v-3s-380mah-60c-lihv-micro-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 380mAh 4S",
+   "slug": "rdq-rdq-series-380mah-4s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "4S",
+    "capacity_mah": 380,
+    "c_rating": "90C",
+    "weight_g": 39.7,
+    "connector": "XT30",
+    "dimensions_mm": "54x27x17mm",
+    "energy_wh": 5.8,
+    "price_per_wh_usd": 2.6,
+    "price_usd": 14.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-15-2v-4s-380mah-90c-lihv-battery-long-type-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 4500mAh 2S",
+   "slug": "rdq-rdq-series-4500mah-2s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "2S",
+    "capacity_mah": 4500,
+    "c_rating": "70C",
+    "weight_g": 180.0,
+    "connector": "XT60",
+    "dimensions_mm": "137x44x13mm",
+    "energy_wh": 34.2,
+    "price_per_wh_usd": 1.17,
+    "price_usd": 39.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-7-6v-2s-4500mah-70c-lihv-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 450mAh 1S",
+   "slug": "rdq-rdq-series-450mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 450,
+    "c_rating": "80C",
+    "weight_g": 10.0,
+    "connector": "PH2.0",
+    "dimensions_mm": "62x17x6.9mm",
+    "energy_wh": 1.7,
+    "price_per_wh_usd": 3.5,
+    "price_usd": 5.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-450mah-1s-70c-lipo-battery"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 450mAh 2S",
+   "slug": "rdq-rdq-series-450mah-2s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "2S",
+    "capacity_mah": 450,
+    "c_rating": "70C",
+    "weight_g": 28.9,
+    "connector": "XT30",
+    "dimensions_mm": "60.7x13.5x16.5mm",
+    "energy_wh": 3.3,
+    "price_per_wh_usd": 3.45,
+    "price_usd": 11.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-450mah-2s-fpv-battery-70c-xt30-long-type"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 450mAh 3S",
+   "slug": "rdq-rdq-series-450mah-3s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "3S",
+    "capacity_mah": 450,
+    "c_rating": "80C",
+    "weight_g": 47.0,
+    "connector": "XT30",
+    "dimensions_mm": "57x32x14.5mm",
+    "energy_wh": 5.0,
+    "price_per_wh_usd": 2.5,
+    "price_usd": 12.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-450mah-3s-fpv-battery-for-2-and-3-quads-80c"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 450mAh 6S",
+   "slug": "rdq-rdq-series-450mah-6s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "6S",
+    "capacity_mah": 450,
+    "c_rating": "80C",
+    "weight_g": 74.0,
+    "connector": "XT30",
+    "dimensions_mm": "72x44x22mm",
+    "energy_wh": 10.3,
+    "price_per_wh_usd": 2.39,
+    "price_usd": 24.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-22-8v-6s-450mah-80c-lihv-battery-long-type-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 50 350mAh 2S",
+   "slug": "rdq-rdq-series-50-350mah-2s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "2S",
+    "capacity_mah": 350,
+    "c_rating": "100C",
+    "weight_g": 20.45,
+    "connector": "XT30",
+    "dimensions_mm": "51.2x13.1x17.7mm",
+    "energy_wh": 2.7,
+    "price_per_wh_usd": 3.19,
+    "price_usd": 8.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-350mah-2s-50c-100c-7-6v-hv-fpv-micro-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 525mAh 1S",
+   "slug": "rdq-rdq-series-525mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 525,
+    "c_rating": "80C",
+    "weight_g": 13.0,
+    "connector": "PH2.0",
+    "dimensions_mm": "65x17x6.7mm",
+    "energy_wh": 2.0,
+    "price_per_wh_usd": 3.75,
+    "price_usd": 7.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-525mah-1s-80c-hv-ph2-0-lipo-battery-for-emax-tinyhawk"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 525mAh 2S",
+   "slug": "rdq-rdq-series-525mah-2s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "2S",
+    "capacity_mah": 525,
+    "c_rating": "80C",
+    "weight_g": 29.05,
+    "connector": "XT30",
+    "energy_wh": 4.0,
+    "price_per_wh_usd": 2.75,
+    "price_usd": 10.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-525mah-2s-80c-7-6v-hv-fpv-micro-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 525mAh 3S",
+   "slug": "rdq-rdq-series-525mah-3s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "3S",
+    "capacity_mah": 525,
+    "c_rating": "80C",
+    "weight_g": 42.0,
+    "connector": "XT30",
+    "dimensions_mm": "70x20.2x17.3mm",
+    "energy_wh": 6.0,
+    "price_per_wh_usd": 2.67,
+    "price_usd": 15.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-525mah-3s-fpv-battery-for-2-and-3-quads-80c-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 525mAh 4S",
+   "slug": "rdq-rdq-series-525mah-4s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "4S",
+    "capacity_mah": 525,
+    "c_rating": "80C",
+    "weight_g": 54.82,
+    "connector": "XT30",
+    "dimensions_mm": "69.7x26.5x17.8mm",
+    "energy_wh": 8.0,
+    "price_per_wh_usd": 2.13,
+    "price_usd": 16.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-525mah-4s-80c-fpv-drone-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 5500mAh 4S",
+   "slug": "rdq-rdq-series-5500mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 5500,
+    "c_rating": "70C",
+    "weight_g": 445.0,
+    "connector": "XT60",
+    "dimensions_mm": "139x44x36mm",
+    "energy_wh": 81.4,
+    "price_per_wh_usd": 0.86,
+    "price_usd": 69.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-14-8v-4s-5500mah-14-8v-70c-lipo-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 550mAh 2S",
+   "slug": "rdq-rdq-series-550mah-2s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "2S",
+    "capacity_mah": 550,
+    "c_rating": "90C",
+    "weight_g": 30.0,
+    "connector": "XT30",
+    "dimensions_mm": "69x18x12mm",
+    "energy_wh": 4.1,
+    "price_per_wh_usd": 2.7,
+    "price_usd": 10.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-7-4v-2s-550mah-90c-lipo-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 550mAh 3S",
+   "slug": "rdq-rdq-series-550mah-3s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "3S",
+    "capacity_mah": 550,
+    "c_rating": "100C",
+    "weight_g": 43.0,
+    "connector": "XT30",
+    "dimensions_mm": "70x18x18mm",
+    "energy_wh": 6.3,
+    "price_per_wh_usd": 2.63,
+    "price_usd": 16.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-11-4v-3s-550mah-100c-lihv-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 550mAh 4S",
+   "slug": "rdq-rdq-series-550mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 550,
+    "c_rating": "90C",
+    "weight_g": 56.0,
+    "connector": "XT30",
+    "dimensions_mm": "73x18x24mm",
+    "energy_wh": 8.1,
+    "price_per_wh_usd": 2.52,
+    "price_usd": 20.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-14-8v-4s-550mah-90c-lipo-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 550mAh 6S",
+   "slug": "rdq-rdq-series-550mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 550,
+    "c_rating": "90C",
+    "weight_g": 83.0,
+    "connector": "XT30",
+    "dimensions_mm": "73x18x36mm",
+    "energy_wh": 12.2,
+    "price_per_wh_usd": 2.21,
+    "price_usd": 26.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-22-2v-6s-550mah-90c-lipo-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 5C 2500mAh 2S",
+   "slug": "rdq-rdq-series-5c-2500mah-2s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "2S",
+    "capacity_mah": 2500,
+    "c_rating": "5C",
+    "weight_g": 100.0,
+    "connector": "XT60",
+    "dimensions_mm": "92x28x17mm",
+    "energy_wh": 18.5,
+    "price_per_wh_usd": 1.51,
+    "price_usd": 27.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-7-4v-2s-2500mah-5c-lipo-battery-for-taranis-x9d-2019-xt60-jst-xh"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 5C TX16S Compatible 5000mAh 2S",
+   "slug": "rdq-rdq-series-5c-tx16s-compatible-5000mah-2s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "2S",
+    "capacity_mah": 5000,
+    "c_rating": "5C",
+    "weight_g": 173.0,
+    "connector": "XT60",
+    "dimensions_mm": "52x80x20mm",
+    "energy_wh": 37.0,
+    "price_per_wh_usd": 0.81,
+    "price_usd": 29.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-7-4v-2s-5000mah-5c-tx16s-compatible-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 6000mAh 6S",
+   "slug": "rdq-rdq-series-6000mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 6000,
+    "c_rating": "100C",
+    "weight_g": 832.0,
+    "connector": "XT150",
+    "energy_wh": 133.2,
+    "price_per_wh_usd": 1.01,
+    "price_usd": 134.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-22-2v-6s-6000mah-100c-lipo-battery-xt150"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 6500mAh 6S",
+   "slug": "rdq-rdq-series-6500mah-6s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "6S",
+    "capacity_mah": 6500,
+    "c_rating": "70C",
+    "weight_g": 702.0,
+    "connector": "XT90",
+    "dimensions_mm": "141x44x52mm",
+    "energy_wh": 148.2,
+    "price_per_wh_usd": 1.14,
+    "price_usd": 168.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-22-8v-6s-6500mah-70c-lihv-battery-xt90"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 650mAh 1S",
+   "slug": "rdq-rdq-series-650mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 650,
+    "c_rating": "60C",
+    "weight_g": 14.5,
+    "connector": "PH2.0",
+    "dimensions_mm": "58x18x8mm",
+    "energy_wh": 2.5,
+    "price_per_wh_usd": 3.44,
+    "price_usd": 8.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-3-8v-1s-650mah-60c-lihv-battery-ph2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 650mAh 2S",
+   "slug": "rdq-rdq-series-650mah-2s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "2S",
+    "capacity_mah": 650,
+    "c_rating": "60C",
+    "weight_g": 31.6,
+    "connector": "XT30",
+    "dimensions_mm": "63x17x16mm",
+    "energy_wh": 4.9,
+    "price_per_wh_usd": 2.02,
+    "price_usd": 9.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-7-6v-2s-650mah-60c-lihv-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 650mAh 3S",
+   "slug": "rdq-rdq-series-650mah-3s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "3S",
+    "capacity_mah": 650,
+    "c_rating": "60C",
+    "weight_g": 46.0,
+    "connector": "XT30",
+    "dimensions_mm": "63x23x17mm",
+    "energy_wh": 7.4,
+    "price_per_wh_usd": 2.29,
+    "price_usd": 16.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-11-4v-3s-650mah-60c-lihv-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 650mAh 4S",
+   "slug": "rdq-rdq-series-650mah-4s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "4S",
+    "capacity_mah": 650,
+    "c_rating": "60C",
+    "weight_g": 60.6,
+    "connector": "XT30",
+    "dimensions_mm": "63x31x18mm",
+    "energy_wh": 9.9,
+    "price_per_wh_usd": 2.28,
+    "price_usd": 22.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-15-2v-4s-650mah-60c-lihv-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 650mAh 5S",
+   "slug": "rdq-rdq-series-650mah-5s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "5S",
+    "capacity_mah": 650,
+    "c_rating": "120C",
+    "weight_g": 93.0,
+    "connector": "XT30",
+    "dimensions_mm": "64x30x27mm",
+    "energy_wh": 12.3,
+    "price_per_wh_usd": 2.19,
+    "price_usd": 26.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-19v-5s-650mah-120c-lihv-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 650mAh 6S",
+   "slug": "rdq-rdq-series-650mah-6s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "6S",
+    "capacity_mah": 650,
+    "c_rating": "120C",
+    "weight_g": 100.0,
+    "connector": "XT30",
+    "dimensions_mm": "64x30x31mm",
+    "energy_wh": 14.8,
+    "price_per_wh_usd": 2.16,
+    "price_usd": 31.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-22-8v-6s-650mah-120c-lihv-micro-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 660mAh 1S",
+   "slug": "rdq-rdq-series-660mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 660,
+    "c_rating": "90C",
+    "weight_g": 15.5,
+    "connector": "PH2.0",
+    "energy_wh": 2.5,
+    "price_per_wh_usd": 3.58,
+    "price_usd": 8.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-3-8v-1s-660mah-90c-lihv-whoop-micro-battery-ph2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 660mAh 2S",
+   "slug": "rdq-rdq-series-660mah-2s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "2S",
+    "capacity_mah": 660,
+    "c_rating": "90C",
+    "weight_g": 33.0,
+    "connector": "XT30",
+    "energy_wh": 5.0,
+    "price_per_wh_usd": 2.49,
+    "price_usd": 12.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-7-4v-2s-660mah-90c-lihv-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 660mAh 3S",
+   "slug": "rdq-rdq-series-660mah-3s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "3S",
+    "capacity_mah": 660,
+    "c_rating": "90C",
+    "weight_g": 50.5,
+    "connector": "XT30",
+    "energy_wh": 7.5,
+    "price_per_wh_usd": 1.99,
+    "price_usd": 14.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-11-4v-3s-660mah-90c-lihv-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 660mAh 4S",
+   "slug": "rdq-rdq-series-660mah-4s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "4S",
+    "capacity_mah": 660,
+    "c_rating": "90C",
+    "weight_g": 65.0,
+    "connector": "XT30",
+    "energy_wh": 10.0,
+    "price_per_wh_usd": 2.04,
+    "price_usd": 20.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-15-2v-4s-660mah-90c-lihv-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 720mAh 1S",
+   "slug": "rdq-rdq-series-720mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 720,
+    "c_rating": "100C",
+    "weight_g": 17.0,
+    "connector": "PH2.0",
+    "dimensions_mm": "65.5x18x7.5mm",
+    "energy_wh": 2.7,
+    "price_per_wh_usd": 3.47,
+    "price_usd": 9.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-3-8v-1s-720mah-100c-lihv-whoop-micro-battery-ph2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 720mAh 2S",
+   "slug": "rdq-rdq-series-720mah-2s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "2S",
+    "capacity_mah": 720,
+    "c_rating": "100C",
+    "weight_g": 36.5,
+    "connector": "XT30",
+    "dimensions_mm": "71x18x15mm",
+    "energy_wh": 5.5,
+    "price_per_wh_usd": 2.37,
+    "price_usd": 12.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-7-6v-2s-720mah-100c-lihv-whoopmicro-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 720mAh 3S",
+   "slug": "rdq-rdq-series-720mah-3s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "3S",
+    "capacity_mah": 720,
+    "c_rating": "100C",
+    "weight_g": 53.0,
+    "connector": "XT30",
+    "dimensions_mm": "73x22.5x19mm",
+    "energy_wh": 8.2,
+    "price_per_wh_usd": 2.25,
+    "price_usd": 18.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-11-4v-3s-720mah-100c-lihv-whoopmicro-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 720mAh 4S",
+   "slug": "rdq-rdq-series-720mah-4s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "4S",
+    "capacity_mah": 720,
+    "c_rating": "100C",
+    "weight_g": 71.0,
+    "connector": "XT30",
+    "dimensions_mm": "72.5x30x18.5mm",
+    "energy_wh": 10.9,
+    "price_per_wh_usd": 1.87,
+    "price_usd": 20.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-15-2v-4s-720mah-100c-lihv-whoop-micro-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 720mAh 6S",
+   "slug": "rdq-rdq-series-720mah-6s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "6S",
+    "capacity_mah": 720,
+    "c_rating": "100C",
+    "weight_g": 103.0,
+    "connector": "XT30",
+    "dimensions_mm": "74x44x18.5mm",
+    "energy_wh": 16.4,
+    "price_per_wh_usd": 1.98,
+    "price_usd": 32.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-22-8v-6s-720mah-100c-lihv-whoop-micro-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 850mAh 1S",
+   "slug": "rdq-rdq-series-850mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 850,
+    "c_rating": "60C",
+    "weight_g": 16.6,
+    "connector": "PH2.0",
+    "dimensions_mm": "67x18x7.5mm",
+    "energy_wh": 3.2,
+    "price_per_wh_usd": 3.25,
+    "price_usd": 10.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-3-8v-1s-850mah-60c-lihv-whoop-micro-battery-ph2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 850mAh 2S",
+   "slug": "rdq-rdq-series-850mah-2s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "2S",
+    "capacity_mah": 850,
+    "c_rating": "60C",
+    "weight_g": 37.0,
+    "connector": "XT30",
+    "dimensions_mm": "70x18.5x15mm",
+    "energy_wh": 6.5,
+    "price_per_wh_usd": 2.09,
+    "price_usd": 13.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-7-6v-2s-850mah-60c-lihv-whoop-micro-battery-long-type-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 850mAh 3S",
+   "slug": "rdq-rdq-series-850mah-3s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "3S",
+    "capacity_mah": 850,
+    "c_rating": "60C",
+    "weight_g": 54.5,
+    "connector": "XT30",
+    "dimensions_mm": "73x23x19mm",
+    "energy_wh": 9.7,
+    "price_per_wh_usd": 2.06,
+    "price_usd": 19.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-11-4v-3s-850mah-60c-lihv-whoop-micro-battery-long-type-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series 850mAh 4S",
+   "slug": "rdq-rdq-series-850mah-4s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "4S",
+    "capacity_mah": 850,
+    "c_rating": "60C",
+    "weight_g": 70.5,
+    "connector": "XT30",
+    "dimensions_mm": "73x30x19mm",
+    "energy_wh": 12.9,
+    "price_per_wh_usd": 1.82,
+    "price_usd": 23.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-15-2v-4s-850mah-60c-lihv-whoop-micro-battery-long-type-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series - Anti Spark 6000mAh 6S",
+   "slug": "rdq-rdq-series-anti-spark-6000mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 6000,
+    "c_rating": "100C",
+    "weight_g": 842.0,
+    "connector": "XT90",
+    "energy_wh": 133.2,
+    "price_per_wh_usd": 1.01,
+    "price_usd": 134.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-22-2v-6s-6000mah-100c-lipo-battery-xt90-anti-spark"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series FPV Wing or Drone 2200mAh 3S",
+   "slug": "rdq-rdq-series-fpv-wing-or-drone-2200mah-3s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "3S",
+    "capacity_mah": 2200,
+    "c_rating": "80C",
+    "weight_g": 195.65,
+    "connector": "XT60",
+    "energy_wh": 24.4,
+    "price_per_wh_usd": 1.47,
+    "price_usd": 35.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-2200mah-3s-75c-fpv-drone-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series / - Plastic Head 380mAh 1S",
+   "slug": "rdq-rdq-series-plastic-head-380mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 380,
+    "c_rating": "60C",
+    "weight_g": 8.0,
+    "connector": "PH2.0",
+    "dimensions_mm": "62x11.1x6.36mm",
+    "energy_wh": 1.4,
+    "price_per_wh_usd": 4.84,
+    "price_usd": 6.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-3-8v-1s-380mah-1s-60c-lihv-whoop-micro-battery-ph2-0-plastic-head"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series / - Plastic Head 550mAh 1S",
+   "slug": "rdq-rdq-series-plastic-head-550mah-1s",
+   "specs": {
+    "chemistry": "LiHV",
+    "cells": "1S",
+    "capacity_mah": 550,
+    "c_rating": "100C",
+    "weight_g": 13.0,
+    "connector": "GNB27",
+    "dimensions_mm": "65x18.2x6.2mm",
+    "energy_wh": 2.1,
+    "price_per_wh_usd": 3.34,
+    "price_usd": 6.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-3-8v-1s-550mah-100c-lihv-whoop-micro-battery-gnb27-plastic-head"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "RDQ",
+   "model": "RDQ Series (Square Type) 650mAh 3S",
+   "slug": "rdq-rdq-series-square-type-650mah-3s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "3S",
+    "capacity_mah": 650,
+    "c_rating": "80C",
+    "weight_g": 62.0,
+    "connector": "XT30",
+    "dimensions_mm": "64x28x20mm",
+    "energy_wh": 7.2,
+    "price_per_wh_usd": 2.15,
+    "price_usd": 15.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/rdq-series-11-1v-3s-650mah-80c-lipo-micro-battery-square-type-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "1300mAh 3S",
+   "slug": "tattu-1300mah-3s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "3S",
+    "capacity_mah": 1300,
+    "c_rating": "75C",
+    "weight_g": 122.0,
+    "connector": "XT60",
+    "dimensions_mm": "72x36x22mm",
+    "energy_wh": 14.4,
+    "price_per_wh_usd": 1.87,
+    "price_usd": 26.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-11-1v-3s-1300mah-75c-lipo-micro-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "450mAh 3S",
+   "slug": "tattu-450mah-3s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "3S",
+    "capacity_mah": 450,
+    "c_rating": "75C",
+    "weight_g": 45.0,
+    "connector": "XT30",
+    "dimensions_mm": "63x16x21mm",
+    "energy_wh": 5.0,
+    "price_per_wh_usd": 3.6,
+    "price_usd": 17.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-450mah-3s-75c-lipo-battery-xt30-long-type"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "450mAh 4S",
+   "slug": "tattu-450mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 450,
+    "c_rating": "75C",
+    "weight_g": 58.0,
+    "connector": "XT30",
+    "dimensions_mm": "64.5x16.5x27mm",
+    "energy_wh": 6.7,
+    "price_per_wh_usd": 3.08,
+    "price_usd": 20.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-450mah-4s-75c-lipo-battery-pack-with-xt30-plug"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "550mAh 6S",
+   "slug": "tattu-550mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 550,
+    "c_rating": "95C",
+    "weight_g": 86.0,
+    "connector": "XT30",
+    "dimensions_mm": "63x19x42mm",
+    "energy_wh": 12.2,
+    "price_per_wh_usd": 2.58,
+    "price_usd": 31.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-550mah-22-2v-95c-6s1p-lipo-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "650mAh 4S",
+   "slug": "tattu-650mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 650,
+    "c_rating": "95C",
+    "weight_g": 82.0,
+    "connector": "XT30",
+    "dimensions_mm": "61x31x25mm",
+    "energy_wh": 9.6,
+    "price_per_wh_usd": 2.39,
+    "price_usd": 22.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-14-8v-4s1-650mah-95c-lipo-micro-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "850mAh 3S",
+   "slug": "tattu-850mah-3s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "3S",
+    "capacity_mah": 850,
+    "c_rating": "75C",
+    "weight_g": 80.0,
+    "connector": "XT30",
+    "dimensions_mm": "60x30x23mm",
+    "energy_wh": 9.4,
+    "price_per_wh_usd": 2.17,
+    "price_usd": 20.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-11-1v-3s-850mah-75c-lipo-micro-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "850mAh 4S",
+   "slug": "tattu-850mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 850,
+    "c_rating": "75C",
+    "weight_g": 103.0,
+    "connector": "XT30",
+    "dimensions_mm": "61x30.5x30.5mm",
+    "energy_wh": 12.6,
+    "price_per_wh_usd": 1.55,
+    "price_usd": 19.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-850mah-4s-75c-battery-for-3-and-4-quads-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "FunFly 1300mAh 4S",
+   "slug": "tattu-funfly-1300mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 1300,
+    "c_rating": "100C",
+    "weight_g": 149.0,
+    "connector": "XT60",
+    "dimensions_mm": "72x35x28.5mm",
+    "energy_wh": 19.2,
+    "price_per_wh_usd": 1.4,
+    "price_usd": 26.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-funfly-14-8v-4s-1300mah-100c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "FunFly 1300mAh 6S",
+   "slug": "tattu-funfly-1300mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1300,
+    "c_rating": "100C",
+    "weight_g": 225.0,
+    "connector": "XT60",
+    "dimensions_mm": "74x35x45mm",
+    "energy_wh": 28.9,
+    "price_per_wh_usd": 1.37,
+    "price_usd": 39.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-funfly-22-2v-6s-1300mah-100c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "FunFly 1550mAh 4S",
+   "slug": "tattu-funfly-1550mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 1550,
+    "c_rating": "100C",
+    "weight_g": 178.0,
+    "connector": "XT60",
+    "dimensions_mm": "72x35x36mm",
+    "energy_wh": 22.9,
+    "price_per_wh_usd": 1.24,
+    "price_usd": 28.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-fun-fly-1550mah-4s-100c-lipo-practice-budget-battery"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "G-Tech 9000mAh 6S",
+   "slug": "tattu-g-tech-9000mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 9000,
+    "c_rating": "25C",
+    "weight_g": 1175.0,
+    "connector": "XT60",
+    "dimensions_mm": "208x73x37mm",
+    "energy_wh": 199.8,
+    "price_per_wh_usd": 1.25,
+    "price_usd": 249.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-g-tech-9000mah-6s-25c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "G-Tech - -S 16000mAh 6S",
+   "slug": "tattu-g-tech-s-16000mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 16000,
+    "c_rating": "30C",
+    "weight_g": 1990.0,
+    "connector": "XT90",
+    "dimensions_mm": "190x75x65mm",
+    "energy_wh": 355.2,
+    "price_per_wh_usd": 1.18,
+    "price_usd": 419.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-g-tech-16000mah-6s-30c-lipo-battery-xt90-s"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "JST-SYP 450mAh 2S",
+   "slug": "tattu-jst-syp-450mah-2s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "2S",
+    "capacity_mah": 450,
+    "c_rating": "75C",
+    "weight_g": 29.0,
+    "connector": "JST-SYP",
+    "dimensions_mm": "44x25x14mm",
+    "energy_wh": 3.3,
+    "price_per_wh_usd": 3.3,
+    "price_usd": 10.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-7-4v-2s-450mah-75c-lipo-micro-battery-jst-syp"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "R-Line 500mAh 1S",
+   "slug": "tattu-r-line-500mah-1s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "1S",
+    "capacity_mah": 500,
+    "c_rating": "95C",
+    "weight_g": 14.0,
+    "connector": "PH2.0",
+    "dimensions_mm": "58x18x8mm",
+    "energy_wh": 1.9,
+    "price_per_wh_usd": 5.13,
+    "price_usd": 9.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-r-line-1s-3-7v-500mah-95c-lipo-whoop-micro-battery-ph2-0"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "R-Line 550mAh 2S",
+   "slug": "tattu-r-line-550mah-2s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "2S",
+    "capacity_mah": 550,
+    "c_rating": "95C",
+    "weight_g": 31.5,
+    "connector": "XT30",
+    "dimensions_mm": "61x19x15",
+    "energy_wh": 4.1,
+    "price_per_wh_usd": 3.31,
+    "price_usd": 13.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-r-line-7-4v-2s-550mah-95c-lipo-micro-battery-xt30",
+    "https://genstattu.com/tattu-rline-95c-550mah-2s1p-xt30.html"
+   ],
+   "note": "Weight and size are Tattu's own, not the retailer's: RaceDayQuads prints 63 g and 63x16x12 mm for this pack, and 63 g on 550mAh 2S is 65 Wh/kg - half the density of every other pack in the class, i.e. another object's figure. Gens Ace/Tattu's own product page for TA-RL-95C-550-2S1P-XT30 states Net Weight(+/-5g) 31.5 g and 61 mm L x 19 mm W x 15 mm H. Capacity, cell count, C-rating and connector agree on both pages"
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "R-Line 550mAh 3S",
+   "slug": "tattu-r-line-550mah-3s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "3S",
+    "capacity_mah": 550,
+    "c_rating": "95C",
+    "weight_g": 46.0,
+    "connector": "XT30",
+    "dimensions_mm": "69x19x22mm",
+    "energy_wh": 6.1,
+    "price_per_wh_usd": 3.11,
+    "price_usd": 18.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-r-line-11-1v-3s-550mah-95c-lipo-micro-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "R-Line 850mAh 4S",
+   "slug": "tattu-r-line-850mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 850,
+    "c_rating": "95C",
+    "weight_g": 104.0,
+    "connector": "XT30",
+    "dimensions_mm": "61x31x31.5mm",
+    "energy_wh": 12.6,
+    "price_per_wh_usd": 2.26,
+    "price_usd": 28.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-r-line-850mah-14-8v-95c-4s1p-lipo-battery-pack-with-xt30-plug"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "R-Line V6.0 1600mAh 6S",
+   "slug": "tattu-r-line-v6-0-1600mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1600,
+    "c_rating": "160C",
+    "weight_g": 240.0,
+    "connector": "XT60",
+    "dimensions_mm": "69.5x42x36.5mm",
+    "energy_wh": 35.5,
+    "price_per_wh_usd": 1.32,
+    "price_usd": 46.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-r-line-v6-0-1600mah-6s-160c-22-2v-lipo-battery"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "R-Line Version 1.0 650mAh 6S",
+   "slug": "tattu-r-line-version-1-0-650mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 650,
+    "c_rating": "95C",
+    "weight_g": 115.0,
+    "connector": "XT30",
+    "dimensions_mm": "62x31x36mm",
+    "energy_wh": 14.4,
+    "price_per_wh_usd": 1.64,
+    "price_usd": 23.69
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-r-line-version-1-0-22-2v-6s-650mah-lipo-micro-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "R-Line Version 3.0 1400mAh 6S",
+   "slug": "tattu-r-line-version-3-0-1400mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1400,
+    "c_rating": "120C",
+    "weight_g": 233.0,
+    "connector": "XT60",
+    "dimensions_mm": "76x39x43mm",
+    "energy_wh": 31.1,
+    "price_per_wh_usd": 1.79,
+    "price_usd": 55.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-r-line-version-3-0-22-2v-6s-1400mah-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "R-Line Version 3.0 1550mAh 4S",
+   "slug": "tattu-r-line-version-3-0-1550mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 1550,
+    "c_rating": "120C",
+    "weight_g": 181.0,
+    "connector": "XT60",
+    "dimensions_mm": "77x38.5x32.5mm",
+    "energy_wh": 22.9,
+    "price_per_wh_usd": 2.0,
+    "price_usd": 45.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-r-line-version-3-0-1550mah-14-8v-120c-4s1p-lipo-battery-pack-with-xt60-plug"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "R-Line Version 4.0 1050mAh 6S",
+   "slug": "tattu-r-line-version-4-0-1050mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1050,
+    "c_rating": "130C",
+    "weight_g": 180.0,
+    "connector": "XT60",
+    "dimensions_mm": "78x40x34mm",
+    "energy_wh": 23.3,
+    "price_per_wh_usd": 1.97,
+    "price_usd": 45.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-r-line-version-4-0-22-2v-6s-1050mah-130c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "R-Line Version 4.0 1300mAh 6S",
+   "slug": "tattu-r-line-version-4-0-1300mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1300,
+    "c_rating": "130C",
+    "weight_g": 200.0,
+    "connector": "XT60",
+    "dimensions_mm": "78x39x38mm",
+    "energy_wh": 28.9,
+    "price_per_wh_usd": 1.87,
+    "price_usd": 53.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-r-line-version-4-0-22-2v-6s-1300mah-130c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "R-Line Version 4.0 1400mAh 6S",
+   "slug": "tattu-r-line-version-4-0-1400mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1400,
+    "c_rating": "130C",
+    "weight_g": 222.0,
+    "connector": "XT60",
+    "dimensions_mm": "78x39x42mm",
+    "energy_wh": 31.1,
+    "price_per_wh_usd": 1.83,
+    "price_usd": 56.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-r-line-version-4-0-22-2v-6s-1400mah-130c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "R-Line Version 5.0 1050mAh 6S",
+   "slug": "tattu-r-line-version-5-0-1050mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1050,
+    "c_rating": "150C",
+    "weight_g": 186.0,
+    "connector": "XT60",
+    "dimensions_mm": "76x38x33mm",
+    "energy_wh": 23.3,
+    "price_per_wh_usd": 2.04,
+    "price_usd": 47.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-r-line-version-5-0-1050mah-6s-22-2v-150c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "R-Line Version 5.0 1050mAh 8S",
+   "slug": "tattu-r-line-version-5-0-1050mah-8s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "8S",
+    "capacity_mah": 1050,
+    "c_rating": "150C",
+    "weight_g": 242.0,
+    "connector": "XT60",
+    "dimensions_mm": "77x38x42mm",
+    "energy_wh": 31.1,
+    "price_per_wh_usd": 1.91,
+    "price_usd": 59.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-r-line-version-5-0-1050mah-8s-150c-29-6v-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "R-Line Version 5.0 1200mAh 6S",
+   "slug": "tattu-r-line-version-5-0-1200mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1200,
+    "c_rating": "150C",
+    "weight_g": 197.0,
+    "connector": "XT60",
+    "dimensions_mm": "78x40x32mm",
+    "energy_wh": 26.6,
+    "price_per_wh_usd": 1.69,
+    "price_usd": 44.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-r-line-version-5-0-22-2v-6s-1200mah-150c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "R-Line Version 5.0 1300mAh 4S",
+   "slug": "tattu-r-line-version-5-0-1300mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 1300,
+    "c_rating": "150C",
+    "weight_g": 156.0,
+    "connector": "XT60",
+    "dimensions_mm": "75x38x27mm",
+    "energy_wh": 19.2,
+    "price_per_wh_usd": 2.23,
+    "price_usd": 42.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-r-line-version-5-0-1300mah-4s-14-8v-150c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "R-Line Version 5.0 1400mAh 6S",
+   "slug": "tattu-r-line-version-5-0-1400mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1400,
+    "c_rating": "150C",
+    "weight_g": 222.0,
+    "connector": "XT60",
+    "dimensions_mm": "78x39x42mm",
+    "energy_wh": 31.1,
+    "price_per_wh_usd": 1.79,
+    "price_usd": 55.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/copy-of-tattu-r-line-version-4-0-22-2v-6s-1400mah-130c-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "R-Line Version 5.0 1550mAh 6S",
+   "slug": "tattu-r-line-version-5-0-1550mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1550,
+    "c_rating": "150C",
+    "weight_g": 254.0,
+    "connector": "XT60",
+    "dimensions_mm": "78x37x52mm",
+    "energy_wh": 34.4,
+    "price_per_wh_usd": 1.79,
+    "price_usd": 61.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-r-line-version-5-0-1550mah-6s-150c-22-2v-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "R-Line Version 5.0 1800mAh 6S",
+   "slug": "tattu-r-line-version-5-0-1800mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1800,
+    "c_rating": "150C",
+    "weight_g": 287.0,
+    "connector": "XT60",
+    "dimensions_mm": "77x38x46mm",
+    "energy_wh": 40.0,
+    "price_per_wh_usd": 1.73,
+    "price_usd": 68.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-r-line-version-5-0-1800mah-6s-150c-22-2v-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "R-Line Version 5.0 850mAh 3S",
+   "slug": "tattu-r-line-version-5-0-850mah-3s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "3S",
+    "capacity_mah": 850,
+    "c_rating": "150C",
+    "weight_g": 76.0,
+    "connector": "XT30",
+    "dimensions_mm": "58x30x22mm",
+    "energy_wh": 9.4,
+    "price_per_wh_usd": 2.6,
+    "price_usd": 24.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-r-line-version-5-0-850mah-3s-11-1v-150c-lipo-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "R-Line Version 5.0 850mAh 4S",
+   "slug": "tattu-r-line-version-5-0-850mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 850,
+    "c_rating": "150C",
+    "weight_g": 100.0,
+    "connector": "XT30",
+    "dimensions_mm": "59x30x32mm",
+    "energy_wh": 12.6,
+    "price_per_wh_usd": 2.5,
+    "price_usd": 31.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-r-line-version-5-0-850mah-4s-150c-14-8v-lipo-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "R-Line Version 5.0 850mAh 6S",
+   "slug": "tattu-r-line-version-5-0-850mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 850,
+    "c_rating": "150C",
+    "weight_g": 145.0,
+    "connector": "XT30",
+    "dimensions_mm": "60x30x45mm",
+    "energy_wh": 18.9,
+    "price_per_wh_usd": 2.23,
+    "price_usd": 41.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-r-line-version-5-0-850mah-6s-22-2v-150c-lipo-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "Tattu",
+   "model": "R-Line Version 6.0 SQ 1480mAh 6S",
+   "slug": "tattu-r-line-version-6-0-sq-1480mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1480,
+    "c_rating": "160C",
+    "weight_g": 220.0,
+    "connector": "XT60",
+    "dimensions_mm": "69.5x42x36.5mm",
+    "energy_wh": 32.9,
+    "price_per_wh_usd": 1.29,
+    "price_usd": 42.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/tattu-r-line-version-6-0-sq-1480mah-160c-6s-22-2v-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "WREKD Co.",
+   "model": "Quad Gas 1380mAh 6S",
+   "slug": "wrekd-co-quad-gas-1380mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1380,
+    "c_rating": "150C",
+    "weight_g": 223.0,
+    "connector": "XT60",
+    "dimensions_mm": "78x38x38mm",
+    "energy_wh": 30.6,
+    "price_per_wh_usd": 1.34,
+    "price_usd": 40.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/quad-gas-6s-1380mah-150c-lipo-battery-1pc"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "WREKD Co.",
+   "model": "Quad Gas - Choose Red or 1380mAh 6S",
+   "slug": "wrekd-co-quad-gas-choose-red-or-1380mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1380,
+    "c_rating": "150C",
+    "weight_g": 223.0,
+    "connector": "XT60",
+    "dimensions_mm": "78x38x38mm",
+    "energy_wh": 30.6,
+    "price_per_wh_usd": 4.01,
+    "price_usd": 122.97
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/quad-gas-6s-1380mah-150c-lipo-battery-3-pack-choose-red-or-black"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "WREKD Co.",
+   "model": "Quad Gas w 320mAh 1S",
+   "slug": "wrekd-co-quad-gas-w-320mah-1s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "1S",
+    "capacity_mah": 320,
+    "c_rating": "75C",
+    "weight_g": 8.5,
+    "connector": "BT2.0",
+    "dimensions_mm": "62x11x7mm",
+    "energy_wh": 1.2,
+    "price_per_wh_usd": 5.57,
+    "price_usd": 6.59
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/quad-gas-1s-320mah-75c-battery-w-bt2-0-for-micro-whoops"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "WREKD Co.",
+   "model": "Quad Gas w/ for /Whoops 320mAh 1S",
+   "slug": "wrekd-co-quad-gas-w-for-whoops-320mah-1s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "1S",
+    "capacity_mah": 320,
+    "c_rating": "75C",
+    "weight_g": 8.5,
+    "connector": "BT2.0",
+    "dimensions_mm": "62x11x7mm",
+    "energy_wh": 1.2,
+    "price_per_wh_usd": 27.83,
+    "price_usd": 32.95
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/quad-gas-1s-320mah-75c-battery-w-bt2-0-for-micro-whoops-5-pcs"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "XILO",
+   "model": "1300mAh 5S",
+   "slug": "xilo-1300mah-5s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "5S",
+    "capacity_mah": 1300,
+    "c_rating": "100C",
+    "weight_g": 198.0,
+    "connector": "XT60",
+    "dimensions_mm": "74x34x40mm",
+    "energy_wh": 24.1,
+    "price_per_wh_usd": 1.52,
+    "price_usd": 36.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/xilo-1300mah-5s-100c-lipo-battery"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "XILO",
+   "model": "1500mAh 5S",
+   "slug": "xilo-1500mah-5s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "5S",
+    "capacity_mah": 1500,
+    "c_rating": "100C",
+    "weight_g": 228.0,
+    "connector": "XT60",
+    "dimensions_mm": "77x34x46mm",
+    "energy_wh": 27.8,
+    "price_per_wh_usd": 1.42,
+    "price_usd": 39.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/xilo-1500mah-5s-100c-lipo-battery"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "XILO",
+   "model": "Basher 1250mAh 6S",
+   "slug": "xilo-basher-1250mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 1250,
+    "c_rating": "100C",
+    "weight_g": 215.0,
+    "connector": "XT60",
+    "dimensions_mm": "80x43x33mm",
+    "energy_wh": 27.8,
+    "price_per_wh_usd": 1.71,
+    "price_usd": 47.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/xilo-1250mah-6s-100c-basher-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "XILO",
+   "model": "Basher 1300mAh 4S",
+   "slug": "xilo-basher-1300mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 1300,
+    "c_rating": "100C",
+    "weight_g": 165.0,
+    "connector": "XT60",
+    "dimensions_mm": "80x33x33mm",
+    "energy_wh": 19.2,
+    "price_per_wh_usd": 1.64,
+    "price_usd": 31.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/xilo-1300mah-4s-100c-basher-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "XILO",
+   "model": "Basher 1500mAh 4S",
+   "slug": "xilo-basher-1500mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 1500,
+    "c_rating": "100C",
+    "weight_g": 185.0,
+    "connector": "XT60",
+    "dimensions_mm": "80x33x33mm",
+    "energy_wh": 22.2,
+    "price_per_wh_usd": 1.64,
+    "price_usd": 36.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/xilo-1500mah-4s-100c-basher-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "XILO",
+   "model": "Basher 850mAh 4S",
+   "slug": "xilo-basher-850mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 850,
+    "c_rating": "100C",
+    "weight_g": 110.0,
+    "connector": "XT60",
+    "dimensions_mm": "60x30x30mm",
+    "energy_wh": 12.6,
+    "price_per_wh_usd": 2.26,
+    "price_usd": 28.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/xilo-850mah-4s-100c-basher-lipo-battery-xt60"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "XILO",
+   "model": "Essential 450mAh 3S",
+   "slug": "xilo-essential-450mah-3s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "3S",
+    "capacity_mah": 450,
+    "c_rating": "100C",
+    "weight_g": 45.0,
+    "connector": "XT30",
+    "dimensions_mm": "70x20x15mm",
+    "energy_wh": 5.0,
+    "price_per_wh_usd": 2.8,
+    "price_usd": 13.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/xilo-450mah-3s-100c-essential-micro-lipo-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "XILO",
+   "model": "Essential 550mAh 3S",
+   "slug": "xilo-essential-550mah-3s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "3S",
+    "capacity_mah": 550,
+    "c_rating": "100C",
+    "weight_g": 54.36,
+    "connector": "XT30",
+    "dimensions_mm": "60x15x30mm",
+    "energy_wh": 6.1,
+    "price_per_wh_usd": 3.36,
+    "price_usd": 20.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/xilo-550mah-3s-100c-essential-micro-lipo-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "XILO",
+   "model": "Essential 550mAh 6S",
+   "slug": "xilo-essential-550mah-6s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "6S",
+    "capacity_mah": 550,
+    "c_rating": "100C",
+    "weight_g": 100.8,
+    "connector": "XT30",
+    "dimensions_mm": "60x30x30mm",
+    "energy_wh": 12.2,
+    "price_per_wh_usd": 2.91,
+    "price_usd": 35.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/xilo-550mah-6s-100c-essential-micro-lipo-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "XILO",
+   "model": "Essential 650mAh 4S",
+   "slug": "xilo-essential-650mah-4s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "4S",
+    "capacity_mah": 650,
+    "c_rating": "100C",
+    "weight_g": 80.0,
+    "connector": "XT30",
+    "dimensions_mm": "60x27x24mm",
+    "energy_wh": 9.6,
+    "price_per_wh_usd": 3.27,
+    "price_usd": 31.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/xilo-650mah-4s-100c-essential-micro-lipo-battery-xt30"
+   ]
+  },
+  {
+   "type": "battery",
+   "brand": "XILO",
+   "model": "Essential JST 450mAh 1S",
+   "slug": "xilo-essential-jst-450mah-1s",
+   "specs": {
+    "chemistry": "LiPo",
+    "cells": "1S",
+    "capacity_mah": 450,
+    "c_rating": "100C",
+    "weight_g": 13.79,
+    "connector": "JST",
+    "dimensions_mm": "64x6x17mm",
+    "energy_wh": 1.7,
+    "price_per_wh_usd": 5.7,
+    "price_usd": 9.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/xilo-450mah-1s-100c-essential-micro-lipo-battery-jst"
+   ]
+  }
+ ]
+}

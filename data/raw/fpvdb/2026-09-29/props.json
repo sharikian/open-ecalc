@@ -1,0 +1,3943 @@
+{
+ "generated": "2026-09-29",
+ "count": 207,
+ "license": "CC BY 4.0 - attribution: link https://fpv-db.com",
+ "items": [
+  {
+   "type": "prop",
+   "brand": "APC",
+   "model": "7x4 SF-B4 2-Blade",
+   "slug": "apc-7x4-sf-b4-2-blade",
+   "specs": {
+    "diameter_in": 7.0,
+    "pitch_in": 4.0,
+    "blades": 2,
+    "mount": "5mm",
+    "material": "Glass-fiber composite",
+    "weight_g": 5.1,
+    "price_usd": 6.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/apc-7x4-sf-b4-2-blade-propellers-set-of-4"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Axisflying",
+   "model": "BB39 4926 Tri-Blade 5\" Prop - Choose Version",
+   "slug": "axisflying-bb39-4926-tri-blade-5-prop-choose-version",
+   "specs": {
+    "diameter_in": 4.9,
+    "pitch_in": 2.6,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 3.7,
+    "price_usd": 4.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/draft-axis-flying-bb39-propeller-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "EMAX",
+   "model": "Scimitar 3.5x2.8x3 Tri-Blade 3.5\" Prop (1.5mm)",
+   "slug": "emax-scimitar-3-5x2-8x3-tri-blade-3-5-prop-1-5mm",
+   "specs": {
+    "diameter_in": 3.5,
+    "pitch_in": 2.8,
+    "blades": 3,
+    "mount": "1.5mm T-mount",
+    "material": "Polycarbonate",
+    "weight_g": 1.9,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/emax-scimitar-3-5x2-8x3-tri-blade-3-prop-4-pack-1-5mm"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Flywoo",
+   "model": "1611 3-Blade - 1.5mm",
+   "slug": "flywoo-1611-3-blade-1-5mm",
+   "specs": {
+    "diameter_in": 1.6,
+    "pitch_in": 1.1,
+    "blades": 3,
+    "mount": "1.5mm",
+    "material": "Polycarbonate",
+    "weight_g": 5.0,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/flywoo-1611-3-blade-propeller-set-of-8-1-5mm"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Foxeer",
+   "model": "DAL Cyclone T5045C Pro Tri-Blade 5\" Prop 20 Pack",
+   "slug": "foxeer-dal-cyclone-t5045c-pro-tri-blade-5-prop-20-pack",
+   "specs": {
+    "diameter_in": 5.0,
+    "pitch_in": 4.5,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate/ABS",
+    "weight_g": 5.4,
+    "price_usd": 11.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/dal-cyclone-t5045c-pro-tri-blade-5-prop-20-pack-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Foxeer",
+   "model": "DAL Foldable F6 V3 CNC Hub 6048 Tri-Blade 6\" Prop",
+   "slug": "foxeer-dal-foldable-f6-v3-cnc-hub-6048-tri-blade-6-prop",
+   "specs": {
+    "diameter_in": 6.0,
+    "pitch_in": 4.8,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 6.3,
+    "price_usd": 19.89
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/dal-foldable-f6-v3-cnc-hub-6048-tri-blade-6-prop-4-pack-crystal-grey"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Foxeer",
+   "model": "DAL New Cyclone T2530 Tri-Blade 2.5\" Prop - Choose",
+   "slug": "foxeer-dal-new-cyclone-t2530-tri-blade-2-5-prop-choose",
+   "specs": {
+    "diameter_in": 2.5,
+    "pitch_in": 3.0,
+    "blades": 3,
+    "mount": "1.5mm",
+    "material": "Polycarbonate",
+    "weight_g": 1.4,
+    "price_usd": 2.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/dal-new-cyclone-t2530-tri-blade-3-prop-8-pack-choose-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Foxeer",
+   "model": "DAL New Cyclone T3018 Tri-Blade 3\" Prop",
+   "slug": "foxeer-dal-new-cyclone-t3018-tri-blade-3-prop",
+   "specs": {
+    "diameter_in": 3.0,
+    "pitch_in": 1.8,
+    "blades": 3,
+    "mount": "1.5mm",
+    "material": "Polycarbonate",
+    "weight_g": 1.3,
+    "price_usd": 2.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/dal-prop-new-cyclone-t3018-tri-blade-3-prop-8-pack-choose-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Foxeer",
+   "model": "DAL New Cyclone T3528 Tri-Blade 3.5\" Prop",
+   "slug": "foxeer-dal-new-cyclone-t3528-tri-blade-3-5-prop",
+   "specs": {
+    "diameter_in": 3.5,
+    "pitch_in": 2.8,
+    "blades": 3,
+    "mount": "1.5mm",
+    "material": "Polycarbonate",
+    "weight_g": 2.4,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/dal-new-cyclone-t3528-tri-blade-3-5-prop-8-pack-crystal-black"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Foxeer",
+   "model": "DAL New Cyclone T5146.5 V2 Tri-Blade 5\" Prop - Choose Your",
+   "slug": "foxeer-dal-new-cyclone-t5146-5-v2-tri-blade-5-prop-choose-your",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 4.65,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.5,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/dal-cyclone-t5146-5-tri-blade-5-prop-4-pack-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "1170 Reinforced Glass Fiber Nylon Tri-Blade 11\" Prop",
+   "slug": "gemfan-1170-reinforced-glass-fiber-nylon-tri-blade-11-prop",
+   "specs": {
+    "diameter_in": 11.0,
+    "pitch_in": 7.0,
+    "blades": 3,
+    "mount": "1.5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 27.7,
+    "price_usd": 16.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-1170-3-glass-fiber-nylon-black"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "13x12x3 Glass Fiber Nylon 3-Blade",
+   "slug": "gemfan-13x12x3-glass-fiber-nylon-3-blade",
+   "specs": {
+    "diameter_in": 13.0,
+    "pitch_in": 12.0,
+    "blades": 3,
+    "mount": "6mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 44.3,
+    "price_usd": 13.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-13x12x3-glass-fiber-nylon-3-blade-propeller-set-of-2"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "15x10x3 Glass Fiber Nylon 3-Blade",
+   "slug": "gemfan-15x10x3-glass-fiber-nylon-3-blade",
+   "specs": {
+    "diameter_in": 15.0,
+    "pitch_in": 10.0,
+    "blades": 3,
+    "mount": "6mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 70.0,
+    "price_usd": 17.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-15x10x3-glass-fiber-nylon-3-blade-propeller-set-of-2"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "16X8X3 Glass Fiber Nylon 3-Blade",
+   "slug": "gemfan-16x8x3-glass-fiber-nylon-3-blade",
+   "specs": {
+    "diameter_in": 16.0,
+    "pitch_in": 8.0,
+    "blades": 3,
+    "mount": "6mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 84.9,
+    "price_usd": 19.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-16x8x3-glass-fiber-nylon-3-blade-propeller-set-of-2"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "17X8X3 Glass Fiber Nylon 3-Blade",
+   "slug": "gemfan-17x8x3-glass-fiber-nylon-3-blade",
+   "specs": {
+    "diameter_in": 17.0,
+    "pitch_in": 8.0,
+    "blades": 3,
+    "mount": "6mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 100.5,
+    "price_usd": 21.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-17x8x3-glass-fiber-nylon-3-blade-propeller-set-of-2"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "18X10X3 Glass Fiber Nylon 3-Blade",
+   "slug": "gemfan-18x10x3-glass-fiber-nylon-3-blade",
+   "specs": {
+    "diameter_in": 18.0,
+    "pitch_in": 10.0,
+    "blades": 3,
+    "mount": "6mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 118.0,
+    "price_usd": 24.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-18x10x3-glass-fiber-nylon-3-blade-propeller-set-of-2"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "2216 3-Blade - 1.5mm",
+   "slug": "gemfan-2216-3-blade-1-5mm",
+   "specs": {
+    "diameter_in": 2.2,
+    "pitch_in": 1.6,
+    "blades": 3,
+    "mount": "1.5mm",
+    "material": "Polycarbonate",
+    "weight_g": 0.7,
+    "price_usd": 3.29
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-2216-3-blade-propeller-set-of-8-1-5mm"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "3032 3-Blade for DJI AVATA 2",
+   "slug": "gemfan-3032-3-blade-for-dji-avata-2",
+   "specs": {
+    "diameter_in": 3.0,
+    "pitch_in": 3.2,
+    "blades": 3,
+    "mount": "2mm",
+    "material": "Polycarbonate",
+    "weight_g": 1.8,
+    "price_usd": 3.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-3032-3-blade-propeller-for-dji-avata-2-set-of-4"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "3525 Hurricane 3-Blade - 1.5mm",
+   "slug": "gemfan-3525-hurricane-3-blade-1-5mm",
+   "specs": {
+    "diameter_in": 3.5,
+    "pitch_in": 2.5,
+    "blades": 3,
+    "mount": "1.5mm",
+    "material": "Polycarbonate",
+    "weight_g": 1.83,
+    "price_usd": 2.69
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-3525-hurricane-3-blade-propeller-set-of-4-1-5mm"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "353D 3D 3-Blade",
+   "slug": "gemfan-353d-3d-3-blade",
+   "specs": {
+    "diameter_in": 3.5,
+    "pitch_in": 2.5,
+    "blades": 3,
+    "mount": "1.5mm",
+    "material": "Polycarbonate",
+    "weight_g": 2.4,
+    "price_usd": 2.89
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-353d-3d-3-blade-propeller-set-of-4"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "35MMS 3-Blade - 1.5mm",
+   "slug": "gemfan-35mms-3-blade-1-5mm",
+   "specs": {
+    "diameter_in": 1.4,
+    "pitch_in": 0.96,
+    "blades": 3,
+    "mount": "1.5mm",
+    "material": "Polycarbonate",
+    "weight_g": 0.24,
+    "price_usd": 3.29
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-35mms-3-blade-propeller-set-of-8-1-5mm-clear-black"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "4022F 2-Blade - DJI Flip Drone",
+   "slug": "gemfan-4022f-2-blade-dji-flip-drone",
+   "specs": {
+    "diameter_in": 4.0,
+    "pitch_in": 2.2,
+    "blades": 2,
+    "mount": "2.95mm",
+    "material": "Polycarbonate",
+    "weight_g": 0.37,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-4022f-2-blade-propellers-set-of-8-dji-flip-drone"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "40mm 1608 3-Blade - 1.2mm",
+   "slug": "gemfan-40mm-1608-3-blade-1-2mm",
+   "specs": {
+    "diameter_in": 1.6,
+    "pitch_in": 0.8,
+    "blades": 3,
+    "mount": "1.2mm",
+    "material": "Polycarbonate",
+    "weight_g": 0.42,
+    "price_usd": 3.29
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-40mm-1608-3-blade-propeller-set-of-8-1-2mm-clear-blue"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "4935 Sbang 3-Blade",
+   "slug": "gemfan-4935-sbang-3-blade",
+   "specs": {
+    "diameter_in": 4.9,
+    "pitch_in": 3.5,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 3.45,
+    "price_usd": 2.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-4935-sbang-3-blade-propeller"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "493D 3D 3-Blade",
+   "slug": "gemfan-493d-3d-3-blade",
+   "specs": {
+    "diameter_in": 4.9,
+    "pitch_in": 3.2,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.4,
+    "price_usd": 2.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-493d-3d-3-blade-propeller-set-of-4"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "5129.2 Minjae 3-Blade",
+   "slug": "gemfan-5129-2-minjae-3-blade",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 2.92,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.12,
+    "price_usd": 2.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-5129-2-minjae-3-blade-propeller"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "7035 Reinforced Carbon Or Glass Nylon Tri-Blade 7\" Prop - Choose Version",
+   "slug": "gemfan-7035-reinforced-carbon-or-glass-nylon-tri-blade-7-prop-choose-version",
+   "specs": {
+    "diameter_in": 7.0,
+    "pitch_in": 3.5,
+    "blades": 3,
+    "mount": "5mm",
+    "weight_g": 6.9,
+    "price_usd": 6.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-7035-reinforced-carbon-or-glass-nylon-tri-blade-7-prop-4-pack-choose-version"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "7140 3-Blade",
+   "slug": "gemfan-7140-3-blade",
+   "specs": {
+    "diameter_in": 7.1,
+    "pitch_in": 4.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 9.8,
+    "price_usd": 4.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-7140-3-blade-propeller-set-of-4-black"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Cinelifter 7035 7x3.5x3 Tri-Blade 7\" Prop - Choose Your",
+   "slug": "gemfan-cinelifter-7035-7x3-5x3-tri-blade-7-prop-choose-your",
+   "specs": {
+    "diameter_in": 7.0,
+    "pitch_in": 3.5,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 6.5,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-cinelifter-7035-3-7x3-5x3-bi-blade-7-prop-4-pack-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Cinelifter 8040 Tri-Blade 8.1\" Prop",
+   "slug": "gemfan-cinelifter-8040-tri-blade-8-1-prop",
+   "specs": {
+    "diameter_in": 8.0,
+    "pitch_in": 4.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 10.5,
+    "price_usd": 10.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-cinelifter-8040-tri-blade-8-1-prop-2-pack-black"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "D2.5 Ducted 3-Blade - 1.5mm",
+   "slug": "gemfan-d2-5-ducted-3-blade-1-5mm",
+   "specs": {
+    "diameter_in": 2.5,
+    "pitch_in": 2.4,
+    "blades": 3,
+    "mount": "1.5mm",
+    "material": "Polycarbonate",
+    "weight_g": 1.2,
+    "price_usd": 3.69
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-d2-5-ducted-3-blade-propeller-set-of-8-1-5mm"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "D4-5 Penta-Blade 4\" Prop - Macho",
+   "slug": "gemfan-d4-5-penta-blade-4-prop-macho",
+   "specs": {
+    "diameter_in": 4.0,
+    "pitch_in": 3.8,
+    "blades": 5,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 5.5,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-d4-5-penta-blade-4-prop-4-pack-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "D51-5 1.5mm T-Mount Penta-Blade 2\" Prop - Choose Your",
+   "slug": "gemfan-d51-5-1-5mm-t-mount-penta-blade-2-prop-choose-your",
+   "specs": {
+    "diameter_in": 2.0,
+    "pitch_in": 1.9,
+    "blades": 5,
+    "mount": "1.5mm",
+    "material": "Polycarbonate",
+    "weight_g": 0.996,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-d51-5-1-5mm-t-mount-penta-blade-4-prop-4-pack-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "D63 Ducted Durable Tri-Blade 2.5\" Cinewhoop Prop",
+   "slug": "gemfan-d63-ducted-durable-tri-blade-2-5-cinewhoop-prop",
+   "specs": {
+    "diameter_in": 2.5,
+    "pitch_in": 3.0,
+    "blades": 3,
+    "mount": "1.5mm T-mount",
+    "material": "Polycarbonate",
+    "weight_g": 1.36,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-d63-ducted-durable-tri-blade-63mm-prop-8-pack"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "D76 Ducted Durable 5-Blade 3\" Prop (5mm & 1.5mm Mounting) - Choose Your",
+   "slug": "gemfan-d76-ducted-durable-5-blade-3-prop-5mm-1-5mm-mounting-choose-your",
+   "specs": {
+    "diameter_in": 3.0,
+    "pitch_in": 3.0,
+    "blades": 5,
+    "mount": [
+     "5mm",
+     "1.5mm T-mount"
+    ],
+    "material": "Polycarbonate",
+    "weight_g": 3.03,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-d76-ducted-durable-5-blade-76mm-prop-4-pack-choose-your-color"
+   ],
+   "note": "Ships fitting two shafts (5mm and 1.5mm T-mount) - title: \"... 4 Pack (5mm & 1.5mm Mounting)\"; block: \"Center Hole Inner diameter: 5mm/1.5mm T-Mount Style\"."
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Durable 5536 Tri-Blade 5.5\" Prop - Choose Your",
+   "slug": "gemfan-durable-5536-tri-blade-5-5-prop-choose-your",
+   "specs": {
+    "diameter_in": 5.5,
+    "pitch_in": 3.6,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 5.0,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-durable-5536-tri-blade-5-5-prop-4-pack-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "DYH 3026 3-Blade",
+   "slug": "gemfan-dyh-3026-3-blade",
+   "specs": {
+    "diameter_in": 3.0,
+    "pitch_in": 2.6,
+    "blades": 3,
+    "mount": "1.5mm T-mount",
+    "material": "Polycarbonate",
+    "weight_g": 1.8,
+    "price_usd": 2.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-dyh-3026-3-blade-propeller-set-of-4"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Flash 4052 Tri-Blade 4\" Prop - Choose Your",
+   "slug": "gemfan-flash-4052-tri-blade-4-prop-choose-your",
+   "specs": {
+    "diameter_in": 4.0,
+    "pitch_in": 5.2,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 3.85,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-4052-flash-4-tri-blade-prop-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Flash 5149 Tri-Blade 5\" Prop - Choose Your",
+   "slug": "gemfan-flash-5149-tri-blade-5-prop-choose-your",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 4.9,
+    "blades": 3,
+    "mount": "5mm",
+    "weight_g": 4.5,
+    "price_usd": 3.29
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-5149-5-tri-blade-propeller-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Flash 6042 Bi-Blade 6\" Prop - Choose Your",
+   "slug": "gemfan-flash-6042-bi-blade-6-prop-choose-your",
+   "specs": {
+    "diameter_in": 6.0,
+    "pitch_in": 4.2,
+    "blades": 2,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.82,
+    "price_usd": 3.24
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-6042-6-2-blade-propellers-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Flash 6042 Tri-Blade 6\" Prop - Choose Your",
+   "slug": "gemfan-flash-6042-tri-blade-6-prop-choose-your",
+   "specs": {
+    "diameter_in": 6.0,
+    "pitch_in": 4.2,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 6.45,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-6042-flash-6-tri-blade-prop-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Flash 7040 Tri-Blade 7\" Prop - Choose Your",
+   "slug": "gemfan-flash-7040-tri-blade-7-prop-choose-your",
+   "specs": {
+    "diameter_in": 7.0,
+    "pitch_in": 4.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 7.9,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-flash-7040-tri-blade-7-prop-4-pack-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Freestyle 5226 Durable Tri-Blade 5.2\" Prop - Choose Your",
+   "slug": "gemfan-freestyle-5226-durable-tri-blade-5-2-prop-choose-your",
+   "specs": {
+    "diameter_in": 5.2,
+    "pitch_in": 2.6,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.0,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-freestyle-5226-durable-tri-blade-5-2-prop-4-pack-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Freestyle 6030 Tri-Blade 6\" Prop - Choose Your",
+   "slug": "gemfan-freestyle-6030-tri-blade-6-prop-choose-your",
+   "specs": {
+    "diameter_in": 6.0,
+    "pitch_in": 3.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.45,
+    "price_usd": 4.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-freestyle-6030-tri-blade-6-prop-4-pack-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Freestyle4 5.1\" 3-Blade - Mango",
+   "slug": "gemfan-freestyle4-5-1-3-blade-mango",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 3.6,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 3.6,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-freestyle4-5-1-3-blade-propeller-set-of-4-mango-yellow"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Fury 5128.0 Tri-Blade 5\" Prop - Choose your",
+   "slug": "gemfan-fury-5128-0-tri-blade-5-prop-choose-your",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 2.8,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.3,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-fury-5128-0-tri-blade-5-prop-4-pack-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Fury 5131.0 Tri-Blade 5\" Prop",
+   "slug": "gemfan-fury-5131-0-tri-blade-5-prop",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 3.1,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.2,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-fury-5131-0-tri-blade-clear-gray"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Hurricane 2023 Tri-Blade 2\" Prop (1.5mm) - Choose Your",
+   "slug": "gemfan-hurricane-2023-tri-blade-2-prop-1-5mm-choose-your",
+   "specs": {
+    "diameter_in": 2.0,
+    "pitch_in": 2.3,
+    "blades": 3,
+    "mount": "1.5mm",
+    "material": "Polycarbonate",
+    "weight_g": 0.87,
+    "price_usd": 2.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-hurricane-2023-tri-blade-2-prop-8-pack-1-5mm-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Hurricane 2512 Tri-Blade 2.5\" Prop - Choose Your",
+   "slug": "gemfan-hurricane-2512-tri-blade-2-5-prop-choose-your",
+   "specs": {
+    "diameter_in": 2.5,
+    "pitch_in": 1.2,
+    "blades": 3,
+    "material": "Polycarbonate",
+    "weight_g": 0.8,
+    "price_usd": 4.49,
+    "mount": [
+     "1.5mm",
+     "2mm"
+    ]
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-hurricane-2512-tri-blade-2-5-prop-8-pack-choose-your-color"
+   ],
+   "note": "Ships fitting two shafts (1.5mm and 2mm) - block: \"Center Hole Inner diameter: 1.5mm/2mm\" (the shop variants are colours only, so both bores ship with every one)."
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Hurricane 3016 Durable Tri-Blade 3\" Prop (1.5mm) - Choose Your",
+   "slug": "gemfan-hurricane-3016-durable-tri-blade-3-prop-1-5mm-choose-your",
+   "specs": {
+    "diameter_in": 3.0,
+    "pitch_in": 1.6,
+    "blades": 3,
+    "mount": "1.5mm",
+    "weight_g": 1.18,
+    "price_usd": 2.59
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-hurricane-3016-durable-tri-blade-3-prop-4-pack-1-5mm-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Hurricane 3016 Durable Tri-Blade 3\" Prop (2mm) - Choose Your",
+   "slug": "gemfan-hurricane-3016-durable-tri-blade-3-prop-2mm-choose-your",
+   "specs": {
+    "diameter_in": 3.0,
+    "pitch_in": 1.6,
+    "blades": 3,
+    "mount": "2mm",
+    "material": "Polycarbonate",
+    "weight_g": 1.18,
+    "price_usd": 2.59
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-hurricane-3016-durable-tri-blade-3-prop-4-pack-2mm-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Hurricane 3018 Durable Bi-Blade 3\" Prop (1.5mm) - Choose Your",
+   "slug": "gemfan-hurricane-3018-durable-bi-blade-3-prop-1-5mm-choose-your",
+   "specs": {
+    "diameter_in": 3.0,
+    "pitch_in": 1.8,
+    "blades": 2,
+    "mount": "1.5mm",
+    "material": "Polycarbonate",
+    "weight_g": 0.75,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-hurricane-3018-durable-bi-blade-3-prop-8-pack-1-5mm-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Hurricane 3018 Durable Bi-Blade 3\" Prop (2mm) - Choose Your",
+   "slug": "gemfan-hurricane-3018-durable-bi-blade-3-prop-2mm-choose-your",
+   "specs": {
+    "diameter_in": 3.0,
+    "pitch_in": 1.8,
+    "blades": 2,
+    "mount": "2mm",
+    "material": "Polycarbonate",
+    "weight_g": 0.75,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-hurricane-3018-durable-bi-blade-3-prop-8-pack-2mm-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Hurricane 3020 Durable Tri-Blade Prop - Choose Your",
+   "slug": "gemfan-hurricane-3020-durable-tri-blade-prop-choose-your",
+   "specs": {
+    "diameter_in": 3.0,
+    "pitch_in": 2.0,
+    "blades": 3,
+    "mount": "1.5mm",
+    "material": "Polycarbonate",
+    "weight_g": 1.3,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-hurricane-3020-durable-tri-blade-3-prop-4-pack-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Hurricane 3520 Durable 3-Blade - 1.5mm",
+   "slug": "gemfan-hurricane-3520-durable-3-blade-1-5mm",
+   "specs": {
+    "diameter_in": 3.5,
+    "pitch_in": 2.0,
+    "blades": 3,
+    "mount": "1.5mm T-mount",
+    "material": "Polycarbonate",
+    "weight_g": 1.8,
+    "price_usd": 2.69
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-hurricane-3520-durable-3-blade-propeller-set-of-4-1-5mm"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Hurricane 3520 Durable Tri-Blade 3.5\" Prop - Choose Your",
+   "slug": "gemfan-hurricane-3520-durable-tri-blade-3-5-prop-choose-your",
+   "specs": {
+    "diameter_in": 3.5,
+    "pitch_in": 2.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 1.7,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-hurricane-3520-durable-tri-blade-3-5-prop-4-pack-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Hurricane 3630 3-Blade -1.5mm",
+   "slug": "gemfan-hurricane-3630-3-blade-1-5mm",
+   "specs": {
+    "diameter_in": 3.6,
+    "pitch_in": 3.0,
+    "blades": 3,
+    "mount": "1.5mm T-mount",
+    "material": "Polycarbonate",
+    "weight_g": 2.3,
+    "price_usd": 2.69
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-hurricane-3630-3-blade-propeller-set-of-4-1-5mm"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Hurricane 4023 Durable 3-Blade - 1.5mm",
+   "slug": "gemfan-hurricane-4023-durable-3-blade-1-5mm",
+   "specs": {
+    "diameter_in": 4.0,
+    "pitch_in": 2.3,
+    "blades": 3,
+    "mount": "1.5mm T-mount",
+    "material": "Polycarbonate",
+    "weight_g": 2.05,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-hurricane-4023-durable-3-blade-propeller-set-of-4-1-5mm"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Hurricane 4024 Durable Bi-Blade 4\" Prop - Choose Your",
+   "slug": "gemfan-hurricane-4024-durable-bi-blade-4-prop-choose-your",
+   "specs": {
+    "diameter_in": 4.0,
+    "pitch_in": 2.4,
+    "blades": 2,
+    "mount": "1.5mm",
+    "material": "Polycarbonate",
+    "weight_g": 1.61,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-hurricane-4024-durable-bi-blade-4-prop-8-pack-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Hurricane 4937 Tri-Blade 5\" Prop - Choose",
+   "slug": "gemfan-hurricane-4937-tri-blade-5-prop-choose",
+   "specs": {
+    "diameter_in": 4.9,
+    "pitch_in": 3.7,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 3.5,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-hurricane-4937-tri-blade-5-prop-4-pack-choose-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Hurricane 51433 Durable Tri-Blade 5\" Prop - Choose Your",
+   "slug": "gemfan-hurricane-51433-durable-tri-blade-5-prop-choose-your",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 3.5,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 3.8,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-hurricane-51433-durable-tri-blade-5-prop-4-pack-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Hurricane 5236 Durable Tri-Blade 5.2\" Prop - Choose Your",
+   "slug": "gemfan-hurricane-5236-durable-tri-blade-5-2-prop-choose-your",
+   "specs": {
+    "diameter_in": 5.2,
+    "pitch_in": 3.6,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 3.9,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-hurricane-5236-durable-tri-blade-5-2-prop-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Hurricane 6038-4 Quad-Blade 6\" Prop - Choose Your",
+   "slug": "gemfan-hurricane-6038-4-quad-blade-6-prop-choose-your",
+   "specs": {
+    "diameter_in": 6.0,
+    "pitch_in": 3.8,
+    "blades": 4,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 8.2,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-hurricane-6038-4-quad-blade-6-prop-4-pack-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Hurricane 7050 Durable Tri-Blade 7″ Prop – Choose Your",
+   "slug": "gemfan-hurricane-7050-durable-tri-blade-7-prop-choose-your",
+   "specs": {
+    "diameter_in": 7.0,
+    "pitch_in": 5.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 8.9,
+    "price_usd": 4.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-hurricane-7050-durable-tri-blade-7-prop-4-pack-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Hurricane LR 6026-2 Bi-Blade 6\" Prop (5mm) - Choose Your",
+   "slug": "gemfan-hurricane-lr-6026-2-bi-blade-6-prop-5mm-choose-your",
+   "specs": {
+    "diameter_in": 6.0,
+    "pitch_in": 2.6,
+    "blades": 2,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 3.0,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-hurricane-sl-6026-bi-blade-6-prop-4-pack-1-5mm-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Hurricane MCK 51466-3 V2 Tri-Blade 5.1\" Prop - Choose",
+   "slug": "gemfan-hurricane-mck-51466-3-v2-tri-blade-5-1-prop-choose",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 3.6,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.2,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-hurricane-mck-51466-3-v2-tri-blade-5-1-prop-4-pack-choose-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Hurricane X 51455 Durable Quad-Blade 5\" Prop - Choose Your",
+   "slug": "gemfan-hurricane-x-51455-durable-quad-blade-5-prop-choose-your",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 4.55,
+    "blades": 4,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 5.3,
+    "price_usd": 3.29
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-hurricane-x-51455-durabe-quad-blade-5-prop-4-pack-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Long Range 5126-2 Durable Bi-Blade 5\" Prop 1.5mm T-Mount - Choose Your",
+   "slug": "gemfan-long-range-5126-2-durable-bi-blade-5-prop-1-5mm-t-mount-choose-your",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 2.7,
+    "blades": 2,
+    "mount": "1.5mm T-mount",
+    "material": "Polycarbonate",
+    "weight_g": 2.6,
+    "price_usd": 2.69
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-long-range-5126-2-durable-bi-blade-5-prop-4-pack-1-5mm-t-mount-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "MCK ReV3 51366-3 Durable Tri-Blade 5\" Prop - Choose Your",
+   "slug": "gemfan-mck-rev3-51366-3-durable-tri-blade-5-prop-choose-your",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 2.8,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.2,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-mck-rev3-51366-durable-tri-blade-5-prop-4-pack-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Proxy 5127.5 3-Blade",
+   "slug": "gemfan-proxy-5127-5-3-blade",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 2.75,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.2,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-proxy-5127-5-3-blade-propeller-set-of-4"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Sbang 4934 Tri-Blade 5\" Prop - Choose Version",
+   "slug": "gemfan-sbang-4934-tri-blade-5-prop-choose-version",
+   "specs": {
+    "diameter_in": 4.9,
+    "pitch_in": 3.4,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 3.5,
+    "price_usd": 2.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-sbang-4943-tri-blade-5-prop-4-pack-choose-version"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "Vannystyle 5136 Tri-Blade 5\" Prop - Choose",
+   "slug": "gemfan-vannystyle-5136-tri-blade-5-prop-choose",
+   "specs": {
+    "diameter_in": 5.15,
+    "pitch_in": 3.6,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.3,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-vannystyle-5136-tri-blade-5-prop-4-pack-choose-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Gemfan",
+   "model": "WinDancer 5043S POPO Compatible Tri-Blade 5\" Prop - Skitzo Galaxy Limited",
+   "slug": "gemfan-windancer-5043s-popo-compatible-tri-blade-5-prop-skitzo-galaxy-limited",
+   "specs": {
+    "diameter_in": 5.0,
+    "pitch_in": 4.3,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.1,
+    "price_usd": 5.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/gemfan-windancer-5043s-popo-compatible-tri-blade-5-prop-4-pack-skitzo-galaxy-limited-edition"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "Happymodel",
+   "model": "Gemfan 1610 Bi-Blade 40mm Micro/Whoop Prop",
+   "slug": "happymodel-gemfan-1610-bi-blade-40mm-micro-whoop-prop",
+   "specs": {
+    "diameter_in": 1.6,
+    "pitch_in": 1.0,
+    "blades": 2,
+    "mount": "1.5mm",
+    "material": "Polycarbonate",
+    "weight_g": 6.4,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/happymodel-gemfan-1610-bi-blade-40mm-micro-whoop-prop-4-pack-grey"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "13x6.5x3 3-Blade",
+   "slug": "hqprop-13x6-5x3-3-blade",
+   "specs": {
+    "diameter_in": 13.0,
+    "pitch_in": 6.5,
+    "blades": 3,
+    "mount": "6mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 48.8,
+    "price_usd": 32.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-13x6-5x3-3-blade-propeller-set-of-2-black"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "13x8x3 3-Blade",
+   "slug": "hqprop-13x8x3-3-blade",
+   "specs": {
+    "diameter_in": 13.0,
+    "pitch_in": 8.0,
+    "blades": 3,
+    "mount": "6mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 38.6,
+    "price_usd": 32.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-13x8x3-3-blade-propeller-set-of-2-black"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "16X8X3 3-Blade",
+   "slug": "hqprop-16x8x3-3-blade",
+   "specs": {
+    "diameter_in": 16.0,
+    "pitch_in": 8.0,
+    "blades": 3,
+    "mount": "6mm",
+    "material": "Glass-fiber composite",
+    "weight_g": 66.5,
+    "price_usd": 18.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-16x8x3-3-blade-propeller-set-of-2"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "17x8x3 3-Blade",
+   "slug": "hqprop-17x8x3-3-blade",
+   "specs": {
+    "diameter_in": 17.0,
+    "pitch_in": 8.0,
+    "blades": 3,
+    "mount": "6mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 70.0,
+    "price_usd": 40.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-17x8x3-3-blade-propeller-set-of-2-black"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "40mm Ultralight 3-Blade - 1mm",
+   "slug": "hqprop-40mm-ultralight-3-blade-1mm",
+   "specs": {
+    "diameter_in": 1.6,
+    "pitch_in": 1.0,
+    "blades": 3,
+    "mount": "1mm",
+    "material": "Polycarbonate",
+    "weight_g": 0.25,
+    "price_usd": 2.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-40mm-ultralight-3-blade-propeller-set-of-4-1mm-gray"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "5x4.3x3 V1S",
+   "slug": "hqprop-5x4-3x3-v1s",
+   "specs": {
+    "diameter_in": 5,
+    "pitch_in": 4.3,
+    "blades": 3,
+    "mount": "5mm",
+    "weight_g": 4.1,
+    "suited_motors": "2206/2207/2306 motors, 1700-2700KV depending on cells"
+   },
+   "sources": [],
+   "note": "SEED DATA — verify against manufacturer page before launch"
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "8x3.7x3 3-Blade",
+   "slug": "hqprop-8x3-7x3-3-blade",
+   "specs": {
+    "diameter_in": 8.0,
+    "pitch_in": 3.7,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 12.0,
+    "price_usd": 11.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-8x3-7x3-3-blade-propeller-set-of-4-gray"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "8x4x3 3-Blade",
+   "slug": "hqprop-8x4x3-3-blade",
+   "specs": {
+    "diameter_in": 8.0,
+    "pitch_in": 4.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 13.0,
+    "price_usd": 11.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-8x4x3-3-blade-propeller-set-of-4"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "Cine8 8x4.5x3 3-Blade",
+   "slug": "hqprop-cine8-8x4-5x3-3-blade",
+   "specs": {
+    "diameter_in": 8.0,
+    "pitch_in": 4.5,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 13.0,
+    "price_usd": 16.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-cine8-8x4-5x3-3-blade-propeller-set-of-4"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "DP 6x3x3 V1S",
+   "slug": "hqprop-dp-6x3x3-v1s",
+   "specs": {
+    "diameter_in": 6.0,
+    "pitch_in": 3.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 6.0,
+    "price_usd": 5.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-dp-6x3x3-v1s-propeller-set-of-4-light-blue"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "Duct T63MMX6 Hexa-Blade 2.5\" Cinewhoop Prop",
+   "slug": "hqprop-duct-t63mmx6-hexa-blade-2-5-cinewhoop-prop",
+   "specs": {
+    "diameter_in": 2.5,
+    "pitch_in": 1.5,
+    "blades": 6,
+    "mount": "1.5mm",
+    "material": "Polycarbonate",
+    "weight_g": 1.85,
+    "price_usd": 2.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-durable-t63mmx6-hexa-blade-63mm-cinewhoop-prop-4-pack-light-gray"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "Ethix P2 Pickle 5.1\" 3-Blade",
+   "slug": "hqprop-ethix-p2-pickle-5-1-3-blade",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 2.9,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 3.8,
+    "price_usd": 5.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-ethix-p2-pickle-5-1-3-blade-propeller-set-of-4"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "FlowerPig R29V3 3-Blade",
+   "slug": "hqprop-flowerpig-r29v3-3-blade",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 2.9,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.4,
+    "price_usd": 2.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-flowerpig-r29v3-3-blade-propeller-set-of-4"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "FlowerPig R29V4 3-Blade",
+   "slug": "hqprop-flowerpig-r29v4-3-blade",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 2.9,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.3,
+    "price_usd": 2.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-flowerpig-r29v4-3-blade-propeller-set-of-4-pink"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop 3.5x2.2x3 Tri-Blade 3.5\" Prop",
+   "slug": "hqprop-hq-prop-3-5x2-2x3-tri-blade-3-5-prop",
+   "specs": {
+    "diameter_in": 3.5,
+    "pitch_in": 2.2,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 1.6,
+    "price_usd": 3.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-3528-3-5x2-8x3-tri-blade-3-5-prop-4-pack-grey-1"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop 3.5x2.8x3 Tri-Blade 3.5\" Prop",
+   "slug": "hqprop-hq-prop-3-5x2-8x3-tri-blade-3-5-prop",
+   "specs": {
+    "diameter_in": 3.5,
+    "pitch_in": 2.8,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 1.7,
+    "price_usd": 3.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-3528-3-5x2-8x3-tri-blade-3-5-prop-4-pack-grey"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop 40MMX2 Ultralight Bi-Blade 40mm Micro/Whoop Prop",
+   "slug": "hqprop-hq-prop-40mmx2-ultralight-bi-blade-40mm-micro-whoop-prop",
+   "specs": {
+    "diameter_in": 1.6,
+    "pitch_in": 1.2,
+    "blades": 2,
+    "mount": "1mm",
+    "material": "Polycarbonate",
+    "weight_g": 0.2,
+    "price_usd": 2.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-40mmx2-ultralight-bi-blade-40mm-micro-whoop-prop-4-pack-grey"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop 4x3x3 Tri-Blade 4\" Prop Pack",
+   "slug": "hqprop-hq-prop-4x3x3-tri-blade-4-prop-pack",
+   "specs": {
+    "diameter_in": 4.0,
+    "pitch_in": 3.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 2.2,
+    "price_usd": 2.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-4x3x3-tri-blade-durable-prop-light-purple"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop 5.2x3.2x3 Tri-Blade 5\" Prop",
+   "slug": "hqprop-hq-prop-5-2x3-2x3-tri-blade-5-prop",
+   "specs": {
+    "diameter_in": 5.2,
+    "pitch_in": 3.2,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 3.5,
+    "price_usd": 4.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-5232-5-2x3-2x3-tri-blade-5-prop-4-pack-grey"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop 5.5X2.2X3 Tri-Blade 5.5\" Prop",
+   "slug": "hqprop-hq-prop-5-5x2-2x3-tri-blade-5-5-prop",
+   "specs": {
+    "diameter_in": 5.5,
+    "pitch_in": 2.2,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.6,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-5-5x2-2x3-tri-blade-5-5-prop"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop 5135 V2（R35 V2）5.1x3.5x3 Tri-Blade 5\" Prop - Choose Your",
+   "slug": "hqprop-hq-prop-5135-v2-r35-v2-5-1x3-5x3-tri-blade-5-prop-choose-your",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 3.5,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.2,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-5135v2-r35v2-5-1x3-5x3-tri-blade-5-prop-4-pack-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop 51MMX2 Ultralight Bi-Blade 2\" (51mm) Micro/Whoop Prop",
+   "slug": "hqprop-hq-prop-51mmx2-ultralight-bi-blade-2-51mm-micro-whoop-prop",
+   "specs": {
+    "diameter_in": 2.0,
+    "pitch_in": 0.9,
+    "blades": 2,
+    "mount": "1mm",
+    "material": "Polycarbonate",
+    "weight_g": 0.23,
+    "price_usd": 2.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/draft-hq-ultralight-prop-51mmx2-1mm-shaft-bi-blade-4-pack-grey"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop 5535 5.5x3.5x3 V2 Tri-Blade 5\" Prop",
+   "slug": "hqprop-hq-prop-5535-5-5x3-5x3-v2-tri-blade-5-prop",
+   "specs": {
+    "diameter_in": 5.5,
+    "pitch_in": 3.5,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.6,
+    "price_usd": 4.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-5535-5-5x3-5x3-v2-tri-blade-5-prop-4-pack-grey"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop 5x4.3x3 V1S Tri-Blade 5\" Prop - Choose Your",
+   "slug": "hqprop-hq-prop-5x4-3x3-v1s-tri-blade-5-prop-choose-your",
+   "specs": {
+    "diameter_in": 5.0,
+    "pitch_in": 4.3,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 3.75,
+    "price_usd": 3.69
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-v1s-5x4-3x3-5-prop-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop 5x4.5x3 V1S Tri-Blade 5\" Prop - Choose Your",
+   "slug": "hqprop-hq-prop-5x4-5x3-v1s-tri-blade-5-prop-choose-your",
+   "specs": {
+    "diameter_in": 5.0,
+    "pitch_in": 4.5,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.19,
+    "price_usd": 1.35
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-v1s-5x4-5x3-5-prop-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop 5x4x6 Hex-Blade 5\" Prop",
+   "slug": "hqprop-hq-prop-5x4x6-hex-blade-5-prop",
+   "specs": {
+    "diameter_in": 5.0,
+    "pitch_in": 4.0,
+    "blades": 6,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 9.45,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-5x4x6-hex-blade-5-prop-4-pack-light-grey"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop 6x3x3 Tri-Blade 6\" Prop - Choose Your",
+   "slug": "hqprop-hq-prop-6x3x3-tri-blade-6-prop-choose-your",
+   "specs": {
+    "diameter_in": 6.0,
+    "pitch_in": 3.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 5.4,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-6x3x3-tri-blade-6-prop-4-pack-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop 6x3x3 V1S Tri-Blade 6\" Prop",
+   "slug": "hqprop-hq-prop-6x3x3-v1s-tri-blade-6-prop",
+   "specs": {
+    "diameter_in": 6.0,
+    "pitch_in": 3.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 5.87,
+    "price_usd": 4.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-6x3x3-v1s-6-prop-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop 6x4.3x2 Bi-Blade 6\" Prop",
+   "slug": "hqprop-hq-prop-6x4-3x2-bi-blade-6-prop",
+   "specs": {
+    "diameter_in": 6.0,
+    "pitch_in": 4.3,
+    "blades": 2,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.7,
+    "price_usd": 4.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-6043-6x4-3x2-bi-blade-6-prop-4-pack-grey"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop 6x4.5x3 Tri-Blade 6\" Prop",
+   "slug": "hqprop-hq-prop-6x4-5x3-tri-blade-6-prop",
+   "specs": {
+    "diameter_in": 6.0,
+    "pitch_in": 4.5,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 7.5,
+    "price_usd": 4.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-6x4-5x3-tri-blade-6-prop-4-pack-gray"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop 7.5x3.7x3 Tri-Blade 7.5\" Prop",
+   "slug": "hqprop-hq-prop-7-5x3-7x3-tri-blade-7-5-prop",
+   "specs": {
+    "diameter_in": 7.5,
+    "pitch_in": 3.7,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 9.4,
+    "price_usd": 5.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-7-5x3-7x3-tri-blade-7-5-prop-4-pack-gray"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop 75mm Cinewhoop 2.95x3.6x3 Tri-Blade 3\" Prop",
+   "slug": "hqprop-hq-prop-75mm-cinewhoop-2-95x3-6x3-tri-blade-3-prop",
+   "specs": {
+    "diameter_in": 2.95,
+    "pitch_in": 3.6,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 1.95,
+    "price_usd": 3.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-75mm-cinewhoop-2-95x3-6x3-tri-blade-3-prop-4-pack-grey"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop 7x4.5x2 Durable Bi-Blade 7\" Prop",
+   "slug": "hqprop-hq-prop-7x4-5x2-durable-bi-blade-7-prop",
+   "specs": {
+    "diameter_in": 7.0,
+    "pitch_in": 4.5,
+    "blades": 2,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 6.6,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-7x4-5x2-durable-bi-blade-7-prop-4-pack-grey-1"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop 7x5.5x2 Bi-Blade 7\" Prop",
+   "slug": "hqprop-hq-prop-7x5-5x2-bi-blade-7-prop",
+   "specs": {
+    "diameter_in": 7.0,
+    "pitch_in": 5.5,
+    "blades": 2,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 6.4,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-7x5-5x2-bi-blade-7-prop-4-pack-light-grey"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop 8x3.7x3 Tri-Blade 8\" Prop",
+   "slug": "hqprop-hq-prop-8x3-7x3-tri-blade-8-prop",
+   "specs": {
+    "diameter_in": 8.0,
+    "pitch_in": 3.7,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 12.0,
+    "price_usd": 7.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-8x3-7x3-tri-blade-8-prop-2-pack-gray"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop 8x5 Bi-Blade 8\" Prop",
+   "slug": "hqprop-hq-prop-8x5-bi-blade-8-prop",
+   "specs": {
+    "diameter_in": 8.0,
+    "pitch_in": 5.0,
+    "blades": 2,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 10.0,
+    "price_usd": 5.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-8x5-bi-blade-8-prop-4-pack-light-gray"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop Cine8 8x4.5x3 Tri-Blade 8\" Prop",
+   "slug": "hqprop-hq-prop-cine8-8x4-5x3-tri-blade-8-prop",
+   "specs": {
+    "diameter_in": 8.0,
+    "pitch_in": 4.5,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 13.0,
+    "price_usd": 8.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-cine8-8x4-5x3-tri-blade-8-prop-2-pack-black"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop D4x5x3 Tri-Blade 4\" Cinewhoop Prop",
+   "slug": "hqprop-hq-prop-d4x5x3-tri-blade-4-cinewhoop-prop",
+   "specs": {
+    "diameter_in": 4.0,
+    "pitch_in": 5.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.6,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-d4x5x3-tri-blade-4-cinewhoop-prop-4-pack-gray"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop D5.1x5x3 Tri-Blade 5\" Prop for Cinequads",
+   "slug": "hqprop-hq-prop-d5-1x5x3-tri-blade-5-prop-for-cinequads",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 5.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 5.0,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-d5-1x5x3-tri-blade-5-prop-for-cinequads-4-pack-grey"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop D76MM Tri-Blade 3\" Cinewhoop Prop",
+   "slug": "hqprop-hq-prop-d76mm-tri-blade-3-cinewhoop-prop",
+   "specs": {
+    "diameter_in": 3.0,
+    "pitch_in": 3.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 2.0,
+    "price_usd": 2.79
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-d76mm-3-cinewhoop-tri-blade-prop-4-pack-gray"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop DP 5.1x2.5x3 Tri-Blade 5\" Prop",
+   "slug": "hqprop-hq-prop-dp-5-1x2-5x3-tri-blade-5-prop",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 2.5,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 3.1,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-dp-5-1x2-5x3-tri-blade-5-prop-4-pack-grey"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop DT2.9x2.5x4 Quad-Blade 2.9\" Prop for the DJI Avata - Choose Your",
+   "slug": "hqprop-hq-prop-dt2-9x2-5x4-quad-blade-2-9-prop-for-the-dji-avata-choose-your",
+   "specs": {
+    "diameter_in": 2.9,
+    "pitch_in": 2.5,
+    "blades": 4,
+    "mount": "2mm",
+    "material": "Polycarbonate",
+    "weight_g": 2.15,
+    "price_usd": 1.0
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-dt2-9x2-5x4-quad-blade-2-9-prop-4-pack-for-the-dji-avata-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop DT2.9x2.7x3 Tri-Blade 2.9\" Prop for the DJI Avata - Choose Your",
+   "slug": "hqprop-hq-prop-dt2-9x2-7x3-tri-blade-2-9-prop-for-the-dji-avata-choose-your",
+   "specs": {
+    "diameter_in": 2.9,
+    "pitch_in": 2.7,
+    "blades": 3,
+    "mount": "2mm",
+    "material": "Polycarbonate",
+    "weight_g": 1.7,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-dt2-9x2-7x3-tri-blade-2-9-prop-4-pack-for-the-dji-avata-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop DT90MMX3 Tri-Blade 3.5\" Cinewhoop Prop",
+   "slug": "hqprop-hq-prop-dt90mmx3-tri-blade-3-5-cinewhoop-prop",
+   "specs": {
+    "diameter_in": 3.5,
+    "pitch_in": 3.5,
+    "blades": 3,
+    "mount": "1.5mm",
+    "material": "Polycarbonate",
+    "weight_g": 2.35,
+    "price_usd": 3.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-dt90mmx3-tri-blade-3-cinewhoop-prop-4-pack-blue"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop DT90MMX4 Quad-Blade 3.5\" Cinewhoop Prop - Choose Your",
+   "slug": "hqprop-hq-prop-dt90mmx4-quad-blade-3-5-cinewhoop-prop-choose-your",
+   "specs": {
+    "diameter_in": 3.5,
+    "pitch_in": 3.0,
+    "blades": 4,
+    "mount": "1.5mm",
+    "material": "Polycarbonate",
+    "weight_g": 2.9,
+    "price_usd": 3.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-dt90mmx4-quad-blade-3-5-cinewhoop-prop-4-pack-gray"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop Duct 75mm Cinewhoop Hexa-Blade 3\" Prop",
+   "slug": "hqprop-hq-prop-duct-75mm-cinewhoop-hexa-blade-3-prop",
+   "specs": {
+    "diameter_in": 2.95,
+    "pitch_in": 3.0,
+    "blades": 6,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 2.6,
+    "price_usd": 2.79
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-duct-75mm-cinewhoop-hexa-blade-3-prop-4-pack-grey"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop Duct 75mm Cinewhoop Penta-Blade 3\" Prop",
+   "slug": "hqprop-hq-prop-duct-75mm-cinewhoop-penta-blade-3-prop",
+   "specs": {
+    "diameter_in": 3.0,
+    "pitch_in": 3.0,
+    "blades": 5,
+    "mount": "1.5mm",
+    "material": "Polycarbonate",
+    "weight_g": 2.35,
+    "price_usd": 3.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-duct-75mm-cinewhoop-penta-blade-3-prop-4-pack-grey"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop Duct 76MMX8 Octa-Blade 3\" Prop",
+   "slug": "hqprop-hq-prop-duct-76mmx8-octa-blade-3-prop",
+   "specs": {
+    "diameter_in": 3.0,
+    "pitch_in": 3.0,
+    "blades": 8,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 3.1,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-duct-76mmx8-octa-blade-76mm-cinewhoop-prop-4-pack-gray"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop Duct 89MMX8 Octa-Blade 3.5\" Cinewhoop Prop",
+   "slug": "hqprop-hq-prop-duct-89mmx8-octa-blade-3-5-cinewhoop-prop",
+   "specs": {
+    "diameter_in": 3.5,
+    "pitch_in": 3.0,
+    "blades": 8,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 3.9,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-duct-89mmx8-octa-blade-3-5-cinewhoop-prop-4-pack-gray"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop Duct T63MMX3 Tri-Blade 2.5\" Cinewhoop Prop",
+   "slug": "hqprop-hq-prop-duct-t63mmx3-tri-blade-2-5-cinewhoop-prop",
+   "specs": {
+    "diameter_in": 2.5,
+    "pitch_in": 1.5,
+    "blades": 3,
+    "mount": "1.5mm",
+    "material": "Polycarbonate",
+    "weight_g": 1.4,
+    "price_usd": 1.89
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-durable-t63mmx3-tri-blade-63mm-cinewhoop-prop-4-pack-light-gray"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop Durable 2.9x2.9x4 Quad-Blade 3\" Prop",
+   "slug": "hqprop-hq-prop-durable-2-9x2-9x4-quad-blade-3-prop",
+   "specs": {
+    "diameter_in": 2.9,
+    "pitch_in": 2.9,
+    "blades": 4,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 1.77,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-durable-2-9x2-9x4-quad-blade-3-prop-4-pack"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop Durable 4x2.5 Bi-Blade 4\" Prop",
+   "slug": "hqprop-hq-prop-durable-4x2-5-bi-blade-4-prop",
+   "specs": {
+    "diameter_in": 4.0,
+    "pitch_in": 2.5,
+    "blades": 2,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 1.7,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-durable-4x2-5-bi-blade-4-prop-4-pack-gray"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop Durable 5.1x3.6x3 Tri-Blade 5\" Prop",
+   "slug": "hqprop-hq-prop-durable-5-1x3-6x3-tri-blade-5-prop",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 3.6,
+    "blades": 3,
+    "material": "Polycarbonate",
+    "weight_g": 4.6,
+    "price_usd": 4.99,
+    "mount": "5mm"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://pyrodrone.com/products/hq-prop-5-1x3-6x3-tri-blade-5-prop-4-pack-grey",
+    "https://www.racedayquads.com/products/hq-durable-prop-5-1x3-6x3-tri-blade-5-prop-4-pack"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop Durable 7X3.5X3 Tri-Blade 7\" Prop",
+   "slug": "hqprop-hq-prop-durable-7x3-5x3-tri-blade-7-prop",
+   "specs": {
+    "diameter_in": 7.0,
+    "pitch_in": 3.5,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 8.8,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-durable-7x3-5x3-tri-blade-7-prop-4-pack"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop Durable 7x4x3 Tri-Blade 7\" Prop",
+   "slug": "hqprop-hq-prop-durable-7x4x3-tri-blade-7-prop",
+   "specs": {
+    "diameter_in": 7.0,
+    "pitch_in": 4.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "price_usd": 4.99,
+    "weight_g": 9.1
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://pyrodrone.com/products/hq-7x4x3-2cw-2ccw",
+    "https://www.racedayquads.com/products/hq-durable-7x4x3-tri-blade-7-prop-4-pack"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop Durable Prop 4X4.3X3 V1S Tri-Blade 4\" Prop - Choose Your",
+   "slug": "hqprop-hq-prop-durable-prop-4x4-3x3-v1s-tri-blade-4-prop-choose-your",
+   "specs": {
+    "diameter_in": 4.0,
+    "pitch_in": 4.3,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 2.24,
+    "price_usd": 2.79
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-durable-prop-4x4-3x3-v1s-tri-blade-4-prop-4-pack-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop Durable T2x2x4 Quad-Blade 2\" Prop",
+   "slug": "hqprop-hq-prop-durable-t2x2x4-quad-blade-2-prop",
+   "specs": {
+    "diameter_in": 2.0,
+    "pitch_in": 2.0,
+    "blades": 4,
+    "mount": "1.4mm",
+    "material": "Polycarbonate",
+    "weight_g": 0.8,
+    "price_usd": 2.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-durable-t2x2x4-quad-blade-2-prop-4-pack"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop Durable T4x2.5 Bi-Blade 4\" Prop",
+   "slug": "hqprop-hq-prop-durable-t4x2-5-bi-blade-4-prop",
+   "specs": {
+    "diameter_in": 4.0,
+    "pitch_in": 2.5,
+    "blades": 2,
+    "mount": "1.4mm",
+    "material": "Polycarbonate",
+    "weight_g": 1.45,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-durable-t4x2-5-bi-blade-4-prop-4-pack"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop Durable T4x2x3 Tri-Blade 4\" Prop",
+   "slug": "hqprop-hq-prop-durable-t4x2x3-tri-blade-4-prop",
+   "specs": {
+    "diameter_in": 4.0,
+    "pitch_in": 2.0,
+    "blades": 3,
+    "mount": "1.4mm",
+    "material": "Polycarbonate",
+    "weight_g": 2.0,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-durable-t4x2x3-bi-blade-4-prop-4-pack"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop ETHIX K2 6x4x2 Durable Bi-Blade 6\" Prop - Bubble Gum",
+   "slug": "hqprop-hq-prop-ethix-k2-6x4x2-durable-bi-blade-6-prop-bubble-gum",
+   "specs": {
+    "diameter_in": 6.0,
+    "pitch_in": 4.0,
+    "blades": 2,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 5.1,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-ethix-k2-6x4x2-durable-bi-blade-6-prop-4-pack-bubble-gum"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop ETHIX P3.3 5.1x3.3x3 Tri-Blade 5\" Prop - Mango Lassi",
+   "slug": "hqprop-hq-prop-ethix-p3-3-5-1x3-3x3-tri-blade-5-prop-mango-lassi",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 3.3,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 3.5,
+    "price_usd": 4.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-ethix-5-1x3-3x3-tri-blade-5-prop-4-pack-mango-lassi"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop ETHIX P3.5 5.1x3.5x3 Tri-Blade 5\" Prop - RAD Berry",
+   "slug": "hqprop-hq-prop-ethix-p3-5-5-1x3-5x3-tri-blade-5-prop-rad-berry",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 3.5,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 3.5,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-ethix-rad-berry-5-1x3-5x3-tri-blade-5-prop-4-pack"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop ETHIX P4 5.1x4x3 Tri-Blade 5\" Prop - Candy Cane",
+   "slug": "hqprop-hq-prop-ethix-p4-5-1x4x3-tri-blade-5-prop-candy-cane",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 4.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 3.8,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-ethix-p4-5-1x4x3-tri-blade-5-prop-4-pack-candy-cane"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop ETHIX S3 5x3.1x3 Tri-Blade 5\" Prop - Watermelon",
+   "slug": "hqprop-hq-prop-ethix-s3-5x3-1x3-tri-blade-5-prop-watermelon",
+   "specs": {
+    "diameter_in": 5.0,
+    "pitch_in": 3.1,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 3.6,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-ethix-s3-watermelon-props"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop ETHIX S4 5x3.7x3 Tri-Blade 5\" Prop - Lemon",
+   "slug": "hqprop-hq-prop-ethix-s4-5x3-7x3-tri-blade-5-prop-lemon",
+   "specs": {
+    "diameter_in": 5.0,
+    "pitch_in": 3.7,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 3.6,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-ethix-s4-5x3-7x3-tri-blade-5-prop-4-pack-lemon-lime"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop ETHIX S5 5x4x3 Tri-Blade 5\" Prop",
+   "slug": "hqprop-hq-prop-ethix-s5-5x4x3-tri-blade-5-prop",
+   "specs": {
+    "diameter_in": 5.0,
+    "pitch_in": 4.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 3.7,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-ethix-s5-5x4x3-tri-blade-5-prop-4-pack-light-grey"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop HeadsUp Racing R38C Tri-Blade 4.9\" Prop",
+   "slug": "hqprop-hq-prop-headsup-racing-r38c-tri-blade-4-9-prop",
+   "specs": {
+    "diameter_in": 4.9,
+    "pitch_in": 4.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.2,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-headsup-racing-r38c-tri-blade-4-9-prop-4-pack"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop J75 7x5x3 Tri-Blade 7\" Prop",
+   "slug": "hqprop-hq-prop-j75-7x5x3-tri-blade-7-prop",
+   "specs": {
+    "diameter_in": 7.0,
+    "pitch_in": 5.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 8.8,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-j75-7x5x3-tri-blade-7-prop-4-pack-gray"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop Juicy Prop J37 4.9\" Prop - Choose Your",
+   "slug": "hqprop-hq-prop-juicy-prop-j37-4-9-prop-choose-your",
+   "specs": {
+    "diameter_in": 4.9,
+    "pitch_in": 3.7,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 3.4,
+    "price_usd": 3.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-juicy-prop-j37-4-9-prop-4-pack-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop Juicy Prop J40 5.1\" Tri-Blade Prop - Choose Your",
+   "slug": "hqprop-hq-prop-juicy-prop-j40-5-1-tri-blade-prop-choose-your",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 4.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 3.4,
+    "price_usd": 3.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-juicy-prop-j40-5-1-prop-4-pack-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop MacroQuad 10x4.5x3 Tri-Blade 10\" Glass Fiber Nylon Prop - CCW",
+   "slug": "hqprop-hq-prop-macroquad-10x4-5x3-tri-blade-10-glass-fiber-nylon-prop-ccw",
+   "specs": {
+    "diameter_in": 10.0,
+    "pitch_in": 4.5,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 23.8,
+    "price_usd": 5.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-macroquad-prop-10x4-5x3r-tri-blade-10-glass-fiber-nylon-prop-ccw-1pc"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop MacroQuad 10x4.5x3R Tri-Blade 10\" Glass Fiber Nylon Prop - CW",
+   "slug": "hqprop-hq-prop-macroquad-10x4-5x3r-tri-blade-10-glass-fiber-nylon-prop-cw",
+   "specs": {
+    "diameter_in": 10.0,
+    "pitch_in": 4.5,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 23.8,
+    "price_usd": 5.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-macroquad-prop-10x4-5x3r-tri-blade-10-glass-fiber-nylon-prop-cw-1pc"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop MacroQuad 10x5x3 Tri-Blade 10\" Glass Reinforced Prop - CCW",
+   "slug": "hqprop-hq-prop-macroquad-10x5x3-tri-blade-10-glass-reinforced-prop-ccw",
+   "specs": {
+    "diameter_in": 10.0,
+    "pitch_in": 5.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 23.3,
+    "price_usd": 5.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-macroquad-10x5x3-tri-blade-10-glass-reinforced-prop-ccw"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop MacroQuad 10x5x3R Tri-Blade 10\" Glass Reinforced Prop - CW",
+   "slug": "hqprop-hq-prop-macroquad-10x5x3r-tri-blade-10-glass-reinforced-prop-cw",
+   "specs": {
+    "diameter_in": 10.0,
+    "pitch_in": 5.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 23.3,
+    "price_usd": 5.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-macroquad-10x5x3r-tri-blade-10-carbon-reinforced-prop-cw"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop MacroQuad 7x4.5 Bi-Blade 7\" Glass Fiber Nylon Prop - CCW",
+   "slug": "hqprop-hq-prop-macroquad-7x4-5-bi-blade-7-glass-fiber-nylon-prop-ccw",
+   "specs": {
+    "diameter_in": 7.0,
+    "pitch_in": 4.5,
+    "blades": 2,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 6.8,
+    "price_usd": 2.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-macroquad-7x4-5-bi-blade-7-glass-fiber-nylon-prop-ccw-1pc"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop MacroQuad 7x4.5x3 Tri-Blade 7\" Glass Reinforced Prop - CCW",
+   "slug": "hqprop-hq-prop-macroquad-7x4-5x3-tri-blade-7-glass-reinforced-prop-ccw",
+   "specs": {
+    "diameter_in": 7.0,
+    "pitch_in": 4.5,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 9.0,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-macroquad-7x4-5x3-tri-blade-7-glass-reinforced-prop-ccw-1pc"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop MacroQuad 8x4.3x3 Tri-Blade 8\" Glass Reinforced Prop - CCW",
+   "slug": "hqprop-hq-prop-macroquad-8x4-3x3-tri-blade-8-glass-reinforced-prop-ccw",
+   "specs": {
+    "diameter_in": 8.0,
+    "pitch_in": 4.3,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 13.5,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-macroquad-8x4-3x3-tri-blade-8-glass-reinforced-prop-ccw-1pc"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop MacroQuad 8x4.5x3 Tri-Blade 8\" Carbon or Glass Reinforced Prop - CCW",
+   "slug": "hqprop-hq-prop-macroquad-8x4-5x3-tri-blade-8-carbon-or-glass-reinforced-prop-ccw",
+   "specs": {
+    "diameter_in": 8.0,
+    "pitch_in": 4.5,
+    "blades": 3,
+    "mount": "5mm",
+    "weight_g": 15.5,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-macroquad-8x4-5x3-tri-blade-8-carbon-reinforced-prop-ccw"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop MacroQuad 8x4.5x3R Tri-Blade 8\" Glass Reinforced Prop - CW",
+   "slug": "hqprop-hq-prop-macroquad-8x4-5x3r-tri-blade-8-glass-reinforced-prop-cw",
+   "specs": {
+    "diameter_in": 8.0,
+    "pitch_in": 4.5,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 15.5,
+    "price_usd": 3.89
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-macroquad-8x4-5x3r-8-tri-blade-carbon-reinforced-prop-cw"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop MacroQuad 8x4x3 Tri-Blade 8\" Glass Fiber Nylon Prop - CW",
+   "slug": "hqprop-hq-prop-macroquad-8x4x3-tri-blade-8-glass-fiber-nylon-prop-cw",
+   "specs": {
+    "diameter_in": 8.0,
+    "pitch_in": 4.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 12.8,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-macroquad-8x4x3-tri-blade-8-glass-fiber-nylon-prop-cw-1pc"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop MacroQuad 9x5x3R Tri-Blade 9\" Glass Reinforced Prop - CW",
+   "slug": "hqprop-hq-prop-macroquad-9x5x3r-tri-blade-9-glass-reinforced-prop-cw",
+   "specs": {
+    "diameter_in": 9.0,
+    "pitch_in": 5.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 17.4,
+    "price_usd": 5.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-macroquad-9x5x3r-tri-blade-9-glass-reinforced-prop-cw"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop MacroQuad Prop 7x4.5 Bi-Blade 7\" Glass Fiber Nylon Prop - CW",
+   "slug": "hqprop-hq-prop-macroquad-prop-7x4-5-bi-blade-7-glass-fiber-nylon-prop-cw",
+   "specs": {
+    "diameter_in": 7.0,
+    "pitch_in": 4.5,
+    "blades": 2,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 6.8,
+    "price_usd": 2.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-macroquad-prop-7x4-5-bi-blade-7-glass-fiber-nylon-prop-cw-1pc"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop PizzaCutters 5x3.7x3 Tri-Blade 5\" Prop - Choose",
+   "slug": "hqprop-hq-prop-pizzacutters-5x3-7x3-tri-blade-5-prop-choose",
+   "specs": {
+    "diameter_in": 5.0,
+    "pitch_in": 3.7,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.0,
+    "price_usd": 3.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-pizzacutters-5037-5x3-7x3-tri-blade-5-prop-4-pack-choose-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop R35 5.1x3.5x3 Tri-Blade 5\" Prop - Choose",
+   "slug": "hqprop-hq-prop-r35-5-1x3-5x3-tri-blade-5-prop-choose",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 3.5,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.18,
+    "price_usd": 3.39
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-r35-5-1x3-5x3-tri-blade-5-prop-4-pack-gray"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop R36 5.1x3.6x3 Tri-Blade 5.1\" Racing Prop - Choose Your",
+   "slug": "hqprop-hq-prop-r36-5-1x3-6x3-tri-blade-5-1-racing-prop-choose-your",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 3.6,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.1,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-r36-racing-propeller-5-1x3-6x3-tri-blade-5-1-prop-4-pack-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop R36 5.1x3.6x3 Tri-Blade 5\" Prop - Spinnaker",
+   "slug": "hqprop-hq-prop-r36-5-1x3-6x3-tri-blade-5-prop-spinnaker",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 3.6,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.1,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-r36-5136-5-1x3-6x3-tri-blade-5-prop-4-pack-spinnaker"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop R37 5.1x3.7x3 Tri-Blade 5.1\" Racing Prop - Choose Your",
+   "slug": "hqprop-hq-prop-r37-5-1x3-7x3-tri-blade-5-1-racing-prop-choose-your",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 3.7,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.1,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-r37-5-1x3-7x3-tri-blade-5-1-racing-prop-4-pack-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop R37 5.1x3.7x3 Tri-Blade 5\" Prop - Stickman",
+   "slug": "hqprop-hq-prop-r37-5-1x3-7x3-tri-blade-5-prop-stickman",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 3.7,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.1,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-r37-5137-5-1x3-7x3-tri-blade-5-prop-4-pack-spinnaker-pink"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop R38 HeadsUp Racing 5.1x3.8x3 Tri-Blade 5\" Prop - Choose Your",
+   "slug": "hqprop-hq-prop-r38-headsup-racing-5-1x3-8x3-tri-blade-5-prop-choose-your",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 3.8,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.4,
+    "price_usd": 4.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-r38-headsup-racing-5-1x3-8x3-tri-blade-5-prop-4-pack"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop R42 5.1x4.2x3 5\" Tri-Blade Prop",
+   "slug": "hqprop-hq-prop-r42-5-1x4-2x3-5-tri-blade-prop",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 4.2,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.9,
+    "price_usd": 4.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-r42-5-1x4-2x3-5-tri-blade-prop-4-pack-grey"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop T3.5x2.2x2 Bi-Blade 3.5\" Prop",
+   "slug": "hqprop-hq-prop-t3-5x2-2x2-bi-blade-3-5-prop",
+   "specs": {
+    "diameter_in": 3.5,
+    "pitch_in": 2.2,
+    "blades": 2,
+    "mount": "1.5mm",
+    "material": "Polycarbonate",
+    "weight_g": 1.1,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-t3-5x2-2x2-bi-blade-3-5-prop-4-pack-grey"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop T3.5x2.5x3 Tri-Blade 3.5\" Prop",
+   "slug": "hqprop-hq-prop-t3-5x2-5x3-tri-blade-3-5-prop",
+   "specs": {
+    "diameter_in": 3.5,
+    "pitch_in": 2.5,
+    "blades": 3,
+    "mount": "1.5mm",
+    "material": "Polycarbonate",
+    "weight_g": 1.55,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-t3-5x2-5x3-tri-blade-3-5-prop-4-pack-grey"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop T3x1.5 Durable Bi-Blade 3\" Prop",
+   "slug": "hqprop-hq-prop-t3x1-5-durable-bi-blade-3-prop",
+   "specs": {
+    "diameter_in": 3.0,
+    "pitch_in": 1.5,
+    "blades": 2,
+    "mount": "1.4mm",
+    "material": "Polycarbonate",
+    "weight_g": 0.78,
+    "price_usd": 2.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-t3x1-5-durable-bi-blade-3-prop-4-pack-grey"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop T3x1.5x3 Durable Tri-Blade 3\" Prop",
+   "slug": "hqprop-hq-prop-t3x1-5x3-durable-tri-blade-3-prop",
+   "specs": {
+    "diameter_in": 3.0,
+    "pitch_in": 1.5,
+    "blades": 3,
+    "mount": "1.4mm",
+    "material": "Polycarbonate",
+    "weight_g": 1.13,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-t3x1-5x3-durable-tri-blade-3-prop-4-pack-grey"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop T3x2.5x3 Durable Tri-Blade 3\" Prop",
+   "slug": "hqprop-hq-prop-t3x2-5x3-durable-tri-blade-3-prop",
+   "specs": {
+    "diameter_in": 3.0,
+    "pitch_in": 2.5,
+    "blades": 3,
+    "mount": "1.4mm",
+    "material": "Polycarbonate",
+    "weight_g": 1.35,
+    "price_usd": 2.29
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-t3x2-5x3-durable-tri-blade-3-prop-4-pack-grey"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop T3x3 Bi-Blade 3\" Prop - Choose Your",
+   "slug": "hqprop-hq-prop-t3x3-bi-blade-3-prop-choose-your",
+   "specs": {
+    "diameter_in": 3.0,
+    "pitch_in": 3.0,
+    "blades": 2,
+    "mount": "1.5mm",
+    "material": "Polycarbonate",
+    "weight_g": 1.25,
+    "price_usd": 2.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-t3x3-bi-blade-prop-for-3"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop T3x3x3 PC Durable Tri-Blade 3\" Prop (3 Hole) - Choose Your",
+   "slug": "hqprop-hq-prop-t3x3x3-pc-durable-tri-blade-3-prop-3-hole-choose-your",
+   "specs": {
+    "diameter_in": 3.0,
+    "pitch_in": 3.0,
+    "blades": 3,
+    "mount": "1.5mm",
+    "material": "Polycarbonate",
+    "weight_g": 1.48,
+    "price_usd": 2.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-t3x3x3-pc-dp-durable-prop-for-3-three-hole-mount"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop T51MMX6 Hexa-Blade 2\" Cinewhoop Prop",
+   "slug": "hqprop-hq-prop-t51mmx6-hexa-blade-2-cinewhoop-prop",
+   "specs": {
+    "diameter_in": 2.0,
+    "pitch_in": 1.5,
+    "blades": 6,
+    "mount": "1.5mm",
+    "material": "Polycarbonate",
+    "weight_g": 0.94,
+    "price_usd": 2.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-duct-t51mmx6-hexa-blade-51mm-cinewhoop-prop-4-pack-light-gray"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop T63MMX8 Octo-Blade 2.5\" T-Mount Prop",
+   "slug": "hqprop-hq-prop-t63mmx8-octo-blade-2-5-t-mount-prop",
+   "specs": {
+    "diameter_in": 2.5,
+    "pitch_in": 1.5,
+    "blades": 8,
+    "mount": "1.5mm",
+    "material": "Polycarbonate",
+    "weight_g": 2.1,
+    "price_usd": 2.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-t63mmx8-octo-blade-t-mount-props-4pack-gray"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop T76MM Tri-Blade 3\" Cinewhoop Prop",
+   "slug": "hqprop-hq-prop-t76mm-tri-blade-3-cinewhoop-prop",
+   "specs": {
+    "diameter_in": 3.0,
+    "pitch_in": 3.0,
+    "blades": 3,
+    "mount": "1.5mm",
+    "material": "Polycarbonate",
+    "weight_g": 2.0,
+    "price_usd": 3.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-t76mm-3-cinewhoop-tri-blade-prop-4-pack-gray"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop Ultralight 31MMX3 Tri-Blade 31mm Micro/Whoop Prop",
+   "slug": "hqprop-hq-prop-ultralight-31mmx3-tri-blade-31mm-micro-whoop-prop",
+   "specs": {
+    "diameter_in": 1.22,
+    "pitch_in": 1.0,
+    "blades": 3,
+    "mount": "1mm",
+    "material": "Polycarbonate",
+    "weight_g": 0.27,
+    "price_usd": 2.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-ultralight-whoop-prop-31mmx3-1mm-shaft-tri-blade-4-pack-grey"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop Ummagawd 4Play 4.8x3.6x4 Quad-Blade 5\" Prop - Gulf",
+   "slug": "hqprop-hq-prop-ummagawd-4play-4-8x3-6x4-quad-blade-5-prop-gulf",
+   "specs": {
+    "diameter_in": 4.8,
+    "pitch_in": 3.6,
+    "blades": 4,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 4.05,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-ummagawd-4play-4-8x3-6x4-quad-blade-5-prop-4-pack-gulf"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop V2S Freestyle 5x4.3x3 Tri-Blade 5\" Prop - Choose Your",
+   "slug": "hqprop-hq-prop-v2s-freestyle-5x4-3x3-tri-blade-5-prop-choose-your",
+   "specs": {
+    "diameter_in": 5.0,
+    "pitch_in": 4.3,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 3.8,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-v2s-freestyle-5x4-3x3-tri-blade-5-prop-4-pack-choose-your-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "HQ Prop V2S T2.5x2x3 Durable Tri-Blade 2.5\" Prop",
+   "slug": "hqprop-hq-prop-v2s-t2-5x2x3-durable-tri-blade-2-5-prop",
+   "specs": {
+    "diameter_in": 2.5,
+    "pitch_in": 2.0,
+    "blades": 3,
+    "mount": "1.4mm",
+    "material": "Polycarbonate",
+    "weight_g": 1.2,
+    "price_usd": 2.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-prop-v2s-t2-5x2x3-durable-tri-blade-2-5-prop-4-pack-grey"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "Juicy J33 4.9\" 3-Blade",
+   "slug": "hqprop-juicy-j33-4-9-3-blade",
+   "specs": {
+    "diameter_in": 4.9,
+    "pitch_in": 3.3,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 3.8,
+    "price_usd": 5.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-juicy-j33-4-9-3-blade-propeller-set-of-4"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "Juicy Prop J35 3-Blade",
+   "slug": "hqprop-juicy-prop-j35-3-blade",
+   "specs": {
+    "diameter_in": 4.9,
+    "pitch_in": 3.5,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 3.6,
+    "price_usd": 3.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-juicy-prop-j35-3-blade-propeller-set-of-4"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "LR10x5x3 3-Blade",
+   "slug": "hqprop-lr10x5x3-3-blade",
+   "specs": {
+    "diameter_in": 10.0,
+    "pitch_in": 5.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 18.1,
+    "price_usd": 18.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-lr10x5x3-3-blade-propeller-set-of-4"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "LR10x6x3 3-Blade",
+   "slug": "hqprop-lr10x6x3-3-blade",
+   "specs": {
+    "diameter_in": 10.0,
+    "pitch_in": 6.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 19.3,
+    "price_usd": 18.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-lr10x6x3-3-blade-propeller-set-of-4"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "MacroQuad 10x4.5x3 3-Blade",
+   "slug": "hqprop-macroquad-10x4-5x3-3-blade",
+   "specs": {
+    "diameter_in": 10.0,
+    "pitch_in": 4.5,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 23.8,
+    "price_usd": 11.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-macroquad-10x4-5x3-3-blade-propeller-set-of-2"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "MacroQuad 10x5 2-Blade",
+   "slug": "hqprop-macroquad-10x5-2-blade",
+   "specs": {
+    "diameter_in": 10.0,
+    "pitch_in": 5.0,
+    "blades": 2,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 16.0,
+    "price_usd": 15.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-macroquad-10x5-2-blade-propeller-set-of-4"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "MacroQuad 10x5.5x3 3-Blade",
+   "slug": "hqprop-macroquad-10x5-5x3-3-blade",
+   "specs": {
+    "diameter_in": 10.0,
+    "pitch_in": 5.5,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 27.0,
+    "price_usd": 15.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-macroquad-10x5-5x3-3-blade-propeller-set-of-4"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "MacroQuad 10x5x3 3-Blade",
+   "slug": "hqprop-macroquad-10x5x3-3-blade",
+   "specs": {
+    "diameter_in": 10.0,
+    "pitch_in": 5.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 23.3,
+    "price_usd": 18.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-macroquad-10x5x3-3-blade-propeller-set-of-4"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "MacroQuad 11x4.5x3 3-Blade",
+   "slug": "hqprop-macroquad-11x4-5x3-3-blade",
+   "specs": {
+    "diameter_in": 11.0,
+    "pitch_in": 4.5,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 32.0,
+    "price_usd": 13.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-macroquad-11x4-5x3-3-blade-propeller-set-of-2"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "MacroQuad 12x7.5x3 3-Blade",
+   "slug": "hqprop-macroquad-12x7-5x3-3-blade",
+   "specs": {
+    "diameter_in": 12.0,
+    "pitch_in": 7.5,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 36.0,
+    "price_usd": 18.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-macroquad-12x7-5x3-3-blade-propeller-set-of-4"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "MacroQuad 8.5x4x3 3-Blade",
+   "slug": "hqprop-macroquad-8-5x4x3-3-blade",
+   "specs": {
+    "diameter_in": 8.5,
+    "pitch_in": 4.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 15.0,
+    "price_usd": 13.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-macroquad-8-5x4x3-3-blade-propeller-set-of-4"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "MacroQuad 8x4.3x3 3-Blade",
+   "slug": "hqprop-macroquad-8x4-3x3-3-blade",
+   "specs": {
+    "diameter_in": 8.0,
+    "pitch_in": 4.3,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 13.5,
+    "price_usd": 15.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-macroquad-8x4-3x3-3-blade-propeller-set-of-4"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "MacroQuad 8x4x3 3-Blade",
+   "slug": "hqprop-macroquad-8x4x3-3-blade",
+   "specs": {
+    "diameter_in": 8.0,
+    "pitch_in": 4.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 12.8,
+    "price_usd": 15.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-macroquad-8x4x3-3-blade-propeller-set-of-4"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "MacroQuad 8x6x3 3-Blade",
+   "slug": "hqprop-macroquad-8x6x3-3-blade",
+   "specs": {
+    "diameter_in": 8.0,
+    "pitch_in": 6.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 13.5,
+    "price_usd": 15.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-macroquad-8x6x3-3-blade-propeller-set-of-4"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "MacroQuad 9x4.5x3 3-Blade",
+   "slug": "hqprop-macroquad-9x4-5x3-3-blade",
+   "specs": {
+    "diameter_in": 9.0,
+    "pitch_in": 4.5,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 18.4,
+    "price_usd": 11.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-macroquad-9x4-5x3-3-blade-propeller-set-of-2"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "MacroQuad 9x4.5x3R 3-Blade",
+   "slug": "hqprop-macroquad-9x4-5x3r-3-blade",
+   "specs": {
+    "diameter_in": 9.0,
+    "pitch_in": 4.5,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 18.4,
+    "price_usd": 11.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-macroquad-9x4-5x3r-3-blade-propeller-set-of-2"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "MacroQuad 9X4X3 3-Blade",
+   "slug": "hqprop-macroquad-9x4x3-3-blade",
+   "specs": {
+    "diameter_in": 9.0,
+    "pitch_in": 4.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 18.5,
+    "price_usd": 18.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-macroquad-9x4x3-3-blade-propeller-set-of-4"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "MacroQuad 9x5x3 3-Blade",
+   "slug": "hqprop-macroquad-9x5x3-3-blade",
+   "specs": {
+    "diameter_in": 9.0,
+    "pitch_in": 5.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 17.4,
+    "price_usd": 23.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-macroquad-9x5x3-3-blade-propeller-set-of-4"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "HQProp",
+   "model": "X-Class 13X9X3 V2 Glass Fiber Nylon",
+   "slug": "hqprop-x-class-13x9x3-v2-glass-fiber-nylon",
+   "specs": {
+    "diameter_in": 13.0,
+    "pitch_in": 9.0,
+    "blades": 3,
+    "mount": "6mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 46.0,
+    "price_usd": 20.49
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hqprop-x-class-13x9x3-v2-glass-fiber-nylon-propeller-set-of-2"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "iFlight",
+   "model": "Defender 25 2525-3 2.5\" Prop",
+   "slug": "iflight-defender-25-2525-3-2-5-prop",
+   "specs": {
+    "diameter_in": 2.5,
+    "pitch_in": 2.5,
+    "blades": 3,
+    "mount": "1.5mm",
+    "material": "Polycarbonate",
+    "weight_g": 1.1,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/iflight-defender-25-2525-3-2-5-prop-4-pack"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "iFlight",
+   "model": "Nazgul F5 Tri-Blade 5\" Prop - Choose",
+   "slug": "iflight-nazgul-f5-tri-blade-5-prop-choose",
+   "specs": {
+    "diameter_in": 5.0,
+    "pitch_in": 3.5,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 3.9,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/iflight-nazgul-f5-tri-blade-5-prop-4-pack-choose-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "T-Motor",
+   "model": "C10.5x5x3 Cinematic Macro Prop",
+   "slug": "t-motor-c10-5x5x3-cinematic-macro-prop",
+   "specs": {
+    "diameter_in": 10.5,
+    "pitch_in": 5.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 26.5,
+    "price_usd": 16.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/t-motor-c10-5x5x3-cinematic-macro-prop-2-pack-black"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "T-Motor",
+   "model": "C7.5x4.6x3 Cine Tri-Blade 7.5\" Prop",
+   "slug": "t-motor-c7-5x4-6x3-cine-tri-blade-7-5-prop",
+   "specs": {
+    "diameter_in": 7.5,
+    "pitch_in": 4.6,
+    "blades": 3,
+    "mount": "5mm",
+    "weight_g": 12.0,
+    "price_usd": 12.99,
+    "material": "Carbon-fiber-reinforced nylon"
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://pyrodrone.com/products/t-motor-c7-5x4-6x3-cinematic-tri-blade-carbon-fiber-nylon-propellers-1cw-1ccw",
+    "https://www.racedayquads.com/products/t-motor-c7-5x4-6-cine-tri-blade-7-5-prop-2-pack"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "T-Motor",
+   "model": "C8.5x5x3 Cinematic Macro Prop",
+   "slug": "t-motor-c8-5x5x3-cinematic-macro-prop",
+   "specs": {
+    "diameter_in": 8.5,
+    "pitch_in": 5.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 14.8,
+    "price_usd": 13.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/t-motor-c8-5x5x3-cinematic-macro-prop-2-pack-black"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "T-Motor",
+   "model": "C9.5x5x3 Cinematic Macro Prop",
+   "slug": "t-motor-c9-5x5x3-cinematic-macro-prop",
+   "specs": {
+    "diameter_in": 9.5,
+    "pitch_in": 5.0,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Glass-fiber-reinforced nylon",
+    "weight_g": 21.3,
+    "price_usd": 14.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/t-motor-c9-5x5x3-cinematic-macro-prop-2-pack-black"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "T-Motor",
+   "model": "F5146 Tri-Blade 5\" Prop - Choose",
+   "slug": "t-motor-f5146-tri-blade-5-prop-choose",
+   "specs": {
+    "diameter_in": 5.1,
+    "pitch_in": 4.6,
+    "blades": 3,
+    "mount": "5mm",
+    "weight_g": 4.2,
+    "price_usd": 3.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/t-motor-f5146-tri-blade-5-prop-4-pack-choose-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "T-Motor",
+   "model": "Pacer P49436 Tri-Blade 5\" Prop - Choose",
+   "slug": "t-motor-pacer-p49436-tri-blade-5-prop-choose",
+   "specs": {
+    "diameter_in": 4.9,
+    "pitch_in": 4.3,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 3.5,
+    "price_usd": 4.99
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/t-motor-pacer-p49436-tri-blade-5-prop-4-pack-choose-color"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "T-Motor",
+   "model": "T5146 POPO Compatible Tri-Blade 5\" Prop - Choose Your",
+   "slug": "t-motor-t5146-popo-compatible-tri-blade-5-prop-choose-your",
+   "specs": {
+    "diameter_in": 5.0,
+    "pitch_in": 4.6,
+    "blades": 3,
+    "mount": "5mm",
+    "material": "Polycarbonate",
+    "weight_g": 5.0,
+    "price_usd": 3.19
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/t-motor-t5146-popo-compatible-tri-blade-5-prop-4-pack-clear-red"
+   ]
+  },
+  {
+   "type": "prop",
+   "brand": "weBLEEDfpv",
+   "model": "HQ Ultralight Whoop Prop 31MM",
+   "slug": "webleedfpv-hq-ultralight-whoop-prop-31mm",
+   "specs": {
+    "diameter_in": 1.22,
+    "pitch_in": 1.0,
+    "blades": 3,
+    "mount": "1mm",
+    "material": "Polycarbonate",
+    "weight_g": 0.16,
+    "price_usd": 3.29
+   },
+   "_scraped_at": "2026-09-29",
+   "sources": [
+    "https://www.racedayquads.com/products/hq-ultralight-whoop-prop-31mm"
+   ]
+  }
+ ]
+}
