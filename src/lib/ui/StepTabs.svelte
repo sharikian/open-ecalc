@@ -1,7 +1,7 @@
 <script lang="ts">
   export let value = 0;
   export let onChange: (step: number) => void;
-  export let canOpen: (step: number) => boolean = () => true;
+  export let maxOpenStep = 3;
   import { locale } from '$lib/i18n';
   $: labels = $locale === 'en' ? ['Airframe', 'Environment', 'Battery', 'Propulsion'] : ['بدنه', 'محیط', 'باتری', 'پیشران'];
 </script>
@@ -9,7 +9,7 @@
 <div class="steps" role="tablist" aria-label={$locale === 'en' ? 'Calculation steps' : 'مراحل محاسبه'} style={`--step: ${value}`}>
   <div class="steps__track" aria-hidden="true"><i></i></div>
   {#each labels as label, index}
-    <button type="button" role="tab" aria-selected={value === index} aria-disabled={!canOpen(index)} disabled={!canOpen(index)} class:done={index < value} class:locked={!canOpen(index)} on:click={() => canOpen(index) && onChange(index)}>
+    <button type="button" role="tab" aria-selected={value === index} aria-disabled={index > Math.max(value, maxOpenStep)} disabled={index > Math.max(value, maxOpenStep)} class:done={index < value} class:locked={index > Math.max(value, maxOpenStep)} on:click={() => onChange(index)}>
       <span>{index < value ? '✓' : index + 1}</span><b>{label}</b>
     </button>
   {/each}

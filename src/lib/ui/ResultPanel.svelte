@@ -108,6 +108,11 @@
     <section class="curve-section" aria-labelledby="altitude-title"><div class="section-head"><div><h3 id="altitude-title">{text('سقف پرواز', 'Altitude ceiling')}</h3><p>{text('رانش موجود با خط نیازمندی مقایسه می‌شود.', 'Available thrust is compared with the required margin.')}</p></div><span class="data">{result.hoverCeilingM == null ? '—' : `${number(result.hoverCeilingM, 0)} m`}</span></div>{#if altitudeOption}<Chart option={altitudeOption} ariaLabel={text('منحنی رانش نسبت به ارتفاع', 'Thrust versus altitude curve')} height={290} />{/if}</section>
 
     <div class="lower-grid"><article class="coverage card"><div class="section-head"><h3>{text('چیدمان روتورها', 'Rotor layout')}</h3><span class="data">{number(result.thrustMargin * 100, 0)}%</span></div><RotorCoverage rotorCount={input.airframe.rotorCount} frameSizeM={input.airframe.frameSizeM} propellerDiameterM={input.propeller.diameterM} layout={input.airframe.layout} /></article><article class="warnings card"><div class="section-head"><h3>{text('کنترل محدودیت‌ها', 'Limit checks')}</h3><span class="data">{result.warnings.length}</span></div>{#if result.warnings.length === 0}<p>{text('محدودیت بحرانی دیده نشد.', 'No critical limit detected.')}</p>{:else}<ul>{#each result.warnings as warning}<li class:critical={warning.severity === 'critical'}><b>{warning.severity === 'critical' ? '!' : '·'}</b><span>{warningLabels[warning.code]?.[en ? 0 : 1] ?? text('نیازمند بررسی', 'Review required')}</span></li>{/each}</ul>{/if}</article></div>
+    {#if result.currentScenarios?.length}
+      <section class="card scenario-section" aria-labelledby="scenario-title"><h3 id="scenario-title">{text('مقایسهٔ جریان‌ها', 'Current comparison')}</h3><p>{text('برآورد با جریان ثابت؛ مستقل از منحنی رانش.', 'Constant-current estimates; independent of the thrust curve.')}</p>
+        {#each result.currentScenarios as scenario, index}<article class="scenario-row"><b>{index + 1}</b><dl><div><dt>{text('هر موتور', 'Per motor')}</dt><dd>{number(scenario.currentPerMotorA)} A</dd></div><div><dt>{text('جریان کل', 'Total current')}</dt><dd>{number(scenario.totalCurrentA)} A</dd></div><div><dt>{text('مداومت', 'Duration')}</dt><dd>{number(scenario.flightTimeMin)} min</dd></div><div><dt>{text('برد', 'Range')}</dt><dd>{number(scenario.rangeKm)} km</dd></div></dl>{#if scenario.warnings.length}<ul>{#each scenario.warnings as warning}<li>{warningLabels[warning.code]?.[en ? 0 : 1]}</li>{/each}</ul>{/if}</article>{/each}
+      </section>
+    {/if}
     <Feedback calculation={{ mode: 'advanced', input, result }} />
   </section>
 {/if}
@@ -126,4 +131,8 @@
     .section-head h3 { font-size: 17px; }
     .warnings ul, .warnings p { font-size: 15px; }
   }
+  .scenario-section h3 { margin: 0; font-size: 17px; }.scenario-section > p { font-size: 14px; color: var(--muted); }
+  .scenario-row { border-top: 1px solid var(--line); padding-block: 14px; }
+  .scenario-row > b { color: var(--blue); }.scenario-row dl { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-block: 8px; }.scenario-row dt { font-size: 14px; color: var(--muted); }.scenario-row dd { margin: 4px 0 0; font: 16px var(--font-data); direction: ltr; text-align: start; }.scenario-row ul { color: var(--danger); font-size: 14px; }
+  @media (max-width: 620px) { .scenario-row dl { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 </style>

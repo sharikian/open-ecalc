@@ -16,14 +16,18 @@
   import ThemeToggle from '$ui/ThemeToggle.svelte';
   import Feedback from '$ui/Feedback.svelte';
   import { locale } from '$lib/i18n';
+  import { missionStepReady } from '$core/linked-inputs';
 
   const empty = '' as unknown as number;
   const blankMission = (): MissionInput => {
     const input = structuredClone(DEFAULT_MISSION_INPUT);
     input.airframe.emptyMassKg = empty; input.airframe.payloadMassKg = empty; input.airframe.rotorCount = empty; input.airframe.frameSizeM = empty;
-    input.environment.altitudeM = empty; input.environment.temperatureC = empty; input.environment.pressurePa = empty; input.cruiseSpeedMps = empty;
+    input.environment.altitudeM = empty; input.environment.temperatureC = empty; input.environment.pressurePa = undefined; input.environment.pressureMode = 'auto'; input.cruiseSpeedMps = empty;
     input.battery.capacityAh = empty; input.battery.series = empty; input.battery.parallel = empty; input.battery.nominalCellVoltageV = empty; input.battery.internalResistanceOhm = empty; input.battery.continuousC = empty; input.battery.usableFraction = empty;
     input.motor.kv = empty; input.motor.maxCurrentA = empty; input.motor.maxPowerW = empty; input.esc.continuousCurrentA = empty; input.propeller.diameterM = empty; input.propeller.pitchM = empty;
+    input.battery.massKg = empty; input.motor.massKg = empty; input.motor.noLoadCurrentA = empty; input.motor.resistanceOhm = empty;
+    input.esc.massKg = empty; input.esc.burstCurrentA = empty; input.esc.resistanceOhm = empty; input.esc.efficiency = empty;
+    input.auxiliaryCurrentA = empty; input.currentScenariosA = [];
     return input;
   };
   const blankLegacy = (): LegacyInput => ({ emptyMassG: empty, payloadMassG: empty, batteryMassG: empty, batteryParallel: empty, cellCapacityAh: empty, rotorCount: empty, speedMps: empty, currentPerMotorA: [empty] });
@@ -82,19 +86,11 @@
     reports = reports.filter((report) => report.id !== id);
   }
 
-  function applyAircraftProfile(profile: 'mavic2' | 'mavic3') {
-    const isMavic3 = profile === 'mavic3';
-    missionInput = { ...missionInput, airframe: { ...missionInput.airframe, emptyMassKg: isMavic3 ? 0.895 : 0.907, payloadMassKg: 0, rotorCount: 4, frameSizeM: isMavic3 ? 0.38 : 0.354 }, battery: { ...missionInput.battery, capacityAh: 5, series: 4, parallel: 1, nominalCellVoltageV: 3.85, internalResistanceOhm: 0.06, continuousC: 10, usableFraction: 0.8 }, environment: { ...missionInput.environment, altitudeM: 0, temperatureC: 25, pressurePa: 101325 }, cruiseSpeedMps: isMavic3 ? 9 : 7. }; 
-  }
-
-  function valuesReady(values: number[], allowZero = false): boolean { return values.every((value) => Number.isFinite(value) && (allowZero ? value >= 0 : value > 0)); }
   function stepReady(index: number): boolean {
-    if (index === 0) return valuesReady([missionInput.airframe.emptyMassKg, missionInput.airframe.rotorCount, missionInput.airframe.frameSizeM]) && Number.isFinite(missionInput.airframe.payloadMassKg) && missionInput.airframe.payloadMassKg >= 0;
-    if (index === 1) return Number.isFinite(missionInput.environment.altitudeM) && Number.isFinite(missionInput.environment.temperatureC) && Number.isFinite(missionInput.cruiseSpeedMps) && missionInput.cruiseSpeedMps >= 0;
-    if (index === 2) return valuesReady([missionInput.battery.capacityAh, missionInput.battery.series, missionInput.battery.parallel, missionInput.battery.nominalCellVoltageV, missionInput.battery.continuousC, missionInput.battery.usableFraction]) && Number.isFinite(missionInput.battery.internalResistanceOhm) && missionInput.battery.internalResistanceOhm >= 0;
-    return valuesReady([missionInput.motor.kv, missionInput.motor.maxCurrentA, missionInput.motor.maxPowerW, missionInput.esc.continuousCurrentA, missionInput.propeller.diameterM, missionInput.propeller.pitchM]);
+    return missionStepReady(missionInput, index);
   }
-  function firstIncompleteStep(): number { for (let index = 0; index < 4; index += 1) if (!stepReady(index)) return index; return 3; }
+  $: incompleteStep = [0, 1, 2, 3].find((index) => !missionStepReady(missionInput, index)) ?? 3;
+  function firstIncompleteStep(): number { return incompleteStep; }
   function goToStep(next: number) { const blocked = firstIncompleteStep(); if (next > blocked) { showErrors = true; step = blocked; return; } showErrors = false; step = next; }
   function advanceStep() { if (!stepReady(step)) { showErrors = true; return; } showErrors = false; step = Math.min(3, step + 1); }
   function calculateSimple() {
@@ -111,11 +107,7 @@
     reports = [saveReport({ mode: 'simple', input: structuredClone(legacyInput), result: legacyResult }), ...reports].slice(0, 100);
   }
   function calculateAdvanced() {
-    const values = [missionInput.airframe.emptyMassKg, missionInput.airframe.payloadMassKg, missionInput.airframe.rotorCount, missionInput.airframe.frameSizeM, missionInput.environment.altitudeM, missionInput.environment.temperatureC, missionInput.battery.capacityAh, missionInput.battery.series, missionInput.battery.parallel, missionInput.battery.nominalCellVoltageV, missionInput.battery.internalResistanceOhm, missionInput.battery.continuousC, missionInput.battery.usableFraction, missionInput.motor.kv, missionInput.motor.maxCurrentA, missionInput.motor.maxPowerW, missionInput.esc.continuousCurrentA, missionInput.propeller.diameterM, missionInput.propeller.pitchM, missionInput.cruiseSpeedMps];
-    const [emptyMass, payloadMass, rotorCount, frameSize, altitude, temperature, capacity, series, parallel, cellVoltage, resistance, continuousC, usableFraction, kv, motorCurrent, motorPower, escCurrent, propDiameter, pitch, cruiseSpeed] = values;
-    const valid = [emptyMass, rotorCount, frameSize, capacity, series, parallel, cellVoltage, continuousC, usableFraction, kv, motorCurrent, motorPower, escCurrent, propDiameter, pitch].every((value) => Number.isFinite(value) && value > 0)
-      && [payloadMass, altitude, resistance, cruiseSpeed].every((value) => Number.isFinite(value) && value >= 0)
-      && Number.isFinite(temperature);
+    const valid = [0, 1, 2, 3].every(stepReady);
     if (!valid) { missionResult = null; showErrors = true; step = firstIncompleteStep(); return; }
     try { missionResult = calculateMission(missionInput); reports = [saveReport({ mode: 'advanced', input: structuredClone(missionInput), result: missionResult }), ...reports].slice(0, 100); }
     catch {
@@ -161,8 +153,8 @@
         <div class="simple-layout"><SimpleCalculator bind:input={legacyInput} showErrors={simpleShowErrors} onCalculate={calculateSimple} /><LegacyResults result={legacyResult} /></div>
         {#if legacyResult}<Feedback calculation={{ mode: 'simple', input: legacyInput, result: legacyResult }} />{/if}
       {:else}
-        <StepTabs value={step} canOpen={(next) => next <= firstIncompleteStep()} onChange={goToStep} />
-        <div class="advanced-layout"><section class="input-area"><MissionForm bind:input={missionInput} {step} invalidStep={showErrors ? step : -1} onApplyProfile={applyAircraftProfile} /><div class="actions"><button type="button" class="back" disabled={step === 0} on:click={() => goToStep(step - 1)}>{$locale === 'en' ? 'Back' : 'بازگشت'}</button>{#if step < 3}<button type="button" class="next" on:click={advanceStep}>{$locale === 'en' ? 'Next step' : 'مرحلهٔ بعد'} <span>←</span></button>{:else}<button type="button" class="next" on:click={calculateAdvanced}>{$locale === 'en' ? 'Calculate' : 'محاسبه'} <span>↗</span></button>{/if}</div></section></div>
+        <StepTabs value={step} maxOpenStep={incompleteStep} onChange={goToStep} />
+<div class="advanced-layout"><section class="input-area"><MissionForm bind:input={missionInput} {step} invalidStep={showErrors ? step : -1} /><div class="actions"><button type="button" class="back" disabled={step === 0} on:click={() => goToStep(step - 1)}>{$locale === 'en' ? 'Back' : 'بازگشت'}</button>{#if step < 3}<button type="button" class="next" on:click={advanceStep}>{$locale === 'en' ? 'Next step' : 'مرحلهٔ بعد'} <span>←</span></button>{:else}<button type="button" class="next" on:click={calculateAdvanced}>{$locale === 'en' ? 'Calculate' : 'محاسبه'} <span>↗</span></button>{/if}</div></section></div>
       {/if}
       {/if}
       </div>
@@ -213,4 +205,7 @@
     .result-dialog { max-height: calc(100dvh - 120px - var(--safe-top) - var(--safe-bottom)); }
     .bottom-nav .nav-item small { font-size: 13px; }
   }
+  .advanced-layout .input-area { max-width: 760px; }
+  .actions { position: static; background: none; margin-top: 16px; padding-block: 8px; }
+  :global(input), :global(select), :global(textarea) { scroll-margin-block: calc(110px + var(--safe-top)) calc(110px + var(--safe-bottom)); }
 </style>

@@ -11,6 +11,7 @@ export interface Environment {
   altitudeM: number;
   temperatureC: number;
   pressurePa?: number;
+  pressureMode?: 'auto' | 'manual';
 }
 
 export interface Battery {
@@ -73,6 +74,16 @@ export interface MissionInput {
   cruiseSpeedMps: number;
   auxiliaryCurrentA: number;
   targetThrustMargin: number;
+  currentScenariosA?: number[];
+}
+
+export interface CurrentScenarioResult {
+  currentPerMotorA: number;
+  totalCurrentA: number;
+  loadedVoltageV: number;
+  flightTimeMin: number;
+  rangeKm: number;
+  warnings: CalculationWarning[];
 }
 
 export type WarningCode =
@@ -139,6 +150,7 @@ export interface MissionResult {
   altitudeProfile: AltitudeProfilePoint[];
   power: PowerBreakdown;
   warnings: CalculationWarning[];
+  currentScenarios: CurrentScenarioResult[];
 }
 
 export interface LegacyInput {

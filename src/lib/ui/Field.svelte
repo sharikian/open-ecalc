@@ -11,6 +11,8 @@
   export let invalid = false;
   export let invalidPlaceholder = 'مقدار لازم';
   export let displayScale = 1;
+  export let readonly = false;
+  export let max: number | undefined = undefined;
   $: displayValue = typeof value === 'number' ? value * displayScale : value;
   function updateValue(event: Event) {
     const control = event.currentTarget as HTMLInputElement;
@@ -22,8 +24,8 @@
 
 <label class:optional={!required} class="field">
   <span>{label}</span>
-  <div class="field__control">
-    <input {type} {step} {min} placeholder={invalid ? invalidPlaceholder : placeholder} aria-invalid={invalid} aria-describedby={hint ? `${label}-hint` : undefined} class:invalid value={displayValue ?? ''} on:input={updateValue} />
+  <div class="field__control" class:invalid class:has-unit={Boolean(suffix)} class:readonly>
+    <input {type} {step} {min} {max} {readonly} dir="ltr" placeholder={invalid ? invalidPlaceholder : placeholder} aria-invalid={invalid} aria-describedby={hint ? `${label}-hint` : undefined} class:invalid value={displayValue ?? ''} on:input={updateValue} />
     {#if suffix}<b>{suffix}</b>{/if}
   </div>
   {#if hint}<small id={`${label}-hint`}>{hint}</small>{/if}
@@ -41,4 +43,12 @@
     .field__control b { font-size: 14px; }
     .field small { font-size: 13px; }
   }
+  .field__control { display: grid; grid-template-columns: minmax(0, 1fr); direction: ltr; border: 1px solid var(--input-line); border-radius: var(--radius-small); background: var(--surface); }
+  .field__control.has-unit { grid-template-columns: minmax(0, 1fr) auto; }
+  .field__control input { min-width: 0; border: 0; border-radius: inherit; padding: 10px 14px; outline: 0; box-shadow: none; background: transparent; }
+  .field__control b { position: static; min-width: 48px; min-height: 46px; padding-inline: 10px; border: 0; border-inline-start: 1px solid var(--line); direction: ltr; }
+  .field__control:focus-within { outline: 2px solid var(--blue); outline-offset: 2px; }
+  .field__control.invalid { border-color: var(--danger); background: color-mix(in srgb, var(--danger) 5%, var(--surface)); }
+  .field__control.readonly { background: var(--paper); }
+  .field__control input.invalid, .field__control:focus-within input { box-shadow: none; outline: 0; border: 0; }
 </style>

@@ -10,18 +10,11 @@ import {
   nominalPackVoltage,
   packCapacityAh
 } from './physics';
-import type { MissionInput, MissionPoint, MissionResult, OperatingPoint } from './types';
+import type { CurrentScenarioResult, MissionInput, MissionPoint, MissionResult, OperatingPoint } from './types';
+import { resolvePressure, takeoffMass } from './linked-inputs';
 import { collectWarnings } from './warnings';
 
 const GRAVITY = 9.80665;
-
-function mass(input: MissionInput): number {
-  return input.airframe.takeoffMassKg ?? (
-    input.airframe.emptyMassKg + input.airframe.payloadMassKg +
-    input.battery.massKg * input.battery.parallel +
-    (input.motor.massKg + input.esc.massKg) * input.airframe.rotorCount
-  );
-}
 
 function pointAtThrust(input: MissionInput, targetThrustN: number, density: number, voltageV: number): OperatingPoint | null {
   if (input.propeller.curve?.length) return interpolateOperatingPoint(input.propeller.curve, targetThrustN, 'thrustN');
@@ -60,6 +53,7 @@ function asMissionPoint(input: MissionInput, point: OperatingPoint, name: Missio
 }
 
 export function calculateMission(input: MissionInput): MissionResult {
+  input = { ...input, environment: { ...input.environment, pressurePa: resolvePressure(input.environment) } };
   if (![input.battery.capacityAh, input.battery.series, input.battery.parallel,
     input.battery.nominalCellVoltageV, input.airframe.rotorCount, input.motor.kv,
     input.propeller.diameterM].every(value => Number.isFinite(value) && value > 0)
@@ -70,7 +64,7 @@ export function calculateMission(input: MissionInput): MissionResult {
     || !Number.isFinite(input.auxiliaryCurrentA) || input.auxiliaryCurrentA < 0) {
     throw new RangeError('Invalid mission inputs or battery units');
   }
-  const takeoffMassKg = mass(input);
+  const takeoffMassKg = takeoffMass(input);
   if (!Number.isFinite(takeoffMassKg) || takeoffMassKg <= 0) throw new RangeError('Invalid takeoff mass');
   const density = airDensity(input.environment.altitudeM, input.environment.temperatureC, input.environment.pressurePa);
   const weightN = takeoffMassKg * GRAVITY;
@@ -140,6 +134,22 @@ export function calculateMission(input: MissionInput): MissionResult {
     speedProfile,
     altitudeProfile,
     power: { propulsiveW, ...losses, auxiliaryW },
-    warnings
+    warnings,
+    currentScenarios: calculateCurrentScenarios(input)
   };
+}
+
+/** Constant-current comparisons; these never replace the aerodynamic operating points. */
+export function calculateCurrentScenarios(input: MissionInput): CurrentScenarioResult[] {
+  return (input.currentScenariosA ?? []).map(currentPerMotorA => {
+    if (!Number.isFinite(currentPerMotorA) || currentPerMotorA <= 0) throw new RangeError('Invalid motor scenario current');
+    const totalCurrentA = currentPerMotorA * input.airframe.rotorCount + input.auxiliaryCurrentA;
+    const loadedVoltageV = loadedBatteryVoltage(input.battery, totalCurrentA);
+    const usableAh = packCapacityAh(input.battery) * input.battery.usableFraction;
+    const flightTimeMin = loadedVoltageV > 0 ? usableAh / totalCurrentA * 60 : 0;
+    const point: OperatingPoint = { currentA: currentPerMotorA, voltageV: loadedVoltageV, thrustN: 0, throttle: 0, rpm: 0 };
+    const warnings = collectWarnings(input, point, loadedVoltageV, Infinity, 0)
+      .filter(warning => ['battery-continuous-current', 'battery-burst-current', 'esc-continuous-current', 'esc-burst-current', 'motor-current', 'motor-power', 'voltage-sag'].includes(warning.code));
+    return { currentPerMotorA, totalCurrentA, loadedVoltageV, flightTimeMin, rangeKm: flightTimeMin / 60 * input.cruiseSpeedMps * 3.6, warnings };
+  });
 }

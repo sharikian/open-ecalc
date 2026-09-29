@@ -1,4 +1,5 @@
-import { airDensity, loadedBatteryVoltage, maximumLoadedOperatingPoint } from './physics';
+import { airDensity, airPressureAtAltitude, loadedBatteryVoltage, maximumLoadedOperatingPoint } from './physics';
+import { resolvePressure } from './linked-inputs';
 import type { CeilingResult, MissionInput } from './types';
 
 const GRAVITY = 9.80665;
@@ -14,7 +15,9 @@ function takeoffMass(input: MissionInput): number {
 }
 
 export function availableThrustAtAltitude(input: MissionInput, altitudeM: number): number {
-  const density = airDensity(altitudeM, input.environment.temperatureC);
+  const stationPressure = resolvePressure(input.environment);
+  const pressure = stationPressure * airPressureAtAltitude(altitudeM) / airPressureAtAltitude(input.environment.altitudeM);
+  const density = airDensity(altitudeM, input.environment.temperatureC, pressure);
   if (input.propeller.curve?.length) {
     const maximum = [...input.propeller.curve].sort((a, b) => b.thrustN - a.thrustN)[0];
     const referenceDensity = airDensity(input.environment.altitudeM, input.environment.temperatureC, input.environment.pressurePa);
@@ -29,6 +32,7 @@ export function availableThrustAtAltitude(input: MissionInput, altitudeM: number
 function solveCeiling(input: MissionInput, requiredMargin: number): number | null {
   const requiredThrustN = takeoffMass(input) * GRAVITY * requiredMargin;
   const start = Math.max(-500, input.environment.altitudeM);
+  if (start > MAX_MODEL_ALTITUDE_M) return null;
   if (availableThrustAtAltitude(input, start) < requiredThrustN) return null;
   if (availableThrustAtAltitude(input, MAX_MODEL_ALTITUDE_M) >= requiredThrustN) return MAX_MODEL_ALTITUDE_M;
 

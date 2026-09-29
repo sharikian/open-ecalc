@@ -1,5 +1,6 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import worker from './worker';
+import { DEFAULT_MISSION_INPUT } from '../src/lib/core/presets';
 
 const env = { TELEGRAM_BOT: 'test-token', ADMIN_USERID: '123', ASSETS: { fetch: vi.fn() } };
 const input = { emptyMassG: 850, payloadMassG: 0, batteryMassG: 300,
@@ -12,6 +13,22 @@ const request = (origin = 'https://example.test', calculation: unknown = { mode:
 afterEach(() => vi.unstubAllGlobals());
 
 describe('Cloudflare feedback relay', () => {
+  it('recomputes advanced current comparisons and preserves linked input modes', async () => {
+    const advanced = structuredClone(DEFAULT_MISSION_INPUT);
+    advanced.environment.pressureMode = 'auto'; advanced.environment.pressurePa = 1;
+    advanced.currentScenariosA = [10, 20];
+    const send = vi.fn(async (_url: string, options: RequestInit) => {
+      const document = (options.body as FormData).get('document') as File;
+      const report = JSON.parse(await document.text());
+      expect(report.input.environment.pressureMode).toBe('auto');
+      expect(report.input.currentScenariosA).toEqual([10, 20]);
+      expect(report.verifiedResult.currentScenarios).toHaveLength(2);
+      expect(report.verifiedResult.currentScenarios[0].totalCurrentA).toBe(10 * advanced.airframe.rotorCount + advanced.auxiliaryCurrentA);
+      return Response.json({ ok: true });
+    });
+    vi.stubGlobal('fetch', send);
+    expect((await worker.fetch(request('https://example.test', { mode: 'advanced', input: advanced }), env)).status).toBe(200);
+  });
   it('recomputes the result and sends complete inputs in a document from the server', async () => {
     const send = vi.fn(async (_url: string, options: RequestInit) => {
       const form = options.body as FormData;
