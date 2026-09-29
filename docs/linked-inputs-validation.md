@@ -2,6 +2,8 @@
 
 Date: 2026-09-29.
 
+Final automated checks: 43 tests across 10 files pass; production static build succeeds. Dataset regeneration twice yields stable snapshot hashes (recorded in the data manifests).
+
 ## Input contract
 
 - Advanced mode shows one of four steps on every viewport. Previous values survive navigation; later steps stay locked until preceding steps validate.
@@ -38,6 +40,7 @@ Additional checks:
 - Choosing 11.1 V sets 3S; changing series to 6 updates pack voltage to 22.2 V.
 - Selecting an Auline 3000 mAh 6S battery fills documented capacity/series/C/mass and leaves unknown voltage/resistance blank.
 - Catalog shows ten rows per page; search works and estimated references are opt-in. Imported records without licensed product photos use icons rather than unrelated model photos.
+- A final 375 px rerun checked 16 more stages without failures. Selecting T-Motor F1507 and 3800 KV applied 23 A / 372 W (60 s limits), 0.9 A no-load at 5 V and 0.081 Ω together. Catalog edits preserve unknown values; empty new records are rejected.
 - Escape closes the component picker and restores trigger focus. The result dialog focuses Close, makes the background inert, traps keyboard focus and restores Calculate on dismissal. It is above the mobile navigation/header layers.
 - At 375 px, all 18 propulsion controls could be focused and scrolled between the header and bottom navigation without a hidden focused control.
 - Reduced-motion emulation, keyboard focus rings and simulated 24/34 px safe-area variables were checked.
