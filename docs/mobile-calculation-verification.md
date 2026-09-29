@@ -4,6 +4,9 @@ Date: 2026-09-29. Status: in progress; do not treat this as full model validatio
 
 ## Follow-up verification
 
+- Independent generic-coefficient comparison (no measured curve): hover current 8.0968 A vs eCalc 8.39 A, RPM 4019.86 vs 4047, duration 31.4938 min vs 30.4 min. Differences are 3.49%, 0.67%, and 3.60% respectively. These are specific to the documented scenario and are not a general accuracy guarantee.
+- Production feedback was sent as a JSON document with deliberately incorrect client result data; the Worker recomputed the valid inputs and Telegram returned success. Automated Worker tests additionally inspect the attachment, reject cross-origin/invalid requests, and check upstream failure reporting.
+
 - Production site opened in agent-browser with QUIC disabled and the Cloudflare host mapped to a reachable edge IP. The ordinary DNS path from this environment timed out; HTTPS/SNI remained the original hostname.
 - Synthetic safe-area test at 375 x 812: 24 px top inset produces 32 px header padding; 20 px bottom inset produces 27 px navigation padding. No horizontal overflow; numeric input text is 16 px.
 - Production simple calculator with the 5000 mAh scenario displays 5.9 min and **3.5 km usable range**; legacy raw table range stays 4.4 km.
@@ -42,11 +45,9 @@ These are observations for comparison, not redistributable component records or 
 
 ## Remaining verification
 
-- Exercise the advanced calculator against matched physical inputs and investigate infeasible thrust / voltage-sag behavior; current finite-output tests alone do not prove accuracy.
-- Distinguish legacy raw range and usable range in the results interface.
-- Render with simulated top/bottom insets and inspect multiple mobile sizes; real Android system-bar testing remains needed.
-- Verify final production UI and feedback delivery. A direct network attempt to workers.dev timed out; deployment success alone does not prove runtime delivery.
 - Rebuild the signed ARM universal APK in CI and measure compressed native libraries and package size.
-- Add feedback request validation/rate protection, full input/result attachment, and server-side result recomputation before treating reports as verified data.
+- Recheck production after final deployment and inspect 320/414 px mobile and desktop layouts.
+
+Real-device Android system-bar behavior has not been tested in this environment; safe-area CSS was verified with injected non-zero insets in Chromium. Forward-flight drag remains outside the static coefficient model as documented in calculation-model.md.
 
 Cloudflare references: https://developers.cloudflare.com/workers/static-assets/ and https://developers.cloudflare.com/workers/platform/limits/.
