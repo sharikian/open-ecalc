@@ -64,9 +64,14 @@
 | [Tyto Robotics](https://www.tytorobotics.com/pages/propeller-data) | benchmark تست‌استند | تا دریافت اجازه، bundle نمی‌شود |
 | APC / T-Motor / KDE / SplineCloud | دیتاشیت و تصاویر رسمی | permission-required؛ فقط importer یا لینک منبع |
 
-مجموعهٔ همراه فعلی فقط رکوردهای عمومی و پروژه‌نویس با برچسب `estimated` دارد.
-منابعی که مجوز یا حق بازتوزیع آن‌ها مبهم است در `data/quarantine/` و manifest
-ثبت می‌شوند، نه در خروجی وب/Tauri.
+مجموعهٔ همراه فعلی شامل snapshot دارای مجوز FPV-DB (CC BY 4.0) و ۷۳۲ رکورد
+قدیمی عمومی/تخمینی است. snapshot در commit
+`5333aba81229e1d0e7b1585e165136fd1187174c` شامل ۲۰۶ موتور، ۳۲۶ باتری، ۲۰۷ ملخ،
+۱۱۲ stack ترکیبی FC/ESC و ۱۰۱ quad است؛ attribution و hashها در
+`docs/data-sources.md` و `data/manifests/fpvdb-snapshot.v1.json` ثبت شده‌اند.
+رکوردهای تخمینی با `referenceOnly` از جست‌وجوی پیش‌فرض کنار گذاشته می‌شوند.
+منابع بدون حق بازتوزیع روشن، از جمله UAV Database و داده‌های UIUC، وارد
+خروجی وب/Tauri نمی‌شوند.
 
 ## پروفایل‌های پرنده و زمان پرواز
 
