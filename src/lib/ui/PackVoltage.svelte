@@ -2,13 +2,14 @@
   import type { Battery } from '$core/types';
   import { nominalCellVoltage, setPackVoltage } from '$core/linked-inputs';
   import { locale } from '$lib/i18n';
+  import { numericDisplay } from './numeric-display';
   export let battery: Battery;
   export let invalid = false;
   let open = false;
   let active = 0;
   let pendingVoltage: number | undefined;
   $: voltage = Number.isFinite(battery.series) && Number.isFinite(battery.nominalCellVoltageV)
-    ? Number((battery.series * battery.nominalCellVoltageV).toFixed(6)) : pendingVoltage;
+    ? numericDisplay(battery.series * battery.nominalCellVoltageV) : numericDisplay(pendingVoltage);
   $: options = (['LiPo', 'Li-ion', 'LiFePO4'].includes(battery.chemistry) ? [1, 2, 3, 4, 6, 8, 10, 12] : []).map(series => ({ series, voltage: Number((series * nominalCellVoltage(battery.chemistry)).toFixed(2)) }));
   function choose(index: number) {
     const option = options[index];

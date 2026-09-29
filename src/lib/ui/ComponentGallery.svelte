@@ -4,6 +4,7 @@
   import type { AircraftProfile, ComponentKind, ComponentRecord, FlightLocation } from '$data';
   import { locale } from '$lib/i18n';
   import Icon from './Icon.svelte';
+  import { numericDisplay, numericEditorValue } from './numeric-display';
 
   type FilterKind = 'all' | ComponentKind | 'airframe' | 'environment';
   type Row = { id: string; kind: FilterKind; manufacturer: string; model: string; quality: string; source: string; detail: string; imageUrl?: string };
@@ -135,17 +136,17 @@
     if (row.kind === 'environment') {
       const record = getLocation(row.id); if (!record) return;
       editorMode = 'edit'; editorEntity = 'environment'; editorAirframe = false; editorLocation = true; editorId = record.id; editorManufacturer = ($locale === 'en' ? record.provinceEn : record.provinceFa) ?? ''; editorModel = $locale === 'en' ? record.nameEn : record.nameFa; editorDescription = ($locale === 'en' ? record.descriptionEn : record.descriptionFa) ?? ''; editorImage = record.imageUrl ?? ''; nameEditing = false;
-      editorLocationValues = Object.fromEntries(locationFields.map((field) => [field.key, String(record[field.key as keyof FlightLocation] ?? '')])); editorInvalidFields = []; editorOpen = true; return;
+      editorLocationValues = Object.fromEntries(locationFields.map((field) => [field.key, numericDisplay(record[field.key as keyof FlightLocation])])); editorInvalidFields = []; editorOpen = true; return;
     }
     if (row.kind === 'airframe') {
       const record = getAircraft(row.id); if (!record) return;
       editorMode = 'edit'; editorEntity = 'airframe'; editorAirframe = true; editorLocation = false; editorId = record.id; editorManufacturer = record.manufacturer; editorModel = record.model; editorDescription = ''; editorImage = record.imageUrl ?? ''; nameEditing = false;
-      editorAirframeValues = Object.fromEntries(airframeFields.map((field) => [field.key, String((record as unknown as Record<string, unknown>)[field.key] ?? '')]));
+      editorAirframeValues = Object.fromEntries(airframeFields.map((field) => [field.key, numericDisplay((record as unknown as Record<string, unknown>)[field.key])]));
       editorInvalidFields = []; editorOpen = true; return;
     }
     const record = getComponent(row.id); if (!record) return;
     editorMode = 'edit'; editorEntity = 'component'; editorAirframe = false; editorLocation = false; editorKind = record.kind; editorId = record.id; editorManufacturer = record.manufacturer === 'Open Reference' ? '' : record.manufacturer; editorModel = cleanEditorModel(record.kind, record.model); editorDescription = ''; editorImage = record.imageUrl ?? ''; nameEditing = false;
-    editorValues = Object.fromEntries(fields[record.kind].map((field) => [field.key, String((record as unknown as Record<string, unknown>)[field.key] ?? '')])); editorInvalidFields = []; editorOpen = true;
+    editorValues = Object.fromEntries(fields[record.kind].map((field) => [field.key, numericDisplay((record as unknown as Record<string, unknown>)[field.key])])); editorInvalidFields = []; editorOpen = true;
   }
   function blankValues(kind: ComponentKind): Record<string, string> { return Object.fromEntries(fields[kind].map((field) => [field.key, ''])); }
   function blankLocationValues(): Record<string, string> { return Object.fromEntries(locationFields.map((field) => [field.key, ''])); }
@@ -161,8 +162,16 @@
   function setTextField(field: 'manufacturer' | 'model' | 'description', value: string) { if (field === 'manufacturer') editorManufacturer = value; else if (field === 'model') editorModel = value; else editorDescription = value; editorInvalidFields = editorInvalidFields.filter((item) => item !== field); }
   function handleImage(event: Event) { const file = (event.currentTarget as HTMLInputElement).files?.[0]; if (!file) return; const reader = new FileReader(); reader.onload = () => { editorImage = String(reader.result); }; reader.readAsDataURL(file); }
   function chooseGalleryImage(src: string) { editorImage = src; galleryOpen = false; }
+  function originalEditorNumber(key: string): unknown {
+    if (editorMode !== 'edit') return undefined;
+    const source = editorLocation ? getLocation(editorId) : editorAirframe ? getAircraft(editorId) : getComponent(editorId);
+    return (source as unknown as Record<string, unknown> | undefined)?.[key];
+  }
+  function parseEditorNumber(key: string, display: string): number {
+    return numericEditorValue(display, originalEditorNumber(key));
+  }
   function buildRecord(): ComponentRecord {
-    const values = Object.fromEntries(editorFields.map((field) => [field.key, Number(editorValues[field.key])])) as Record<string, number>;
+    const values = Object.fromEntries(editorFields.map((field) => [field.key, parseEditorNumber(field.key, editorValues[field.key])])) as Record<string, number>;
     const common = { id: editorId, kind: editorKind, manufacturer: editorManufacturer.trim() || 'مرجع شخصی', model: editorModel.trim() || 'قطعهٔ جدید', tags: ['custom'], sourceUrl: 'local://user-component', licenseSpdx: 'NOASSERTION', retrievedAt: new Date().toISOString(), sourceHash: `local-${editorId}`, quality: 'community' as const, imageUrl: editorImage || undefined };
     if (editorKind === 'battery') return { ...common, ...values, chemistry: 'LiPo', burstC: values.continuousC * 1.3, internalResistanceOhm: 0.02 } as ComponentRecord;
     if (editorKind === 'motor') return { ...common, ...values, noLoadCurrentA: 0.8, resistanceOhm: 0.05, poles: 14 } as ComponentRecord;
@@ -170,11 +179,11 @@
     return { ...common, ...values, resistanceOhm: 0.003 } as ComponentRecord;
   }
   function buildAircraft(): AircraftProfile {
-    const values = Object.fromEntries(editorFields.map((field) => [field.key, Number(editorAirframeValues[field.key])])) as Record<string, number>;
+    const values = Object.fromEntries(editorFields.map((field) => [field.key, parseEditorNumber(field.key, editorAirframeValues[field.key])])) as Record<string, number>;
     return { id: editorId, manufacturer: editorManufacturer.trim(), model: editorModel.trim(), classLabel: 'Custom airframe', massKg: values.massKg, maxTakeoffMassKg: values.maxTakeoffMassKg, enduranceMin: null, hasCamera: null, isToy: false, sourceUrl: 'local://user-airframe', licenseSpdx: 'NOASSERTION', retrievedAt: new Date().toISOString(), sourceHash: `local-${editorId}`, quality: 'community', imageUrl: editorImage, maxFlightDistanceKm: values.maxFlightDistanceKm || null, maxServiceCeilingM: values.maxServiceCeilingM || null, battery: null };
   }
   function buildLocation(): FlightLocation {
-    const values = Object.fromEntries(editorFields.map((field) => [field.key, Number(editorLocationValues[field.key])])) as Record<string, number>;
+    const values = Object.fromEntries(editorFields.map((field) => [field.key, parseEditorNumber(field.key, editorLocationValues[field.key])])) as Record<string, number>;
     const existing = editorMode === 'edit' ? getLocation(editorId) : undefined;
     const name = editorModel.trim();
     const description = editorDescription.trim();
@@ -188,7 +197,7 @@
     const values = editorAirframe ? editorAirframeValues : editorLocation ? editorLocationValues : editorValues;
     for (const field of editorFields) {
       if (field.optional && String(values[field.key] ?? '').trim() === '') continue;
-      const value = Number(values[field.key]);
+      const value = parseEditorNumber(field.key, values[field.key]);
       const validLocationValue = editorLocation && (field.key === 'altitudeM' || field.key === 'temperatureC') ? Number.isFinite(value) : Number.isFinite(value) && value > 0;
       if (!validLocationValue) invalid.push(field.key);
     }
@@ -208,8 +217,8 @@
       else { const record = buildLocation(); saveCustomLocation(record); customRows = [...customRows, { id: record.id, kind: 'environment', manufacturer: record.provinceFa ?? '', model: record.nameFa, quality: record.quality, source: record.licenseSpdx, detail: record.descriptionFa || `ارتفاع ${record.altitudeM} m`, imageUrl: record.imageUrl }]; }
     } else if (editorAirframe) {
       if (editorMode === 'add') { const record = buildAircraft(); saveCustomAircraft(record); customRows = [...customRows, { id: record.id, kind: 'airframe', manufacturer: record.manufacturer, model: record.model, quality: record.quality, source: record.licenseSpdx, detail: record.classLabel, imageUrl: record.imageUrl }]; }
-      saveAircraftOverride(editorId, { manufacturer: editorManufacturer.trim(), model: editorModel.trim(), imageUrl: editorImage || undefined, ...Object.fromEntries(airframeFields.filter((field) => String(editorAirframeValues[field.key] ?? '').trim() !== '').map((field) => [field.key, Number(editorAirframeValues[field.key])] )) } as Partial<AircraftProfile>);
-    } else if (editorMode === 'edit') saveComponentOverride(editorId, { manufacturer: editorManufacturer.trim(), model: editorModel.trim(), imageUrl: editorImage || undefined, ...Object.fromEntries(editorFields.filter(field => String(editorValues[field.key] ?? '').trim() !== '').map((field) => [field.key, Number(editorValues[field.key])] )) });
+      saveAircraftOverride(editorId, { manufacturer: editorManufacturer.trim(), model: editorModel.trim(), imageUrl: editorImage || undefined, ...Object.fromEntries(airframeFields.filter((field) => String(editorAirframeValues[field.key] ?? '').trim() !== '').map((field) => [field.key, parseEditorNumber(field.key, editorAirframeValues[field.key])] )) } as Partial<AircraftProfile>);
+    } else if (editorMode === 'edit') saveComponentOverride(editorId, { manufacturer: editorManufacturer.trim(), model: editorModel.trim(), imageUrl: editorImage || undefined, ...Object.fromEntries(editorFields.filter(field => String(editorValues[field.key] ?? '').trim() !== '').map((field) => [field.key, parseEditorNumber(field.key, editorValues[field.key])] )) });
     else { const record = buildRecord(); saveCustomComponent(record); customRows = [...customRows, { id: record.id, kind: record.kind, manufacturer: record.manufacturer, model: record.model, quality: record.quality, source: record.licenseSpdx, detail: kindLabel[record.kind], imageUrl: record.imageUrl }]; }
     editorOpen = false;
     catalogRevision += 1;
