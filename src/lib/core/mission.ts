@@ -6,6 +6,7 @@ import {
   electricalLosses,
   findCoefficientOperatingPoint,
   loadedBatteryVoltage,
+  maximumLoadedOperatingPoint,
   nominalPackVoltage,
   packCapacityAh
 } from './physics';
@@ -77,10 +78,10 @@ export function calculateMission(input: MissionInput): MissionResult {
   const maximumOpen = input.propeller.curve?.length
     ? [...input.propeller.curve].sort((a, b) => b.thrustN - a.thrustN)[0]
     : coefficientOperatingPoint(input.propeller, input.motor, input.esc, density, nominalPackVoltage(input.battery), 1);
-  const maximumLoadedVoltage = loadedBatteryVoltage(input.battery, maximumOpen.currentA * input.airframe.rotorCount + input.auxiliaryCurrentA);
   const maximum = input.propeller.curve?.length
-    ? { ...maximumOpen, voltageV: maximumLoadedVoltage }
-    : coefficientOperatingPoint(input.propeller, input.motor, input.esc, density, maximumLoadedVoltage, 1);
+    ? { ...maximumOpen, voltageV: loadedBatteryVoltage(input.battery, maximumOpen.currentA * input.airframe.rotorCount + input.auxiliaryCurrentA) }
+    : maximumLoadedOperatingPoint(input, density);
+  const maximumLoadedVoltage = maximum.voltageV;
 
   const definitions: Array<[MissionPoint['name'], number]> = [['hover', 1], ['cruise', 1.15], ['climb', 1.5]];
   const points = definitions.map(([name, multiplier]) => {

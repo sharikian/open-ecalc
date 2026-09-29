@@ -121,4 +121,9 @@
   @media (max-width: 900px) { .gauges { grid-template-columns: repeat(2, minmax(0, 1fr)); }.lower-grid { grid-template-columns: minmax(0, 1fr); } }
   @media (max-width: 620px) { .result-heading h2 { font-size: 24px; }.headline-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }.headline-stats div:nth-child(3) { border-inline-start: 0; border-block-start: 1px solid var(--line); }.headline-stats div:nth-child(4) { border-block-start: 1px solid var(--line); }.gauge-section, .curve-section, .card { padding: 12px; }.section-head { gap: 8px; }.section-head p { max-width: 220px; }.curve-section :global(.chart) { min-height: 250px; } }
   @media (max-width: 380px) { .gauges { grid-template-columns: minmax(0, 1fr); }.gauge-card :global(.chart) { min-height: 145px; }.gauge-card small { min-height: 0; }.headline-stats b { font-size: 16px; } }
+  @media (max-width: 620px) {
+    .headline-stats span, .headline-stats small, .section-head p, .section-head > .data, .gauge-card small { font-size: 14px; }
+    .section-head h3 { font-size: 17px; }
+    .warnings ul, .warnings p { font-size: 15px; }
+  }
 </style>

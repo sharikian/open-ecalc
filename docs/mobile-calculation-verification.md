@@ -2,6 +2,18 @@
 
 Date: 2026-09-29. Status: in progress; do not treat this as full model validation.
 
+## Follow-up verification
+
+- Production site opened in agent-browser with QUIC disabled and the Cloudflare host mapped to a reachable edge IP. The ordinary DNS path from this environment timed out; HTTPS/SNI remained the original hostname.
+- Synthetic safe-area test at 375 x 812: 24 px top inset produces 32 px header padding; 20 px bottom inset produces 27 px navigation padding. No horizontal overflow; numeric input text is 16 px.
+- Production simple calculator with the 5000 mAh scenario displays 5.9 min and **3.5 km usable range**; legacy raw table range stays 4.4 km.
+- Advanced calculator was exercised through all four form steps using the documented DEFAULT_MISSION_INPUT dimensions; it produced a real results dialog and charts, not a blank/error page.
+- A matched eCalc observed hover point produces 30.4 min with 5000 mAh, 85% usable capacity, 8.39 A total current and zero auxiliary draw. This validates the duration calculation, not an independent prediction of eCalc's motor model.
+- Worker feedback delivery returned HTTP 200 / `{ "ok": true }` from Telegram both for the initial text delivery and the full JSON document delivery. The latter includes original inputs, client result and server-recomputed result.
+- A scan of the built frontend found no Telegram token. Full static output is 8.46 MiB.
+- Android CI run 36571175263 failed before compilation because setup-android attempted to install the removed SDK package `tools`. The workflow now requests only `platform-tools`; run 36572022158 reached the ARM universal compilation stage.
+- Maximum-load sag now solves current and voltage together, avoiding the previous one-pass estimate and contradictory ceiling/warning outputs.
+
 ## Completed checks
 
 - Mobile header, content, bottom navigation, sticky actions, and result dialog use shared safe-area variables.

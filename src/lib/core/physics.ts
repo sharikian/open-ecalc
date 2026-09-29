@@ -1,4 +1,4 @@
-import type { Battery, ESC, Motor, OperatingPoint, Propeller } from './types';
+import type { Battery, ESC, MissionInput, Motor, OperatingPoint, Propeller } from './types';
 
 const STANDARD_PRESSURE_PA = 101_325;
 const STANDARD_TEMPERATURE_K = 288.15;
@@ -87,4 +87,18 @@ export function findCoefficientOperatingPoint(
   if (targetThrustN < 0 || targetThrustN > maximum.thrustN) return null;
   const throttle = maximum.thrustN > 0 ? Math.sqrt(targetThrustN / maximum.thrustN) : 0;
   return coefficientOperatingPoint(propeller, motor, esc, densityKgM3, voltageV, throttle);
+}
+
+/** Solve terminal voltage and maximum-load current together, rather than using open-circuit current once. */
+export function maximumLoadedOperatingPoint(input: MissionInput, densityKgM3: number): OperatingPoint {
+  let lower = 0;
+  let upper = nominalPackVoltage(input.battery);
+  for (let iteration = 0; iteration < 48; iteration += 1) {
+    const voltage = (lower + upper) / 2;
+    const point = coefficientOperatingPoint(input.propeller, input.motor, input.esc, densityKgM3, voltage, 1);
+    const loaded = loadedBatteryVoltage(input.battery, point.currentA * input.airframe.rotorCount + input.auxiliaryCurrentA);
+    if (voltage > loaded) upper = voltage;
+    else lower = voltage;
+  }
+  return coefficientOperatingPoint(input.propeller, input.motor, input.esc, densityKgM3, (lower + upper) / 2, 1);
 }

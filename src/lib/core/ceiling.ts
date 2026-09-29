@@ -1,4 +1,4 @@
-import { airDensity, coefficientOperatingPoint, loadedBatteryVoltage, nominalPackVoltage } from './physics';
+import { airDensity, loadedBatteryVoltage, maximumLoadedOperatingPoint } from './physics';
 import type { CeilingResult, MissionInput } from './types';
 
 const GRAVITY = 9.80665;
@@ -18,15 +18,12 @@ export function availableThrustAtAltitude(input: MissionInput, altitudeM: number
   if (input.propeller.curve?.length) {
     const maximum = [...input.propeller.curve].sort((a, b) => b.thrustN - a.thrustN)[0];
     const referenceDensity = airDensity(input.environment.altitudeM, input.environment.temperatureC, input.environment.pressurePa);
-    const loadedVoltage = loadedBatteryVoltage(input.battery, maximum.currentA * input.airframe.rotorCount);
+    const loadedVoltage = loadedBatteryVoltage(input.battery, maximum.currentA * input.airframe.rotorCount + input.auxiliaryCurrentA);
     const voltageFactor = loadedVoltage / Math.max(maximum.voltageV, 0.1);
     return maximum.thrustN * (density / referenceDensity) * voltageFactor ** 2 * input.airframe.rotorCount;
   }
 
-  const openVoltage = nominalPackVoltage(input.battery);
-  const firstPass = coefficientOperatingPoint(input.propeller, input.motor, input.esc, density, openVoltage, 1);
-  const loadedVoltage = loadedBatteryVoltage(input.battery, firstPass.currentA * input.airframe.rotorCount);
-  return coefficientOperatingPoint(input.propeller, input.motor, input.esc, density, loadedVoltage, 1).thrustN * input.airframe.rotorCount;
+  return maximumLoadedOperatingPoint(input, density).thrustN * input.airframe.rotorCount;
 }
 
 function solveCeiling(input: MissionInput, requiredMargin: number): number | null {

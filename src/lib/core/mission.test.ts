@@ -3,6 +3,7 @@ import { estimateCeiling } from './ceiling';
 import { CurveRangeError, interpolateOperatingPoint } from './curve';
 import { calculateMission } from './mission';
 import { DEFAULT_MISSION_INPUT } from './presets';
+import { loadedBatteryVoltage, maximumLoadedOperatingPoint } from './physics';
 import type { MissionInput } from './types';
 
 function mission(change: (input: MissionInput) => void = () => {}): MissionInput {
@@ -12,6 +13,12 @@ function mission(change: (input: MissionInput) => void = () => {}): MissionInput
 }
 
 describe('mission properties', () => {
+  it('solves maximum current and battery sag at the same operating point', () => {
+    const input = mission();
+    const point = maximumLoadedOperatingPoint(input, 1.225);
+    expect(point.voltageV).toBeCloseTo(loadedBatteryVoltage(input.battery,
+      point.currentA * input.airframe.rotorCount + input.auxiliaryCurrentA), 8);
+  });
   it('matches eCalc endurance using the observed hover operating point', () => {
     const input = mission(value => {
       value.airframe.takeoffMassKg = 0.85;
