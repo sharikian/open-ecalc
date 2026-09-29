@@ -14,6 +14,7 @@
   import SimpleCalculator from '$ui/SimpleCalculator.svelte';
   import StepTabs from '$ui/StepTabs.svelte';
   import ThemeToggle from '$ui/ThemeToggle.svelte';
+  import Feedback from '$ui/Feedback.svelte';
   import { locale } from '$lib/i18n';
 
   const empty = '' as unknown as number;
@@ -98,7 +99,13 @@
   function advanceStep() { if (!stepReady(step)) { showErrors = true; return; } showErrors = false; step = Math.min(3, step + 1); }
   function calculateSimple() {
     const values = [legacyInput.emptyMassG, legacyInput.payloadMassG, legacyInput.batteryMassG, legacyInput.batteryParallel, legacyInput.cellCapacityAh, legacyInput.rotorCount, legacyInput.speedMps, ...legacyInput.currentPerMotorA];
-    if (!valuesReady(values)) { legacyResult = null; simpleShowErrors = true; return; }
+    const valid = values.every(Number.isFinite)
+      && legacyInput.emptyMassG > 0 && legacyInput.payloadMassG >= 0
+      && legacyInput.batteryMassG > 0 && legacyInput.cellCapacityAh > 0
+      && Number.isInteger(legacyInput.batteryParallel) && legacyInput.batteryParallel >= 1
+      && Number.isInteger(legacyInput.rotorCount) && legacyInput.rotorCount >= 1
+      && legacyInput.speedMps >= 0 && legacyInput.currentPerMotorA.every((current) => current > 0);
+    if (!valid) { legacyResult = null; simpleShowErrors = true; return; }
     simpleShowErrors = false;
     legacyResult = calculateLegacyExcel(legacyInput);
     reports = [saveReport({ mode: 'simple', input: structuredClone(legacyInput), result: legacyResult }), ...reports].slice(0, 100);
@@ -146,6 +153,7 @@
       <div class="workspace__head"><ModeTabs value={mode} onChange={setMode} /></div>
       {#if mode === 'simple'}
         <div class="simple-layout"><SimpleCalculator bind:input={legacyInput} showErrors={simpleShowErrors} onCalculate={calculateSimple} /><LegacyResults result={legacyResult} /></div>
+        {#if legacyResult}<Feedback calculation={{ mode: 'simple', input: legacyInput, result: legacyResult }} />{/if}
       {:else}
         <StepTabs value={step} canOpen={(next) => next <= firstIncompleteStep()} onChange={goToStep} />
         <div class="advanced-layout"><section class="input-area"><MissionForm bind:input={missionInput} {step} invalidStep={showErrors ? step : -1} onApplyProfile={applyAircraftProfile} /><div class="actions"><button type="button" class="back" disabled={step === 0} on:click={() => goToStep(step - 1)}>{$locale === 'en' ? 'Back' : 'بازگشت'}</button>{#if step < 3}<button type="button" class="next" on:click={advanceStep}>{$locale === 'en' ? 'Next step' : 'مرحلهٔ بعد'} <span>←</span></button>{:else}<button type="button" class="next" on:click={calculateAdvanced}>{$locale === 'en' ? 'Calculate' : 'محاسبه'} <span>↗</span></button>{/if}</div></section></div>
@@ -189,4 +197,14 @@
   @media (max-width: 560px) { .app-body { padding: 70px 0 104px; display: block; }.topbar { position: fixed; inset: 0 0 auto; z-index: 55; min-height: 58px; padding: 8px 14px; border-radius: 0 0 18px 18px; overflow: hidden; }.topbar .brand img { width: 34px; height: 34px; }.topbar .brand strong { font-size: 17px; }.workspace { border-radius: 0; padding: 14px 12px; }.bottom-nav { position: fixed; inset: auto 0 0; z-index: 50; display: grid; grid-template-columns: repeat(4, 1fr); min-height: 74px; align-items: stretch; border-top: 1px solid var(--line); border-radius: 18px 18px 0 0; background: color-mix(in srgb, var(--surface) 94%, transparent); padding: 7px 12px calc(7px + env(safe-area-inset-bottom)); box-shadow: 0 -10px 26px rgba(7, 23, 68, .08); backdrop-filter: blur(14px); }.bottom-nav .nav-item { position: relative; display: grid; grid-template-columns: 1fr; min-height: 58px; place-items: center; gap: 3px; border: 1px solid transparent; border-radius: 11px; padding: 5px; text-align: center; }.bottom-nav .nav-item :global(svg) { grid-row: auto; transform: scale(1.22); transition: transform var(--fast) var(--ease); }.bottom-nav .nav-item small { position: absolute; inset: auto 0 4px; margin: 0; font-size: 11px; opacity: 0; transform: scale(.72); transition: opacity var(--fast) var(--ease), transform var(--fast) var(--ease); }.bottom-nav .nav-item.active :global(svg) { transform: translateY(-7px) scale(1.08); }.bottom-nav .nav-item.active small { opacity: 1; transform: scale(1); }.bottom-nav .nav-item.active { border-color: transparent; background: var(--blue-soft); } .actions { position: sticky; bottom: 82px; z-index: 4; padding: 9px 0; background: linear-gradient(to bottom, color-mix(in srgb, var(--paper) 0%, transparent), var(--paper) 38%); }.result-backdrop { place-items: end; padding: 0 0 86px; }.result-dialog { width: 100%; max-height: calc(100dvh - 120px); border-radius: 22px 22px 0 0; padding: 16px 12px 24px; } }
   :global(html[data-motion='off']) * { animation: none !important; transition: none !important; }
   @media (prefers-reduced-motion: reduce) { .page-view { animation: none; } }
+  @media (max-width: 560px) {
+    .app-body { padding-top: calc(70px + var(--safe-top)); padding-bottom: calc(104px + var(--safe-bottom)); }
+    .topbar { padding-top: calc(8px + var(--safe-top)); padding-left: calc(14px + var(--safe-left)); padding-right: calc(14px + var(--safe-right)); }
+    .bottom-nav { padding-left: calc(12px + var(--safe-left)); padding-right: calc(12px + var(--safe-right)); }
+    .workspace { padding-left: calc(12px + var(--safe-left)); padding-right: calc(12px + var(--safe-right)); }
+    .actions { bottom: calc(82px + var(--safe-bottom)); }
+    .result-backdrop { padding-bottom: calc(86px + var(--safe-bottom)); padding-top: var(--safe-top); }
+    .result-dialog { max-height: calc(100dvh - 120px - var(--safe-top) - var(--safe-bottom)); }
+    .bottom-nav .nav-item small { font-size: 13px; }
+  }
 </style>

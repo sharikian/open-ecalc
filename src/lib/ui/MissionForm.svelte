@@ -109,7 +109,7 @@
   <article class="setup-card" class:active={step === 2}>
     <header class="card-header" role="button" tabindex="0" on:click={() => openPicker('battery')} on:keydown={(event) => event.key === 'Enter' && openPicker('battery')}><span class="card-icon"><Icon name="battery" size={23} /></span><div><h2>{copy('باتری', 'Battery')}</h2><p>{copy('انتخاب از فهرست', 'Choose from catalog')}</p></div><b class="data">03</b></header>
     <div class="fields">
-      <Field label={copy('ظرفیت هر پک', 'Pack capacity')} suffix="Ah" invalid={invalidStep === 2 && !(Number.isFinite(input.battery.capacityAh) && input.battery.capacityAh > 0)} bind:value={input.battery.capacityAh} min={0.1} />
+      <Field label={copy('ظرفیت هر پک', 'Pack capacity')} suffix="mAh" displayScale={1000} invalid={invalidStep === 2 && !(Number.isFinite(input.battery.capacityAh) && input.battery.capacityAh > 0)} bind:value={input.battery.capacityAh} min={1} />
       <Field label={copy('سلول سری', 'Series cells')} suffix="S" invalid={invalidStep === 2 && !(Number.isFinite(input.battery.series) && input.battery.series > 0)} bind:value={input.battery.series} min={1} step="1" />
       <Field label={copy('پک موازی', 'Parallel packs')} suffix="P" invalid={invalidStep === 2 && !(Number.isFinite(input.battery.parallel) && input.battery.parallel > 0)} bind:value={input.battery.parallel} min={1} step="1" />
       <Field label={copy('ولتاژ هر سلول', 'Cell voltage')} suffix="V" invalid={invalidStep === 2 && !(Number.isFinite(input.battery.nominalCellVoltageV) && input.battery.nominalCellVoltageV > 0)} bind:value={input.battery.nominalCellVoltageV} min={1} />

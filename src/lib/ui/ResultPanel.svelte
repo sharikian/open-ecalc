@@ -6,6 +6,7 @@
   import Chart from './Chart.svelte';
   import Icon from './Icon.svelte';
   import RotorCoverage from './RotorCoverage.svelte';
+  import Feedback from './Feedback.svelte';
 
   export let result: MissionResult | null = null;
   export let input: MissionInput;
@@ -107,6 +108,7 @@
     <section class="curve-section" aria-labelledby="altitude-title"><div class="section-head"><div><h3 id="altitude-title">{text('سقف پرواز', 'Altitude ceiling')}</h3><p>{text('رانش موجود با خط نیازمندی مقایسه می‌شود.', 'Available thrust is compared with the required margin.')}</p></div><span class="data">{result.hoverCeilingM == null ? '—' : `${number(result.hoverCeilingM, 0)} m`}</span></div>{#if altitudeOption}<Chart option={altitudeOption} ariaLabel={text('منحنی رانش نسبت به ارتفاع', 'Thrust versus altitude curve')} height={290} />{/if}</section>
 
     <div class="lower-grid"><article class="coverage card"><div class="section-head"><h3>{text('چیدمان روتورها', 'Rotor layout')}</h3><span class="data">{number(result.thrustMargin * 100, 0)}%</span></div><RotorCoverage rotorCount={input.airframe.rotorCount} frameSizeM={input.airframe.frameSizeM} propellerDiameterM={input.propeller.diameterM} layout={input.airframe.layout} /></article><article class="warnings card"><div class="section-head"><h3>{text('کنترل محدودیت‌ها', 'Limit checks')}</h3><span class="data">{result.warnings.length}</span></div>{#if result.warnings.length === 0}<p>{text('محدودیت بحرانی دیده نشد.', 'No critical limit detected.')}</p>{:else}<ul>{#each result.warnings as warning}<li class:critical={warning.severity === 'critical'}><b>{warning.severity === 'critical' ? '!' : '·'}</b><span>{warningLabels[warning.code]?.[en ? 0 : 1] ?? text('نیازمند بررسی', 'Review required')}</span></li>{/each}</ul>{/if}</article></div>
+    <Feedback calculation={{ mode: 'advanced', input, result }} />
   </section>
 {/if}
 

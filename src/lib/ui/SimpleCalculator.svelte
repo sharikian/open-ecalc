@@ -27,7 +27,7 @@
     <Field label={copy('محموله', 'Payload')} suffix="g" invalid={showErrors && !(Number.isFinite(input.payloadMassG) && input.payloadMassG >= 0)} bind:value={input.payloadMassG} min={0} />
     <Field label={copy('وزن باتری', 'Battery mass')} suffix="g" invalid={showErrors && !(Number.isFinite(input.batteryMassG) && input.batteryMassG > 0)} bind:value={input.batteryMassG} min={0} />
     <Field label={copy('تعداد پک موازی', 'Parallel packs')} suffix="P" invalid={showErrors && !(Number.isFinite(input.batteryParallel) && input.batteryParallel > 0)} bind:value={input.batteryParallel} min={1} step="1" />
-    <Field label={copy('ظرفیت هر پک', 'Pack capacity')} suffix="Ah" invalid={showErrors && !(Number.isFinite(input.cellCapacityAh) && input.cellCapacityAh > 0)} bind:value={input.cellCapacityAh} min={0.1} />
+    <Field label={copy('ظرفیت هر پک', 'Pack capacity')} suffix="mAh" displayScale={1000} invalid={showErrors && !(Number.isFinite(input.cellCapacityAh) && input.cellCapacityAh > 0)} bind:value={input.cellCapacityAh} min={1} />
     <Field label={copy('تعداد روتور', 'Rotor count')} invalid={showErrors && !(Number.isFinite(input.rotorCount) && input.rotorCount > 0)} bind:value={input.rotorCount} min={1} step="1" />
     <Field label={copy('سرعت پرواز', 'Flight speed')} suffix="m/s" invalid={showErrors && !(Number.isFinite(input.speedMps) && input.speedMps > 0)} bind:value={input.speedMps} min={0} />
   </div>
