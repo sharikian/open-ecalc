@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "datasetVersion": "2026.09",
-  "generatedAt": "2026-09-08T00:00:00.000Z",
+  "datasetVersion": "2026.09-fpvdb-5333aba",
+  "generatedAt": "2026-09-29T12:58:39.000Z",
   "sources": [
     {
       "name": "Open eCalc reference set",
@@ -81,6 +81,32 @@
       "licenseSpdx": "NOASSERTION",
       "included": false,
       "note": "Redistribution permission not yet confirmed"
+    },
+    {
+      "id": "fpvdb-open-dataset",
+      "name": "FPV-DB Open Dataset",
+      "url": "https://github.com/fpvdb/fpv-db-data/tree/5333aba81229e1d0e7b1585e165136fd1187174c",
+      "datasetUrl": "https://www.fpv-db.com/data/",
+      "licenseSpdx": "CC-BY-4.0",
+      "attribution": "FPV-DB — https://fpv-db.com",
+      "sourceCommit": "5333aba81229e1d0e7b1585e165136fd1187174c",
+      "retrievedAt": "2026-09-29T12:58:39.000Z",
+      "included": true,
+      "recordCounts": {
+        "motors": 206,
+        "batteries": 326,
+        "props": 207,
+        "escStacks": 112,
+        "quads": 101
+      },
+      "files": {
+        "motors.json": "b1ef6b7a4b156eb4c5064248acf2b39f4a97cc7b7ad6fddb25724b36c676de68",
+        "batteries.json": "ef267a0871d6d7ab074bb4641380b9637d30109214016e290a74f86e819e157e",
+        "props.json": "0a834c558b7ce30414e04af14c9f1deede7492c17bfc9b29c5b8ee05cc77ddd2",
+        "stacks.json": "18ac53ade1d6de239cd3c8fa71557b3f141526c9d24a2371589fb462e25a226f",
+        "quads.json": "c667fa44d9f4b6c19ee67d1be815d2dfe54d8be5a4b24d5efa64e657914808bd"
+      },
+      "note": "Brand/model product records and manufacturer-published bench tables. No product images. ESC listings are integrated FC/ESC stacks."
     }
   ]
 }
