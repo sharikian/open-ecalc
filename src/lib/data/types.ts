@@ -34,6 +34,8 @@ export interface ComponentBase extends Provenance {
   tags: string[];
   /** Optional local asset; only set when the source licence allows bundling. */
   imageUrl?: string;
+  /** Generated category illustration, not a photograph of this exact model. */
+  imageType?: 'illustration';
 }
 
 export interface BatteryComponent extends ComponentBase {
@@ -191,6 +193,7 @@ export interface ComponentSummary {
   quality: DataQuality;
   licenseSpdx: string;
   imageUrl?: string;
+  imageType?: 'illustration';
 }
 
 export type DatasetFormat = 'json' | 'csv' | 'uiuc-dat' | 'test-stand';

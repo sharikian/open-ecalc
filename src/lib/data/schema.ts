@@ -27,6 +27,8 @@ export function isComponentRecord(value: unknown): value is ComponentRecord {
     typeof record.sourceHash === 'string' &&
     ['verified', 'manufacturer', 'community', 'estimated'].includes(String(record.quality)) &&
     (record.productType === undefined || productTypes.includes(String(record.productType) as (typeof productTypes)[number])) &&
+    (record.imageType === undefined || record.imageType === 'illustration') &&
+    (record.imageType !== 'illustration' || typeof record.imageUrl === 'string') &&
     (record.sourceUrls === undefined || (Array.isArray(record.sourceUrls) && record.sourceUrls.every((url) => typeof url === 'string'))) &&
     (record.referenceOnly === undefined || typeof record.referenceOnly === 'boolean') &&
     (record.specificationSources === undefined || isSpecificationSources(record.specificationSources)) &&
