@@ -3,6 +3,7 @@ import components from '../../../static/data/components.v1.json';
 import manifest from '../../../data/manifests/fpvdb-snapshot.v1.json';
 import sourceMotors from '../../../data/raw/fpvdb/2026-09-29/motors.json';
 import manufacturerSupplement from '../../../data/supplements/manufacturer-specifications.v1.json';
+import popularSupplement from '../../../data/supplements/popular-brand-products.v1.json';
 import { componentKinds, queryComponentRecords, replaceComponentCatalog } from './catalog';
 import type { BatteryComponent, ComponentRecord, MotorComponent } from './types';
 
@@ -74,7 +75,8 @@ describe('FPV-DB bundled dataset', () => {
     expect(battery?.nominalVoltageV).toBe(22.2);
     expect(battery?.nominalCellVoltageV).toBeUndefined();
     expect(battery?.specificationSources?.nominalVoltageV?.sourceUrl).toContain('genstattu.com');
-    expect(records.filter((record) => record.supplementHash)).toHaveLength(manufacturerSupplement.records.length);
+    const enrichedIds = new Set([...manufacturerSupplement.records.map(record => record.id), ...popularSupplement.records.flatMap(record => 'targetId' in record ? [record.targetId] : [])]);
+    expect(records.filter((record) => record.supplementHash)).toHaveLength(enrichedIds.size);
   });
 });
 
@@ -91,7 +93,7 @@ describe('component catalog reference visibility', () => {
     expect(visible.some((record) => record.referenceOnly)).toBe(false);
     expect(visible.some((record) => record.id === custom.id)).toBe(true);
     expect(queryComponentRecords({ includeReference: true }).filter((record) => record.referenceOnly)).toHaveLength(732);
-    expect(componentKinds().reduce((sum, entry) => sum + entry.count, 0)).toBe(864);
-    expect(componentKinds({ includeReference: true }).reduce((sum, entry) => sum + entry.count, 0)).toBe(1596);
+    expect(componentKinds().reduce((sum, entry) => sum + entry.count, 0)).toBe(875);
+    expect(componentKinds({ includeReference: true }).reduce((sum, entry) => sum + entry.count, 0)).toBe(1607);
   });
 });

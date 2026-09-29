@@ -1,5 +1,10 @@
 # Third-party data
 
+The additional common-brand supplement and generated thumbnails are documented
+in [docs/component-images-and-specs.md](docs/component-images-and-specs.md).
+Manufacturer field-level overlays preserve their own `NOASSERTION` rights;
+generated category images are not represented as manufacturer product photos.
+
 Selected Hobbywing, APD and T-Motor standalone ESC factual specifications are
 documented in [docs/known-brands.md](docs/known-brands.md). Their snapshot and
 per-field sources are in `data/supplements/known-brand-products.v1.json`.

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { numericDisplay } from './numeric-display';
   export let label: string;
   export let value: number | string | undefined;
   export let type: 'number' | 'text' = 'number';
@@ -13,7 +14,7 @@
   export let displayScale = 1;
   export let readonly = false;
   export let max: number | undefined = undefined;
-  $: displayValue = typeof value === 'number' ? value * displayScale : value;
+  $: displayValue = numericDisplay(typeof value === 'number' ? value * displayScale : value);
   function updateValue(event: Event) {
     const control = event.currentTarget as HTMLInputElement;
     value = type === 'number'

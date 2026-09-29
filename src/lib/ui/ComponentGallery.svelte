@@ -4,9 +4,10 @@
   import type { AircraftProfile, ComponentKind, ComponentRecord, FlightLocation } from '$data';
   import { locale } from '$lib/i18n';
   import Icon from './Icon.svelte';
+  import { numericDisplay, numericEditorValue } from './numeric-display';
 
   type FilterKind = 'all' | ComponentKind | 'airframe' | 'environment';
-  type Row = { id: string; kind: FilterKind; manufacturer: string; model: string; quality: string; source: string; detail: string; imageUrl?: string };
+  type Row = { id: string; kind: FilterKind; manufacturer: string; model: string; quality: string; source: string; detail: string; imageUrl?: string; imageType?: 'illustration' };
   type EditorField = { key: string; label: string; unit: string; optional?: boolean };
   const kindLabelFa: Record<FilterKind, string> = { all: 'همه', battery: 'باتری', motor: 'موتور', propeller: 'ملخ', esc: 'ESC', airframe: 'بدنه', environment: 'محیط' };
   const kindLabelEn: Record<FilterKind, string> = { all: 'All', battery: 'Battery', motor: 'Motor', propeller: 'Propeller', esc: 'ESC', airframe: 'Airframe', environment: 'Environment' };
@@ -20,7 +21,7 @@
   $: baseRows = (() => {
     catalogRevision;
     return [
-      ...queryComponents({ includeReference }).map((item) => ({ id: item.id, kind: item.kind, manufacturer: item.manufacturer, model: item.model, quality: item.quality, source: item.licenseSpdx, detail: item.productType === 'fc-esc-stack' ? 'FC / ESC' : $locale === 'en' ? (item.kind === 'battery' ? 'Cell and pack' : item.kind === 'motor' ? 'Brushless motor' : item.kind === 'propeller' ? 'Propeller profile' : 'Controller') : (item.kind === 'battery' ? 'سلول و پک' : item.kind === 'motor' ? 'موتور براشلس' : item.kind === 'propeller' ? 'پروفایل ملخ' : 'کنترل‌کننده'), imageUrl: item.imageUrl })),
+      ...queryComponents({ includeReference }).map((item) => ({ id: item.id, kind: item.kind, manufacturer: item.manufacturer, model: item.model, quality: item.quality, source: item.licenseSpdx, detail: item.productType === 'fc-esc-stack' ? 'FC / ESC' : $locale === 'en' ? (item.kind === 'battery' ? 'Cell and pack' : item.kind === 'motor' ? 'Brushless motor' : item.kind === 'propeller' ? 'Propeller profile' : 'Controller') : (item.kind === 'battery' ? 'سلول و پک' : item.kind === 'motor' ? 'موتور براشلس' : item.kind === 'propeller' ? 'پروفایل ملخ' : 'کنترل‌کننده'), imageUrl: item.imageUrl, imageType: item.imageType })),
       ...queryAircraft().map((item) => ({ id: item.id, kind: 'airframe' as const, manufacturer: item.manufacturer, model: item.model, quality: item.quality, source: item.licenseSpdx, detail: item.classLabel || ($locale === 'en' ? 'Aircraft frame' : 'بدنهٔ پرنده'), imageUrl: item.imageUrl })),
       ...queryLocations().map((item) => ({ id: item.id, kind: 'environment' as const, manufacturer: ($locale === 'en' ? item.provinceEn : item.provinceFa) ?? '', model: $locale === 'en' ? item.nameEn : item.nameFa, quality: item.quality, source: item.licenseSpdx, detail: $locale === 'en' ? (item.descriptionEn || `${item.altitudeM} m altitude`) : (item.descriptionFa || `ارتفاع ${item.altitudeM} m`), imageUrl: item.imageUrl }))
     ] as Row[];
@@ -103,7 +104,8 @@
     return () => window.removeEventListener('resize', update);
   });
   function imageFor(row: Row): string {
-    if (row.id.startsWith('fpvdb-') || row.id.startsWith('brand-')) return '';
+    if (row.imageUrl && row.imageType === 'illustration') return row.imageUrl;
+    if (row.id.startsWith('fpvdb-') || row.id.startsWith('brand-') || row.id.startsWith('popular-')) return '';
     const imageHash = [...row.id].reduce((sum, char) => sum + char.charCodeAt(0), 0);
     if (row.kind === 'battery') return imageHash % 2 ? '/data/images/battery-lipo-pack.png' : '/data/images/battery-liion-pack.png';
     if (row.kind === 'esc') return imageHash % 2 ? '/data/images/esc-high-current.png' : '/data/images/esc-compact-board.png';
@@ -135,17 +137,17 @@
     if (row.kind === 'environment') {
       const record = getLocation(row.id); if (!record) return;
       editorMode = 'edit'; editorEntity = 'environment'; editorAirframe = false; editorLocation = true; editorId = record.id; editorManufacturer = ($locale === 'en' ? record.provinceEn : record.provinceFa) ?? ''; editorModel = $locale === 'en' ? record.nameEn : record.nameFa; editorDescription = ($locale === 'en' ? record.descriptionEn : record.descriptionFa) ?? ''; editorImage = record.imageUrl ?? ''; nameEditing = false;
-      editorLocationValues = Object.fromEntries(locationFields.map((field) => [field.key, String(record[field.key as keyof FlightLocation] ?? '')])); editorInvalidFields = []; editorOpen = true; return;
+      editorLocationValues = Object.fromEntries(locationFields.map((field) => [field.key, numericDisplay(record[field.key as keyof FlightLocation])])); editorInvalidFields = []; editorOpen = true; return;
     }
     if (row.kind === 'airframe') {
       const record = getAircraft(row.id); if (!record) return;
       editorMode = 'edit'; editorEntity = 'airframe'; editorAirframe = true; editorLocation = false; editorId = record.id; editorManufacturer = record.manufacturer; editorModel = record.model; editorDescription = ''; editorImage = record.imageUrl ?? ''; nameEditing = false;
-      editorAirframeValues = Object.fromEntries(airframeFields.map((field) => [field.key, String((record as unknown as Record<string, unknown>)[field.key] ?? '')]));
+      editorAirframeValues = Object.fromEntries(airframeFields.map((field) => [field.key, numericDisplay((record as unknown as Record<string, unknown>)[field.key])]));
       editorInvalidFields = []; editorOpen = true; return;
     }
     const record = getComponent(row.id); if (!record) return;
     editorMode = 'edit'; editorEntity = 'component'; editorAirframe = false; editorLocation = false; editorKind = record.kind; editorId = record.id; editorManufacturer = record.manufacturer === 'Open Reference' ? '' : record.manufacturer; editorModel = cleanEditorModel(record.kind, record.model); editorDescription = ''; editorImage = record.imageUrl ?? ''; nameEditing = false;
-    editorValues = Object.fromEntries(fields[record.kind].map((field) => [field.key, String((record as unknown as Record<string, unknown>)[field.key] ?? '')])); editorInvalidFields = []; editorOpen = true;
+    editorValues = Object.fromEntries(fields[record.kind].map((field) => [field.key, numericDisplay((record as unknown as Record<string, unknown>)[field.key])])); editorInvalidFields = []; editorOpen = true;
   }
   function blankValues(kind: ComponentKind): Record<string, string> { return Object.fromEntries(fields[kind].map((field) => [field.key, ''])); }
   function blankLocationValues(): Record<string, string> { return Object.fromEntries(locationFields.map((field) => [field.key, ''])); }
@@ -161,8 +163,16 @@
   function setTextField(field: 'manufacturer' | 'model' | 'description', value: string) { if (field === 'manufacturer') editorManufacturer = value; else if (field === 'model') editorModel = value; else editorDescription = value; editorInvalidFields = editorInvalidFields.filter((item) => item !== field); }
   function handleImage(event: Event) { const file = (event.currentTarget as HTMLInputElement).files?.[0]; if (!file) return; const reader = new FileReader(); reader.onload = () => { editorImage = String(reader.result); }; reader.readAsDataURL(file); }
   function chooseGalleryImage(src: string) { editorImage = src; galleryOpen = false; }
+  function originalEditorNumber(key: string): unknown {
+    if (editorMode !== 'edit') return undefined;
+    const source = editorLocation ? getLocation(editorId) : editorAirframe ? getAircraft(editorId) : getComponent(editorId);
+    return (source as unknown as Record<string, unknown> | undefined)?.[key];
+  }
+  function parseEditorNumber(key: string, display: string): number {
+    return numericEditorValue(display, originalEditorNumber(key));
+  }
   function buildRecord(): ComponentRecord {
-    const values = Object.fromEntries(editorFields.map((field) => [field.key, Number(editorValues[field.key])])) as Record<string, number>;
+    const values = Object.fromEntries(editorFields.map((field) => [field.key, parseEditorNumber(field.key, editorValues[field.key])])) as Record<string, number>;
     const common = { id: editorId, kind: editorKind, manufacturer: editorManufacturer.trim() || 'مرجع شخصی', model: editorModel.trim() || 'قطعهٔ جدید', tags: ['custom'], sourceUrl: 'local://user-component', licenseSpdx: 'NOASSERTION', retrievedAt: new Date().toISOString(), sourceHash: `local-${editorId}`, quality: 'community' as const, imageUrl: editorImage || undefined };
     if (editorKind === 'battery') return { ...common, ...values, chemistry: 'LiPo', burstC: values.continuousC * 1.3, internalResistanceOhm: 0.02 } as ComponentRecord;
     if (editorKind === 'motor') return { ...common, ...values, noLoadCurrentA: 0.8, resistanceOhm: 0.05, poles: 14 } as ComponentRecord;
@@ -170,11 +180,11 @@
     return { ...common, ...values, resistanceOhm: 0.003 } as ComponentRecord;
   }
   function buildAircraft(): AircraftProfile {
-    const values = Object.fromEntries(editorFields.map((field) => [field.key, Number(editorAirframeValues[field.key])])) as Record<string, number>;
+    const values = Object.fromEntries(editorFields.map((field) => [field.key, parseEditorNumber(field.key, editorAirframeValues[field.key])])) as Record<string, number>;
     return { id: editorId, manufacturer: editorManufacturer.trim(), model: editorModel.trim(), classLabel: 'Custom airframe', massKg: values.massKg, maxTakeoffMassKg: values.maxTakeoffMassKg, enduranceMin: null, hasCamera: null, isToy: false, sourceUrl: 'local://user-airframe', licenseSpdx: 'NOASSERTION', retrievedAt: new Date().toISOString(), sourceHash: `local-${editorId}`, quality: 'community', imageUrl: editorImage, maxFlightDistanceKm: values.maxFlightDistanceKm || null, maxServiceCeilingM: values.maxServiceCeilingM || null, battery: null };
   }
   function buildLocation(): FlightLocation {
-    const values = Object.fromEntries(editorFields.map((field) => [field.key, Number(editorLocationValues[field.key])])) as Record<string, number>;
+    const values = Object.fromEntries(editorFields.map((field) => [field.key, parseEditorNumber(field.key, editorLocationValues[field.key])])) as Record<string, number>;
     const existing = editorMode === 'edit' ? getLocation(editorId) : undefined;
     const name = editorModel.trim();
     const description = editorDescription.trim();
@@ -188,7 +198,7 @@
     const values = editorAirframe ? editorAirframeValues : editorLocation ? editorLocationValues : editorValues;
     for (const field of editorFields) {
       if (field.optional && String(values[field.key] ?? '').trim() === '') continue;
-      const value = Number(values[field.key]);
+      const value = parseEditorNumber(field.key, values[field.key]);
       const validLocationValue = editorLocation && (field.key === 'altitudeM' || field.key === 'temperatureC') ? Number.isFinite(value) : Number.isFinite(value) && value > 0;
       if (!validLocationValue) invalid.push(field.key);
     }
@@ -208,8 +218,8 @@
       else { const record = buildLocation(); saveCustomLocation(record); customRows = [...customRows, { id: record.id, kind: 'environment', manufacturer: record.provinceFa ?? '', model: record.nameFa, quality: record.quality, source: record.licenseSpdx, detail: record.descriptionFa || `ارتفاع ${record.altitudeM} m`, imageUrl: record.imageUrl }]; }
     } else if (editorAirframe) {
       if (editorMode === 'add') { const record = buildAircraft(); saveCustomAircraft(record); customRows = [...customRows, { id: record.id, kind: 'airframe', manufacturer: record.manufacturer, model: record.model, quality: record.quality, source: record.licenseSpdx, detail: record.classLabel, imageUrl: record.imageUrl }]; }
-      saveAircraftOverride(editorId, { manufacturer: editorManufacturer.trim(), model: editorModel.trim(), imageUrl: editorImage || undefined, ...Object.fromEntries(airframeFields.filter((field) => String(editorAirframeValues[field.key] ?? '').trim() !== '').map((field) => [field.key, Number(editorAirframeValues[field.key])] )) } as Partial<AircraftProfile>);
-    } else if (editorMode === 'edit') saveComponentOverride(editorId, { manufacturer: editorManufacturer.trim(), model: editorModel.trim(), imageUrl: editorImage || undefined, ...Object.fromEntries(editorFields.filter(field => String(editorValues[field.key] ?? '').trim() !== '').map((field) => [field.key, Number(editorValues[field.key])] )) });
+      saveAircraftOverride(editorId, { manufacturer: editorManufacturer.trim(), model: editorModel.trim(), imageUrl: editorImage || undefined, ...Object.fromEntries(airframeFields.filter((field) => String(editorAirframeValues[field.key] ?? '').trim() !== '').map((field) => [field.key, parseEditorNumber(field.key, editorAirframeValues[field.key])] )) } as Partial<AircraftProfile>);
+    } else if (editorMode === 'edit') saveComponentOverride(editorId, { manufacturer: editorManufacturer.trim(), model: editorModel.trim(), imageUrl: editorImage || undefined, ...Object.fromEntries(editorFields.filter(field => String(editorValues[field.key] ?? '').trim() !== '').map((field) => [field.key, parseEditorNumber(field.key, editorValues[field.key])] )) });
     else { const record = buildRecord(); saveCustomComponent(record); customRows = [...customRows, { id: record.id, kind: record.kind, manufacturer: record.manufacturer, model: record.model, quality: record.quality, source: record.licenseSpdx, detail: kindLabel[record.kind], imageUrl: record.imageUrl }]; }
     editorOpen = false;
     catalogRevision += 1;
@@ -230,7 +240,7 @@
 <section class="catalog" aria-labelledby="catalog-title">
   <header class="catalog-head"><div><h1 id="catalog-title">{ui.title}</h1><p>{ui.count} {rows.length}</p></div><div class="catalog-actions"><strong class="data">{filtered.length} {ui.result}</strong><button class="add-button" type="button" aria-label={ui.add} on:click={openAdd}><Icon name="plus" size={18} /><span>{ui.add}</span></button></div></header>
   <div class="catalog-toolbar"><div class="search-line"><label class="search-field"><Icon name="search" size={19} /><span class="sr-only">{ui.search}</span><input value={query} on:input={(event) => setQuery((event.currentTarget as HTMLInputElement).value)} placeholder={ui.search} /></label><button class="filter-trigger" type="button" aria-label={ui.filters} aria-expanded={filterOpen} on:click={() => (filterOpen = !filterOpen)}><Icon name={kindIcon[filter]} size={19} /></button></div><div class:open={filterOpen} class="filter-group">{#each (['all', 'battery', 'motor', 'propeller', 'esc', 'airframe', 'environment'] as FilterKind[]) as option}<button type="button" class:active={filter === option} on:click={() => setFilter(option)}><Icon name={kindIcon[option]} size={17} />{kindLabel[option]}</button>{/each}</div><label class="reference-toggle"><input type="checkbox" bind:checked={includeReference} on:change={() => page = 1} />{$locale === 'en' ? 'Estimated references' : 'مرجع تخمینی'}</label></div>
-  <div class="catalog-list" aria-live="polite">{#each pageRows as row}<article class="catalog-row">{#if imageFor(row)}<img class="row-image" src={imageFor(row)} alt="" aria-label={$locale === 'en' ? 'Generic illustration' : 'تصویر عمومی'} />{:else}<span class="row-image" aria-hidden="true"><Icon name={kindIcon[row.kind]} size={26} /></span>{/if}<div class="row-main"><strong>{rowTitle(row)}</strong><small>{kindLabel[row.kind]} · {row.detail}</small></div><code>{row.source}</code><div class="row-actions"><button class="edit-button" type="button" aria-label={`${ui.editComponent} ${displayModel(row)}`} on:click={() => openEditor(row)}><Icon name="edit" size={17} /></button><button class="delete-button" type="button" aria-label={`${ui.delete} ${displayModel(row)}`} on:click={() => requestDelete(row)}><Icon name="trash" size={17} /></button></div></article>{:else}<div class="empty-state">{ui.empty}</div>{/each}</div>
+  <div class="catalog-list" aria-live="polite">{#each pageRows as row}<article class="catalog-row">{#if imageFor(row)}<img class="row-image" src={imageFor(row)} loading="lazy" width="52" height="52" alt="" aria-label={row.imageType === 'illustration' ? ($locale === 'en' ? 'Generated category illustration, not an exact product photo' : 'تصویر نمایشی گروه قطعه، نه عکس واقعی مدل') : ($locale === 'en' ? 'Generic illustration' : 'تصویر عمومی')} />{:else}<span class="row-image" aria-hidden="true"><Icon name={kindIcon[row.kind]} size={26} /></span>{/if}<div class="row-main"><strong>{rowTitle(row)}</strong><small>{kindLabel[row.kind]} · {row.detail}</small></div><code>{row.source}</code><div class="row-actions"><button class="edit-button" type="button" aria-label={`${ui.editComponent} ${displayModel(row)}`} on:click={() => openEditor(row)}><Icon name="edit" size={17} /></button><button class="delete-button" type="button" aria-label={`${ui.delete} ${displayModel(row)}`} on:click={() => requestDelete(row)}><Icon name="trash" size={17} /></button></div></article>{:else}<div class="empty-state">{ui.empty}</div>{/each}</div>
   <nav class="pagination" aria-label={ui.title}><button type="button" on:click={previousPage} disabled={page === 1} aria-label={ui.previous}>‹</button><span class="data">{page} / {pageCount}</span><button type="button" on:click={nextPage} disabled={page === pageCount} aria-label={ui.next}>›</button></nav>
 </section>
 
@@ -258,6 +268,7 @@
   .image-preview { position: relative; display: flex; align-items: center; gap: 11px; min-height: 76px; margin-top: 14px; border: 1px dashed color-mix(in srgb, var(--blue) 48%, var(--line)); border-radius: 14px; background: color-mix(in srgb, var(--blue-soft) 34%, var(--paper)); padding: 10px 12px; cursor: pointer; transition: border-color var(--fast) var(--ease), background-color var(--fast) var(--ease), transform var(--fast) var(--ease); }.image-preview:hover, .image-preview:focus-within { border-color: var(--blue); background: color-mix(in srgb, var(--blue-soft) 58%, var(--paper)); transform: translateY(-1px); }.image-preview > img, .image-preview > span { display: grid; width: 54px; height: 54px; place-items: center; flex: 0 0 54px; border-radius: 12px; background: var(--blue-soft); color: var(--blue); object-fit: cover; }.image-preview > div { display: grid; gap: 3px; min-width: 0; }.image-preview strong { color: var(--ink); font-size: 12px; }.image-preview small { color: var(--muted); font-size: 10px; }.image-preview .image-input { position: absolute; inset: 0; width: 100% !important; height: 100% !important; opacity: 0; cursor: pointer; }.optional { display: inline; margin-inline-start: 5px; color: var(--muted); font-size: 10px; font-weight: 400; }
   .gallery-trigger { position: relative; z-index: 2; width: fit-content; min-height: 28px; margin-top: 4px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--blue); padding-inline: 9px; font-size: 10px; cursor: pointer; }.gallery-trigger:hover { border-color: var(--blue); background: var(--blue-soft); }.gallery-popover { position: absolute; inset: 92px 18px auto; z-index: 5; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); padding: 12px; box-shadow: var(--shadow); animation: sheet-in 180ms var(--ease) both; }.gallery-popover header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 9px; }.gallery-popover header button { width: 28px; height: 28px; border: 1px solid var(--line); border-radius: 7px; background: var(--surface); color: var(--ink); }.gallery-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; max-height: 230px; overflow-y: auto; }.gallery-grid button { display: grid; gap: 4px; border: 1px solid var(--line); border-radius: 9px; background: var(--paper); padding: 5px; color: var(--ink); text-align: start; }.gallery-grid button:hover { border-color: var(--blue); }.gallery-grid img { width: 100%; aspect-ratio: 1.4; border-radius: 6px; object-fit: cover; }.gallery-grid small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 9px; }
   .editor-fields > label { min-width: 0; }.editor-fields input { min-width: 0; }
+  .row-image[src*='generated-catalog-v2'] { object-fit: contain; padding: 3px; }
   .editor-title-line { display: flex; align-items: center; gap: 7px; }.editor-title-line h2 { min-width: 0; }.name-edit { display: grid; width: 30px; height: 30px; place-items: center; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--blue); }.name-edit:hover { border-color: var(--blue); background: var(--blue-soft); }.name-editor { width: min(100%, 320px); min-height: 38px; margin-top: 8px; border: 1px solid var(--input-line); border-radius: 8px; background: var(--paper); color: var(--ink); padding-inline: 9px; }.name-editor.invalid { border-color: var(--danger); }
   @media (max-width: 620px) { .gallery-popover { position: fixed; inset: auto 12px 86px; max-height: 52dvh; }.gallery-grid { max-height: 34dvh; }.editor-grid, .editor-fields { grid-template-columns: minmax(0, 1fr); } }
   .editor-backdrop, .delete-backdrop { overflow: hidden; overscroll-behavior: none; }

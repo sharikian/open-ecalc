@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generator": "built-in image_gen",
+  "policy": "Generated category illustrations; not exact product photographs. No manufacturer logos or copied product photos.",
+  "assets": [
+    {
+      "key": "motor",
+      "imageUrl": "/data/images/generated-catalog-v2/motor.webp",
+      "originalFile": "exec-a0bb8cad-6b2b-4872-8bee-543b699d6cfd.png",
+      "prompt": "Use case: product-mockup\nAsset type: engineering component catalog thumbnail, generated category illustration, not an exact manufacturer model.\nSubject: A compact brushless FPV outrunner motor, black machined aluminum bell, exposed copper windings, steel shaft, three short silicone leads.\nStyle: realistic, crisp studio 3D technical product rendering, restrained professional materials.\nComposition: one object, centered square composition, three-quarter view, entire object and wiring in frame, 15 percent empty margin, readable at 64 pixels.\nBackground: genuine transparency. Neutral soft studio lighting, subtle contact shadow only.\nConstraints: no brand logo, no text, no model number, no watermark, no UI, no additional objects.",
+      "imageType": "illustration",
+      "sha256": "2a483344350c707b14c13460d56fcaf367238d01e8cf722618429718b3c809a5"
+    },
+    {
+      "key": "battery",
+      "imageUrl": "/data/images/generated-catalog-v2/battery.webp",
+      "originalFile": "exec-c35919f3-f21c-40c4-ba3b-15698a1ab1a0.png",
+      "prompt": "Use case: product-mockup\nAsset type: engineering component catalog thumbnail, generated category illustration, not an exact manufacturer model.\nSubject: A rectangular drone LiPo battery pack, dark heat-shrink wrap, red and black silicone power wires, yellow XT60 connector and small white balance plug.\nStyle: realistic, crisp studio 3D technical product rendering, restrained professional materials.\nComposition: one object, centered square composition, three-quarter view, entire object and wiring in frame, 15 percent empty margin, readable at 64 pixels.\nBackground: genuine transparency. Neutral soft studio lighting, subtle contact shadow only.\nConstraints: no brand logo, no text, no model number, no watermark, no UI, no additional objects.",
+      "imageType": "illustration",
+      "sha256": "da466e879a728055436a3e24b008b87ba3cd8675a8fbcd68259e8ea05e3f6138"
+    },
+    {
+      "key": "propeller",
+      "imageUrl": "/data/images/generated-catalog-v2/propeller.webp",
+      "originalFile": "exec-9cc62988-d35f-4ab1-bffe-f5528d46879b.png",
+      "prompt": "Use case: product-mockup\nAsset type: engineering component catalog thumbnail, generated category illustration, not an exact manufacturer model.\nSubject: A single three-blade FPV propeller, smoky translucent polycarbonate, clear central hub hole, physically plausible twisted blades.\nStyle: realistic, crisp studio 3D technical product rendering, restrained professional materials.\nComposition: one object, centered square composition, three-quarter view, entire object and wiring in frame, 15 percent empty margin, readable at 64 pixels.\nBackground: genuine transparency. Neutral soft studio lighting, subtle contact shadow only.\nConstraints: no brand logo, no text, no model number, no watermark, no UI, no additional objects.",
+      "imageType": "illustration",
+      "sha256": "d400f0df3461abab5a479c6cd07feb457dbf6441528b8fc8d940c8e0488d16e7"
+    },
+    {
+      "key": "esc",
+      "imageUrl": "/data/images/generated-catalog-v2/esc.webp",
+      "originalFile": "exec-e6a1074f-2e44-439b-a08c-304b032f80ea.png",
+      "prompt": "Use case: product-mockup\nAsset type: engineering component catalog thumbnail, generated category illustration, not an exact manufacturer model.\nSubject: A standalone heavy-lift drone electronic speed controller, dark aluminum heat-sink housing, three motor output wires and two battery input wires.\nStyle: realistic, crisp studio 3D technical product rendering, restrained professional materials.\nComposition: one object, centered square composition, three-quarter view, entire object and wiring in frame, 15 percent empty margin, readable at 64 pixels.\nBackground: genuine transparency. Neutral soft studio lighting, subtle contact shadow only.\nConstraints: no brand logo, no text, no model number, no watermark, no UI, no additional objects.",
+      "imageType": "illustration",
+      "sha256": "e3dd1e6c15f5baa1765ddc8836d5e12053e04fa797316293b43ca117e26869c7"
+    },
+    {
+      "key": "stack",
+      "imageUrl": "/data/images/generated-catalog-v2/stack.webp",
+      "originalFile": "exec-76709390-8593-45de-9ed0-9a42358a2711.png",
+      "prompt": "Use case: product-mockup\nAsset type: engineering component catalog thumbnail, generated category illustration, not an exact manufacturer model.\nSubject: A compact FPV flight-controller and four-in-one ESC stack, two dark square printed circuit boards on rubber mounting posts, fine copper traces and small connectors.\nStyle: realistic, crisp studio 3D technical product rendering, restrained professional materials.\nComposition: one object, centered square composition, three-quarter view, entire object and wiring in frame, 15 percent empty margin, readable at 64 pixels.\nBackground: genuine transparency. Neutral soft studio lighting, subtle contact shadow only.\nConstraints: no brand logo, no text, no model number, no watermark, no UI, no additional objects.",
+      "imageType": "illustration",
+      "sha256": "452514be7cf9fe53ea2719499bd4ccbcda725acd55a9bfd7ba905761bacdc45c"
+    }
+  ]
+}

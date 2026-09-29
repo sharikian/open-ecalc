@@ -23,7 +23,7 @@
     "quads": 101
   },
   "bundledRecordCounts": {
-    "components": 1595,
+    "components": 1606,
     "aircraft": 257,
     "referenceOnlyComponents": 732
   },
@@ -49,6 +49,50 @@
       "https://store.tmotor.com/goods.php?id=387"
     ],
     "note": "Selected attributed numeric product facts, not a licensed manufacturer database. No source prose or images redistributed."
+  },
+  "popularBrandProducts": {
+    "id": "popular-brand-product-facts",
+    "name": "Selected common-brand component facts",
+    "kind": "selected-manufacturer-product-facts",
+    "licenseSpdx": "NOASSERTION",
+    "retrievedAt": "2026-09-29T16:07:29Z",
+    "status": "field-attributed-facts",
+    "bundle": true,
+    "included": true,
+    "recordCount": 11,
+    "researchedFactCount": 26,
+    "enrichedRecordCount": 9,
+    "sha256": "d3d98e5c29e33bf963f0ae22e6152df448e4462a60b1cac63455229455dc381c",
+    "file": "data/supplements/popular-brand-products.v1.json",
+    "urls": [
+      "https://genstattu.com/tattu-r-line-v6-1300mah-6s-160c-22-2v-st-lipo-battery-with-xt60-plug/",
+      "https://genstattu.com/blog/the-allnew-tattu-rline-version-6-0-a-bold-leap-in-fpv-battery-evolution/",
+      "https://www.hobbywing.com/en/products/xrotor-2405182",
+      "https://store.tmotor.com/product/f60prov-fpv-motor.html",
+      "https://store.tmotor.com/product/f60prov-lv-fpv-motor.html",
+      "https://shop.iflight.com/xing2-2207-4s-6s-fpv-motor-unibell-pro1464",
+      "https://emaxmodel.com/products/emax-eco-ii-series-2207-3-6s-1700kv-1900kv-2400kv-brushless-motor-for-rc-drone-fpv-racing",
+      "https://www.gemfanhobby.com/hurricane-51466-v2-pc-3-blade.html",
+      "https://www.gemfanhobby.com/51433-hurricane-pc-3-blade.html",
+      "https://www.gemfanhobby.com/51499-hurricane-pc-3-blade.html",
+      "https://www.gemfanhobby.com/5129-yuki-pc-3-blade.html",
+      "https://www.gemfanhobby.com/mck-51366-rev3-pc-3-blade.html",
+      "https://www.gemfanhobby.com/5127-hurricane-pc-3-blade.html",
+      "https://www.hobbywing.com/en/products/xrotorh60a6sfoc",
+      "https://www.hobbywing.com/en/products/xrotor-h60a-14s-foc--bldc-v1126.html"
+    ],
+    "note": "Selected attributed numeric product facts from official manufacturer sources. No source prose or images redistributed; unsupported fields are omitted."
+  },
+  "generatedIllustrations": {
+    "id": "generated-catalog-illustrations",
+    "name": "Generated category illustrations",
+    "kind": "generated-illustrations",
+    "included": true,
+    "bundle": true,
+    "recordCount": 5,
+    "file": "data/supplements/catalog-images.v1.json",
+    "sha256": "bdf27260dad7490489904ab4dab164c4f3acf8adc62480ab7ce197ebdc261a06",
+    "note": "Generated illustrations, not manufacturer photographs or exact model depictions."
   },
   "manufacturerSupplement": {
     "file": "data/supplements/manufacturer-specifications.v1.json",

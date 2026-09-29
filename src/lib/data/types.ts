@@ -21,6 +21,8 @@ export interface Provenance {
 
 export interface SpecificationSource {
   sourceUrl: string;
+  /** Supplementary facts can have different rights from the base dataset. */
+  licenseSpdx?: string;
   condition?: string;
 }
 
@@ -34,6 +36,8 @@ export interface ComponentBase extends Provenance {
   tags: string[];
   /** Optional local asset; only set when the source licence allows bundling. */
   imageUrl?: string;
+  /** Generated category illustration, not a photograph of this exact model. */
+  imageType?: 'illustration';
 }
 
 export interface BatteryComponent extends ComponentBase {
@@ -84,6 +88,8 @@ export interface MotorComponent extends ComponentBase {
   resistanceMohmText?: string;
   maxCurrentA?: number;
   maxPowerW?: number;
+  maxCurrentDurationS?: number;
+  maxPowerDurationS?: number;
   massKg?: number;
   poles?: number;
   thermalResistanceCPerW?: number;
@@ -99,6 +105,8 @@ export interface MotorComponent extends ComponentBase {
 
 export interface MotorKvSpecification {
   kv: number;
+  massKg?: number;
+  maxCells?: string;
   noLoadCurrentA?: number;
   noLoadCurrentTestVoltageV?: number;
   resistanceOhm?: number;
@@ -191,6 +199,7 @@ export interface ComponentSummary {
   quality: DataQuality;
   licenseSpdx: string;
   imageUrl?: string;
+  imageType?: 'illustration';
 }
 
 export type DatasetFormat = 'json' | 'csv' | 'uiuc-dat' | 'test-stand';
