@@ -153,7 +153,7 @@
         <div class="simple-layout"><SimpleCalculator bind:input={legacyInput} showErrors={simpleShowErrors} onCalculate={calculateSimple} /><LegacyResults result={legacyResult} /></div>
         {#if legacyResult}<Feedback calculation={{ mode: 'simple', input: legacyInput, result: legacyResult }} />{/if}
       {:else}
-        <StepTabs value={step} canOpen={(next) => next <= incompleteStep} onChange={goToStep} />
+        <StepTabs value={step} maxOpenStep={incompleteStep} onChange={goToStep} />
 <div class="advanced-layout"><section class="input-area"><MissionForm bind:input={missionInput} {step} invalidStep={showErrors ? step : -1} /><div class="actions"><button type="button" class="back" disabled={step === 0} on:click={() => goToStep(step - 1)}>{$locale === 'en' ? 'Back' : 'بازگشت'}</button>{#if step < 3}<button type="button" class="next" on:click={advanceStep}>{$locale === 'en' ? 'Next step' : 'مرحلهٔ بعد'} <span>←</span></button>{:else}<button type="button" class="next" on:click={calculateAdvanced}>{$locale === 'en' ? 'Calculate' : 'محاسبه'} <span>↗</span></button>{/if}</div></section></div>
       {/if}
       {/if}

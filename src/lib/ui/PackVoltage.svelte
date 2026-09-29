@@ -9,9 +9,10 @@
   let pendingVoltage: number | undefined;
   $: voltage = Number.isFinite(battery.series) && Number.isFinite(battery.nominalCellVoltageV)
     ? battery.series * battery.nominalCellVoltageV : pendingVoltage;
-  $: options = [1, 2, 3, 4, 6, 8, 10, 12].map(series => ({ series, voltage: Number((series * nominalCellVoltage(battery.chemistry)).toFixed(2)) }));
+  $: options = (['LiPo', 'Li-ion', 'LiFePO4'].includes(battery.chemistry) ? [1, 2, 3, 4, 6, 8, 10, 12] : []).map(series => ({ series, voltage: Number((series * nominalCellVoltage(battery.chemistry)).toFixed(2)) }));
   function choose(index: number) {
     const option = options[index];
+    if (!option) return;
     battery = { ...battery, series: option.series, nominalCellVoltageV: nominalCellVoltage(battery.chemistry) };
     pendingVoltage = undefined; open = false;
   }
@@ -24,7 +25,7 @@
     if (event.key === 'Escape') open = false;
     if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
       event.preventDefault(); open = true;
-      active = (active + (event.key === 'ArrowDown' ? 1 : -1) + options.length) % options.length;
+      if (options.length) active = (active + (event.key === 'ArrowDown' ? 1 : -1) + options.length) % options.length;
     }
     if (event.key === 'Enter' && open) { event.preventDefault(); choose(active); }
   }
