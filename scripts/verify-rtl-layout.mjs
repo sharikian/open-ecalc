@@ -13,8 +13,8 @@ function evaluate(code) {
   const value = JSON.parse(browser('eval', code));
   return typeof value === 'string' ? JSON.parse(value) : value;
 }
-browser('open', url);
 try {
+  browser('open', url);
   for (const width of widths) {
     browser('set', 'viewport', String(width), '900');
     for (const language of ['fa', 'en']) for (const theme of ['light', 'dark']) {
