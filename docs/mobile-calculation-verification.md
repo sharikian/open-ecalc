@@ -25,7 +25,7 @@ Date: 2026-09-29. Status: in progress; do not treat this as full model validatio
 - The simple form accepts zero payload and requires integer rotor and parallel-pack counts.
 - Browser test: empty mass 850 g, battery mass 300 g, zero payload, one 5000 mAh pack, four motors drawing 10 A each, speed 10 m/s. Result: takeoff mass 1150 g, usable time 5.9 min, legacy raw range 4.4 km.
 - Legacy raw range includes the full capacity. Usable range should be separately displayed rather than changing the preserved Excel model.
-- Existing 15 unit tests pass; Svelte checking reports zero errors (existing unused styles and feedback label warning remain).
+- All 25 tests across 7 files pass, including the independent coefficient comparison, invalid mission cases, and server-side feedback verification. Svelte checking reports zero errors and 7 existing unused-style warnings in ComponentGallery.
 - Production image copies shrink from 25.73 MiB to 5.53 MiB; original source images remain intact. This is not an APK-size measurement.
 - Rust release settings enable size optimization, LTO, one codegen unit, and symbol stripping. ARMv7 and ARM64 targets remain together.
 - Wrangler successfully deployed to https://open-ecalc.wacoinseig.workers.dev.
@@ -46,7 +46,8 @@ These are observations for comparison, not redistributable component records or 
 ## Remaining verification
 
 - Rebuild the signed ARM universal APK in CI and measure compressed native libraries and package size.
-- Recheck production after final deployment and inspect 320/414 px mobile and desktop layouts.
+- Production was rechecked at https://uav.sharik.dev: 5000 mAh, four motors at 10 A, speed 10 m/s yields 5.9 min and 3.5 km usable range. Browser feedback delivery returned the visible success message on this domain.
+- Final static build checks at 320, 375 and 414 px found no horizontal document overflow and 16 px numeric input text. The 1440 px desktop and 375 px mobile renderings were visually inspected. With synthetic 24/20 px insets, header top padding is 32 px and the visible bottom navigation padding is 27 px.
 
 Real-device Android system-bar behavior has not been tested in this environment; safe-area CSS was verified with injected non-zero insets in Chromium. Forward-flight drag remains outside the static coefficient model as documented in calculation-model.md.
 
