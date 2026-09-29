@@ -94,7 +94,8 @@
   $: pageCount = Math.max(1, Math.ceil(filtered.length / pageSize));
   $: if (page > pageCount) page = pageCount;
   $: pageRows = filtered.slice((page - 1) * pageSize, page * pageSize);
-  $: editorFields = editorAirframe ? airframeFields : editorLocation ? locationFields : fields[editorKind];
+  $: editingPartial = editorMode === 'edit' && Boolean(getComponent(editorId)?.productType);
+  $: editorFields = editorAirframe ? airframeFields : editorLocation ? locationFields : fields[editorKind].map(field => ({ ...field, optional: editingPartial }));
 
   onMount(() => {
     const update = () => { isMobile = window.innerWidth <= 560; };
@@ -191,10 +192,10 @@
       const validLocationValue = editorLocation && (field.key === 'altitudeM' || field.key === 'temperatureC') ? Number.isFinite(value) : Number.isFinite(value) && value > 0;
       if (!validLocationValue) invalid.push(field.key);
     }
-    if (!editorAirframe && !editorLocation && editorKind === 'propeller' && (!Number.isInteger(Number(editorValues.bladeCount)) || Number(editorValues.bladeCount) < 2)) {
+    if (!editorAirframe && !editorLocation && editorKind === 'propeller' && editorValues.bladeCount?.trim() && (!Number.isInteger(Number(editorValues.bladeCount)) || Number(editorValues.bladeCount) < 1)) {
       if (!invalid.includes('bladeCount')) invalid.push('bladeCount');
     }
-    if (!editorAirframe && !editorLocation && editorKind === 'esc' && (Number(editorValues.efficiency) <= 0 || Number(editorValues.efficiency) > 1)) {
+    if (!editorAirframe && !editorLocation && editorKind === 'esc' && editorValues.efficiency?.trim() && (Number(editorValues.efficiency) <= 0 || Number(editorValues.efficiency) > 1)) {
       if (!invalid.includes('efficiency')) invalid.push('efficiency');
     }
     editorInvalidFields = invalid;
@@ -208,7 +209,7 @@
     } else if (editorAirframe) {
       if (editorMode === 'add') { const record = buildAircraft(); saveCustomAircraft(record); customRows = [...customRows, { id: record.id, kind: 'airframe', manufacturer: record.manufacturer, model: record.model, quality: record.quality, source: record.licenseSpdx, detail: record.classLabel, imageUrl: record.imageUrl }]; }
       saveAircraftOverride(editorId, { manufacturer: editorManufacturer.trim(), model: editorModel.trim(), imageUrl: editorImage || undefined, ...Object.fromEntries(airframeFields.filter((field) => String(editorAirframeValues[field.key] ?? '').trim() !== '').map((field) => [field.key, Number(editorAirframeValues[field.key])] )) } as Partial<AircraftProfile>);
-    } else if (editorMode === 'edit') saveComponentOverride(editorId, { manufacturer: editorManufacturer.trim(), model: editorModel.trim(), imageUrl: editorImage || undefined, ...Object.fromEntries(editorFields.map((field) => [field.key, Number(editorValues[field.key])] )) });
+    } else if (editorMode === 'edit') saveComponentOverride(editorId, { manufacturer: editorManufacturer.trim(), model: editorModel.trim(), imageUrl: editorImage || undefined, ...Object.fromEntries(editorFields.filter(field => String(editorValues[field.key] ?? '').trim() !== '').map((field) => [field.key, Number(editorValues[field.key])] )) });
     else { const record = buildRecord(); saveCustomComponent(record); customRows = [...customRows, { id: record.id, kind: record.kind, manufacturer: record.manufacturer, model: record.model, quality: record.quality, source: record.licenseSpdx, detail: kindLabel[record.kind], imageUrl: record.imageUrl }]; }
     editorOpen = false;
     catalogRevision += 1;

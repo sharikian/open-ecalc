@@ -9,7 +9,7 @@
   import PackVoltage from './PackVoltage.svelte';
   import { nominalCellVoltage, pressureMode, resolvePressure, takeoffMass } from '$core/linked-inputs';
   import { batteryCurrentLimitA, packCapacityAh } from '$core/physics';
-  import { applyComponent } from './component-selection';
+  import { applyComponent, applyMotorKv } from './component-selection';
   export let input: MissionInput;
   export let step = 0;
   export let invalidStep = -1;
@@ -93,6 +93,10 @@
     if (component.kind === 'motor') selectedMotorId = id;
     closePicker();
   }
+  function selectMotorKv(event: Event) {
+    const component = getComponent(selectedMotorId);
+    if (component?.kind === 'motor') input = applyMotorKv(input, component, Number((event.currentTarget as HTMLSelectElement).value));
+  }
 
 </script>
 
@@ -141,15 +145,15 @@
   <article class="setup-card" class:active={step === 3}>
     <header class="card-header" role="button" tabindex="0" on:click={() => openPicker('motor')} on:keydown={(event) => event.key === 'Enter' && openPicker('motor')}><span class="card-icon"><Icon name="motor" size={23} /></span><div><h2>{copy('پیشران', 'Propulsion')}</h2><p>{copy('انتخاب موتور', 'Choose motor')}</p></div><b class="data">04</b></header>
     <div class="component-links"><button type="button" on:click={() => openPicker('esc')}>ESC</button><button type="button" on:click={() => openPicker('propeller')}>{copy('ملخ', 'Propeller')}</button></div>
-    {#if motorVariants.length > 1}<label class="select-field"><span>KV</span><select bind:value={input.motor.kv}><option value={NaN}>{copy('انتخاب KV', 'Select KV')}</option>{#each motorVariants as kv}<option value={kv}>{kv} KV</option>{/each}</select></label>{/if}
+    {#if motorVariants.length > 1}<label class="select-field"><span>KV</span><select value={input.motor.kv} on:change={selectMotorKv}><option value={NaN}>{copy('انتخاب KV', 'Select KV')}</option>{#each motorVariants as kv}<option value={kv}>{kv} KV</option>{/each}</select></label>{/if}
     <div class="fields">
-      <Field label={copy('KV موتور', 'Motor KV')} suffix="rpm/V" invalid={invalidStep === 3 && !(Number.isFinite(input.motor.kv) && input.motor.kv > 0)} bind:value={input.motor.kv} min={1} />
-      <Field label={copy('حد جریان موتور', 'Motor current limit')} suffix="A" invalid={invalidStep === 3 && !(Number.isFinite(input.motor.maxCurrentA) && input.motor.maxCurrentA > 0)} bind:value={input.motor.maxCurrentA} min={1} />
-      <Field label={copy('حد توان موتور', 'Motor power limit')} suffix="W" invalid={invalidStep === 3 && !(Number.isFinite(input.motor.maxPowerW) && input.motor.maxPowerW > 0)} bind:value={input.motor.maxPowerW} min={1} />
+      {#if motorVariants.length <= 1}<Field label={copy('KV موتور', 'Motor KV')} suffix="rpm/V" invalid={invalidStep === 3 && !(Number.isFinite(input.motor.kv) && input.motor.kv > 0)} bind:value={input.motor.kv} min={1} />{/if}
+<Field label={copy('حد جریان موتور', 'Motor current limit') + (input.motor.maxCurrentDurationS ? ` (${input.motor.maxCurrentDurationS} s)` : '')} suffix="A" invalid={invalidStep === 3 && !(Number.isFinite(input.motor.maxCurrentA) && input.motor.maxCurrentA > 0)} bind:value={input.motor.maxCurrentA} min={1} />
+      <Field label={copy('حد توان موتور', 'Motor power limit') + (input.motor.maxPowerDurationS ? ` (${input.motor.maxPowerDurationS} s)` : '')} suffix="W" invalid={invalidStep === 3 && !(Number.isFinite(input.motor.maxPowerW) && input.motor.maxPowerW > 0)} bind:value={input.motor.maxPowerW} min={1} />
       <Field label={copy('حد جریان ESC', 'ESC current limit')} suffix="A" invalid={invalidStep === 3 && !(Number.isFinite(input.esc.continuousCurrentA) && input.esc.continuousCurrentA > 0)} bind:value={input.esc.continuousCurrentA} min={1} />
       <Field label={copy('قطر ملخ', 'Propeller diameter')} suffix="m" invalid={invalidStep === 3 && !(Number.isFinite(input.propeller.diameterM) && input.propeller.diameterM > 0)} bind:value={input.propeller.diameterM} min={0.05} />
       <Field label={copy('گام ملخ', 'Propeller pitch')} suffix="m" invalid={invalidStep === 3 && !(Number.isFinite(input.propeller.pitchM) && input.propeller.pitchM > 0)} bind:value={input.propeller.pitchM} min={0.01} />
-      <Field label={copy('جریان بی‌باری موتور', 'Motor no-load current')} suffix="A" bind:value={input.motor.noLoadCurrentA} min={0} invalid={invalidStep === 3 && !(Number.isFinite(input.motor.noLoadCurrentA) && input.motor.noLoadCurrentA >= 0)} />
+      <Field label={copy('جریان بی‌باری موتور', 'Motor no-load current') + (input.motor.noLoadCurrentTestVoltageV ? ` (${input.motor.noLoadCurrentTestVoltageV} V)` : '')} suffix="A" bind:value={input.motor.noLoadCurrentA} min={0} invalid={invalidStep === 3 && !(Number.isFinite(input.motor.noLoadCurrentA) && input.motor.noLoadCurrentA >= 0)} />
       <Field label={copy('مقاومت موتور', 'Motor resistance')} suffix="Ω" bind:value={input.motor.resistanceOhm} min={0} invalid={invalidStep === 3 && !(Number.isFinite(input.motor.resistanceOhm) && input.motor.resistanceOhm >= 0)} />
       <Field label={copy('وزن هر موتور', 'Motor mass')} suffix="kg" bind:value={input.motor.massKg} min={0} invalid={invalidStep === 3 && !(input.motor.massKg > 0)} />
       <Field label={copy('جریان لحظه‌ای ESC', 'ESC burst current')} suffix="A" bind:value={input.esc.burstCurrentA} min={0} invalid={invalidStep === 3 && !(input.esc.burstCurrentA >= input.esc.continuousCurrentA)} />
@@ -157,6 +161,11 @@
       <Field label={copy('بازده ESC', 'ESC efficiency')} suffix="%" bind:value={input.esc.efficiency} displayScale={100} min={1} max={100} invalid={invalidStep === 3 && !(input.esc.efficiency > 0 && input.esc.efficiency <= 1)} />
       <Field label={copy('وزن هر ESC', 'ESC mass')} suffix="kg" bind:value={input.esc.massKg} min={0} invalid={invalidStep === 3 && !(input.esc.massKg > 0)} />
       <Field label={copy('جریان تجهیزات', 'Auxiliary current')} suffix="A" bind:value={input.auxiliaryCurrentA} min={0} invalid={invalidStep === 3 && !(Number.isFinite(input.auxiliaryCurrentA) && input.auxiliaryCurrentA >= 0)} />
+      <Field label={copy('تعداد پره', 'Blade count')} bind:value={input.propeller.bladeCount} min={1} step="1" invalid={invalidStep === 3 && !(input.propeller.bladeCount > 0)} />
+      {#if !input.propeller.curve?.length}
+        <Field label={copy('ضریب رانش ملخ', 'Propeller thrust coefficient')} bind:value={input.propeller.thrustCoefficient} min={0} invalid={invalidStep === 3 && !(input.propeller.thrustCoefficient! > 0)} />
+        <Field label={copy('ضریب توان ملخ', 'Propeller power coefficient')} bind:value={input.propeller.powerCoefficient} min={0} invalid={invalidStep === 3 && !(input.propeller.powerCoefficient! > 0)} />
+      {/if}
     </div>
     <section class="current-inputs"><div class="current-head"><h3>{copy('جریان‌های موتور', 'Motor currents')}</h3><button type="button" on:click={addCurrent}>{copy('+ جریان', '+ Current')}</button></div>{#each input.currentScenariosA ?? [] as current, index}<div class="current-row"><Field label={`${copy('جریان هر موتور', 'Current per motor')} ${index + 1}`} suffix="A" bind:value={input.currentScenariosA![index]} min={0} invalid={invalidStep === 3 && !(current > 0)} /><button type="button" aria-label={copy('حذف جریان', 'Remove current')} on:click={() => removeCurrent(index)}>×</button></div>{/each}</section>
     {#if Number.isFinite(totalMass) && totalMass > 0}<div class="derived"><span>{copy('وزن برخاست', 'Takeoff mass')}</span><b dir="ltr">{totalMass.toFixed(3)} kg</b></div>{/if}
