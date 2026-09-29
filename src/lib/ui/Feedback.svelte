@@ -27,7 +27,7 @@
   <summary>{copy('بازخورد محاسبه', 'Calculation feedback')}</summary>
   <form on:submit|preventDefault={send}>
     <label for="feedback-comment">{copy('نقد یا نتیجهٔ تست شما', 'Your comments or test results')}</label>
-    <textarea id="feedback-comment" bind:value={comment} required minlength="3" maxlength="2000" rows="4" />
+    <textarea id="feedback-comment" bind:value={comment} required minlength="3" maxlength="2000" rows="4"></textarea>
     <p>{copy('با ارسال، ورودی‌ها و نتیجهٔ این محاسبه همراه متن شما برای مدیر فرستاده می‌شود.', 'Sending shares this calculation’s inputs and result with the administrator, along with your comments.')}</p>
     <button disabled={sending || comment.trim().length < 3}>{sending ? copy('در حال ارسال…', 'Sending…') : copy('ارسال بازخورد', 'Send feedback')}</button>
     <span role="status">{status}</span>

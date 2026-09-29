@@ -206,7 +206,7 @@
   @media (max-width: 560px) {
     .app-body { padding-top: calc(70px + var(--safe-top)); padding-bottom: calc(104px + var(--safe-bottom)); }
     .topbar { padding-top: calc(8px + var(--safe-top)); padding-left: calc(14px + var(--safe-left)); padding-right: calc(14px + var(--safe-right)); }
-    .bottom-nav { padding-left: calc(12px + var(--safe-left)); padding-right: calc(12px + var(--safe-right)); }
+    .bottom-nav { padding-left: calc(12px + var(--safe-left)); padding-right: calc(12px + var(--safe-right)); padding-bottom: calc(7px + var(--safe-bottom)); }
     .workspace { padding-left: calc(12px + var(--safe-left)); padding-right: calc(12px + var(--safe-right)); }
     .actions { bottom: calc(82px + var(--safe-bottom)); }
     .result-backdrop { padding-bottom: calc(86px + var(--safe-bottom)); padding-top: var(--safe-top); }
