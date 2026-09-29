@@ -19,11 +19,23 @@ records remain available only as opt-in references (`referenceOnly: true`),
 excluded from the default catalog. They are not manufacturer specifications
 and are not copied from eCalc, Tyto, APC, or a manufacturer.
 
+Of the 101 source quad profiles, three exact DJI name matches (Avata, Avata 2,
+Neo) merge into existing OpenDroneList rows. The runtime therefore adds 98
+unique profiles from FPV-DB; merged records retain both licenses and source
+hashes in `sourceProvenance` rather than presenting a second selectable row.
+
 FPV-DB specifications and bench curves are attributed to the pinned community
 snapshot; this import did not independently cross-check them against
 manufacturer datasheets or product pages and does not claim manufacturer
 verification. All thrust-table rows are retained, including rows with absent
 RPM or throttle fields; missing values remain unset.
+
+A separate, small manufacturer-fact supplement adds documented values for
+three T-Motor models (F60 Pro V, F1507, F1408-II) and one Tattu battery. Each
+field points to its official product page; KV variants, test voltage, and
+current/power duration qualifiers are retained where published. The manifest
+records these selected factual values as `NOASSERTION`: no bulk catalog rights
+are claimed or evaluated, and no manufacturer text or images are redistributed.
 
 ## Approved import tooling
 

@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import components from '../../../static/data/components.v1.json';
 import manifest from '../../../data/manifests/fpvdb-snapshot.v1.json';
 import sourceMotors from '../../../data/raw/fpvdb/2026-09-29/motors.json';
+import manufacturerSupplement from '../../../data/supplements/manufacturer-specifications.v1.json';
 import { componentKinds, queryComponentRecords, replaceComponentCatalog } from './catalog';
 import type { BatteryComponent, ComponentRecord, MotorComponent } from './types';
 
@@ -54,6 +55,26 @@ describe('FPV-DB bundled dataset', () => {
       expect(new Set(throttles).size).toBe(throttles.length);
       expect(curve.points.map((point) => point.sourcePointIndex)).toEqual([...curve.points.map((point) => point.sourcePointIndex)].sort((a, b) => a - b));
     }
+  });
+
+  it('attaches manufacturer facts to the exact KV variant and field-level source', () => {
+    const records = components.records as ComponentRecord[];
+    const f60 = records.find((record): record is MotorComponent => record.id === 'fpvdb-motor-t-motor-f60-pro-v-2207-5');
+    const f1507 = records.find((record): record is MotorComponent => record.id === 'fpvdb-motor-t-motor-f1507');
+    const f1408 = records.find((record): record is MotorComponent => record.id === 'fpvdb-motor-t-motor-f1408-ii-1408');
+    const battery = records.find((record): record is BatteryComponent => record.id === 'fpvdb-battery-tattu-r-line-version-5-0-1550mah-6s');
+    const f60_2020 = f60?.kvSpecifications?.find((variant) => variant.kv === 2020);
+    const f1507_2700 = f1507?.kvSpecifications?.find((variant) => variant.kv === 2700);
+
+    expect(f60_2020).toMatchObject({ maxCurrentA: 52.7, maxCurrentDurationS: 10, maxPowerW: 1297, maxPowerDurationS: 10, noLoadCurrentA: 1.25, noLoadCurrentTestVoltageV: 10 });
+    expect(f60_2020?.specificationSources?.maxCurrentA?.sourceUrl).toBe('https://store.tmotor.com/product/f60prov-fpv-motor.html');
+    expect(f1507_2700).toMatchObject({ maxCurrentA: 22, maxPowerW: 519, resistanceOhm: 0.131, noLoadCurrentA: 0.6, noLoadCurrentTestVoltageV: 5 });
+    expect(f1408).toMatchObject({ maxCurrentA: 22.4, maxPowerW: 371, resistanceOhm: 0.088, noLoadCurrentA: 0.86, noLoadCurrentTestVoltageV: 10 });
+    expect(f1408?.specificationSources?.maxCurrentA?.condition).toContain('60 s');
+    expect(battery?.nominalVoltageV).toBe(22.2);
+    expect(battery?.nominalCellVoltageV).toBeUndefined();
+    expect(battery?.specificationSources?.nominalVoltageV?.sourceUrl).toContain('genstattu.com');
+    expect(records.filter((record) => record.supplementHash)).toHaveLength(manufacturerSupplement.records.length);
   });
 });
 

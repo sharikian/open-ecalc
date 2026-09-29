@@ -11,6 +11,7 @@ const rawDir = path.join(root, 'data/raw/fpvdb', snapshotName);
 const componentsPath = path.join(root, 'static/data/components.v1.json');
 const aircraftPath = path.join(root, 'static/data/aircraft.v1.json');
 const normalizedPath = path.join(root, 'data/normalized/components.v1.json');
+const manufacturerSupplementPath = path.join(root, 'data/supplements/manufacturer-specifications.v1.json');
 const fpvFiles = ['motors.json', 'batteries.json', 'props.json', 'stacks.json', 'quads.json'];
 const supportFiles = ['LICENSE', 'README.md', 'manifest.json'];
 const expectedCounts = { motors: 206, batteries: 326, props: 207, stacks: 112, quads: 101 };
@@ -258,7 +259,7 @@ function readSnapshot() {
   return { manifest, files };
 }
 
-function buildComponents(snapshot, base) {
+function buildComponents(snapshot, base, manufacturerSupplement) {
   const legacy = base.records.filter((record) => !record.id.startsWith('fpvdb-'));
   const references = legacy.map(referenceRecord);
   const imported = [
@@ -267,25 +268,72 @@ function buildComponents(snapshot, base) {
     ...snapshot.files['props.json'].dataset.items.map(importProp),
     ...snapshot.files['stacks.json'].dataset.items.map(importStack)
   ];
+  const records = [...references, ...imported];
+  for (const supplement of manufacturerSupplement.records) {
+    const target = records.find((record) => record.id === supplement.id);
+    if (!target) throw new Error(`Manufacturer supplement target not found: ${supplement.id}`);
+    Object.assign(target, supplement.values ?? {});
+    if (supplement.kvSpecifications) target.kvSpecifications = supplement.kvSpecifications;
+    if (supplement.specificationSources) target.specificationSources = supplement.specificationSources;
+    target.supplementHash = sha256(JSON.stringify(supplement));
+  }
   return {
     schemaVersion: 1,
     name: 'Open eCalc component catalog',
     version: `2026.09-fpvdb-${sourceCommit.slice(0, 7)}`,
     generatedAt: retrievedAt,
-    records: [...references, ...imported]
+    records
   };
 }
 
 function buildAircraft(snapshot, base) {
   const existing = base.records.filter((record) => record.productType !== 'quad' || !record.sourceCommit);
   const imported = snapshot.files['quads.json'].dataset.items.map(importQuad);
+  const keyFor = (record) => [record.manufacturer, record.model].map((value) => String(value ?? '').normalize('NFKC').trim().toLocaleLowerCase('en-US').replace(/\s+/g, ' ')).join('|');
+  const profileProvenance = (record, attribution) => {
+    const urls = [...new Set([record.sourceUrl, ...(record.sourceUrls ?? [])].filter((url) => typeof url === 'string' && url.length > 0))];
+    return urls.map((sourceUrl) => ({
+      sourceUrl,
+      licenseSpdx: record.licenseSpdx,
+      attribution,
+      ...(record.sourceCommit ? { sourceCommit: record.sourceCommit } : {}),
+      ...(record.sourceHash ? { sourceHash: record.sourceHash } : {})
+    }));
+  };
+  const merged = new Map();
+  for (const record of [...existing, ...imported]) {
+    const key = keyFor(record);
+    const prior = merged.get(key);
+    if (!prior) {
+      const attribution = record.sourceCommit ? 'FPV-DB — https://fpv-db.com' : 'OpenDroneList — https://github.com/dronetag/opendronelist';
+      merged.set(key, {
+        ...record,
+        sourceUrls: [...new Set([record.sourceUrl, ...(record.sourceUrls ?? [])].filter(Boolean))],
+        sourceProvenance: profileProvenance(record, attribution)
+      });
+      continue;
+    }
+    const incomingAttribution = record.sourceCommit ? 'FPV-DB — https://fpv-db.com' : 'OpenDroneList — https://github.com/dronetag/opendronelist';
+    const combined = { ...prior };
+    for (const [field, value] of Object.entries(record)) {
+      if (['id', 'manufacturer', 'model', 'sourceUrl', 'sourceUrls', 'sourceProvenance', 'licenseSpdx', 'sourceCommit', 'sourceHash', 'retrievedAt', 'quality', 'imageUrl'].includes(field)) continue;
+      const current = combined[field];
+      if ((current === undefined || current === null || current === '') && value !== undefined && value !== null && value !== '') combined[field] = value;
+    }
+    combined.sourceUrls = [...new Set([...(prior.sourceUrls ?? []), record.sourceUrl, ...(record.sourceUrls ?? [])].filter(Boolean))];
+    const provenance = [...(prior.sourceProvenance ?? []), ...profileProvenance(record, incomingAttribution)];
+    combined.sourceProvenance = [...new Map(provenance.map((source) => [
+      JSON.stringify([source.sourceUrl, source.licenseSpdx, source.sourceCommit, source.sourceHash]), source
+    ])).values()];
+    merged.set(key, combined);
+  }
   return {
     schemaVersion: 1,
     name: 'Open aircraft profiles',
     version: `2026.09-fpvdb-${sourceCommit.slice(0, 7)}`,
     generatedAt: retrievedAt,
     source: 'OpenDroneList plus FPV-DB quad catalog',
-    records: [...existing, ...imported]
+    records: [...merged.values()]
   };
 }
 
@@ -299,12 +347,35 @@ function writeManifests(snapshot, componentDataset, aircraftDataset) {
     quads: snapshot.manifest.counts.quads
   };
   const files = Object.fromEntries(Object.entries(snapshot.files).map(([name, file]) => [name, file.sha256]));
+  const manufacturerSupplement = readJson(manufacturerSupplementPath);
+  const manufacturerSupplementHash = sha256(fs.readFileSync(manufacturerSupplementPath));
+  const manufacturerSupplementSources = manufacturerSupplement.records.flatMap((record) => [
+    ...Object.values(record.specificationSources ?? {}).map((source) => source.sourceUrl),
+    ...(record.kvSpecifications ?? []).flatMap((variant) => Object.values(variant.specificationSources ?? {}).map((source) => source.sourceUrl))
+  ]);
+  const manufacturerSupplementFields = manufacturerSupplement.records.flatMap((record) => [
+    ...Object.keys(record.specificationSources ?? {}).map((field) => `${record.id}.${field}`),
+    ...(record.kvSpecifications ?? []).flatMap((variant) => Object.keys(variant.specificationSources ?? {}).map((field) => `${record.id}.kv${variant.kv}.${field}`))
+  ]);
+  const manufacturerSupplementManifest = {
+    id: 'manufacturer-specification-supplement',
+    kind: 'selected-component-specification-facts',
+    urls: [...new Set(manufacturerSupplementSources)],
+    licenseSpdx: 'NOASSERTION',
+    retrievedAt: manufacturerSupplement.retrievedAt,
+    status: 'field-attributed-supplement',
+    bundle: true,
+    recordCount: manufacturerSupplement.records.length,
+    fields: manufacturerSupplementFields,
+    supplementSha256: manufacturerSupplementHash,
+    note: 'Small set of explicitly attributed factual specifications only; source catalog terms were not evaluated for bulk redistribution. No source text, catalog database, or product images included.'
+  };
   const sourceManifestPath = path.join(root, 'data/manifests/sources.v1.json');
   const sourceManifest = readJson(sourceManifestPath);
   sourceManifest.generatedAt = retrievedAt;
   sourceManifest.policy = 'bundled product data requires an explicit redistribution licence; images require separate rights';
   sourceManifest.sources = [
-    ...sourceManifest.sources.filter((source) => source.id !== 'fpvdb-open-dataset').map((source) => {
+    ...sourceManifest.sources.filter((source) => !['fpvdb-open-dataset', 'manufacturer-specification-supplement'].includes(source.id)).map((source) => {
       if (source.id === 'strawsondesign-motor-prop-testing') return { ...source, status: 'reference-only', bundle: true, recordCount: 408, reason: 'Retained as estimated reference rows; generated scalar defaults are excluded from normal catalog results' };
       if (source.id === 'liiondb') return { ...source, status: 'reference-only', bundle: true, recordCount: componentDataset.records.filter((record) => record.manufacturer === 'LiionDB').length, reason: 'Derived chemistry/parallel presets are reference-only, not named commercial packs' };
       if (source.id === 'uavdb-org') return { ...source, status: 'quarantine', bundle: false, licenseSpdx: 'NOASSERTION', reason: 'Heavy-UAV catalog lead; missing LICENSE file and mixed UIUC-derived data prevent redistribution approval' };
@@ -325,7 +396,8 @@ function writeManifests(snapshot, componentDataset, aircraftDataset) {
       recordCounts,
       files,
       note: 'CC BY 4.0 dataset snapshot. Product URLs and notes retained; no product images imported. ESC entries are FC/ESC stacks, not standalone ESCs.'
-    }
+    },
+    manufacturerSupplementManifest
   ];
   writeJson(sourceManifestPath, sourceManifest);
 
@@ -334,7 +406,7 @@ function writeManifests(snapshot, componentDataset, aircraftDataset) {
   runtime.datasetVersion = componentDataset.version;
   runtime.generatedAt = retrievedAt;
   runtime.sources = [
-    ...runtime.sources.filter((source) => source.id !== 'fpvdb-open-dataset'),
+    ...runtime.sources.filter((source) => !['fpvdb-open-dataset', 'manufacturer-specification-supplement'].includes(source.id)),
     {
       id: 'fpvdb-open-dataset',
       name: 'FPV-DB Open Dataset',
@@ -348,6 +420,12 @@ function writeManifests(snapshot, componentDataset, aircraftDataset) {
       recordCounts,
       files,
       note: 'Brand/model product records and manufacturer-published bench tables. No product images. ESC listings are integrated FC/ESC stacks.'
+    },
+    {
+      ...manufacturerSupplementManifest,
+      name: 'Manufacturer field-level specification supplements',
+      included: true,
+      attribution: 'T-Motor / T-HOBBY and Tattu / GensTattu; see per-field URLs'
     }
   ];
   writeJson(runtimePath, runtime);
@@ -369,13 +447,31 @@ function writeManifests(snapshot, componentDataset, aircraftDataset) {
       aircraft: aircraftDataset.records.length,
       referenceOnlyComponents: componentDataset.records.filter((record) => record.referenceOnly).length
     },
+    manufacturerSupplement: {
+      file: 'data/supplements/manufacturer-specifications.v1.json',
+      sha256: sha256(fs.readFileSync(manufacturerSupplementPath)),
+      recordCount: readJson(manufacturerSupplementPath).records.length,
+      records: readJson(manufacturerSupplementPath).records.map(({ id, specificationSources, kvSpecifications }) => ({
+        id,
+        fields: [...new Set([
+          ...Object.keys(specificationSources ?? {}),
+          ...(kvSpecifications ?? []).flatMap((variant) => Object.keys(variant.specificationSources ?? {}).map((field) => `kvSpecifications.${variant.kv}.${field}`))
+        ])],
+        sourceUrls: [...new Set([
+          ...Object.values(specificationSources ?? {}).map((source) => source.sourceUrl),
+          ...(kvSpecifications ?? []).flatMap((variant) => Object.values(variant.specificationSources ?? {}).map((source) => source.sourceUrl))
+        ])]
+      }))
+    },
     imagePolicy: 'No source product images included; quad profiles use the existing generic project illustration.'
   });
 }
 
 if (process.argv.includes('--fetch')) await fetchPinnedSnapshot();
 const snapshot = readSnapshot();
-const components = buildComponents(snapshot, readJson(componentsPath));
+const manufacturerSupplement = readJson(manufacturerSupplementPath);
+if (manufacturerSupplement.schemaVersion !== 1 || !Array.isArray(manufacturerSupplement.records)) throw new Error('Unsupported manufacturer supplement schema');
+const components = buildComponents(snapshot, readJson(componentsPath), manufacturerSupplement);
 const aircraft = buildAircraft(snapshot, readJson(aircraftPath));
 writeJson(componentsPath, components);
 writeJson(normalizedPath, components);

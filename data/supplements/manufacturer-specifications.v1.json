@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "retrievedAt": "2026-09-29",
+  "records": [
+    {
+      "id": "fpvdb-motor-t-motor-f60-pro-v-2207-5",
+      "kvSpecifications": [
+        {
+          "kv": 1750,
+          "noLoadCurrentA": 1,
+          "noLoadCurrentTestVoltageV": 10,
+          "maxCurrentA": 40.5,
+          "maxCurrentDurationS": 10,
+          "maxPowerW": 1003,
+          "maxPowerDurationS": 10,
+          "specificationSources": {
+            "noLoadCurrentA": { "sourceUrl": "https://store.tmotor.com/product/f60prov-fpv-motor.html", "condition": "Idle current at 10 V" },
+            "maxCurrentA": { "sourceUrl": "https://store.tmotor.com/product/f60prov-fpv-motor.html", "condition": "Peak current, 10 s" },
+            "maxPowerW": { "sourceUrl": "https://store.tmotor.com/product/f60prov-fpv-motor.html", "condition": "Maximum power, 10 s" }
+          }
+        },
+        {
+          "kv": 2020,
+          "noLoadCurrentA": 1.25,
+          "noLoadCurrentTestVoltageV": 10,
+          "maxCurrentA": 52.7,
+          "maxCurrentDurationS": 10,
+          "maxPowerW": 1297,
+          "maxPowerDurationS": 10,
+          "specificationSources": {
+            "noLoadCurrentA": { "sourceUrl": "https://store.tmotor.com/product/f60prov-fpv-motor.html", "condition": "Idle current at 10 V" },
+            "maxCurrentA": { "sourceUrl": "https://store.tmotor.com/product/f60prov-fpv-motor.html", "condition": "Peak current, 10 s" },
+            "maxPowerW": { "sourceUrl": "https://store.tmotor.com/product/f60prov-fpv-motor.html", "condition": "Maximum power, 10 s" }
+          }
+        },
+        {
+          "kv": 2550,
+          "noLoadCurrentA": 1.6,
+          "noLoadCurrentTestVoltageV": 10,
+          "maxCurrentA": 50.7,
+          "maxCurrentDurationS": 60,
+          "maxPowerW": 825,
+          "maxPowerDurationS": 60,
+          "specificationSources": {
+            "noLoadCurrentA": { "sourceUrl": "https://store.tmotor.com/product/f60prov-fpv-motor.html", "condition": "Idle current at 10 V" },
+            "maxCurrentA": { "sourceUrl": "https://store.tmotor.com/product/f60prov-fpv-motor.html", "condition": "Peak current, 60 s (as stated for this KV variant on the product page)" },
+            "maxPowerW": { "sourceUrl": "https://store.tmotor.com/product/f60prov-fpv-motor.html", "condition": "Maximum power, 60 s (as stated for this KV variant on the product page)" }
+          }
+        }
+      ]
+    },
+    {
+      "id": "fpvdb-motor-t-motor-f1507",
+      "kvSpecifications": [
+        {
+          "kv": 2700,
+          "noLoadCurrentA": 0.6,
+          "noLoadCurrentTestVoltageV": 5,
+          "resistanceOhm": 0.131,
+          "maxCurrentA": 22,
+          "maxCurrentDurationS": 60,
+          "maxPowerW": 519,
+          "maxPowerDurationS": 60,
+          "specificationSources": {
+            "noLoadCurrentA": { "sourceUrl": "https://store.tmotor.com/product/f1507-kv3800-fpv-motor.html", "condition": "Idle current at 5 V, KV2700" },
+            "resistanceOhm": { "sourceUrl": "https://store.tmotor.com/product/f1507-kv3800-fpv-motor.html", "condition": "KV2700; 131 mΩ converted to 0.131 Ω" },
+            "maxCurrentA": { "sourceUrl": "https://store.tmotor.com/product/f1507-kv3800-fpv-motor.html", "condition": "Peak current, 60 s, KV2700" },
+            "maxPowerW": { "sourceUrl": "https://store.tmotor.com/product/f1507-kv3800-fpv-motor.html", "condition": "Maximum power, 60 s, KV2700" }
+          }
+        },
+        {
+          "kv": 3800,
+          "noLoadCurrentA": 0.9,
+          "noLoadCurrentTestVoltageV": 5,
+          "resistanceOhm": 0.081,
+          "maxCurrentA": 23,
+          "maxCurrentDurationS": 60,
+          "maxPowerW": 372,
+          "maxPowerDurationS": 60,
+          "specificationSources": {
+            "noLoadCurrentA": { "sourceUrl": "https://store.tmotor.com/product/f1507-kv3800-fpv-motor.html", "condition": "Idle current at 5 V, KV3800" },
+            "resistanceOhm": { "sourceUrl": "https://store.tmotor.com/product/f1507-kv3800-fpv-motor.html", "condition": "KV3800; 81 mΩ converted to 0.081 Ω" },
+            "maxCurrentA": { "sourceUrl": "https://store.tmotor.com/product/f1507-kv3800-fpv-motor.html", "condition": "Peak current, 60 s, KV3800" },
+            "maxPowerW": { "sourceUrl": "https://store.tmotor.com/product/f1507-kv3800-fpv-motor.html", "condition": "Maximum power, 60 s, KV3800" }
+          }
+        }
+      ]
+    },
+    {
+      "id": "fpvdb-motor-t-motor-f1408-ii-1408",
+      "values": {
+        "noLoadCurrentA": 0.86,
+        "noLoadCurrentTestVoltageV": 10,
+        "resistanceOhm": 0.088,
+        "maxCurrentA": 22.4,
+        "maxPowerW": 371
+      },
+      "specificationSources": {
+        "noLoadCurrentA": { "sourceUrl": "https://store.tmotor.com/product/f1408-2-fpv-motor.html", "condition": "KV3950, idle current at 10 V" },
+        "resistanceOhm": { "sourceUrl": "https://store.tmotor.com/product/f1408-2-fpv-motor.html", "condition": "KV3950; 88 mΩ converted to 0.088 Ω" },
+        "maxCurrentA": { "sourceUrl": "https://store.tmotor.com/product/f1408-2-fpv-motor.html", "condition": "KV3950, peak current for 60 s" },
+        "maxPowerW": { "sourceUrl": "https://store.tmotor.com/product/f1408-2-fpv-motor.html", "condition": "KV3950, maximum power for 60 s" }
+      }
+    },
+    {
+      "id": "fpvdb-battery-tattu-r-line-version-5-0-1550mah-6s",
+      "values": {
+        "nominalVoltageV": 22.2
+      },
+      "specificationSources": {
+        "nominalVoltageV": { "sourceUrl": "https://genstattu.com/tattu-r-line-version-5-0-1550mah-6s-150c-22-2v-lipo-battery-pack-with-xt60-plug/", "condition": "Manufacturer lists configuration as 6S / 22.2 V / 6 cells" }
+      }
+    }
+  ]
+}

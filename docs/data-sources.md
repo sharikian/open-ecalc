@@ -29,6 +29,40 @@ KV، ملخ و تعداد سلول جدا نگه داشته شده‌اند؛ ت
 مقادیر throttle متنی مانند `100%` به درصد عددی تبدیل شده‌اند و متن اصلی نیز
 در `throttleSourceValue` باقی می‌ماند.
 
+## تکمیل محدود از صفحهٔ سازنده
+
+چهار رکورد با مقدارهای صریح و قابل‌تطبیق در صفحهٔ رسمی تکمیل شده‌اند:
+T-Motor F60 Pro V در 1750/2020/2550KV، T-Motor F1507 در 2700/3800KV،
+T-Motor F1408-II در 3950KV و باتری Tattu R-Line 5.0 با 1550mAh و 6S. مقادیر
+موتور که با KV یا مدت آزمون تغییر می‌کنند در `kvSpecifications` نگهداری شده‌اند؛
+برای هر مقدار، `specificationSources` URL و شرط آزمون (از جمله ولتاژ آزمون I0
+و مدت مجاز حداکثر جریان/توان) را نگه می‌دارد. مقادیر F1408-II تک‌KV در
+فیلدهای scalar آمده‌اند و منبع هرکدام جدا ثبت شده است.
+
+برای باتری Tattu، صفحهٔ رسمی صریحاً `6S / 22.2 V / 6 cells` را اعلام می‌کند؛
+بنابراین فقط ولتاژ nominal پک 22.2V افزوده شده و ولتاژ nominal هر سلول از تقسیم
+محاسبه نشده است. مقاومت داخلی باتری در آن صفحه مقدار عددی نداشت و همچنان خالی
+است. snapshot مکمل و hash آن در
+`data/supplements/manufacturer-specifications.v1.json` و manifest ثبت شده‌اند.
+منابع: [F60 Pro V](https://store.tmotor.com/product/f60prov-fpv-motor.html)،
+[F1507](https://store.tmotor.com/product/f1507-kv3800-fpv-motor.html)،
+[F1408-II](https://store.tmotor.com/product/f1408-2-fpv-motor.html) و
+[Tattu R-Line 1550mAh 6S](https://genstattu.com/tattu-r-line-version-5-0-1550mah-6s-150c-22-2v-lipo-battery-pack-with-xt60-plug/).
+این تکمیل محدود فقط عددهای مشخص با انتساب فیلدی را نگه می‌دارد؛ حق بازتوزیع
+کاتالوگ‌ها/متن/تصاویر سازندگان ارزیابی یا ادعا نشده و هیچ تصویر محصولی اضافه
+نشده است. در manifest وضعیت مجوز این بخش `NOASSERTION` است.
+
+## پروفایل‌های پرنده و ادغام منبع
+
+فایل نهایی ۲۵۷ پروفایل دارد: OpenDroneList با ۱۵۹ ردیف و ۱۰۱ ورودی FPV-DB
+تولیدشده که پس از ادغام سه نام تکراری، ۹۸ quad یکتا به catalog افزوده‌اند.
+DJI Avata، Avata 2 و Neo هرکدام یک ردیف دارند؛ روی ردیف اصلی OpenDroneList فقط
+فیلدهای خالی از FPV-DB پر شده‌اند. `sourceUrls` و `sourceProvenance` هر دو
+مبدأ، مجوز، attribution، commit و hash را نگه می‌دارند. فیلد قدیمی
+`licenseSpdx` مجوز منبع اصلی را نگه می‌دارد؛ برای چندمأخذی‌ها provenance
+سطح‌منبع مرجع کامل‌تر است. کلید ادغام فقط نام سازنده/مدل با یکسان‌سازی حروف و
+فاصله است؛ پس نام‌های متفاوت مثل `Evo Lite` و `Evo Lite+` یکی نمی‌شوند.
+
 Stackهای FPV-DB محصولات ترکیبی FC/ESC هستند و با `productType: fc-esc-stack`
 مشخص می‌شوند؛ این‌ها ادعای ESC مستقل نیستند. Snapshot حاوی تصاویر محصول
 قابل‌بازتوزیع نیست؛ بنابراین تصویر سازنده‌ای bundle نشده و تصاویر عمومی UI

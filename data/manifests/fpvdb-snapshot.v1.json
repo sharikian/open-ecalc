@@ -24,8 +24,69 @@
   },
   "bundledRecordCounts": {
     "components": 1583,
-    "aircraft": 260,
+    "aircraft": 257,
     "referenceOnlyComponents": 732
+  },
+  "manufacturerSupplement": {
+    "file": "data/supplements/manufacturer-specifications.v1.json",
+    "sha256": "b20713fc78a4d3e97e27fc25670749a23d7dd3f8559dc405c09a4f51ba54d55c",
+    "recordCount": 4,
+    "records": [
+      {
+        "id": "fpvdb-motor-t-motor-f60-pro-v-2207-5",
+        "fields": [
+          "kvSpecifications.1750.noLoadCurrentA",
+          "kvSpecifications.1750.maxCurrentA",
+          "kvSpecifications.1750.maxPowerW",
+          "kvSpecifications.2020.noLoadCurrentA",
+          "kvSpecifications.2020.maxCurrentA",
+          "kvSpecifications.2020.maxPowerW",
+          "kvSpecifications.2550.noLoadCurrentA",
+          "kvSpecifications.2550.maxCurrentA",
+          "kvSpecifications.2550.maxPowerW"
+        ],
+        "sourceUrls": [
+          "https://store.tmotor.com/product/f60prov-fpv-motor.html"
+        ]
+      },
+      {
+        "id": "fpvdb-motor-t-motor-f1507",
+        "fields": [
+          "kvSpecifications.2700.noLoadCurrentA",
+          "kvSpecifications.2700.resistanceOhm",
+          "kvSpecifications.2700.maxCurrentA",
+          "kvSpecifications.2700.maxPowerW",
+          "kvSpecifications.3800.noLoadCurrentA",
+          "kvSpecifications.3800.resistanceOhm",
+          "kvSpecifications.3800.maxCurrentA",
+          "kvSpecifications.3800.maxPowerW"
+        ],
+        "sourceUrls": [
+          "https://store.tmotor.com/product/f1507-kv3800-fpv-motor.html"
+        ]
+      },
+      {
+        "id": "fpvdb-motor-t-motor-f1408-ii-1408",
+        "fields": [
+          "noLoadCurrentA",
+          "resistanceOhm",
+          "maxCurrentA",
+          "maxPowerW"
+        ],
+        "sourceUrls": [
+          "https://store.tmotor.com/product/f1408-2-fpv-motor.html"
+        ]
+      },
+      {
+        "id": "fpvdb-battery-tattu-r-line-version-5-0-1550mah-6s",
+        "fields": [
+          "nominalVoltageV"
+        ],
+        "sourceUrls": [
+          "https://genstattu.com/tattu-r-line-version-5-0-1550mah-6s-150c-22-2v-lipo-battery-pack-with-xt60-plug/"
+        ]
+      }
+    ]
   },
   "imagePolicy": "No source product images included; quad profiles use the existing generic project illustration."
 }

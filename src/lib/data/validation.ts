@@ -46,7 +46,7 @@ export function validateComponentRecords(records: ComponentRecord[]): ImportIssu
       : record.kind === 'esc'
         ? [['continuousCurrentA', record.continuousCurrentA], ['burstCurrentA', record.burstCurrentA], ['resistanceOhm', record.resistanceOhm], ['efficiency', record.efficiency], ['massKg', record.massKg]]
         : record.kind === 'motor'
-          ? [['kv', record.kv], ['noLoadCurrentA', record.noLoadCurrentA], ['resistanceOhm', record.resistanceOhm], ['maxCurrentA', record.maxCurrentA], ['maxPowerW', record.maxPowerW], ['massKg', record.massKg], ['maxThrustN', record.maxThrustN]]
+          ? [['kv', record.kv], ['noLoadCurrentA', record.noLoadCurrentA], ['noLoadCurrentTestVoltageV', record.noLoadCurrentTestVoltageV], ['resistanceOhm', record.resistanceOhm], ['maxCurrentA', record.maxCurrentA], ['maxPowerW', record.maxPowerW], ['massKg', record.massKg], ['maxThrustN', record.maxThrustN]]
           : [['diameterM', record.diameterM], ['pitchM', record.pitchM], ['bladeCount', record.bladeCount], ['massKg', record.massKg]];
     for (const [field, value] of numericFields) {
       if (value !== undefined && !positive(value)) issues.push({ row, field, code: 'invalid', message: `${field} must be finite and positive when present` });
@@ -54,6 +54,18 @@ export function validateComponentRecords(records: ComponentRecord[]): ImportIssu
 
     if (record.kind === 'motor' && record.kvOptions?.some((kv) => !positive(kv))) {
       issues.push({ row, field: 'kvOptions', code: 'invalid', message: 'KV options must be finite and positive' });
+    }
+    if (record.kind === 'motor') {
+      record.kvSpecifications?.forEach((spec, specIndex) => {
+        const values: Array<[string, number | undefined]> = [
+          ['kv', spec.kv], ['noLoadCurrentA', spec.noLoadCurrentA], ['noLoadCurrentTestVoltageV', spec.noLoadCurrentTestVoltageV],
+          ['resistanceOhm', spec.resistanceOhm], ['maxCurrentA', spec.maxCurrentA], ['maxCurrentDurationS', spec.maxCurrentDurationS],
+          ['maxPowerW', spec.maxPowerW], ['maxPowerDurationS', spec.maxPowerDurationS]
+        ];
+        for (const [field, value] of values) {
+          if (value !== undefined && !positive(value)) issues.push({ row, field: `kvSpecifications.${specIndex}.${field}`, code: 'invalid', message: `${field} must be finite and positive when present` });
+        }
+      });
     }
 
     if (record.kind === 'esc' && positive(record.efficiency) && record.efficiency > 1) {

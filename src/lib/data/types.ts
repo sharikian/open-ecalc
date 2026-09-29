@@ -14,6 +14,14 @@ export interface Provenance {
   /** Reference-only presets remain available by explicit opt-in, not normal catalog search. */
   referenceOnly?: boolean;
   sourceNote?: string;
+  /** Field-level primary-source attribution; facts may have distinct conditions. */
+  specificationSources?: Record<string, SpecificationSource>;
+  supplementHash?: string;
+}
+
+export interface SpecificationSource {
+  sourceUrl: string;
+  condition?: string;
 }
 
 export interface ComponentBase extends Provenance {
@@ -67,6 +75,7 @@ export interface MotorComponent extends ComponentBase {
   stator?: string;
   maxCells?: string;
   noLoadCurrentA?: number;
+  noLoadCurrentTestVoltageV?: number;
   resistanceOhm?: number;
   resistanceMohmText?: string;
   maxCurrentA?: number;
@@ -81,6 +90,19 @@ export interface MotorComponent extends ComponentBase {
   mount?: string;
   configuration?: string;
   recommendedProps?: string;
+  kvSpecifications?: MotorKvSpecification[];
+}
+
+export interface MotorKvSpecification {
+  kv: number;
+  noLoadCurrentA?: number;
+  noLoadCurrentTestVoltageV?: number;
+  resistanceOhm?: number;
+  maxCurrentA?: number;
+  maxCurrentDurationS?: number;
+  maxPowerW?: number;
+  maxPowerDurationS?: number;
+  specificationSources?: Record<string, SpecificationSource>;
 }
 
 export interface MotorBenchCurve {

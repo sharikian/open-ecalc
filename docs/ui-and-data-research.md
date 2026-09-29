@@ -75,8 +75,12 @@
 
 ## پروفایل‌های پرنده و زمان پرواز
 
-`static/data/aircraft.v1.json` از CSV اوپن‌دِرون‌لیست تولید می‌شود و ۱۵۹ مدل را
-برای جست‌وجوی داخل برنامه دربرمی‌گیرد؛ از جمله خانواده‌های Mavic، Air، Phantom،
+`static/data/aircraft.v1.json` از OpenDroneList و پروفایل‌های quad در FPV-DB
+ساخته می‌شود و پس از ادغام نام‌های دقیق تکراری ۲۵۷ مدل دارد؛ سه مورد DJI Avata،
+Avata 2 و Neo فقط یک‌بار ثبت شده‌اند و URL، مجوز، attribution، commit و hash هر
+دو منبع در provenance هر پروفایل ادغامی نگه‌داری می‌شود. در فیلد legacy
+`licenseSpdx` مجوز ردیف اصلی باقی می‌ماند و مجوزهای منبع‌های ترکیبی در
+`sourceProvenance` هستند. فهرست شامل خانواده‌های Mavic، Air، Phantom،
 Matrice، eBee و Dragonfish. برای `Mavic 2 Pro` مقدار ۹۰۷ گرم و ۳۱ دقیقه و برای
 `Mavic 3` مقدار ۸۹۵ گرم، ۴۶ دقیقه، برد ۳۰ کیلومتر و سقف سرویس ۶۰۰۰ متر از صفحات
 رسمی DJI ثبت شده‌اند: [Mavic 2](https://www.dji.com/mavic-2/info) و

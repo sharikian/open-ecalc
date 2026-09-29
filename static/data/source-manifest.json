@@ -107,6 +107,50 @@
         "quads.json": "c667fa44d9f4b6c19ee67d1be815d2dfe54d8be5a4b24d5efa64e657914808bd"
       },
       "note": "Brand/model product records and manufacturer-published bench tables. No product images. ESC listings are integrated FC/ESC stacks."
+    },
+    {
+      "id": "manufacturer-specification-supplement",
+      "kind": "selected-component-specification-facts",
+      "urls": [
+        "https://store.tmotor.com/product/f60prov-fpv-motor.html",
+        "https://store.tmotor.com/product/f1507-kv3800-fpv-motor.html",
+        "https://store.tmotor.com/product/f1408-2-fpv-motor.html",
+        "https://genstattu.com/tattu-r-line-version-5-0-1550mah-6s-150c-22-2v-lipo-battery-pack-with-xt60-plug/"
+      ],
+      "licenseSpdx": "NOASSERTION",
+      "retrievedAt": "2026-09-29",
+      "status": "field-attributed-supplement",
+      "bundle": true,
+      "recordCount": 4,
+      "fields": [
+        "fpvdb-motor-t-motor-f60-pro-v-2207-5.kv1750.noLoadCurrentA",
+        "fpvdb-motor-t-motor-f60-pro-v-2207-5.kv1750.maxCurrentA",
+        "fpvdb-motor-t-motor-f60-pro-v-2207-5.kv1750.maxPowerW",
+        "fpvdb-motor-t-motor-f60-pro-v-2207-5.kv2020.noLoadCurrentA",
+        "fpvdb-motor-t-motor-f60-pro-v-2207-5.kv2020.maxCurrentA",
+        "fpvdb-motor-t-motor-f60-pro-v-2207-5.kv2020.maxPowerW",
+        "fpvdb-motor-t-motor-f60-pro-v-2207-5.kv2550.noLoadCurrentA",
+        "fpvdb-motor-t-motor-f60-pro-v-2207-5.kv2550.maxCurrentA",
+        "fpvdb-motor-t-motor-f60-pro-v-2207-5.kv2550.maxPowerW",
+        "fpvdb-motor-t-motor-f1507.kv2700.noLoadCurrentA",
+        "fpvdb-motor-t-motor-f1507.kv2700.resistanceOhm",
+        "fpvdb-motor-t-motor-f1507.kv2700.maxCurrentA",
+        "fpvdb-motor-t-motor-f1507.kv2700.maxPowerW",
+        "fpvdb-motor-t-motor-f1507.kv3800.noLoadCurrentA",
+        "fpvdb-motor-t-motor-f1507.kv3800.resistanceOhm",
+        "fpvdb-motor-t-motor-f1507.kv3800.maxCurrentA",
+        "fpvdb-motor-t-motor-f1507.kv3800.maxPowerW",
+        "fpvdb-motor-t-motor-f1408-ii-1408.noLoadCurrentA",
+        "fpvdb-motor-t-motor-f1408-ii-1408.resistanceOhm",
+        "fpvdb-motor-t-motor-f1408-ii-1408.maxCurrentA",
+        "fpvdb-motor-t-motor-f1408-ii-1408.maxPowerW",
+        "fpvdb-battery-tattu-r-line-version-5-0-1550mah-6s.nominalVoltageV"
+      ],
+      "supplementSha256": "b20713fc78a4d3e97e27fc25670749a23d7dd3f8559dc405c09a4f51ba54d55c",
+      "note": "Small set of explicitly attributed factual specifications only; source catalog terms were not evaluated for bulk redistribution. No source text, catalog database, or product images included.",
+      "name": "Manufacturer field-level specification supplements",
+      "included": true,
+      "attribution": "T-Motor / T-HOBBY and Tattu / GensTattu; see per-field URLs"
     }
   ]
 }

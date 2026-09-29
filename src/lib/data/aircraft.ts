@@ -27,6 +27,7 @@ export interface AircraftProfile {
   productType?: 'airframe' | 'quad';
   sourceUrls?: string[];
   sourceCommit?: string;
+  sourceProvenance?: Array<{ sourceUrl: string; licenseSpdx: string; attribution: string; sourceCommit?: string; sourceHash?: string }>;
   maxFlightDistanceKm: number | null;
   maxServiceCeilingM: number | null;
   battery: string | null;
