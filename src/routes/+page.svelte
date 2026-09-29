@@ -117,7 +117,13 @@
       && [payloadMass, altitude, resistance, cruiseSpeed].every((value) => Number.isFinite(value) && value >= 0)
       && Number.isFinite(temperature);
     if (!valid) { missionResult = null; showErrors = true; step = firstIncompleteStep(); return; }
-    try { missionResult = calculateMission(missionInput); reports = [saveReport({ mode: 'advanced', input: structuredClone(missionInput), result: missionResult }), ...reports].slice(0, 100); } catch (error) { console.error('mission calculation failed', error); missionResult = null; }
+    try { missionResult = calculateMission(missionInput); reports = [saveReport({ mode: 'advanced', input: structuredClone(missionInput), result: missionResult }), ...reports].slice(0, 100); }
+    catch {
+      missionResult = null;
+      window.alert($locale === 'en'
+        ? 'This configuration cannot meet the required thrust, voltage or tested curve limits. Check the propulsion and battery inputs.'
+        : 'این ترکیب رانش، ولتاژ یا محدودهٔ منحنی تست مورد نیاز را تأمین نمی‌کند. ورودی باتری و پیشران را بررسی کنید.');
+    }
   }
   function redoReport(report: CalculationReport) {
     if (report.mode === 'advanced') { missionInput = structuredClone(report.input as MissionInput); mode = 'advanced'; step = 3; }

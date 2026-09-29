@@ -12,6 +12,29 @@ function mission(change: (input: MissionInput) => void = () => {}): MissionInput
 }
 
 describe('mission properties', () => {
+  it('matches eCalc endurance using the observed hover operating point', () => {
+    const input = mission(value => {
+      value.airframe.takeoffMassKg = 0.85;
+      value.battery.capacityAh = 5;
+      value.battery.usableFraction = 0.85;
+      value.battery.series = 3;
+      value.auxiliaryCurrentA = 0;
+      value.propeller.curve = [
+        { throttle: 0.1, thrustN: 0.1, currentA: 0.2, voltageV: 11.02, rpm: 1000 },
+        { throttle: 0.48, thrustN: 0.85 * 9.80665 / 4, currentA: 8.39 / 4, voltageV: 11.02, rpm: 4047 },
+        { throttle: 1, thrustN: 6.25, currentA: 10.78, voltageV: 10.68, rpm: 7883 }
+      ];
+    });
+    expect(calculateMission(input).flightTimeMin).toBeCloseTo(30.4, 1);
+  });
+
+  it('does not return a flight duration for an aircraft that cannot hover', () => {
+    expect(() => calculateMission(mission(value => { value.airframe.payloadMassKg = 1000; }))).toThrow(/Insufficient/);
+  });
+
+  it('rejects a usable fraction entered as a percentage rather than a ratio', () => {
+    expect(() => calculateMission(mission(value => { value.battery.usableFraction = 80; }))).toThrow(RangeError);
+  });
   it('never reduces endurance when capacity grows at fixed mass', () => {
     const base = calculateMission(mission());
     const larger = calculateMission(mission((input) => { input.battery.capacityAh *= 1.5; }));
